@@ -36,7 +36,7 @@ jobs:
           password: '41PY#a1GjTM*'
           
           # Target on Hostinger
-          server-dir: public_html/chat/
+          server-dir: chat/
           
           # Source: We only upload the BUILT version, not the source code
           local-dir: ./out
