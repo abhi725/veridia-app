@@ -1,0 +1,35 @@
+name: Deploy to chat.swandigitals.com
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+      
+      - name: Sync files to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          # removed "ftp://" and "${{ }}"
+          server: 86.38.202.111
+          
+          # removed "${{ }}"
+          username: u224718941
+          
+          # IMPORTANT: Wrapped in quotes '...' because your password contains '#'
+          # If you don't use quotes, the '#' counts as a comment and breaks the password.
+          password: '41PY#a1GjTM*'
+          
+          # Target folder
+          server-dir: public_html/chat/
+          
+          # Source folder
+          local-dir: ./
+          
+          strict: false
