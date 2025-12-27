@@ -36,7 +36,7 @@ jobs:
           password: '41PY#a1GjTM*'
           
           # Target Folder (Assumes FTP starts in public_html)
-          server-dir: chat/
+          server-dir: public_html/chat/
           
           # Source Folder (MUST end with /)
           local-dir: ./out/
