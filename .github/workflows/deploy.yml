@@ -1,4 +1,4 @@
-name: Deploy to chat.swandigitals.com
+name: Deploy Next.js to Hostinger
 
 on:
   push:
@@ -6,30 +6,40 @@ on:
       - main
 
 jobs:
-  web-deploy:
-    name: Deploy
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get latest code
+      # 1. Get the code
+      - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Sync files to Hostinger
+
+      # 2. Install Node.js (The Chef)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. Install Dependencies
+      - name: Install Dependencies
+        run: npm ci
+
+      # 4. Build the Website (Creates the 'out' folder)
+      - name: Build
+        run: npm run build
+
+      # 5. Upload ONLY the 'out' folder to Hostinger
+      - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          # removed "ftp://" and "${{ }}"
           server: 86.38.202.111
-          
-          # removed "${{ }}"
           username: u224718941
-          
-          # IMPORTANT: Wrapped in quotes '...' because your password contains '#'
-          # If you don't use quotes, the '#' counts as a comment and breaks the password.
           password: '41PY#a1GjTM*'
           
-          # Target folder
+          # Target on Hostinger
           server-dir: public_html/chat/
           
-          # Source folder
-          local-dir: ./
+          # Source: We only upload the BUILT version, not the source code
+          local-dir: ./out/
           
+          # Dangerous but necessary here: This cleans up old files so they don't clash
           strict: false
