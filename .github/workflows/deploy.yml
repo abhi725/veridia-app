@@ -39,7 +39,7 @@ jobs:
           server-dir: public_html/chat/
           
           # Source: We only upload the BUILT version, not the source code
-          local-dir: ./out/
+          local-dir: ./out
           
           # Dangerous but necessary here: This cleans up old files so they don't clash
           strict: false
