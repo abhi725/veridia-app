@@ -1,9 +1,15 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
 import { Target, MessageSquare, Calendar, TrendingUp, FileText, Zap } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'AI Sales Agent & Lead Gen Chatbot | Qualify Leads 24/7 | Veridia',
+    description: 'Turn visitors into SQLs with AI Sales Agents. 24/7 lead qualification, meeting scheduling, and CRM sync. Boost conversion rates by 30%.',
+}
 
 export default function SalesPage() {
     const useCases = [
@@ -19,7 +25,7 @@ export default function SalesPage() {
         <SiteLayout>
             <Hero
                 badge="💼 Sales Assistant"
-                title="AI That Qualifies and Converts"
+                title="AI Sales Agents That Qualify & Convert"
                 subtitle="Turn website visitors into qualified leads 24/7. AI handles product questions, qualifies prospects, and books meetings—while you sleep."
                 primaryCTA={{ text: "See Sales AI Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View ROI Calculator", href: "/roi-calculator" }}

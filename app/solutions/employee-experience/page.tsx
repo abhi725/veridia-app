@@ -1,9 +1,15 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
 import { Users, Briefcase, CreditCard, Calendar, FileText, HelpCircle } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'Internal Employee Helpdesk AI | HR & IT Automation | Veridia',
+    description: 'Transform employee experience with AI. Automate HR inquiries, IT tickets, and onboarding. 24/7 support for internal teams via Slack, Teams, and Email.',
+}
 
 export default function EmployeeExperiencePage() {
     const useCases = [
@@ -26,7 +32,7 @@ export default function EmployeeExperiencePage() {
         <SiteLayout>
             <Hero
                 badge="👥 Employee Experience"
-                title="AI Support for Your Internal Teams"
+                title="Enterprise Employee Experience AI Platform"
                 subtitle="HR, IT, and operations support that works 24/7. Reduce internal ticket volume by 70% and let your teams focus on strategic work."
                 primaryCTA={{ text: "See Internal AI Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View IT Helpdesk", href: "/solutions/it-helpdesk" }}

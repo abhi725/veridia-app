@@ -1,10 +1,16 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import PricingTable from '@/components/ui/PricingTable';
 import FAQ from '@/components/ui/FAQ';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'Enterprise Chatbot Pricing | No Setup Fees | Veridia',
+    description: 'Transparent AI chatbot pricing. No setup fees, no hidden costs. Starter plans from $499/mo. Enterprise options with on-premise deployment. Get a quote today.',
+}
 
 export default function PricingPage() {
     const plans = [
@@ -83,7 +89,7 @@ export default function PricingPage() {
         <SiteLayout>
             <Hero
                 badge="💰 Transparent Pricing"
-                title="Simple, Predictable Pricing"
+                title="Transparent Enterprise Pricing with Zero Setup Fees"
                 subtitle="No hidden fees. No setup costs. No long-term contracts. Start free and scale as you grow."
                 primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
                 secondaryCTA={{ text: "Contact Sales", href: "/contact" }}

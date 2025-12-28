@@ -1,10 +1,16 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import FAQ from '@/components/ui/FAQ';
 import Link from 'next/link';
 import { ShoppingCart, Package, RefreshCw, MessageSquare, TrendingUp, Gift } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'Retail AI Chatbot for E-commerce | Scale to 10M+ Conversions | Veridia',
+    description: 'Handle Black Friday traffic with Enterprise Retail AI. Automate order tracking, returns, and product recommendations. Integrated with Shopify & Salesforce.',
+}
 
 export default function RetailPage() {
     const useCases = [
@@ -28,7 +34,7 @@ export default function RetailPage() {
         <SiteLayout>
             <Hero
                 badge="🛒 Retail & E-commerce"
-                title="AI That Scales for Peak Season"
+                title="Enterprise Retail AI that Scales for Peak Season"
                 subtitle="Handle 10M+ conversations during Black Friday. Product discovery, order support, and returns automation that grows with your business."
                 primaryCTA={{ text: "See Retail Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Case Studies", href: "/case-studies" }}

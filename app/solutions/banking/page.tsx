@@ -1,10 +1,16 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import FAQ from '@/components/ui/FAQ';
 import Link from 'next/link';
 import { Shield, Lock, FileCheck, Clock, Zap, Headphones } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'AI Chatbots for Banking & Finance | PCI DSS Compliant | Veridia',
+    description: 'Secure, on-premise AI chatbots for banking. PCI DSS Level 1 certified, Fraud Detection, and 93% automation rate. Deploy in your data center.',
+}
 
 export default function BankingPage() {
     const challenges = [
@@ -35,8 +41,8 @@ export default function BankingPage() {
         <SiteLayout>
             <Hero
                 badge="🏦 Banking & Finance"
-                title="AI for Regulated Financial Services"
-                subtitle="PCI DSS, SOX, GDPR compliant chatbots with true on-premise deployment. Built for banks, credit unions, and financial institutions that can't compromise on security."
+                title="PCI DSS Compliant AI for Banking"
+                subtitle="Secure, on-premise AI chatbots for financial institutions. Automate support while meeting strict PCI DSS, SOX, and GDPR requirements."
                 primaryCTA={{ text: "Talk to Banking Expert", href: "/demo" }}
                 secondaryCTA={{ text: "Download Security Whitepaper", href: "/whitepapers" }}
             />

@@ -1,9 +1,15 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
 import { Key, Monitor, Wifi, HelpCircle, Settings, Ticket } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'IT Helpdesk AI Automation | Deflect 72% Tickets | Veridia',
+    description: 'Automate Tier 1 IT support with Veridia. Reset passwords, grant software access, and troubleshoot network issues 24/7. Integrates with ServiceNow & Jira.',
+}
 
 export default function ITHelpdeskPage() {
     const useCases = [
@@ -20,7 +26,7 @@ export default function ITHelpdeskPage() {
         <SiteLayout>
             <Hero
                 badge="🔧 IT Helpdesk"
-                title="Automate Tier 1 IT Support"
+                title="Enterprise IT Helpdesk Automation"
                 subtitle="Password resets, software requests, and connectivity troubleshooting—automated 24/7. Free your IT team for strategic work."
                 primaryCTA={{ text: "See IT Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Employee Experience", href: "/solutions/employee-experience" }}

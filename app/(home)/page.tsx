@@ -91,7 +91,7 @@ export default function HomePage() {
             {/* Hero Section */}
             <Hero
                 badge="🚀 Trusted by 500+ Enterprise Companies"
-                title="The Chatbot That Truly Understands"
+                title="The Enterprise AI Chatbot Built for Data Sovereignty"
                 subtitle="Deploy enterprise AI chatbots in days, not months. Leaner than Kore.ai, more affordable than Cognigy, and built on modern tech that IBM can't match."
                 primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
@@ -169,8 +169,8 @@ export default function HomePage() {
                                 key={i}
                                 onClick={() => setActiveUseCase(i)}
                                 className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${activeUseCase === i
-                                        ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg'
-                                        : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+                                    ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg'
+                                    : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
                                     }`}
                             >
                                 {uc.icon}

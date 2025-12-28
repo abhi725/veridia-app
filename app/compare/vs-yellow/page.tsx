@@ -1,9 +1,15 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import ComparisonTable from '@/components/ui/ComparisonTable';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'Veridia vs Yellow.ai: The Best On-Premise Alternative (2025 Review)',
+    description: 'Compare Veridia vs Yellow.ai. Why regulated enterprises choose Veridia: True on-premise deployment, no vendor lock-in, and 60% lower TCO.',
+}
 
 export default function VsYellowPage() {
     const comparisonRows = [
@@ -25,10 +31,10 @@ export default function VsYellowPage() {
         <SiteLayout>
             <Hero
                 badge="🆚 Data Sovereignty Comparison"
-                title="Veridia vs Yellow.ai"
+                title="Veridia vs Yellow.ai: Why Enterprises are Switching to On-Premise"
                 subtitle="True on-premise deployment vs cloud-only: Why regulated industries choose Veridia"
-                primaryCTA={{ text: "See Security Details", href: "/security" }}
-                secondaryCTA={{ text: "Book Demo", href: "/demo" }}
+                primaryCTA={{ text: "See Migration Plan", href: "/demo" }}
+                secondaryCTA={{ text: "See Security Details", href: "/security" }}
             />
 
             <ComparisonTable

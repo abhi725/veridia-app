@@ -1,10 +1,16 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import FAQ from '@/components/ui/FAQ';
 import Link from 'next/link';
 import { Stethoscope, Calendar, FileText, Shield, Clock, Heart } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'HIPAA Compliant AI Chatbots for Healthcare | Patient Engagement | Veridia',
+    description: 'Automate patient intake, scheduling, & triage with HIPAA compliant AI. On-premise deployment for full PHI protection. Trusted by HealthPlus.',
+}
 
 export default function HealthcarePage() {
     const useCases = [
@@ -36,7 +42,7 @@ export default function HealthcarePage() {
         <SiteLayout>
             <Hero
                 badge="🏥 Healthcare"
-                title="HIPAA Compliant Patient Engagement"
+                title="HIPAA Compliant AI for Healthcare"
                 subtitle="AI-powered patient communication that meets the strictest healthcare compliance requirements. From scheduling to follow-up, automate with confidence."
                 primaryCTA={{ text: "Talk to Healthcare Expert", href: "/demo" }}
                 secondaryCTA={{ text: "View HIPAA Details", href: "/security" }}

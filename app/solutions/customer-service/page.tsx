@@ -1,4 +1,5 @@
-"use client";
+import type { Metadata } from 'next';
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
@@ -6,6 +7,11 @@ import FeatureGrid from '@/components/ui/FeatureGrid';
 import FAQ from '@/components/ui/FAQ';
 import { Headphones, TrendingUp, Clock, Users, Zap, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'AI Customer Service Chatbot | Automate Support 90% | Veridia',
+    description: 'Reduce support costs by 60% with Veridia\'s AI Customer Service Chatbot. Automate 90% of tickets with <2s response time. Compatible with Zendesk & Salesforce.',
+}
 
 export default function CustomerServicePage() {
     const benefits = [
@@ -28,8 +34,8 @@ export default function CustomerServicePage() {
         <SiteLayout>
             <Hero
                 badge="🎧 Customer Service Automation"
-                title="Slash Support Costs by 60%"
-                subtitle="Automate 90% of customer queries with AI that truly understands. Like Yellow.ai's customer service solution, but with true on-premise deployment for regulated industries."
+                title="Automate Customer Service & Slash Costs by 60%"
+                subtitle="Automate 90% of customer queries with AI that truly understands. Enterprise-grade, on-premise deployment for regulated industries."
                 primaryCTA={{ text: "See Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
