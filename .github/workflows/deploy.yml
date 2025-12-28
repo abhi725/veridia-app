@@ -9,34 +9,34 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Get the code
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. Install Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # 3. Install Dependencies
       - name: Install Dependencies
         run: npm ci
 
-      # 4. Build the Website
       - name: Build
         run: npm run build
 
-      # 5. Upload to Hostinger
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 86.38.202.111
+          server: swandigitals.com
           username: u224718941
           password: '41PY#a1GjTM*'
           
-          # Target Folder (Assumes FTP starts in public_html)
-          server-dir: public_html/chat/
+          # -----------------------------------------------------------
+          # THE GOLDEN PATH (From your settings):
+          # We skip the /home/u224718941/ part as FTP starts there automatically
+          # -----------------------------------------------------------
+          server-dir: domains/swandigitals.com/public_html/chat/
           
-          # Source Folder (MUST end with /)
+          # Source Folder
           local-dir: ./out/
+          
+         
