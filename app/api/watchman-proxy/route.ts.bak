@@ -1,0 +1,152 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+// Force dynamic rendering since we use searchParams
+export const dynamic = 'force-dynamic';
+
+const WATCHMAN_API_URL = process.env.WATCHMAN_API_URL || 'http://localhost:8084';
+
+export interface WatchmanMatch {
+    entityID: string;
+    sdnName: string;
+    sdnType: string;
+    match: number;
+    programs: string[];
+    title?: string;
+    remarks?: string;
+    addresses?: Array<{
+        address: string;
+        city: string;
+        country: string;
+    }>;
+}
+
+export interface WatchmanResponse {
+    SDNs?: WatchmanMatch[];
+    altNames?: WatchmanMatch[];
+    addresses?: WatchmanMatch[];
+    deniedPersons?: WatchmanMatch[];
+    bisEntities?: WatchmanMatch[];
+    error?: string;
+    demoMode?: boolean;
+}
+
+// Mock data for demo mode when Watchman is unavailable
+function getMockResults(searchQuery: string): WatchmanResponse {
+    const query = searchQuery.toLowerCase();
+
+    // Sample sanctioned entities for demonstration
+    const mockDatabase = [
+        {
+            entityID: 'DEMO-001',
+            sdnName: 'Korea Taesong Bank',
+            sdnType: 'Entity',
+            programs: ['DPRK', 'NORTH KOREA SANCTIONS'],
+            match: 0.95,
+            remarks: 'Financial institution associated with DPRK weapons programs'
+        },
+        {
+            entityID: 'DEMO-002',
+            sdnName: 'Al-Bashir, Omar Hassan Ahmad',
+            sdnType: 'Individual',
+            programs: ['SUDAN', 'DARFUR'],
+            match: 0.88,
+            remarks: 'Former President of Sudan'
+        },
+        {
+            entityID: 'DEMO-003',
+            sdnName: 'ROSNEFT Trading SA',
+            sdnType: 'Entity',
+            programs: ['UKRAINE-EO13662'],
+            match: 0.82,
+            remarks: 'Russian oil trading company'
+        },
+        {
+            entityID: 'DEMO-004',
+            sdnName: 'Bank Sepah',
+            sdnType: 'Entity',
+            programs: ['IRAN', 'NPWMD'],
+            match: 0.91,
+            remarks: 'Iranian bank involved in WMD proliferation'
+        },
+        {
+            entityID: 'DEMO-005',
+            sdnName: 'HONG KONG ELECTRONICS',
+            sdnType: 'Entity',
+            programs: ['IRAN', 'WEAPONS'],
+            match: 0.78,
+            remarks: 'Electronics supplier to sanctioned entities'
+        }
+    ];
+
+    // Simple fuzzy matching - return results that contain any word from query
+    const queryWords = query.split(/\s+/).filter(w => w.length > 2);
+    const matches = mockDatabase.filter(entry => {
+        const entryText = entry.sdnName.toLowerCase();
+        return queryWords.some(word => entryText.includes(word));
+    });
+
+    // If no matches, return top 3 as examples
+    const results = matches.length > 0 ? matches : mockDatabase.slice(0, 3);
+
+    return {
+        SDNs: results,
+        demoMode: true
+    };
+}
+
+export async function GET(request: NextRequest) {
+    const searchParams = request.nextUrl.searchParams;
+    const name = searchParams.get('name');
+    const limit = searchParams.get('limit') || '10';
+
+    if (!name || name.trim().length === 0) {
+        return NextResponse.json(
+            { error: 'Missing required parameter: name' },
+            { status: 400 }
+        );
+    }
+
+    try {
+        // Query the Watchman API search endpoint
+        const watchmanUrl = new URL('/search', WATCHMAN_API_URL);
+        watchmanUrl.searchParams.set('q', name.trim());
+        watchmanUrl.searchParams.set('limit', limit);
+
+        const response = await fetch(watchmanUrl.toString(), {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+            },
+            // Don't cache results to ensure fresh data
+            cache: 'no-store',
+        });
+
+        if (!response.ok) {
+            // If Watchman returns an error, propagate it
+            if (response.status === 404) {
+                return NextResponse.json({ SDNs: [], altNames: [], addresses: [] });
+            }
+
+            const errorText = await response.text();
+            console.error('Watchman API error:', response.status, errorText);
+
+            return NextResponse.json(
+                { error: `Watchman service error: ${response.status}` },
+                { status: response.status }
+            );
+        }
+
+        const data: WatchmanResponse = await response.json();
+
+        // Transform and return the results
+        return NextResponse.json(data);
+
+    } catch (error) {
+        console.error('Failed to connect to Watchman service, falling back to demo mode:', error);
+
+        // Instead of returning an error, return mock data for demonstration
+        const demoData = getMockResults(name.trim());
+
+        return NextResponse.json(demoData);
+    }
+}
