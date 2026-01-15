@@ -1,0 +1,86 @@
+import type { Metadata } from 'next';
+
+
+import SiteLayout from '@/components/layout/SiteLayout';
+import Hero from '@/components/ui/Hero';
+import ComparisonTable from '@/components/ui/ComparisonTable';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Yellow.ai: The Best On-Premise Alternative (2025 Review)',
+    description: 'Compare SwanDigitals vs Yellow.ai. Why regulated enterprises choose SwanDigitals: True on-premise deployment, no vendor lock-in, and 60% lower TCO.',
+}
+
+export default function VsYellowPage() {
+    const comparisonRows = [
+        { feature: "True On-Premise Deployment", SwanDigitals: true, competitor: false },
+        { feature: "Data Sovereignty", SwanDigitals: "Full control", competitor: "Limited (VPC only)" },
+        { feature: "Monthly Cost (Enterprise)", SwanDigitals: "Custom", competitor: "$8,000+" },
+        { feature: "Air-Gapped Deployment", SwanDigitals: true, competitor: false },
+        { feature: "ROI Calculator", SwanDigitals: true, competitor: true },
+        { feature: "Agent Marketplace", SwanDigitals: true, competitor: false },
+        { feature: "Voice AI", SwanDigitals: true, competitor: true },
+        { feature: "WhatsApp Integration", SwanDigitals: true, competitor: true },
+        { feature: "GDPR Compliance", SwanDigitals: true, competitor: true },
+        { feature: "HIPAA Compliance", SwanDigitals: true, competitor: "Limited" },
+        { feature: "Vendor Lock-in", SwanDigitals: "None (open standards)", competitor: "Yes" },
+        { feature: "Self-Hosted Option", SwanDigitals: true, competitor: false }
+    ];
+
+    return (
+        <SiteLayout>
+            <Hero
+                badge="🆚 Data Sovereignty Comparison"
+                title="SwanDigitals vs Yellow.ai: Why Enterprises are Switching to On-Premise"
+                subtitle="True on-premise deployment vs cloud-only: Why regulated industries choose SwanDigitals"
+                primaryCTA={{ text: "See Migration Plan", href: "/demo" }}
+                secondaryCTA={{ text: "See Security Details", href: "/security" }}
+            />
+
+            <ComparisonTable
+                title="On-Premise vs Cloud Comparison"
+                competitorName="Yellow.ai"
+                rows={comparisonRows}
+            />
+
+            <section className="py-20 bg-slate-50">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center mb-12">The On-Premise Difference</h2>
+                    <div className="space-y-8">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🏦 True Data Sovereignty</h3>
+                            <p className="text-lg text-slate-700">
+                                Yellow.ai offers a "dedicated VPC" but your data still lives in their cloud. With SwanDigitals, your data never leaves your data center.
+                            </p>
+                            <p className="text-slate-600 mt-2">Critical for banking, healthcare, and government sectors</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🔒 Air-Gapped Deployment</h3>
+                            <p className="text-lg text-slate-700">
+                                Deploy in completely isolated networks with no internet connection. Impossible with cloud-only solutions like Yellow.ai.
+                            </p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🌍 No Vendor Lock-In</h3>
+                            <p className="text-lg text-slate-700">
+                                We use open standards and provide data export tools. Your conversation data, training models, and configurations are always yours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                    <h2 className="text-4xl font-bold mb-6">Need True On-Premise?</h2>
+                    <p className="text-xl text-slate-600 mb-8">
+                        Talk to our compliance team about air-gapped and on-premise options
+                    </p>
+                    <Link href="/contact" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all inline-block">
+                        Contact Security Team
+                    </Link>
+                </div>
+            </section>
+        </SiteLayout>
+    );
+}

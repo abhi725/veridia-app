@@ -1,0 +1,33 @@
+# Veridia Enterprise AI Platform - Full Documentation
+
+## Architecture
+Veridia is built on a modular Microservices architecture designed for Kubernetes deployment.
+- **NLP Engine:** Hybrid approach using LLMs for generation and NLU for intent classification.
+- **Deployment:** Docker containers deployable on AWS, Azure, GCP, or Bare Metal.
+- **Database:** PostgreSQL (Metadata), Redis (Session Store), ElasticSearch (Knowledge Base).
+
+## Key Features Deep Dive
+
+### 1. Visual Flow Builder
+Users can build complex conversation flows visually but can also "break out" into code for custom logic.
+
+### 2. Knowledge Graph
+Veridia ingests documents (PDF, Docx, HTML) to build a semantic knowledge graph, allowing the AI to answer unstructured questions accurately.
+
+### 3. Agent Assist
+For queries that require human intervention, Veridia provides "Agent Assist" - a sidebar for support agents that suggests answers in real-time.
+
+## Security Specifications
+- **Data Encryption:** TLS 1.3 in transit, AES-256 at rest.
+- **Authentication:** SSO (SAML, OIDC), LDAP / Active Directory.
+- **Certifications:** ISO 27001, SOC 2 Type II.
+
+## Integration Methods
+- **REST API:** Full CRUD access to conversations, users, and analytics.
+- **Webhooks:** Event-driven architecture for real-time updates.
+- **Custom Actions:** Execute Node.js or Python code within conversation flows.
+
+## Case Studies
+- **BankSafe:** 93% automation rate, $1.2M savings. [Read Case Study](/case-studies/banksafe)
+- **RetailPro:** Handled 10M conversations during Black Friday. [Read Case Study](/case-studies/retailpro)
+- **HealthPlus:** Reduced appointment no-shows by 60%. [Read Case Study](/case-studies/healthplus)
