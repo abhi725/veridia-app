@@ -2,6 +2,7 @@ interface Integration {
     name: string;
     color: string;
     category: string;
+    image?: string;
 }
 
 interface IntegrationCloudProps {
@@ -25,16 +26,26 @@ export default function IntegrationCloud({ integrations }: IntegrationCloudProps
                     {integrations.map((integration, index) => (
                         <div
                             key={index}
-                            className="bg-white p-4 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-orange-300 transition-all flex items-center justify-center group"
+                            className="bg-white p-4 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-orange-300 transition-all flex items-center justify-center group h-24"
                         >
-                            <div className="text-center">
-                                <div
-                                    className="w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-2 font-bold text-white text-sm"
-                                    style={{ backgroundColor: integration.color }}
-                                >
-                                    {integration.name.substring(0, 2).toUpperCase()}
-                                </div>
-                                <div className="text-xs text-slate-600 group-hover:text-slate-900 transition-colors font-medium">
+                            <div className="text-center w-full">
+                                {integration.image ? (
+                                    <div className="w-10 h-10 mx-auto mb-2 flex items-center justify-center">
+                                        <img
+                                            src={integration.image}
+                                            alt={integration.name}
+                                            className="max-w-full max-h-full object-contain"
+                                        />
+                                    </div>
+                                ) : (
+                                    <div
+                                        className="w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-2 font-bold text-white text-sm"
+                                        style={{ backgroundColor: integration.color }}
+                                    >
+                                        {integration.name.substring(0, 2).toUpperCase()}
+                                    </div>
+                                )}
+                                <div className="text-xs text-slate-600 group-hover:text-slate-900 transition-colors font-medium truncate px-1">
                                     {integration.name}
                                 </div>
                             </div>

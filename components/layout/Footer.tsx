@@ -70,6 +70,7 @@ export default function Footer() {
                             <li><Link href="/compare/vs-yellow" className="hover:text-white">vs Yellow.ai</Link></li>
                             <li><Link href="/compare/vs-kasisto" className="hover:text-white">vs Kasisto</Link></li>
                             <li><Link href="/compare/vs-intercom" className="hover:text-white">vs Intercom</Link></li>
+                            <li><Link href="/compare/vs-gupshup" className="hover:text-white">vs Gupshup</Link></li>
                             <li><Link href="/compare/vs-zendesk" className="hover:text-white">vs Zendesk</Link></li>
                         </ul>
                     </div>

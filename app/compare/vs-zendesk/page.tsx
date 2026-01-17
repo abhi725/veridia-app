@@ -4,21 +4,23 @@ import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import ComparisonTable from '@/components/ui/ComparisonTable';
 import Link from 'next/link';
+import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export default function VsZendeskPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "Free / ₹1,999", competitor: "$55+/agent/month" },
+        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "$55+/agent/month" },
         { feature: "AI Chatbot", SwanDigitals: "Native, included", competitor: "Add-on (Answer Bot)" },
         { feature: "Voice AI", SwanDigitals: true, competitor: false },
         { feature: "No-Code Builder", SwanDigitals: true, competitor: "Limited" },
         { feature: "Self-Hosted Option", SwanDigitals: true, competitor: false },
         { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
         { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "Limited" },
-        { feature: "Pricing Model", SwanDigitals: "Per conversation", competitor: "Per agent + add-ons" },
+        { feature: "Pricing Model", SwanDigitals: "Flat platform fee", competitor: "Per agent + add-ons" },
         { feature: "Conversation Automation", SwanDigitals: "90%+", competitor: "50-60%" },
         { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
         { feature: "Ticketing System", SwanDigitals: true, competitor: true },
-        { feature: "AI-First Design", SwanDigitals: true, competitor: "Bolt-on AI" }
+        { feature: "AI-First Design", SwanDigitals: true, competitor: "Bolt-on AI" },
+        { feature: "Data Residency India", SwanDigitals: "100% guaranteed", competitor: "Global data centers" }
     ];
 
     return (
@@ -27,9 +29,41 @@ export default function VsZendeskPage() {
                 badge="🆚 Support Platform Comparison"
                 title="SwanDigitals vs Zendesk"
                 subtitle="AI-first support platform vs helpdesk with bolted-on AI. 90% automation vs 50%. You do the math."
-                primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
+                primaryCTA={{ text: "Start Pilot (₹10k)", href: "/demo" }}
                 secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
             />
+
+            {/* Competitor Overview */}
+            <section className="py-12 bg-slate-50">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">About Zendesk</h2>
+                        <div className="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                                    <Shield className="w-5 h-5 text-green-500" />
+                                    Core Strengths
+                                </h3>
+                                <p className="text-slate-600 text-sm">Global leader in service/sales engagement; rich ecosystems and integrations.</p>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                                    <AlertTriangle className="w-5 h-5 text-orange-500" />
+                                    Key Weaknesses
+                                </h3>
+                                <p className="text-slate-600 text-sm">Primarily cloud-based, per-agent pricing; not India-specific.</p>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                                    <Database className="w-5 h-5 text-blue-500" />
+                                    Data & Compliance
+                                </h3>
+                                <p className="text-slate-600 text-sm">Global data centers; may not guarantee India-only data residency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <ComparisonTable
                 title="Feature-by-Feature Comparison"
@@ -58,17 +92,17 @@ export default function VsZendeskPage() {
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 No Per-Agent Pricing</h3>
+                            <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 Flat Platform Fee</h3>
                             <p className="text-lg text-slate-700">
                                 Zendesk charges per agent, encouraging you to hire fewer people.
-                                SwanDigitals charges per conversation — scale your team without worrying about seat costs.
+                                SwanDigitals offers a flat platform fee — scale your team without worrying about seat costs.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">🏢 Self-Hosted Option</h3>
                             <p className="text-lg text-slate-700">
-                                Zendesk is cloud-only. For regulated industries needing data sovereignty,
-                                SwanDigitals offers on-premise deployment with full control.
+                                Zendesk is cloud-only with global data centers. For regulated industries needing India data sovereignty,
+                                SwanDigitals offers on-premise deployment with 100% data residency in India.
                             </p>
                         </div>
                     </div>
@@ -79,11 +113,11 @@ export default function VsZendeskPage() {
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Support AI That Actually Automates</h2>
                     <p className="text-xl text-slate-600 mb-8">
-                        90%+ automation rate. Voice + Chat. No per-agent fees.
+                        90%+ automation rate. Voice + Chat. Flat platform fee.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Start Free Trial
+                            Start Pilot Program
                         </Link>
                         <Link href="/solutions/customer-service" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
                             See Support Solutions

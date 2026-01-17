@@ -3,119 +3,124 @@
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
+import { Linkedin, Github, Globe, Rocket, Award, Code, Database, TrendingUp } from 'lucide-react';
 
 export default function LeadershipPage() {
-    const executives = [
-        { name: "Alex Rivera", role: "CEO & Co-Founder", bio: "Previously VP of AI at Salesforce. Built AI products used by 10M+ users. Stanford CS, MIT MBA.", linkedin: "#" },
-        { name: "Sarah Chen", role: "CTO & Co-Founder", bio: "Former Google AI researcher. Led teams at DeepMind. PhD Stanford in NLP.", linkedin: "#" },
-        { name: "Michael Park", role: "VP Engineering", bio: "Ex-Amazon Principal Engineer. Scaled systems to 1B+ daily requests. Carnegie Mellon CS.", linkedin: "#" },
-        { name: "Emily Johnson", role: "VP Customer Success", bio: "Led customer success at Zendesk. 500+ enterprise deployments. Northwestern MBA.", linkedin: "#" }
-    ];
-
-    const team = [
-        { name: "David Chen", role: "VP Product", bio: "Former Product Lead at Intercom" },
-        { name: "Jennifer Lee", role: "VP Sales", bio: "Ex-Oracle Enterprise Sales Director" },
-        { name: "Robert Kim", role: "VP Security", bio: "Former CISO at major fintech" },
-        { name: "Maria Garcia", role: "VP Marketing", bio: "Built marketing at Series B unicorn" },
-        { name: "James Wilson", role: "VP Operations", bio: "Ex-McKinsey, scaled startups 10x" },
-        { name: "Lisa Thompson", role: "VP HR", bio: "Former CHRO at tech unicorn" }
-    ];
-
-    const advisors = [
-        { name: "Dr. Andrew Ng", role: "AI Advisor", affiliation: "Stanford / Coursera" },
-        { name: "John Smith", role: "GTM Advisor", affiliation: "Former CRO Salesforce" },
-        { name: "Jane Doe", role: "Board Member", affiliation: "Partner, Sequoia Capital" }
-    ];
-
-    const investors = ['Sequoia Capital', 'Andreessen Horowitz', 'Accel', 'General Catalyst'];
-
     return (
         <SiteLayout>
             <Hero
                 badge="👥 Leadership"
-                title="Meet Our Team"
-                subtitle="We're 85 people across 15 countries building the future of enterprise AI. Here's our leadership team."
-                primaryCTA={{ text: "Join Us", href: "/careers" }}
-                secondaryCTA={{ text: "About SwanDigitals", href: "/about" }}
+                title="Meet The Founder"
+                subtitle="Driven by a passion for innovation and 6+ years of experience in digital transformation."
+                primaryCTA={{ text: "Connect on LinkedIn", href: "https://www.linkedin.com/in/abhishek-ambad-964207147/" }}
+                secondaryCTA={{ text: "View Portfolio", href: "https://about.me/abhishekambad" }}
             />
 
-            {/* Executive Team */}
+            {/* Founder Profile */}
             <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Executive Team</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {executives.map((exec, i) => (
-                            <div key={i} className="text-center">
-                                <div className="w-40 h-40 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mx-auto mb-4"></div>
-                                <h3 className="text-xl font-bold">{exec.name}</h3>
-                                <p className="text-orange-600 font-medium mb-2">{exec.role}</p>
-                                <p className="text-sm text-slate-600 mb-3">{exec.bio}</p>
-                                <a href={exec.linkedin} className="text-blue-600 text-sm hover:underline">LinkedIn →</a>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Leadership Team */}
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Leadership Team</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {team.map((member, i) => (
-                            <div key={i} className="bg-white p-6 rounded-xl shadow-sm flex items-center gap-4">
-                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex-shrink-0"></div>
-                                <div>
-                                    <h3 className="font-bold">{member.name}</h3>
-                                    <p className="text-sm text-orange-600">{member.role}</p>
-                                    <p className="text-xs text-slate-500 mt-1">{member.bio}</p>
+                <div className="max-w-5xl mx-auto px-6 lg:px-8">
+                    <div className="flex flex-col md:flex-row gap-12 items-center">
+                        <div className="w-full md:w-1/3 text-center">
+                            <div className="w-64 h-64 bg-slate-200 rounded-full mx-auto mb-8 overflow-hidden border-4 border-orange-100 shadow-xl relative">
+                                {/* Placeholder for user image if they have one, otherwise a stylized avatar */}
+                                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-400 to-pink-500 text-white text-6xl font-bold">
+                                    AA
                                 </div>
                             </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-2">Abhishek Ambad</h2>
+                            <p className="text-xl text-orange-600 font-medium mb-6">Founder & Growth Strategist</p>
 
-            {/* Advisors */}
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Advisors & Board</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {advisors.map((advisor, i) => (
-                            <div key={i} className="text-center">
-                                <div className="w-24 h-24 bg-gradient-to-br from-slate-400 to-slate-600 rounded-full mx-auto mb-4"></div>
-                                <h3 className="font-bold">{advisor.name}</h3>
-                                <p className="text-sm text-orange-600">{advisor.role}</p>
-                                <p className="text-xs text-slate-500">{advisor.affiliation}</p>
+                            <div className="flex gap-4 justify-center">
+                                <a href="https://www.linkedin.com/in/abhishek-ambad-964207147/" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 rounded-full hover:bg-[#0077b5] hover:text-white transition-colors">
+                                    <Linkedin className="w-5 h-5" />
+                                </a>
+                                <a href="https://github.com/abhi725" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 rounded-full hover:bg-[#333] hover:text-white transition-colors">
+                                    <Github className="w-5 h-5" />
+                                </a>
+                                <a href="https://about.me/abhishekambad" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 rounded-full hover:bg-orange-500 hover:text-white transition-colors">
+                                    <Globe className="w-5 h-5" />
+                                </a>
                             </div>
-                        ))}
+                        </div>
+
+                        <div className="w-full md:w-2/3">
+                            <h3 className="text-2xl font-bold text-slate-900 mb-4">About Me</h3>
+                            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                                I am Abhishek Ambad, the founder of SwanDigitals. With over <strong className="text-slate-900">6 years of experience</strong> in digital marketing and growth strategy, I specialize in building scalable digital solutions that drive real business results.
+                            </p>
+                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                                My expertise spans across full-stack web development, SEO/SEM, and marketing automation. I'm passionate about leveraging technology to solve complex problems and helping improved digital presence for businesses.
+                            </p>
+
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <Award className="w-5 h-5 text-orange-500" />
+                                        <h4 className="font-bold text-slate-900">Digital Marketing</h4>
+                                    </div>
+                                    <p className="text-sm text-slate-600">SEO, SEM, Content Strategy, and Lead Generation expert.</p>
+                                </div>
+                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <Code className="w-5 h-5 text-blue-500" />
+                                        <h4 className="font-bold text-slate-900">Development</h4>
+                                    </div>
+                                    <p className="text-sm text-slate-600">Webflow, Shopify, WordPress, and Full-stack solutions.</p>
+                                </div>
+                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <Rocket className="w-5 h-5 text-purple-500" />
+                                        <h4 className="font-bold text-slate-900">Automation</h4>
+                                    </div>
+                                    <p className="text-sm text-slate-600">HubSpot, Make.com, and Email Marketing workflows.</p>
+                                </div>
+                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <TrendingUp className="w-5 h-5 text-green-500" />
+                                        <h4 className="font-bold text-slate-900">Growth</h4>
+                                    </div>
+                                    <p className="text-sm text-slate-600">Data-driven strategies to scale business operations.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Investors */}
+            {/* Values/Philosophy */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold mb-12">Backed By</h2>
-                    <div className="flex flex-wrap gap-8 justify-center">
-                        {investors.map((inv, i) => (
-                            <div key={i} className="px-8 py-4 bg-white rounded-xl shadow-sm font-bold text-slate-700">
-                                {inv}
-                            </div>
-                        ))}
+                    <h2 className="text-3xl font-bold mb-12">My Philosophy</h2>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="text-xl font-bold mb-3 text-slate-900">Innovation First</h3>
+                            <p className="text-slate-600">Constantly exploring new technologies to stay ahead of the curve.</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="text-xl font-bold mb-3 text-slate-900">Data-Driven</h3>
+                            <p className="text-slate-600">Every decision is backed by analytics and measurable KPIs.</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="text-xl font-bold mb-3 text-slate-900">User-Centric</h3>
+                            <p className="text-slate-600">Building solutions that truly solve user problems and add value.</p>
+                        </div>
                     </div>
-                    <p className="text-slate-600 mt-8">$60M raised to date</p>
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
+            {/* Connect CTA */}
+            <section className="py-20 bg-gradient-to-br from-slate-900 to-indigo-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Want to Join Our Team?</h2>
-                    <p className="text-xl text-white/80 mb-8">We're hiring across engineering, product, sales, and more</p>
-                    <Link href="/careers" className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                        View Open Roles
-                    </Link>
+                    <h2 className="text-4xl font-bold mb-6">Let's Build Something Great</h2>
+                    <p className="text-xl text-white/80 mb-8">Open to collaborations and new opportunities.</p>
+                    <div className="flex gap-4 justify-center">
+                        <a href="https://calendly.com/abhishek-ambad7/15min" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold text-lg transition-all">
+                            Schedule a Call
+                        </a>
+                        <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
+                            Contact Me
+                        </Link>
+                    </div>
                 </div>
             </section>
         </SiteLayout>

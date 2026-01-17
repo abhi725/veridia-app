@@ -284,12 +284,12 @@ export default function HomePage() {
                 { name: 'Zendesk', color: '#03363D', category: 'Support' },
                 { name: 'Freshdesk', color: '#00A65A', category: 'Support' },
                 { name: 'Salesforce', color: '#00A1E0', category: 'CRM' },
-                { name: 'HubSpot', color: '#FF7A59', category: 'CRM' },
+                { name: 'HubSpot', color: '#FF7A59', image: '/integrations/hubspot.png', category: 'CRM' },
+                { name: 'Intercom', color: '#000000', image: '/integrations/intercom.png', category: 'Support' },
+                { name: 'Google Analytics', color: '#E37400', image: '/integrations/google-analytics.png', category: 'Analytics' },
+                { name: 'Magento', color: '#F16422', image: '/integrations/magento.png', category: 'Commerce' },
+                { name: 'X', color: '#000000', image: '/integrations/x.png', category: 'Social' },
                 { name: 'Zoho', color: '#E42527', category: 'CRM' },
-                { name: 'n8n', color: '#EA4B71', category: 'Automation' },
-                { name: 'Zapier', color: '#FF4A00', category: 'Automation' },
-                { name: 'Sheets', color: '#34A853', category: 'Productivity' },
-                { name: 'Tally', color: '#FF0000', category: 'Accounting' },
                 { name: 'Razorpay', color: '#0066FF', category: 'Payment' },
                 { name: 'Stripe', color: '#635BFF', category: 'Payment' }
             ]} />
