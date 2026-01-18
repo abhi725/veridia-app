@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Personetics: Transactional AI vs Insights',
+    description: 'Compare SwanDigitals vs Personetics. Move beyond financial insights to actionable banking AI that executes transactions via Voice & Chat.',
+    keywords: ['Swandigitals vs Personetics', 'Actionable Banking AI', 'Transactional Chatbot', 'Financial Wellness AI'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-personetics',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

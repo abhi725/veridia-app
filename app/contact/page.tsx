@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Contact SwanDigitals | Enterprise AI Sales & Support',
+    description: 'Get in touch with SwanDigitals. Schedule a demo, contact 24/7 enterprise support, or visit our offices in San Francisco, London, and Singapore.',
+    keywords: ['Contact SwanDigitals', 'AI Chatbot Support', 'Enterprise Sales', 'Book AI Demo', 'Customer Service Contact'],
+    alternates: {
+        canonical: 'https://swandigitals.com/contact',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

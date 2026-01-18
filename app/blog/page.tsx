@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Enterprise AI Blog | Strategies & Insights | SwanDigitals',
+    description: 'Latest insights on Sovereign AI, On-premise Chatbots, and Enterprise Automation. implementation guides and success stories from the field.',
+    keywords: ['Enterprise AI Blog', 'Chatbot Strategy', 'Sovereign AI Trends', 'AI Implementation Guide', 'Conversational AI News'],
+    alternates: {
+        canonical: 'https://swandigitals.com/blog',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

@@ -10,6 +10,10 @@ import { ShoppingCart, Package, RefreshCw, MessageSquare, TrendingUp, Gift } fro
 export const metadata: Metadata = {
     title: 'Retail AI Chatbot for E-commerce | Scale to 10M+ Conversions | SwanDigitals',
     description: 'Handle Black Friday traffic with Enterprise Retail AI. Automate order tracking, returns, and product recommendations. Integrated with Shopify & Salesforce.',
+    keywords: ['Retail AI Chatbot', 'E-commerce Automation India', 'Shopify AI Agent', 'Order Tracking Bot', 'Black Friday AI Support'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions/retail',
+    },
 }
 
 export default function RetailPage() {

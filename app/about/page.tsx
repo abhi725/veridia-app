@@ -1,8 +1,16 @@
-"use client";
-
+import type { Metadata } from 'next';
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'Building India\'s Sovereign AI Workforce | SwanDigitals',
+    description: 'We are building the future of Enterprise AI in India. True data sovereignty, on-premise deployment, and DPDP compliance.',
+    keywords: ['About SwanDigitals', 'Indian AI Company', 'Sovereign AI Vision', 'Pune Tech Startup'],
+    alternates: {
+        canonical: 'https://swandigitals.com/about',
+    },
+}
 
 export default function AboutPage() {
     const team = [

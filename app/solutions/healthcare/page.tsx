@@ -8,8 +8,12 @@ import Link from 'next/link';
 import { Stethoscope, Calendar, FileText, Shield, Clock, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'HIPAA Compliant AI Chatbots for Healthcare | Patient Engagement | SwanDigitals',
-    description: 'Automate patient intake, scheduling, & triage with HIPAA compliant AI. On-premise deployment for full PHI protection. Trusted by HealthPlus.',
+    title: 'AI for Healthcare: Triage & Appointments | SwanDigitals',
+    description: 'HIPAA compliant AI chatbots for Indian healthcare. Automate patient triage, appointment booking, and follow-ups. On-premise deployment.',
+    keywords: ['Healthcare Chatbot India', 'Patient Triage AI', 'Appointment Booking Bot', 'HIPAA Compliant India', 'Hospital AI Agents'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions/healthcare',
+    },
 }
 
 export default function HealthcarePage() {

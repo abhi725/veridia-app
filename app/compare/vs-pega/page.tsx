@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Pega: Agile AI vs Legacy BPM Complexity',
+    description: 'Compare SwanDigitals vs Pega. Deploy enterprise AI in weeks, not months. No complex case-based pricing or training required.',
+    keywords: ['Swandigitals vs Pega', 'Pega Alternative India', 'Agile Enterprise AI', 'Chatbot Implementation Speed'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-pega',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

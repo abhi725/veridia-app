@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Intercom: AI Support for Indian Enterprise',
+    description: 'Compare SwanDigitals vs Intercom. Better for high-volume support automation in India. WhatsApp integration, voice AI, and on-premise options.',
+    keywords: ['Swandigitals vs Intercom', 'Intercom India Alternative', 'Intercom Pricing India', 'Customer Support Automation'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-intercom',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

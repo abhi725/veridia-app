@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Terms of Service | Enterprise Agreement | SwanDigitals',
+    description: 'SwanDigitals Terms of Service. Governed by German and Indian laws. SLAs, uptime guarantees, and acceptable use policy for enterprise customers.',
+    keywords: ['Terms of Service', 'Enterprise Syllabus', 'SLA Guarantee', 'Chatbot Service Agreement', 'Legal Terms'],
+    alternates: {
+        canonical: 'https://swandigitals.com/terms',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

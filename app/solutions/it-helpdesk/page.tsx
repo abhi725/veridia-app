@@ -7,8 +7,12 @@ import Link from 'next/link';
 import { Key, Monitor, Wifi, HelpCircle, Settings, Ticket } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'IT Helpdesk AI Automation | Deflect 72% Tickets | SwanDigitals',
-    description: 'Automate Tier 1 IT support with SwanDigitals. Reset passwords, grant software access, and troubleshoot network issues 24/7. Integrates with ServiceNow & Jira.',
+    title: 'AI for IT Helpdesk: Auto-Resolve Tier 1 Tickets | SwanDigitals',
+    description: 'Deflect 72% of IT tickets with AI. Automate password resets, software access, and troubleshooting. Integrates with ServiceNow & Jira.',
+    keywords: ['IT Helpdesk Automation', 'ITSM Chatbot', 'Password Reset Bot', 'Jira Automation AI', 'ServiceNow AI Bot'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions/it-helpdesk',
+    },
 }
 
 export default function ITHelpdeskPage() {

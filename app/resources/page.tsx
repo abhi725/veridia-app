@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Resources & Documentation | SwanDigitals',
+    description: 'Technical documentation, setup guides, and API references for SwanDigitals. Learn how to deploy on-premise AI agents and integrate with your stack.',
+    keywords: ['SwanDigitals Documentation', 'AI Chatbot Guides', 'On-premise Deployment Guide', 'API Reference', 'Developer Resources'],
+    alternates: {
+        canonical: 'https://swandigitals.com/resources',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

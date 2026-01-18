@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals Platform: Enterprise AI Orchestration',
+    description: 'The Complete AI Platform for Enterprise. Multi-agent orchestration, on-premise deployment, and Gemini-powered NLU. Scale to 10M+ conversations.',
+    keywords: ['Enterprise AI Platform', 'Multi-Agent Orchestration', 'On-premise AI Platform', 'Gemini AI for Enterprise'],
+    alternates: {
+        canonical: 'https://swandigitals.com/platform',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

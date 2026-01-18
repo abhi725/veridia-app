@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Zendesk: AI Automation vs Helpdesk Tools',
+    description: 'Compare SwanDigitals vs Zendesk. Reduce ticket volume by 90% with AI. Seamless integration with Zendesk for human handoff.',
+    keywords: ['Swandigitals vs Zendesk', 'Zendesk Alternative India', 'Zendesk Chatbot Integration', 'Helpdesk Automation'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-zendesk',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

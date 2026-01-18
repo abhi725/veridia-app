@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Kore.ai: Flexible On-Premise Alternative | SwanDigitals',
+    description: 'Compare SwanDigitals vs Kore.ai. Faster implementation, lower cost, and true on-premise deployment for Indian Enterprises.',
+    keywords: ['Swandigitals vs Kore.ai', 'Kore.ai Alternative India', 'Kore.ai Pricing vs SwanDigitals', 'On-premise AI Chatbot'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-kore',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

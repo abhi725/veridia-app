@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Drift: Affordable Conversational Marketing',
+    description: 'Compare SwanDigitals vs Drift. 90% lower cost with added Voice AI capabilities. Self-hosted options for data privacy.',
+    keywords: ['Swandigitals vs Drift', 'Drift Alternative India', 'Conversational Marketing Cost', 'Self-hosted Chatbot'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-drift',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

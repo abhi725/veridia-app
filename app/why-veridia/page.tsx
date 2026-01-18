@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Why Choose SwanDigitals? | The Sovereign AI Advantage',
+    description: 'Compare SwanDigitals vs Kore.ai, Yellow.ai, and IBM. 10x faster deployment, 60% lower TCO, and true on-premise data sovereignty.',
+    keywords: ['Why SwanDigitals', 'SwanDigitals vs Competitors', 'Sovereign AI Benefits', 'On-premise AI Advantages', 'Enterprise AI Comparison'],
+    alternates: {
+        canonical: 'https://swandigitals.com/why-swandigitals',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Privacy Policy | GDPR & DPDP Compliant | SwanDigitals',
+    description: 'SwanDigitals Privacy Policy. We are fully GDPR and DPDP compliant, ensuring your enterprise data remains private and secure. Read our data protection practices.',
+    keywords: ['Privacy Policy', 'GDPR Compliance', 'DPDP Act India', 'Data Sovereignty Policy', 'Enterprise Data Protection'],
+    alternates: {
+        canonical: 'https://swandigitals.com/privacy',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

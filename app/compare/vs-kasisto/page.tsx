@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs Kasisto: Conversational AI for Indian Banks',
+    description: 'Compare SwanDigitals vs Kasisto KAI. Affordable banking AI with native voice capabilities and 10+ Indian languages support.',
+    keywords: ['Swandigitals vs Kasisto', 'Kasisto Alternative India', 'Banking Chatbot Cost', 'Voice Banking AI'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-kasisto',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

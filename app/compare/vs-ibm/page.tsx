@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals vs IBM Watson: Modern AI vs Legacy Cloud',
+    description: 'Compare SwanDigitals vs IBM Watson. Modern Gemini models vs Legacy Watson. 1/5th the cost, 10x faster implementation, and better developer experience.',
+    keywords: ['Swandigitals vs IBM Watson', 'Watson Alternative', 'IBM Watson Pricing India', 'Modern AI Stack'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-ibm',
+    },
+}
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';

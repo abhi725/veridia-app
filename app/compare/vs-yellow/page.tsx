@@ -9,6 +9,10 @@ import { Shield, AlertTriangle, Database } from 'lucide-react';
 export const metadata: Metadata = {
     title: 'SwanDigitals vs Yellow.ai: The Best On-Premise Alternative (2025 Review)',
     description: 'Compare SwanDigitals vs Yellow.ai. Why regulated enterprises choose SwanDigitals: True on-premise deployment, no vendor lock-in, and better TCO.',
+    keywords: ['Swandigitals vs Yellow.ai', 'Yellow.ai Alternative India', 'Yellow.ai Pricing', 'On-premise vs Cloud Chatbot'],
+    alternates: {
+        canonical: 'https://swandigitals.com/compare/vs-yellow',
+    },
 }
 
 export default function VsYellowPage() {

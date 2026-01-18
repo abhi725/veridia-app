@@ -9,8 +9,12 @@ import { Headphones, TrendingUp, Clock, Users, Zap, BarChart3 } from 'lucide-rea
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'AI Customer Service Chatbot | Automate Support 90% | SwanDigitals',
-    description: 'Reduce support costs by 60% with SwanDigitals\'s AI Customer Service Chatbot. Automate 90% of tickets with <2s response time. Compatible with Zendesk & Salesforce.',
+    title: 'Automate 90% of Customer Support | SwanDigitals',
+    description: 'Slash support costs by 60% with Sovereign AI Agents. Instant 24/7 responses, ticket deflection, and seamless human handoff. Hosted in India.',
+    keywords: ['Customer Service Automation', 'Support Ticket Deflection', '24/7 AI Agent', 'Omni-channel Support', 'Whatsapp Customer Support Bot'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions/customer-service',
+    },
 }
 
 export default function CustomerServicePage() {

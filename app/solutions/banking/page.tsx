@@ -8,8 +8,12 @@ import Link from 'next/link';
 import { Shield, Lock, FileCheck, Clock, Zap, Headphones } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'AI Chatbots for Banking & Finance | PCI DSS Compliant | SwanDigitals',
-    description: 'Secure, on-premise AI chatbots for banking. PCI DSS Level 1 certified, Fraud Detection, and 93% automation rate. Deploy in your data center.',
+    title: 'Banking AI Agents for KYC & Collections | SwanDigitals',
+    description: 'Automate Loan Collections and KYC with on-premise AI agents. 100% data sovereignty for Indian Banks. RBI & DPDP compliant.',
+    keywords: ['AI for Indian Banks', 'KYC Automation Bot', 'Loan Collection AI', 'FinTech Customer Support', 'Banking Chatbot India'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions/banking',
+    },
 }
 
 export default function BankingPage() {

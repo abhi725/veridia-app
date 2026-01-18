@@ -7,8 +7,12 @@ import Link from 'next/link';
 import { Users, Briefcase, CreditCard, Calendar, FileText, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Internal Employee Helpdesk AI | HR & IT Automation | SwanDigitals',
-    description: 'Transform employee experience with AI. Automate HR inquiries, IT tickets, and onboarding. 24/7 support for internal teams via Slack, Teams, and Email.',
+    title: 'HR & Employee Experience AI Agents | SwanDigitals',
+    description: 'Internal helpdesk automation for Indian Enterprises. HR policy answers, leave management, and IT support via Slack/Teams. 100% Private.',
+    keywords: ['HR Chatbot India', 'Employee Helpdesk AI', 'Leave Management Bot', 'IT Support Automation', 'Internal Enterprise AI'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions/employee-experience',
+    },
 }
 
 export default function EmployeeExperiencePage() {
