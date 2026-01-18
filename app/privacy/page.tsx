@@ -35,23 +35,24 @@ export default function PrivacyPage() {
                         </div>
                     </div>
 
-                    {/* Section 1 */}
                     <div id="section-1" className="mb-12">
                         <h2 className="text-2xl font-bold text-slate-900 mb-4">1. Data Controller Information</h2>
                         <div className="text-slate-700 space-y-4">
                             <p>
-                                <strong>SwanDigitals GmbH</strong> ("SwanDigitals", "we", "us", or "our") is the data controller responsible for your personal data.
-                                We are committed to protecting your privacy in accordance with the <strong>General Data Protection Regulation (GDPR) (EU) 2016/679</strong>
-                                and applicable national data protection laws.
+                                <strong>SwanDigitals</strong> ("SwanDigitals", "we", "us", or "our") is the data controller responsible for your personal data.
+                                We are committed to protecting your privacy in accordance with applicable data protection laws including the
+                                <strong> Digital Personal Data Protection Act (DPDP), 2023</strong> and <strong>General Data Protection Regulation (GDPR) (EU) 2016/679</strong>.
                             </p>
                             <div className="bg-blue-50 p-4 rounded-lg">
-                                <p><strong>Data Controller:</strong> SwanDigitals GmbH</p>
-                                <p><strong>Address:</strong> Kurfürstendamm 21, 10719 Berlin, Germany</p>
-                                <p><strong>Email:</strong> privacy@SwanDigitals.ai</p>
-                                <p><strong>Data Protection Officer (DPO):</strong> dpo@SwanDigitals.ai</p>
+                                <p><strong>Data Controller:</strong> SwanDigitals</p>
+                                <p><strong>Address:</strong> Tapodham, Warje, Pune 411038, Maharashtra, India</p>
+                                <p><strong>Contact Number:</strong> +91 7770070762</p>
+                                <p><strong>Email:</strong> Abhishek@swandigitals.com</p>
+                                <p><strong>Founder:</strong> Abhishek Ambad</p>
                             </div>
                         </div>
                     </div>
+
 
                     {/* Section 2 */}
                     <div id="section-2" className="mb-12">

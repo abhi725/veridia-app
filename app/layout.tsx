@@ -57,9 +57,101 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'Organization',
+                '@id': 'https://swandigitals.com/#organization',
+                name: 'SwanDigitals',
+                url: 'https://swandigitals.com',
+                logo: {
+                    '@type': 'ImageObject',
+                    url: 'https://swandigitals.com/logo.png',
+                },
+                description: 'Enterprise AI Platform for Sovereign Data - On-premise chatbots and voice agents for Indian businesses',
+                address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: 'Tapodham, Warje',
+                    addressLocality: 'Pune',
+                    postalCode: '411038',
+                    addressRegion: 'Maharashtra',
+                    addressCountry: 'IN',
+                },
+                contactPoint: {
+                    '@type': 'ContactPoint',
+                    telephone: '+91-7770070762',
+                    contactType: 'customer service',
+                    email: 'Abhishek@swandigitals.com',
+                    areaServed: 'IN',
+                    availableLanguage: ['en', 'hi'],
+                },
+                founder: {
+                    '@type': 'Person',
+                    name: 'Abhishek Ambad',
+                },
+                sameAs: [
+                    'https://linkedin.com/company/swandigitals',
+                    'https://twitter.com/swandigitals',
+                ],
+            },
+            {
+                '@type': 'WebSite',
+                '@id': 'https://swandigitals.com/#website',
+                url: 'https://swandigitals.com',
+                name: 'SwanDigitals',
+                publisher: {
+                    '@id': 'https://swandigitals.com/#organization',
+                },
+                inLanguage: 'en-IN',
+            },
+            {
+                '@type': 'SoftwareApplication',
+                name: 'SwanDigitals AI Platform',
+                operatingSystem: 'Web, On-Premise',
+                applicationCategory: 'BusinessApplication',
+                offers: {
+                    '@type': 'Offer',
+                    price: 'Contact for pricing',
+                    priceCurrency: 'INR',
+                },
+                featureList: [
+                    'Air-gapped deployment',
+                    'Multi-agent orchestration',
+                    'Voice AI in 10+ Indian languages',
+                    'WhatsApp Business integration',
+                    'Banking & healthcare compliance',
+                ],
+            },
+        ],
+    };
+
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            </head>
+            <body className={inter.className}>
+                <noscript>
+                    <div style={{
+                        padding: '20px',
+                        textAlign: 'center',
+                        backgroundColor: '#fffbeb',
+                        border: '2px solid #f59e0b',
+                        margin: '20px',
+                        borderRadius: '8px'
+                    }}>
+                        <h1>JavaScript Required</h1>
+                        <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+                        <p><strong>SwanDigitals</strong> - Enterprise AI Platform for India</p>
+                        <p>Contact: +91 7770070762 | Email: Abhishek@swandigitals.com</p>
+                    </div>
+                </noscript>
+                {children}
+            </body>
         </html>
     )
 }

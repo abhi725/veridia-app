@@ -1,137 +1,218 @@
 import type { Metadata } from 'next';
 
-
-import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
-import FAQ from '@/components/ui/FAQ';
-import Link from 'next/link';
-import { Shield, Lock, FileCheck, Clock, Zap, Headphones } from 'lucide-react';
-
 export const metadata: Metadata = {
-    title: 'Banking AI Agents for KYC & Collections | SwanDigitals',
-    description: 'Automate Loan Collections and KYC with on-premise AI agents. 100% data sovereignty for Indian Banks. RBI & DPDP compliant.',
-    keywords: ['AI for Indian Banks', 'KYC Automation Bot', 'Loan Collection AI', 'FinTech Customer Support', 'Banking Chatbot India'],
+    title: 'Banking AI Chatbot India - KYC Automation & Fraud Detection | SwanDigitals',
+    description: 'The deepest conversational AI for Indian Banking. From Video KYC to fraud detection—automate every customer touchpoint while keeping 100% of data in India.',
+    keywords: ['Banking AI Chatbot India', 'KYC Automation', 'Video KYC', 'Banking Fraud Detection', 'RBI Compliant AI', 'DPDP Act Banking'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/banking',
     },
 }
 
+import SiteLayout from '@/components/layout/SiteLayout';
+import Hero from '@/components/ui/Hero';
+import Link from 'next/link';
+
 export default function BankingPage() {
-    const challenges = [
-        { problem: "Strict compliance requirements (PCI DSS, SOX, GDPR)", solution: "Full compliance with all major regulations, certified audits" },
-        { problem: "Customer data must stay on-premise", solution: "True on-premise deployment in your data center, air-gapped option" },
-        { problem: "High support volume during business hours", solution: "24/7 AI handles 90% of queries, instant response times" },
-        { problem: "Complex product inquiries (loans, mortgages, accounts)", solution: "AI trained on your product catalog with accurate, compliant answers" },
-        { problem: "Fraud detection and security concerns", solution: "Real-time fraud alerts, suspicious activity detection, secure handoffs" }
-    ];
-
-    const useCases = [
-        { icon: <Headphones className="w-6 h-6" />, title: "Account Inquiries", desc: "Balance checks, transaction history, account details", stat: "60% of queries" },
-        { icon: <FileCheck className="w-6 h-6" />, title: "Loan Applications", desc: "Pre-qualification, application status, document collection", stat: "40% faster" },
-        { icon: <Lock className="w-6 h-6" />, title: "Card Services", desc: "Block/unblock cards, dispute transactions, limit changes", stat: "24/7 instant" },
-        { icon: <Clock className="w-6 h-6" />, title: "Branch Appointments", desc: "Schedule meetings, find locations, queue management", stat: "80% digital" },
-        { icon: <Zap className="w-6 h-6" />, title: "Quick Transfers", desc: "Initiate transfers, pay bills, set up recurring payments", stat: "Secure & fast" },
-        { icon: <Shield className="w-6 h-6" />, title: "Fraud Alerts", desc: "Suspicious activity notifications, verification workflows", stat: "Real-time" }
-    ];
-
-    const faqItems = [
-        { question: "Is SwanDigitals PCI DSS compliant?", answer: "Yes. We are PCI DSS Level 1 certified, the highest level of payment card security. This means we meet all 12 PCI DSS requirements for handling cardholder data." },
-        { question: "Can we deploy fully on-premise?", answer: "Absolutely. Unlike Yellow.ai which only offers cloud VPCs, we provide true on-premise deployment where your data never leaves your infrastructure. We also support air-gapped environments for maximum security." },
-        { question: "How do you handle sensitive banking data?", answer: "All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We support data masking for PII, role-based access controls, and comprehensive audit logging for compliance." },
-        { question: "What's the typical ROI for banking chatbots?", answer: "Our banking customers see an average 70% reduction in call center volume and $1.2M annual savings. BankSafe Credit Union achieved 93% automation within 30 days of deployment." }
-    ];
-
     return (
         <SiteLayout>
+            {/* Hero Section */}
             <Hero
                 badge="🏦 Banking & Finance"
-                title="PCI DSS Compliant AI for Banking"
-                subtitle="Secure, on-premise AI chatbots for financial institutions. Automate support while meeting strict PCI DSS, SOX, and GDPR requirements."
-                primaryCTA={{ text: "Talk to Banking Expert", href: "/demo" }}
-                secondaryCTA={{ text: "Download Security Whitepaper", href: "/whitepapers" }}
+                title="The Deepest Conversational AI for Indian Banking"
+                subtitle="From Video KYC to fraud detection—automate every customer touchpoint while keeping 100% of data in India."
+                primaryCTA={{ text: "Book a Banking-Specific Demo", href: "/demo" }}
+                secondaryCTA={{ text: "View Case Study", href: "/case-studies" }}
             />
 
-            {/* Stats */}
-            <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            {/* Trust Highlights */}
+            <section className="bg-blue-600 text-white py-6">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">93%</div><div className="text-white/80">Automation Rate</div></div>
-                        <div><div className="text-4xl font-bold">PCI DSS</div><div className="text-white/80">Level 1 Certified</div></div>
-                        <div><div className="text-4xl font-bold">70%</div><div className="text-white/80">Cost Reduction</div></div>
-                        <div><div className="text-4xl font-bold">100%</div><div className="text-white/80">On-Premise Option</div></div>
+                    <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
+                        <div className="flex items-center gap-2">
+                            <span className="text-2xl">🇮🇳</span>
+                            <span>India Data Residency</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="text-2xl">🔒</span>
+                            <span>Bank-Grade Encryption</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="text-2xl">🏦</span>
+                            <span>Built for RBI Guidelines</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Challenges */}
+            {/* Banking-Specific Use Cases */}
             <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Banking Challenges We Solve</h2>
-                    <div className="space-y-4">
-                        {challenges.map((item, i) => (
-                            <div key={i} className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-slate-50 rounded-xl">
-                                <div className="text-red-600 font-medium">❌ {item.problem}</div>
-                                <div className="text-green-600 font-medium">✅ {item.solution}</div>
-                            </div>
-                        ))}
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center mb-12">Automate Every Critical Banking Workflow</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Video KYC */}
+                        <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
+                            <div className="text-5xl mb-4">📹</div>
+                            <h3 className="text-xl font-bold mb-3">Video KYC Automation</h3>
+                            <p className="text-slate-700 mb-4">Reduce onboarding time from 5 days to 20 minutes</p>
+                            <p className="text-sm text-slate-600 mb-4">AI face matching + document verification + liveliness detection</p>
+                            <Link href="/demo" className="text-blue-600 font-semibold hover:text-blue-700">
+                                See Video KYC Demo →
+                            </Link>
+                        </div>
+
+                        {/* Transaction Intelligence */}
+                        <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200 hover:shadow-xl transition-all">
+                            <div className="text-5xl mb-4">💸</div>
+                            <h3 className="text-xl font-bold mb-3">Transaction Intelligence</h3>
+                            <p className="text-slate-700 mb-4">Enable fund transfers and balance checks via WhatsApp</p>
+                            <p className="text-sm text-slate-600">OTP verification + transaction limits + session timeout</p>
+                        </div>
+
+                        {/* Fraud Detection */}
+                        <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl border-2 border-red-200 hover:shadow-xl transition-all">
+                            <div className="text-5xl mb-4">🛡️</div>
+                            <h3 className="text-xl font-bold mb-3">Fraud Detection Guardrails</h3>
+                            <p className="text-slate-700 mb-4">Real-time pattern recognition for suspicious activity</p>
+                            <p className="text-sm text-slate-600">Flags transactions in new geo-locations or unusual amounts</p>
+                        </div>
+
+                        {/* Loan Origination */}
+                        <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border-2 border-purple-200 hover:shadow-xl transition-all">
+                            <div className="text-5xl mb-4">📄</div>
+                            <h3 className="text-xl font-bold mb-3">Loan Origination</h3>
+                            <p className="text-slate-700 mb-4">Pre-qualify loans in 5 minutes via chat</p>
+                            <p className="text-sm text-slate-600">Income verification → Credit score check → Instant eligibility</p>
+                        </div>
+
+                        {/* Card Services */}
+                        <div className="bg-gradient-to-br from-yellow-50 to-amber-50 p-8 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-all">
+                            <div className="text-5xl mb-4">💳</div>
+                            <h3 className="text-xl font-bold mb-3">Card Services</h3>
+                            <p className="text-slate-700 mb-4">Block/unblock cards, dispute charges, request PIN reset</p>
+                        </div>
+
+                        {/* Investment Advisory */}
+                        <div className="bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border-2 border-indigo-200 hover:shadow-xl transition-all">
+                            <div className="text-5xl mb-4">📈</div>
+                            <h3 className="text-xl font-bold mb-3">Investment Advisory</h3>
+                            <p className="text-slate-700 mb-4">Personalized mutual fund and fixed deposit recommendations</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Use Cases */}
+            {/* Banking Integration Ecosystem */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Banking Use Cases</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {useCases.map((uc, i) => (
-                            <div key={i} className="bg-white p-6 rounded-xl shadow-sm">
-                                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
-                                    {uc.icon}
-                                </div>
-                                <h3 className="text-lg font-bold mb-2">{uc.title}</h3>
-                                <p className="text-slate-600 mb-4">{uc.desc}</p>
-                                <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{uc.stat}</span>
-                            </div>
-                        ))}
+                    <h2 className="text-3xl font-bold text-center mb-4">Secure Integration with Core Banking Systems</h2>
+                    <p className="text-center text-slate-600 mb-12">All API calls encrypted and signed with bank certificates</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                        <div className="bg-white p-6 rounded-xl text-center font-semibold shadow-sm">Finacle</div>
+                        <div className="bg-white p-6 rounded-xl text-center font-semibold shadow-sm">Temenos</div>
+                        <div className="bg-white p-6 rounded-xl text-center font-semibold shadow-sm">Oracle FLEXCUBE</div>
+                        <div className="bg-white p-6 rounded-xl text-center font-semibold shadow-sm">TCS BaNCS</div>
+                    </div>
+                    <div className="bg-blue-100 border-2 border-blue-300 rounded-xl p-6 text-center">
+                        <p className="text-blue-900 font-semibold">Meets RBI cybersecurity framework requirements</p>
                     </div>
                 </div>
             </section>
 
-            {/* Case Study */}
+            {/* Featured Case Study */}
             <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-12 rounded-2xl">
-                        <div className="text-sm font-semibold mb-4">CASE STUDY</div>
-                        <h3 className="text-3xl font-bold mb-4">BankSafe Credit Union Achieves 93% Automation</h3>
-                        <p className="text-xl text-white/90 mb-6">
-                            "Full data sovereignty was non-negotiable for us. SwanDigitals's air-gapped deployment met all our compliance requirements while delivering enterprise-grade AI."
-                        </p>
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 bg-white/20 rounded-full"></div>
+                <div className="max-w-6xl mx-auto px-6 lg:px-8">
+                    <div className="bg-gradient-to-br from-slate-900 to-blue-900 text-white p-12 rounded-3xl">
+                        <div className="text-sm font-semibold text-orange-400 mb-4">FEATURED CASE STUDY</div>
+                        <h2 className="text-3xl font-bold mb-6">How [Indian Bank] Achieved 90% Automation in 12 Weeks</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                             <div>
-                                <div className="font-bold text-lg">Robert Kim</div>
-                                <div className="text-white/80">CISO, BankSafe Credit Union</div>
+                                <div className="text-4xl font-bold text-orange-400 mb-2">90%</div>
+                                <div className="text-white/80">of queries automated</div>
+                            </div>
+                            <div>
+                                <div className="text-4xl font-bold text-orange-400 mb-2">$2.1M</div>
+                                <div className="text-white/80">annual savings</div>
+                            </div>
+                            <div>
+                                <div className="text-4xl font-bold text-orange-400 mb-2">92%</div>
+                                <div className="text-white/80">customer satisfaction</div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 gap-4 text-center">
-                            <div><div className="text-2xl font-bold">93%</div><div className="text-white/80 text-sm">Automation</div></div>
-                            <div><div className="text-2xl font-bold">Air-Gapped</div><div className="text-white/80 text-sm">Deployment</div></div>
-                            <div><div className="text-2xl font-bold">100%</div><div className="text-white/80 text-sm">Compliance</div></div>
+                        <p className="text-lg text-white/90 mb-6">
+                            <strong>Challenge:</strong> Manual KYC processes taking 5+ days<br />
+                            <strong>Solution:</strong> Video KYC bot + WhatsApp banking assistant
+                        </p>
+                        <Link href="/case-studies" className="inline-block px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600">
+                            Read Full Case Study →
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Security & Compliance Block */}
+            <section className="py-20 bg-slate-50">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center mb-12">Architected for Banking Regulations</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200">
+                            <h3 className="font-bold text-lg mb-2">🇮🇳 Data Localization</h3>
+                            <p className="text-slate-700">All data stored in Indian data centers</p>
                         </div>
+                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200">
+                            <h3 className="font-bold text-lg mb-2">📋 Audit Trails</h3>
+                            <p className="text-slate-700">Complete transaction logging with 7-year retention</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200">
+                            <h3 className="font-bold text-lg mb-2">✅ Customer Consent</h3>
+                            <p className="text-slate-700">Built-in consent management for DPDP Act</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200">
+                            <h3 className="font-bold text-lg mb-2">🔐 Authentication</h3>
+                            <p className="text-slate-700">Mandatory 2FA + biometric options</p>
+                        </div>
+                    </div>
+                    <div className="mt-8 bg-yellow-50 border-2 border-yellow-300 rounded-xl p-6">
+                        <p className="text-sm text-slate-700">
+                            <strong>Note:</strong> Designed to meet RBI cybersecurity framework requirements.
+                            Compliance certification roadmap available on request.
+                        </p>
+                    </div>
+                    <div className="text-center mt-6">
+                        <Link href="/platform/security" className="text-blue-600 font-semibold hover:underline">
+                            Request Banking Security Architecture Document →
+                        </Link>
                     </div>
                 </div>
             </section>
 
             {/* FAQ */}
-            <FAQ items={faqItems} />
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center mb-12">Banking-Specific Questions</h2>
+                    <div className="space-y-6">
+                        <details className="bg-slate-50 p-6 rounded-xl">
+                            <summary className="font-bold text-lg cursor-pointer">Is it safe to do financial transactions via chatbot?</summary>
+                            <p className="mt-4 text-slate-700">Yes, with OTP + biometric verification for all high-value transactions.</p>
+                        </details>
+                        <details className="bg-slate-50 p-6 rounded-xl">
+                            <summary className="font-bold text-lg cursor-pointer">What happens if the bot makes a mistake?</summary>
+                            <p className="mt-4 text-slate-700">Human verification is mandatory for high-value transactions. All actions are logged and reversible.</p>
+                        </details>
+                        <details className="bg-slate-50 p-6 rounded-xl">
+                            <summary className="font-bold text-lg cursor-pointer">Can it work in regional languages?</summary>
+                            <p className="mt-4 text-slate-700">Yes, supports 12 Indian languages including Hindi, Tamil, Telugu, Bengali, and more.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
 
-            {/* CTA */}
-            <section className="py-20 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
+            {/* Final CTA */}
+            <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Ready for Compliant AI?</h2>
-                    <p className="text-xl text-white/80 mb-8">Talk to our banking specialists about your compliance requirements</p>
-                    <Link href="/demo" className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                        Schedule Banking Demo
+                    <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Banking Experience?</h2>
+                    <Link href="/demo" className="inline-block px-8 py-4 bg-white text-slate-900 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
+                        Book a Banking-Specific Demo
                     </Link>
                 </div>
             </section>

@@ -100,17 +100,7 @@ export default function HomePage() {
                 secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
 
-            {/* Trust Bar */}
-            <section className="py-12 bg-white border-y border-slate-200">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <p className="text-center text-slate-600 mb-8">Trusted by leading enterprises worldwide</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-50 grayscale">
-                        {['Acme Corp', 'GlobalTech', 'FinanceOne', 'HealthPlus', 'RetailPro', 'BankSafe'].map((company, i) => (
-                            <div key={i} className="text-center text-xl font-bold text-slate-400">{company}</div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+
 
             {/* Features Grid */}
             <FeatureGrid features={features} />
@@ -139,25 +129,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Awards & Recognition Section - NEW */}
-            <section className="py-16 bg-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center text-slate-900 mb-4">Industry Recognition</h2>
-                    <p className="text-center text-slate-600 mb-12">Recognized by leading analysts and publications</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        {awards.map((award, i) => (
-                            <div key={i} className="text-center p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200">
-                                <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                                    🏆
-                                </div>
-                                <div className="font-bold text-slate-900">{award.title}</div>
-                                <div className="text-sm text-slate-600">{award.source}</div>
-                                <div className="text-xs text-orange-600 mt-1">{award.year}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+
 
             {/* Use Cases Tabs - NEW */}
             <section className="py-20 bg-slate-50">
@@ -205,52 +177,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Testimonials Carousel - ENHANCED */}
-            <section className="py-20 bg-white">
-                <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">What Our Customers Say</h2>
 
-                    <div className="relative">
-                        <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 md:p-12">
-                            <div className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 leading-tight">
-                                "{testimonials[testimonialIndex].quote}"
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
-                                <div>
-                                    <div className="font-bold text-slate-900">{testimonials[testimonialIndex].name}</div>
-                                    <div className="text-slate-600">{testimonials[testimonialIndex].role}</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Navigation */}
-                        <div className="flex justify-center gap-4 mt-8">
-                            <button
-                                onClick={() => setTestimonialIndex(testimonialIndex === 0 ? testimonials.length - 1 : testimonialIndex - 1)}
-                                className="w-12 h-12 rounded-full bg-slate-200 hover:bg-slate-300 flex items-center justify-center transition-colors"
-                            >
-                                <ChevronLeft className="w-6 h-6" />
-                            </button>
-                            <div className="flex items-center gap-2">
-                                {testimonials.map((_, i) => (
-                                    <button
-                                        key={i}
-                                        onClick={() => setTestimonialIndex(i)}
-                                        className={`w-3 h-3 rounded-full transition-colors ${i === testimonialIndex ? 'bg-orange-500' : 'bg-slate-300'}`}
-                                    />
-                                ))}
-                            </div>
-                            <button
-                                onClick={() => setTestimonialIndex(testimonialIndex === testimonials.length - 1 ? 0 : testimonialIndex + 1)}
-                                className="w-12 h-12 rounded-full bg-slate-200 hover:bg-slate-300 flex items-center justify-center transition-colors"
-                            >
-                                <ChevronRight className="w-6 h-6" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* Why SwanDigitals */}
             <section className="py-20 bg-slate-50">
