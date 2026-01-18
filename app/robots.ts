@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://SwanDigitals.com/sitemap.xml',
+        sitemap: 'https://swandigitals.com/sitemap.xml',
     };
 }

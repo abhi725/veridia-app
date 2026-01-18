@@ -10,6 +10,8 @@ import FAQ from '@/components/ui/FAQ';
 import IntegrationCloud from '@/components/ui/IntegrationCloud';
 import { useState } from 'react';
 
+import JsonLd from '@/components/seo/JsonLd';
+
 export default function HomePage() {
     const [activeUseCase, setActiveUseCase] = useState(0);
     const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -88,6 +90,7 @@ export default function HomePage() {
 
     return (
         <SiteLayout>
+            <JsonLd />
             {/* Hero Section */}
             <Hero
                 badge="🏤 Trusted by 500+ Enterprise Companies"
