@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact SwanDigitals | Enterprise AI Sales & Support',
-    description: 'Get in touch with SwanDigitals. Schedule a demo, contact 24/7 enterprise support, or visit our offices in San Francisco, London, and Singapore.',
-    keywords: ['Contact SwanDigitals', 'AI Chatbot Support', 'Enterprise Sales', 'Book AI Demo', 'Customer Service Contact'],
+    title: 'Contact SwanDigitals Pune | +91 7770070762 | Support',
+    description: 'Reach SwanDigitals in Pune, India. Email: support@swandigitals.com | Phone: +91 7770070762. Book a demo or discuss your AI chatbot project.',
+    keywords: ['Contact SwanDigitals', 'Pune AI Company Contact', 'AI Chatbot Support India'],
     alternates: {
         canonical: 'https://swandigitals.com/contact',
     },

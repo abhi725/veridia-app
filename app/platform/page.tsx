@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Enterprise AI Orchestration Platform | SwanDigitals',
-    description: 'Build, deploy, and manage AI agents with 100% data control. On-premise or cloud deployment — we never collect your data. Built for Banking, Healthcare, and Government.',
-    keywords: ['Enterprise AI Orchestration Platform', 'Multi-Agent Orchestration', 'On-premise AI Platform', 'Sovereign AI', 'Air-Gapped AI', 'Zero Data Collection'],
+    title: 'AI Chatbot Platform India | Low-Code + On-Premise',
+    description: 'SwanDigitals AI platform: visual flow builder, voice AI, WhatsApp API, analytics. Cloud + on-premise. 100% data sovereignty for Indian enterprises.',
+    keywords: ['AI Platform India', 'Chatbot Platform', 'On-Premise AI', 'Low-Code Chatbot', 'Enterprise AI India'],
     alternates: {
         canonical: 'https://swandigitals.com/platform',
     },
