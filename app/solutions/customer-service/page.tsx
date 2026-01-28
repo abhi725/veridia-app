@@ -19,19 +19,19 @@ export const metadata: Metadata = {
 
 export default function CustomerServicePage() {
     const benefits = [
-        { icon: <Headphones className="w-6 h-6" />, title: "90% Ticket Automation", description: "Resolve 9 out of 10 customer queries without human intervention using AI-powered responses." },
-        { icon: <TrendingUp className="w-6 h-6" />, title: "40% CSAT Increase", description: "Faster resolution times and 24/7 availability dramatically improve customer satisfaction." },
+        { icon: <Headphones className="w-6 h-6" />, title: "Up to 90% Ticket Automation", description: "Resolve most customer queries without human intervention using AI-powered responses." },
+        { icon: <TrendingUp className="w-6 h-6" />, title: "Improved CSAT", description: "Faster resolution times and 24/7 availability typically improve customer satisfaction by 30-50%." },
         { icon: <Clock className="w-6 h-6" />, title: "< 2 Second Response", description: "Instant responses powered by edge computing and optimized AI models." },
         { icon: <Users className="w-6 h-6" />, title: "Seamless Handoff", description: "Smart routing transfers complex issues to the right agent with full context." },
-        { icon: <Zap className="w-6 h-6" />, title: "60% Cost Reduction", description: "Slash operational costs by automating repetitive queries and reducing agent workload." },
+        { icon: <Zap className="w-6 h-6" />, title: "Significant Cost Savings", description: "Reduce operational costs by automating repetitive queries and lowering agent workload." },
         { icon: <BarChart3 className="w-6 h-6" />, title: "Real-Time Analytics", description: "Track resolution rates, sentiment, and identify improvement opportunities." }
     ];
 
     const faqItems = [
         { question: "How does SwanDigitals handle complex queries?", answer: "Our AI uses multi-turn conversation management and context retention to handle complex queries. When needed, it seamlessly hands off to human agents with full conversation history." },
         { question: "Can it integrate with our existing helpdesk?", answer: "Yes! We have pre-built integrations with Zendesk, Freshdesk, Salesforce Service Cloud, Intercom, and 50+ other platforms. Custom integrations are also available." },
-        { question: "What languages are supported?", answer: "SwanDigitals supports 100+ languages out of the box, with automatic language detection and culturally-aware responses." },
-        { question: "How long does implementation take?", answer: "Most customer service deployments go live in 2-4 weeks, including training and integration. Compare this to 3-6 months with Kore.ai." }
+        { question: "What languages are supported?", answer: "SwanDigitals supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU — not just translation." },
+        { question: "How long does implementation take?", answer: "Most customer service deployments go live in 2-4 weeks, including training and integration." }
     ];
 
     return (
@@ -49,16 +49,16 @@ export default function CustomerServicePage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">90%</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">Up to 90%</div>
                             <div className="text-slate-600">Automation Rate</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">60%</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">30-60%</div>
                             <div className="text-slate-600">Cost Reduction</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">40%</div>
-                            <div className="text-slate-600">CSAT Increase</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">30-50%</div>
+                            <div className="text-slate-600">CSAT Improvement</div>
                         </div>
                         <div>
                             <div className="text-4xl font-bold text-orange-600 mb-2">&lt;2s</div>
@@ -93,25 +93,30 @@ export default function CustomerServicePage() {
             {/* Benefits Grid */}
             <FeatureGrid features={benefits} />
 
-            {/* Case Study Embed */}
+            {/* What Customer Service Teams Typically Automate */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="bg-white p-8 rounded-2xl shadow-lg">
-                        <div className="text-sm text-orange-600 font-semibold mb-2">CASE STUDY</div>
-                        <h3 className="text-2xl font-bold mb-4">FinanceOne Achieves 85% Automation in 30 Days</h3>
-                        <p className="text-lg text-slate-600 mb-6">
-                            "We switched from Kore.ai after 6 months of struggling with implementation. SwanDigitals was live in 3 weeks and hit 85% automation rate within the first month. Our CSAT jumped from 72% to 91%."
-                        </p>
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
-                            <div>
-                                <div className="font-bold">Sarah Johnson</div>
-                                <div className="text-slate-600">CTO, FinanceOne</div>
-                            </div>
+                        <div className="text-sm text-orange-600 font-semibold mb-2">WHAT TEAMS AUTOMATE</div>
+                        <h3 className="text-2xl font-bold mb-4">Common Use Cases for Customer Service AI</h3>
+                        <div className="grid md:grid-cols-2 gap-4 mb-6">
+                            {[
+                                "Order status and tracking inquiries",
+                                "Password resets and account access",
+                                "FAQ and product information",
+                                "Refund and return requests",
+                                "Appointment scheduling",
+                                "Billing and payment questions"
+                            ].map((useCase, i) => (
+                                <div key={i} className="flex items-center gap-2 text-slate-700">
+                                    <span className="text-green-500">✓</span>
+                                    {useCase}
+                                </div>
+                            ))}
                         </div>
-                        <Link href="/case-studies" className="inline-block mt-6 text-orange-600 font-semibold hover:underline">
-                            Read full case study →
-                        </Link>
+                        <p className="text-slate-600 text-sm">
+                            Most teams see 60-80% automation within the first 3 months. Results vary based on query complexity and training data quality.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -121,10 +126,24 @@ export default function CustomerServicePage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-4">Works With Your Existing Tools</h2>
                     <p className="text-xl text-slate-600 mb-12">Pre-built integrations with leading helpdesk and CRM platforms</p>
-                    <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
-                        {['Zendesk 🎫', 'Freshdesk 🟢', 'Salesforce ☁️', 'Intercom 💬', 'HubSpot 🔶', 'ServiceNow 🔧'].map((tool, i) => (
-                            <div key={i} className="p-4 bg-slate-50 rounded-lg text-center font-medium">
-                                {tool}
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                        {[
+                            { name: 'Zendesk', image: '/integrations/zendesk.png' },
+                            { name: 'Freshdesk', image: '/integrations/freshdesk.png' },
+                            { name: 'Salesforce', image: '/integrations/salesforce.png' },
+                            { name: 'Intercom', image: '/integrations/intercom_new.png' },
+                            { name: 'HubSpot', image: '/integrations/hubspot.png' },
+                            { name: 'ServiceNow', image: '/integrations/servicenow.png' }
+                        ].map((tool, i) => (
+                            <div key={i} className="p-4 bg-white border border-slate-200 shadow-sm rounded-xl flex flex-col items-center justify-center gap-2 h-24 hover:shadow-md transition-all">
+                                <div className="h-10 w-full flex items-center justify-center">
+                                    <img
+                                        src={tool.image}
+                                        alt={tool.name}
+                                        className="max-h-full max-w-full object-contain"
+                                    />
+                                </div>
+                                <div className="text-xs font-medium text-slate-600">{tool.name}</div>
                             </div>
                         ))}
                     </div>

@@ -24,7 +24,7 @@ export default function VsKorePage() {
         { feature: "No-Code Builder", SwanDigitals: true, competitor: false },
         { feature: "Industry Solutions", SwanDigitals: "General + Custom", competitor: "BankAssist, HealthAssist" },
         { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
-        { feature: "Multi-Language Support", SwanDigitals: "100+ languages", competitor: "60+ languages" },
+        { feature: "Multi-Language Support", SwanDigitals: "22 Indian + 8 global", competitor: "60+ languages" },
         { feature: "API Access", SwanDigitals: true, competitor: true },
         { feature: "Custom Integrations", SwanDigitals: "Unlimited", competitor: "Limited" },
         { feature: "Training Required", SwanDigitals: "1-2 days", competitor: "1-2 weeks" },
@@ -87,9 +87,9 @@ export default function VsKorePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">⚡ 10x Faster Deployment</h3>
                             <p className="text-lg text-slate-700">
-                                "Kore.ai took us 5 months to implement. When we added a new use case, we switched to SwanDigitals and went live in just 3 weeks."
+                                Kore.ai's enterprise focus means 3-6 month implementations. SwanDigitals is designed for speed —
+                                typical deployments complete in 1-4 weeks, letting you start seeing ROI faster.
                             </p>
-                            <p className="text-slate-600 mt-2">— Sarah Johnson, CTO, FinanceOne</p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 Right-Sized for Mid-Market</h3>

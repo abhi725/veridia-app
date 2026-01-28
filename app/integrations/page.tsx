@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
+import IntegrationCard from '@/components/ui/IntegrationCard';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -19,8 +20,16 @@ export default function IntegrationsPage() {
             icon: "📊",
             color: "blue",
             integrations: [
-                "Salesforce", "HubSpot", "Zoho CRM", "Microsoft Dynamics 365", "Pipedrive",
-                "Freshsales", "SugarCRM", "Insightly", "Nimble", "Copper"
+                { name: "Salesforce", image: "/integrations/salesforce.png" },
+                { name: "HubSpot", image: "/integrations/hubspot.png" },
+                { name: "Zoho CRM", image: "/integrations/zoho.png" },
+                { name: "Microsoft Dynamics 365", image: "/integrations/dynamics-365.png" },
+                { name: "Pipedrive", image: "/integrations/pipedrive.png" },
+                { name: "Freshsales", image: "/integrations/freshsales.png" },
+                { name: "SugarCRM", image: "/integrations/sugarcrm.png" },
+                { name: "Insightly", image: "/integrations/insightly.png" },
+                { name: "Nimble", image: "/integrations/nimble.png" },
+                { name: "Copper", image: "/integrations/copper.png" }
             ]
         },
         {
@@ -28,8 +37,15 @@ export default function IntegrationsPage() {
             icon: "🏦",
             color: "green",
             integrations: [
-                "Finacle", "Temenos", "Oracle FLEXCUBE", "TCS BaNCS", "FIS",
-                "Fiserv", "Jack Henry", "Infosys Finacle", "Mambu", "Thought Machine"
+                { name: "Infosys Finacle", image: "/integrations/infosys-finacle.png" },
+                { name: "Temenos", image: "/integrations/temenos.png" },
+                { name: "Oracle FLEXCUBE", image: "/integrations/oracle-flexcube.png" },
+                { name: "TCS BaNCS", image: "/integrations/tcs-bancs.png" },
+                { name: "FIS", image: "/integrations/fis.png" },
+                { name: "Fiserv", image: "/integrations/fiserv.png" },
+                { name: "Jack Henry", image: "/integrations/jack-henry.png" },
+                { name: "Mambu", image: "/integrations/mambu.png" },
+                { name: "Thought Machine", image: "/integrations/thought-machine.png" }
             ]
         },
         {
@@ -37,8 +53,16 @@ export default function IntegrationsPage() {
             icon: "🔧",
             color: "purple",
             integrations: [
-                "ServiceNow", "Jira Service Desk", "Zendesk", "Freshdesk", "Zoho Desk",
-                "ManageEngine ServiceDesk Plus", "BMC Helix", "Ivanti", "ConnectWise", "SysAid"
+                { name: "ServiceNow", image: "/integrations/servicenow.png" },
+                { name: "Jira Service Desk", image: "/integrations/jira-service-desk.png" },
+                { name: "Zendesk", image: "/integrations/zendesk.png" },
+                { name: "Freshdesk", image: "/integrations/freshdesk.png" },
+                { name: "Zoho Desk", image: "/integrations/zoho-desk.png" },
+                { name: "ManageEngine", image: "/integrations/manageengine.png" },
+                { name: "BMC Helix", image: "/integrations/bmc-helix.png" },
+                { name: "Ivanti", image: "/integrations/ivanti.png" },
+                { name: "ConnectWise", image: "/integrations/connectwise.png" },
+                { name: "SysAid", image: "/integrations/sysaid.png" }
             ]
         },
         {
@@ -46,8 +70,16 @@ export default function IntegrationsPage() {
             icon: "👥",
             color: "pink",
             integrations: [
-                "Workday", "SAP SuccessFactors", "BambooHR", "ADP", "Namely",
-                "Gusto", "Zenefits", "Oracle HCM Cloud", "UltiPro", "Paylocity"
+                { name: "Workday", image: "/integrations/workday.png" },
+                { name: "SAP SuccessFactors", image: "/integrations/sap-successfactors.png" },
+                { name: "BambooHR", image: "/integrations/bamboohr.png" },
+                { name: "ADP", image: "/integrations/adp.png" },
+                { name: "Namely", image: "/integrations/namely.png" },
+                { name: "Gusto", image: "/integrations/gusto.png" },
+                { name: "Zenefits", image: "/integrations/zenefits.png" },
+                { name: "Oracle HCM", image: "/integrations/oracle-hcm.png" },
+                { name: "UltiPro", image: "/integrations/ultipro.png" },
+                { name: "Paylocity", image: "/integrations/paylocity.png" }
             ]
         },
         {
@@ -55,8 +87,16 @@ export default function IntegrationsPage() {
             icon: "🛒",
             color: "orange",
             integrations: [
-                "Shopify", "WooCommerce", "Magento", "BigCommerce", "Wix",
-                "PrestaShop", "OpenCart", "Volusion", "Squarespace", "3dcart"
+                { name: "Shopify", image: "/integrations/shopify.png" },
+                { name: "WooCommerce", image: "/integrations/woocommerce.png" },
+                { name: "Magento", image: "/integrations/magento.png" },
+                { name: "BigCommerce", image: "/integrations/bigcommerce.png" },
+                { name: "Wix", image: "/integrations/wix.png" },
+                { name: "PrestaShop", image: "/integrations/prestashop.png" },
+                { name: "OpenCart", image: "/integrations/opencart.png" },
+                { name: "Volusion", image: "/integrations/volusion.png" },
+                { name: "Squarespace", image: "/integrations/squarespace.png" },
+                { name: "3dcart", image: "/integrations/3dcart.png" }
             ]
         },
         {
@@ -64,8 +104,16 @@ export default function IntegrationsPage() {
             icon: "💬",
             color: "indigo",
             integrations: [
-                "WhatsApp Business API", "Slack", "Microsoft Teams", "Discord", "Telegram",
-                "Facebook Messenger", "Instagram DM", "Twitter DM", "LINE", "WeChat"
+                { name: "WhatsApp", image: "/integrations/whatsapp.png" },
+                { name: "Slack", image: "/integrations/slack.png" },
+                { name: "Microsoft Teams", image: "/integrations/microsoft-teams.png" },
+                { name: "Discord", image: "/integrations/discord.png" },
+                { name: "Telegram", image: "/integrations/telegram.png" },
+                { name: "Messenger", image: "/integrations/messenger.png" },
+                { name: "Instagram", image: "/integrations/instagram.png" },
+                { name: "Twitter", image: "/integrations/twitter.png" },
+                { name: "LINE", image: "/integrations/line.png" },
+                { name: "WeChat", image: "/integrations/wechat.png" }
             ]
         },
         {
@@ -73,8 +121,16 @@ export default function IntegrationsPage() {
             icon: "💳",
             color: "teal",
             integrations: [
-                "Stripe", "Razorpay", "PayPal", "Square", "Paytm",
-                "PhonePe", "Google Pay", "CCAvenue", "Instamojo", "PayU"
+                { name: "Stripe", image: "/integrations/stripe.png" },
+                { name: "Razorpay", image: "/integrations/razorpay.png" },
+                { name: "PayPal", image: "/integrations/paypal.png" },
+                { name: "Square", image: "/integrations/square.png" },
+                { name: "Paytm", image: "/integrations/paytm.png" },
+                { name: "PhonePe", image: "/integrations/phonepe.png" },
+                { name: "Google Pay", image: "/integrations/google-pay.png" },
+                { name: "CCAvenue", image: "/integrations/ccavenue.png" },
+                { name: "Instamojo", image: "/integrations/instamojo.png" },
+                { name: "PayU", image: "/integrations/payu.png" }
             ]
         },
         {
@@ -82,8 +138,16 @@ export default function IntegrationsPage() {
             icon: "📧",
             color: "red",
             integrations: [
-                "Mailchimp", "Marketo", "Pardot", "ActiveCampaign", "Constant Contact",
-                "SendGrid", "Campaign Monitor", "GetResponse", "Drip", "ConvertKit"
+                { name: "Mailchimp", image: "/integrations/mailchimp.png" },
+                { name: "Marketo", image: "/integrations/marketo.png" },
+                { name: "Pardot", image: "/integrations/pardot.png" },
+                { name: "ActiveCampaign", image: "/integrations/activecampaign.png" },
+                { name: "Constant Contact", image: "/integrations/constant-contact.png" },
+                { name: "SendGrid", image: "/integrations/sendgrid.png" },
+                { name: "Campaign Monitor", image: "/integrations/campaign-monitor.png" },
+                { name: "GetResponse", image: "/integrations/getresponse.png" },
+                { name: "Drip", image: "/integrations/drip.png" },
+                { name: "ConvertKit", image: "/integrations/convertkit.png" }
             ]
         },
         {
@@ -91,17 +155,16 @@ export default function IntegrationsPage() {
             icon: "📈",
             color: "yellow",
             integrations: [
-                "Google Analytics", "Mixpanel", "Amplitude", "Segment", "Heap",
-                "Pendo", "Hotjar", "FullStory", "Kissmetrics", "Matomo"
-            ]
-        },
-        {
-            category: "Cloud Storage",
-            icon: "☁️",
-            color: "cyan",
-            integrations: [
-                "Google Drive", "Dropbox", "OneDrive", "Box", "Amazon S3",
-                "iCloud", "pCloud", "Sync.com", "Tresorit", "MEGA"
+                { name: "Google Analytics", image: "/integrations/google-analytics.png" },
+                { name: "Mixpanel", image: "/integrations/mixpanel.png" },
+                { name: "Amplitude", image: "/integrations/amplitude.png" },
+                { name: "Segment", image: "/integrations/segment.png" },
+                { name: "Heap", image: "/integrations/heap.png" },
+                { name: "Pendo", image: "/integrations/pendo.png" },
+                { name: "Hotjar", image: "/integrations/hotjar.png" },
+                { name: "FullStory", image: "/integrations/fullstory.png" },
+                { name: "Kissmetrics", image: "/integrations/kissmetrics.png" },
+                { name: "Matomo", image: "/integrations/matomo.png" }
             ]
         },
         {
@@ -109,8 +172,16 @@ export default function IntegrationsPage() {
             icon: "🏢",
             color: "slate",
             integrations: [
-                "SAP ERP", "Oracle ERP Cloud", "Microsoft Dynamics ERP", "NetSuite", "Odoo",
-                "Sage Intacct", "Epicor", "Infor", "IFS", "Acumatica"
+                { name: "SAP ERP", image: "/integrations/sap-erp.png" },
+                { name: "Oracle ERP", image: "/integrations/oracle-erp.png" },
+                { name: "Microsoft Dynamics", image: "/integrations/microsoft-dynamics.png" },
+                { name: "NetSuite", image: "/integrations/netsuite.png" },
+                { name: "Odoo", image: "/integrations/odoo.png" },
+                { name: "Sage Intacct", image: "/integrations/sage-intacct.png" },
+                { name: "Epicor", image: "/integrations/epicor.png" },
+                { name: "Infor", image: "/integrations/infor.png" },
+                { name: "IFS", image: "/integrations/ifs.png" },
+                { name: "Acumatica", image: "/integrations/acumatica.png" }
             ]
         },
         {
@@ -118,8 +189,16 @@ export default function IntegrationsPage() {
             icon: "⚕️",
             color: "emerald",
             integrations: [
-                "Epic EHR", "Cerner", "Allscripts", "Meditech", "Athenahealth",
-                "eClinicalWorks", "NextGen Healthcare", "Practice Fusion", "Kareo", "CureMD"
+                { name: "Epic EHR", image: "/integrations/epic-ehr.png" },
+                { name: "Cerner", image: "/integrations/cerner.png" },
+                { name: "Allscripts", image: "/integrations/allscripts.png" },
+                { name: "Meditech", image: "/integrations/meditech.png" },
+                { name: "Athenahealth", image: "/integrations/athenahealth.png" },
+                { name: "eClinicalWorks", image: "/integrations/eclinicalworks.png" },
+                { name: "NextGen", image: "/integrations/nextgen.png" },
+                { name: "Practice Fusion", image: "/integrations/practice-fusion.png" },
+                { name: "Kareo", image: "/integrations/kareo.png" },
+                { name: "CureMD", image: "/integrations/curemd.png" }
             ]
         },
         {
@@ -127,8 +206,16 @@ export default function IntegrationsPage() {
             icon: "📹",
             color: "violet",
             integrations: [
-                "Zoom", "Microsoft Teams", "Google Meet", "Cisco Webex", "GoToMeeting",
-                "BlueJeans", "Whereby", "Jitsi", "Skype", "8x8"
+                { name: "Zoom", image: "/integrations/zoom.png" },
+                { name: "MS Teams", image: "/integrations/ms-teams.png" },
+                { name: "Google Meet", image: "/integrations/google-meet.png" },
+                { name: "Webex", image: "/integrations/webex.png" },
+                { name: "GoToMeeting", image: "/integrations/gotomeeting.png" },
+                { name: "BlueJeans", image: "/integrations/bluejeans.png" },
+                { name: "Whereby", image: "/integrations/whereby.png" },
+                { name: "Jitsi", image: "/integrations/jitsi.png" },
+                { name: "Skype", image: "/integrations/skype.png" },
+                { name: "8x8", image: "/integrations/8x8.png" }
             ]
         },
         {
@@ -136,8 +223,16 @@ export default function IntegrationsPage() {
             icon: "📋",
             color: "lime",
             integrations: [
-                "Asana", "Trello", "Monday.com", "ClickUp", "Basecamp",
-                "Wrike", "Smartsheet", "Notion", "Airtable", "Jira"
+                { name: "Asana", image: "/integrations/asana.png" },
+                { name: "Trello", image: "/integrations/trello.png" },
+                { name: "Monday.com", image: "/integrations/monday.png" },
+                { name: "ClickUp", image: "/integrations/clickup.png" },
+                { name: "Basecamp", image: "/integrations/basecamp.png" },
+                { name: "Wrike", image: "/integrations/wrike.png" },
+                { name: "Smartsheet", image: "/integrations/smartsheet.png" },
+                { name: "Notion", image: "/integrations/notion.png" },
+                { name: "Airtable", image: "/integrations/airtable.png" },
+                { name: "Jira", image: "/integrations/jira.png" }
             ]
         }
     ];
@@ -181,7 +276,7 @@ export default function IntegrationsPage() {
                             <div className="text-slate-600">Pre-built Integrations</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">14</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">13</div>
                             <div className="text-slate-600">Categories</div>
                         </div>
                         <div>
@@ -204,7 +299,7 @@ export default function IntegrationsPage() {
                         {integrationCategories.map((cat, index) => {
                             const colors = getColorClasses(cat.color);
                             return (
-                                <div key={index} className={`p-8 rounded-2xl border-2 ${colors.border} ${colors.bg}`}>
+                                <div key={index} className={`p-8 rounded-2xl border ${colors.border} ${colors.bg}`}>
                                     <div className="flex items-center gap-3 mb-6">
                                         <span className="text-4xl">{cat.icon}</span>
                                         <h3 className={`text-2xl font-bold ${colors.text}`}>{cat.category}</h3>
@@ -213,10 +308,8 @@ export default function IntegrationsPage() {
                                         </span>
                                     </div>
                                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                                        {cat.integrations.map((integration, i) => (
-                                            <div key={i} className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center font-medium text-slate-700 hover:shadow-md transition-all">
-                                                {integration}
-                                            </div>
+                                        {cat.integrations.map((integration: any, i) => (
+                                            <IntegrationCard key={i} integration={integration} />
                                         ))}
                                     </div>
                                 </div>

@@ -12,7 +12,7 @@ export default function AnnouncementBar() {
     return (
         <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 px-4 relative">
             <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 text-sm">
-                <span className="font-semibold">New: Voice AI now available in 10+ Indian languages</span>
+                <span className="font-semibold">New: Voice AI in Hindi, Tamil, Telugu, Bengali, Marathi + English</span>
                 <Link href="/contact" className="underline hover:no-underline">
                     Book a Demo →
                 </Link>

@@ -18,12 +18,12 @@ export const metadata: Metadata = {
 
 export default function HealthcarePage() {
     const useCases = [
-        { icon: <Calendar className="w-6 h-6" />, title: "Appointment Scheduling", desc: "Book, reschedule, and cancel appointments with automated reminders", stat: "60% less no-shows" },
-        { icon: <FileText className="w-6 h-6" />, title: "Patient Intake", desc: "Pre-visit questionnaires, insurance verification, consent forms", stat: "70% faster intake" },
+        { icon: <Calendar className="w-6 h-6" />, title: "Appointment Scheduling", desc: "Book, reschedule, and cancel appointments with automated reminders", stat: "Reduces no-shows" },
+        { icon: <FileText className="w-6 h-6" />, title: "Patient Intake", desc: "Pre-visit questionnaires, insurance verification, consent forms", stat: "Faster check-in" },
         { icon: <Stethoscope className="w-6 h-6" />, title: "Symptom Checker", desc: "AI-guided symptom assessment with triage recommendations", stat: "24/7 available" },
-        { icon: <Heart className="w-6 h-6" />, title: "Post-Care Follow-up", desc: "Medication reminders, recovery check-ins, care instructions", stat: "40% better adherence" },
-        { icon: <Shield className="w-6 h-6" />, title: "Insurance Queries", desc: "Coverage verification, claims status, billing questions", stat: "90% self-service" },
-        { icon: <Clock className="w-6 h-6" />, title: "Wait Time Updates", desc: "Real-time queue information, estimated wait times", stat: "Higher satisfaction" }
+        { icon: <Heart className="w-6 h-6" />, title: "Post-Care Follow-up", desc: "Medication reminders, recovery check-ins, care instructions", stat: "Better adherence" },
+        { icon: <Shield className="w-6 h-6" />, title: "Insurance Queries", desc: "Coverage verification, claims status, billing questions", stat: "High self-service" },
+        { icon: <Clock className="w-6 h-6" />, title: "Wait Time Updates", desc: "Real-time queue information, estimated wait times", stat: "Better experience" }
     ];
 
     const complianceFeatures = [
@@ -57,8 +57,8 @@ export default function HealthcarePage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div><div className="text-4xl font-bold">HIPAA</div><div className="text-white/80">Fully Compliant</div></div>
-                        <div><div className="text-4xl font-bold">91%</div><div className="text-white/80">Automation Rate</div></div>
-                        <div><div className="text-4xl font-bold">60%</div><div className="text-white/80">Less No-Shows</div></div>
+                        <div><div className="text-4xl font-bold">Up to 85%</div><div className="text-white/80">Automation Rate</div></div>
+                        <div><div className="text-4xl font-bold">Fewer</div><div className="text-white/80">No-Shows</div></div>
                         <div><div className="text-4xl font-bold">24/7</div><div className="text-white/80">Patient Access</div></div>
                     </div>
                 </div>
@@ -101,27 +101,30 @@ export default function HealthcarePage() {
                 </div>
             </section>
 
-            {/* Case Study */}
+            {/* What Healthcare Teams Automate */}
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="bg-gradient-to-br from-green-600 to-teal-600 text-white p-12 rounded-2xl">
-                        <div className="text-sm font-semibold mb-4">CASE STUDY</div>
-                        <h3 className="text-3xl font-bold mb-4">HealthPlus Reduces No-Shows by 60%</h3>
-                        <p className="text-xl text-white/90 mb-6">
-                            "HIPAA compliance was critical. SwanDigitals's on-premise deployment met all our requirements while dramatically improving patient engagement and reducing missed appointments."
+                        <div className="text-sm font-semibold mb-4">WHAT HEALTHCARE TEAMS AUTOMATE</div>
+                        <h3 className="text-3xl font-bold mb-6">Common Healthcare Workflows</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            {[
+                                "Appointment booking and reminders",
+                                "Pre-visit intake forms",
+                                "Prescription refill requests",
+                                "Insurance verification",
+                                "Post-discharge follow-ups",
+                                "Lab result notifications"
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-center gap-3 text-white/90">
+                                    <span className="text-green-300">✓</span>
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-white/70 text-sm">
+                            Typical results: 50-70% reduction in administrative calls within 3 months. Results vary by implementation.
                         </p>
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 bg-white/20 rounded-full"></div>
-                            <div>
-                                <div className="font-bold text-lg">Dr. Michael Lee</div>
-                                <div className="text-white/80">COO, HealthPlus Medical Group</div>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-3 gap-4 text-center">
-                            <div><div className="text-2xl font-bold">91%</div><div className="text-white/80 text-sm">Automation</div></div>
-                            <div><div className="text-2xl font-bold">$890K</div><div className="text-white/80 text-sm">Saved/Year</div></div>
-                            <div><div className="text-2xl font-bold">4 weeks</div><div className="text-white/80 text-sm">Deployment</div></div>
-                        </div>
                     </div>
                 </div>
             </section>

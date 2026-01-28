@@ -72,7 +72,7 @@ export default function RootLayout({
                 description: 'Enterprise AI Platform for Sovereign Data - On-premise chatbots and voice agents for Indian businesses',
                 address: {
                     '@type': 'PostalAddress',
-                    streetAddress: 'Tapodham, Warje',
+                    streetAddress: 'B31 flat, Aaykar society, Kothrud',
                     addressLocality: 'Pune',
                     postalCode: '411038',
                     addressRegion: 'Maharashtra',
@@ -82,7 +82,7 @@ export default function RootLayout({
                     '@type': 'ContactPoint',
                     telephone: '+91-7770070762',
                     contactType: 'customer service',
-                    email: 'Abhishek@swandigitals.com',
+                    email: 'support@swandigitals.com',
                     areaServed: 'IN',
                     availableLanguage: ['en', 'hi'],
                 },
@@ -130,11 +130,28 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <script
+                    dangerouslySetInnerHTML={{
+                        __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KR7FXZH');`
+                    }}
+                />
+                <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
             <body className={inter.className}>
+                <noscript>
+                    <iframe
+                        src="https://www.googletagmanager.com/ns.html?id=GTM-KR7FXZH"
+                        height="0"
+                        width="0"
+                        style={{ display: 'none', visibility: 'hidden' }}
+                    />
+                </noscript>
                 <noscript>
                     <div style={{
                         padding: '20px',

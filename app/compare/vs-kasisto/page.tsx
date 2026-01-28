@@ -16,7 +16,7 @@ import Link from 'next/link';
 
 export default function VsKasistoPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "Free / ₹1,999", competitor: "Custom (Enterprise only)" },
+        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "Custom (Enterprise only)" },
         { feature: "Implementation Time", SwanDigitals: "2-4 weeks", competitor: "8-12 weeks" },
         { feature: "Industry Focus", SwanDigitals: "Multi-industry", competitor: "Banking only" },
         { feature: "Voice AI Native", SwanDigitals: true, competitor: false },
@@ -75,7 +75,7 @@ export default function VsKasistoPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 Accessible Pricing</h3>
                             <p className="text-lg text-slate-700">
-                                Kasisto is enterprise-only with 6-figure implementation costs. SwanDigitals starts at Free / ₹1,999
+                                Kasisto is enterprise-only with 6-figure implementation costs. SwanDigitals starts at ₹10,000 pilot / ₹12,000/mo
                                 with no setup fees — making AI accessible to cooperative banks, NBFCs, and fintechs.
                             </p>
                         </div>

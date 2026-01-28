@@ -40,10 +40,10 @@ export default function ITHelpdeskPage() {
             <section className="py-16 bg-gradient-to-r from-slate-700 to-slate-900 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">72%</div><div className="text-white/80">Ticket Deflection</div></div>
-                        <div><div className="text-4xl font-bold">3 min</div><div className="text-white/80">Password Reset</div></div>
+                        <div><div className="text-4xl font-bold">Up to 70%</div><div className="text-white/80">Ticket Deflection</div></div>
+                        <div><div className="text-4xl font-bold">~3 min</div><div className="text-white/80">Password Reset</div></div>
                         <div><div className="text-4xl font-bold">24/7</div><div className="text-white/80">Availability</div></div>
-                        <div><div className="text-4xl font-bold">$500K</div><div className="text-white/80">Annual Savings</div></div>
+                        <div><div className="text-4xl font-bold">Reduced</div><div className="text-white/80">IT Workload</div></div>
                     </div>
                 </div>
             </section>
@@ -85,7 +85,7 @@ export default function ITHelpdeskPage() {
                     <h2 className="text-3xl font-bold text-center mb-12">Why IT Teams Love SwanDigitals</h2>
                     <div className="space-y-6">
                         {[
-                            { title: "Deflect 72% of Tickets", desc: "Common issues like password resets and software questions handled automatically" },
+                            { title: "Deflect Most Tier-1 Tickets", desc: "Common issues like password resets and software questions handled automatically" },
                             { title: "24/7 First-Line Support", desc: "Employees get help anytime without waiting for business hours" },
                             { title: "Knowledge Base Integration", desc: "AI searches your docs and provides accurate answers instantly" },
                             { title: "Smart Escalation", desc: "Complex issues routed to the right team with full troubleshooting context" },
@@ -107,7 +107,7 @@ export default function ITHelpdeskPage() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Ready to Automate IT Support?</h2>
-                    <p className="text-xl text-white/80 mb-8">See how we can deflect 72% of your IT tickets</p>
+                    <p className="text-xl text-white/80 mb-8">See how we can automate most of your Tier-1 IT tickets</p>
                     <Link href="/demo" className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                         Get IT Helpdesk Demo
                     </Link>

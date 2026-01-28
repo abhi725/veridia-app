@@ -23,7 +23,7 @@ export default function VsIntercomPage() {
         { feature: "No-Code Builder", SwanDigitals: true, competitor: true },
         { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
         { feature: "Self-Hosted Option", SwanDigitals: true, competitor: false },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "Limited" },
+        { feature: "Multi-Language (Indic)", SwanDigitals: "22 Indian + 8 global", competitor: "Limited" },
         { feature: "Pricing Model", SwanDigitals: "Flat platform fee", competitor: "Per seat + resolution" },
         { feature: "AI Bot Included", SwanDigitals: true, competitor: "Add-on ($0.99/resolution)" },
         { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },

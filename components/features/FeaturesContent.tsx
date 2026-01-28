@@ -31,7 +31,7 @@ export default function FeaturesContent() {
                 "Entity extraction for names, dates, amounts, etc.",
                 "Sentiment analysis in real-time",
                 "Custom model training on your data",
-                "10+ Indian language support (Hindi, Tamil, Telugu, Marathi, etc.)",
+                "6 Indian languages + English (Hindi, Tamil, Telugu, Bengali, Marathi, Hinglish)",
                 "Fallback handling with graceful escalation",
                 "Active learning from human corrections"
             ]
@@ -141,8 +141,8 @@ export default function FeaturesContent() {
         {
             title: "Customer Service",
             icon: <Headphones className="w-10 h-10" />,
-            description: "Automate 90% of support inquiries. Instant responses 24/7 across all channels.",
-            stats: ["90% automation rate", "60% cost reduction", "<2s average response"],
+            description: "Automate support inquiries with instant 24/7 responses across all channels.",
+            stats: ["24/7 Availability", "Multi-channel", "AI-Powered"],
             benefits: ["FAQ automation", "Order tracking", "Complaint handling", "Appointment scheduling"],
             link: "/solutions/customer-service"
         },
@@ -157,8 +157,8 @@ export default function FeaturesContent() {
         {
             title: "E-Commerce",
             icon: <ShoppingCart className="w-10 h-10" />,
-            description: "Convert browsers to buyers. Product recommendations, cart recovery, and order support.",
-            stats: ["30% cart recovery", "2x engagement", "24/7 availability"],
+            description: "Convert browsers to buyers with product recommendations, cart recovery, and order support.",
+            stats: ["Cart Recovery", "Personalization", "24/7 Availability"],
             benefits: ["Product search", "Order status", "Returns & refunds", "Personalized offers"],
             link: "/solutions/ecommerce"
         },
@@ -166,7 +166,7 @@ export default function FeaturesContent() {
             title: "HR & Employee Experience",
             icon: <Briefcase className="w-10 h-10" />,
             description: "Internal helpdesk for HR, IT, and operations. Empower employees with self-service.",
-            stats: ["70% self-service", "50% faster resolution", "+40 eNPS"],
+            stats: ["Self-Service", "Internal Automation", "Employee Enablement"],
             benefits: ["Leave requests", "Policy queries", "Onboarding", "IT support"],
             link: "/solutions/employee-experience"
         },
@@ -186,7 +186,7 @@ export default function FeaturesContent() {
         { feature: "Native Voice AI", swanDigitals: true, koreai: "Add-on", yellowai: "Add-on", haptik: "Limited", zendesk: false, intercom: false },
         { feature: "On-Premise Deployment", swanDigitals: true, koreai: true, yellowai: false, haptik: false, zendesk: false, intercom: false },
         { feature: "100% India Data Residency", swanDigitals: true, koreai: "On Request", yellowai: "On Request", haptik: "Limited", zendesk: false, intercom: false },
-        { feature: "Indian Language Support (10+)", swanDigitals: true, koreai: "Limited", yellowai: true, haptik: true, zendesk: "Limited", intercom: "Limited" },
+        { feature: "6 Indian Languages + English", swanDigitals: true, koreai: "Limited", yellowai: true, haptik: true, zendesk: "Limited", intercom: "Limited" },
         { feature: "WhatsApp Business API", swanDigitals: true, koreai: true, yellowai: true, haptik: true, zendesk: true, intercom: true },
         { feature: "Live Agent Handoff", swanDigitals: true, koreai: true, yellowai: true, haptik: true, zendesk: true, intercom: true },
         { feature: "Knowledge Base AI", swanDigitals: true, koreai: true, yellowai: true, haptik: "Limited", zendesk: true, intercom: true },
@@ -330,7 +330,100 @@ export default function FeaturesContent() {
                 </div>
             </section>
 
-            {/* Use Cases */}
+            {/* Voice AI Deep-Dive */}
+            <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
+                <div className="max-w-6xl mx-auto px-6 lg:px-8">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 flex items-center justify-center border border-white/20">
+                            <div className="text-center">
+                                <Phone className="w-24 h-24 text-orange-400 mx-auto mb-4" />
+                                <p className="text-5xl font-bold text-orange-400 mb-2">&lt;500ms</p>
+                                <p className="text-white/70">Voice Response Latency</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium mb-4">
+                                <Mic className="w-4 h-4" />
+                                Voice AI — Not an Add-on
+                            </div>
+                            <h2 className="text-3xl font-bold mb-4">
+                                Replace Your IVR. Forever.
+                            </h2>
+                            <p className="text-lg text-white/80 mb-6">
+                                Human-like phone conversations powered by AI. Handle inbound calls, make outbound campaigns,
+                                and let customers talk naturally — no more "Press 1 for sales."
+                            </p>
+                            <ul className="space-y-3 mb-8">
+                                <li className="flex items-center gap-3">
+                                    <Check className="w-5 h-5 text-green-400" />
+                                    <span>Inbound &amp; outbound calling automation</span>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <Check className="w-5 h-5 text-green-400" />
+                                    <span>Real-time speech-to-text &amp; natural TTS</span>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <Check className="w-5 h-5 text-green-400" />
+                                    <span>Call recording &amp; full transcription</span>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <Check className="w-5 h-5 text-green-400" />
+                                    <span>Seamless transfer to human agents</span>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <Check className="w-5 h-5 text-green-400" />
+                                    <span>Integration with existing PBX/SIP systems</span>
+                                </li>
+                            </ul>
+                            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-all">
+                                See Voice AI Demo <ChevronRight className="w-4 h-4" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Indian Languages Spotlight */}
+            <section className="py-20 bg-white">
+                <div className="max-w-6xl mx-auto px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
+                            🇮🇳 Built for India
+                        </div>
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                            Your Customers Speak Tamil. Your Bot Should Too.
+                        </h2>
+                        <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                            Native NLU support for 6 Indian languages + English. Not Google Translate bolted on —
+                            real intent understanding, entity extraction, and context management in every language.
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-8">
+                        {['English', 'Hindi', 'Tamil', 'Telugu', 'Bengali', 'Marathi', 'Hinglish'].map((lang, i) => (
+                            <div key={i} className="bg-gradient-to-br from-orange-50 to-pink-50 p-4 rounded-xl text-center border border-orange-200">
+                                <div className="text-2xl mb-1">🗣️</div>
+                                <div className="font-semibold text-slate-900">{lang}</div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="bg-slate-50 p-8 rounded-2xl">
+                        <div className="grid md:grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div className="text-3xl font-bold text-orange-600 mb-2">Native NLU</div>
+                                <p className="text-slate-600 text-sm">Intent & entity recognition in regional languages</p>
+                            </div>
+                            <div>
+                                <div className="text-3xl font-bold text-orange-600 mb-2">Code-Mixed</div>
+                                <p className="text-slate-600 text-sm">Handles Hinglish and mixed scripts naturally</p>
+                            </div>
+                            <div>
+                                <div className="text-3xl font-bold text-orange-600 mb-2">Voice + Text</div>
+                                <p className="text-slate-600 text-sm">Regional language support for chat and calls</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-4">Use Cases</h2>

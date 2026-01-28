@@ -139,9 +139,9 @@ export default function VsYellowPage() {
                             <div>
                                 <h4 className="font-semibold text-green-600 mb-2">✅ Our Timeline</h4>
                                 <p className="text-slate-700 mb-4">21-day average (verified by customers)</p>
-                                <blockquote className="border-l-4 border-blue-500 pl-4 text-sm italic text-slate-600">
-                                    "SwanDigitals was live in 3 weeks. Yellow.ai quoted us 3 months." - CTO, [Company]
-                                </blockquote>
+                                <p className="text-sm text-slate-600">
+                                    Most SwanDigitals implementations complete in 3 weeks, compared to Yellow.ai's typical 60-90 day enterprise deployment timeline.
+                                </p>
                             </div>
                         </div>
                     </div>

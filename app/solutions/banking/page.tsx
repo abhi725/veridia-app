@@ -119,32 +119,32 @@ export default function BankingPage() {
                 </div>
             </section>
 
-            {/* Featured Case Study */}
+            {/* What Banks Typically Automate */}
             <section className="py-20 bg-white">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
                     <div className="bg-gradient-to-br from-slate-900 to-blue-900 text-white p-12 rounded-3xl">
-                        <div className="text-sm font-semibold text-orange-400 mb-4">FEATURED CASE STUDY</div>
-                        <h2 className="text-3xl font-bold mb-6">How [Indian Bank] Achieved 90% Automation in 12 Weeks</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                            <div>
-                                <div className="text-4xl font-bold text-orange-400 mb-2">90%</div>
-                                <div className="text-white/80">of queries automated</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-bold text-orange-400 mb-2">$2.1M</div>
-                                <div className="text-white/80">annual savings</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-bold text-orange-400 mb-2">92%</div>
-                                <div className="text-white/80">customer satisfaction</div>
-                            </div>
+                        <div className="text-sm font-semibold text-orange-400 mb-4">WHAT BANKS AUTOMATE</div>
+                        <h2 className="text-3xl font-bold mb-6">Most Common Banking Workflows We Automate</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            {[
+                                "Account balance and statement requests",
+                                "Video KYC for new account opening",
+                                "Card blocking and unblocking",
+                                "Loan eligibility and EMI calculators",
+                                "Transaction disputes and chargebacks",
+                                "Bill payment reminders and alerts"
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-center gap-3 text-white/90">
+                                    <span className="text-orange-400">✓</span>
+                                    {item}
+                                </div>
+                            ))}
                         </div>
-                        <p className="text-lg text-white/90 mb-6">
-                            <strong>Challenge:</strong> Manual KYC processes taking 5+ days<br />
-                            <strong>Solution:</strong> Video KYC bot + WhatsApp banking assistant
+                        <p className="text-white/70 text-sm mb-6">
+                            Typical results: 60-85% automation rate within 3 months. Results vary based on workflow complexity and training data.
                         </p>
-                        <Link href="/case-studies" className="inline-block px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600">
-                            Read Full Case Study →
+                        <Link href="/demo" className="inline-block px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600">
+                            See a Demo for Your Use Case →
                         </Link>
                     </div>
                 </div>
@@ -201,7 +201,7 @@ export default function BankingPage() {
                         </details>
                         <details className="bg-slate-50 p-6 rounded-xl">
                             <summary className="font-bold text-lg cursor-pointer">Can it work in regional languages?</summary>
-                            <p className="mt-4 text-slate-700">Yes, supports 12 Indian languages including Hindi, Tamil, Telugu, Bengali, and more.</p>
+                            <p className="mt-4 text-slate-700">Yes, supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU.</p>
                         </details>
                     </div>
                 </div>

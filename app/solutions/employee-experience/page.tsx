@@ -26,10 +26,10 @@ export default function EmployeeExperiencePage() {
     ];
 
     const benefits = [
-        { stat: "50%", label: "Faster resolution" },
-        { stat: "70%", label: "Self-service rate" },
-        { stat: "40+", label: "NPS improvement" },
-        { stat: "$500K", label: "Annual savings" }
+        { stat: "Up to 50%", label: "Faster resolution" },
+        { stat: "60-80%", label: "Self-service rate" },
+        { stat: "Improved", label: "Employee NPS" },
+        { stat: "24/7", label: "Availability" }
     ];
 
     return (
@@ -110,27 +110,30 @@ export default function EmployeeExperiencePage() {
                 </div>
             </section>
 
-            {/* Case Study */}
+            {/* What Internal Teams Automate */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white p-12 rounded-2xl">
-                        <div className="text-sm font-semibold mb-4">CASE STUDY</div>
-                        <h3 className="text-3xl font-bold mb-4">TechCorp Transforms Internal IT Support</h3>
-                        <p className="text-xl text-white/90 mb-6">
-                            "Our IT team can finally focus on strategic projects instead of answering the same password reset questions. Employee NPS jumped 40 points."
+                        <div className="text-sm font-semibold mb-4">WHAT TEAMS AUTOMATE</div>
+                        <h3 className="text-3xl font-bold mb-6">Common Internal Support Use Cases</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            {[
+                                "Password resets and account unlocks",
+                                "PTO balance and leave requests",
+                                "Benefits and policy questions",
+                                "Expense report submissions",
+                                "Software access requests",
+                                "New hire onboarding tasks"
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-center gap-3 text-white/90">
+                                    <span className="text-blue-300">✓</span>
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-white/70 text-sm">
+                            Typical results: 50-70% reduction in IT/HR tickets within 3 months. Results vary based on implementation.
                         </p>
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 bg-white/20 rounded-full"></div>
-                            <div>
-                                <div className="font-bold text-lg">David Chen</div>
-                                <div className="text-white/80">CIO, TechCorp Global</div>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-3 gap-4 text-center">
-                            <div><div className="text-2xl font-bold">72%</div><div className="text-white/80 text-sm">Ticket Deflection</div></div>
-                            <div><div className="text-2xl font-bold">50%</div><div className="text-white/80 text-sm">Faster Resolution</div></div>
-                            <div><div className="text-2xl font-bold">+40</div><div className="text-white/80 text-sm">Employee NPS</div></div>
-                        </div>
                     </div>
                 </div>
             </section>

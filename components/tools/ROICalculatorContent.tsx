@@ -7,13 +7,14 @@ import { ShoppingCart, Package, RefreshCw, Gift } from 'lucide-react';
 
 export default function ROICalculatorContent() {
     const [monthlyTickets, setMonthlyTickets] = useState(10000);
-    const [avgTicketCost, setAvgTicketCost] = useState(15);
-    const [automationRate, setAutomationRate] = useState(85);
+    const [avgTicketCost, setAvgTicketCost] = useState(800); // Updated for Indian context
+    const [automationRate, setAutomationRate] = useState(80); // More conservative default
 
     const currentCost = monthlyTickets * avgTicketCost * 12;
     const automatedTickets = monthlyTickets * (automationRate / 100);
     const remainingTickets = monthlyTickets - automatedTickets;
-    const newCost = (remainingTickets * avgTicketCost * 12) + (12 * 1999); // $1999/month SwanDigitals
+    const swanDigitalsAnnualCost = 12 * 28000; // ₹28,000/month Professional plan
+    const newCost = (remainingTickets * avgTicketCost * 12) + swanDigitalsAnnualCost;
     const annualSavings = currentCost - newCost;
     const savingsPercentage = Math.round((annualSavings / currentCost) * 100);
 
@@ -47,21 +48,24 @@ export default function ROICalculatorContent() {
 
                             <div>
                                 <label className="block font-medium mb-2">
-                                    Average Cost Per Ticket: <span className="text-orange-600 font-bold">${avgTicketCost}</span>
+                                    Average Cost Per Ticket: <span className="text-orange-600 font-bold">₹{avgTicketCost}</span>
                                 </label>
                                 <input
                                     type="range"
-                                    min="5"
-                                    max="50"
-                                    step="1"
+                                    min="300"
+                                    max="1500"
+                                    step="50"
                                     value={avgTicketCost}
                                     onChange={(e) => setAvgTicketCost(Number(e.target.value))}
                                     className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer"
                                 />
                                 <div className="flex justify-between text-sm text-slate-500 mt-1">
-                                    <span>$5</span>
-                                    <span>$50</span>
+                                    <span>₹300</span>
+                                    <span>₹1,500</span>
                                 </div>
+                                <p className="text-xs text-slate-500 mt-2">
+                                    *Typical range for Indian support agents (salary + overhead)
+                                </p>
                             </div>
 
                             <div>
@@ -71,7 +75,7 @@ export default function ROICalculatorContent() {
                                 <input
                                     type="range"
                                     min="50"
-                                    max="95"
+                                    max="90"
                                     step="5"
                                     value={automationRate}
                                     onChange={(e) => setAutomationRate(Number(e.target.value))}
@@ -79,10 +83,10 @@ export default function ROICalculatorContent() {
                                 />
                                 <div className="flex justify-between text-sm text-slate-500 mt-1">
                                     <span>50%</span>
-                                    <span>95%</span>
+                                    <span>90%</span>
                                 </div>
                                 <p className="text-sm text-slate-500 mt-2">
-                                    *85% is our average customer automation rate
+                                    *75-85% is typical for well-implemented AI chatbots
                                 </p>
                             </div>
                         </div>
@@ -95,18 +99,18 @@ export default function ROICalculatorContent() {
                         <div className="space-y-6">
                             <div>
                                 <div className="text-white/80 mb-1">Current Annual Cost</div>
-                                <div className="text-3xl font-bold">${currentCost.toLocaleString()}</div>
+                                <div className="text-3xl font-bold">₹{currentCost.toLocaleString('en-IN')}</div>
                             </div>
 
                             <div>
                                 <div className="text-white/80 mb-1">Projected Annual Cost with SwanDigitals</div>
-                                <div className="text-3xl font-bold">${Math.max(0, newCost).toLocaleString()}</div>
+                                <div className="text-3xl font-bold">₹{Math.max(0, newCost).toLocaleString('en-IN')}</div>
                             </div>
 
                             <div className="border-t border-white/20 pt-6">
                                 <div className="text-white/80 mb-1">Annual Savings</div>
                                 <div className="text-5xl font-bold text-green-300">
-                                    ${Math.max(0, annualSavings).toLocaleString()}
+                                    ₹{Math.max(0, annualSavings).toLocaleString('en-IN')}
                                 </div>
                                 <div className="text-2xl font-bold mt-2">
                                     {savingsPercentage > 0 ? savingsPercentage : 0}% reduction
@@ -118,8 +122,14 @@ export default function ROICalculatorContent() {
                                 <div className="text-sm space-y-1">
                                     <div>• {automatedTickets.toLocaleString()} tickets automated per month</div>
                                     <div>• {remainingTickets.toLocaleString()} tickets requiring human agents</div>
-                                    <div>• SwanDigitals Professional: $1,999/month</div>
+                                    <div>• SwanDigitals Professional: ₹28,000/month</div>
                                 </div>
+                            </div>
+
+                            <div className="bg-yellow-500/20 p-4 rounded-lg mt-4 border border-yellow-500/30">
+                                <p className="text-sm text-yellow-100">
+                                    <strong>Note:</strong> Enterprise plans have custom pricing. Contact us for accurate estimates based on your specific requirements.
+                                </p>
                             </div>
                         </div>
                     </div>

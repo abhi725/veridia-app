@@ -33,8 +33,8 @@ export default function ContactPage() {
                                 <MessageSquare className="w-8 h-8" />
                             </div>
                             <h3 className="text-xl font-bold mb-2">Sales Inquiries</h3>
-                            <p className="text-slate-600 mb-4">Talk to our sales team about enterprise solutions</p>
-                            <a href="mailto:sales@SwanDigitals.ai" className="text-orange-600 font-semibold hover:underline">sales@SwanDigitals.ai</a>
+                            <p className="text-slate-600 mb-4">Talk to our team about enterprise solutions</p>
+                            <a href="mailto:support@swandigitals.com" className="text-orange-600 font-semibold hover:underline">support@swandigitals.com</a>
                         </div>
                         <div className="p-8 border-2 border-slate-200 rounded-2xl text-center hover:border-orange-300 transition-colors">
                             <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mx-auto mb-6">
@@ -42,15 +42,15 @@ export default function ContactPage() {
                             </div>
                             <h3 className="text-xl font-bold mb-2">Customer Support</h3>
                             <p className="text-slate-600 mb-4">Get help with your existing account</p>
-                            <a href="mailto:support@SwanDigitals.ai" className="text-orange-600 font-semibold hover:underline">support@SwanDigitals.ai</a>
+                            <a href="mailto:support@swandigitals.com" className="text-orange-600 font-semibold hover:underline">support@swandigitals.com</a>
                         </div>
                         <div className="p-8 border-2 border-slate-200 rounded-2xl text-center hover:border-orange-300 transition-colors">
                             <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mx-auto mb-6">
                                 <Phone className="w-8 h-8" />
                             </div>
                             <h3 className="text-xl font-bold mb-2">Phone</h3>
-                            <p className="text-slate-600 mb-4">Enterprise customers: 24/7 support</p>
-                            <a href="tel:+1-888-555-0123" className="text-orange-600 font-semibold hover:underline">+1 (888) 555-0123</a>
+                            <p className="text-slate-600 mb-4">Available Mon-Fri 10am-7pm IST</p>
+                            <a href="tel:+917770070762" className="text-orange-600 font-semibold hover:underline">+91 7770070762</a>
                         </div>
                     </div>
 
@@ -99,26 +99,24 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Office Locations */}
+            {/* Office Location */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Our Offices</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { city: "San Francisco", address: "123 AI Street\nSan Francisco, CA 94105", flag: "🇺🇸", hours: "Mon-Fri 9am-6pm PT" },
-                            { city: "London", address: "456 Tech Lane\nLondon, EC2A 1AF", flag: "🇬🇧", hours: "Mon-Fri 9am-6pm GMT" },
-                            { city: "Singapore", address: "789 Innovation Road\nSingapore 018936", flag: "🇸🇬", hours: "Mon-Fri 9am-6pm SGT" }
-                        ].map((office, i) => (
-                            <div key={i} className="bg-white p-8 rounded-2xl shadow-sm">
-                                <div className="text-4xl mb-4">{office.flag}</div>
-                                <h3 className="text-xl font-bold mb-2">{office.city}</h3>
-                                <p className="text-slate-600 whitespace-pre-line mb-4">{office.address}</p>
-                                <div className="flex items-center gap-2 text-sm text-slate-500">
-                                    <Clock className="w-4 h-4" />
-                                    {office.hours}
-                                </div>
+                    <h2 className="text-3xl font-bold text-center mb-12">Visit Us</h2>
+                    <div className="max-w-md mx-auto">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
+                            <div className="text-4xl mb-4">🇮🇳</div>
+                            <h3 className="text-xl font-bold mb-2">Pune, India</h3>
+                            <p className="text-slate-600 mb-4">
+                                B31 flat, Aaykar society<br />
+                                Kothrud, 411038<br />
+                                Pune, Maharashtra
+                            </p>
+                            <div className="flex items-center justify-center gap-2 text-sm text-slate-500">
+                                <Clock className="w-4 h-4" />
+                                Mon-Fri 10am-7pm IST
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
             </section>
