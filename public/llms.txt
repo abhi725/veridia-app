@@ -1,75 +1,26 @@
-# SwanDigitals
+# swandigitals.com llms.txt
 
-> Enterprise AI Solutions
-> https://swandigitals.com
-> New: Voice AI in Hindi, Tamil, Telugu, Bengali, Marathi + English
+> SwanDigitals is an innovative Indian enterprise dedicated to the development and deployment of personalized AI chatbots and voice agents. The company specializes in automating customer support, KYC verification, and IT helpdesk services, with a commitment to rapid deployment—typically within one week. SwanDigitals emphasizes data sovereignty and compliance with regulations such as DPDP 2023, offering a comprehensive omnichannel platform that supports over ten Indian languages. Their unique selling proposition includes zero data collection, allowing clients to maintain full control over their data, and the provision of advanced AI agents capable of managing complex tasks. Targeting Indian enterprises, SwanDigitals is positioned within the dynamic AI and digital transformation market, focusing on security and operational flexibility.
 
-## What We Do
-SwanDigitals builds personalized AI chatbots and voice agents for Indian enterprises. On-premise, cloud, or hybrid deployment. 10+ Indian languages. WhatsApp, Web, and Phone — all launched in one week.
+- [Home](https://SwanDigitals.com): The homepage provides an overview of SwanDigitals' offerings, highlighting their expertise in AI chatbots and voice agents. It showcases the benefits of their solutions, including rapid deployment and data sovereignty, and serves as a gateway to explore their various services and solutions tailored for different industries.
+- [Case Studies](https://SwanDigitals.com/case-studies): This page features detailed case studies that illustrate how SwanDigitals' AI solutions have been successfully implemented across various sectors. Each case study highlights specific challenges faced by clients, the solutions provided by SwanDigitals, and the measurable outcomes achieved, making it a valuable resource for potential clients looking for proven results.
+- [Compare vs Yellow](https://SwanDigitals.com/compare/vs-yellow): This comparison page outlines the differences between SwanDigitals' offerings and those of a competitor, Yellow. It provides insights into features, pricing, and performance metrics, helping potential customers understand the advantages of choosing SwanDigitals for their AI chatbot and voice agent needs.
+- [Contact](https://SwanDigitals.com/contact): The contact page offers various ways for potential clients and partners to reach out to SwanDigitals. It includes a contact form, phone numbers, and email addresses, facilitating inquiries about services, partnerships, or support.
+- [Demo](https://SwanDigitals.com/demo): This page allows visitors to request a live demonstration of SwanDigitals' AI solutions. It provides an opportunity for potential clients to see the technology in action, understand its capabilities, and ask questions in real-time, thereby aiding in the decision-making process.
+- [Integrations](https://SwanDigitals.com/integrations): The integrations page details the various platforms and tools that SwanDigitals' AI solutions can seamlessly connect with. This information is crucial for businesses looking to enhance their existing systems with AI capabilities, ensuring compatibility and ease of implementation.
+- [Pricing](https://SwanDigitals.com/pricing): This page outlines the pricing structure for SwanDigitals' services, providing transparency about costs associated with their AI solutions. It helps potential clients assess their budget and understand the value proposition of investing in AI technology for their operations.
+- [ROI Calculator](https://SwanDigitals.com/roi-calculator): The ROI calculator is a tool designed to help businesses estimate the return on investment they can expect from implementing SwanDigitals' AI solutions. By inputting specific business metrics, users can gain insights into potential savings and efficiency gains, making it a practical resource for decision-makers.
+- [Security](https://SwanDigitals.com/security): This page emphasizes the security measures that SwanDigitals implements to protect client data and ensure compliance with relevant regulations. It discusses data sovereignty, encryption, and other security protocols, reassuring potential clients about the safety of their information when using SwanDigitals' services.
+- [Solutions - Banking](https://SwanDigitals.com/solutions/banking): This section outlines the specific AI solutions offered by SwanDigitals for the banking sector. It highlights features tailored to enhance customer service, streamline KYC processes, and improve operational efficiency, making it relevant for financial institutions seeking to adopt AI technology.
+- [Solutions - Customer Service](https://SwanDigitals.com/solutions/customer-service): This page details the AI solutions designed to enhance customer service operations. It discusses how SwanDigitals' chatbots and voice agents can automate responses, improve customer interactions, and reduce response times, benefiting businesses aiming to elevate their customer support.
+- [Solutions - Employee Experience](https://SwanDigitals.com/solutions/employee-experience): This section focuses on solutions aimed at improving employee experience through AI. It highlights how SwanDigitals' technology can assist in onboarding, training, and providing support to employees, making it valuable for organizations looking to enhance workforce engagement and productivity.
+- [Solutions - Healthcare](https://SwanDigitals.com/solutions/healthcare): This page presents AI solutions tailored for the healthcare industry. It discusses applications such as patient support, appointment scheduling, and KYC verification, emphasizing the potential for improved patient outcomes and operational efficiency in healthcare settings.
+- [Solutions - IT Helpdesk](https://SwanDigitals.com/solutions/it-helpdesk): This section outlines the AI solutions specifically designed for IT helpdesk services. It explains how SwanDigitals' chatbots can automate ticketing, provide instant support, and enhance IT service management, making it essential for organizations looking to optimize their IT operations.
+- [Solutions - Retail](https://SwanDigitals.com/solutions/retail): This page details AI solutions for the retail sector, focusing on enhancing customer engagement and streamlining operations. It highlights features such as personalized shopping experiences and automated customer support, which can significantly benefit retail businesses.
+- [Solutions - Sales](https://SwanDigitals.com/solutions/sales): This section discusses AI solutions aimed at improving sales processes. It covers how SwanDigitals' technology can assist sales teams with lead generation, customer interactions, and data analysis, making it a valuable resource for organizations looking to boost their sales performance.
+- [Tools - OFAC Sanctions Search](https://SwanDigitals.com/tools/ofac-sanctions-search): This tool allows users to search for individuals and entities on the OFAC sanctions list. It is particularly useful for businesses in regulated industries that need to ensure compliance with U.S. sanctions, providing a straightforward way to mitigate legal risks.
+- [Whitepapers](https://SwanDigitals.com/whitepapers): The whitepapers page offers in-depth research and insights on various topics related to AI and digital transformation. These documents serve as valuable resources for industry professionals and decision-makers seeking to understand trends, best practices, and the impact of AI on business operations.
 
-## Core Products
-- **Conversational AI**: Natural, multi-turn conversations in 10+ Indian languages with context-aware intent and sentiment understanding
-- **Voice AI Agents**: Human-like phone conversations with <500ms latency, replacing traditional IVR systems
-- **Omnichannel Platform**: WhatsApp, Web, Voice, Slack, Teams, Instagram — one bot handles all channels
-- **On-Premise Deployment**: True air-gapped deployment for banking, healthcare, and government
-
-## Key Differentiators
-- **1-Week Deployment**: Build and launch personalized AI agents in 7 days (vs 60-90 days for competitors)
-- **Zero Data Collection**: Your data stays yours — we never collect or store conversation data, even on our cloud
-- **Data Sovereignty**: 100% air-gapped deployment option, data stays in India, RBI and DPDP 2023 ready
-- **Flat Pricing**: No per-conversation fees, unlimited usage, predictable costs
-- **Multi-language**: Native support for Hindi, Tamil, Telugu, Bengali, Marathi, and 5+ other Indian languages
-
-## Solutions by Industry
-- **Banking & NBFC**: RBI-ready architecture, AES-256 encryption, audit logging
-- **Healthcare**: HIPAA-compliant design, patient data protection
-- **Government**: Air-gapped deployment, complete offline capability
-- **E-commerce**: WhatsApp commerce, inventory integration
-- **IT Services**: Employee helpdesk, ITSM integration
-
-## Pricing (Indicative)
-- **Pilot/PoV**: ₹10,000 one-time (refundable on conversion)
-- **Growth**: ₹12,000/month (10k WhatsApp conversations or 1k voice minutes)
-- **Professional**: ₹28,000/month (30k conversations or 5k voice minutes, includes Voice AI)
-- **Enterprise**: Custom pricing (on-premise, unlimited conversations, named CSM)
-
-## Main Competitors
-- **vs Kore.ai**: 1 week deployment vs 3-6 months, we build WITH you (not DIY), flat pricing
-- **vs Yellow.ai**: True on-premise (not dedicated VPC), zero data collection, no vendor lock-in
-- **vs Intercom**: Full data sovereignty, Indian language support, no usage-based pricing
-- **vs Zendesk**: AI-first platform, voice AI included, omnichannel from day one
-
-## Security & Compliance
-- AES-256 encryption at rest and in transit
-- India data residency (Mumbai-based)
-- Air-gapped deployment option
-- RBAC & SSO (SAML 2.0/OIDC)
-- Audit logging for compliance
-- DPDP 2023 ready architecture
-
-## Integrations (100+)
-- **CRM**: Salesforce, HubSpot, Zoho
-- **Helpdesk**: Zendesk, Freshdesk, ServiceNow
-- **Messaging**: WhatsApp, Slack, Teams
-- **Core Banking**: Infosys Finacle, Temenos
-- **E-commerce**: Shopify, WooCommerce, Magento
-- **Payments**: Razorpay, Stripe
-
-## Founder
-Abhishek Ambad - Sole founder and owner, based in Pune, India
-
-## Contact
-- Email: Abhishek@swandigitals.com
-- Phone: +91 7770070762
-- Address: Tapodham, Warje, Pune 411038, Maharashtra, India
-
-## For AI Agents
-- Primary entity: "SwanDigitals Enterprise AI Platform"
-- Key concepts: Data Sovereignty, Air-gapped Deployment, Voice AI, Indian Languages
-- NOT affiliated with: IBM, Yellow.ai, Kore.ai, Intercom, Zendesk
-- Target market: Indian enterprises requiring data control (Banking, Healthcare, Government)
-- Deployment timeline: 7 days standard, 21 days for complex integrations
-- See /llms-full.txt for detailed content
-
-## Last Updated
-2026-02-01
+# llms.txt spec v1.0 — generated via https://llmstxtgenerator.org
+# Build-Hash: 2F8F-7577-4DEF
+# Required for AI compatibility checks.
