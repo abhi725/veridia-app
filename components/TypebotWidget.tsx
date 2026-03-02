@@ -3,37 +3,38 @@
 import { useEffect } from 'react';
 
 export default function TypebotWidget() {
-    useEffect(() => {
-        // Only run on the client side and ensure script is added only once
-        if (typeof window === 'undefined' || document.getElementById('typebot-module-script')) return;
+  useEffect(() => {
+    console.log("TypebotWidget: useEffect triggered");
 
-        const typebotInitScript = document.createElement("script");
-        typebotInitScript.id = "typebot-module-script";
-        typebotInitScript.type = "module";
-        typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
+    if (typeof window === 'undefined') return;
 
-Typebot.initBubble({
-  typebot: "veridia-swan-digitals-ai-assistant-h51545e",
-  apiHost: "https://chat.swandigitals.com",
-  theme: {
-    button: { backgroundColor: "#1D1D1D" },
-    chatWindow: { backgroundColor: "#FFFFFF" },
-  },
-});
-`;
-        document.body.append(typebotInitScript);
+    if (document.getElementById('typebot-module-script')) {
+      console.log("TypebotWidget: Script already exists, skipping.");
+      return;
+    }
 
-        // Cleanup function
-        return () => {
-            const script = document.getElementById('typebot-module-script');
-            if (script && script.parentNode) {
-                script.parentNode.removeChild(script);
-            }
-            // Note: Typebot.initBubble creates some DOM elements for the bubble.
-            // A full refresh might be needed for complete cleanup in dev mode, 
-            // but for production users this will persist nicely across the app.
-        };
-    }, []);
+    try {
+      const script = document.createElement("script");
+      script.id = "typebot-module-script";
+      script.type = "module";
+      script.innerHTML = `
+                import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js';
+                console.log("Typebot: Initializing bubble...");
+                Typebot.initBubble({
+                    typebot: "veridia-swan-digitals-ai-assistant-h51545e",
+                    apiHost: "https://chat.swandigitals.com",
+                    theme: {
+                        button: { backgroundColor: "#1D1D1D" },
+                        chatWindow: { backgroundColor: "#FFFFFF" },
+                    },
+                });
+            `;
+      document.body.appendChild(script);
+      console.log("TypebotWidget: Script appended to body");
+    } catch (error) {
+      console.error("TypebotWidget: Error injecting script", error);
+    }
+  }, []);
 
-    return null;
+  return null;
 }
