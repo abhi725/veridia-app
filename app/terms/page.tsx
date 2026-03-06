@@ -87,8 +87,19 @@ export default function TermsPage() {
                                 <li>Have authority to bind your organization if registering on behalf of a company</li>
                                 <li>Notify us immediately of any unauthorized access</li>
                             </ul>
+
+                            <h3 className="text-lg font-semibold mt-6">3.1 Third-Party Authentication (Google OAuth)</h3>
                             <p>
-                                You are responsible for all activities that occur under your account.
+                                We offer the ability to register and log in to the SwanDesk dashboard using third-party authentication services, specifically Google OAuth. By utilizing Google Authentication:
+                            </p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                <li>You authorize us to access and use your basic Google profile information (name and email) strictly for the purpose of granting you account access.</li>
+                                <li>You remain responsible for maintaining the security of your Google account and any actions taken under it.</li>
+                                <li>Your use of Google Authentication is also governed by Google's applicable Terms of Service and Privacy Policy.</li>
+                            </ul>
+
+                            <p className="mt-6">
+                                You remain responsible for all activities that occur under your account, regardless of the authentication method used.
                             </p>
                         </div>
                     </div>

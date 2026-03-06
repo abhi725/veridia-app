@@ -81,6 +81,21 @@ export default function PrivacyPage() {
                                 as a <strong>Data Processor</strong> on your behalf. For <strong>on-premise deployments</strong>,
                                 this data never leaves your infrastructure and SwanDigitals has no access to it.
                             </p>
+
+                            <h3 className="text-lg font-semibold mt-6">2.4 Third-Party Authentication & Google OAuth</h3>
+                            <p>
+                                When you choose to log in or register for the SwanDesk platform using <strong>Google Authentication (OAuth)</strong>,
+                                we request and access certain information from your Google account. This access is strictly limited to what is
+                                absolutely necessary for account authentication and provisioning.
+                            </p>
+                            <ul className="list-disc pl-6 space-y-2 mt-2">
+                                <li><strong>What we access:</strong> Your email address and basic profile information (name and profile picture).</li>
+                                <li><strong>How we use it:</strong> This restricted data is used exclusively to verify your identity, securely create or link your SwanDesk account, and pre-fill your basic profile details within our dashboard.</li>
+                                <li><strong>What we DO NOT do:</strong> We do not access your Google Drive, Gmail, Calendar, Contacts, or any other sensitive scopes. We do not sell your Google data, nor do we use it for advertising purposes. Your Google data is subject to the same strict enterprise data protection and sovereignty standards as all other Customer Data described in this policy.</li>
+                            </ul>
+                            <p className="mt-2">
+                                You can revoke SwanDesk's access to your Google account at any time via your <a href="https://myaccount.google.com/permissions" className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Account Security settings</a>.
+                            </p>
                         </div>
                     </div>
 
