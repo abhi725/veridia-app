@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
-import TypebotWidget from '@/components/TypebotWidget'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -171,7 +170,24 @@ export default function RootLayout({
                     })(window,document,'script','dataLayer','GTM-KR7FXZH');
                     `}
                 </Script>
-                <TypebotWidget />
+                <Script id="swan-chat-widget" strategy="afterInteractive" dangerouslySetInnerHTML={{
+                    __html: `
+                    (function(d,t) {
+                      var BASE_URL="https://desk.swandigitals.com";
+                      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                      g.src=BASE_URL+"/packs/js/sdk.js";
+                      g.defer = true;
+                      g.async = true;
+                      s.parentNode.insertBefore(g,s);
+                      g.onload=function(){
+                        window.chatwootSDK.run({
+                          websiteToken: '37TS9hc2ns27eUiddwM3LFHa',
+                          baseUrl: BASE_URL
+                        })
+                      }
+                    })(document,"script");
+                    `
+                }} />
             </body>
         </html>
     )
