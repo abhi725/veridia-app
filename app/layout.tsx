@@ -7,33 +7,33 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: {
-        default: 'SwanDigitals | Sovereign AI & Enterprise Chatbots India',
-        template: '%s | SwanDigitals'
+        default: 'SwanDesk | AI Customer Support Platform for India',
+        template: '%s | SwanDesk'
     },
-    description: 'Deploy private, air-gapped AI Agents that automate Customer Support, KYC Verification, and IT Helpdesk. DPDP 2023 Compliant. Hosted locally in Pune, India.',
-    keywords: ['Sovereign AI India', 'Enterprise AI Chatbot', 'On-premise LLM', 'DPDP Compliant AI', 'Private Cloud AI', 'Generative AI for Business India', 'SwanDigitals', 'Abhishek Ambad'],
+    description: 'The AI-powered customer support platform built for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. On-premise for BFSI. Start free.',
+    keywords: ['SwanDesk', 'customer support', 'helpdesk', 'WhatsApp inbox', 'AI chatbot India', 'Sovereign AI India', 'On-premise LLM', 'DPDP Compliant AI', 'Abhishek Ambad'],
     authors: [{ name: 'Abhishek Ambad', url: 'https://swandigitals.com/leadership' }],
     creator: 'SwanDigitals',
     openGraph: {
         type: 'website',
         locale: 'en_IN',
         url: 'https://swandigitals.com',
-        title: 'SwanDigitals | Sovereign AI & Enterprise Chatbots India',
-        description: 'Automate business workflows with 100% data sovereignty. True on-premise AI agents for Indian Banking, Healthcare, and Enterprise.',
+        title: 'SwanDesk | AI Customer Support Platform for India',
+        description: 'The AI-powered customer support platform built for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. On-premise for BFSI. Start free.',
         siteName: 'SwanDigitals',
         images: [
             {
                 url: '/og-image.jpg', // Ensure this image exists in public folder
                 width: 1200,
                 height: 630,
-                alt: 'SwanDigitals Sovereign AI Platform',
+                alt: 'SwanDesk — AI Customer Support Platform for India',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'SwanDigitals | Sovereign AI for Indian Enterprise',
-        description: 'Deploy private, air-gapped AI agents. DPDP compliant and hosted in India.',
+        title: 'SwanDesk | AI Customer Support Platform for India',
+        description: 'The AI-powered customer support platform for Indian businesses. WhatsApp, Voice, Chat — in one inbox.',
         creator: '@swandigitals',
         images: ['/og-image.jpg'],
     },
@@ -108,7 +108,7 @@ export default function RootLayout({
             },
             {
                 '@type': 'SoftwareApplication',
-                name: 'SwanDigitals AI Platform',
+                name: 'SwanDesk',
                 operatingSystem: 'Web, On-Premise',
                 applicationCategory: 'BusinessApplication',
                 offers: {
@@ -117,11 +117,13 @@ export default function RootLayout({
                     priceCurrency: 'INR',
                 },
                 featureList: [
-                    'Air-gapped deployment',
-                    'Multi-agent orchestration',
-                    'Voice AI in 10+ Indian languages',
-                    'WhatsApp Business integration',
-                    'Banking & healthcare compliance',
+                    'Multi-channel inbox (WhatsApp, Email, Web chat, Instagram, Telegram)',
+                    'SwanAI Control Center with 12 tabs',
+                    'Voice bot in 10+ Indian languages',
+                    'On-premise air-gapped mode for BFSI',
+                    'DPDP 2023 compliant, RBI-ready',
+                    'White-label for resellers',
+                    'Flat monthly pricing — no per-message billing',
                 ],
             },
         ],
@@ -156,7 +158,7 @@ export default function RootLayout({
                     }}>
                         <h1>JavaScript Required</h1>
                         <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
-                        <p><strong>SwanDigitals</strong> - Enterprise AI Platform for India</p>
+                        <p><strong>SwanDesk by SwanDigitals</strong> - AI Customer Support Platform for India</p>
                         <p>Contact: +91 7770070762 | Email: Abhishek@swandigitals.com</p>
                     </div>
                 </noscript>

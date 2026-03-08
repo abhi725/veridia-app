@@ -16,56 +16,56 @@ export default function HomePageContent() {
     const features = [
         {
             icon: <Bot className="w-6 h-6" />,
-            title: "Conversational AI",
-            description: "Natural, multi-turn conversations in 10+ Indian languages. Context-aware understanding of intent and sentiment."
+            title: "AI That Actually Reads Context",
+            description: "Your customers don't repeat themselves. SwanDesk AI remembers the full conversation, suggests replies, and auto-resolves FAQs — in Hindi, Tamil, or English."
         },
         {
             icon: <Mic className="w-6 h-6" />,
-            title: "Voice AI Agents",
-            description: "Human-like phone conversations with <500ms latency. Replace your IVR with intelligent voice automation."
+            title: "Voice Bot for Phone Support",
+            description: "Answer calls 24/7 in Hindi, Tamil, Telugu, and 8 more Indian languages. Works with Retell AI, Twilio, or fully offline (on-prem with Whisper + Ollama)."
         },
         {
             icon: <Zap className="w-6 h-6" />,
-            title: "1-Week Deployment",
-            description: "We build your personalized AI agent in days, not months. No DIY frustration — we do it with you."
+            title: "Up and Running in a Week",
+            description: "Sign up, connect your WhatsApp and email, configure your AI — and you're live. Most teams are fully onboarded in 7 days. We help with setup."
         },
         {
             icon: <Shield className="w-6 h-6" />,
-            title: "Zero Data Collection",
-            description: "Your data stays yours. Even on our cloud hosting, we never collect or store your conversation data."
+            title: "Your Data Stays Yours",
+            description: "On-premise mode: your servers, your control, zero external calls. Cloud mode: we still don't read or store your customer conversations."
         },
         {
             icon: <Globe className="w-6 h-6" />,
-            title: "Omnichannel Platform",
-            description: "WhatsApp, Web, Voice, Slack, Teams, Instagram — one bot handles all channels in one dashboard."
+            title: "Every Channel in One Inbox",
+            description: "WhatsApp, Email, Web chat, Instagram, Telegram, Phone — your team sees everything in one place. No tab-switching. No missed messages."
         },
         {
             icon: <BarChart3 className="w-6 h-6" />,
-            title: "Real-Time Analytics",
-            description: "Track conversations, sentiment, and performance with comprehensive dashboards and custom reports."
+            title: "Reports That Actually Tell You Something",
+            description: "Response times, resolution rates, AI automation rate, agent performance — all in one dashboard. Know what's working before your manager asks."
         }
     ];
 
     const useCases = [
         {
             icon: <Headphones className="w-6 h-6" />,
-            title: "Customer Service",
-            description: "Automate support inquiries with instant 24/7 responses across all channels.",
-            stats: ["24/7 Availability", "Multi-channel", "AI-Powered"],
+            title: "Customer Support",
+            description: "Handle support requests across WhatsApp, email, and web — all in one inbox. AI resolves FAQs automatically.",
+            stats: ["24/7 AI", "Multi-channel", "Auto-resolve"],
             link: "/solutions/customer-service"
         },
         {
             icon: <Briefcase className="w-6 h-6" />,
-            title: "Employee Experience",
-            description: "HR, IT, and operations support for internal teams with self-service automation.",
-            stats: ["Self-Service", "Internal Helpdesk", "HR Automation"],
+            title: "Sales & Lead Capture",
+            description: "Capture leads from your website chat widget, qualify them with AI, and route to the right sales rep.",
+            stats: ["Lead scoring", "CRM sync", "Auto-routing"],
             link: "/solutions/employee-experience"
         },
         {
             icon: <Settings className="w-6 h-6" />,
-            title: "IT Helpdesk",
-            description: "Password resets, software requests, troubleshooting — automated and intelligent.",
-            stats: ["Ticket Deflection", "24/7 Support", "System Integration"],
+            title: "BFSI & Compliance",
+            description: "Air-gapped deployment for banks and NBFCs. Full data sovereignty. RBI-compliant infrastructure.",
+            stats: ["On-premise", "DPDP ready", "Audit logs"],
             link: "/solutions/it-helpdesk"
         }
     ];
@@ -73,46 +73,46 @@ export default function HomePageContent() {
     const problems = [
         {
             icon: <AlertTriangle className="w-8 h-8" />,
-            title: "6-Month Implementations",
-            description: "Most chatbot platforms take months to deploy. By then, requirements have changed and budgets are exhausted."
+            title: "Too many tools, too many tabs",
+            description: "Your team uses WhatsApp on one phone, email on another, and some other tool for tickets. Customers fall through the gaps. Every. Single. Day."
         },
         {
             icon: <Lock className="w-8 h-8" />,
-            title: "Data Leaves Your Control",
-            description: "Cloud-only vendors store your conversations on their servers. Regulators aren't happy. Your CISO isn't either."
+            title: "Your AI bot sounds like a robot",
+            description: "Most chatbots only handle FAQs. The moment a customer says something slightly different, it breaks. Your team ends up handling everything manually anyway."
         },
         {
             icon: <Globe className="w-8 h-8" />,
-            title: "English-First, Hindi-Later",
-            description: "Your customers speak Tamil. Telugu. Marathi. But your bot only speaks American English. Disconnect."
+            title: "Pricing that punishes growth",
+            description: "Per-conversation pricing sounds cheap until you scale. Suddenly your support costs grow 10x with your customer base. There's a better model."
         },
         {
             icon: <BarChart3 className="w-8 h-8" />,
-            title: "Per-Conversation Pricing",
-            description: "Volume scales. Bills explode. CFO calls a meeting. Enterprise ROI becomes a nightmare."
+            title: "BFSI compliance is a headache",
+            description: "Your CISO won't approve a cloud vendor that stores customer conversations. RBI and DPDP have opinions. Data sovereignty isn't optional in banking."
         }
     ];
 
     const solutions = [
         {
             icon: <Link2 className="w-10 h-10" />,
-            title: "One Bot. Every Channel. Zero Fragmentation.",
-            description: "Your customers reach you on WhatsApp, Email, Phone, Instagram, Web chat. Most companies use 5 different tools. That's 5 dashboards, 5 data silos, 5 points of failure. SwanDigitals unifies everything. One AI agent handles all channels."
+            title: "One inbox. Every channel.",
+            description: "WhatsApp messages, emails, web chats, Instagram DMs — your team handles them all from a single screen. Assign, reply, resolve. Done. No more forwarding WhatsApp screenshots in a group chat."
         },
         {
             icon: <Lock className="w-10 h-10" />,
-            title: "We Don't Touch Your Data. Ever.",
-            description: "On-premise? Your data never leaves your building. Our cloud? We still don't collect or store your conversation data. No training on your data. No selling insights. Your conversations are YOUR asset."
+            title: "AI that helps, not replaces.",
+            description: "SwanDesk AI suggests replies, auto-tags conversations, and resolves repetitive questions without human help. Your agents focus on complex issues — the AI handles the rest."
         },
         {
             icon: <Cpu className="w-10 h-10" />,
-            title: "More Than Chat. A Complete AI Agent.",
-            description: "This isn't a simple FAQ bot. SwanDigitals agents make calls, check inventory, analyze resource availability, process transactions, and generate custom reports — all in one conversation."
+            title: "Flat pricing. No surprises.",
+            description: "One monthly price covers unlimited conversations. Your costs are predictable whether you handle 1,000 or 100,000 messages. Scale without a CFO intervention."
         },
         {
             icon: <Shield className="w-10 h-10" />,
-            title: "Built for 2026. When Data is the New Gold.",
-            description: "True air-gapped deployment. AES-256 encryption. Your security policies, your audit logs, your control. DPDP 2023 and RBI-ready architecture. Data sovereignty isn't optional — it's survival."
+            title: "On-prem for banks and hospitals.",
+            description: "Full air-gapped deployment. Ollama LLM, Whisper STT, Coqui TTS — all on your servers. No internet required. Audit logs your CISO will actually like. DPDP 2023 ready."
         }
     ];
 
@@ -121,11 +121,11 @@ export default function HomePageContent() {
             <JsonLd />
             {/* Hero Section */}
             <Hero
-                badge="🚀 Launch Your AI Agent in 1 Week"
-                title="Your Business Deserves an AI That Speaks Your Language"
-                subtitle="We build personalized AI chatbots and voice agents for Indian enterprises. On-premise, cloud, or hybrid. 10+ Indian languages. WhatsApp, Web, and Phone — all in one week."
-                primaryCTA={{ text: "Book a Strategy Call", href: "/demo" }}
-                secondaryCTA={{ text: "See How It Works", href: "#how-it-works" }}
+                badge="🚀 Now Live: SwanDesk — Try Free"
+                title="Customer Support That Doesn't Need a 10-Person Team"
+                subtitle="SwanDesk is an AI-powered inbox for Indian businesses. Handle WhatsApp, email, and web chat in one place — with an AI that actually helps your team, not replaces it."
+                primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
+                secondaryCTA={{ text: "See it in 2 min", href: "#how-it-works" }}
             />
 
             {/* Features Grid */}
@@ -134,8 +134,8 @@ export default function HomePageContent() {
             {/* The Problem Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">Why Enterprise AI Projects Fail</h2>
-                    <p className="text-center text-slate-600 mb-12 max-w-3xl mx-auto">These are the problems that made us build SwanDigitals differently.</p>
+                    <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">Sound Familiar?</h2>
+                    <p className="text-center text-slate-600 mb-12 max-w-3xl mx-auto">These are the problems that made us build SwanDesk differently.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {problems.map((problem, i) => (
                             <div key={i} className="bg-red-50 p-6 rounded-2xl border-2 border-red-200">
@@ -150,13 +150,13 @@ export default function HomePageContent() {
                 </div>
             </section>
 
-            {/* How SwanDigitals Solves Section */}
+            {/* How SwanDesk Solves Section */}
             <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Your Security Is Our First Priority</h2>
+                        <h2 className="text-4xl font-bold mb-4">Here's How SwanDesk Fixes This</h2>
                         <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                            SwanDigitals isn't just another chatbot. It's a complete AI platform built for enterprises who can't compromise on data security or operational flexibility.
+                            SwanDesk isn't just another chatbot. It's a complete customer support platform — your team's daily inbox, with AI already inside.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -176,34 +176,34 @@ export default function HomePageContent() {
             {/* How We Work Section */}
             <section id="how-it-works" className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">From First Call to Live Bot — In 7 Days</h2>
-                    <p className="text-center text-slate-600 mb-16 max-w-3xl mx-auto">We don't just license software and leave you with documentation. We build your AI agent with you.</p>
+                    <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">From Signup to First Resolved Ticket — in 7 Days</h2>
+                    <p className="text-center text-slate-600 mb-16 max-w-3xl mx-auto">We don't sell you software and disappear. You sign up, we help you set up.</p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white p-8 rounded-2xl shadow-lg text-center relative">
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
                             <div className="text-5xl mb-6 mt-4">📞</div>
-                            <h3 className="text-xl font-bold mb-2">Strategy Call</h3>
+                            <h3 className="text-xl font-bold mb-2">Sign up & connect channels</h3>
                             <p className="text-slate-500 text-sm mb-2">Day 1</p>
-                            <p className="text-slate-600">We understand your use case, channels, and integration needs. No generic demos — we focus on your specific requirements.</p>
+                            <p className="text-slate-600">Create your SwanDesk account, connect WhatsApp Business, email, and web chat. Takes about 30 minutes.</p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-lg text-center relative">
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
                             <div className="text-5xl mb-6 mt-4">🛠️</div>
-                            <h3 className="text-xl font-bold mb-2">Bot Building</h3>
+                            <h3 className="text-xl font-bold mb-2">Configure your AI</h3>
                             <p className="text-slate-500 text-sm mb-2">Days 2-5</p>
-                            <p className="text-slate-600">Our team builds your personalized AI agent. You review, we iterate. Flows, integrations, language training — all handled.</p>
+                            <p className="text-slate-600">Pick your LLM (Gemini, Claude, Ollama for on-prem), upload your knowledge base, set up escalation rules. We walk you through it.</p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-lg text-center relative">
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
                             <div className="text-5xl mb-6 mt-4">🚀</div>
-                            <h3 className="text-xl font-bold mb-2">Go Live</h3>
+                            <h3 className="text-xl font-bold mb-2">Go live & scale</h3>
                             <p className="text-slate-500 text-sm mb-2">Days 6-7</p>
-                            <p className="text-slate-600">Deploy to WhatsApp, Web, or Voice. Training and handoff included. Your AI agent is live and ready to serve.</p>
+                            <p className="text-slate-600">Your team starts resolving tickets through SwanDesk. AI handles the repetitive ones. You track everything in the dashboard.</p>
                         </div>
                     </div>
                     <div className="text-center mt-12">
                         <Link href="/demo" className="inline-block px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
-                            Book Your Strategy Call →
+                            Start Free Trial →
                         </Link>
                     </div>
                 </div>
@@ -237,7 +237,7 @@ export default function HomePageContent() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">Use Cases</h2>
-                    <p className="text-center text-slate-600 mb-12">See how enterprises use SwanDigitals across departments</p>
+                    <p className="text-center text-slate-600 mb-12">See how businesses use SwanDesk across teams</p>
 
                     {/* Tabs */}
                     <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -279,7 +279,7 @@ export default function HomePageContent() {
                 </div>
             </section>
 
-            {/* Why SwanDigitals - Competitor Comparison */}
+            {/* Why SwanDesk - Competitor Comparison */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-center text-slate-900 mb-12">The Honest Comparison</h2>
@@ -287,18 +287,18 @@ export default function HomePageContent() {
                         <div className="p-8 border-2 border-orange-200 rounded-2xl bg-white">
                             <h3 className="text-2xl font-bold text-slate-900 mb-4">vs Kore.ai</h3>
                             <ul className="space-y-3 text-slate-700">
-                                <li>✅ 1 week deployment vs 3-6 months</li>
-                                <li>✅ We build WITH you (not DIY)</li>
-                                <li>✅ Flat pricing vs per-conversation</li>
+                                <li>✅ No per-conversation billing</li>
+                                <li>✅ Setup in days, not months</li>
+                                <li>✅ True on-premise (not dedicated VPC)</li>
                             </ul>
                             <Link href="/compare/vs-kore" className="text-orange-500 font-semibold mt-4 inline-block hover:underline">See full comparison →</Link>
                         </div>
                         <div className="p-8 border-2 border-blue-200 rounded-2xl bg-white">
                             <h3 className="text-2xl font-bold text-slate-900 mb-4">vs Yellow.ai</h3>
                             <ul className="space-y-3 text-slate-700">
-                                <li>✅ True on-premise (not dedicated VPC)</li>
-                                <li>✅ Zero data collection on our cloud</li>
-                                <li>✅ No vendor lock-in</li>
+                                <li>✅ Simpler to use — no AI PhD required</li>
+                                <li>✅ Flat pricing, not usage-based</li>
+                                <li>✅ Indian team, Indian support hours</li>
                             </ul>
                             <Link href="/compare/vs-yellow" className="text-blue-500 font-semibold mt-4 inline-block hover:underline">See full comparison →</Link>
                         </div>
@@ -331,42 +331,42 @@ export default function HomePageContent() {
             {/* FAQ */}
             <FAQ items={[
                 {
-                    question: "You're new. Why should we trust you?",
-                    answer: "Fair question. We can't show you 500 case studies. What we can show you: working demos, transparent architecture, and a pilot program with dedicated support. Low risk, high accountability. Be among the first to experience what we've built."
+                    question: "Is this just another chatbot?",
+                    answer: "No. SwanDesk is a full customer support platform — like Intercom or Freshdesk, but built for Indian businesses with AI already inside. It's an inbox your team works from every day, not a chatbot widget you set and forget."
                 },
                 {
-                    question: "How long does implementation really take?",
-                    answer: "7 days for standard deployments. Complex integrations with legacy systems may take 2-3 weeks. We'll tell you upfront — no surprises."
+                    question: "How long does setup take?",
+                    answer: "Most teams connect WhatsApp and email on day 1, configure AI on day 2-3, and are fully live by day 7. We help. You're not alone."
                 },
                 {
-                    question: "Do you offer on-premise deployment?",
-                    answer: "Yes. True on-premise deployment in your data center. Not a 'dedicated VPC' that still lives in someone else's cloud. Complete data sovereignty with air-gapped option."
+                    question: "Can we deploy fully on-premises?",
+                    answer: "Yes. True on-premise — your data center, your servers. No external API calls required. We use Ollama for the LLM, Whisper for voice transcription, and Asterisk for SIP routing. Air-gapped, DPDP compliant."
                 },
                 {
-                    question: "What happens if the bot gets stuck?",
-                    answer: "Seamless handoff to your human agents with full conversation context. We don't believe in AI-only dead ends — your customers always get the help they need."
+                    question: "What happens when the AI can't answer?",
+                    answer: "The conversation routes to a human agent with full context. No dead ends. No 'I didn't understand that' loops."
                 },
                 {
-                    question: "Do you support Hindi and regional languages?",
-                    answer: "Yes. Hindi, Tamil, Telugu, Marathi, Bengali, Kannada, Malayalam, Gujarati, Punjabi, Odia, and more. Native NLU support, not Google Translate bolted on."
+                    question: "Which Indian languages are supported?",
+                    answer: "Hindi, Tamil, Telugu, Marathi, Bengali, Kannada, Malayalam, Gujarati, Punjabi, Odia, and Hinglish. Native support — not just translation."
                 },
                 {
-                    question: "What's the pricing model?",
-                    answer: "Flat platform licensing. No per-conversation fees. No surprises when your volume grows. Talk to us for a custom quote based on your requirements."
+                    question: "How is pricing different from Freshdesk or Intercom?",
+                    answer: "Flat monthly fee per plan — not per seat, not per conversation. You grow, your price doesn't explode."
                 }
             ]} />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Let's Build Something That Works</h2>
-                    <p className="text-xl text-white/80 mb-8">No 6-month RFPs. No death-by-PowerPoint. Just a conversation about what you need.</p>
+                    <h2 className="text-4xl font-bold mb-6">Ready to fix your customer support?</h2>
+                    <p className="text-xl text-white/80 mb-8">Sign up free. No sales call required. You can be live on WhatsApp today.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Book Your Free Strategy Call
+                            Start Free — No Credit Card
                         </Link>
                         <Link href="/platform" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
-                            Explore the Platform
+                            See a demo first
                         </Link>
                     </div>
                 </div>

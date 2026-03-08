@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { Check, X, Zap, Gift, BadgePercent, MessageSquare, Phone, Users, Shield, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Transparent AI Pricing: Pilot to Enterprise | SwanDigitals',
-    description: 'Clear pricing for Indian Enterprises. From ₹10k Pilot to Custom On-premise plans. No hidden token costs.',
+    title: 'Honest Pricing. No Surprises. | SwanDesk',
+    description: 'Clear pricing for Indian businesses. From ₹10k Pilot to Custom On-premise plans. No per-message billing — ever.',
     keywords: ['Cost of AI Chatbot India', 'Enterprise AI Pricing', 'Chatbot Development Cost', 'Token Pricing vs Flat Rate'],
     alternates: {
         canonical: 'https://swandigitals.com/pricing',
@@ -118,9 +118,9 @@ export default function PricingPage() {
     ];
 
     const faqItems = [
-        { question: "What is the Pilot / PoV tier?", answer: "Our Pilot tier is a low-risk entry point for businesses wanting to test SwanDigitals before committing. It includes up to 3 flows, 2 channels (WhatsApp + Web), 2 human agent seats, and up to 2,000 conversations OR 5 hours of voice equivalent. Setup takes just 1 week. If you convert to a paid plan within 3 months, the pilot fee is refunded!" },
+        { question: "What is the Pilot / PoV tier?", answer: "Our Pilot tier is a low-risk entry point for businesses wanting to test SwanDesk before committing. It includes up to 3 flows, 2 channels (WhatsApp + Web), 2 human agent seats, and up to 2,000 conversations OR 5 hours of voice equivalent. Setup takes just 1 week. If you convert to a paid plan within 3 months, the pilot fee is refunded!" },
         { question: "How does pricing work?", answer: "We offer flexible, custom pricing based on your specific needs. Contact our sales team for a personalized quote that matches your conversation volume, channels, and deployment requirements." },
-        { question: "How does the pilot credit refund work?", answer: "If you sign a 12-month contract within 3 months of completing your pilot, we'll credit your full pilot payment towards your subscription. This gives you a risk-free way to evaluate SwanDigitals." },
+        { question: "How does the pilot credit refund work?", answer: "If you sign a 12-month contract within 3 months of completing your pilot, we'll credit your full pilot payment towards your subscription. This gives you a risk-free way to evaluate SwanDesk." },
         { question: "What payment methods do you accept?", answer: "We accept all major credit/debit cards, UPI, and net banking. Enterprise customers can opt for invoice-based billing with NET30 terms." },
         { question: "What's included in the Enterprise Plan?", answer: "Enterprise Plan is our full-featured tier for large organizations. It includes on-premise or managed private cloud deployment, unlimited everything, a named Customer Success Manager, SLA guarantees, SSO integration, and governance onboarding. Multi-year licensing discounts of 10-20% are available." },
         { question: "Do you offer a channel/partner SKU?", answer: "Yes! For partners and resellers serving price-sensitive SMB/D2C customers, we offer a white-label Channel SKU with adjusted SLAs. Contact our partnership team for details." }
@@ -129,9 +129,9 @@ export default function PricingPage() {
     return (
         <SiteLayout>
             <Hero
-                badge="💼 Flexible Pricing"
-                title="Plans That Grow With Your Business"
-                subtitle="Start with a low-risk pilot. No annual lock-in. Upgrade when you're ready. Contact us for custom pricing."
+                badge="💼 SwanDesk Pricing"
+                title="Honest Pricing. No Surprises."
+                subtitle="Start free. Pay when you're ready. No per-message billing — ever."
                 primaryCTA={{ text: "Start Pilot", href: "/demo" }}
                 secondaryCTA={{ text: "Talk to Sales", href: "/contact" }}
             />
@@ -209,7 +209,7 @@ export default function PricingPage() {
             {/* Why Choose Us */}
             <section className="py-20 bg-white">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4">Why SwanDigitals?</h2>
+                    <h2 className="text-3xl font-bold text-center mb-4">Why SwanDesk?</h2>
                     <p className="text-slate-600 text-center mb-12">Enterprise features at competitive prices</p>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="text-center p-6">

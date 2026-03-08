@@ -4,9 +4,9 @@ import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'About SwanDigitals - Building Sovereign AI for India | Abhishek Ambad',
-    description: 'Founded by Abhishek Ambad to bring enterprise-grade AI solutions with 100% data sovereignty to Indian businesses. Built in India, for India.',
-    keywords: ['About SwanDigitals', 'Indian AI Company', 'Sovereign AI Vision', 'Pune Tech Company', 'Abhishek Ambad'],
+    title: 'About SwanDesk — Built in India for Indian Businesses | Abhishek Ambad',
+    description: 'SwanDesk is an AI-powered customer support platform built by Abhishek Ambad in Pune. Our mission: give Indian businesses enterprise-grade support tools without the enterprise price tag.',
+    keywords: ['About SwanDesk', 'Indian AI Company', 'Customer Support Platform India', 'Pune Tech Company', 'Abhishek Ambad'],
     alternates: {
         canonical: 'https://swandigitals.com/about',
     },
@@ -16,9 +16,9 @@ export default function AboutPage() {
     return (
         <SiteLayout>
             <Hero
-                badge="👋 About SwanDigitals"
-                title="Building Sovereign AI for India"
-                subtitle="Founded by Abhishek Ambad to empower Indian enterprises with AI that respects data sovereignty and regulatory requirements."
+                badge="👋 About SwanDesk"
+                title="We Built the Support Tool We Wished Existed"
+                subtitle="SwanDesk started because Indian businesses deserve a customer support platform that speaks their customers' languages, respects their data, and actually fits their budget."
                 primaryCTA={{ text: "Get in Touch", href: "/contact" }}
                 secondaryCTA={{ text: "View Platform", href: "/platform" }}
             />
@@ -29,33 +29,30 @@ export default function AboutPage() {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
                         <p className="text-2xl text-slate-700 leading-relaxed">
-                            To democratize enterprise AI for Indian businesses by providing <span className="text-orange-600 font-bold">100% data-sovereign,
-                                on-premise AI solutions</span> that meet the strictest regulatory requirements while remaining accessible and affordable.
+                            Give Indian businesses — from a Pune startup to a Mumbai bank — the kind of customer support tools that used to cost crores and take months. <span className="text-orange-600 font-bold">Simple. Affordable. Actually sovereign.</span>
                         </p>
                     </div>
 
                     <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-12 rounded-3xl">
                         <h3 className="text-2xl font-bold mb-6 text-center">Our Vision</h3>
                         <p className="text-lg text-slate-700 leading-relaxed text-center">
-                            To be India's most trusted AI platform for regulated industries — where banks, healthcare providers,
-                            and government agencies can harness the power of AI without compromising on data security,
-                            compliance, or sovereignty.
+                            Every Indian business, no matter the size, can deliver world-class customer support — in their customers' language, on their customers' preferred channel, without a data security headache.
                         </p>
                         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="text-center">
                                 <div className="text-4xl mb-2">🇮🇳</div>
-                                <h4 className="font-bold mb-1">Made in India</h4>
-                                <p className="text-sm text-slate-600">Built for Indian regulations</p>
+                                <h4 className="font-bold mb-1">Built for India</h4>
+                                <p className="text-sm text-slate-600">We understand DPDP, RBI, regional languages, and Indian enterprise budgets. This isn't Intercom with a rupee symbol.</p>
                             </div>
                             <div className="text-center">
                                 <div className="text-4xl mb-2">🔒</div>
-                                <h4 className="font-bold mb-1">Data Sovereignty</h4>
-                                <p className="text-sm text-slate-600">Your data stays in your control</p>
+                                <h4 className="font-bold mb-1">Your data is yours</h4>
+                                <p className="text-sm text-slate-600">We'll say it plainly: we don't read your customer conversations. On-prem or cloud — what happens in your inbox stays in your inbox.</p>
                             </div>
                             <div className="text-center">
                                 <div className="text-4xl mb-2">⚡</div>
-                                <h4 className="font-bold mb-1">Fast Deployment</h4>
-                                <p className="text-sm text-slate-600">Live in weeks, not months</p>
+                                <h4 className="font-bold mb-1">Fast, not perfect</h4>
+                                <p className="text-sm text-slate-600">We'd rather get you live in 7 days and improve together than sell you a 6-month implementation plan.</p>
                             </div>
                         </div>
                     </div>
@@ -77,15 +74,10 @@ export default function AboutPage() {
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Abhishek Ambad</h3>
                                 <p className="text-lg text-orange-600 font-semibold mb-4">Founder & CEO</p>
                                 <p className="text-slate-700 leading-relaxed mb-4">
-                                    Abhishek founded SwanDigitals with a vision to bring enterprise-grade AI solutions to Indian
-                                    businesses while ensuring complete data sovereignty. With deep expertise in AI systems and
-                                    a strong understanding of India's regulatory landscape, he is committed to building
-                                    technology that empowers organizations without compromising their data security.
+                                    Abhishek started SwanDesk after seeing too many Indian businesses stuck with expensive, complicated support tools — or worse, managing customer support entirely over WhatsApp groups.
                                 </p>
                                 <p className="text-slate-700 leading-relaxed">
-                                    Based in Pune, Abhishek works directly with enterprise clients to ensure SwanDigitals
-                                    delivers solutions that truly meet the needs of Indian businesses in banking, healthcare,
-                                    and government sectors.
+                                    Based in Pune, he works directly with customers to make sure SwanDesk solves real problems.
                                 </p>
                             </div>
                         </div>
@@ -97,26 +89,21 @@ export default function AboutPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="text-center p-6">
                             <div className="text-5xl mb-4">🇮🇳</div>
-                            <h3 className="text-xl font-bold mb-3">India First</h3>
-                            <p className="text-slate-600">Built for Indian compliance, regulations, and data sovereignty requirements.</p>
+                            <h3 className="text-xl font-bold mb-3">Built for India</h3>
+                            <p className="text-slate-600">We understand DPDP, RBI, regional languages, and Indian enterprise budgets. This isn't Intercom with a rupee symbol.</p>
                         </div>
                         <div className="text-center p-6">
                             <div className="text-5xl mb-4">🔒</div>
-                            <h3 className="text-xl font-bold mb-3">Security Always</h3>
-                            <p className="text-slate-600">Your data security is non-negotiable. On-premise, air-gapped, and encrypted.</p>
+                            <h3 className="text-xl font-bold mb-3">Your data is yours</h3>
+                            <p className="text-slate-600">We'll say it plainly: we don't read your customer conversations. On-prem or cloud — what happens in your inbox stays in your inbox.</p>
                         </div>
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">🤝</div>
-                            <h3 className="text-xl font-bold mb-3">Customer Success</h3>
-                            <p className="text-slate-600">We succeed when you succeed. Direct support from the founder.</p>
-                        </div>
-                        <div className="text-center p-6">
-                            <div className="text-5xl mb-4">🚀</div>
-                            <h3 className="text-xl font-bold mb-3">Fast Execution</h3>
-                            <p className="text-slate-600">Deploy in weeks with instant support. No enterprise sales theater.</p>
+                            <div className="text-5xl mb-4">⚡</div>
+                            <h3 className="text-xl font-bold mb-3">Fast, not perfect</h3>
+                            <p className="text-slate-600">We'd rather get you live in 7 days and improve together than sell you a 6-month implementation plan.</p>
                         </div>
                     </div>
                 </div>
@@ -125,10 +112,10 @@ export default function AboutPage() {
             {/* Why We're Different */}
             <section className="py-20 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold mb-6">Why SwanDigitals is Different</h2>
+                    <h2 className="text-3xl font-bold mb-6">Why SwanDesk is Different</h2>
                     <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                        We're not trying to be the biggest AI company. We're focused on being the most trusted
-                        AI partner for Indian enterprises that take data sovereignty seriously.
+                        We're not trying to be the biggest support platform. We're focused on being the most trusted
+                        one for Indian businesses that take their customers' data seriously.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
@@ -156,7 +143,7 @@ export default function AboutPage() {
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-6">Ready to Work Together?</h2>
                     <p className="text-xl text-slate-600 mb-8">
-                        Let's discuss how SwanDigitals can help your organization with data-sovereign AI.
+                        Let's discuss how SwanDesk can help your team deliver better customer support.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">

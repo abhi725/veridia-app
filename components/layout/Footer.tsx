@@ -9,11 +9,11 @@ export default function Footer() {
                     {/* Company */}
                     <div>
                         <div className="flex items-center gap-2 mb-4">
-                            <img src="/logo.png" alt="SwanDigitals" className="h-8 w-auto invert" />
-                            <span className="text-xl font-bold">SwanDigitals</span>
+                            <img src="/logo.png" alt="SwanDesk" className="h-8 w-auto invert" />
+                            <span className="text-xl font-bold">SwanDesk</span>
                         </div>
                         <p className="text-slate-400 text-sm">
-                            Enterprise AI Workforces for Indian Business. Deploy private, air-gapped AI Agents. DPDP 2023 Compliant.
+                            AI-powered customer support for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. DPDP 2023 Compliant.
                         </p>
                         <div className="flex gap-4 mt-4">
                             <a href="#" className="text-slate-400 hover:text-white"><Linkedin className="w-5 h-5" /></a>
@@ -92,7 +92,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-sm text-slate-400">
-                        © 2026 SwanDigitals. All rights reserved. Pune, Maharashtra, India.
+                        © 2026 SwanDigitals. All rights reserved. Pune, Maharashtra, India.  SwanDesk is a product of SwanDigitals.
                     </p>
                     <div className="flex gap-6 text-sm text-slate-400">
                         <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>

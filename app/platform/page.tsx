@@ -82,7 +82,7 @@ export default function PlatformPage() {
                         </div>
                     </div>
                     <p className="text-center text-xl font-semibold text-slate-900">
-                        SwanDigitals solves all three. Here's how:
+                        SwanDesk solves all three. Here's how:
                     </p>
                 </div>
             </section>
