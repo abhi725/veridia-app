@@ -58,44 +58,7 @@ export default function ContactPage() {
                     {/* Contact Form */}
                     <div className="max-w-2xl mx-auto">
                         <h2 className="text-3xl font-bold text-center mb-8">Send Us a Message</h2>
-                        <form className="space-y-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block font-medium mb-2">First Name *</label>
-                                    <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none" required />
-                                </div>
-                                <div>
-                                    <label className="block font-medium mb-2">Last Name *</label>
-                                    <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none" required />
-                                </div>
-                            </div>
-                            <div>
-                                <label className="block font-medium mb-2">Work Email *</label>
-                                <input type="email" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none" required />
-                            </div>
-                            <div>
-                                <label className="block font-medium mb-2">Company</label>
-                                <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none" />
-                            </div>
-                            <div>
-                                <label className="block font-medium mb-2">How can we help? *</label>
-                                <select className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none" required>
-                                    <option value="">Select an option</option>
-                                    <option value="demo">Request a demo</option>
-                                    <option value="pricing">Pricing question</option>
-                                    <option value="support">Technical support</option>
-                                    <option value="partnership">Partnership inquiry</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block font-medium mb-2">Message *</label>
-                                <textarea rows={5} className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none resize-none" required></textarea>
-                            </div>
-                            <button type="submit" className="w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-lg font-semibold text-lg hover:shadow-lg transition-all">
-                                Send Message
-                            </button>
-                        </form>
+                        <div className="engage-hub-form-embed" id="eh_form_5903844064886784" data-id="5903844064886784"></div>
                     </div>
                 </div>
             </section>
