@@ -17,20 +17,20 @@ import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export default function VsHaptikPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "₹25,000+/month" },
-        { feature: "Implementation Time", SwanDigitals: "1-4 weeks", competitor: "4-8 weeks" },
-        { feature: "Voice AI Native", SwanDigitals: true, competitor: false },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: true },
-        { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
-        { feature: "WhatsApp Pricing", SwanDigitals: "Pass-through + 5-20%", competitor: "High markup" },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "100+ languages" },
-        { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
-        { feature: "Sentiment Analysis", SwanDigitals: true, competitor: true },
-        { feature: "API Access", SwanDigitals: true, competitor: true },
-        { feature: "Setup Fees", SwanDigitals: "₹0-₹40,000", competitor: "Custom" },
-        { feature: "Annual Contract Required", SwanDigitals: false, competitor: true },
-        { feature: "Data Residency India", SwanDigitals: "100% guaranteed", competitor: "May be concern for regulated clients" }
+        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "₹25,000+/month" },
+        { feature: "Implementation Time", SwanDesk: "1-4 weeks", competitor: "4-8 weeks" },
+        { feature: "Voice AI Native", SwanDesk: true, competitor: false },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
+        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
+        { feature: "WhatsApp Pricing", SwanDesk: "Pass-through + 5-20%", competitor: "High markup" },
+        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "100+ languages" },
+        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
+        { feature: "Sentiment Analysis", SwanDesk: true, competitor: true },
+        { feature: "API Access", SwanDesk: true, competitor: true },
+        { feature: "Setup Fees", SwanDesk: "₹0-₹40,000", competitor: "Custom" },
+        { feature: "Annual Contract Required", SwanDesk: false, competitor: true },
+        { feature: "Data Residency India", SwanDesk: "100% guaranteed", competitor: "May be concern for regulated clients" }
     ];
 
     return (

@@ -28,9 +28,9 @@ export default function CustomerServicePage() {
     ];
 
     const faqItems = [
-        { question: "How does SwanDigitals handle complex queries?", answer: "Our AI uses multi-turn conversation management and context retention to handle complex queries. When needed, it seamlessly hands off to human agents with full conversation history." },
+        { question: "How does SwanDesk handle complex queries?", answer: "Our AI uses multi-turn conversation management and context retention to handle complex queries. When needed, it seamlessly hands off to human agents with full conversation history." },
         { question: "Can it integrate with our existing helpdesk?", answer: "Yes! We have pre-built integrations with Zendesk, Freshdesk, Salesforce Service Cloud, Intercom, and 50+ other platforms. Custom integrations are also available." },
-        { question: "What languages are supported?", answer: "SwanDigitals supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU — not just translation." },
+        { question: "What languages are supported?", answer: "SwanDesk supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU — not just translation." },
         { question: "How long does implementation take?", answer: "Most customer service deployments go live in 2-4 weeks, including training and integration." }
     ];
 
@@ -160,7 +160,7 @@ export default function CustomerServicePage() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Customer Service?</h2>
-                    <p className="text-xl text-white/80 mb-8">See how SwanDigitals can automate 90% of your support tickets</p>
+                    <p className="text-xl text-white/80 mb-8">See how SwanDesk can automate 90% of your support tickets</p>
                     <Link href="/demo" className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                         Get Your Free Demo
                     </Link>

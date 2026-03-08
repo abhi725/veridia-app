@@ -65,7 +65,7 @@ export default function CookiesPage() {
             <Hero
                 badge="🍪 Legal"
                 title="Cookie Policy"
-                subtitle="Last updated: December 17, 2024 | ePrivacy Directive & GDPR Compliant"
+                subtitle="Last updated: March 1, 2026 | DPDP Act 2023 (Digital Personal Data Protection Act) Compliant"
             />
 
             <section className="py-20 bg-white">
@@ -81,10 +81,9 @@ export default function CookiesPage() {
                                 as well as to provide information to the website owners.
                             </p>
                             <p>
-                                This Cookie Policy explains how <strong>SwanDigitals GmbH</strong> ("SwanDigitals", "we", "us") uses
-                                cookies and similar technologies on our website (SwanDigitals.ai) and our application, in accordance
-                                with the <strong>EU ePrivacy Directive (2002/58/EC)</strong> and the <strong>General Data
-                                    Protection Regulation (GDPR)</strong>.
+                                This Cookie Policy explains how <strong>SwanDigitals</strong> ("SwanDigitals", "we", "us") uses
+                                cookies and similar technologies on our website (swandigitals.com) and our application, in accordance
+                                with the <strong>DPDP Act 2023 (Digital Personal Data Protection Act)</strong> and applicable Indian data protection regulations.
                             </p>
                         </div>
                     </div>
@@ -190,12 +189,12 @@ export default function CookiesPage() {
 
                     {/* Legal Basis */}
                     <div className="mb-12">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Legal Basis (GDPR)</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Legal Basis (DPDP Act 2023)</h2>
                         <div className="text-slate-700 space-y-4">
                             <p>We process cookie data based on:</p>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li><strong>Consent (Art. 6(1)(a)):</strong> For analytics, marketing, and preference cookies</li>
-                                <li><strong>Legitimate Interest (Art. 6(1)(f)):</strong> For essential cookies necessary for the website to function</li>
+                                <li><strong>Consent:</strong> For analytics, marketing, and preference cookies</li>
+                                <li><strong>Legitimate Use:</strong> For essential cookies necessary for the website to function</li>
                             </ul>
                             <p>
                                 You can withdraw consent at any time using the cookie preference panel above.
@@ -234,12 +233,12 @@ export default function CookiesPage() {
                     <div className="mb-12">
                         <h2 className="text-2xl font-bold text-slate-900 mb-4">9. Your Rights</h2>
                         <div className="text-slate-700 space-y-4">
-                            <p>Under GDPR, you have the right to:</p>
+                            <p>Under the DPDP Act 2023 (Digital Personal Data Protection Act), you have the right to:</p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>Access information about cookies we use</li>
                                 <li>Withdraw consent at any time</li>
                                 <li>Request deletion of cookie data we hold about you</li>
-                                <li>Lodge a complaint with a supervisory authority</li>
+                                <li>Lodge a complaint with the Ministry of Electronics and Information Technology (MEITY), Government of India</li>
                             </ul>
                         </div>
                     </div>
@@ -250,10 +249,10 @@ export default function CookiesPage() {
                         <div className="text-slate-700 space-y-4">
                             <p>For questions about our use of cookies, contact:</p>
                             <div className="bg-slate-50 p-6 rounded-xl">
-                                <p><strong>Data Protection Officer</strong></p>
-                                <p>SwanDigitals GmbH</p>
-                                <p>Kurfürstendamm 21, 10719 Berlin, Germany</p>
-                                <p>Email: dpo@SwanDigitals.ai</p>
+                                <p><strong>Data Protection Contact</strong></p>
+                                <p>SwanDigitals</p>
+                                <p>B31 Flat, Aaykar Society, Kothrud, Pune, Maharashtra 411038, India</p>
+                                <p>Email: dpo@swandigitals.com</p>
                             </div>
                         </div>
                     </div>

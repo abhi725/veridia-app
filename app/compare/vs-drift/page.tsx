@@ -16,18 +16,18 @@ import Link from 'next/link';
 
 export default function VsDriftPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "Free / ₹1,999", competitor: "$2,500+/month" },
-        { feature: "Voice AI", SwanDigitals: true, competitor: false },
-        { feature: "Self-Hosted Option", SwanDigitals: true, competitor: false },
-        { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: true },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: false },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "Limited" },
-        { feature: "Target Market", SwanDigitals: "All businesses", competitor: "Enterprise only" },
-        { feature: "Sales Focus", SwanDigitals: "Sales + Support", competitor: "Sales only" },
-        { feature: "AI Chatbot", SwanDigitals: true, competitor: true },
-        { feature: "Meeting Scheduling", SwanDigitals: true, competitor: true },
-        { feature: "Data Residency Options", SwanDigitals: true, competitor: false }
+        { feature: "Starting Price", SwanDesk: "Free / ₹1,999", competitor: "$2,500+/month" },
+        { feature: "Voice AI", SwanDesk: true, competitor: false },
+        { feature: "Self-Hosted Option", SwanDesk: true, competitor: false },
+        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: false },
+        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Limited" },
+        { feature: "Target Market", SwanDesk: "All businesses", competitor: "Enterprise only" },
+        { feature: "Sales Focus", SwanDesk: "Sales + Support", competitor: "Sales only" },
+        { feature: "AI Chatbot", SwanDesk: true, competitor: true },
+        { feature: "Meeting Scheduling", SwanDesk: true, competitor: true },
+        { feature: "Data Residency Options", SwanDesk: true, competitor: false }
     ];
 
     return (

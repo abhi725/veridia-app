@@ -16,18 +16,18 @@ import Link from 'next/link';
 
 export default function VsPegaPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "Free / ₹1,999", competitor: "$35+/user/month (500 user min)" },
-        { feature: "Implementation Time", SwanDigitals: "2-4 weeks", competitor: "12+ weeks" },
-        { feature: "Pricing Model", SwanDigitals: "Simple monthly", competitor: "Complex case-based" },
-        { feature: "Voice AI Native", SwanDigitals: true, competitor: false },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: false },
-        { feature: "Minimum Commitment", SwanDigitals: "None", competitor: "500 users + 350K cases/year" },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: false },
-        { feature: "Standalone Chatbot", SwanDigitals: true, competitor: "Platform add-on only" },
-        { feature: "Multi-Channel Native", SwanDigitals: true, competitor: true },
-        { feature: "Case Management", SwanDigitals: true, competitor: true },
-        { feature: "Setup Fees", SwanDigitals: "₹0", competitor: "Custom (High)" },
-        { feature: "SMB Friendly", SwanDigitals: true, competitor: false }
+        { feature: "Starting Price", SwanDesk: "Free / ₹1,999", competitor: "$35+/user/month (500 user min)" },
+        { feature: "Implementation Time", SwanDesk: "2-4 weeks", competitor: "12+ weeks" },
+        { feature: "Pricing Model", SwanDesk: "Simple monthly", competitor: "Complex case-based" },
+        { feature: "Voice AI Native", SwanDesk: true, competitor: false },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: false },
+        { feature: "Minimum Commitment", SwanDesk: "None", competitor: "500 users + 350K cases/year" },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: false },
+        { feature: "Standalone Chatbot", SwanDesk: true, competitor: "Platform add-on only" },
+        { feature: "Multi-Channel Native", SwanDesk: true, competitor: true },
+        { feature: "Case Management", SwanDesk: true, competitor: true },
+        { feature: "Setup Fees", SwanDesk: "₹0", competitor: "Custom (High)" },
+        { feature: "SMB Friendly", SwanDesk: true, competitor: false }
     ];
 
     return (

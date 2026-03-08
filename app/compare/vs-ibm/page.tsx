@@ -16,18 +16,18 @@ import Link from 'next/link';
 
 export default function VsIBMPage() {
     const comparisonRows = [
-        { feature: "Modern Tech Stack", SwanDigitals: "Gemini + Cloudflare + Next.js", competitor: "Legacy Watson" },
-        { feature: "Developer Experience", SwanDigitals: "Excellent", competitor: "Complex" },
-        { feature: "Time to Market", SwanDigitals: "2-4 weeks", competitor: "6-12 months" },
-        { feature: "Monthly Cost (Professional)", SwanDigitals: "$1,999", competitor: "$10,000+" },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: false },
-        { feature: "API-First Architecture", SwanDigitals: true, competitor: "Limited" },
-        { feature: "Innovation Speed", SwanDigitals: "Monthly updates", competitor: "Quarterly" },
-        { feature: "Cloud Native", SwanDigitals: true, competitor: "Hybrid legacy" },
-        { feature: "Startup Agility", SwanDigitals: true, competitor: false },
-        { feature: "Enterprise Size Req", SwanDigitals: "Any size", competitor: "Fortune 500 only" },
-        { feature: "Modern AI Models", SwanDigitals: "Latest Gemini", competitor: "Older Watson" },
-        { feature: "Community Support", SwanDigitals: "Active", competitor: "Limited" }
+        { feature: "Modern Tech Stack", SwanDesk: "Gemini + Cloudflare + Next.js", competitor: "Legacy Watson" },
+        { feature: "Developer Experience", SwanDesk: "Excellent", competitor: "Complex" },
+        { feature: "Time to Market", SwanDesk: "2-4 weeks", competitor: "6-12 months" },
+        { feature: "Monthly Cost (Professional)", SwanDesk: "$1,999", competitor: "$10,000+" },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: false },
+        { feature: "API-First Architecture", SwanDesk: true, competitor: "Limited" },
+        { feature: "Innovation Speed", SwanDesk: "Monthly updates", competitor: "Quarterly" },
+        { feature: "Cloud Native", SwanDesk: true, competitor: "Hybrid legacy" },
+        { feature: "Startup Agility", SwanDesk: true, competitor: false },
+        { feature: "Enterprise Size Req", SwanDesk: "Any size", competitor: "Fortune 500 only" },
+        { feature: "Modern AI Models", SwanDesk: "Latest Gemini", competitor: "Older Watson" },
+        { feature: "Community Support", SwanDesk: "Active", competitor: "Limited" }
     ];
 
     return (

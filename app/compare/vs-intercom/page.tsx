@@ -17,18 +17,18 @@ import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export default function VsIntercomPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "$74+/month (per seat)" },
-        { feature: "Voice AI", SwanDigitals: true, competitor: false },
-        { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: true },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
-        { feature: "Self-Hosted Option", SwanDigitals: true, competitor: false },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "22 Indian + 8 global", competitor: "Limited" },
-        { feature: "Pricing Model", SwanDigitals: "Flat platform fee", competitor: "Per seat + resolution" },
-        { feature: "AI Bot Included", SwanDigitals: true, competitor: "Add-on ($0.99/resolution)" },
-        { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
-        { feature: "Data Residency India", SwanDigitals: "100% guaranteed", competitor: false },
-        { feature: "Enterprise Features", SwanDigitals: "All plans", competitor: "Enterprise tier only" }
+        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "$74+/month (per seat)" },
+        { feature: "Voice AI", SwanDesk: true, competitor: false },
+        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
+        { feature: "Self-Hosted Option", SwanDesk: true, competitor: false },
+        { feature: "Multi-Language (Indic)", SwanDesk: "22 Indian + 8 global", competitor: "Limited" },
+        { feature: "Pricing Model", SwanDesk: "Flat platform fee", competitor: "Per seat + resolution" },
+        { feature: "AI Bot Included", SwanDesk: true, competitor: "Add-on ($0.99/resolution)" },
+        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
+        { feature: "Data Residency India", SwanDesk: "100% guaranteed", competitor: false },
+        { feature: "Enterprise Features", SwanDesk: "All plans", competitor: "Enterprise tier only" }
     ];
 
     return (

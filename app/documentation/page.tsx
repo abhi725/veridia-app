@@ -123,7 +123,7 @@ print(response.confidence) # Confidence score`}
                         <Link href="/contact" className="px-6 py-3 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all">
                             Contact Support
                         </Link>
-                        <a href="https://community.SwanDigitals.ai" className="px-6 py-3 bg-white border-2 border-slate-200 text-slate-900 rounded-full font-semibold hover:border-orange-300 transition-all">
+                        <a href="https://community.swandigitals.com" className="px-6 py-3 bg-white border-2 border-slate-200 text-slate-900 rounded-full font-semibold hover:border-orange-300 transition-all">
                             Join Community
                         </a>
                     </div>

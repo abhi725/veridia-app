@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Kore.ai: Flexible On-Premise Alternative | SwanDigitals',
-    description: 'Compare SwanDigitals vs Kore.ai. Faster implementation, lower cost, and true on-premise deployment for Indian Enterprises.',
-    keywords: ['Swandigitals vs Kore.ai', 'Kore.ai Alternative India', 'Kore.ai Pricing vs SwanDigitals', 'On-premise AI Chatbot'],
+    title: 'SwanDesk vs Kore.ai: Flexible On-Premise Alternative | SwanDesk',
+    description: 'Compare SwanDesk vs Kore.ai. Faster implementation, lower cost, and true on-premise deployment for Indian Enterprises.',
+    keywords: ['Swandigitals vs Kore.ai', 'Kore.ai Alternative India', 'Kore.ai Pricing vs SwanDesk', 'On-premise AI Chatbot'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-kore',
     },
@@ -17,27 +17,27 @@ import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export default function VsKorePage() {
     const comparisonRows = [
-        { feature: "Implementation Time", SwanDigitals: "1-4 weeks", competitor: "3-6 months" },
-        { feature: "Target Market", SwanDigitals: "SMB to Enterprise", competitor: "Large, complex enterprises" },
-        { feature: "Monthly Cost (Professional)", SwanDigitals: "₹28,000/mo", competitor: "$5,000+" },
-        { feature: "On-Premise Deployment", SwanDigitals: true, competitor: true },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: false },
-        { feature: "Industry Solutions", SwanDigitals: "General + Custom", competitor: "BankAssist, HealthAssist" },
-        { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
-        { feature: "Multi-Language Support", SwanDigitals: "22 Indian + 8 global", competitor: "60+ languages" },
-        { feature: "API Access", SwanDigitals: true, competitor: true },
-        { feature: "Custom Integrations", SwanDigitals: "Unlimited", competitor: "Limited" },
-        { feature: "Training Required", SwanDigitals: "1-2 days", competitor: "1-2 weeks" },
-        { feature: "Annual Contract Required", SwanDigitals: false, competitor: true },
-        { feature: "Setup Fees", SwanDigitals: "₹0-₹40,000", competitor: "$10,000+" }
+        { feature: "Implementation Time", SwanDesk: "1-4 weeks", competitor: "3-6 months" },
+        { feature: "Target Market", SwanDesk: "SMB to Enterprise", competitor: "Large, complex enterprises" },
+        { feature: "Monthly Cost (Professional)", SwanDesk: "Starting ₹12,000/month", competitor: "$5,000+" },
+        { feature: "On-Premise Deployment", SwanDesk: true, competitor: true },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: false },
+        { feature: "Industry Solutions", SwanDesk: "General + Custom", competitor: "BankAssist, HealthAssist" },
+        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
+        { feature: "Multi-Language Support", SwanDesk: "10+ Indian languages", competitor: "60+ languages" },
+        { feature: "API Access", SwanDesk: true, competitor: true },
+        { feature: "Custom Integrations", SwanDesk: "Unlimited", competitor: "Limited" },
+        { feature: "Training Required", SwanDesk: "1-2 days", competitor: "1-2 weeks" },
+        { feature: "Annual Contract Required", SwanDesk: false, competitor: true },
+        { feature: "Setup Fees", SwanDesk: "₹0-₹40,000", competitor: "$10,000+" }
     ];
 
     return (
         <SiteLayout>
             <Hero
                 badge="🆚 Detailed Comparison"
-                title="SwanDigitals vs Kore.ai"
-                subtitle="See why companies switch to SwanDigitals for 10x faster deployment and 60% lower costs"
+                title="SwanDesk vs Kore.ai"
+                subtitle="See why companies switch to SwanDesk for 10x faster deployment and 60% lower costs"
                 primaryCTA={{ text: "Start Pilot (₹10k)", href: "/demo" }}
                 secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
             />
@@ -87,7 +87,7 @@ export default function VsKorePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">⚡ 10x Faster Deployment</h3>
                             <p className="text-lg text-slate-700">
-                                Kore.ai's enterprise focus means 3-6 month implementations. SwanDigitals is designed for speed —
+                                Kore.ai's enterprise focus means 3-6 month implementations. SwanDesk is designed for speed —
                                 typical deployments complete in 1-4 weeks, letting you start seeing ROI faster.
                             </p>
                         </div>
@@ -95,7 +95,7 @@ export default function VsKorePage() {
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 Right-Sized for Mid-Market</h3>
                             <p className="text-lg text-slate-700">
                                 Kore.ai is built for complex enterprise deployments with industry-specific solutions. If you don't need BankAssist or HealthAssist,
-                                SwanDigitals gives you the same core AI capabilities without paying for features you won't use.
+                                SwanDesk gives you the same core AI capabilities without paying for features you won't use.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm">

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Yellow.ai - The On-Premise Alternative | 2026 Comparison',
-    description: 'Yellow.ai is cloud-only. SwanDigitals gives you true data sovereignty with air-gapped deployment. Compare deployment options, pricing, and features.',
-    keywords: ['Yellow.ai Alternative', 'Yellow.ai vs SwanDigitals', 'Sovereign Data AI', 'On-Premise Chatbot', 'Yellow.ai Pricing Comparison'],
+    title: 'SwanDesk vs Yellow.ai - The On-Premise Alternative | 2026 Comparison',
+    description: 'Yellow.ai is cloud-only. SwanDesk gives you true data sovereignty with air-gapped deployment. Compare deployment options, pricing, and features.',
+    keywords: ['Yellow.ai Alternative', 'Yellow.ai vs SwanDesk', 'Sovereign Data AI', 'On-Premise Chatbot', 'Yellow.ai Pricing Comparison'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-yellow',
     },
@@ -20,9 +20,9 @@ export default function VsYellowPage() {
             <Hero
                 badge="VS Yellow.ai"
                 title="The On-Premise Alternative to Yellow.ai"
-                subtitle="Yellow.ai is cloud-only. SwanDigitals gives you true data sovereignty with air-gapped deployment."
+                subtitle="Yellow.ai is cloud-only. SwanDesk gives you true data sovereignty with air-gapped deployment."
                 primaryCTA={{ text: "Book Comparison Demo", href: "/demo" }}
-                secondaryCTA={{ text: "See Our Security", href: "/platform/security" }}
+                secondaryCTA={{ text: "See Our Security", href: "/security" }}
             />
 
             {/* Comparison Badge */}
@@ -51,7 +51,7 @@ export default function VsYellowPage() {
                             <thead>
                                 <tr className="bg-slate-900 text-white">
                                     <th className="px-6 py-4 text-left font-semibold"></th>
-                                    <th className="px-6 py-4 text-center font-semibold text-orange-400">SwanDigitals</th>
+                                    <th className="px-6 py-4 text-center font-semibold text-orange-400">SwanDesk</th>
                                     <th className="px-6 py-4 text-center font-semibold">Yellow.ai</th>
                                 </tr>
                             </thead>
@@ -105,7 +105,7 @@ export default function VsYellowPage() {
                                 <p className="text-slate-700">100% air-gapped deployment. Your data never leaves your perimeter.</p>
                             </div>
                         </div>
-                        <Link href="/platform/security" className="mt-6 inline-block text-blue-600 font-semibold hover:text-blue-700">
+                        <Link href="/security" className="mt-6 inline-block text-blue-600 font-semibold hover:text-blue-700">
                             See Our Security Architecture →
                         </Link>
                     </div>
@@ -140,7 +140,7 @@ export default function VsYellowPage() {
                                 <h4 className="font-semibold text-green-600 mb-2">✅ Our Timeline</h4>
                                 <p className="text-slate-700 mb-4">21-day average (verified by customers)</p>
                                 <p className="text-sm text-slate-600">
-                                    Most SwanDigitals implementations complete in 3 weeks, compared to Yellow.ai's typical 60-90 day enterprise deployment timeline.
+                                    Most SwanDesk implementations complete in 3 weeks, compared to Yellow.ai's typical 60-90 day enterprise deployment timeline.
                                 </p>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ export default function VsYellowPage() {
                         <ul className="space-y-4 text-slate-700">
                             <li className="flex items-start gap-3">
                                 <span className="text-blue-600 font-bold">•</span>
-                                <span>You need support in 135+ languages (we do 22 Indian + 8 global)</span>
+                                <span>You need support in 135+ languages (we do 10+ Indian languages)</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-blue-600 font-bold">•</span>
@@ -230,7 +230,7 @@ export default function VsYellowPage() {
             {/* Final CTA */}
             <section className="py-20 bg-gradient-to-r from-orange-500 to-pink-500 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">See SwanDigitals vs Yellow.ai in Your Use Case</h2>
+                    <h2 className="text-4xl font-bold mb-6">See SwanDesk vs Yellow.ai in Your Use Case</h2>
                     <Link href="/demo" className="inline-block px-8 py-4 bg-white text-slate-900 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                         Book Comparison Demo
                     </Link>

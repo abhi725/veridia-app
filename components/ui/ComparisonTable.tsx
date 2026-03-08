@@ -2,7 +2,7 @@ import { Check, X } from 'lucide-react';
 
 interface ComparisonRow {
     feature: string;
-    SwanDigitals: boolean | string;
+    SwanDesk: boolean | string;
     competitor: boolean | string;
 }
 
@@ -23,7 +23,7 @@ export default function ComparisonTable({ title, competitorName, rows }: Compari
                         <thead>
                             <tr className="bg-slate-50">
                                 <th className="px-6 py-4 text-left font-semibold text-slate-900">Feature</th>
-                                <th className="px-6 py-4 text-center font-semibold text-orange-600">SwanDigitals</th>
+                                <th className="px-6 py-4 text-center font-semibold text-orange-600">SwanDesk</th>
                                 <th className="px-6 py-4 text-center font-semibold text-slate-600">{competitorName}</th>
                             </tr>
                         </thead>
@@ -32,14 +32,14 @@ export default function ComparisonTable({ title, competitorName, rows }: Compari
                                 <tr key={index} className="border-t border-slate-200 hover:bg-slate-50">
                                     <td className="px-6 py-4 font-medium text-slate-900">{row.feature}</td>
                                     <td className="px-6 py-4 text-center">
-                                        {typeof row.SwanDigitals === 'boolean' ? (
-                                            row.SwanDigitals ? (
+                                        {typeof row.SwanDesk === 'boolean' ? (
+                                            row.SwanDesk ? (
                                                 <Check className="w-6 h-6 text-green-600 mx-auto" />
                                             ) : (
                                                 <X className="w-6 h-6 text-red-400 mx-auto" />
                                             )
                                         ) : (
-                                            <span className="text-slate-700">{row.SwanDigitals}</span>
+                                            <span className="text-slate-700">{row.SwanDesk}</span>
                                         )}
                                     </td>
                                     <td className="px-6 py-4 text-center">

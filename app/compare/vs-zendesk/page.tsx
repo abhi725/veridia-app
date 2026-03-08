@@ -17,19 +17,19 @@ import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export default function VsZendeskPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "$55+/agent/month" },
-        { feature: "AI Chatbot", SwanDigitals: "Native, included", competitor: "Add-on (Answer Bot)" },
-        { feature: "Voice AI", SwanDigitals: true, competitor: false },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: "Limited" },
-        { feature: "Self-Hosted Option", SwanDigitals: true, competitor: false },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "Limited" },
-        { feature: "Pricing Model", SwanDigitals: "Flat platform fee", competitor: "Per agent + add-ons" },
-        { feature: "Conversation Automation", SwanDigitals: "90%+", competitor: "50-60%" },
-        { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
-        { feature: "Ticketing System", SwanDigitals: true, competitor: true },
-        { feature: "AI-First Design", SwanDigitals: true, competitor: "Bolt-on AI" },
-        { feature: "Data Residency India", SwanDigitals: "100% guaranteed", competitor: "Global data centers" }
+        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "$55+/agent/month" },
+        { feature: "AI Chatbot", SwanDesk: "Native, included", competitor: "Add-on (Answer Bot)" },
+        { feature: "Voice AI", SwanDesk: true, competitor: false },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: "Limited" },
+        { feature: "Self-Hosted Option", SwanDesk: true, competitor: false },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
+        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Limited" },
+        { feature: "Pricing Model", SwanDesk: "Flat platform fee", competitor: "Per agent + add-ons" },
+        { feature: "Conversation Automation", SwanDesk: "90%+", competitor: "50-60%" },
+        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
+        { feature: "Ticketing System", SwanDesk: true, competitor: true },
+        { feature: "AI-First Design", SwanDesk: true, competitor: "Bolt-on AI" },
+        { feature: "Data Residency India", SwanDesk: "100% guaranteed", competitor: "Global data centers" }
     ];
 
     return (

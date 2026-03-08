@@ -6,16 +6,16 @@ import Link from 'next/link';
 
 export default function WebinarsPage() {
     const upcomingWebinars = [
-        { title: "How FinanceOne Achieved 85% Automation in 30 Days", date: "Jan 15, 2025", time: "11:00 AM PT", speaker: "Sarah Johnson, CTO @ FinanceOne", type: "Case Study" },
-        { title: "True On-Premise vs Dedicated VPC: What's the Difference?", date: "Jan 22, 2025", time: "10:00 AM PT", speaker: "Michael Chen, Solutions Architect @ SwanDigitals", type: "Technical" },
-        { title: "2025 AI Customer Service Trends", date: "Feb 5, 2025", time: "11:00 AM PT", speaker: "Emily Rodriguez, VP Product @ SwanDigitals", type: "Industry" }
+        { title: "How FinanceOne Achieved 85% Automation in 30 Days", date: "April 15, 2026", time: "11:00 AM IST", speaker: "Abhishek Ambad, Founder @ SwanDesk", type: "Case Study" },
+        { title: "True On-Premise vs Dedicated VPC: What's the Difference?", date: "April 22, 2026", time: "10:00 AM IST", speaker: "Abhishek Ambad, Founder @ SwanDesk", type: "Technical" },
+        { title: "2026 AI Customer Service Trends in India", date: "May 5, 2026", time: "11:00 AM IST", speaker: "SwanDesk Team", type: "Industry" }
     ];
 
     const recordings = [
         { title: "Building Multi-Turn Conversations That Convert", duration: "45 min", views: "3,200", category: "Technical" },
         { title: "ROI Calculator: Measure Your AI Impact", duration: "30 min", views: "2,100", category: "Business" },
-        { title: "HIPAA Compliance for Healthcare Chatbots", duration: "60 min", views: "1,800", category: "Compliance" },
-        { title: "Integrating SwanDigitals with Salesforce", duration: "40 min", views: "2,500", category: "Technical" },
+        { title: "DPDP 2023 Compliance for Customer Support Chatbots", duration: "60 min", views: "1,800", category: "Compliance" },
+        { title: "Integrating SwanDesk with Salesforce", duration: "40 min", views: "2,500", category: "Technical" },
         { title: "From 0 to 10M Conversations: Scaling Guide", duration: "55 min", views: "1,500", category: "Technical" },
         { title: "Customer Service Automation Best Practices", duration: "35 min", views: "4,100", category: "Strategy" }
     ];

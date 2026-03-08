@@ -25,7 +25,7 @@ export default function SolutionsPage() {
             <Hero
                 badge="💡 Solutions"
                 title="AI Solutions for Every Use Case"
-                subtitle="Whether you're automating customer support, internal operations, or industry-specific workflows, SwanDigitals has a purpose-built solution."
+                subtitle="Whether you're automating customer support, internal operations, or industry-specific workflows, SwanDesk has a purpose-built solution."
                 primaryCTA={{ text: "Find Your Solution", href: "#use-cases" }}
                 secondaryCTA={{ text: "Talk to Expert", href: "/demo" }}
             />
@@ -34,10 +34,10 @@ export default function SolutionsPage() {
             <section className="py-12 bg-gradient-to-r from-orange-500 to-pink-500 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">500+</div><div className="text-white/80">Enterprise Customers</div></div>
+                        <div><div className="text-4xl font-bold">Growing</div><div className="text-white/80">Customer Base</div></div>
                         <div><div className="text-4xl font-bold">86%</div><div className="text-white/80">Avg Automation Rate</div></div>
-                        <div><div className="text-4xl font-bold">$1.2M</div><div className="text-white/80">Avg Annual Savings</div></div>
-                        <div><div className="text-4xl font-bold">21 days</div><div className="text-white/80">Avg Deployment</div></div>
+                        <div><div className="text-4xl font-bold">Measurable</div><div className="text-white/80">ROI from Day 1</div></div>
+                        <div><div className="text-4xl font-bold">7 Days</div><div className="text-white/80">Avg Setup</div></div>
                     </div>
                 </div>
             </section>

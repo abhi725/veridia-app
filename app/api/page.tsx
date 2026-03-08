@@ -8,8 +8,8 @@ import Link from 'next/link';
 export default function APIPage() {
     const sdks = [
         { lang: "Python", icon: "🐍", install: "pip install SwanDigitals-sdk", docs: "/docs/python" },
-        { lang: "Node.js", icon: "💚", install: "npm install @SwanDigitals/sdk", docs: "/docs/nodejs" },
-        { lang: "Java", icon: "☕", install: "maven: com.SwanDigitals:sdk", docs: "/docs/java" },
+        { lang: "Node.js", icon: "💚", install: "npm install @swandigitals/sdk", docs: "/docs/nodejs" },
+        { lang: "Java", icon: "☕", install: "maven: com.swandigitals:sdk", docs: "/docs/java" },
         { lang: "Go", icon: "🔵", install: "go get github.com/SwanDigitals/go-sdk", docs: "/docs/go" }
     ];
 

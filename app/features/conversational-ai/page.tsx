@@ -98,7 +98,7 @@ export default function ConversationalAIPage() {
                             <div className="bg-slate-800 rounded-lg p-3 text-white max-w-xs">Yes, and can you also tell me if my discount was applied?</div>
                         </div>
                         <div className="flex gap-3 justify-end">
-                            <div className="bg-purple-500 rounded-lg p-3 text-white max-w-xs">Here's your tracking: track.SwanDigitals.ai/12345. And yes, your 10% loyalty discount saved you $24.50 on this order! 🎉</div>
+                            <div className="bg-purple-500 rounded-lg p-3 text-white max-w-xs">Here's your tracking: track.swandigitals.com/12345. And yes, your 10% loyalty discount saved you $24.50 on this order! 🎉</div>
                             <div className="w-8 h-8 bg-purple-500 rounded-full flex-shrink-0"></div>
                         </div>
                     </div>

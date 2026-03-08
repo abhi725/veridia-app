@@ -16,18 +16,18 @@ import Link from 'next/link';
 
 export default function VsKasistoPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "Custom (Enterprise only)" },
-        { feature: "Implementation Time", SwanDigitals: "2-4 weeks", competitor: "8-12 weeks" },
-        { feature: "Industry Focus", SwanDigitals: "Multi-industry", competitor: "Banking only" },
-        { feature: "Voice AI Native", SwanDigitals: true, competitor: false },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: false },
-        { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: false },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "English/Spanish" },
-        { feature: "Generative AI", SwanDigitals: true, competitor: true },
-        { feature: "Banking-Specific NLU", SwanDigitals: true, competitor: true },
-        { feature: "SMB Friendly", SwanDigitals: true, competitor: false },
-        { feature: "Setup Fees", SwanDigitals: "₹0", competitor: "Custom (High)" }
+        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "Custom (Enterprise only)" },
+        { feature: "Implementation Time", SwanDesk: "2-4 weeks", competitor: "8-12 weeks" },
+        { feature: "Industry Focus", SwanDesk: "Multi-industry", competitor: "Banking only" },
+        { feature: "Voice AI Native", SwanDesk: true, competitor: false },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: false },
+        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: false },
+        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "English/Spanish" },
+        { feature: "Generative AI", SwanDesk: true, competitor: true },
+        { feature: "Banking-Specific NLU", SwanDesk: true, competitor: true },
+        { feature: "SMB Friendly", SwanDesk: true, competitor: false },
+        { feature: "Setup Fees", SwanDesk: "₹0", competitor: "Custom (High)" }
     ];
 
     return (

@@ -24,14 +24,14 @@ export default function FeaturesContent() {
     const featureDetails: Record<string, { title: string; description: string; features: string[] }> = {
         ai: {
             title: "Advanced AI & Natural Language Understanding",
-            description: "Powered by cutting-edge LLMs including Gemini Pro/Ultra and Rasa open-source NLU for maximum flexibility.",
+            description: "Powered by cutting-edge LLMs including Gemini Pro/Ultra and Ollama (on-premises) or leading cloud LLMs for maximum flexibility.",
             features: [
                 "Multi-turn conversational AI with context awareness",
                 "Intent detection with 95%+ accuracy",
                 "Entity extraction for names, dates, amounts, etc.",
                 "Sentiment analysis in real-time",
                 "Custom model training on your data",
-                "6 Indian languages + English (Hindi, Tamil, Telugu, Bengali, Marathi, Hinglish)",
+                "10+ Indian languages (Hindi, Tamil, Telugu, Marathi, Bengali, Kannada, Malayalam, Gujarati, Punjabi, Odia, Hinglish)",
                 "Fallback handling with graceful escalation",
                 "Active learning from human corrections"
             ]
@@ -160,7 +160,7 @@ export default function FeaturesContent() {
             description: "Convert browsers to buyers with product recommendations, cart recovery, and order support.",
             stats: ["Cart Recovery", "Personalization", "24/7 Availability"],
             benefits: ["Product search", "Order status", "Returns & refunds", "Personalized offers"],
-            link: "/solutions/ecommerce"
+            link: "/solutions/retail"
         },
         {
             title: "HR & Employee Experience",
@@ -186,7 +186,7 @@ export default function FeaturesContent() {
         { feature: "Native Voice AI", swanDigitals: true, koreai: "Add-on", yellowai: "Add-on", haptik: "Limited", zendesk: false, intercom: false },
         { feature: "On-Premise Deployment", swanDigitals: true, koreai: true, yellowai: false, haptik: false, zendesk: false, intercom: false },
         { feature: "100% India Data Residency", swanDigitals: true, koreai: "On Request", yellowai: "On Request", haptik: "Limited", zendesk: false, intercom: false },
-        { feature: "6 Indian Languages + English", swanDigitals: true, koreai: "Limited", yellowai: true, haptik: true, zendesk: "Limited", intercom: "Limited" },
+        { feature: "10+ Indian Languages", swanDigitals: true, koreai: "Limited", yellowai: true, haptik: true, zendesk: "Limited", intercom: "Limited" },
         { feature: "WhatsApp Business API", swanDigitals: true, koreai: true, yellowai: true, haptik: true, zendesk: true, intercom: true },
         { feature: "Live Agent Handoff", swanDigitals: true, koreai: true, yellowai: true, haptik: true, zendesk: true, intercom: true },
         { feature: "Knowledge Base AI", swanDigitals: true, koreai: true, yellowai: true, haptik: "Limited", zendesk: true, intercom: true },
@@ -394,12 +394,12 @@ export default function FeaturesContent() {
                             Your Customers Speak Tamil. Your Bot Should Too.
                         </h2>
                         <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                            Native NLU support for 6 Indian languages + English. Not Google Translate bolted on —
+                            Native NLU support for 10+ Indian languages. Not Google Translate bolted on —
                             real intent understanding, entity extraction, and context management in every language.
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-8">
-                        {['English', 'Hindi', 'Tamil', 'Telugu', 'Bengali', 'Marathi', 'Hinglish'].map((lang, i) => (
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
+                        {['Hindi', 'Tamil', 'Telugu', 'Marathi', 'Bengali', 'Kannada', 'Malayalam', 'Gujarati', 'Punjabi', 'Odia', 'Hinglish', 'English'].map((lang, i) => (
                             <div key={i} className="bg-gradient-to-br from-orange-50 to-pink-50 p-4 rounded-xl text-center border border-orange-200">
                                 <div className="text-2xl mb-1">🗣️</div>
                                 <div className="font-semibold text-slate-900">{lang}</div>
@@ -428,7 +428,7 @@ export default function FeaturesContent() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-4">Use Cases</h2>
                     <p className="text-xl text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-                        See how enterprises across industries use SwanDigitals
+                        See how enterprises across industries use SwanDesk
                     </p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {useCases.map((uc, i) => (
@@ -467,14 +467,14 @@ export default function FeaturesContent() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-4">Feature Comparison</h2>
                     <p className="text-xl text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-                        See how SwanDigitals compares to leading competitors
+                        See how SwanDesk compares to leading competitors
                     </p>
                     <div className="overflow-x-auto">
                         <table className="w-full border-collapse bg-white text-sm">
                             <thead>
                                 <tr className="border-b-2 border-slate-200">
                                     <th className="py-4 px-3 text-left font-semibold text-slate-700 sticky left-0 bg-white">Feature</th>
-                                    <th className="py-4 px-3 text-center font-bold text-orange-600 bg-orange-50">SwanDigitals</th>
+                                    <th className="py-4 px-3 text-center font-bold text-orange-600 bg-orange-50">SwanDesk</th>
                                     <th className="py-4 px-3 text-center font-semibold text-slate-500">Kore.ai</th>
                                     <th className="py-4 px-3 text-center font-semibold text-slate-500">Yellow.ai</th>
                                     <th className="py-4 px-3 text-center font-semibold text-slate-500">Haptik</th>

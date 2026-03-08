@@ -59,7 +59,7 @@ export default function HomePageContent() {
             title: "Sales & Lead Capture",
             description: "Capture leads from your website chat widget, qualify them with AI, and route to the right sales rep.",
             stats: ["Lead scoring", "CRM sync", "Auto-routing"],
-            link: "/solutions/employee-experience"
+            link: "/solutions/sales"
         },
         {
             icon: <Settings className="w-6 h-6" />,
@@ -365,7 +365,7 @@ export default function HomePageContent() {
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                             Start Free — No Credit Card
                         </Link>
-                        <Link href="/platform" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
+                        <Link href="/demo" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
                             See a demo first
                         </Link>
                     </div>

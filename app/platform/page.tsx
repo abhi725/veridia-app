@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'AI Chatbot Platform India | Low-Code + On-Premise',
-    description: 'SwanDigitals AI platform: visual flow builder, voice AI, WhatsApp API, analytics. Cloud + on-premise. 100% data sovereignty for Indian enterprises.',
+    title: 'SwanDesk Platform | AI Customer Support | Multi-Channel Inbox | India',
+    description: 'SwanDesk AI platform: visual flow builder, voice AI, WhatsApp API, analytics. Cloud + on-premise. 100% data sovereignty for Indian enterprises.',
     keywords: ['AI Platform India', 'Chatbot Platform', 'On-Premise AI', 'Low-Code Chatbot', 'Enterprise AI India'],
     alternates: {
         canonical: 'https://swandigitals.com/platform',
@@ -192,13 +192,13 @@ export default function PlatformPage() {
                     {/* vs Yellow.ai Comparison */}
                     <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
                         <h3 className="text-2xl font-bold text-center mb-6">True On-Premise vs "Dedicated Cloud"</h3>
-                        <p className="text-center text-white/70 mb-8">See how SwanDigitals compares to Yellow.ai's "dedicated VPC"</p>
+                        <p className="text-center text-white/70 mb-8">See how SwanDesk compares to Yellow.ai's "dedicated VPC"</p>
                         <div className="overflow-x-auto">
                             <table className="w-full">
                                 <thead>
                                     <tr className="border-b border-white/20">
                                         <th className="text-left py-4 px-4">Feature</th>
-                                        <th className="text-center py-4 px-4 text-orange-400">SwanDigitals</th>
+                                        <th className="text-center py-4 px-4 text-orange-400">SwanDesk</th>
                                         <th className="text-center py-4 px-4 text-slate-400">Yellow.ai VPC</th>
                                     </tr>
                                 </thead>
@@ -231,7 +231,7 @@ export default function PlatformPage() {
                             <div>
                                 <div className="text-4xl mb-3">🧠</div>
                                 <h3 className="font-bold mb-2">AI Layer</h3>
-                                <p className="text-sm text-slate-300">SwanDigitals Orchestration Engine</p>
+                                <p className="text-sm text-slate-300">SwanDesk AI Engine</p>
                             </div>
                             <div>
                                 <div className="text-4xl mb-3">📱</div>
@@ -303,7 +303,7 @@ export default function PlatformPage() {
                     <h2 className="text-3xl font-bold text-center mb-12">Common Questions</h2>
                     <div className="space-y-6">
                         <details className="bg-white p-6 rounded-xl">
-                            <summary className="font-bold text-lg cursor-pointer">Can I deploy SwanDigitals fully offline?</summary>
+                            <summary className="font-bold text-lg cursor-pointer">Can I deploy SwanDesk fully offline?</summary>
                             <p className="mt-4 text-slate-700">Yes! We offer true air-gapped deployment where the entire platform runs offline with no internet dependency.</p>
                         </details>
                         <details className="bg-white p-6 rounded-xl">

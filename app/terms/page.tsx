@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Terms of Service | Enterprise Agreement | SwanDigitals',
-    description: 'SwanDigitals Terms of Service. Governed by German and Indian laws. SLAs, uptime guarantees, and acceptable use policy for enterprise customers.',
+    description: 'SwanDigitals Terms of Service. Governed by Indian laws. SLAs, uptime guarantees, and acceptable use policy for enterprise customers.',
     keywords: ['Terms of Service', 'Enterprise Syllabus', 'SLA Guarantee', 'Chatbot Service Agreement', 'Legal Terms'],
     alternates: {
         canonical: 'https://swandigitals.com/terms',
@@ -19,7 +19,7 @@ export default function TermsPage() {
             <Hero
                 badge="📋 Legal"
                 title="Terms of Service"
-                subtitle="Last updated: December 17, 2024 | Governed by European Union Law"
+                subtitle="Last updated: March 1, 2026 | Governed by laws of India and the state of Maharashtra"
             />
 
             <section className="py-20 bg-white">
@@ -40,9 +40,9 @@ export default function TermsPage() {
                         <div className="text-slate-700 space-y-4">
                             <p>
                                 These Terms of Service ("Terms") constitute a legally binding agreement between you
-                                ("Customer", "you", or "your") and <strong>SwanDigitals GmbH</strong>, a company incorporated
-                                under the laws of Germany, with its registered office at Kurfürstendamm 21, 10719 Berlin,
-                                Germany ("SwanDigitals", "we", "us", or "our").
+                                ("Customer", "you", or "your") and <strong>SwanDigitals</strong>, a sole proprietorship
+                                with its registered office at B31 Flat, Aaykar Society, Kothrud, Pune, Maharashtra 411038, India
+                                ("SwanDigitals", "we", "us", or "our").
                             </p>
                             <div className="bg-slate-50 p-4 rounded-lg">
                                 <h4 className="font-semibold mb-2">Key Definitions:</h4>
@@ -117,7 +117,7 @@ export default function TermsPage() {
                                 <li>Interfere with or disrupt the Service or servers</li>
                                 <li>Resell, redistribute, or sublicense the Service without authorization</li>
                                 <li>Use the Service for fraud, phishing, or deceptive practices</li>
-                                <li>Process special category data (GDPR Art. 9) without appropriate safeguards</li>
+                                <li>Process sensitive personal data without appropriate safeguards under the DPDP Act 2023 (Digital Personal Data Protection Act)</li>
                                 <li>Build competing products using our technology</li>
                             </ul>
                         </div>
@@ -155,17 +155,13 @@ export default function TermsPage() {
                         <div className="text-slate-700 space-y-4">
                             <ul className="list-disc pl-6 space-y-2">
                                 <li><strong>Billing:</strong> Fees are billed in advance on a monthly or annual basis</li>
-                                <li><strong>Currency:</strong> All prices are in EUR unless otherwise specified</li>
-                                <li><strong>VAT:</strong> Prices exclude VAT, which will be added where applicable</li>
-                                <li><strong>Payment Methods:</strong> Credit card, SEPA direct debit, or wire transfer</li>
+                                <li><strong>Currency:</strong> All prices are in INR unless otherwise specified</li>
+                                <li><strong>GST:</strong> Prices exclude GST, which will be added where applicable</li>
+                                <li><strong>Payment Methods:</strong> Credit card, UPI, NEFT/RTGS, or bank transfer</li>
                                 <li><strong>Refunds:</strong> No refunds for partial periods except as required by law</li>
                                 <li><strong>Price Changes:</strong> 30 days notice for price increases</li>
-                                <li><strong>Late Payments:</strong> Interest at 9% above ECB base rate</li>
+                                <li><strong>Late Payments:</strong> Interest at applicable rates under Indian law</li>
                             </ul>
-                            <div className="bg-blue-50 p-4 rounded-lg mt-4">
-                                <p><strong>EU Consumer Rights:</strong> If you are a consumer within the EU, you have a 14-day
-                                    right of withdrawal from the date of purchase, unless you have begun using the Service.</p>
-                            </div>
                         </div>
                     </div>
 
@@ -199,13 +195,13 @@ export default function TermsPage() {
                         <div className="text-slate-700 space-y-4">
                             <p>
                                 Data processing is governed by our <Link href="/privacy" className="text-purple-600 hover:underline">Privacy Policy</Link> and,
-                                where applicable, a Data Processing Agreement (DPA) in accordance with GDPR Article 28.
+                                where applicable, a Data Processing Agreement (DPA) in accordance with the DPDP Act 2023 (Digital Personal Data Protection Act).
                             </p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>SwanDigitals acts as Data Processor for Customer Data</li>
                                 <li>You remain Data Controller for End User data</li>
                                 <li>Enterprise customers may request a signed DPA</li>
-                                <li>HIPAA customers require a Business Associate Agreement (BAA)</li>
+                                <li>Healthcare customers require a Business Associate Agreement (BAA)</li>
                             </ul>
                         </div>
                     </div>
@@ -268,18 +264,13 @@ export default function TermsPage() {
                         <h2 className="text-2xl font-bold text-slate-900 mb-4">12. Governing Law and Disputes</h2>
                         <div className="text-slate-700 space-y-4">
                             <p>
-                                These Terms are governed by the laws of the <strong>Federal Republic of Germany</strong>,
+                                These Terms are governed by the <strong>laws of India and the state of Maharashtra</strong>,
                                 excluding its conflict of laws principles.
                             </p>
                             <p>
-                                <strong>Dispute Resolution:</strong> Any disputes shall be resolved by the courts of Berlin, Germany.
+                                <strong>Dispute Resolution:</strong> Any disputes shall be resolved by the courts of Pune, Maharashtra, India.
                                 For business customers, we offer mediation before litigation.
                             </p>
-                            <div className="bg-blue-50 p-4 rounded-lg mt-4">
-                                <p><strong>EU Consumer Rights:</strong> If you are a consumer in the EU, you may also
-                                    bring proceedings in your country of residence and access the EU Online Dispute
-                                    Resolution platform at <a href="https://ec.europa.eu/odr" className="text-purple-600 hover:underline">ec.europa.eu/odr</a>.</p>
-                            </div>
                         </div>
                     </div>
 
@@ -300,12 +291,11 @@ export default function TermsPage() {
                         <h2 className="text-2xl font-bold text-slate-900 mb-4">14. Contact Information</h2>
                         <div className="text-slate-700 space-y-4">
                             <div className="bg-slate-50 p-6 rounded-xl">
-                                <p><strong>SwanDigitals GmbH</strong></p>
-                                <p>Kurfürstendamm 21, 10719 Berlin, Germany</p>
-                                <p>Email: legal@SwanDigitals.ai</p>
-                                <p>Phone: +49 30 1234 5678</p>
-                                <p>VAT ID: DE123456789</p>
-                                <p>Commercial Register: HRB 12345 B (Amtsgericht Berlin-Charlottenburg)</p>
+                                <p><strong>SwanDigitals</strong></p>
+                                <p>B31 Flat, Aaykar Society, Kothrud, Pune, Maharashtra 411038, India</p>
+                                <p>Email: legal@swandigitals.com</p>
+                                <p>Phone: +91 7770070762</p>
+                                <p>CIN: PLACEHOLDER (Sole Proprietorship, India)</p>
                             </div>
                         </div>
                     </div>

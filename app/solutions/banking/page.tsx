@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Banking AI Chatbot India - KYC Automation & Fraud Detection | SwanDigitals',
-    description: 'The deepest conversational AI for Indian Banking. From Video KYC to fraud detection—automate every customer touchpoint while keeping 100% of data in India.',
-    keywords: ['Banking AI Chatbot India', 'KYC Automation', 'Video KYC', 'Banking Fraud Detection', 'RBI Compliant AI', 'DPDP Act Banking'],
+    title: 'Banking AI Chatbot India - Fraud Detection & Compliance | SwanDesk',
+    description: 'The deepest conversational AI for Indian Banking. Automate every customer touchpoint while keeping 100% of data in India.',
+    keywords: ['Banking AI Chatbot India', 'Banking Fraud Detection', 'RBI Compliant AI', 'DPDP Act Banking', 'SwanDesk Banking'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/banking',
     },
@@ -20,7 +20,7 @@ export default function BankingPage() {
             <Hero
                 badge="🏦 Banking & Finance"
                 title="The Deepest Conversational AI for Indian Banking"
-                subtitle="From Video KYC to fraud detection—automate every customer touchpoint while keeping 100% of data in India."
+                subtitle="Automate every customer touchpoint while keeping 100% of data in India. Built for RBI guidelines and DPDP 2023."
                 primaryCTA={{ text: "Book a Banking-Specific Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Case Study", href: "/case-studies" }}
             />
@@ -50,14 +50,14 @@ export default function BankingPage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-12">Automate Every Critical Banking Workflow</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Video KYC */}
+                        {/* Secure Conversation History */}
                         <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">📹</div>
-                            <h3 className="text-xl font-bold mb-3">Video KYC Automation</h3>
-                            <p className="text-slate-700 mb-4">Reduce onboarding time from 5 days to 20 minutes</p>
-                            <p className="text-sm text-slate-600 mb-4">AI face matching + document verification + liveliness detection</p>
+                            <div className="text-5xl mb-4">📋</div>
+                            <h3 className="text-xl font-bold mb-3">Secure Conversation History</h3>
+                            <p className="text-slate-700 mb-4">Audit-ready conversation logs for regulatory review</p>
+                            <p className="text-sm text-slate-600 mb-4">Complete tamper-proof logs with 7-year retention, exportable for RBI and DPDP compliance</p>
                             <Link href="/demo" className="text-blue-600 font-semibold hover:text-blue-700">
-                                See Video KYC Demo →
+                                See SwanDesk Demo →
                             </Link>
                         </div>
 
@@ -128,7 +128,7 @@ export default function BankingPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {[
                                 "Account balance and statement requests",
-                                "Video KYC for new account opening",
+                                "Digital onboarding with audit-ready conversation logs",
                                 "Card blocking and unblocking",
                                 "Loan eligibility and EMI calculators",
                                 "Transaction disputes and chargebacks",
@@ -179,7 +179,7 @@ export default function BankingPage() {
                         </p>
                     </div>
                     <div className="text-center mt-6">
-                        <Link href="/platform/security" className="text-blue-600 font-semibold hover:underline">
+                        <Link href="/security" className="text-blue-600 font-semibold hover:underline">
                             Request Banking Security Architecture Document →
                         </Link>
                     </div>

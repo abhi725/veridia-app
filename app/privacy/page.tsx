@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | GDPR & DPDP Compliant | SwanDigitals',
-    description: 'SwanDigitals Privacy Policy. We are fully GDPR and DPDP compliant, ensuring your enterprise data remains private and secure. Read our data protection practices.',
-    keywords: ['Privacy Policy', 'GDPR Compliance', 'DPDP Act India', 'Data Sovereignty Policy', 'Enterprise Data Protection'],
+    title: 'Privacy Policy | DPDP Act 2023 Compliant | SwanDigitals',
+    description: 'SwanDigitals Privacy Policy. We are fully DPDP Act 2023 compliant, ensuring your enterprise data remains private and secure. Read our data protection practices.',
+    keywords: ['Privacy Policy', 'DPDP Act India', 'Data Sovereignty Policy', 'Enterprise Data Protection'],
     alternates: {
         canonical: 'https://swandigitals.com/privacy',
     },
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             <Hero
                 badge="🔒 Legal"
                 title="Privacy Policy"
-                subtitle="Last updated: December 17, 2024 | GDPR & EU Compliant"
+                subtitle="Last updated: March 1, 2026 | DPDP Act 2023 (Digital Personal Data Protection Act) Compliant"
             />
 
             <section className="py-20 bg-white">
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
                     <div className="bg-slate-50 p-6 rounded-xl mb-12">
                         <h3 className="font-bold mb-4">Quick Links</h3>
                         <div className="flex flex-wrap gap-3">
-                            {["Data We Collect", "How We Use Data", "Your GDPR Rights", "Data Transfers", "Security", "Contact DPO"].map((link, i) => (
+                            {["Data We Collect", "How We Use Data", "Your Rights", "Data Transfers", "Security", "Contact"].map((link, i) => (
                                 <a key={i} href={`#section-${i + 1}`} className="text-sm text-purple-600 hover:underline">{link}</a>
                             ))}
                         </div>
@@ -41,11 +41,11 @@ export default function PrivacyPage() {
                             <p>
                                 <strong>SwanDigitals</strong> ("SwanDigitals", "we", "us", or "our") is the data controller responsible for your personal data.
                                 We are committed to protecting your privacy in accordance with applicable data protection laws including the
-                                <strong> Digital Personal Data Protection Act (DPDP), 2023</strong> and <strong>General Data Protection Regulation (GDPR) (EU) 2016/679</strong>.
+                                <strong> Digital Personal Data Protection Act (DPDP), 2023</strong>.
                             </p>
                             <div className="bg-blue-50 p-4 rounded-lg">
                                 <p><strong>Data Controller:</strong> SwanDigitals</p>
-                                <p><strong>Address:</strong> Tapodham, Warje, Pune 411038, Maharashtra, India</p>
+                                <p><strong>Address:</strong> B31 Flat, Aaykar Society, Kothrud, Pune, Maharashtra 411038, India</p>
                                 <p><strong>Contact Number:</strong> +91 7770070762</p>
                                 <p><strong>Email:</strong> Abhishek@swandigitals.com</p>
                                 <p><strong>Founder:</strong> Abhishek Ambad</p>
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
                             <h3 className="text-lg font-semibold mt-6">2.1 Data You Provide Directly</h3>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li><strong>Account Data:</strong> Name, email address, company name, job title, phone number</li>
-                                <li><strong>Billing Data:</strong> Payment information (processed by Stripe Inc., a PCI DSS Level 1 compliant processor)</li>
+                                <li><strong>Billing Data:</strong> Payment information (processed by Razorpay or Stripe Inc., PCI DSS Level 1 compliant processors)</li>
                                 <li><strong>Content Data:</strong> Chatbot configurations, conversation flows, training data you create</li>
                                 <li><strong>Communication Data:</strong> Support requests, feedback, correspondence with us</li>
                             </ul>
@@ -101,7 +101,7 @@ export default function PrivacyPage() {
 
                     {/* Section 3 */}
                     <div id="section-3" className="mb-12">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Legal Basis for Processing (GDPR Art. 6)</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Legal Basis for Processing (DPDP Act 2023)</h2>
                         <div className="text-slate-700 space-y-4">
                             <table className="w-full border border-slate-200 rounded-lg overflow-hidden">
                                 <thead className="bg-slate-100">
@@ -111,12 +111,12 @@ export default function PrivacyPage() {
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-slate-200">
-                                    <tr><td className="p-3">Providing the Service</td><td className="p-3">Contract performance (Art. 6(1)(b))</td></tr>
-                                    <tr><td className="p-3">Processing payments</td><td className="p-3">Contract performance (Art. 6(1)(b))</td></tr>
-                                    <tr><td className="p-3">Customer support</td><td className="p-3">Legitimate interest (Art. 6(1)(f))</td></tr>
-                                    <tr><td className="p-3">Service improvements</td><td className="p-3">Legitimate interest (Art. 6(1)(f))</td></tr>
-                                    <tr><td className="p-3">Marketing communications</td><td className="p-3">Consent (Art. 6(1)(a))</td></tr>
-                                    <tr><td className="p-3">Legal compliance</td><td className="p-3">Legal obligation (Art. 6(1)(c))</td></tr>
+                                    <tr><td className="p-3">Providing the Service</td><td className="p-3">Contract performance</td></tr>
+                                    <tr><td className="p-3">Processing payments</td><td className="p-3">Contract performance</td></tr>
+                                    <tr><td className="p-3">Customer support</td><td className="p-3">Legitimate interest</td></tr>
+                                    <tr><td className="p-3">Service improvements</td><td className="p-3">Legitimate interest</td></tr>
+                                    <tr><td className="p-3">Marketing communications</td><td className="p-3">Consent</td></tr>
+                                    <tr><td className="p-3">Legal compliance</td><td className="p-3">Legal obligation</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -124,18 +124,18 @@ export default function PrivacyPage() {
 
                     {/* Section 4 */}
                     <div id="section-4" className="mb-12">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Your Rights Under GDPR</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Your Rights Under DPDP Act 2023</h2>
                         <div className="text-slate-700 space-y-4">
-                            <p>As an EU/EEA data subject, you have the following rights:</p>
+                            <p>As a data principal under Indian law, you have the following rights:</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {[
-                                    { right: "Right of Access (Art. 15)", desc: "Request a copy of your personal data" },
-                                    { right: "Right to Rectification (Art. 16)", desc: "Correct inaccurate personal data" },
-                                    { right: "Right to Erasure (Art. 17)", desc: "Request deletion of your data ('right to be forgotten')" },
-                                    { right: "Right to Restriction (Art. 18)", desc: "Limit how we process your data" },
-                                    { right: "Right to Portability (Art. 20)", desc: "Receive your data in machine-readable format" },
-                                    { right: "Right to Object (Art. 21)", desc: "Object to processing based on legitimate interest" },
-                                    { right: "Right to Withdraw Consent (Art. 7)", desc: "Withdraw consent at any time" },
+                                    { right: "Right of Access", desc: "Request a copy of your personal data" },
+                                    { right: "Right to Correction", desc: "Correct inaccurate personal data" },
+                                    { right: "Right to Erasure", desc: "Request deletion of your data" },
+                                    { right: "Right to Grievance Redressal", desc: "Contact us to resolve data concerns" },
+                                    { right: "Right to Data Portability", desc: "Receive your data in machine-readable format" },
+                                    { right: "Right to Nominate", desc: "Nominate a person to exercise rights on your behalf" },
+                                    { right: "Right to Withdraw Consent", desc: "Withdraw consent at any time" },
                                     { right: "Right to Lodge Complaint", desc: "File complaint with supervisory authority" }
                                 ].map((item, i) => (
                                     <div key={i} className="bg-slate-50 p-4 rounded-lg">
@@ -145,26 +145,26 @@ export default function PrivacyPage() {
                                 ))}
                             </div>
                             <p className="mt-4">
-                                To exercise any of these rights, contact our DPO at <strong>dpo@SwanDigitals.ai</strong>.
-                                We will respond within <strong>30 days</strong> as required by GDPR.
+                                To exercise any of these rights, contact us at <strong>dpo@swandigitals.com</strong>.
+                                We will respond within <strong>30 days</strong>.
                             </p>
                         </div>
                     </div>
 
                     {/* Section 5 */}
                     <div id="section-5" className="mb-12">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">5. International Data Transfers</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Data Transfers</h2>
                         <div className="text-slate-700 space-y-4">
                             <p>
-                                For cloud deployments, your data may be processed outside the EU/EEA. We ensure adequate protection through:
+                                For cloud deployments, your data may be processed within India or in countries with adequate data protection standards. We ensure adequate protection through appropriate contractual safeguards.
                             </p>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li><strong>Standard Contractual Clauses (SCCs)</strong> approved by the European Commission</li>
-                                <li><strong>EU-US Data Privacy Framework</strong> for US-based sub-processors</li>
-                                <li><strong>EU Data Centers:</strong> Frankfurt (AWS), Dublin (Azure), Amsterdam (GCP)</li>
+                                <li><strong>India Data Residency:</strong> All data stored in Indian data centers by default</li>
+                                <li><strong>On-Premise Option:</strong> Your data never leaves your infrastructure</li>
+                                <li><strong>Third-party processors:</strong> Subject to equivalent data protection obligations</li>
                             </ul>
                             <div className="bg-green-50 p-4 rounded-lg mt-4">
-                                <p><strong>🇪🇺 EU-Only Option:</strong> Enterprise customers can choose EU-only data residency where all data is processed and stored exclusively within the European Union.</p>
+                                <p><strong>India-Only Option:</strong> Enterprise customers can choose India-only data residency where all data is processed and stored exclusively within India.</p>
                             </div>
                         </div>
                     </div>
@@ -176,10 +176,9 @@ export default function PrivacyPage() {
                             <p>We implement appropriate technical and organizational measures:</p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li><strong>Encryption:</strong> AES-256 at rest, TLS 1.3 in transit</li>
-                                <li><strong>Certifications:</strong> SOC 2 Type II, ISO 27001, GDPR compliant</li>
                                 <li><strong>Access Controls:</strong> Role-based access, multi-factor authentication</li>
                                 <li><strong>Auditing:</strong> Comprehensive logging, regular security audits</li>
-                                <li><strong>Incident Response:</strong> 72-hour breach notification as per GDPR Art. 33</li>
+                                <li><strong>Incident Response:</strong> Breach notification as required under DPDP Act 2023</li>
                             </ul>
                         </div>
                     </div>
@@ -211,10 +210,9 @@ export default function PrivacyPage() {
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-slate-200">
-                                    <tr><td className="p-3">AWS (Amazon)</td><td className="p-3">Cloud infrastructure</td><td className="p-3">EU (Frankfurt)</td></tr>
-                                    <tr><td className="p-3">Stripe Inc.</td><td className="p-3">Payment processing</td><td className="p-3">EU/US</td></tr>
-                                    <tr><td className="p-3">Intercom Inc.</td><td className="p-3">Customer support</td><td className="p-3">EU/US</td></tr>
-                                    <tr><td className="p-3">Google Analytics</td><td className="p-3">Website analytics</td><td className="p-3">EU</td></tr>
+                                    <tr><td className="p-3">AWS (Amazon)</td><td className="p-3">Cloud infrastructure</td><td className="p-3">India (Mumbai)</td></tr>
+                                    <tr><td className="p-3">Razorpay</td><td className="p-3">Payment processing</td><td className="p-3">India</td></tr>
+                                    <tr><td className="p-3">Google Analytics</td><td className="p-3">Website analytics</td><td className="p-3">India</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -226,15 +224,13 @@ export default function PrivacyPage() {
                         <div className="text-slate-700 space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-slate-50 p-6 rounded-xl">
-                                    <h4 className="font-bold mb-2">Data Protection Officer</h4>
-                                    <p>Email: dpo@SwanDigitals.ai</p>
-                                    <p>Phone: +49 30 1234 5678</p>
+                                    <h4 className="font-bold mb-2">Data Protection Contact</h4>
+                                    <p>Email: dpo@swandigitals.com</p>
+                                    <p>Phone: +91 7770070762</p>
                                 </div>
                                 <div className="bg-slate-50 p-6 rounded-xl">
                                     <h4 className="font-bold mb-2">Supervisory Authority</h4>
-                                    <p>Berliner Beauftragte für Datenschutz</p>
-                                    <p>und Informationsfreiheit</p>
-                                    <p>Friedrichstr. 219, 10969 Berlin</p>
+                                    <p>Ministry of Electronics and Information Technology (MEITY), Government of India</p>
                                 </div>
                             </div>
                         </div>

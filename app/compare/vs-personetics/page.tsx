@@ -16,18 +16,18 @@ import Link from 'next/link';
 
 export default function VsPersoneticsPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "Free / ₹1,999", competitor: "Custom (Enterprise only)" },
-        { feature: "Implementation Time", SwanDigitals: "2-4 weeks", competitor: "8-12 weeks" },
-        { feature: "Voice AI Native", SwanDigitals: true, competitor: false },
-        { feature: "Full Chatbot Capabilities", SwanDigitals: true, competitor: "Limited (Insights focus)" },
-        { feature: "Transaction Execution", SwanDigitals: true, competitor: "Insights only" },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: false },
-        { feature: "Multi-Industry", SwanDigitals: true, competitor: "Banking only" },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "Limited" },
-        { feature: "Financial Wellness Insights", SwanDigitals: true, competitor: true },
-        { feature: "Predictive Analytics", SwanDigitals: true, competitor: true },
-        { feature: "SMB Friendly", SwanDigitals: true, competitor: false }
+        { feature: "Starting Price", SwanDesk: "Free / ₹1,999", competitor: "Custom (Enterprise only)" },
+        { feature: "Implementation Time", SwanDesk: "2-4 weeks", competitor: "8-12 weeks" },
+        { feature: "Voice AI Native", SwanDesk: true, competitor: false },
+        { feature: "Full Chatbot Capabilities", SwanDesk: true, competitor: "Limited (Insights focus)" },
+        { feature: "Transaction Execution", SwanDesk: true, competitor: "Insights only" },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: false },
+        { feature: "Multi-Industry", SwanDesk: true, competitor: "Banking only" },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
+        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Limited" },
+        { feature: "Financial Wellness Insights", SwanDesk: true, competitor: true },
+        { feature: "Predictive Analytics", SwanDesk: true, competitor: true },
+        { feature: "SMB Friendly", SwanDesk: true, competitor: false }
     ];
 
     return (

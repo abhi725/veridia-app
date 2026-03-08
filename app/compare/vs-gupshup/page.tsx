@@ -17,19 +17,19 @@ export const metadata: Metadata = {
 
 export default function VsGupshupPage() {
     const comparisonRows = [
-        { feature: "Starting Price", SwanDigitals: "₹10,000 Pilot / ₹12,000/mo", competitor: "Usage-based" },
-        { feature: "Voice AI Native", SwanDigitals: true, competitor: "Limited" },
-        { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false },
-        { feature: "Analytics Dashboard", SwanDigitals: "Advanced", competitor: "Limited" },
-        { feature: "WhatsApp Business API", SwanDigitals: true, competitor: true },
-        { feature: "Messaging Scale", SwanDigitals: "Enterprise-grade", competitor: "High-scale infrastructure" },
-        { feature: "BFSI Focus", SwanDigitals: true, competitor: true },
-        { feature: "No-Code Builder", SwanDigitals: true, competitor: true },
-        { feature: "Complex Logic Engine", SwanDigitals: true, competitor: "Basic" },
-        { feature: "Multi-Language (Indic)", SwanDigitals: "10+ languages", competitor: "Yes" },
-        { feature: "Data Sovereignty", SwanDigitals: "100% India residency", competitor: "Not highlighted" },
-        { feature: "Live Agent Handoff", SwanDigitals: true, competitor: true },
-        { feature: "Flat Platform Fee", SwanDigitals: true, competitor: false }
+        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "Usage-based" },
+        { feature: "Voice AI Native", SwanDesk: true, competitor: "Limited" },
+        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
+        { feature: "Analytics Dashboard", SwanDesk: "Advanced", competitor: "Limited" },
+        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
+        { feature: "Messaging Scale", SwanDesk: "Enterprise-grade", competitor: "High-scale infrastructure" },
+        { feature: "BFSI Focus", SwanDesk: true, competitor: true },
+        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
+        { feature: "Complex Logic Engine", SwanDesk: true, competitor: "Basic" },
+        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Yes" },
+        { feature: "Data Sovereignty", SwanDesk: "100% India residency", competitor: "Not highlighted" },
+        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
+        { feature: "Flat Platform Fee", SwanDesk: true, competitor: false }
     ];
 
     return (
