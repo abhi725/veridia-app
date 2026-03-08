@@ -96,59 +96,7 @@ export default function DemoPage() {
                         {/* Right: Form */}
                         <div className="bg-slate-50 p-8 rounded-2xl">
                             <h3 className="text-2xl font-bold mb-6">Request Your Demo</h3>
-                            <form className="space-y-5">
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <label className="block font-medium mb-2 text-sm">First Name *</label>
-                                        <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white" required />
-                                    </div>
-                                    <div>
-                                        <label className="block font-medium mb-2 text-sm">Last Name *</label>
-                                        <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white" required />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block font-medium mb-2 text-sm">Work Email *</label>
-                                    <input type="email" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white" required />
-                                </div>
-                                <div>
-                                    <label className="block font-medium mb-2 text-sm">Company *</label>
-                                    <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white" required />
-                                </div>
-                                <div>
-                                    <label className="block font-medium mb-2 text-sm">Job Title</label>
-                                    <input type="text" className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white" />
-                                </div>
-                                <div>
-                                    <label className="block font-medium mb-2 text-sm">Industry *</label>
-                                    <select className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white" required>
-                                        <option value="">Select your industry</option>
-                                        <option value="banking">Banking & Finance</option>
-                                        <option value="healthcare">Healthcare</option>
-                                        <option value="retail">Retail & E-commerce</option>
-                                        <option value="technology">Technology</option>
-                                        <option value="insurance">Insurance</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label className="block font-medium mb-2 text-sm">Primary Use Case</label>
-                                    <select className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:border-orange-500 outline-none bg-white">
-                                        <option value="">Select use case</option>
-                                        <option value="customer-service">Customer Service</option>
-                                        <option value="employee-experience">Employee Experience / HR</option>
-                                        <option value="it-helpdesk">IT Helpdesk</option>
-                                        <option value="sales">Sales Assistant</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <button type="submit" className="w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-lg font-semibold text-lg hover:shadow-lg transition-all">
-                                    Schedule My Demo
-                                </button>
-                                <p className="text-xs text-slate-500 text-center">
-                                    By submitting, you agree to our <Link href="/privacy" className="underline">Privacy Policy</Link>
-                                </p>
-                            </form>
+                            <div className="engage-hub-form-embed" id="eh_form_5903844064886784" data-id="5903844064886784"></div>
                         </div>
                     </div>
                 </div>
