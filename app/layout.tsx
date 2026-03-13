@@ -175,7 +175,7 @@ export default function RootLayout({
                 <Script id="swan-chat-widget" strategy="afterInteractive" dangerouslySetInnerHTML={{
                     __html: `
                     (function(d,t) {
-                      var BASE_URL="https://desk.swandigitals.com";
+                      var BASE_URL="https://chat.swandigitals.com";
                       var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
                       g.src=BASE_URL+"/packs/js/sdk.js";
                       g.defer = true;
@@ -183,9 +183,26 @@ export default function RootLayout({
                       s.parentNode.insertBefore(g,s);
                       g.onload=function(){
                         window.chatwootSDK.run({
-                          websiteToken: '37TS9hc2ns27eUiddwM3LFHa',
+                          websiteToken: 'pqjKgZgSsNKubnDKLaPXPHsx',
                           baseUrl: BASE_URL
-                        })
+                        });
+
+                        /* ── Advanced: set page context as custom attributes ── */
+                        window.chatwootSDK.setCustomAttributes({
+                          page: window.location.pathname,
+                          referrer: document.referrer || 'direct',
+                          utm_source: new URLSearchParams(window.location.search).get('utm_source') || '',
+                          utm_campaign: new URLSearchParams(window.location.search).get('utm_campaign') || ''
+                        });
+
+                        /* ── Proactive: open widget on /pricing after 8s ── */
+                        if (window.location.pathname.includes('/pricing') ||
+                            window.location.pathname.includes('/demo') ||
+                            window.location.pathname.includes('/contact')) {
+                          setTimeout(function() {
+                            window.chatwootSDK.toggle('open');
+                          }, 8000);
+                        }
                       }
                     })(document,"script");
                     `
