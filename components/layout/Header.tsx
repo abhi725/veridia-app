@@ -44,7 +44,6 @@ export default function Header() {
                             <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 left-0 top-full pt-2 w-56 bg-white rounded-lg shadow-xl border border-slate-200 p-4">
                                 <Link href="/resources" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded">Resource Center</Link>
                                 <Link href="/blog" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded">Blog</Link>
-                                <Link href="/case-studies" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded">Case Studies</Link>
                                 <Link href="/documentation" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded">Documentation</Link>
                             </div>
                         </div>

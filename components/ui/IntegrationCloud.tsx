@@ -7,9 +7,10 @@ interface Integration {
 
 interface IntegrationCloudProps {
     integrations: Integration[];
+    note?: string;
 }
 
-export default function IntegrationCloud({ integrations }: IntegrationCloudProps) {
+export default function IntegrationCloud({ integrations, note }: IntegrationCloudProps) {
     return (
         <section className="py-20 bg-slate-50">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -52,6 +53,12 @@ export default function IntegrationCloud({ integrations }: IntegrationCloudProps
                         </div>
                     ))}
                 </div>
+
+                {note && (
+                    <p className="text-center text-slate-500 mt-6 text-sm italic">
+                        {note}
+                    </p>
+                )}
 
                 <div className="text-center mt-8">
                     <a href="/integrations" className="text-orange-600 font-semibold hover:underline">

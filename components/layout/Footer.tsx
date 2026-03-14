@@ -13,7 +13,7 @@ export default function Footer() {
                             <span className="text-xl font-bold">SwanDesk</span>
                         </div>
                         <p className="text-slate-400 text-sm">
-                            AI-powered customer support for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. DPDP 2023 Compliant.
+                            AI-powered customer support for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. Built for DPDP 2023 Compliance.
                         </p>
                         <div className="flex gap-4 mt-4">
                             <a href="#" className="text-slate-400 hover:text-white"><Linkedin className="w-5 h-5" /></a>
@@ -53,10 +53,7 @@ export default function Footer() {
                         <h3 className="font-bold mb-4">Resources</h3>
                         <ul className="space-y-2 text-sm text-slate-400">
                             <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-                            <li><Link href="/case-studies" className="hover:text-white">Case Studies</Link></li>
                             <li><Link href="/documentation" className="hover:text-white">Documentation</Link></li>
-                            <li><Link href="/whitepapers" className="hover:text-white">Whitepapers</Link></li>
-                            <li><Link href="/webinars" className="hover:text-white">Webinars</Link></li>
                             <li><Link href="/roi-calculator" className="hover:text-white">ROI Calculator</Link></li>
                         </ul>
                     </div>
@@ -80,11 +77,10 @@ export default function Footer() {
                         <h3 className="font-bold mb-4">Company</h3>
                         <ul className="space-y-2 text-sm text-slate-400">
                             <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-                            <li><Link href="/leadership" className="hover:text-white">Leadership</Link></li>
-                            <li><Link href="/careers" className="hover:text-white">Careers</Link></li>
                             <li><Link href="/partners" className="hover:text-white">Partners</Link></li>
                             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
                             <li><Link href="/pricing" className="hover:text-white">Pricing</Link></li>
+                            <li><Link href="/contact" className="hover:text-white">We're Hiring →</Link></li>
                         </ul>
                     </div>
                 </div>

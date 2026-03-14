@@ -121,10 +121,10 @@ export default function HomePageContent() {
             <JsonLd />
             {/* Hero Section */}
             <Hero
-                badge="🚀 Now Live: SwanDesk — Try Free"
+                badge="🚀 SwanDesk is Live — Book a Demo"
                 title="Customer Support That Doesn't Need a 10-Person Team"
                 subtitle="SwanDesk is an AI-powered inbox for Indian businesses. Handle WhatsApp, email, and web chat in one place — with an AI that actually helps your team, not replaces it."
-                primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
+                primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "See it in 2 min", href: "#how-it-works" }}
             />
 
@@ -203,7 +203,7 @@ export default function HomePageContent() {
                     </div>
                     <div className="text-center mt-12">
                         <Link href="/demo" className="inline-block px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
-                            Start Free Trial →
+                            Book a Demo →
                         </Link>
                     </div>
                 </div>
@@ -214,11 +214,11 @@ export default function HomePageContent() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-5xl font-bold mb-2">10+</div>
+                            <div className="text-5xl font-bold mb-2">6</div>
                             <div className="text-white/90">Indian Languages</div>
                         </div>
                         <div>
-                            <div className="text-5xl font-bold mb-2">100+</div>
+                            <div className="text-5xl font-bold mb-2">50+</div>
                             <div className="text-white/90">Integrations</div>
                         </div>
                         <div>
@@ -313,20 +313,14 @@ export default function HomePageContent() {
                 { name: 'Teams', color: '#6264A7', category: 'Chat' },
                 { name: 'Zendesk', color: '#03363D', image: '/integrations/zendesk.png', category: 'Support' },
                 { name: 'Freshdesk', color: '#00A65A', image: '/integrations/freshdesk.png', category: 'Support' },
-                { name: 'Salesforce', color: '#00A1E0', image: '/integrations/salesforce.png', category: 'CRM' },
                 { name: 'HubSpot', color: '#FF7A59', image: '/integrations/hubspot.png', category: 'CRM' },
-                { name: 'Intercom', color: '#000000', image: '/integrations/intercom_new.png', category: 'Support' },
                 { name: 'Google Analytics', color: '#E37400', image: '/integrations/google-analytics.png', category: 'Analytics' },
-                { name: 'Magento', color: '#F16422', image: '/integrations/magento.png', category: 'Commerce' },
                 { name: 'Shopify', color: '#96bf48', image: '/integrations/shopify.png', category: 'Commerce' },
                 { name: 'WooCommerce', color: '#96588a', image: '/integrations/woocommerce.png', category: 'Commerce' },
                 { name: 'Zoho', color: '#E42527', image: '/integrations/zoho.png', category: 'CRM' },
                 { name: 'Razorpay', color: '#0066FF', image: '/integrations/razorpay.png', category: 'Payment' },
-                { name: 'Stripe', color: '#635BFF', image: '/integrations/stripe.png', category: 'Payment' },
-                { name: 'ServiceNow', color: '#293e40', image: '/integrations/servicenow.png', category: 'ITSM' },
-                { name: 'Infosys Finacle', color: '#007cc3', image: '/integrations/infosys-finacle.png', category: 'Banking' },
-                { name: 'Temenos', color: '#003366', image: '/integrations/temenos.png', category: 'Banking' }
-            ]} />
+                { name: 'Stripe', color: '#635BFF', image: '/integrations/stripe.png', category: 'Payment' }
+            ]} note="More integrations coming — request yours" />
 
             {/* FAQ */}
             <FAQ items={[
@@ -360,13 +354,13 @@ export default function HomePageContent() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Ready to fix your customer support?</h2>
-                    <p className="text-xl text-white/80 mb-8">Sign up free. No sales call required. You can be live on WhatsApp today.</p>
+                    <p className="text-xl text-white/80 mb-8">See SwanDesk in action. We'll walk you through the platform in under 30 minutes.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Start Free — No Credit Card
+                            Book a Demo
                         </Link>
-                        <Link href="/demo" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
-                            See a demo first
+                        <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
+                            Talk to us
                         </Link>
                     </div>
                 </div>

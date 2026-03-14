@@ -1,13 +1,4 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'Contact SwanDigitals Pune | +91 7770070762 | Support',
-    description: 'Reach SwanDigitals in Pune, India. Email: support@swandigitals.com | Phone: +91 7770070762. Book a demo or discuss your AI chatbot project.',
-    keywords: ['Contact SwanDigitals', 'Pune AI Company Contact', 'AI Chatbot Support India'],
-    alternates: {
-        canonical: 'https://swandigitals.com/contact',
-    },
-}
+"use client";
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
@@ -58,7 +49,19 @@ export default function ContactPage() {
                     {/* Contact Form */}
                     <div className="max-w-2xl mx-auto">
                         <h2 className="text-3xl font-bold text-center mb-8">Send Us a Message</h2>
-                        <div className="engage-hub-form-embed" id="eh_form_5903844064886784" data-id="5903844064886784"></div>
+                        <div className="engage-hub-form-embed" id="eh_form_5903844064886784" style={{ width: '100%' }} data-id="5903844064886784"></div>
+                        <Script id="eh-script-contact" strategy="afterInteractive">
+                            {`
+                            (window.EhDynamicRef ||= []).push(() => {
+                                EhForms.create({
+                                  "formId": "5903844064886784", // Required: The unique ID of your form
+                                  "target": "", // Optional: Use a selector like ".class" or "#id"
+                                  "onFormReady": function(el, setValue) { // Optional: Callback function triggered when the form is fully loaded
+                                  }
+                               });
+                            });
+                            `}
+                        </Script>
                     </div>
                 </div>
             </section>

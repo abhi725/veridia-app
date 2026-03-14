@@ -3,6 +3,7 @@
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
+import Script from 'next/script';
 import { Calendar, Clock, Video, Shield } from 'lucide-react';
 
 export default function DemoPage() {
@@ -96,7 +97,19 @@ export default function DemoPage() {
                         {/* Right: Form */}
                         <div className="bg-slate-50 p-8 rounded-2xl">
                             <h3 className="text-2xl font-bold mb-6">Request Your Demo</h3>
-                            <div className="engage-hub-form-embed" id="eh_form_5903844064886784" data-id="5903844064886784"></div>
+                            <div className="engage-hub-form-embed" id="eh_form_5903844064886784" style={{ width: '100%' }} data-id="5903844064886784"></div>
+                            <Script id="eh-script-demo" strategy="afterInteractive">
+                                {`
+                            (window.EhDynamicRef ||= []).push(() => {
+                                EhForms.create({
+                                  "formId": "5903844064886784", // Required: The unique ID of your form
+                                  "target": "", // Optional: Use a selector like ".class" or "#id"
+                                  "onFormReady": function(el, setValue) { // Optional: Callback function triggered when the form is fully loaded
+                                  }
+                               });
+                            });
+                            `}
+                            </Script>
                         </div>
                     </div>
                 </div>

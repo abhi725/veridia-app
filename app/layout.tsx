@@ -172,18 +172,23 @@ export default function RootLayout({
                     })(window,document,'script','dataLayer','GTM-KR7FXZH');
                     `}
                 </Script>
+                <Script
+                    id="engagebay-form-loader"
+                    src="https://d2s187fmjqhj7u.cloudfront.net/js/form_embed.js"
+                    strategy="afterInteractive"
+                />
                 <Script id="swan-chat-widget" strategy="afterInteractive" dangerouslySetInnerHTML={{
                     __html: `
+                    window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
                     (function(d,t) {
                       var BASE_URL="https://chat.swandigitals.com";
                       var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
                       g.src=BASE_URL+"/packs/js/sdk.js";
-                      g.defer = true;
                       g.async = true;
                       s.parentNode.insertBefore(g,s);
                       g.onload=function(){
                         window.chatwootSDK.run({
-                          websiteToken: 'pqjKgZgSsNKubnDKLaPXPHsx',
+                          websiteToken: 'bwEMnvgPoGhUAAFdwrhSbvJw',
                           baseUrl: BASE_URL
                         });
 
