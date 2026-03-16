@@ -3,6 +3,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import AnnouncementBar from '@/components/ui/AnnouncementBar';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -13,6 +14,8 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                 {children}
             </main>
             <Footer />
+            <ScrollToTop />
         </div>
     );
 }
+

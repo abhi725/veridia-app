@@ -12,6 +12,7 @@ interface HeroProps {
     secondaryCTA?: {
         text: string;
         href: string;
+        external?: boolean;
     };
     gradient?: boolean;
 }
@@ -52,12 +53,23 @@ export default function Hero({ badge, title, subtitle, primaryCTA, secondaryCTA,
                         </Link>
 
                         {secondaryCTA && (
-                            <Link
-                                href={secondaryCTA.href}
-                                className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 rounded-full font-semibold text-lg hover:border-slate-300 transition-all hover:scale-105"
-                            >
-                                {secondaryCTA.text}
-                            </Link>
+                            secondaryCTA.external ? (
+                                <a
+                                    href={secondaryCTA.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-8 py-4 bg-white border-2 border-orange-400 text-orange-600 rounded-full font-semibold text-lg hover:bg-orange-50 transition-all hover:scale-105"
+                                >
+                                    {secondaryCTA.text}
+                                </a>
+                            ) : (
+                                <Link
+                                    href={secondaryCTA.href}
+                                    className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 rounded-full font-semibold text-lg hover:border-slate-300 transition-all hover:scale-105"
+                                >
+                                    {secondaryCTA.text}
+                                </Link>
+                            )
                         )}
                     </div>
                 )}

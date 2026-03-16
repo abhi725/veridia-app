@@ -21,6 +21,14 @@ export default function Footer() {
                             <a href="#" className="text-slate-400 hover:text-white"><Youtube className="w-5 h-5" /></a>
                             <a href="#" className="text-slate-400 hover:text-white"><Mail className="w-5 h-5" /></a>
                         </div>
+                        <div className="flex gap-3 mt-5">
+                            <a href="https://chat.swandigitals.com" target="_blank" rel="noopener noreferrer" className="inline-block px-5 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-sm hover:shadow-lg transition-all whitespace-nowrap">
+                                Sign Up Now →
+                            </a>
+                            <a href="https://chat.swandigitals.com/app/login" target="_blank" rel="noopener noreferrer" className="inline-block px-5 py-2 border border-slate-600 text-slate-400 hover:text-white hover:border-slate-400 rounded-full text-sm transition-all whitespace-nowrap">
+                                Login
+                            </a>
+                        </div>
                     </div>
 
                     {/* Platform */}

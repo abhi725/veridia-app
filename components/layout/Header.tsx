@@ -55,6 +55,10 @@ export default function Header() {
                     {/* CTA Buttons */}
                     <div className="hidden lg:flex items-center gap-4">
                         <Link href="/contact" className="text-slate-600 hover:text-slate-900 font-medium">Contact</Link>
+                        <a href="https://chat.swandigitals.com/app/login" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-slate-900 font-medium">Login</a>
+                        <a href="https://chat.swandigitals.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border-2 border-orange-500 text-orange-600 rounded-full font-semibold hover:bg-orange-50 transition-all">
+                            Sign Up Now
+                        </a>
                         <Link href="/demo" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full hover:shadow-lg transition-all flex items-center gap-2">
                             Book Demo
                             <ArrowRight className="w-4 h-4" />
@@ -79,7 +83,9 @@ export default function Header() {
                         <Link href="/pricing" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">Pricing</Link>
                         <Link href="/about" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">Company</Link>
                         <Link href="/contact" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">Contact</Link>
-                        <Link href="/demo" className="block mx-4 mt-4 px-6 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full text-center">Book Demo</Link>
+                        <a href="https://chat.swandigitals.com/app/login" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">Login</a>
+                        <a href="https://chat.swandigitals.com" target="_blank" rel="noopener noreferrer" className="block mx-4 mt-2 px-6 py-2 border-2 border-orange-500 text-orange-600 rounded-full text-center font-semibold">Sign Up Now</a>
+                        <Link href="/demo" className="block mx-4 mt-2 px-6 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full text-center">Book Demo</Link>
                     </div>
                 )}
             </div>

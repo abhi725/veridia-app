@@ -125,7 +125,7 @@ export default function HomePageContent() {
                 title="Customer Support That Doesn't Need a 10-Person Team"
                 subtitle="SwanDesk is an AI-powered inbox for Indian businesses. Handle WhatsApp, email, and web chat in one place — with an AI that actually helps your team, not replaces it."
                 primaryCTA={{ text: "Book a Demo", href: "/demo" }}
-                secondaryCTA={{ text: "See it in 2 min", href: "#how-it-works" }}
+                secondaryCTA={{ text: "Sign Up Now →", href: "https://chat.swandigitals.com", external: true }}
             />
 
             {/* Features Grid */}
@@ -356,6 +356,9 @@ export default function HomePageContent() {
                     <h2 className="text-4xl font-bold mb-6">Ready to fix your customer support?</h2>
                     <p className="text-xl text-white/80 mb-8">See SwanDesk in action. We'll walk you through the platform in under 30 minutes.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://chat.swandigitals.com" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-slate-900 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition-all">
+                            Sign Up Now — It's Free
+                        </a>
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                             Book a Demo
                         </Link>

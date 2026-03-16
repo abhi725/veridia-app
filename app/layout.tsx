@@ -172,11 +172,19 @@ export default function RootLayout({
                     })(window,document,'script','dataLayer','GTM-KR7FXZH');
                     `}
                 </Script>
-                <Script
-                    id="engagebay-form-loader"
-                    src="https://d2s187fmjqhj7u.cloudfront.net/js/form_embed.js"
-                    strategy="afterInteractive"
-                />
+
+                <Script id="engagebay-tracking-code" strategy="afterInteractive" dangerouslySetInnerHTML={{
+                    __html: `
+                    var EhAPI = EhAPI || {}; EhAPI.after_load = function(){
+                    EhAPI.set_account('bbk7lmu2rmvae1u1os10a6no8c', 'swandigitalshu');
+                    EhAPI.execute('rules');};(function(d,s,f) {
+                    var sc=d.createElement(s);sc.type='text/javascript';
+                    sc.async=true;sc.src=f;var m=d.getElementsByTagName(s)[0];
+                    m.parentNode.insertBefore(sc,m);
+                    })(document, 'script', '//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js?v' + new Date().getHours());
+                    `
+                }} />
+
                 <Script id="swan-chat-widget" strategy="afterInteractive" dangerouslySetInnerHTML={{
                     __html: `
                     window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
@@ -191,9 +199,11 @@ export default function RootLayout({
                           websiteToken: 'bwEMnvgPoGhUAAFdwrhSbvJw',
                           baseUrl: BASE_URL
                         });
+                      }
 
+                      window.addEventListener("chatwoot:ready", function () {
                         /* ── Advanced: set page context as custom attributes ── */
-                        window.chatwootSDK.setCustomAttributes({
+                        window.$chatwoot.setCustomAttributes({
                           page: window.location.pathname,
                           referrer: document.referrer || 'direct',
                           utm_source: new URLSearchParams(window.location.search).get('utm_source') || '',
@@ -205,10 +215,10 @@ export default function RootLayout({
                             window.location.pathname.includes('/demo') ||
                             window.location.pathname.includes('/contact')) {
                           setTimeout(function() {
-                            window.chatwootSDK.toggle('open');
+                            window.$chatwoot.toggle('open');
                           }, 8000);
                         }
-                      }
+                      });
                     })(document,"script");
                     `
                 }} />
