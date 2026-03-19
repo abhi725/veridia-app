@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import FAQ from '@/components/ui/FAQ';
+import PricingCalculator from '@/components/ui/PricingCalculator';
 import Link from 'next/link';
 import { Check, X, Zap, Gift, BadgePercent, MessageSquare, Phone, Users, Shield, Building2 } from 'lucide-react';
 
@@ -123,7 +124,10 @@ export default function PricingPage() {
         { question: "How does the pilot credit refund work?", answer: "If you sign a 12-month contract within 3 months of completing your pilot, we'll credit your full pilot payment towards your subscription. This gives you a risk-free way to evaluate SwanDesk." },
         { question: "What payment methods do you accept?", answer: "We accept all major credit/debit cards, UPI, and net banking. Enterprise customers can opt for invoice-based billing with NET30 terms." },
         { question: "What's included in the Enterprise Plan?", answer: "Enterprise Plan is our full-featured tier for large organizations. It includes on-premise or managed private cloud deployment, unlimited everything, a named Customer Success Manager, SLA guarantees, SSO integration, and governance onboarding. Multi-year licensing discounts of 10-20% are available." },
-        { question: "Do you offer a channel/partner SKU?", answer: "Yes! For partners and resellers serving price-sensitive SMB/D2C customers, we offer a white-label Channel SKU with adjusted SLAs. Contact our partnership team for details." }
+        { question: "Do you offer a channel/partner SKU?", answer: "Yes! For partners and resellers serving price-sensitive SMB/D2C customers, we offer a white-label Channel SKU with adjusted SLAs. Contact our partnership team for details." },
+        { question: "How much does a voicebot cost in India?", answer: "A voicebot in India costs between ₹12,000 to ₹28,000/month on SwanDesk, depending on call volume. Per-minute rates start at ₹18/min for up to 1,000 minutes, dropping to ₹12/min at scale. Use our calculator above to get your exact monthly cost." },
+        { question: "How much does an AI chatbot cost in India?", answer: "AI chatbot pricing in India on SwanDesk starts at ₹12,000/month for up to 10,000 conversations. Per-conversation rates drop from ₹1.20 to ₹0.80 at volume. Calculate your exact cost using our free chatbot pricing calculator." },
+        { question: "What is the cost of WhatsApp bot in India?", answer: "WhatsApp bot cost in India starts at ₹12,000/month platform fee + Meta's WhatsApp conversation charges (₹0.58–₹0.85 per conversation). SwanDesk bundles both into transparent per-conversation pricing with no hidden fees." }
     ];
 
     return (
@@ -256,6 +260,9 @@ export default function PricingPage() {
                 </div>
             </section>
 
+            {/* Pricing Calculator */}
+            <PricingCalculator />
+
             {/* Full Feature Comparison */}
             <section className="py-20 bg-white">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -362,6 +369,65 @@ export default function PricingPage() {
                     </Link>
                 </div>
             </section>
+
+            {/* JSON-LD Schema for SEO */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "name": "AI Voicebot & Chatbot Pricing Calculator India | SwanDesk",
+                        "description": "Calculate exact cost of AI voicebot and chatbot for your Indian business. Transparent per-minute and per-conversation pricing in INR.",
+                        "url": "https://swandigitals.com/pricing",
+                        "mainEntity": {
+                            "@type": "SoftwareApplication",
+                            "name": "SwanDesk Pricing Calculator",
+                            "applicationCategory": "BusinessApplication",
+                            "offers": {
+                                "@type": "Offer",
+                                "priceCurrency": "INR",
+                                "price": "12000"
+                            }
+                        }
+                    })
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "How much does a voicebot cost in India?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "A voicebot in India costs between ₹12,000 to ₹28,000/month on SwanDesk, depending on call volume. Per-minute rates start at ₹18/min for up to 1,000 minutes, dropping to ₹12/min at scale. Use our calculator above to get your exact monthly cost."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How much does an AI chatbot cost in India?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "AI chatbot pricing in India on SwanDesk starts at ₹12,000/month for up to 10,000 conversations. Per-conversation rates drop from ₹1.20 to ₹0.80 at volume. Calculate your exact cost using our free chatbot pricing calculator."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What is the cost of WhatsApp bot in India?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "WhatsApp bot cost in India starts at ₹12,000/month platform fee + Meta's WhatsApp conversation charges (₹0.58–₹0.85 per conversation). SwanDesk bundles both into transparent per-conversation pricing with no hidden fees."
+                                }
+                            }
+                        ]
+                    })
+                }}
+            />
 
             {/* FAQ */}
             <FAQ items={faqItems} />
