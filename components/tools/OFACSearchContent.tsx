@@ -318,13 +318,13 @@ export default function OFACSearchContent() {
             </section>
 
             {/* Disclaimer */}
-            <section className="py-8 bg-amber-50 border-y border-amber-200">
+            <section className="py-8 bg-orange-50 border-y border-orange-200">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="flex items-start gap-4">
-                        <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
                         <div>
                             <h4 className="font-bold text-amber-800 mb-1">Disclaimer</h4>
-                            <p className="text-amber-700 text-sm">
+                            <p className="text-orange-700 text-sm">
                                 This tool is provided for <strong>informational purposes only</strong> and should not be considered legal or compliance advice.
                                 Results are based on fuzzy matching algorithms and may include false positives.
                                 For official compliance decisions, always verify results against the authoritative OFAC database and consult with qualified compliance professionals.
@@ -427,3 +427,5 @@ export default function OFACSearchContent() {
         </SiteLayout>
     );
 }
+
+

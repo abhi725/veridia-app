@@ -3,15 +3,45 @@
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
     MessageSquare, Brain, Globe, BarChart3, Zap, Users, Shield, Settings,
     Code, Layers, Bot, Mic, Phone, Database, FileText, Headphones,
-    Building2, ShoppingCart, Briefcase, Heart, Check, X, ChevronRight
+    Building2, ShoppingCart, Briefcase, Heart, Check, X, ChevronRight,
+    MessageCircle, MapPin
 } from 'lucide-react';
+
+function useReveal() {
+    const ref = useRef<HTMLElement>(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.querySelectorAll('.reveal').forEach((el, i) => {
+                            setTimeout(() => el.classList.add('visible'), i * 80);
+                        });
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
+    return ref;
+}
 
 export default function FeaturesContent() {
     const [activeTab, setActiveTab] = useState('ai');
+    
+    const coreFeaturesRef = useReveal();
+    const capabilitiesRef = useReveal();
+    const knowledgeRef = useReveal();
+    const voiceRef = useReveal();
+    const languagesRef = useReveal();
+    const useCasesRef = useReveal();
+    const comparisonRef = useReveal();
 
     const featureTabs = [
         { id: 'ai', label: 'AI & NLU', icon: <Brain className="w-5 h-5" /> },
@@ -31,7 +61,7 @@ export default function FeaturesContent() {
                 "Entity extraction for names, dates, amounts, etc.",
                 "Sentiment analysis in real-time",
                 "Custom model training on your data",
-                "10+ Indian languages (Hindi, Tamil, Telugu, Marathi, Bengali, Kannada, Malayalam, Gujarati, Punjabi, Odia, Hinglish)",
+                "10+ Indian languages natively supported",
                 "Fallback handling with graceful escalation",
                 "Active learning from human corrections"
             ]
@@ -140,7 +170,7 @@ export default function FeaturesContent() {
     const useCases = [
         {
             title: "Customer Service",
-            icon: <Headphones className="w-10 h-10" />,
+            icon: <Headphones className="w-8 h-8" />,
             description: "Automate support inquiries with instant 24/7 responses across all channels.",
             stats: ["24/7 Availability", "Multi-channel", "AI-Powered"],
             benefits: ["FAQ automation", "Order tracking", "Complaint handling", "Appointment scheduling"],
@@ -148,7 +178,7 @@ export default function FeaturesContent() {
         },
         {
             title: "Banking & Finance",
-            icon: <Building2 className="w-10 h-10" />,
+            icon: <Building2 className="w-8 h-8" />,
             description: "RBI-compliant AI agents for account services, loan inquiries, and transaction support.",
             stats: ["100% data sovereignty", "DPDP 2023 compliant", "On-premise ready"],
             benefits: ["Balance inquiries", "Fund transfers", "Loan applications", "KYC assistance"],
@@ -156,7 +186,7 @@ export default function FeaturesContent() {
         },
         {
             title: "E-Commerce",
-            icon: <ShoppingCart className="w-10 h-10" />,
+            icon: <ShoppingCart className="w-8 h-8" />,
             description: "Convert browsers to buyers with product recommendations, cart recovery, and order support.",
             stats: ["Cart Recovery", "Personalization", "24/7 Availability"],
             benefits: ["Product search", "Order status", "Returns & refunds", "Personalized offers"],
@@ -164,7 +194,7 @@ export default function FeaturesContent() {
         },
         {
             title: "HR & Employee Experience",
-            icon: <Briefcase className="w-10 h-10" />,
+            icon: <Briefcase className="w-8 h-8" />,
             description: "Internal helpdesk for HR, IT, and operations. Empower employees with self-service.",
             stats: ["Self-Service", "Internal Automation", "Employee Enablement"],
             benefits: ["Leave requests", "Policy queries", "Onboarding", "IT support"],
@@ -172,7 +202,7 @@ export default function FeaturesContent() {
         },
         {
             title: "Healthcare",
-            icon: <Heart className="w-10 h-10" />,
+            icon: <Heart className="w-8 h-8" />,
             description: "HIPAA-compliant patient engagement. Appointment scheduling, symptom triage, and follow-ups.",
             stats: ["HIPAA compliant", "24/7 patient support", "Reduced no-shows"],
             benefits: ["Appointment booking", "Prescription refills", "Lab results", "Care reminders"],
@@ -202,13 +232,13 @@ export default function FeaturesContent() {
     const renderComparisonCell = (value: boolean | string) => {
         if (value === true) return <Check className="w-5 h-5 text-green-500 mx-auto" />;
         if (value === false) return <X className="w-5 h-5 text-red-400 mx-auto" />;
-        return <span className="text-yellow-600 text-xs">{value}</span>;
+        return <span className="text-slate-500 font-medium text-xs uppercase tracking-wider">{value}</span>;
     };
 
     return (
         <SiteLayout>
             <Hero
-                badge="⚡ Platform Features"
+                badge="Platform Features"
                 title="Everything You Need to Build Enterprise AI"
                 subtitle="From no-code conversation builders to native voice AI. Deploy in days, scale to millions of conversations."
                 primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
@@ -216,22 +246,24 @@ export default function FeaturesContent() {
             />
 
             {/* Feature Tabs */}
-            <section className="py-20 bg-white">
+            <section ref={coreFeaturesRef} className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4">Core Features</h2>
-                    <p className="text-xl text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-                        Built on modern AI with enterprise-grade infrastructure
-                    </p>
+                    <div className="reveal text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Core Features</h2>
+                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
+                            Built on modern AI with enterprise-grade infrastructure
+                        </p>
+                    </div>
 
                     {/* Tabs */}
-                    <div className="flex flex-wrap justify-center gap-2 mb-12">
+                    <div className="reveal flex flex-wrap justify-center gap-2 mb-12">
                         {featureTabs.map(tab => (
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-all ${activeTab === tab.id
-                                    ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg'
-                                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                                    ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-orange shadow-lg'
+                                    : 'bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-100'
                                     }`}
                             >
                                 {tab.icon}
@@ -241,14 +273,14 @@ export default function FeaturesContent() {
                     </div>
 
                     {/* Tab Content */}
-                    <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 md:p-12">
+                    <div className="reveal bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl p-8 md:p-12 border border-orange-100/50 shadow-sm">
                         <h3 className="text-2xl font-bold text-slate-900 mb-4">{featureDetails[activeTab].title}</h3>
-                        <p className="text-lg text-slate-600 mb-8">{featureDetails[activeTab].description}</p>
+                        <p className="text-lg text-slate-600 mb-8 max-w-4xl">{featureDetails[activeTab].description}</p>
                         <div className="grid md:grid-cols-2 gap-4">
                             {featureDetails[activeTab].features.map((feature, i) => (
-                                <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-xl">
-                                    <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                                    <span className="text-slate-700">{feature}</span>
+                                <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-white hover:border-orange-200 transition-colors shadow-sm">
+                                    <Check className="w-5 h-5 text-orange-500 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{feature}</span>
                                 </div>
                             ))}
                         </div>
@@ -257,20 +289,22 @@ export default function FeaturesContent() {
             </section>
 
             {/* Platform Capabilities */}
-            <section className="py-20 bg-slate-50">
+            <section ref={capabilitiesRef} className="py-20 bg-slate-50 border-t border-slate-100">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4">Platform Capabilities</h2>
-                    <p className="text-xl text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-                        Enterprise-grade features that competitors charge extra for
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="reveal text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Platform Capabilities</h2>
+                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
+                            Enterprise-grade features that competitors charge extra for
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
                         {platformCapabilities.map((cap, i) => (
-                            <div key={i} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-white mb-4">
+                            <div key={i} className="reveal bg-white p-6 rounded-2xl border border-slate-100 shadow-card hover:shadow-card-hover hover:-translate-y-1 hover:border-orange-200 transition-all cursor-default">
+                                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center text-white mb-5 shadow-orange">
                                     {cap.icon}
                                 </div>
-                                <h3 className="text-lg font-bold mb-2">{cap.title}</h3>
-                                <p className="text-slate-600 text-sm">{cap.desc}</p>
+                                <h3 className="text-lg font-bold text-slate-900 mb-2">{cap.title}</h3>
+                                <p className="text-slate-500 text-sm leading-relaxed">{cap.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -278,52 +312,59 @@ export default function FeaturesContent() {
             </section>
 
             {/* Knowledge Base Section */}
-            <section className="py-20 bg-white">
+            <section ref={knowledgeRef} className="py-20 lg:py-28 bg-white">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
+                        <div className="reveal">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-orange-600 bg-orange-50 border border-orange-100 rounded-full mb-6">
                                 <Database className="w-4 h-4" />
                                 Knowledge Base AI
                             </div>
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
                                 Turn Your Documents Into Intelligent Answers
                             </h2>
-                            <p className="text-lg text-slate-600 mb-6">
+                            <p className="text-lg text-slate-500 mb-8 leading-relaxed">
                                 Connect your existing knowledge sources – FAQs, PDFs, help articles, wikis, and databases.
                                 Our AI retrieves and synthesizes accurate answers in natural language.
                             </p>
-                            <ul className="space-y-3 mb-8">
+                            <ul className="space-y-4 mb-8">
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-500" />
-                                    <span>Upload PDFs, Word docs, and spreadsheets</span>
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-slate-700 font-medium">Upload PDFs, Word docs, and spreadsheets</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-500" />
-                                    <span>Connect to Confluence, SharePoint, Notion</span>
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-slate-700 font-medium">Connect to Confluence, SharePoint, Notion</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-500" />
-                                    <span>Real-time sync with source updates</span>
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-slate-700 font-medium">Real-time sync with source updates</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-500" />
-                                    <span>Citation & source attribution</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-500" />
-                                    <span>Multi-language knowledge retrieval</span>
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-slate-700 font-medium">Citation & source attribution</span>
                                 </li>
                             </ul>
                             <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all">
                                 Learn More <ChevronRight className="w-4 h-4" />
                             </Link>
                         </div>
-                        <div className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 flex items-center justify-center">
-                            <div className="text-center">
-                                <Database className="w-24 h-24 text-purple-500 mx-auto mb-4" />
-                                <p className="text-lg font-semibold text-slate-700">Unified Knowledge Graph</p>
-                                <p className="text-slate-500">All your data, one intelligent interface</p>
+                        <div className="reveal bg-gradient-to-br from-orange-50 to-pink-50 border border-orange-100 rounded-3xl p-10 flex items-center justify-center shadow-lg relative overflow-hidden">
+                            <div className="absolute inset-0 bg-white/40 backdrop-blur-3xl" />
+                            <div className="text-center relative z-10">
+                                <div className="w-32 h-32 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl border border-orange-100">
+                                    <Database className="w-14 h-14 text-orange-500" />
+                                </div>
+                                <p className="text-xl font-bold text-slate-900 mb-2">Unified Knowledge Graph</p>
+                                <p className="text-slate-500 font-medium">All your data, one intelligent interface</p>
                             </div>
                         </div>
                     </div>
@@ -331,51 +372,58 @@ export default function FeaturesContent() {
             </section>
 
             {/* Voice AI Deep-Dive */}
-            <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
+            <section ref={voiceRef} className="py-20 lg:py-28 bg-slate-900 text-white">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 flex items-center justify-center border border-white/20">
-                            <div className="text-center">
-                                <Phone className="w-24 h-24 text-orange-400 mx-auto mb-4" />
-                                <p className="text-5xl font-bold text-orange-400 mb-2">&lt;500ms</p>
-                                <p className="text-white/70">Voice Response Latency</p>
+                        <div className="reveal bg-white/5 backdrop-blur-md rounded-3xl p-10 flex flex-col items-center justify-center border border-white/10 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500 to-pink-500 opacity-20 blur-3xl rounded-full translate-x-1/3 -translate-y-1/3" />
+                            <div className="relative z-10 text-center">
+                                <div className="w-24 h-24 bg-gradient-to-br from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-orange">
+                                    <Phone className="w-10 h-10 text-white" />
+                                </div>
+                                <p className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-400 mb-3 tracking-tight">&lt;500ms</p>
+                                <p className="text-white/70 font-medium uppercase tracking-widest text-sm">Voice Response Latency</p>
                             </div>
                         </div>
-                        <div>
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium mb-4">
+                        <div className="reveal">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-pink-400 bg-pink-400/10 border border-pink-400/20 rounded-full mb-6">
                                 <Mic className="w-4 h-4" />
                                 Voice AI — Not an Add-on
                             </div>
-                            <h2 className="text-3xl font-bold mb-4">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
                                 Replace Your IVR. Forever.
                             </h2>
-                            <p className="text-lg text-white/80 mb-6">
+                            <p className="text-lg text-white/70 mb-8 leading-relaxed">
                                 Human-like phone conversations powered by AI. Handle inbound calls, make outbound campaigns,
                                 and let customers talk naturally — no more "Press 1 for sales."
                             </p>
-                            <ul className="space-y-3 mb-8">
+                            <ul className="space-y-4 mb-8">
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-400" />
-                                    <span>Inbound &amp; outbound calling automation</span>
+                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-400" />
+                                    </div>
+                                    <span className="text-white/90">Inbound & outbound calling automation</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-400" />
-                                    <span>Real-time speech-to-text &amp; natural TTS</span>
+                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-400" />
+                                    </div>
+                                    <span className="text-white/90">Real-time speech-to-text & natural TTS</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-400" />
-                                    <span>Call recording &amp; full transcription</span>
+                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-400" />
+                                    </div>
+                                    <span className="text-white/90">Call recording & full transcription</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-400" />
-                                    <span>Seamless transfer to human agents</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-green-400" />
-                                    <span>Integration with existing PBX/SIP systems</span>
+                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                        <Check className="w-4 h-4 text-orange-400" />
+                                    </div>
+                                    <span className="text-white/90">Seamless transfer to human agents</span>
                                 </li>
                             </ul>
-                            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-all">
+                            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold hover:opacity-90 transition-opacity shadow-orange">
                                 See Voice AI Demo <ChevronRight className="w-4 h-4" />
                             </Link>
                         </div>
@@ -384,77 +432,90 @@ export default function FeaturesContent() {
             </section>
 
             {/* Indian Languages Spotlight */}
-            <section className="py-20 bg-white">
+            <section ref={languagesRef} className="py-20 lg:py-28 bg-white">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
-                            🇮🇳 Built for India
+                    <div className="reveal text-center mb-12">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-emerald-600 bg-emerald-50 border border-emerald-100 rounded-full mb-4">
+                            <MapPin className="w-3.5 h-3.5" /> Built for India
                         </div>
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                            Your Customers Speak Tamil. Your Bot Should Too.
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                            Your Customers Speak Tamil.<br/>Your Bot Should Too.
                         </h2>
-                        <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                        <p className="text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed">
                             Native NLU support for 10+ Indian languages. Not Google Translate bolted on —
                             real intent understanding, entity extraction, and context management in every language.
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
+                    <div className="reveal grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12 stagger">
                         {['Hindi', 'Tamil', 'Telugu', 'Marathi', 'Bengali', 'Kannada', 'Malayalam', 'Gujarati', 'Punjabi', 'Odia', 'Hinglish', 'English'].map((lang, i) => (
-                            <div key={i} className="bg-gradient-to-br from-orange-50 to-pink-50 p-4 rounded-xl text-center border border-orange-200">
-                                <div className="text-2xl mb-1">🗣️</div>
-                                <div className="font-semibold text-slate-900">{lang}</div>
+                            <div key={i} className="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100 hover:border-orange-200 transition-colors shadow-sm cursor-default">
+                                <div className="text-slate-400 mb-2 flex justify-center"><MessageCircle className="w-6 h-6 text-orange-400" /></div>
+                                <div className="font-semibold text-slate-900 text-sm">{lang}</div>
                             </div>
                         ))}
                     </div>
-                    <div className="bg-slate-50 p-8 rounded-2xl">
-                        <div className="grid md:grid-cols-3 gap-6 text-center">
-                            <div>
-                                <div className="text-3xl font-bold text-orange-600 mb-2">Native NLU</div>
-                                <p className="text-slate-600 text-sm">Intent & entity recognition in regional languages</p>
+                    <div className="reveal bg-gradient-to-r from-orange-50 to-pink-50 p-8 md:p-10 rounded-3xl border border-orange-100/50 shadow-sm">
+                        <div className="grid md:grid-cols-3 gap-8 text-center">
+                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white">
+                                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mx-auto mb-4">
+                                    <Brain className="w-6 h-6" />
+                                </div>
+                                <div className="text-xl font-bold text-slate-900 mb-2">Native NLU</div>
+                                <p className="text-slate-500 text-sm">Intent & entity recognition directly in regional languages</p>
                             </div>
-                            <div>
-                                <div className="text-3xl font-bold text-orange-600 mb-2">Code-Mixed</div>
-                                <p className="text-slate-600 text-sm">Handles Hinglish and mixed scripts naturally</p>
+                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white">
+                                <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 mx-auto mb-4">
+                                    <MessageSquare className="w-6 h-6" />
+                                </div>
+                                <div className="text-xl font-bold text-slate-900 mb-2">Code-Mixed</div>
+                                <p className="text-slate-500 text-sm">Handles Hinglish and mixed scripts naturally and accurately</p>
                             </div>
-                            <div>
-                                <div className="text-3xl font-bold text-orange-600 mb-2">Voice + Text</div>
-                                <p className="text-slate-600 text-sm">Regional language support for chat and calls</p>
+                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white">
+                                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mx-auto mb-4">
+                                    <Mic className="w-6 h-6" />
+                                </div>
+                                <div className="text-xl font-bold text-slate-900 mb-2">Voice + Text</div>
+                                <p className="text-slate-500 text-sm">Regional language support seamless across chat and calls</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="py-20 bg-slate-50">
+            
+            {/* Use Cases */}
+            <section ref={useCasesRef} className="py-20 lg:py-28 bg-slate-50 border-t border-slate-100">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4">Use Cases</h2>
-                    <p className="text-xl text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-                        See how enterprises across industries use SwanDesk
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="reveal text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Solutions for Every Team</h2>
+                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
+                            See how enterprises across industries use SwanDesk
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
                         {useCases.map((uc, i) => (
-                            <div key={i} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-pink-100 rounded-2xl flex items-center justify-center text-orange-600 mb-4">
+                            <div key={i} className="reveal bg-white p-8 rounded-3xl shadow-card hover:shadow-card-hover hover:-translate-y-1 hover:border-orange-200 border border-slate-100 transition-all">
+                                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center text-white mb-6 shadow-orange">
                                     {uc.icon}
                                 </div>
-                                <h3 className="text-xl font-bold mb-2">{uc.title}</h3>
-                                <p className="text-slate-600 text-sm mb-4">{uc.description}</p>
-                                <div className="flex flex-wrap gap-2 mb-4">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3">{uc.title}</h3>
+                                <p className="text-slate-500 text-sm mb-6 leading-relaxed">{uc.description}</p>
+                                <div className="flex flex-wrap gap-2 mb-6">
                                     {uc.stats.map((stat, j) => (
-                                        <span key={j} className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">
+                                        <span key={j} className="px-3 py-1 bg-orange-50 text-orange-700 border border-orange-100 rounded-full text-xs font-semibold">
                                             {stat}
                                         </span>
                                     ))}
                                 </div>
-                                <ul className="space-y-1 mb-4">
+                                <ul className="space-y-2 mb-6">
                                     {uc.benefits.map((benefit, j) => (
-                                        <li key={j} className="text-sm text-slate-500 flex items-center gap-2">
-                                            <Check className="w-3 h-3 text-green-500" />
+                                        <li key={j} className="text-sm text-slate-600 flex items-center gap-2">
+                                            <Check className="w-4 h-4 text-orange-500 flex-shrink-0" />
                                             {benefit}
                                         </li>
                                     ))}
                                 </ul>
-                                <Link href={uc.link} className="text-orange-600 font-semibold text-sm hover:underline">
-                                    Learn more →
+                                <Link href={uc.link} className="inline-flex items-center gap-1 text-orange-600 font-bold text-sm hover:text-orange-500 transition-colors">
+                                    Learn more <ChevronRight className="w-4 h-4" />
                                 </Link>
                             </div>
                         ))}
@@ -463,42 +524,44 @@ export default function FeaturesContent() {
             </section>
 
             {/* Comprehensive Competitor Comparison */}
-            <section className="py-20 bg-white">
+            <section ref={comparisonRef} className="py-20 lg:py-28 bg-white border-t border-slate-100">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4">Feature Comparison</h2>
-                    <p className="text-xl text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-                        See how SwanDesk compares to leading competitors
-                    </p>
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-collapse bg-white text-sm">
+                    <div className="reveal text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Feature Comparison</h2>
+                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
+                            See how SwanDesk compares to leading competitors
+                        </p>
+                    </div>
+                    <div className="reveal overflow-x-auto bg-white rounded-3xl border border-slate-200 shadow-sm">
+                        <table className="w-full border-collapse text-sm text-left">
                             <thead>
-                                <tr className="border-b-2 border-slate-200">
-                                    <th className="py-4 px-3 text-left font-semibold text-slate-700 sticky left-0 bg-white">Feature</th>
-                                    <th className="py-4 px-3 text-center font-bold text-orange-600 bg-orange-50">SwanDesk</th>
-                                    <th className="py-4 px-3 text-center font-semibold text-slate-500">Kore.ai</th>
-                                    <th className="py-4 px-3 text-center font-semibold text-slate-500">Yellow.ai</th>
-                                    <th className="py-4 px-3 text-center font-semibold text-slate-500">Haptik</th>
-                                    <th className="py-4 px-3 text-center font-semibold text-slate-500">Zendesk</th>
-                                    <th className="py-4 px-3 text-center font-semibold text-slate-500">Intercom</th>
+                                <tr className="border-b-2 border-slate-200 bg-slate-50">
+                                    <th className="py-5 px-6 font-semibold text-slate-900 sticky left-0 bg-slate-50 z-10 w-1/4">Feature</th>
+                                    <th className="py-5 px-4 text-center font-bold text-orange-600 bg-orange-50 w-[12.5%]">SwanDesk</th>
+                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Kore.ai</th>
+                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Yellow.ai</th>
+                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Haptik</th>
+                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Zendesk</th>
+                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Intercom</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {competitorComparison.map((row, i) => (
-                                    <tr key={i} className={`border-b border-slate-100 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
-                                        <td className="py-3 px-3 font-medium text-slate-700 sticky left-0 bg-inherit">{row.feature}</td>
-                                        <td className="py-3 px-3 text-center bg-orange-50">{renderComparisonCell(row.swanDigitals)}</td>
-                                        <td className="py-3 px-3 text-center">{renderComparisonCell(row.koreai)}</td>
-                                        <td className="py-3 px-3 text-center">{renderComparisonCell(row.yellowai)}</td>
-                                        <td className="py-3 px-3 text-center">{renderComparisonCell(row.haptik)}</td>
-                                        <td className="py-3 px-3 text-center">{renderComparisonCell(row.zendesk)}</td>
-                                        <td className="py-3 px-3 text-center">{renderComparisonCell(row.intercom)}</td>
+                                    <tr key={i} className={`border-b border-slate-100 hover:bg-slate-50/50 transition-colors ${i % 2 === 1 ? 'bg-slate-50/30' : ''}`}>
+                                        <td className="py-4 px-6 font-medium text-slate-700 sticky left-0 bg-inherit z-10">{row.feature}</td>
+                                        <td className="py-4 px-4 text-center bg-orange-50/50">{renderComparisonCell(row.swanDigitals)}</td>
+                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.koreai)}</td>
+                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.yellowai)}</td>
+                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.haptik)}</td>
+                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.zendesk)}</td>
+                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.intercom)}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
-                    <div className="text-center mt-8">
-                        <Link href="/compare" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all">
+                    <div className="reveal text-center mt-10">
+                        <Link href="/compare" className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-full font-bold text-sm hover:bg-slate-800 transition-all shadow-md hover:shadow-lg">
                             View Detailed Comparisons <ChevronRight className="w-4 h-4" />
                         </Link>
                     </div>
@@ -506,15 +569,15 @@ export default function FeaturesContent() {
             </section>
 
             {/* CTA */}
-            <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white text-center">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <h2 className="text-4xl font-bold mb-6">Ready to Explore the Platform?</h2>
-                    <p className="text-xl text-white/80 mb-8">Get hands-on with a free trial or schedule a personalized demo.</p>
+                    <p className="text-xl text-slate-300 mb-10">Get hands-on with a free trial or schedule a personalized demo.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
+                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-bold text-sm shadow-orange hover:shadow-lg hover:-translate-y-0.5 transition-all">
                             Start Free Trial
                         </Link>
-                        <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
+                        <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-sm hover:bg-white/20 transition-all">
                             Contact Sales
                         </Link>
                     </div>

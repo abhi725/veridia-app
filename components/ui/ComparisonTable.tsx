@@ -62,3 +62,5 @@ export default function ComparisonTable({ title, competitorName, rows }: Compari
         </section>
     );
 }
+
+

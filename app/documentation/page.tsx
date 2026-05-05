@@ -3,15 +3,19 @@
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
-import { Book, Code, Zap, HelpCircle, FileText, Terminal } from 'lucide-react';
+import { Book, Zap, HelpCircle, FileText, Phone, Brain, Settings, GitBranch, CreditCard, Code } from 'lucide-react';
 
 export default function DocumentationPage() {
     const sections = [
         { icon: <Zap className="w-6 h-6" />, title: "Quick Start", desc: "Get your first chatbot running in 5 minutes", link: "/docs/quickstart", time: "5 min" },
         { icon: <Book className="w-6 h-6" />, title: "Platform Guide", desc: "Complete guide to all platform features", link: "/docs/platform", time: "30 min" },
-        { icon: <Code className="w-6 h-6" />, title: "API Reference", desc: "REST API endpoints, authentication, and SDKs", link: "/docs/api", time: "Reference" },
-        { icon: <Terminal className="w-6 h-6" />, title: "SDK Documentation", desc: "Python, Node.js, Java, and Go SDKs", link: "/docs/sdk", time: "Reference" },
-        { icon: <FileText className="w-6 h-6" />, title: "Integration Guides", desc: "Connect with Zendesk, Salesforce, Slack, and more", link: "/docs/integrations", time: "15 min each" },
+        { icon: <FileText className="w-6 h-6" />, title: "Integration Guides", desc: "Connect with WhatsApp, Email, Zendesk, and more", link: "/docs/integrations", time: "15 min each" },
+        { icon: <Phone className="w-6 h-6" />, title: "Voice AI", desc: "AI-powered voice agents with Twilio/Retell", link: "/docs/voice", time: "20 min" },
+        { icon: <Brain className="w-6 h-6" />, title: "AI Training", desc: "Build knowledge base with RAG and multilingual support", link: "/docs/ai-training", time: "25 min" },
+        { icon: <Settings className="w-6 h-6" />, title: "Automation", desc: "Macros, labels, SwanAI bot, and handoff rules", link: "/docs/automation", time: "15 min" },
+        { icon: <GitBranch className="w-6 h-6" />, title: "n8n Workflows", desc: "Connect with 200+ apps via workflow automation", link: "/docs/workflows", time: "20 min" },
+        { icon: <CreditCard className="w-6 h-6" />, title: "SwanPlans", desc: "Compare PILOT, GROWTH, PROFESSIONAL, ENTERPRISE", link: "/docs/plans", time: "10 min" },
+        { icon: <Code className="w-6 h-6" />, title: "Custom Attributes", desc: "Lead scoring, segmentation, and custom fields", link: "/docs/attributes", time: "10 min" },
         { icon: <HelpCircle className="w-6 h-6" />, title: "Troubleshooting", desc: "Common issues and how to resolve them", link: "/docs/troubleshooting", time: "As needed" }
     ];
 
@@ -31,7 +35,7 @@ export default function DocumentationPage() {
                 title="Learn SwanDigitals"
                 subtitle="Comprehensive guides, API reference, and tutorials to help you build, deploy, and scale AI chatbots"
                 primaryCTA={{ text: "Quick Start Guide", href: "/docs/quickstart" }}
-                secondaryCTA={{ text: "API Reference", href: "/docs/api" }}
+                secondaryCTA={{ text: "Platform Guide", href: "/docs/platform" }}
             />
 
             {/* Search */}
@@ -78,38 +82,6 @@ export default function DocumentationPage() {
                                 <span className="text-orange-600">→</span>
                             </Link>
                         ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Code Example */}
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Quick Example</h2>
-                    <div className="bg-slate-900 rounded-2xl p-8 text-white">
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                            <span className="ml-4 text-slate-400">Python</span>
-                        </div>
-                        <pre className="text-sm overflow-x-auto">
-                            {`from SwanDigitals import SwanDigitalsClient
-
-# Initialize client
-client = SwanDigitalsClient(api_key="your_api_key")
-
-# Send a message
-response = client.chat(
-    bot_id="your_bot_id",
-    message="Hello, I need help with my order",
-    user_id="user_123"
-)
-
-print(response.message)  # AI response
-print(response.intent)   # Detected intent
-print(response.confidence) # Confidence score`}
-                        </pre>
                     </div>
                 </div>
             </section>

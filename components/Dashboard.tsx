@@ -174,3 +174,5 @@ function ChatBubble({ user, text, time, ai = false }: { user: string, text: stri
         </div>
     );
 }
+
+

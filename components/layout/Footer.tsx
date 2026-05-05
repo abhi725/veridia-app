@@ -1,110 +1,140 @@
 import Link from 'next/link';
-import { Linkedin, Twitter, Youtube, Mail } from 'lucide-react';
+import { Linkedin, Twitter, Youtube, Mail, ArrowRight } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-900 text-white">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
-                    {/* Company */}
-                    <div>
-                        <div className="flex items-center gap-2 mb-4">
-                            <img src="/logo.png" alt="SwanDesk" className="h-8 w-auto invert" />
-                            <span className="text-xl font-bold">SwanDesk</span>
+        <footer className="bg-white border-t border-slate-100">
+            <div className="max-w-7xl mx-auto px-5 lg:px-8 pt-16 pb-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
+
+                    {/* Brand */}
+                    <div className="lg:col-span-2">
+                        <div className="flex items-center gap-2.5 mb-4">
+                            <img src="/logo.png" alt="SwanDesk" className="h-8 w-auto" />
+                            <span className="text-xl font-bold text-slate-900">SwanDesk</span>
                         </div>
-                        <p className="text-slate-400 text-sm">
-                            AI-powered customer support for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. Built for DPDP 2023 Compliance.
+                        <p className="text-sm text-slate-500 leading-relaxed mb-5 max-w-xs">
+                            AI-powered customer support for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. Built for DPDP 2023 compliance.
                         </p>
-                        <div className="flex gap-4 mt-4">
-                            <a href="#" className="text-slate-400 hover:text-white"><Linkedin className="w-5 h-5" /></a>
-                            <a href="#" className="text-slate-400 hover:text-white"><Twitter className="w-5 h-5" /></a>
-                            <a href="#" className="text-slate-400 hover:text-white"><Youtube className="w-5 h-5" /></a>
-                            <a href="#" className="text-slate-400 hover:text-white"><Mail className="w-5 h-5" /></a>
-                        </div>
-                        <div className="flex gap-3 mt-5">
-                            <a href="https://chat.swandigitals.com" target="_blank" rel="noopener noreferrer" className="inline-block px-5 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-sm hover:shadow-lg transition-all whitespace-nowrap">
-                                Sign Up Now →
+                        <div className="flex gap-3 mb-6">
+                            <a href="https://linkedin.com/company/swandigitals" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
+                                <Linkedin className="w-4 h-4" />
                             </a>
-                            <a href="https://chat.swandigitals.com/app/login" target="_blank" rel="noopener noreferrer" className="inline-block px-5 py-2 border border-slate-600 text-slate-400 hover:text-white hover:border-slate-400 rounded-full text-sm transition-all whitespace-nowrap">
-                                Login
+                            <a href="https://twitter.com/swandigitals" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
+                                <Twitter className="w-4 h-4" />
+                            </a>
+                            <a href="#" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
+                                <Youtube className="w-4 h-4" />
+                            </a>
+                            <a href="mailto:support@swandigitals.com" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
+                                <Mail className="w-4 h-4" />
                             </a>
                         </div>
+                        <a
+                            href="https://chat.swandigitals.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-5 py-2 bg-orange-500 hover:bg-orange-500 text-white rounded-full text-sm font-semibold transition-all shadow-orange cursor-pointer"
+                        >
+                            Sign Up Free
+                            <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
                     </div>
 
                     {/* Platform */}
                     <div>
-                        <h3 className="font-bold mb-4">Platform</h3>
-                        <ul className="space-y-2 text-sm text-slate-400">
-                            <li><Link href="/platform" className="hover:text-white">Overview</Link></li>
-                            <li><Link href="/features" className="hover:text-white">Features</Link></li>
-                            <li><Link href="/integrations" className="hover:text-white">Integrations</Link></li>
-                            <li><Link href="/security" className="hover:text-white">Security</Link></li>
-                            <li><Link href="/deployment" className="hover:text-white">Deployment</Link></li>
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Platform</h3>
+                        <ul className="space-y-2.5">
+                            {[
+                                { label: 'Overview', href: '/platform' },
+                                { label: 'Features', href: '/features' },
+                                { label: 'Integrations', href: '/integrations' },
+                                { label: 'Security', href: '/security' },
+                                { label: 'Deployment', href: '/deployment' },
+                            ].map(({ label, href }) => (
+                                <li key={href}>
+                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Solutions */}
                     <div>
-                        <h3 className="font-bold mb-4">Solutions</h3>
-                        <ul className="space-y-2 text-sm text-slate-400">
-                            <li><Link href="/solutions" className="hover:text-white">Overview</Link></li>
-                            <li><Link href="/solutions/customer-service" className="hover:text-white">Customer Service</Link></li>
-                            <li><Link href="/solutions/employee-experience" className="hover:text-white">Employee Experience</Link></li>
-                            <li><Link href="/solutions/it-helpdesk" className="hover:text-white">IT Helpdesk</Link></li>
-                            <li><Link href="/solutions/banking" className="hover:text-white">Banking</Link></li>
-                            <li><Link href="/solutions/healthcare" className="hover:text-white">Healthcare</Link></li>
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Solutions</h3>
+                        <ul className="space-y-2.5">
+                            {[
+                                { label: 'Customer Service', href: '/solutions/customer-service' },
+                                { label: 'IT Helpdesk', href: '/solutions/it-helpdesk' },
+                                { label: 'Banking & BFSI', href: '/solutions/banking' },
+                                { label: 'Healthcare', href: '/solutions/healthcare' },
+                                { label: 'Overview', href: '/solutions' },
+                            ].map(({ label, href }) => (
+                                <li key={href}>
+                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Resources */}
                     <div>
-                        <h3 className="font-bold mb-4">Resources</h3>
-                        <ul className="space-y-2 text-sm text-slate-400">
-                            <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-                            <li><Link href="/documentation" className="hover:text-white">Documentation</Link></li>
-                            <li><Link href="/roi-calculator" className="hover:text-white">ROI Calculator</Link></li>
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Resources</h3>
+                        <ul className="space-y-2.5">
+                            {[
+                                { label: 'Documentation', href: '/documentation' },
+                                { label: 'ROI Calculator', href: '/roi-calculator' },
+                                { label: 'Pricing', href: '/pricing' },
+                                { label: 'Demo', href: '/demo' },
+                            ].map(({ label, href }) => (
+                                <li key={href}>
+                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Compare */}
                     <div>
-                        <h3 className="font-bold mb-4">Compare</h3>
-                        <ul className="space-y-2 text-sm text-slate-400">
-                            <li><Link href="/compare/vs-kore" className="hover:text-white">vs Kore.ai</Link></li>
-                            <li><Link href="/compare/vs-haptik" className="hover:text-white">vs Haptik</Link></li>
-                            <li><Link href="/compare/vs-yellow" className="hover:text-white">vs Yellow.ai</Link></li>
-                            <li><Link href="/compare/vs-kasisto" className="hover:text-white">vs Kasisto</Link></li>
-                            <li><Link href="/compare/vs-intercom" className="hover:text-white">vs Intercom</Link></li>
-                            <li><Link href="/compare/vs-gupshup" className="hover:text-white">vs Gupshup</Link></li>
-                            <li><Link href="/compare/vs-zendesk" className="hover:text-white">vs Zendesk</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Company */}
-                    <div>
-                        <h3 className="font-bold mb-4">Company</h3>
-                        <ul className="space-y-2 text-sm text-slate-400">
-                            <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-                            <li><Link href="/partners" className="hover:text-white">Partners</Link></li>
-                            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-                            <li><Link href="/pricing" className="hover:text-white">Pricing</Link></li>
-                            <li><Link href="/contact" className="hover:text-white">We're Hiring →</Link></li>
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Compare</h3>
+                        <ul className="space-y-2.5">
+                            {[
+                                { label: 'vs Kore.ai', href: '/compare/vs-kore' },
+                                { label: 'vs Yellow.ai', href: '/compare/vs-yellow' },
+                                { label: 'vs Haptik', href: '/compare/vs-haptik' },
+                                { label: 'vs Intercom', href: '/compare/vs-intercom' },
+                                { label: 'vs Zendesk', href: '/compare/vs-zendesk' },
+                            ].map(({ label, href }) => (
+                                <li key={href}>
+                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-sm text-slate-400">
-                        © 2026 SwanDigitals. All rights reserved. Pune, Maharashtra, India.  SwanDesk is a product of SwanDigitals.
+                <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p className="text-xs text-slate-400">
+                        © 2026 SwanDigitals. All rights reserved. Pune, Maharashtra, India.
                     </p>
-                    <div className="flex gap-6 text-sm text-slate-400">
-                        <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:text-white">Terms of Service</Link>
-                        <Link href="/cookies" className="hover:text-white">Cookie Policy</Link>
+                    <div className="flex gap-5 text-xs text-slate-400">
+                        <Link href="/privacy" className="hover:text-slate-600 transition-colors">Privacy Policy</Link>
+                        <Link href="/terms" className="hover:text-slate-600 transition-colors">Terms of Service</Link>
+                        <Link href="/cookies" className="hover:text-slate-600 transition-colors">Cookie Policy</Link>
                     </div>
                 </div>
             </div>
         </footer>
     );
 }
+
+

@@ -49,3 +49,5 @@ export default function PricingTable({ tiers, plans }: PricingTableProps) {
         </section>
     );
 }
+
+
