@@ -12,6 +12,10 @@ export const metadata: Metadata = {
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
+import { 
+    ClipboardList, ArrowRightLeft, Shield, 
+    FileText, CreditCard, TrendingUp, Check
+} from 'lucide-react';
 
 export default function BankingPage() {
     return (
@@ -52,7 +56,9 @@ export default function BankingPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Secure Conversation History */}
                         <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">📋</div>
+                            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+                                <ClipboardList className="w-6 h-6" />
+                            </div>
                             <h3 className="text-xl font-bold mb-3">Secure Conversation History</h3>
                             <p className="text-slate-700 mb-4">Audit-ready conversation logs for regulatory review</p>
                             <p className="text-sm text-slate-600 mb-4">Complete tamper-proof logs with 7-year retention, exportable for RBI and DPDP compliance</p>
@@ -63,7 +69,9 @@ export default function BankingPage() {
 
                         {/* Transaction Intelligence */}
                         <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">💸</div>
+                            <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-4">
+                                <ArrowRightLeft className="w-6 h-6" />
+                            </div>
                             <h3 className="text-xl font-bold mb-3">Transaction Intelligence</h3>
                             <p className="text-slate-700 mb-4">Enable fund transfers and balance checks via WhatsApp</p>
                             <p className="text-sm text-slate-600">OTP verification + transaction limits + session timeout</p>
@@ -71,7 +79,9 @@ export default function BankingPage() {
 
                         {/* Fraud Detection */}
                         <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl border-2 border-red-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">🛡️</div>
+                            <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-4">
+                                <Shield className="w-6 h-6" />
+                            </div>
                             <h3 className="text-xl font-bold mb-3">Fraud Detection Guardrails</h3>
                             <p className="text-slate-700 mb-4">Real-time pattern recognition for suspicious activity</p>
                             <p className="text-sm text-slate-600">Flags transactions in new geo-locations or unusual amounts</p>
@@ -79,7 +89,9 @@ export default function BankingPage() {
 
                         {/* Loan Origination */}
                         <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border-2 border-purple-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">📄</div>
+                            <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
+                                <FileText className="w-6 h-6" />
+                            </div>
                             <h3 className="text-xl font-bold mb-3">Loan Origination</h3>
                             <p className="text-slate-700 mb-4">Pre-qualify loans in 5 minutes via chat</p>
                             <p className="text-sm text-slate-600">Income verification → Credit score check → Instant eligibility</p>
@@ -87,14 +99,18 @@ export default function BankingPage() {
 
                         {/* Card Services */}
                         <div className="bg-gradient-to-br from-yellow-50 to-amber-50 p-8 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">💳</div>
+                            <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-yellow-600 mb-4">
+                                <CreditCard className="w-6 h-6" />
+                            </div>
                             <h3 className="text-xl font-bold mb-3">Card Services</h3>
                             <p className="text-slate-700 mb-4">Block/unblock cards, dispute charges, request PIN reset</p>
                         </div>
 
                         {/* Investment Advisory */}
                         <div className="bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border-2 border-indigo-200 hover:shadow-xl transition-all">
-                            <div className="text-5xl mb-4">📈</div>
+                            <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-4">
+                                <TrendingUp className="w-6 h-6" />
+                            </div>
                             <h3 className="text-xl font-bold mb-3">Investment Advisory</h3>
                             <p className="text-slate-700 mb-4">Personalized mutual fund and fixed deposit recommendations</p>
                         </div>
@@ -135,7 +151,7 @@ export default function BankingPage() {
                                 "Bill payment reminders and alerts"
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3 text-white/90">
-                                    <span className="text-orange-400">✓</span>
+                                    <Check className="w-5 h-5 text-orange-400 shrink-0" />
                                     {item}
                                 </div>
                             ))}

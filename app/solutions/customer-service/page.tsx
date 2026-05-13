@@ -5,12 +5,12 @@ import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
 import FAQ from '@/components/ui/FAQ';
-import { Headphones, TrendingUp, Clock, Users, Zap, BarChart3 } from 'lucide-react';
+import { Headphones, TrendingUp, Clock, Users, Zap, BarChart3, XCircle, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Automate 90% of Customer Support | SwanDigitals',
-    description: 'Slash support costs by 60% with Sovereign AI Agents. Instant 24/7 responses, ticket deflection, and seamless human handoff. Hosted in India.',
+    title: 'AI Customer Support Automation India | 90% Auto-Resolution | SwanDesk',
+    description: 'Automate 90% of customer support queries with sovereign AI agents. Instant 24/7 responses, multi-channel support, and seamless human handoff. On-premise deployment for India.',
     keywords: ['Customer Service Automation', 'Support Ticket Deflection', '24/7 AI Agent', 'Omni-channel Support', 'Whatsapp Customer Support Bot'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/customer-service',
@@ -82,8 +82,14 @@ export default function CustomerServicePage() {
                             { challenge: "Poor visibility into customer sentiment", solution: "Real-time sentiment analysis and alerts" }
                         ].map((item, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl shadow-sm">
-                                <div className="text-red-500 font-medium mb-2">❌ {item.challenge}</div>
-                                <div className="text-green-600 font-medium">✅ {item.solution}</div>
+                                <div className="text-red-500 font-medium mb-2 flex items-start gap-2">
+                                    <XCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                                    <span>{item.challenge}</span>
+                                </div>
+                                <div className="text-green-600 font-medium flex items-start gap-2">
+                                    <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" />
+                                    <span>{item.solution}</span>
+                                </div>
                             </div>
                         ))}
                     </div>

@@ -8,8 +8,8 @@ import Link from 'next/link';
 import { ShoppingCart, Package, RefreshCw, MessageSquare, TrendingUp, Gift } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Retail AI Chatbot for E-commerce | Scale to 10M+ Conversions | SwanDigitals',
-    description: 'Handle Black Friday traffic with Enterprise Retail AI. Automate order tracking, returns, and product recommendations. Integrated with Shopify & Salesforce.',
+    title: 'Retail & E-commerce AI Chatbot India | Peak Season Ready | SwanDesk',
+    description: 'Enterprise retail AI for Indian e-commerce. Automate order tracking, returns, and product recommendations. Integrated with Shopify & Salesforce. Scales for peak season.',
     keywords: ['Retail AI Chatbot', 'E-commerce Automation India', 'Shopify AI Agent', 'Order Tracking Bot', 'Black Friday AI Support'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/retail',

@@ -57,7 +57,7 @@ export default function FeaturesContent() {
             description: "Powered by cutting-edge LLMs including Gemini Pro/Ultra and Ollama (on-premises) or leading cloud LLMs for maximum flexibility.",
             features: [
                 "Multi-turn conversational AI with context awareness",
-                "Intent detection with 95%+ accuracy",
+                "Intent detection with high accuracy across Indian languages",
                 "Entity extraction for names, dates, amounts, etc.",
                 "Sentiment analysis in real-time",
                 "Custom model training on your data",
@@ -115,8 +115,8 @@ export default function FeaturesContent() {
                 "True on-premise / air-gapped deployment",
                 "100% data residency in India",
                 "AES-256 encryption at rest & in transit",
-                "SOC 2 Type II certified",
-                "GDPR, HIPAA, PCI DSS compliant",
+                "SOC 2 Type II aligned architecture",
+                "DPDP 2023, GDPR-ready design",
                 "Role-based access control (RBAC)",
                 "SSO with SAML 2.0 / OAuth 2.0",
                 "Audit logging & compliance reports"
@@ -203,8 +203,8 @@ export default function FeaturesContent() {
         {
             title: "Healthcare",
             icon: <Heart className="w-8 h-8" />,
-            description: "HIPAA-compliant patient engagement. Appointment scheduling, symptom triage, and follow-ups.",
-            stats: ["HIPAA compliant", "24/7 patient support", "Reduced no-shows"],
+            description: "DPDP Act & HIPAA-ready patient engagement. Appointment scheduling, symptom triage, and follow-ups.",
+            stats: ["DPDP Act ready", "24/7 patient support", "Reduced no-shows"],
             benefits: ["Appointment booking", "Prescription refills", "Lab results", "Care reminders"],
             link: "/solutions/healthcare"
         }
@@ -241,7 +241,7 @@ export default function FeaturesContent() {
                 badge="Platform Features"
                 title="Everything You Need to Build Enterprise AI"
                 subtitle="From no-code conversation builders to native voice AI. Deploy in days, scale to millions of conversations."
-                primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
+                primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "Contact Sales", href: "/contact" }}
             />
 
@@ -575,7 +575,7 @@ export default function FeaturesContent() {
                     <p className="text-xl text-slate-300 mb-10">Get hands-on with a free trial or schedule a personalized demo.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-bold text-sm shadow-orange hover:shadow-lg hover:-translate-y-0.5 transition-all">
-                            Start Free Trial
+                            Book a Demo
                         </Link>
                         <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-sm hover:bg-white/20 transition-all">
                             Contact Sales

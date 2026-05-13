@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Zendesk: AI Automation vs Helpdesk Tools',
-    description: 'Compare SwanDigitals vs Zendesk. Reduce ticket volume by 90% with AI. Seamless integration with Zendesk for human handoff.',
+    title: 'SwanDesk vs Zendesk: AI-First Support Platform India | 2026 Comparison',
+    description: 'Compare SwanDesk vs Zendesk for Indian businesses. AI-first design with 90% automation, native Voice AI, flat pricing, and India data residency.',
     keywords: ['Swandigitals vs Zendesk', 'Zendesk Alternative India', 'Zendesk Chatbot Integration', 'Helpdesk Automation'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-zendesk',

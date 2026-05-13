@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Pega: Agile AI vs Legacy BPM Complexity',
-    description: 'Compare SwanDigitals vs Pega. Deploy enterprise AI in weeks, not months. No complex case-based pricing or training required.',
+    title: 'SwanDesk vs Pega: Agile AI Chatbot for India | 2026 Comparison',
+    description: 'Compare SwanDesk vs Pega for Indian businesses. Deploy enterprise AI in weeks, not months. No complex case-based pricing or minimum commitments.',
     keywords: ['Swandigitals vs Pega', 'Pega Alternative India', 'Agile Enterprise AI', 'Chatbot Implementation Speed'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-pega',
@@ -36,7 +36,7 @@ export default function VsPegaPage() {
                 badge="🆚 Enterprise Platform Comparison"
                 title="SwanDigitals vs Pega"
                 subtitle="Enterprise chatbot power without Pega's complexity and cost. Deploy in weeks, not quarters."
-                primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
+                primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
             />
 

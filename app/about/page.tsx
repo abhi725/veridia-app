@@ -91,19 +91,19 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">🇮🇳</div>
-                            <h3 className="text-xl font-bold mb-3">Built for India</h3>
-                            <p className="text-slate-600">We understand DPDP, RBI, regional languages, and Indian enterprise budgets. This isn't Intercom with a rupee symbol.</p>
+                            <div className="text-5xl mb-4">🤝</div>
+                            <h3 className="text-xl font-bold mb-3">Founder-Led Support</h3>
+                            <p className="text-slate-600">You talk directly to the founder, not a support ticket queue. We believe in hands-on, personal relationships.</p>
                         </div>
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">🔒</div>
-                            <h3 className="text-xl font-bold mb-3">Your data is yours</h3>
-                            <p className="text-slate-600">We'll say it plainly: we don't read your customer conversations. On-prem or cloud — what happens in your inbox stays in your inbox.</p>
+                            <div className="text-5xl mb-4">💡</div>
+                            <h3 className="text-xl font-bold mb-3">Honest Engineering</h3>
+                            <p className="text-slate-600">We don't overclaim or oversell. If we can't do something, we'll tell you — and suggest who can.</p>
                         </div>
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">⚡</div>
-                            <h3 className="text-xl font-bold mb-3">Fast, not perfect</h3>
-                            <p className="text-slate-600">We'd rather get you live in 7 days and improve together than sell you a 6-month implementation plan.</p>
+                            <div className="text-5xl mb-4">🔄</div>
+                            <h3 className="text-xl font-bold mb-3">Continuous Improvement</h3>
+                            <p className="text-slate-600">We ship updates every 2-4 weeks. Your feedback directly shapes our product roadmap.</p>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
     title: {
@@ -112,9 +112,11 @@ export default function RootLayout({
                 operatingSystem: 'Web, On-Premise',
                 applicationCategory: 'BusinessApplication',
                 offers: {
-                    '@type': 'Offer',
-                    price: 'Contact for pricing',
+                    '@type': 'AggregateOffer',
+                    lowPrice: '10000',
+                    highPrice: '28000',
                     priceCurrency: 'INR',
+                    offerCount: '3',
                 },
                 featureList: [
                     'Multi-channel inbox (WhatsApp, Email, Web chat, Instagram, Telegram)',
@@ -130,7 +132,7 @@ export default function RootLayout({
     };
 
     return (
-        <html lang="en">
+        <html lang="en-IN">
 
             <head>
                 <script
@@ -138,7 +140,7 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
-            <body className={inter.className}>
+            <body className={dmSans.className}>
                 <noscript>
                     <iframe
                         src="https://www.googletagmanager.com/ns.html?id=GTM-KR7FXZH"
@@ -156,7 +158,7 @@ export default function RootLayout({
                         margin: '20px',
                         borderRadius: '8px'
                     }}>
-                        <h1>JavaScript Required</h1>
+                        <p style={{ fontSize: '1.2em', fontWeight: 'bold' }}>JavaScript Required</p>
                         <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
                         <p><strong>SwanDesk by SwanDigitals</strong> - AI Customer Support Platform for India</p>
                         <p>Contact: +91 7770070762 | Email: Abhishek@swandigitals.com</p>

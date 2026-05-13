@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Verloop.io: The Best Support Automation Alternative (2025 Review)',
-    description: 'Compare SwanDigitals vs Verloop.io. Better analytics, voice AI, and on-premise deployment. Sovereign AI for regulated Indian businesses.',
+    title: 'SwanDesk vs Verloop.io: Best Support Automation India | 2026 Review',
+    description: 'Compare SwanDesk vs Verloop.io for Indian businesses. Better analytics, native Voice AI, on-premise deployment, and sovereign data residency.',
     keywords: ['Swandigitals vs Verloop', 'Verloop Alternative', 'Verloop Pricing', 'Support Automation India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-verloop',

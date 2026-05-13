@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Personetics: Transactional AI vs Insights',
-    description: 'Compare SwanDigitals vs Personetics. Move beyond financial insights to actionable banking AI that executes transactions via Voice & Chat.',
+    title: 'SwanDesk vs Personetics: Transactional Banking AI India | 2026 Comparison',
+    description: 'Compare SwanDesk vs Personetics for Indian banks. Move beyond financial insights to actionable AI that executes transactions via Voice & Chat.',
     keywords: ['Swandigitals vs Personetics', 'Actionable Banking AI', 'Transactional Chatbot', 'Financial Wellness AI'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-personetics',

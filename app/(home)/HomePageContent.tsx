@@ -13,7 +13,7 @@ import Link from 'next/link';
 import FAQ from '@/components/ui/FAQ';
 import IntegrationCloud from '@/components/ui/IntegrationCloud';
 import { useState, useEffect, useRef } from 'react';
-import JsonLd from '@/components/seo/JsonLd';
+
 import DashboardMockup from '@/components/ui/DashboardMockup';
 
 function useReveal() {
@@ -91,7 +91,6 @@ export default function HomePageContent() {
 
     return (
         <SiteLayout>
-            <JsonLd />
 
             {/* Hero */}
             <Hero
@@ -109,7 +108,7 @@ export default function HomePageContent() {
                     <div className="marquee-inner">
                         {[...Array(2)].map((_, set) => (
                             <div key={set} className="flex items-center gap-10 px-5">
-                                {["SOC2 CERTIFIED", "GDPR COMPLIANT", "HIPAA READY", "ISO 27001", "ON-PREMISE DEPLOYMENT", "DPDP 2023 READY", "ZERO DATA RETENTION", "RBI COMPLIANT"].map((item) => (
+                                {["DPDP 2023 READY", "RBI COMPLIANT", "ON-PREMISE DEPLOYMENT", "ZERO DATA RETENTION", "AIR-GAPPED MODE", "SOC 2 ALIGNED", "AES-256 ENCRYPTION", "MADE IN INDIA"].map((item) => (
                                     <span key={item} className="flex items-center gap-3 text-xs font-semibold tracking-widest text-slate-400 uppercase whitespace-nowrap">
                                         <span className="w-1 h-1 rounded-full bg-amber-400 flex-shrink-0" />
                                         {item}

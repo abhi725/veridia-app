@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Haptik: Voice AI & Enterprise Cost Comparison',
-    description: 'Compare SwanDigitals vs Haptik. Native Voice AI with <500ms latency, lower pricing, and 100% data sovereignty for India.',
+    title: 'SwanDesk vs Haptik: Voice AI & On-Premise Alternative India | 2026',
+    description: 'Compare SwanDesk vs Haptik for Indian businesses. Native Voice AI, transparent pricing, no annual lock-in, and 100% India data sovereignty.',
     keywords: ['Swandigitals vs Haptik', 'Haptik Pricing India', 'Haptik Alternative', 'Voice AI Comparison'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-haptik',

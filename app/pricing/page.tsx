@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { Check, X, Zap, Gift, BadgePercent, MessageSquare, Phone, Users, Shield, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Honest Pricing. No Surprises. | SwanDesk',
-    description: 'Clear pricing for Indian businesses. From ₹10k Pilot to Custom On-premise plans. No per-message billing — ever.',
+    title: 'SwanDesk Pricing | AI Chatbot & Voice Bot Plans from ₹10,000 | India',
+    description: 'Transparent pricing for Indian businesses. AI chatbot from ₹12,000/mo, Voice AI from ₹18,000/mo, custom on-premise plans. No per-message billing — ever.',
     keywords: ['Cost of AI Chatbot India', 'Enterprise AI Pricing', 'Chatbot Development Cost', 'Token Pricing vs Flat Rate'],
     alternates: {
         canonical: 'https://swandigitals.com/pricing',

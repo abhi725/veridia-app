@@ -122,21 +122,28 @@ export default function DemoPage() {
                                 </div>
                             </div>
 
-                            {/* Testimonial */}
+                            {/* Why Book a Demo */}
                             <div className="reveal bg-slate-900 text-white p-8 md:p-10 rounded-3xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500 to-pink-500 opacity-20 blur-3xl rounded-full translate-x-1/3 -translate-y-1/3" />
-                                <p className="italic text-lg md:text-xl text-slate-300 leading-relaxed mb-8 relative z-10">
-                                    "The demo was exactly what we needed. They showed us how our specific use case would work and gave us a clear ROI projection. We signed up the same week."
-                                </p>
-                                <div className="flex items-center gap-4 relative z-10">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-pink-500 rounded-full flex items-center justify-center text-lg font-bold shadow-orange">
-                                        SJ
-                                    </div>
-                                    <div>
-                                        <div className="font-bold text-white">Sarah Johnson</div>
-                                        <div className="text-slate-400 text-sm">CTO, FinanceOne</div>
-                                    </div>
-                                </div>
+                                <h3 className="text-xl font-bold mb-4 relative z-10">What to Expect from Your Demo</h3>
+                                <ul className="space-y-3 relative z-10 text-slate-300">
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-orange-400 mt-1">✓</span>
+                                        <span>Live walkthrough of the AI inbox, voice agents, and automation builder</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-orange-400 mt-1">✓</span>
+                                        <span>Custom ROI projection based on your current support volume</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-orange-400 mt-1">✓</span>
+                                        <span>Discussion of deployment options (cloud, on-premise, or hybrid)</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-orange-400 mt-1">✓</span>
+                                        <span>Clear next steps with the ₹10,000 pilot program</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
-import { Key, Monitor, Wifi, HelpCircle, Settings, Ticket } from 'lucide-react';
+import { Key, Monitor, Wifi, HelpCircle, Settings, Ticket, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'AI for IT Helpdesk: Auto-Resolve Tier 1 Tickets | SwanDigitals',
@@ -92,7 +92,7 @@ export default function ITHelpdeskPage() {
                             { title: "Continuous Learning", desc: "AI improves from every interaction, getting smarter over time" }
                         ].map((benefit, i) => (
                             <div key={i} className="flex gap-4 items-start bg-slate-50 p-6 rounded-xl">
-                                <span className="text-green-600 text-xl">✓</span>
+                                <Check className="text-green-600 w-6 h-6 shrink-0 mt-0.5" />
                                 <div>
                                     <h3 className="font-bold mb-1">{benefit.title}</h3>
                                     <p className="text-slate-600">{benefit.desc}</p>

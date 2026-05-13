@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs IBM Watson: Modern AI vs Legacy Cloud',
-    description: 'Compare SwanDigitals vs IBM Watson. Modern Gemini models vs Legacy Watson. 1/5th the cost, 10x faster implementation, and better developer experience.',
+    title: 'SwanDesk vs IBM Watson: Modern AI Stack for India | 2026 Comparison',
+    description: 'Compare SwanDesk vs IBM Watson for Indian enterprises. Modern Gemini-powered AI, 10x faster deployment, 1/5th the cost, and India data residency.',
     keywords: ['Swandigitals vs IBM Watson', 'Watson Alternative', 'IBM Watson Pricing India', 'Modern AI Stack'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-ibm',

@@ -14,8 +14,36 @@ export const metadata: Metadata = {
 }
 
 export default function LeadershipPage() {
+    const personSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        '@id': 'https://swandigitals.com/leadership#abhishek-ambad',
+        name: 'Abhishek Ambad',
+        jobTitle: 'Founder & CEO',
+        url: 'https://swandigitals.com/leadership',
+        sameAs: [
+            'https://www.linkedin.com/in/abhishek-ambad-964207147/',
+            'https://github.com/abhi725',
+            'https://about.me/abhishekambad',
+        ],
+        worksFor: {
+            '@type': 'Organization',
+            '@id': 'https://swandigitals.com/#organization',
+            name: 'SwanDigitals',
+        },
+        knowsAbout: ['AI Chatbots', 'Customer Support Automation', 'Digital Marketing', 'Voice AI', 'SaaS'],
+        alumniOf: {
+            '@type': 'Organization',
+            name: 'Pune, Maharashtra',
+        },
+    };
+
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+            />
             <Hero
                 badge="👥 Leadership"
                 title="Meet The Founder"

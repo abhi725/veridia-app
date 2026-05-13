@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { Shield, AlertTriangle, Database } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Gupshup: The Best Conversational AI Alternative (2025 Review)',
-    description: 'Compare SwanDigitals vs Gupshup. Better analytics, voice AI, and on-premise deployment. Sovereign AI for regulated Indian businesses.',
+    title: 'SwanDesk vs Gupshup: Best Conversational AI India | 2026 Review',
+    description: 'Compare SwanDesk vs Gupshup for Indian businesses. Advanced analytics, native Voice AI, on-premise deployment, and 100% India data sovereignty.',
     keywords: ['Swandigitals vs Gupshup', 'Gupshup Alternative Enterprise', 'Gupshup Pricing', 'Messaging vs AI Platform'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-gupshup',

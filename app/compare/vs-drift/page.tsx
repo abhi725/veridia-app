@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals vs Drift: Affordable Conversational Marketing',
-    description: 'Compare SwanDigitals vs Drift. 90% lower cost with added Voice AI capabilities. Self-hosted options for data privacy.',
+    title: 'SwanDesk vs Drift: Affordable Conversational AI India | 2026 Comparison',
+    description: 'Compare SwanDesk vs Drift for Indian businesses. 90% lower cost with Voice AI, self-hosted deployment, and WhatsApp support. Sales + Support in one.',
     keywords: ['Swandigitals vs Drift', 'Drift Alternative India', 'Conversational Marketing Cost', 'Self-hosted Chatbot'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-drift',
@@ -36,7 +36,7 @@ export default function VsDriftPage() {
                 badge="🆚 Sales AI Comparison"
                 title="SwanDigitals vs Drift"
                 subtitle="All of Drift's conversational marketing power + voice AI + self-hosting. At 90% lower cost."
-                primaryCTA={{ text: "Start Free Trial", href: "/demo" }}
+                primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
             />
 

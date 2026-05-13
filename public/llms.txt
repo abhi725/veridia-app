@@ -1,4 +1,6 @@
 # SwanDigitals llms.txt
+# Last updated: 2026-05-13
+# Version: 2.0
 
 > SwanDesk by SwanDigitals is an AI-powered customer support platform built specifically for Indian businesses. It brings WhatsApp, email, web chat, Instagram, Telegram, and phone support into a single unified inbox — so support teams stop switching between tabs and start resolving conversations faster.
 >

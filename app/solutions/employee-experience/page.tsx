@@ -4,11 +4,11 @@ import type { Metadata } from 'next';
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
-import { Users, Briefcase, CreditCard, Calendar, FileText, HelpCircle } from 'lucide-react';
+import { Users, Briefcase, CreditCard, Calendar, FileText, HelpCircle, MessageSquare, Mail, Globe, Smartphone, Ticket, Wrench, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'HR & Employee Experience AI Agents | SwanDigitals',
-    description: 'Internal helpdesk automation for Indian Enterprises. HR policy answers, leave management, and IT support via Slack/Teams. 100% Private.',
+    title: 'HR & Employee Experience AI Agents India | Internal Helpdesk | SwanDesk',
+    description: 'AI-powered internal helpdesk for Indian enterprises. HR policy answers, leave management, IT support via Slack/Teams. 100% private, on-premise deployment available.',
     keywords: ['HR Chatbot India', 'Employee Helpdesk AI', 'Leave Management Bot', 'IT Support Automation', 'Internal Enterprise AI'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/employee-experience',
@@ -78,8 +78,22 @@ export default function EmployeeExperiencePage() {
                     <h2 className="text-3xl font-bold mb-4">Where Your Employees Work</h2>
                     <p className="text-xl text-slate-600 mb-12">Deploy AI support in tools they already use</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        {['💼 Microsoft Teams', '💬 Slack', '📧 Email', '🌐 Intranet', '📱 Mobile App', '🎫 ServiceNow', '🔧 Jira', '📞 Phone'].map((channel, i) => (
-                            <div key={i} className="bg-white p-6 rounded-xl text-center shadow-sm">{channel}</div>
+                        {[
+                            { name: 'Microsoft Teams', icon: <Users className="w-5 h-5" /> },
+                            { name: 'Slack', icon: <MessageSquare className="w-5 h-5" /> },
+                            { name: 'Email', icon: <Mail className="w-5 h-5" /> },
+                            { name: 'Intranet', icon: <Globe className="w-5 h-5" /> },
+                            { name: 'Mobile App', icon: <Smartphone className="w-5 h-5" /> },
+                            { name: 'ServiceNow', icon: <Ticket className="w-5 h-5" /> },
+                            { name: 'Jira', icon: <Wrench className="w-5 h-5" /> },
+                            { name: 'Phone', icon: <Phone className="w-5 h-5" /> }
+                        ].map((channel, i) => (
+                            <div key={i} className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center gap-3">
+                                <div className="text-blue-600 bg-blue-50 p-3 rounded-lg">
+                                    {channel.icon}
+                                </div>
+                                <span className="font-medium text-slate-700">{channel.name}</span>
+                            </div>
                         ))}
                     </div>
                 </div>
