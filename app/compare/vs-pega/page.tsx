@@ -16,18 +16,9 @@ export default function VsPegaPage() {
             competitorName="Pega"
             heroTitle="SwanDesk vs Pega"
             heroSubtitle="Deploy AI customer service in weeks, not years. Escape the heavy monolithic architectures."
-            aboutCompetitor={{
-                description: "Pegasystems is a massive BPM (Business Process Management) platform that includes customer service modules for Fortune 500s.",
-                strengths: [
-                    "Complex workflow automation",
-                    "Massive scale BPM",
-                    "Fortune 500 pedigree"
-                ]
-            }}
-            realityCheck={{
-                title: "Monolithic BPM vs Agile Helpdesk",
-                description: "Pega is designed to run the entire backend operations of a massive corporation. If you just need a state-of-the-art AI Helpdesk, Pega is drastically over-engineered."
-            }}
+            aboutCompetitor="Pegasystems is a massive BPM (Business Process Management) platform that includes customer service modules for Fortune 500s."
+            competitorStrengths="Complex workflow automation, massive scale BPM, and Fortune 500 pedigree."
+            realityCheck="Pega is designed to run the entire backend operations of a massive corporation. If you just need a state-of-the-art AI Helpdesk, Pega is drastically over-engineered."
             comparisonRows={[
                 { feature: "Platform Focus", SwanDesk: "AI Helpdesk", competitor: "Full BPM Suite" },
                 { feature: "Implementation", SwanDesk: "Weeks", competitor: "Years" },

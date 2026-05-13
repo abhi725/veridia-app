@@ -16,18 +16,9 @@ export default function VsPersoneticsPage() {
             competitorName="Personetics"
             heroTitle="SwanDesk vs Personetics"
             heroSubtitle="Combine proactive financial insights with a full-stack, omnichannel customer service inbox."
-            aboutCompetitor={{
-                description: "Personetics focuses on data-driven, proactive financial insights and personal finance management (PFM) for banking customers.",
-                strengths: [
-                    "Proactive financial insights",
-                    "Deep transaction analysis",
-                    "PFM specialization"
-                ]
-            }}
-            realityCheck={{
-                title: "Insights Engine vs Support Helpdesk",
-                description: "Personetics is great for sending customers insights about their spending. SwanDesk is for when that customer replies and actually needs a problem solved across WhatsApp, Email, or Phone."
-            }}
+            aboutCompetitor="Personetics focuses on data-driven, proactive financial insights and personal finance management (PFM) for banking customers."
+            competitorStrengths="Proactive financial insights, deep transaction analysis, and PFM specialization."
+            realityCheck="Personetics is great for sending customers insights about their spending. SwanDesk is for when that customer replies and actually needs a problem solved across WhatsApp, Email, or Phone."
             comparisonRows={[
                 { feature: "Core Focus", SwanDesk: "Omnichannel Support", competitor: "Financial Insights" },
                 { feature: "Agent Inbox", SwanDesk: "Enterprise Grade", competitor: "No/Limited" },

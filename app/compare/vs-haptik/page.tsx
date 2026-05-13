@@ -16,18 +16,9 @@ export default function VsHaptikPage() {
             competitorName="Haptik"
             heroTitle="SwanDesk vs Haptik"
             heroSubtitle="Upgrade from a chat-only platform to a true omnichannel suite featuring native Voice AI and a flat platform fee."
-            aboutCompetitor={{
-                description: "Haptik (by Jio) is one of India's earliest and most well-known conversational AI platforms.",
-                strengths: [
-                    "Strong Jio ecosystem backing",
-                    "Early pioneer in Indian AI",
-                    "Deep WhatsApp capabilities"
-                ]
-            }}
-            realityCheck={{
-                title: "Bot Platform vs Unified Helpdesk",
-                description: "Haptik is primarily a bot building platform. While great for bots, your agents still need a solid backend. SwanDesk provides the AI bot AND the enterprise ticketing backend out-of-the-box."
-            }}
+            aboutCompetitor="Haptik (by Jio) is one of India's earliest and most well-known conversational AI platforms."
+            competitorStrengths="Strong Jio ecosystem backing, early pioneer in Indian AI, and deep WhatsApp capabilities."
+            realityCheck="Haptik is primarily a bot building platform. While great for bots, your agents still need a solid backend. SwanDesk provides the AI bot AND the enterprise ticketing backend out-of-the-box."
             comparisonRows={[
                 { feature: "Platform Scope", SwanDesk: "Unified AI + Ticketing Helpdesk", competitor: "Primarily AI Bot Platform" },
                 { feature: "Voice AI", SwanDesk: "Native & Included", competitor: "Limited/Third-party" },

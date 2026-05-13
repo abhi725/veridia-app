@@ -16,18 +16,9 @@ export default function VsZendeskPage() {
             competitorName="Zendesk"
             heroTitle="SwanDesk vs Zendesk"
             heroSubtitle="AI-first support platform vs a legacy helpdesk with bolted-on AI. Achieve 90% automation with flat pricing."
-            aboutCompetitor={{
-                description: "Zendesk is a global leader in customer service software, offering a massive ecosystem of integrations and traditional ticketing tools.",
-                strengths: [
-                    "Massive app marketplace",
-                    "Advanced traditional ticketing",
-                    "Global brand recognition"
-                ]
-            }}
-            realityCheck={{
-                title: "Traditional Ticketing vs AI-First Automation",
-                description: "Zendesk was built for human agents to manage tickets manually. Their AI is an expensive bolt-on that barely resolves 50% of queries. SwanDesk is built natively for AI, aiming for 90% automation out-of-the-box."
-            }}
+            aboutCompetitor="Zendesk is a global leader in customer service software, offering a massive ecosystem of integrations and traditional ticketing tools."
+            competitorStrengths="Massive app marketplace, advanced traditional ticketing, and global brand recognition."
+            realityCheck="Zendesk was built for human agents to manage tickets manually. Their AI is an expensive bolt-on that barely resolves 50% of queries. SwanDesk is built natively for AI, aiming for 90% automation out-of-the-box."
             comparisonRows={[
                 { feature: "Starting Price", SwanDesk: "Flat Platform Fee", competitor: "$55+/agent/month + AI add-ons" },
                 { feature: "AI Chatbot", SwanDesk: "Native, unlimited", competitor: "Expensive Add-on" },

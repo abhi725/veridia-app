@@ -16,18 +16,9 @@ export default function VsIbmPage() {
             competitorName="IBM Watson"
             heroTitle="SwanDesk vs IBM Watson"
             heroSubtitle="Skip the massive IT consulting fees and 6-month deployment cycles. Get modern Generative AI out of the box."
-            aboutCompetitor={{
-                description: "IBM Watson Assistant is a legacy enterprise AI platform utilized by massive global corporations and built for heavy IT involvement.",
-                strengths: [
-                    "Deep legacy system integration",
-                    "Massive corporate backing",
-                    "Highly customizable for developers"
-                ]
-            }}
-            realityCheck={{
-                title: "Legacy IT Heavy vs Modern SaaS Agile",
-                description: "Deploying IBM Watson often requires hiring specialized consultants and quarters of development time. SwanDesk is a modern, fully-managed SaaS that deploys in weeks."
-            }}
+            aboutCompetitor="IBM Watson Assistant is a legacy enterprise AI platform utilized by massive global corporations and built for heavy IT involvement."
+            competitorStrengths="Deep legacy system integration, massive corporate backing, and highly customizable for developers."
+            realityCheck="Deploying IBM Watson often requires hiring specialized consultants and quarters of development time. SwanDesk is a modern, fully-managed SaaS that deploys in weeks."
             comparisonRows={[
                 { feature: "Time to Market", SwanDesk: "2-4 Weeks", competitor: "6-12 Months" },
                 { feature: "Deployment Method", SwanDesk: "Fully Managed", competitor: "Requires Heavy IT" },

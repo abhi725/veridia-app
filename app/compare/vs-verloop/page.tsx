@@ -16,18 +16,9 @@ export default function VsVerloopPage() {
             competitorName="Verloop.io"
             heroTitle="SwanDesk vs Verloop.io"
             heroSubtitle="Upgrade to a fully unified inbox with native Voice AI, deeper integrations, and predictable flat pricing."
-            aboutCompetitor={{
-                description: "Verloop is an established Indian conversational AI platform focused heavily on e-commerce and basic customer support.",
-                strengths: [
-                    "Strong e-commerce features",
-                    "Indian market focus",
-                    "Good WhatsApp integration"
-                ]
-            }}
-            realityCheck={{
-                title: "Basic Chatbots vs Generative AI",
-                description: "Verloop built its reputation on legacy intent-based chatbots. SwanDesk is built natively on modern LLM architecture, allowing for far more dynamic, unscripted customer conversations."
-            }}
+            aboutCompetitor="Verloop is an established Indian conversational AI platform focused heavily on e-commerce and basic customer support."
+            competitorStrengths="Strong e-commerce features, Indian market focus, and good WhatsApp integration."
+            realityCheck="Verloop built its reputation on legacy intent-based chatbots. SwanDesk is built natively on modern LLM architecture, allowing for far more dynamic, unscripted customer conversations."
             comparisonRows={[
                 { feature: "AI Architecture", SwanDesk: "Generative RAG", competitor: "Legacy Intent/Flows" },
                 { feature: "Voice AI", SwanDesk: "Native & Included", competitor: "Limited/Third-party" },

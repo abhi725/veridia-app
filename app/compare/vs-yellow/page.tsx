@@ -16,18 +16,9 @@ export default function VsYellowPage() {
             competitorName="Yellow.ai"
             heroTitle="SwanDesk vs Yellow.ai"
             heroSubtitle="Escape unpredictable usage-based pricing and massive enterprise deployment timelines. Go live in weeks with flat pricing."
-            aboutCompetitor={{
-                description: "Yellow.ai is a major enterprise conversational AI platform known for massive scale and complex integrations.",
-                strengths: [
-                    "Massive global scale",
-                    "Deep legacy enterprise integrations",
-                    "135+ languages supported"
-                ]
-            }}
-            realityCheck={{
-                title: "Usage-Based Pricing vs Flat Predictability",
-                description: "Yellow.ai charges based on usage and tokens, meaning the more successful your automation, the more you pay. SwanDesk provides flat annual licensing so your costs never spiral out of control."
-            }}
+            aboutCompetitor="Yellow.ai is a major enterprise conversational AI platform known for massive scale and complex integrations."
+            competitorStrengths="Massive global scale, deep legacy enterprise integrations, and 135+ languages supported."
+            realityCheck="Yellow.ai charges based on usage and tokens, meaning the more successful your automation, the more you pay. SwanDesk provides flat annual licensing so your costs never spiral out of control."
             comparisonRows={[
                 { feature: "Pricing Model", SwanDesk: "Flat Annual License", competitor: "Usage/Token Based" },
                 { feature: "Data Sovereignty", SwanDesk: "Air-gapped option", competitor: "Cloud-only" },

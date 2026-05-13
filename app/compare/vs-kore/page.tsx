@@ -16,18 +16,9 @@ export default function VsKorePage() {
             competitorName="Kore.ai"
             heroTitle="SwanDesk vs Kore.ai"
             heroSubtitle="Upgrade to an agile, locally-supported AI platform that doesn't take 6 months to deploy."
-            aboutCompetitor={{
-                description: "Kore.ai is a heavyweight enterprise AI platform known for highly specialized vertical solutions (like BankAssist).",
-                strengths: [
-                    "Deep vertical solutions",
-                    "Massive global infrastructure",
-                    "Extensive developer tooling"
-                ]
-            }}
-            realityCheck={{
-                title: "Heavy Enterprise IT vs Agile Deployment",
-                description: "Kore.ai requires significant IT resources, developer training, and long deployment cycles. SwanDesk is an out-of-the-box, fully managed solution that gets you live in weeks, not quarters."
-            }}
+            aboutCompetitor="Kore.ai is a heavyweight enterprise AI platform known for highly specialized vertical solutions (like BankAssist)."
+            competitorStrengths="Deep vertical solutions, massive global infrastructure, and extensive developer tooling."
+            realityCheck="Kore.ai requires significant IT resources, developer training, and long deployment cycles. SwanDesk is an out-of-the-box, fully managed solution that gets you live in weeks, not quarters."
             comparisonRows={[
                 { feature: "Deployment Time", SwanDesk: "2-4 Weeks", competitor: "3-6 Months" },
                 { feature: "Pricing Structure", SwanDesk: "Flat Monthly/Annual", competitor: "Complex usage tiers" },

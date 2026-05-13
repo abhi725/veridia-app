@@ -16,18 +16,9 @@ export default function VsGupshupPage() {
             competitorName="Gupshup"
             heroTitle="SwanDesk vs Gupshup"
             heroSubtitle="Move beyond a messaging API. Get a complete out-of-the-box AI Helpdesk with an enterprise agent inbox."
-            aboutCompetitor={{
-                description: "Gupshup is an Indian unicorn that provides massive-scale messaging infrastructure and basic bot templates.",
-                strengths: [
-                    "Massive messaging volume",
-                    "Strong telecom infrastructure",
-                    "Widespread global reach"
-                ]
-            }}
-            realityCheck={{
-                title: "Telecom Pipe vs Intelligent Software",
-                description: "Gupshup is primarily a pipe for sending messages. If you want an actual Helpdesk for your human agents to work in, alongside advanced Generative AI, you need SwanDesk."
-            }}
+            aboutCompetitor="Gupshup is an Indian unicorn that provides massive-scale messaging infrastructure and basic bot templates."
+            competitorStrengths="Massive messaging volume, strong telecom infrastructure, and widespread global reach."
+            realityCheck="Gupshup is primarily a pipe for sending messages. If you want an actual Helpdesk for your human agents to work in, alongside advanced Generative AI, you need SwanDesk."
             comparisonRows={[
                 { feature: "Primary Focus", SwanDesk: "Enterprise AI Helpdesk", competitor: "Messaging Infrastructure" },
                 { feature: "Agent UI", SwanDesk: "Advanced Ticketing", competitor: "Basic/Requires own UI" },

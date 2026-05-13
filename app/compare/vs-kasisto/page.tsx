@@ -16,18 +16,9 @@ export default function VsKasistoPage() {
             competitorName="Kasisto"
             heroTitle="SwanDesk vs Kasisto"
             heroSubtitle="Dedicated banking AI that fully supports native Indian languages and true on-premise air-gapping."
-            aboutCompetitor={{
-                description: "Kasisto is a US-based conversational AI company that specializes deeply in the banking and finance sector (KAI).",
-                strengths: [
-                    "Specialized banking models",
-                    "US banking compliance",
-                    "Deep finance integrations"
-                ]
-            }}
-            realityCheck={{
-                title: "US Focus vs Indian Reality",
-                description: "Kasisto is incredible for US banks. But for Indian NBFCs and banks, it lacks native fluency in regional languages like Marathi or Tamil, and struggles with Indian compliance nuances compared to a localized platform."
-            }}
+            aboutCompetitor="Kasisto is a US-based conversational AI company that specializes deeply in the banking and finance sector (KAI)."
+            competitorStrengths="Specialized banking models, US banking compliance, and deep finance integrations."
+            realityCheck="Kasisto is incredible for US banks. But for Indian NBFCs and banks, it lacks native fluency in regional languages like Marathi or Tamil, and struggles with Indian compliance nuances compared to a localized platform."
             comparisonRows={[
                 { feature: "Primary Market", SwanDesk: "India", competitor: "USA / Global" },
                 { feature: "Indian Language NLU", SwanDesk: "Native & Conversational", competitor: "Basic Translation" },

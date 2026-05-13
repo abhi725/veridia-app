@@ -16,18 +16,9 @@ export default function VsDriftPage() {
             competitorName="Drift"
             heroTitle="SwanDesk vs Drift"
             heroSubtitle="Stop paying US enterprise pricing for B2B chat. Get a dedicated AI Sales Agent for a fraction of the cost."
-            aboutCompetitor={{
-                description: "Drift invented Conversational Marketing, focusing purely on high-end B2B sales acceleration and website lead generation.",
-                strengths: [
-                    "Pioneered conversational marketing",
-                    "Deep B2B CRM integrations",
-                    "Advanced sales routing"
-                ]
-            }}
-            realityCheck={{
-                title: "Exorbitant Pricing vs Accessible ROI",
-                description: "Drift is an incredible tool, but its pricing is optimized for Fortune 500 US companies. SwanDesk delivers the same core B2B lead generation capabilities at a flat, India-friendly price point."
-            }}
+            aboutCompetitor="Drift invented Conversational Marketing, focusing purely on high-end B2B sales acceleration and website lead generation."
+            competitorStrengths="Pioneered conversational marketing, deep B2B CRM integrations, and advanced sales routing."
+            realityCheck="Drift is an incredible tool, but its pricing is optimized for Fortune 500 US companies. SwanDesk delivers the same core B2B lead generation capabilities at a flat, India-friendly price point."
             comparisonRows={[
                 { feature: "Primary Use Case", SwanDesk: "Sales + Support", competitor: "Pure B2B Sales" },
                 { feature: "Pricing Tier", SwanDesk: "Accessible Flat Fee", competitor: "$2,500+/month minimum" },

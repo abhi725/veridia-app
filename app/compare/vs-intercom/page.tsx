@@ -16,18 +16,9 @@ export default function VsIntercomPage() {
             competitorName="Intercom"
             heroTitle="SwanDesk vs Intercom"
             heroSubtitle="Stop paying massive per-seat licenses for global platforms. Get native AI automation built for the Indian market."
-            aboutCompetitor={{
-                description: "Intercom is a premium global customer communications platform known for a beautiful UI and strong product-led growth tools.",
-                strengths: [
-                    "Beautiful user interface",
-                    "In-app messaging focus",
-                    "Strong product tour features"
-                ]
-            }}
-            realityCheck={{
-                title: "Global SaaS Pricing vs Indian Reality",
-                description: "Intercom's pricing is notoriously expensive, charging per seat and per AI resolution. SwanDesk offers a flat platform fee, making it the financially viable choice for scaling Indian support teams."
-            }}
+            aboutCompetitor="Intercom is a premium global customer communications platform known for a beautiful UI and strong product-led growth tools."
+            competitorStrengths="Beautiful user interface, in-app messaging focus, and strong product tour features."
+            realityCheck="Intercom's pricing is notoriously expensive, charging per seat and per AI resolution. SwanDesk offers a flat platform fee, making it the financially viable choice for scaling Indian support teams."
             comparisonRows={[
                 { feature: "Pricing Model", SwanDesk: "Flat Platform Fee", competitor: "Per Seat + AI Fees" },
                 { feature: "Focus Market", SwanDesk: "India (DPDP Compliant)", competitor: "Global / US" },
