@@ -23,6 +23,7 @@
 - [Pricing](https://swandigitals.com/pricing): Flat monthly pricing plans. No per-conversation or per-seat billing. Includes plan comparison and what's included at each tier.
 - [Contact](https://swandigitals.com/contact): Reach SwanDigitals — email (support@swandigitals.com), phone (+91 7770070762), or the contact form. Office located in Pune, Maharashtra.
 - [Demo](https://swandigitals.com/demo): Book a live walkthrough of SwanDesk. 30-minute demo covering inbox, AI configuration, analytics, and deployment options.
+- [FAQs](https://swandigitals.com/faqs): Comprehensive hub of 70+ frequently asked questions covering use cases, technical architecture, pricing, onboarding, and DPDP security.
 
 ## Features (Deep Dive)
 
@@ -48,6 +49,20 @@
 - [vs Haptik](https://swandigitals.com/compare/vs-haptik): Full platform vs chatbot widget. On-premise option. No per-conversation billing.
 - [vs Intercom](https://swandigitals.com/compare/vs-intercom): Built for India — Indian languages, UPI integrations, DPDP compliance. Flat pricing vs Intercom's seat-based model.
 - [vs Zendesk](https://swandigitals.com/compare/vs-zendesk): AI-first vs traditional helpdesk. Native WhatsApp Business API. On-premise option for regulated industries.
+- [vs WATI](https://swandigitals.com/compare/vs-wati): Switch from basic WhatsApp-only broadcasts to a true Omnichannel AI Helpdesk with flat pricing.
+- [vs AiSensy](https://swandigitals.com/compare/vs-aisensy): Move beyond basic retargeting to Enterprise-grade LLM customer support automation.
+- [vs BiteSpeed](https://swandigitals.com/compare/vs-bitespeed): Upgrade from a Shopify marketing plugin to native Voice AI and deep RAG ticket resolution.
+- [vs Gallabox](https://swandigitals.com/compare/vs-gallabox): Unify WhatsApp, Web, and Voice AI into a single enterprise dashboard.
+- [vs DoubleTick](https://swandigitals.com/compare/vs-doubletick): Upgrade from a mobile broadcasting app to a 24/7 AI Sales Agent that qualifies leads automatically.
+- [vs ManyChat](https://swandigitals.com/compare/vs-manychat): Switch from social media bot templates to highly secure, DPDP-compliant enterprise automation.
+- [vs Tawk.to](https://swandigitals.com/compare/vs-tawkto): Upgrade from a manual, free live chat widget to premium AI automation.
+- [vs Tidio](https://swandigitals.com/compare/vs-tidio): Ditch rigid bot templates for native RAG and conversational AI that actually understands Indian languages.
+- [vs Crisp.chat](https://swandigitals.com/compare/vs-crisp): Migrate to 100% Indian data residency, native Voice AI, and enterprise-grade ticketing.
+- [vs GoHighLevel](https://swandigitals.com/compare/vs-gohighlevel): Ditch the marketing bloat for a laser-focused, highly secure AI Customer Service platform.
+- [vs WotNot](https://swandigitals.com/compare/vs-wotnot): Stop selling simple chatbot widgets and upgrade your agency to a full-stack Enterprise AI Helpdesk.
+- [vs QuickMessage](https://swandigitals.com/compare/vs-quickmessage): Get an out-of-the-box, fully-managed UI with predictable flat pricing instead of raw developer tools.
+- [vs MSG91](https://swandigitals.com/compare/vs-msg91): Upgrade from legacy telecom infrastructure to a modern, AI-native omnichannel contact center.
+- [vs 360dialog](https://swandigitals.com/compare/vs-360dialog): Stop building your own UIs. Get the frontend inbox and LLM backend instantly out-of-the-box.
 - [vs Kasisto](https://swandigitals.com/compare/vs-kasisto): Affordable banking AI with native voice capabilities and Indian language support.
 - [vs Gupshup](https://swandigitals.com/compare/vs-gupshup): Full support platform vs messaging API. SwanDesk includes inbox, AI, analytics — not just message delivery.
 - [vs IBM Watson](https://swandigitals.com/compare/vs-ibm): Faster deployment, lower cost, purpose-built for Indian market vs enterprise-scale IBM.
