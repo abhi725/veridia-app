@@ -1,136 +1,62 @@
 import type { Metadata } from 'next';
+import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk vs Intercom: AI Support for Indian Enterprise | 2026 Comparison',
-    description: 'Compare SwanDesk vs Intercom for Indian businesses. Better WhatsApp integration, native Voice AI, on-premise deployment, and flat pricing — no per-seat costs.',
-    keywords: ['Swandigitals vs Intercom', 'Intercom India Alternative', 'Intercom Pricing India', 'Customer Support Automation'],
+    title: 'Intercom Alternative in India | AI Support for Indian Enterprise',
+    description: 'Compare SwanDesk vs Intercom. Ditch massive per-seat licenses for an AI-native omnichannel platform built for India.',
+    keywords: ['Intercom Alternative India', 'Intercom vs SwanDesk', 'AI Helpdesk Pricing'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-intercom',
     },
 }
 
-import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
-import ComparisonTable from '@/components/ui/ComparisonTable';
-import Link from 'next/link';
-import { Shield, AlertTriangle, Database } from 'lucide-react';
-
 export default function VsIntercomPage() {
-    const comparisonRows = [
-        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "$74+/month (per seat)" },
-        { feature: "Voice AI", SwanDesk: true, competitor: false },
-        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
-        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
-        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
-        { feature: "Self-Hosted Option", SwanDesk: true, competitor: false },
-        { feature: "Multi-Language (Indic)", SwanDesk: "22 Indian + 8 global", competitor: "Limited" },
-        { feature: "Pricing Model", SwanDesk: "Flat platform fee", competitor: "Per seat + resolution" },
-        { feature: "AI Bot Included", SwanDesk: true, competitor: "Add-on ($0.99/resolution)" },
-        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
-        { feature: "Data Residency India", SwanDesk: "100% guaranteed", competitor: false },
-        { feature: "Enterprise Features", SwanDesk: "All plans", competitor: "Enterprise tier only" }
-    ];
-
     return (
-        <SiteLayout>
-            <Hero
-                badge="🆚 Customer Service Comparison"
-                title="SwanDigitals vs Intercom"
-                subtitle="Enterprise-grade conversational AI without the per-seat pricing nightmare. Voice AI included, not extra."
-                primaryCTA={{ text: "Start Pilot (₹10k)", href: "/demo" }}
-                secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
-            />
-
-            {/* Competitor Overview */}
-            <section className="py-12 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">About Intercom</h2>
-                        <div className="grid md:grid-cols-3 gap-6">
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <Shield className="w-5 h-5 text-green-500" />
-                                    Core Strengths
-                                </h3>
-                                <p className="text-slate-600 text-sm">Global leader in service/sales engagement; rich ecosystems and integrations.</p>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <AlertTriangle className="w-5 h-5 text-orange-500" />
-                                    Key Weaknesses
-                                </h3>
-                                <p className="text-slate-600 text-sm">Primarily cloud-based, per-agent pricing; not India-specific.</p>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <Database className="w-5 h-5 text-blue-500" />
-                                    Data & Compliance
-                                </h3>
-                                <p className="text-slate-600 text-sm">Global data centers; may not guarantee India-only data residency.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <ComparisonTable
-                title="Feature-by-Feature Comparison"
-                competitorName="Intercom"
-                rows={comparisonRows}
-            />
-
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Why Companies Choose SwanDigitals Over Intercom</h2>
-                    <div className="space-y-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 Predictable Pricing</h3>
-                            <p className="text-lg text-slate-700">
-                                Intercom charges per seat AND per AI resolution ($0.99 each). Costs explode as you scale.
-                                SwanDigitals offers a flat platform fee — budget with confidence.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🎙️ Voice AI Native</h3>
-                            <p className="text-lg text-slate-700">
-                                Intercom focuses on chat. SwanDigitals includes AI voice agents that handle phone calls —
-                                no separate vendor, no integration headaches.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🏢 True Data Sovereignty</h3>
-                            <p className="text-lg text-slate-700">
-                                Intercom is US-hosted only. For Indian enterprises needing data residency compliance,
-                                SwanDigitals offers on-premise and India-hosted options with 100% data residency in India.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🇮🇳 Built for India</h3>
-                            <p className="text-lg text-slate-700">
-                                10+ Indian languages, UPI integrations, RBI compliance-ready.
-                                Intercom's limited language support doesn't cut it for Indian customers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Ready for Predictable AI Pricing?</h2>
-                    <p className="text-xl text-slate-600 mb-8">
-                        No per-seat fees. No surprise resolution charges. Just powerful AI.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Start Pilot Program
-                        </Link>
-                        <Link href="/pricing" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
-                            Compare Pricing
-                        </Link>
-                    </div>
-                </div>
-            </section>
-        </SiteLayout>
+        <ComparisonPageTemplate
+            competitorName="Intercom"
+            heroTitle="SwanDesk vs Intercom"
+            heroSubtitle="Stop paying massive per-seat licenses for global platforms. Get native AI automation built for the Indian market."
+            aboutCompetitor={{
+                description: "Intercom is a premium global customer communications platform known for a beautiful UI and strong product-led growth tools.",
+                strengths: [
+                    "Beautiful user interface",
+                    "In-app messaging focus",
+                    "Strong product tour features"
+                ]
+            }}
+            realityCheck={{
+                title: "Global SaaS Pricing vs Indian Reality",
+                description: "Intercom's pricing is notoriously expensive, charging per seat and per AI resolution. SwanDesk offers a flat platform fee, making it the financially viable choice for scaling Indian support teams."
+            }}
+            comparisonRows={[
+                { feature: "Pricing Model", SwanDesk: "Flat Platform Fee", competitor: "Per Seat + AI Fees" },
+                { feature: "Focus Market", SwanDesk: "India (DPDP Compliant)", competitor: "Global / US" },
+                { feature: "WhatsApp API", SwanDesk: "Native & Deep", competitor: "Basic Integration" },
+                { feature: "Voice AI", SwanDesk: "Included natively", competitor: "Not available" },
+                { feature: "Data Residency", SwanDesk: "100% India", competitor: "US / EU Datacenters" }
+            ]}
+            reasonsToSwitch={[
+                {
+                    title: "Eliminate Seat Taxes",
+                    description: "Grow your support team without growing your software bill. SwanDesk includes unlimited agents."
+                },
+                {
+                    title: "Native Indian Integrations",
+                    description: "Deep integrations with WhatsApp, Razorpay, and UPI, natively understanding Hinglish and local dialects."
+                },
+                {
+                    title: "Guaranteed Data Sovereignty",
+                    description: "Intercom hosts data globally. SwanDesk guarantees 100% data residency in Mumbai to ensure DPDP compliance."
+                }
+            ]}
+            targetPersona="SMB & Enterprise"
+            verdict="You are an Indian startup or enterprise that loves good UI but is tired of Intercom's exorbitant pricing scaling out of control as your traffic grows."
+            faqs={[
+                {
+                    question: "Is the UI as good as Intercom?",
+                    answer: "Yes, SwanDesk provides a highly polished, modern shared inbox that your agents will love using, with even better WhatsApp capabilities."
+                }
+            ]}
+        />
     );
 }

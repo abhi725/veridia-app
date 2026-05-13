@@ -1,94 +1,62 @@
 import type { Metadata } from 'next';
+import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk vs IBM Watson: Modern AI Stack for India | 2026 Comparison',
-    description: 'Compare SwanDesk vs IBM Watson for Indian enterprises. Modern Gemini-powered AI, 10x faster deployment, 1/5th the cost, and India data residency.',
-    keywords: ['Swandigitals vs IBM Watson', 'Watson Alternative', 'IBM Watson Pricing India', 'Modern AI Stack'],
+    title: 'IBM Watson Alternative in India | Modern AI Helpdesk Stack',
+    description: 'Compare SwanDesk vs IBM Watson. Skip the massive IT consulting fees and deploy a modern, out-of-the-box AI Helpdesk.',
+    keywords: ['IBM Watson Alternative', 'Watson Assistant vs SwanDesk'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-ibm',
     },
 }
 
-import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
-import ComparisonTable from '@/components/ui/ComparisonTable';
-import Link from 'next/link';
-
-export default function VsIBMPage() {
-    const comparisonRows = [
-        { feature: "Modern Tech Stack", SwanDesk: "Gemini + Cloudflare + Next.js", competitor: "Legacy Watson" },
-        { feature: "Developer Experience", SwanDesk: "Excellent", competitor: "Complex" },
-        { feature: "Time to Market", SwanDesk: "2-4 weeks", competitor: "6-12 months" },
-        { feature: "Monthly Cost (Professional)", SwanDesk: "$1,999", competitor: "$10,000+" },
-        { feature: "No-Code Builder", SwanDesk: true, competitor: false },
-
-        { feature: "Innovation Speed", SwanDesk: "Monthly updates", competitor: "Quarterly" },
-        { feature: "Cloud Native", SwanDesk: true, competitor: "Hybrid legacy" },
-        { feature: "Startup Agility", SwanDesk: true, competitor: false },
-        { feature: "Enterprise Size Req", SwanDesk: "Any size", competitor: "Fortune 500 only" },
-        { feature: "Modern AI Models", SwanDesk: "Latest Gemini", competitor: "Older Watson" },
-        { feature: "Community Support", SwanDesk: "Active", competitor: "Limited" }
-    ];
-
+export default function VsIbmPage() {
     return (
-        <SiteLayout>
-            <Hero
-                badge="🆚 Modern vs Legacy"
-                title="SwanDigitals vs IBM watsonx"
-                subtitle="Modern AI stack vs legacy technology: Why innovation leaders choose SwanDigitals"
-                primaryCTA={{ text: "See Platform", href: "/platform" }}
-                secondaryCTA={{ text: "Book Demo", href: "/demo" }}
-            />
-
-            <ComparisonTable
-                title="Technology & Innovation Comparison"
-                competitorName="IBM watsonx"
-                rows={comparisonRows}
-            />
-
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Why Modern Companies Choose SwanDigitals</h2>
-                    <div className="space-y-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🚀 Built on Modern AI</h3>
-                            <p className="text-lg text-slate-700">
-                                We use Google's latest Gemini models, which outperform IBM Watson on all major benchmarks. Your users get better, more natural conversations.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">⚡ Ship Features 10x Faster</h3>
-                            <p className="text-lg text-slate-700">
-                                IBM's quarterly release cycle means waiting months for new features. We ship updates every 2-4 weeks, keeping you at the cutting edge.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 1/5th the Cost</h3>
-                            <p className="text-lg text-slate-700">
-                                No IBM sales overhead, no legacy infrastructure costs. Get enterprise-grade AI at startup prices.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">👨‍💻 Developer-First</h3>
-                            <p className="text-lg text-slate-700">
-                                Fully integrated AI workflows, comprehensive out-of-the-box UI. IBM is notoriously difficult to set up.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Ready for Modern AI?</h2>
-                    <p className="text-xl text-slate-600 mb-8">
-                        See why tech-forward companies choose SwanDigitals over IBM Watson
-                    </p>
-                    <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all inline-block">
-                        Schedule Technical Demo
-                    </Link>
-                </div>
-            </section>
-        </SiteLayout>
+        <ComparisonPageTemplate
+            competitorName="IBM Watson"
+            heroTitle="SwanDesk vs IBM Watson"
+            heroSubtitle="Skip the massive IT consulting fees and 6-month deployment cycles. Get modern Generative AI out of the box."
+            aboutCompetitor={{
+                description: "IBM Watson Assistant is a legacy enterprise AI platform utilized by massive global corporations and built for heavy IT involvement.",
+                strengths: [
+                    "Deep legacy system integration",
+                    "Massive corporate backing",
+                    "Highly customizable for developers"
+                ]
+            }}
+            realityCheck={{
+                title: "Legacy IT Heavy vs Modern SaaS Agile",
+                description: "Deploying IBM Watson often requires hiring specialized consultants and quarters of development time. SwanDesk is a modern, fully-managed SaaS that deploys in weeks."
+            }}
+            comparisonRows={[
+                { feature: "Time to Market", SwanDesk: "2-4 Weeks", competitor: "6-12 Months" },
+                { feature: "Deployment Method", SwanDesk: "Fully Managed", competitor: "Requires Heavy IT" },
+                { feature: "UI/UX", SwanDesk: "Modern & Intuitive", competitor: "Legacy Corporate" },
+                { feature: "Voice AI", SwanDesk: "Native & Included", competitor: "Complex Integration" },
+                { feature: "Total Cost", SwanDesk: "Flat Software Fee", competitor: "Software + Consulting Fees" }
+            ]}
+            reasonsToSwitch={[
+                {
+                    title: "No Consulting Army Required",
+                    description: "IBM deployments almost always require third-party system integrators. SwanDesk is deployed directly by our in-house success team."
+                },
+                {
+                    title: "Modern Generative AI",
+                    description: "While Watson relies heavily on legacy intent-based models, SwanDesk leverages modern LLMs and RAG architectures for dynamic comprehension."
+                },
+                {
+                    title: "Built-In Omnichannel UI",
+                    description: "Watson is primarily a backend brain. SwanDesk provides both the brain AND the beautifully designed frontend agent inbox."
+                }
+            ]}
+            targetPersona="Enterprise"
+            verdict="You are a large enterprise that wants the security of a serious AI platform, but the agility and modern UI of a 2026 startup."
+            faqs={[
+                {
+                    question: "Can SwanDesk match IBM's security?",
+                    answer: "Yes. With 100% air-gapped on-premise deployments, AES-256 encryption, and DPDP compliance, our security meets or exceeds typical cloud deployments."
+                }
+            ]}
+        />
     );
 }

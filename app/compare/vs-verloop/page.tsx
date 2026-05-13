@@ -1,138 +1,62 @@
 import type { Metadata } from 'next';
-
-import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
-import ComparisonTable from '@/components/ui/ComparisonTable';
-import Link from 'next/link';
-import { Shield, AlertTriangle, Database } from 'lucide-react';
+import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk vs Verloop.io: Best Support Automation India | 2026 Review',
-    description: 'Compare SwanDesk vs Verloop.io for Indian businesses. Better analytics, native Voice AI, on-premise deployment, and sovereign data residency.',
-    keywords: ['Swandigitals vs Verloop', 'Verloop Alternative', 'Verloop Pricing', 'Support Automation India'],
+    title: 'Verloop Alternative in India | Best Support Automation',
+    description: 'Compare SwanDesk vs Verloop.io. Upgrade to a fully unified inbox with native Voice AI and predictable flat pricing.',
+    keywords: ['Verloop Alternative', 'Verloop vs SwanDesk', 'AI Support Automation'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-verloop',
     },
 }
 
 export default function VsVerloopPage() {
-    const comparisonRows = [
-        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "Custom pricing" },
-        { feature: "Voice AI Native", SwanDesk: true, competitor: false },
-        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
-        { feature: "Analytics", SwanDesk: "Advanced", competitor: "Needs development" },
-        { feature: "Helpdesk Integrations", SwanDesk: "Native + Zendesk/Freshdesk", competitor: "Zendesk, Freshdesk" },
-        { feature: "Support Automation Focus", SwanDesk: true, competitor: true },
-        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
-        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
-        { feature: "Complex Logic Engine", SwanDesk: true, competitor: "Basic" },
-        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Yes" },
-        { feature: "Data Sovereignty", SwanDesk: "100% India residency", competitor: "Cloud-based" },
-        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
-        { feature: "Process Complexity", SwanDesk: "Streamlined", competitor: "Can be tedious" },
-        { feature: "Flat Platform Fee", SwanDesk: true, competitor: "Varies" }
-    ];
-
     return (
-        <SiteLayout>
-            <Hero
-                badge="🆚 Support Automation Comparison"
-                title="SwanDigitals vs Verloop.io"
-                subtitle="Support automation with better analytics, native voice AI, and true data sovereignty."
-                primaryCTA={{ text: "Start Pilot (₹10k)", href: "/demo" }}
-                secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
-            />
-
-            {/* Competitor Overview */}
-            <section className="py-12 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">About Verloop.io</h2>
-                        <div className="grid md:grid-cols-3 gap-6">
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <Shield className="w-5 h-5 text-green-500" />
-                                    Core Strengths
-                                </h3>
-                                <p className="text-slate-600 text-sm">Specializes in support automation; integrates with helpdesks (Zendesk, Freshdesk).</p>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <AlertTriangle className="w-5 h-5 text-orange-500" />
-                                    Key Weaknesses
-                                </h3>
-                                <p className="text-slate-600 text-sm">Some processes can be tedious; analytics need development.</p>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <Database className="w-5 h-5 text-blue-500" />
-                                    Data & Compliance
-                                </h3>
-                                <p className="text-slate-600 text-sm">Cloud-based customer support automation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <ComparisonTable
-                title="Feature-by-Feature Comparison"
-                competitorName="Verloop.io"
-                rows={comparisonRows}
-            />
-
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Why Companies Choose SwanDigitals Over Verloop.io</h2>
-                    <div className="space-y-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">📊 Advanced Analytics Out of the Box</h3>
-                            <p className="text-lg text-slate-700">
-                                Verloop.io's analytics capabilities are still developing. SwanDigitals provides comprehensive analytics
-                                from day one — conversation insights, agent performance, customer satisfaction metrics, and custom dashboards.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🎙️ Native Voice AI</h3>
-                            <p className="text-lg text-slate-700">
-                                Verloop.io focuses on chat-based support. SwanDigitals includes native voice AI that handles phone calls
-                                with human-like conversations — extend your support automation to phone channels seamlessly.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">⚡ Streamlined Processes</h3>
-                            <p className="text-lg text-slate-700">
-                                Some Verloop.io processes can be tedious. SwanDigitals offers a streamlined workflow experience
-                                with intuitive no-code builders and advanced logic engines that make complex automations simple.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🏢 True Data Sovereignty</h3>
-                            <p className="text-lg text-slate-700">
-                                For regulated industries, cloud-only isn't enough. SwanDigitals offers managed private cloud or
-                                on-premise deployment with 100% data residency in India — your data never leaves your control.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Support Automation, Elevated</h2>
-                    <p className="text-xl text-slate-600 mb-8">
-                        Better analytics, voice AI, and data sovereignty — all in one platform
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Start Pilot Program
-                        </Link>
-                        <Link href="/solutions/customer-service" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
-                            See Support Solutions
-                        </Link>
-                    </div>
-                </div>
-            </section>
-        </SiteLayout>
+        <ComparisonPageTemplate
+            competitorName="Verloop.io"
+            heroTitle="SwanDesk vs Verloop.io"
+            heroSubtitle="Upgrade to a fully unified inbox with native Voice AI, deeper integrations, and predictable flat pricing."
+            aboutCompetitor={{
+                description: "Verloop is an established Indian conversational AI platform focused heavily on e-commerce and basic customer support.",
+                strengths: [
+                    "Strong e-commerce features",
+                    "Indian market focus",
+                    "Good WhatsApp integration"
+                ]
+            }}
+            realityCheck={{
+                title: "Basic Chatbots vs Generative AI",
+                description: "Verloop built its reputation on legacy intent-based chatbots. SwanDesk is built natively on modern LLM architecture, allowing for far more dynamic, unscripted customer conversations."
+            }}
+            comparisonRows={[
+                { feature: "AI Architecture", SwanDesk: "Generative RAG", competitor: "Legacy Intent/Flows" },
+                { feature: "Voice AI", SwanDesk: "Native & Included", competitor: "Limited/Third-party" },
+                { feature: "Agent Inbox", SwanDesk: "Full Enterprise Helpdesk", competitor: "Basic Inbox" },
+                { feature: "On-Premise", SwanDesk: "True Air-Gapped", competitor: "Cloud Focus" },
+                { feature: "Pricing", SwanDesk: "Flat Platform Fee", competitor: "Usage/Tier Based" }
+            ]}
+            reasonsToSwitch={[
+                {
+                    title: "Modern Generative AI",
+                    description: "Stop building rigid decision trees. SwanDesk uses RAG to simply read your knowledge base and answer dynamically."
+                },
+                {
+                    title: "Unified Agent Experience",
+                    description: "Provide your human agents with a world-class ticketing system that feels like Zendesk, but is built entirely in India."
+                },
+                {
+                    title: "Native Voice Agents",
+                    description: "Support isn't just text. Deploy AI voice agents that can handle incoming calls naturally in Indian languages."
+                }
+            ]}
+            targetPersona="Enterprise"
+            verdict="You want to graduate from rigid chatbot flows to true Generative AI automation without losing the Indian market focus."
+            faqs={[
+                {
+                    question: "Is SwanDesk suitable for E-commerce?",
+                    answer: "Yes, we integrate seamlessly with Shopify and WooCommerce to handle WISMO (Where is my order?) queries automatically."
+                }
+            ]}
+        />
     );
 }

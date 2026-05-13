@@ -1,138 +1,62 @@
 import type { Metadata } from 'next';
-
-import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
-import ComparisonTable from '@/components/ui/ComparisonTable';
-import Link from 'next/link';
-import { Shield, AlertTriangle, Database } from 'lucide-react';
+import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk vs Gupshup: Best Conversational AI India | 2026 Review',
-    description: 'Compare SwanDesk vs Gupshup for Indian businesses. Advanced analytics, native Voice AI, on-premise deployment, and 100% India data sovereignty.',
-    keywords: ['Swandigitals vs Gupshup', 'Gupshup Alternative Enterprise', 'Gupshup Pricing', 'Messaging vs AI Platform'],
+    title: 'Gupshup Alternative in India | Best Conversational AI',
+    description: 'Compare SwanDesk vs Gupshup. Move beyond a messaging API and get a complete out-of-the-box AI Helpdesk.',
+    keywords: ['Gupshup Alternative', 'Gupshup vs SwanDesk', 'Conversational AI'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-gupshup',
     },
 }
 
 export default function VsGupshupPage() {
-    const comparisonRows = [
-        { feature: "Starting Price", SwanDesk: "₹10,000 Pilot / ₹12,000/mo", competitor: "Usage-based" },
-        { feature: "Voice AI Native", SwanDesk: true, competitor: "Limited" },
-        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
-        { feature: "Analytics Dashboard", SwanDesk: "Advanced", competitor: "Limited" },
-        { feature: "WhatsApp Business API", SwanDesk: true, competitor: true },
-        { feature: "Messaging Scale", SwanDesk: "Enterprise-grade", competitor: "High-scale infrastructure" },
-        { feature: "BFSI Focus", SwanDesk: true, competitor: true },
-        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
-        { feature: "Complex Logic Engine", SwanDesk: true, competitor: "Basic" },
-        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Yes" },
-        { feature: "Data Sovereignty", SwanDesk: "100% India residency", competitor: "Not highlighted" },
-        { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
-        { feature: "Flat Platform Fee", SwanDesk: true, competitor: false }
-    ];
-
     return (
-        <SiteLayout>
-            <Hero
-                badge="🆚 Messaging Platform Comparison"
-                title="SwanDigitals vs Gupshup"
-                subtitle="When you need more than just messaging — advanced analytics, voice AI, and true data sovereignty."
-                primaryCTA={{ text: "Start Pilot (₹10k)", href: "/demo" }}
-                secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
-            />
-
-            {/* Competitor Overview */}
-            <section className="py-12 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">About Gupshup</h2>
-                        <div className="grid md:grid-cols-3 gap-6">
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <Shield className="w-5 h-5 text-green-500" />
-                                    Core Strengths
-                                </h3>
-                                <p className="text-slate-600 text-sm">Leader in conversational messaging; strong in BFSI; high-scale infrastructure.</p>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <AlertTriangle className="w-5 h-5 text-orange-500" />
-                                    Key Weaknesses
-                                </h3>
-                                <p className="text-slate-600 text-sm">Analytics and dashboard capabilities noted as limited.</p>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
-                                    <Database className="w-5 h-5 text-blue-500" />
-                                    Data & Compliance
-                                </h3>
-                                <p className="text-slate-600 text-sm">Mature messaging platform; data sovereignty specifics not a highlighted feature.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <ComparisonTable
-                title="Feature-by-Feature Comparison"
-                competitorName="Gupshup"
-                rows={comparisonRows}
-            />
-
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Why Companies Choose SwanDigitals Over Gupshup</h2>
-                    <div className="space-y-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">📊 Advanced Analytics & Dashboards</h3>
-                            <p className="text-lg text-slate-700">
-                                Gupshup is excellent at messaging infrastructure, but their analytics and dashboard capabilities are limited.
-                                SwanDigitals provides comprehensive analytics out of the box — conversation insights, agent performance,
-                                customer satisfaction metrics, and more.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🎙️ Native Voice AI</h3>
-                            <p className="text-lg text-slate-700">
-                                Gupshup focuses on messaging channels. SwanDigitals includes native voice AI that handles phone calls
-                                with human-like conversations — perfect for BFSI use cases that require phone support.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🏢 True Data Sovereignty</h3>
-                            <p className="text-lg text-slate-700">
-                                For regulated industries like banking and healthcare, data sovereignty is critical. SwanDigitals offers
-                                managed private cloud or on-premise deployment with 100% data residency in India — not just compliance checkboxes.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">⚙️ Complex Logic Engine</h3>
-                            <p className="text-lg text-slate-700">
-                                Beyond simple messaging workflows, SwanDigitals offers an advanced logic engine for complex business rules,
-                                multi-step processes, and enterprise integrations that go beyond what basic bot builders can handle.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Need More Than Just Messaging?</h2>
-                    <p className="text-xl text-slate-600 mb-8">
-                        Analytics, Voice AI, and Data Sovereignty — all in one platform
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Start Pilot Program
-                        </Link>
-                        <Link href="/features" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
-                            Explore Features
-                        </Link>
-                    </div>
-                </div>
-            </section>
-        </SiteLayout>
+        <ComparisonPageTemplate
+            competitorName="Gupshup"
+            heroTitle="SwanDesk vs Gupshup"
+            heroSubtitle="Move beyond a messaging API. Get a complete out-of-the-box AI Helpdesk with an enterprise agent inbox."
+            aboutCompetitor={{
+                description: "Gupshup is an Indian unicorn that provides massive-scale messaging infrastructure and basic bot templates.",
+                strengths: [
+                    "Massive messaging volume",
+                    "Strong telecom infrastructure",
+                    "Widespread global reach"
+                ]
+            }}
+            realityCheck={{
+                title: "Telecom Pipe vs Intelligent Software",
+                description: "Gupshup is primarily a pipe for sending messages. If you want an actual Helpdesk for your human agents to work in, alongside advanced Generative AI, you need SwanDesk."
+            }}
+            comparisonRows={[
+                { feature: "Primary Focus", SwanDesk: "Enterprise AI Helpdesk", competitor: "Messaging Infrastructure" },
+                { feature: "Agent UI", SwanDesk: "Advanced Ticketing", competitor: "Basic/Requires own UI" },
+                { feature: "AI Capabilities", SwanDesk: "Deep Generative RAG", competitor: "Basic Templates" },
+                { feature: "Deployment", SwanDesk: "SaaS or On-Premise", competitor: "Cloud API" },
+                { feature: "Target User", SwanDesk: "Support/CX Teams", competitor: "Developers" }
+            ]}
+            reasonsToSwitch={[
+                {
+                    title: "Ready-to-Use UI",
+                    description: "Don't spend months building a custom frontend for your support team. SwanDesk provides an enterprise-grade shared inbox on day one."
+                },
+                {
+                    title: "Next-Gen AI",
+                    description: "Move past basic bot templates. Deploy custom LLMs that actually understand context and complex customer queries."
+                },
+                {
+                    title: "Total Deployment Control",
+                    description: "For banks and healthcare, SwanDesk offers true air-gapped on-premise deployments, unlike cloud-only API providers."
+                }
+            ]}
+            targetPersona="Enterprise"
+            verdict="You want a complete, fully-managed software solution for your support team, rather than a developer API that requires you to build the interface yourself."
+            faqs={[
+                {
+                    question: "Can I use Gupshup with SwanDesk?",
+                    answer: "Yes, if you have an existing Gupshup WABA account, you can plug it into SwanDesk's integration layer to use our UI while keeping Gupshup as your provider."
+                }
+            ]}
+        />
     );
 }

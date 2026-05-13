@@ -1,103 +1,62 @@
 import type { Metadata } from 'next';
+import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk vs Drift: Affordable Conversational AI India | 2026 Comparison',
-    description: 'Compare SwanDesk vs Drift for Indian businesses. 90% lower cost with Voice AI, self-hosted deployment, and WhatsApp support. Sales + Support in one.',
-    keywords: ['Swandigitals vs Drift', 'Drift Alternative India', 'Conversational Marketing Cost', 'Self-hosted Chatbot'],
+    title: 'Drift Alternative in India | Affordable Conversational AI',
+    description: 'Compare SwanDesk vs Drift. Don\'t pay premium US pricing for B2B chat. Get advanced AI Lead Generation for a flat fee.',
+    keywords: ['Drift Alternative India', 'Drift vs SwanDesk', 'B2B Conversational AI'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-drift',
     },
 }
 
-import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
-import ComparisonTable from '@/components/ui/ComparisonTable';
-import Link from 'next/link';
-
 export default function VsDriftPage() {
-    const comparisonRows = [
-        { feature: "Starting Price", SwanDesk: "Free / ₹1,999", competitor: "$2,500+/month" },
-        { feature: "Voice AI", SwanDesk: true, competitor: false },
-        { feature: "Self-Hosted Option", SwanDesk: true, competitor: false },
-        { feature: "On-Premise Deployment", SwanDesk: true, competitor: false },
-        { feature: "No-Code Builder", SwanDesk: true, competitor: true },
-        { feature: "WhatsApp Business API", SwanDesk: true, competitor: false },
-        { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "Limited" },
-        { feature: "Target Market", SwanDesk: "All businesses", competitor: "Enterprise only" },
-        { feature: "Sales Focus", SwanDesk: "Sales + Support", competitor: "Sales only" },
-        { feature: "AI Chatbot", SwanDesk: true, competitor: true },
-        { feature: "Meeting Scheduling", SwanDesk: true, competitor: true },
-        { feature: "Data Residency Options", SwanDesk: true, competitor: false }
-    ];
-
     return (
-        <SiteLayout>
-            <Hero
-                badge="🆚 Sales AI Comparison"
-                title="SwanDigitals vs Drift"
-                subtitle="All of Drift's conversational marketing power + voice AI + self-hosting. At 90% lower cost."
-                primaryCTA={{ text: "Book a Demo", href: "/demo" }}
-                secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
-            />
-
-            <ComparisonTable
-                title="Feature-by-Feature Comparison"
-                competitorName="Drift"
-                rows={comparisonRows}
-            />
-
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Why Companies Choose SwanDigitals Over Drift</h2>
-                    <div className="space-y-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">💰 90% Cost Savings</h3>
-                            <p className="text-lg text-slate-700">
-                                Drift starts at $2,500/month and only targets enterprise.
-                                SwanDigitals starts at Free / ₹1,999 with the same conversational marketing features accessible to all.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🎙️ Voice + Chat Combined</h3>
-                            <p className="text-lg text-slate-700">
-                                Drift focuses exclusively on web chat. SwanDigitals combines chat with AI voice agents —
-                                qualify leads on your website AND follow up with automated calls.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🏢 Self-Hosted Option</h3>
-                            <p className="text-lg text-slate-700">
-                                Drift is cloud-only. For companies needing data control,
-                                SwanDigitals offers self-hosted deployment where data never leaves your infrastructure.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-2xl font-bold text-orange-600 mb-4">🔧 Sales + Support</h3>
-                            <p className="text-lg text-slate-700">
-                                Drift is sales-focused only. SwanDigitals handles both lead generation AND customer support
-                                in one platform — no need for multiple tools.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Conversational Marketing Without the Enterprise Price Tag</h2>
-                    <p className="text-xl text-slate-600 mb-8">
-                        Qualify leads, book meetings, and follow up — starting at Free / ₹1,999
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
-                            Start Free Trial
-                        </Link>
-                        <Link href="/solutions/sales" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 transition-all">
-                            See Sales Solutions
-                        </Link>
-                    </div>
-                </div>
-            </section>
-        </SiteLayout>
+        <ComparisonPageTemplate
+            competitorName="Drift"
+            heroTitle="SwanDesk vs Drift"
+            heroSubtitle="Stop paying US enterprise pricing for B2B chat. Get a dedicated AI Sales Agent for a fraction of the cost."
+            aboutCompetitor={{
+                description: "Drift invented Conversational Marketing, focusing purely on high-end B2B sales acceleration and website lead generation.",
+                strengths: [
+                    "Pioneered conversational marketing",
+                    "Deep B2B CRM integrations",
+                    "Advanced sales routing"
+                ]
+            }}
+            realityCheck={{
+                title: "Exorbitant Pricing vs Accessible ROI",
+                description: "Drift is an incredible tool, but its pricing is optimized for Fortune 500 US companies. SwanDesk delivers the same core B2B lead generation capabilities at a flat, India-friendly price point."
+            }}
+            comparisonRows={[
+                { feature: "Primary Use Case", SwanDesk: "Sales + Support", competitor: "Pure B2B Sales" },
+                { feature: "Pricing Tier", SwanDesk: "Accessible Flat Fee", competitor: "$2,500+/month minimum" },
+                { feature: "WhatsApp Support", SwanDesk: "Native", competitor: "Limited/Add-on" },
+                { feature: "Voice AI", SwanDesk: "Native", competitor: "No" },
+                { feature: "Data Residency", SwanDesk: "100% India", competitor: "Global" }
+            ]}
+            reasonsToSwitch={[
+                {
+                    title: "Drastically Lower TCO",
+                    description: "Drift starts in the thousands of dollars per month. SwanDesk provides enterprise AI for a flat, predictable local fee."
+                },
+                {
+                    title: "Support AND Sales",
+                    description: "Drift is strictly for sales. SwanDesk's unified inbox handles both your pre-sales lead qualification and your post-sales support."
+                },
+                {
+                    title: "Native Voice & WhatsApp",
+                    description: "Drift is heavily focused on the website widget. SwanDesk brings that same AI qualification power natively to WhatsApp and Voice."
+                }
+            ]}
+            targetPersona="B2B Sales & Marketing"
+            verdict="You are a B2B company that wants to qualify leads automatically 24/7, but you refuse to pay massive US enterprise software premiums to do so."
+            faqs={[
+                {
+                    question: "Does SwanDesk integrate with my CRM?",
+                    answer: "Yes, we integrate with HubSpot, Salesforce, and Zoho to automatically push qualified leads from the chat directly into your sales pipeline."
+                }
+            ]}
+        />
     );
 }
