@@ -6,7 +6,7 @@ import {
     Book, Zap, Code, HelpCircle, ChevronRight, ArrowLeft, Phone, CreditCard, 
     Brain, Settings, GitBranch, MessageSquare, Users, BarChart, Shield, 
     Briefcase, ShoppingCart, Cloud, Building, Coffee, Store, Calendar, 
-    Headset, HeartPulse, GraduationCap, Home, Truck
+    Headphones, HeartPulse, GraduationCap, Home, Truck
 } from 'lucide-react';
 
 const navSections = [
@@ -48,7 +48,7 @@ const navSections = [
             { label: 'Restaurants & Delivery', href: '/docs/use-cases/restaurants', icon: Coffee },
             { label: 'Franchises & Retail', href: '/docs/use-cases/franchises', icon: Store },
             { label: 'B2C & Appointments', href: '/docs/use-cases/b2c', icon: Calendar },
-            { label: 'Customer Support BPO', href: '/docs/use-cases/support', icon: Headset },
+            { label: 'Customer Support BPO', href: '/docs/use-cases/support', icon: Headphones },
             { label: 'Healthcare & Clinics', href: '/docs/use-cases/healthcare', icon: HeartPulse },
             { label: 'Education & EdTech', href: '/docs/use-cases/education', icon: GraduationCap },
             { label: 'Real Estate & Property', href: '/docs/use-cases/real-estate', icon: Home },
