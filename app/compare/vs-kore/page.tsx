@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk vs Kore.ai: Flexible On-Premise Alternative | SwanDesk',
+    title: 'SwanDesk vs Kore.ai: Flexible On-Premise Alternative',
     description: 'Compare SwanDesk vs Kore.ai. Faster implementation, lower cost, and true on-premise deployment for Indian Enterprises.',
     keywords: ['Swandigitals vs Kore.ai', 'Kore.ai Alternative India', 'Kore.ai Pricing vs SwanDesk', 'On-premise AI Chatbot'],
     alternates: {
@@ -25,7 +25,7 @@ export default function VsKorePage() {
         { feature: "Industry Solutions", SwanDesk: "General + Custom", competitor: "BankAssist, HealthAssist" },
         { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
         { feature: "Multi-Language Support", SwanDesk: "10+ Indian languages", competitor: "60+ languages" },
-        { feature: "API Access", SwanDesk: true, competitor: true },
+
         { feature: "Custom Integrations", SwanDesk: "Unlimited", competitor: "Limited" },
         { feature: "Training Required", SwanDesk: "1-2 days", competitor: "1-2 weeks" },
         { feature: "Annual Contract Required", SwanDesk: false, competitor: true },

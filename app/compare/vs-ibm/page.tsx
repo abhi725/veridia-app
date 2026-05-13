@@ -21,7 +21,7 @@ export default function VsIBMPage() {
         { feature: "Time to Market", SwanDesk: "2-4 weeks", competitor: "6-12 months" },
         { feature: "Monthly Cost (Professional)", SwanDesk: "$1,999", competitor: "$10,000+" },
         { feature: "No-Code Builder", SwanDesk: true, competitor: false },
-        { feature: "API-First Architecture", SwanDesk: true, competitor: "Limited" },
+
         { feature: "Innovation Speed", SwanDesk: "Monthly updates", competitor: "Quarterly" },
         { feature: "Cloud Native", SwanDesk: true, competitor: "Hybrid legacy" },
         { feature: "Startup Agility", SwanDesk: true, competitor: false },
@@ -71,7 +71,7 @@ export default function VsIBMPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
                             <h3 className="text-2xl font-bold text-orange-600 mb-4">👨‍💻 Developer-First</h3>
                             <p className="text-lg text-slate-700">
-                                Modern REST APIs, comprehensive SDKs (Python, Node.js, Java), and detailed documentation. IBM's API is notoriously difficult.
+                                Fully integrated AI workflows, comprehensive out-of-the-box UI. IBM is notoriously difficult to set up.
                             </p>
                         </div>
                     </div>

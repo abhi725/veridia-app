@@ -12,9 +12,13 @@ interface FAQProps {
     items: FAQItem[];
     /** Optional heading override (defaults to "Frequently Asked Questions") */
     heading?: string;
+    /** Disable schema generation if handled by parent */
+    disableSchema?: boolean;
+    /** Override outer container classes */
+    className?: string;
 }
 
-export default function FAQ({ items, heading }: FAQProps) {
+export default function FAQ({ items, heading, disableSchema = false, className }: FAQProps) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const sectionRef = useRef<HTMLElement>(null);
 
@@ -50,12 +54,14 @@ export default function FAQ({ items, heading }: FAQProps) {
     };
 
     return (
-        <section ref={sectionRef} className="py-20 lg:py-28 bg-white">
+        <section ref={sectionRef} className={className || "py-20 lg:py-28 bg-white"}>
             {/* FAQPage Schema — auto-generated from props */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+            {!disableSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
 
             <div className="max-w-2xl mx-auto px-5 lg:px-8">
                 <div className="text-center mb-14">

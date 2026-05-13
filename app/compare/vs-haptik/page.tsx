@@ -27,7 +27,7 @@ export default function VsHaptikPage() {
         { feature: "Multi-Language (Indic)", SwanDesk: "10+ languages", competitor: "100+ languages" },
         { feature: "Live Agent Handoff", SwanDesk: true, competitor: true },
         { feature: "Sentiment Analysis", SwanDesk: true, competitor: true },
-        { feature: "API Access", SwanDesk: true, competitor: true },
+
         { feature: "Setup Fees", SwanDesk: "₹0-₹40,000", competitor: "Custom" },
         { feature: "Annual Contract Required", SwanDesk: false, competitor: true },
         { feature: "Data Residency India", SwanDesk: "100% guaranteed", competitor: "May be concern for regulated clients" }

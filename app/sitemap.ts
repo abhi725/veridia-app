@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: '/why-swandesk', priority: 0.8, changeFrequency: 'monthly' as const },
         { url: '/roi-calculator', priority: 0.8, changeFrequency: 'monthly' as const },
         { url: '/security', priority: 0.7, changeFrequency: 'monthly' as const },
+        { url: '/faqs', priority: 0.9, changeFrequency: 'weekly' as const },
     ];
 
     // Solution/industry pages — high priority for ICP targeting
@@ -47,6 +48,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/compare/vs-personetics',
         '/compare/vs-verloop',
         '/compare/vs-gupshup',
+        '/compare/vs-tawkto',
+        '/compare/vs-tidio',
+        '/compare/vs-crisp',
+        '/compare/vs-wotnot',
+        '/compare/vs-gohighlevel',
+        '/compare/vs-manychat',
+        '/compare/vs-gallabox',
+        '/compare/vs-doubletick',
+        '/compare/vs-bitespeed',
+        '/compare/vs-wati',
+        '/compare/vs-aisensy',
+        '/compare/vs-360dialog',
+        '/compare/vs-quickmessage',
+        '/compare/vs-msg91',
     ].map((url) => ({ url, priority: 0.7, changeFrequency: 'monthly' as const }));
 
     // Resource & tool pages
