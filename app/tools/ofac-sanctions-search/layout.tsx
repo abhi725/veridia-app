@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Free OFAC Sanctions Search Tool | SwanDigitals',
+    title: 'Free OFAC Sanctions Search Tool',
     description: 'Free OFAC sanctions list checker. Instantly screen names against SDN, BIS Entity List & global sanctions databases. AML compliance tool for KYC screening.',
     keywords: ['OFAC search', 'sanctions screening', 'AML compliance', 'KYC tool', 'SDN list check', 'sanctions list checker', 'free OFAC search', 'AML sanctions list checker', 'KYC compliance tool'],
     openGraph: {
-        title: 'Free OFAC Sanctions Search Tool | SwanDigitals',
+        title: 'Free OFAC Sanctions Search Tool',
         description: 'Free OFAC sanctions screening tool. Instantly check names against SDN list, BIS Entity List & global sanctions databases for AML/KYC compliance.',
         type: 'website',
         url: 'https://SwanDigitals.com/tools/ofac-sanctions-search',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Free OFAC Sanctions Search Tool | SwanDigitals',
+        title: 'Free OFAC Sanctions Search Tool',
         description: 'Free OFAC sanctions screening tool for AML/KYC compliance. Screen names against SDN list & global sanctions databases.'
     },
     alternates: {

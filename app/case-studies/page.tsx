@@ -5,7 +5,7 @@ import Link from 'next/link';
 import CaseStudiesGrid from '@/components/ui/CaseStudiesGrid';
 
 export const metadata: Metadata = {
-    title: 'Customer Success Stories & Case Studies | SwanDigitals',
+    title: 'Customer Success Stories & Case Studies',
     description: 'See how enterprises like FinanceOne and RetailPro achieve 85% automation and $1M+ savings with SwanDigitals. Real results from Indian banking, healthcare, and retail.',
     keywords: ['AI Chatbot Case Studies', 'Enterprise AI Success Stories', 'Banking Chatbot ROI', 'Healthcare AI Case Study', 'Retail AI Examples'],
     alternates: {

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Linkedin, Twitter, Youtube, Mail, ArrowRight } from 'lucide-react';
+import { Linkedin, Twitter, Youtube, Mail, ArrowRight, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -23,8 +23,11 @@ export default function Footer() {
                             <a href="https://twitter.com/swandigitals" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
                                 <Twitter className="w-4 h-4" />
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
-                                <Youtube className="w-4 h-4" />
+                            <a href="https://www.facebook.com/Digitalmarketingcompanyswandigitals/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
+                                <Facebook className="w-4 h-4" />
+                            </a>
+                            <a href="https://www.instagram.com/digital_marketing_swandigitals/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
+                                <Instagram className="w-4 h-4" />
                             </a>
                             <a href="mailto:support@swandigitals.com" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
                                 <Mail className="w-4 h-4" />

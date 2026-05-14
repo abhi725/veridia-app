@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 
 export const metadata: Metadata = {
-    title: 'Security | SwanDigitals',
+    title: 'Security',
     description: 'Enterprise security features for SwanDigitals AI platform.',
 }
 

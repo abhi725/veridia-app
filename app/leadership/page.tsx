@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Linkedin, Github, Globe, Rocket, Award, Code, Database, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Meet the Founder: Abhishek Ambad | SwanDigitals',
+    title: 'Meet the Founder: Abhishek Ambad',
     description: 'Meet Abhishek Ambad, Founder of SwanDigitals. Digital Growth Strategist and Tech Entrepreneur building India\'s Sovereign AI workforce.',
     keywords: ['Abhishek Ambad', 'SwanDigitals Founder', 'Digital Growth Strategist', 'Tech Entrepreneur Pune'],
     alternates: {

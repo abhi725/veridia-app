@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Users, Briefcase, CreditCard, Calendar, FileText, HelpCircle, MessageSquare, Mail, Globe, Smartphone, Ticket, Wrench, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'HR & Employee Experience AI Agents India | Internal Helpdesk | SwanDesk',
+    title: 'HR & Employee Experience AI Agents India | Internal Helpdesk',
     description: 'AI-powered internal helpdesk for Indian enterprises. HR policy answers, leave management, IT support via Slack/Teams. 100% private, on-premise deployment available.',
     keywords: ['HR Chatbot India', 'Employee Helpdesk AI', 'Leave Management Bot', 'IT Support Automation', 'Internal Enterprise AI'],
     alternates: {

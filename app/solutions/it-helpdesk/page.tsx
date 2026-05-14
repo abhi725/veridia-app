@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Key, Monitor, Wifi, HelpCircle, Settings, Ticket, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'AI for IT Helpdesk: Auto-Resolve Tier 1 Tickets | SwanDigitals',
+    title: 'AI for IT Helpdesk: Auto-Resolve Tier 1 Tickets',
     description: 'Deflect 72% of IT tickets with AI. Automate password resets, software access, and troubleshooting. Integrates with ServiceNow & Jira.',
     keywords: ['IT Helpdesk Automation', 'ITSM Chatbot', 'Password Reset Bot', 'Jira Automation AI', 'ServiceNow AI Bot'],
     alternates: {

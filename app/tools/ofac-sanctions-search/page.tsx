@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import OFACSearchContent from '@/components/tools/OFACSearchContent';
 
 export const metadata: Metadata = {
-    title: 'Free OFAC Sanctions Search Tool | AML & KYC Compliance | SwanDigitals',
+    title: 'Free OFAC Sanctions Search Tool | AML & KYC Compliance',
     description: 'Free instant search for OFAC SDN, BIS Entity List, and global sanctions. Powered by Moov Watchman. Essential for AML/KYC compliance in India & US.',
     keywords: ['OFAC Search Tool Free', 'Sanctions Screening Tool', 'SDN List Search', 'AML Compliance Tool Free', 'BIS Entity List Search'],
     alternates: {

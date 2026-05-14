@@ -9,7 +9,7 @@ import { Headphones, TrendingUp, Clock, Users, Zap, BarChart3, XCircle, CheckCir
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'AI Customer Support Automation India | 90% Auto-Resolution | SwanDesk',
+    title: 'AI Customer Support Automation India | 90% Auto-Resolution',
     description: 'Automate 90% of customer support queries with sovereign AI agents. Instant 24/7 responses, multi-channel support, and seamless human handoff. On-premise deployment for India.',
     keywords: ['Customer Service Automation', 'Support Ticket Deflection', '24/7 AI Agent', 'Omni-channel Support', 'Whatsapp Customer Support Bot'],
     alternates: {

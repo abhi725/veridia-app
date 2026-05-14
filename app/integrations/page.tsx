@@ -5,7 +5,7 @@ import IntegrationCard from '@/components/ui/IntegrationCard';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Integrations - 100+ Pre-built Connectors | SwanDigitals',
+    title: 'Integrations - 100+ Pre-built Connectors',
     description: 'Connect SwanDigitals with your entire tech stack. 100+ pre-built integrations for CRM, Core Banking, ITSM, HR, E-commerce, and more.',
     keywords: ['Chatbot Integrations', 'CRM Integration', 'Banking Integration', 'ITSM Integration', 'API Connectors'],
     alternates: {

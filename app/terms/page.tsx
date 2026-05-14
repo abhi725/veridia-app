@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Terms of Service | Enterprise Agreement | SwanDigitals',
+    title: 'Terms of Service | Enterprise Agreement',
     description: 'SwanDigitals Terms of Service. Governed by Indian laws. SLAs, uptime guarantees, and acceptable use policy for enterprise customers.',
     keywords: ['Terms of Service', 'Enterprise Syllabus', 'SLA Guarantee', 'Chatbot Service Agreement', 'Legal Terms'],
     alternates: {

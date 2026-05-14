@@ -7,11 +7,11 @@ const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500', '600'
 
 export const metadata: Metadata = {
     title: {
-        default: 'SwanDesk | AI Customer Support Platform for India',
-        template: '%s | SwanDesk'
+        default: 'SwanDesk - AI Customer Support Platform for India | SwanDigitals',
+        template: '%s | SwanDigitals'
     },
     description: 'The AI-powered customer support platform built for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. On-premise for BFSI. Start free.',
-    keywords: ['SwanDesk', 'customer support', 'helpdesk', 'WhatsApp inbox', 'AI chatbot India', 'Sovereign AI India', 'On-premise LLM', 'DPDP Compliant AI', 'Abhishek Ambad'],
+    keywords: ['SwanDesk', 'customer support', 'helpdesk', 'WhatsApp inbox', 'AI chatbot India', 'Sovereign AI India', 'On-premise LLM', 'DPDP Compliant AI', 'Abhishek Ambad', 'SwanDigitals'],
     authors: [{ name: 'Abhishek Ambad', url: 'https://swandigitals.com/leadership' }],
     creator: 'SwanDigitals',
     openGraph: {
@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://swandigitals.com',
+        languages: {
+            'en-IN': 'https://swandigitals.com',
+        },
     },
 }
 
@@ -94,6 +97,8 @@ export default function RootLayout({
                 sameAs: [
                     'https://linkedin.com/company/swandigitals',
                     'https://twitter.com/swandigitals',
+                    'https://www.facebook.com/Digitalmarketingcompanyswandigitals/',
+                    'https://www.instagram.com/digital_marketing_swandigitals/',
                 ],
             },
             {
@@ -146,26 +151,19 @@ export default function RootLayout({
                         src="https://www.googletagmanager.com/ns.html?id=GTM-KR7FXZH"
                         height="0"
                         width="0"
-                        style={{ display: 'none', visibility: 'hidden' }}
+                        className="hidden"
                     />
                 </noscript>
                 <noscript>
-                    <div style={{
-                        padding: '20px',
-                        textAlign: 'center',
-                        backgroundColor: '#fffbeb',
-                        border: '2px solid #f59e0b',
-                        margin: '20px',
-                        borderRadius: '8px'
-                    }}>
-                        <p style={{ fontSize: '1.2em', fontWeight: 'bold' }}>JavaScript Required</p>
+                    <div className="p-5 text-center bg-orange-50 border-2 border-orange-500 m-5 rounded-lg">
+                        <p className="text-lg font-bold">JavaScript Required</p>
                         <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
                         <p><strong>SwanDesk by SwanDigitals</strong> - AI Customer Support Platform for India</p>
-                        <p>Contact: +91 7770070762 | Email: Abhishek@swandigitals.com</p>
+                        <p>Contact: +91 7770070762 | Email: support [at] swandigitals.com</p>
                     </div>
                 </noscript>
                 {children}
-                <Script id="google-tag-manager" strategy="afterInteractive">
+                <Script id="google-tag-manager" strategy="lazyOnload">
                     {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -175,7 +173,7 @@ export default function RootLayout({
                     `}
                 </Script>
 
-                <Script id="engagebay-tracking-code" strategy="afterInteractive" dangerouslySetInnerHTML={{
+                <Script id="engagebay-tracking-code" strategy="lazyOnload" dangerouslySetInnerHTML={{
                     __html: `
                     var EhAPI = EhAPI || {}; EhAPI.after_load = function(){
                     EhAPI.set_account('bbk7lmu2rmvae1u1os10a6no8c', 'swandigitalshu');
@@ -187,7 +185,7 @@ export default function RootLayout({
                     `
                 }} />
 
-                <Script id="swan-chat-widget" strategy="afterInteractive" dangerouslySetInnerHTML={{
+                <Script id="swan-chat-widget" strategy="lazyOnload" dangerouslySetInnerHTML={{
                     __html: `
                     window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
                     (function(d,t) {

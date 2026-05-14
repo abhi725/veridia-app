@@ -5,7 +5,7 @@ import { faqData } from '@/data/faqs';
 import FAQ from '@/components/ui/FAQ';
 
 export const metadata: Metadata = {
-    title: 'Comprehensive AI FAQ | 100+ Questions Answered | SwanDesk',
+    title: 'Comprehensive AI FAQ | 100+ Questions Answered',
     description: 'The ultimate guide to enterprise AI automation. Find answers about our Voice AI, WhatsApp integration, DPDP compliance, pricing, and industry use cases.',
     keywords: ['AI Chatbot FAQ', 'Enterprise AI Knowledge Base', 'SwanDesk Help', 'Voice AI FAQs', 'WhatsApp API Questions'],
     alternates: {

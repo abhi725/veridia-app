@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { ShoppingCart, Package, RefreshCw, MessageSquare, TrendingUp, Gift } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Retail & E-commerce AI Chatbot India | Peak Season Ready | SwanDesk',
+    title: 'Retail & E-commerce AI Chatbot India | Peak Season Ready',
     description: 'Enterprise retail AI for Indian e-commerce. Automate order tracking, returns, and product recommendations. Integrated with Shopify & Salesforce. Scales for peak season.',
     keywords: ['Retail AI Chatbot', 'E-commerce Automation India', 'Shopify AI Agent', 'Order Tracking Bot', 'Black Friday AI Support'],
     alternates: {

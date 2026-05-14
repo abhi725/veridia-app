@@ -5,7 +5,7 @@ import Link from 'next/link';
 import ROICalculatorContent from '@/components/tools/ROICalculatorContent';
 
 export const metadata: Metadata = {
-    title: 'AI Chatbot ROI Calculator | Calculate Your Savings | SwanDigitals',
+    title: 'AI Chatbot ROI Calculator | Calculate Your Savings',
     description: 'Calculate your potential savings with SwanDigitals AI. Compare current support costs vs. automated AI agents. See how much 85% automation can save you.',
     keywords: ['ROI Calculator', 'Chatbot Cost Savings', 'AI Automation ROI', 'Support Cost Calculator', 'Call Center Savings'],
     alternates: {

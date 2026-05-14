@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | DPDP Act 2023 Compliant | SwanDigitals',
+    title: 'Privacy Policy | DPDP Act 2023 Compliant',
     description: 'SwanDigitals Privacy Policy. We are fully DPDP Act 2023 compliant, ensuring your enterprise data remains private and secure. Read our data protection practices.',
     keywords: ['Privacy Policy', 'DPDP Act India', 'Data Sovereignty Policy', 'Enterprise Data Protection'],
     alternates: {
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
                                 <p><strong>Data Controller:</strong> SwanDigitals</p>
                                 <p><strong>Address:</strong> B31 Flat, Aaykar Society, Kothrud, Pune, Maharashtra 411038, India</p>
                                 <p><strong>Contact Number:</strong> +91 7770070762</p>
-                                <p><strong>Email:</strong> Abhishek@swandigitals.com</p>
+                                <p><strong>Email:</strong> <a href="/contact" className="text-orange-400 hover:underline">Support Team</a></p>
                                 <p><strong>Founder:</strong> Abhishek Ambad</p>
                             </div>
                         </div>

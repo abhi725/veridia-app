@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Banking AI Chatbot India - Fraud Detection & Compliance | SwanDesk',
+    title: 'Banking AI Chatbot India - Fraud Detection & Compliance',
     description: 'The deepest conversational AI for Indian Banking. Automate every customer touchpoint while keeping 100% of data in India.',
     keywords: ['Banking AI Chatbot India', 'Banking Fraud Detection', 'RBI Compliant AI', 'DPDP Act Banking', 'SwanDesk Banking'],
     alternates: {

@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { Stethoscope, Calendar, FileText, Shield, Clock, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'AI Healthcare Chatbot India | DPDP & HIPAA Ready | SwanDesk',
+    title: 'AI Healthcare Chatbot India | DPDP & HIPAA Ready',
     description: 'DPDP Act and HIPAA-ready AI chatbots for Indian healthcare. Automate patient triage, appointment booking, and follow-ups. On-premise deployment available.',
     keywords: ['Healthcare Chatbot India', 'Patient Triage AI', 'Appointment Booking Bot', 'HIPAA Compliant India', 'Hospital AI Agents'],
     alternates: {

@@ -29,7 +29,7 @@ export default function NewsroomPage() {
                 badge="📰 Newsroom"
                 title="News & Press"
                 subtitle="The latest news, press releases, and media resources from SwanDigitals"
-                primaryCTA={{ text: "Press Inquiries", href: "mailto:abhishek@swandigitals.com" }}
+                primaryCTA={{ text: "Press Inquiries", href: "/contact" }}
             />
 
             {/* Featured News */}
@@ -92,7 +92,7 @@ export default function NewsroomPage() {
                     <h2 className="text-3xl font-bold mb-4">Press Contact</h2>
                     <p className="text-xl text-white/80 mb-8">For media inquiries, interviews, and press opportunities</p>
                     <div className="flex flex-col gap-2">
-                        <a href="mailto:abhishek@swandigitals.com" className="text-2xl font-bold text-orange-400 hover:underline">abhishek@swandigitals.com</a>
+                        <a href="/contact" className="text-2xl font-bold text-orange-400 hover:underline">Contact Press Team</a>
                         <p className="text-white/70">Response within 24 hours</p>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Target, MessageSquare, Calendar, TrendingUp, FileText, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'AI Sales Agent & Lead Gen Chatbot | Qualify Leads 24/7 | SwanDigitals',
+    title: 'AI Sales Agent & Lead Gen Chatbot | Qualify Leads 24/7',
     description: 'Turn visitors into SQLs with AI Sales Agents. 24/7 lead qualification, meeting scheduling, and CRM sync. Boost conversion rates by 30%.',
     keywords: ['AI Sales Agent', 'Lead Generation Chatbot', 'Automated Lead Qualification', 'Salesforce AI Integration', 'B2B Sales Bot'],
     alternates: {

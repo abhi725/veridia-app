@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Resources & Documentation | SwanDigitals',
+    title: 'Resources & Documentation',
     description: 'Technical documentation, setup guides, and API references for SwanDigitals. Learn how to deploy on-premise AI agents and integrate with your stack.',
     keywords: ['SwanDigitals Documentation', 'AI Chatbot Guides', 'On-premise Deployment Guide', 'API Reference', 'Developer Resources'],
     alternates: {
