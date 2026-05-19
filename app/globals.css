@@ -99,4 +99,18 @@ body {
 /* ── Smooth everything ── */
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+/* ── Hide scrollbar (cross-browser) ── */
+.hide-scrollbar {
+    -ms-overflow-style: none;   /* IE / Edge */
+    scrollbar-width: none;       /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;               /* Chrome / Safari / Opera */
+}
+
+/* ── Smooth scroll ── */
+html {
+    scroll-behavior: smooth;
 }
