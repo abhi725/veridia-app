@@ -72,6 +72,7 @@ export default function Footer() {
                                 { label: 'Customer Service', href: '/solutions/customer-service' },
                                 { label: 'IT Helpdesk', href: '/solutions/it-helpdesk' },
                                 { label: 'Banking & BFSI', href: '/solutions/banking' },
+                                { label: 'Insurance', href: '/solutions/insurance' },
                                 { label: 'Healthcare', href: '/solutions/healthcare' },
                                 { label: 'Overview', href: '/solutions' },
                             ].map(({ label, href }) => (

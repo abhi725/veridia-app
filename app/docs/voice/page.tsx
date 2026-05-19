@@ -13,7 +13,7 @@ export default function VoiceAIPage() {
                 </p>
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
                     <p className="text-sm text-orange-800">
-                        <strong>Available in:</strong> GROWTH, PROFESSIONAL, and ENTERPRISE plans. Requires Twilio, Retell AI, or Exotel account.
+                        <strong>Available in:</strong> PERFORMANCE PRO and SOVEREIGN ENTERPRISE plans. Requires cloud voice or Exotel/SIP trunking account.
                     </p>
                 </div>
             </section>
@@ -22,15 +22,14 @@ export default function VoiceAIPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Supported Telephony Providers</h2>
                 <p className="text-slate-600 mb-6">
-                    SwanAI Voice integrates with leading telephony providers to ensure reliable call handling across India.
+                    SwanAI Voice integrates with leading cloud telephony and SIP providers to ensure reliable call handling.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="border border-slate-200 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">Retell AI</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">Cloud Voice Engines</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Recommended for Indian businesses. Native integration with real-time voice processing,
-                            built-in ASR (Automatic Speech Recognition), and low-latency responses.
+                            High-performance voice processing with built-in ASR (Automatic Speech Recognition) and ultra low-latency responses.
                         </p>
                         <ul className="text-sm text-slate-500 space-y-1">
                             <li>• Webhook-based integration</li>
@@ -40,7 +39,7 @@ export default function VoiceAIPage() {
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">Twilio</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">SIP Telephony</h3>
                         <p className="text-sm text-slate-600 mb-3">
                             Enterprise-grade telephony with global reach. Supports SIP trunking, outbound campaigns,
                             and programmable voice workflows.
@@ -76,11 +75,11 @@ export default function VoiceAIPage() {
                         <h3 className="text-lg font-medium text-slate-900 mb-3">1. Connect Telephony Provider</h3>
                         <ol className="list-decimal list-inside space-y-3 text-slate-600">
                             <li>Navigate to <strong>Settings → Voice AI → Telephony</strong></li>
-                            <li>Select your provider (Retell AI / Twilio / Exotel)</li>
+                            <li>Select your provider (Cloud Provider / SIP Trunking / Exotel)</li>
                             <li>Enter your API credentials:
                                 <ul className="list-disc list-inside ml-6 mt-2 text-sm text-slate-500">
-                                    <li><strong>Retell AI:</strong> API Key from retellai.com/dashboard</li>
-                                    <li><strong>Twilio:</strong> Account SID and Auth Token from console.twilio.com</li>
+                                    <li><strong>Cloud Provider:</strong> API Key or connection token from your provider dashboard</li>
+                                    <li><strong>SIP Trunking:</strong> Credentials or connection token from your SIP provider console</li>
                                     <li><strong>Exotel:</strong> API Key and App ID from exotel.com</li>
                                 </ul>
                             </li>
@@ -124,14 +123,14 @@ export default function VoiceAIPage() {
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-6">
-                        <h3 className="text-lg font-medium text-slate-900 mb-3">4. Connect to Chatwoot Inbox</h3>
+                        <h3 className="text-lg font-medium text-slate-900 mb-3">4. Connect to SwanDesk Inbox</h3>
                         <p className="text-slate-600 mb-4">
-                            Voice call transcripts automatically sync to Chatwoot for unified customer view.
+                            Voice call transcripts automatically sync to SwanDesk for unified customer view.
                         </p>
                         <ol className="list-decimal list-inside space-y-3 text-slate-600">
                             <li>Go to <strong>Settings → Channels → Voice</strong></li>
                             <li>Click <strong>Connect Voice Inbox</strong></li>
-                            <li>Select or create a Chatwoot inbox for voice calls</li>
+                            <li>Select or create a SwanDesk inbox for voice calls</li>
                             <li>Configure <strong>post-call summary</strong> (AI-generated summary after each call)</li>
                             <li>Enable <strong>transcript sync</strong> to attach full conversation to ticket</li>
                         </ol>

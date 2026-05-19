@@ -13,8 +13,8 @@ export default function NewsroomPage() {
     };
 
     const pressReleases = [
-        { title: "SwanDesk Now Supports On-Premises Deployment for BFSI", date: "March 2026", category: "Product", excerpt: "SwanDesk's air-gapped on-premises mode — using Ollama LLM, Whisper STT, and Asterisk SIP — is now available for banks and financial institutions requiring full data sovereignty under DPDP 2023." },
-        { title: "Voice Bot Support Added: Hindi, Tamil, Telugu, and 8 More Indian Languages", date: "February 2026", category: "Product", excerpt: "SwanDesk Voice Bot now supports 10+ Indian languages via Retell AI (cloud) and Whisper + Coqui TTS (on-premises), enabling phone support for Indian enterprises in their customers' native language." }
+        { title: "SwanDesk Now Supports On-Premises Deployment for BFSI", date: "March 2026", category: "Product", excerpt: "SwanDesk's air-gapped on-premises mode — using secure local LLMs, offline speech-to-text models, and enterprise SIP trunking — is now available for banks and financial institutions requiring full data sovereignty under DPDP 2023." },
+        { title: "Voice Bot Support Added: Hindi, Tamil, Telugu, and 8 More Indian Languages", date: "February 2026", category: "Product", excerpt: "SwanDesk Voice Bot now supports 10+ Indian languages via advanced cloud voice processors and private offline speech-to-text/synthesis engines, enabling phone support for Indian enterprises in their customers' native language." }
     ];
 
     const mediaKit = [

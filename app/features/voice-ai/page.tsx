@@ -136,7 +136,7 @@ export default function VoiceAIPage() {
                             <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-xl shrink-0">1</div>
                             <div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-2">Customer Calls Your Number</h3>
-                                <p className="text-slate-600">Calls are routed through Twilio/Plivo to SwanDigitals's voice engine. The AI picks up instantly — no hold times.</p>
+                                <p className="text-slate-600">Calls are routed through secure SIP trunking to SwanDigitals's voice engine. The AI picks up instantly — no hold times.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-6">

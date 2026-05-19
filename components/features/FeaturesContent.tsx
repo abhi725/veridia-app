@@ -1,14 +1,14 @@
 "use client";
 
 import SiteLayout from '@/components/layout/SiteLayout';
-import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
     MessageSquare, Brain, Globe, BarChart3, Zap, Users, Shield, Settings,
     Code, Layers, Bot, Mic, Phone, Database, FileText, Headphones,
     Building2, ShoppingCart, Briefcase, Heart, Check, X, ChevronRight,
-    MessageCircle, MapPin
+    MessageCircle, MapPin, Activity, Clock, PhoneCall, ArrowRight, Play, Pause
 } from 'lucide-react';
 
 function useReveal() {
@@ -24,7 +24,7 @@ function useReveal() {
                     }
                 });
             },
-            { threshold: 0.1 }
+            { threshold: 0.05 }
         );
         if (ref.current) observer.observe(ref.current);
         return () => observer.disconnect();
@@ -33,552 +33,840 @@ function useReveal() {
 }
 
 export default function FeaturesContent() {
-    const [activeTab, setActiveTab] = useState('ai');
+    const searchParams = useSearchParams();
+    const [activeProduct, setActiveProduct] = useState<'chatbot' | 'voicebot'>('chatbot');
     
-    const coreFeaturesRef = useReveal();
-    const capabilitiesRef = useReveal();
-    const knowledgeRef = useReveal();
-    const voiceRef = useReveal();
-    const languagesRef = useReveal();
-    const useCasesRef = useReveal();
-    const comparisonRef = useReveal();
+    // Sync URL search params
+    useEffect(() => {
+        const prod = searchParams.get('product');
+        if (prod === 'voicebot') {
+            setActiveProduct('voicebot');
+        } else {
+            setActiveProduct('chatbot');
+        }
+    }, [searchParams]);
 
-    const featureTabs = [
-        { id: 'ai', label: 'AI & NLU', icon: <Brain className="w-5 h-5" /> },
-        { id: 'channels', label: 'Channels', icon: <Globe className="w-5 h-5" /> },
-        { id: 'voice', label: 'Voice AI', icon: <Mic className="w-5 h-5" /> },
-        { id: 'analytics', label: 'Analytics', icon: <BarChart3 className="w-5 h-5" /> },
-        { id: 'security', label: 'Security', icon: <Shield className="w-5 h-5" /> },
-    ];
-
-    const featureDetails: Record<string, { title: string; description: string; features: string[] }> = {
-        ai: {
-            title: "Advanced AI & Natural Language Understanding",
-            description: "Powered by cutting-edge LLMs including Gemini Pro/Ultra and Ollama (on-premises) or leading cloud LLMs for maximum flexibility.",
-            features: [
-                "Multi-turn conversational AI with context awareness",
-                "Intent detection with high accuracy across Indian languages",
-                "Entity extraction for names, dates, amounts, etc.",
-                "Sentiment analysis in real-time",
-                "Custom model training on your data",
-                "10+ Indian languages natively supported",
-                "Fallback handling with graceful escalation",
-                "Active learning from human corrections"
-            ]
-        },
-        channels: {
-            title: "Omnichannel Deployment",
-            description: "Deploy once, reach customers everywhere. Unified inbox for all conversations.",
-            features: [
-                "WhatsApp Business API (Official Partner)",
-                "Web chat widget (customizable)",
-                "Facebook Messenger & Instagram DMs",
-                "Slack & Microsoft Teams for internal bots",
-                "Telegram Bot API",
-                "SMS integration",
-                "Mobile SDK (iOS & Android)",
-                "Email automation"
-            ]
-        },
-        voice: {
-            title: "Native Voice AI",
-            description: "Human-like phone conversations with <500ms latency. Not an add-on – built into the platform.",
-            features: [
-                "Inbound & outbound calling",
-                "Real-time speech-to-text",
-                "Natural text-to-speech (multiple voices)",
-                "Call recording & transcription",
-                "IVR replacement / modernization",
-                "Call transfer to human agents",
-                "DTMF tone handling",
-                "Integration with existing PBX/SIP systems"
-            ]
-        },
-        analytics: {
-            title: "Real-Time Analytics Dashboard",
-            description: "Track every conversation, measure ROI, and optimize continuously.",
-            features: [
-                "Conversation volume & trends",
-                "Resolution rate & CSAT scores",
-                "Agent performance metrics",
-                "Intent & entity analytics",
-                "Sentiment distribution",
-                "Funnel & drop-off analysis",
-                "Custom report builder",
-                "Export to BI tools (Power BI, Tableau)"
-            ]
-        },
-        security: {
-            title: "Enterprise-Grade Security",
-            description: "Built for regulated industries. DPDP 2023 & RBI compliant.",
-            features: [
-                "True on-premise / air-gapped deployment",
-                "100% data residency in India",
-                "AES-256 encryption at rest & in transit",
-                "SOC 2 Type II aligned architecture",
-                "DPDP 2023, GDPR-ready design",
-                "Role-based access control (RBAC)",
-                "SSO with SAML 2.0 / OAuth 2.0",
-                "Audit logging & compliance reports"
-            ]
+    const handleProductChange = (prod: 'chatbot' | 'voicebot') => {
+        setActiveProduct(prod);
+        const newUrl = `${window.location.pathname}?product=${prod}`;
+        window.history.replaceState({ ...window.history.state, as: newUrl, url: newUrl }, '', newUrl);
+        // Scroll slightly down to focus on features/tab bar
+        const switchElement = document.getElementById('product-features-container');
+        if (switchElement) {
+            switchElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
 
-    const platformCapabilities = [
-        {
-            title: "No-Code Conversation Builder",
-            desc: "Visual drag-and-drop interface. Build complex flows without writing code. Business users can create and update bots independently.",
-            icon: <Layers className="w-8 h-8" />
-        },
-        {
-            title: "Pro-Code SDK & APIs",
-            desc: "Full REST API access for developers. Extend functionality, build custom integrations, and automate workflows programmatically.",
-            icon: <Code className="w-8 h-8" />
-        },
-        {
-            title: "AI Training Studio",
-            desc: "Continuously improve accuracy with active learning. Review misunderstood intents, add training data, and watch accuracy improve.",
-            icon: <Brain className="w-8 h-8" />
-        },
-        {
-            title: "Multi-Agent Orchestration",
-            desc: "Deploy specialized agents for different departments. Route conversations intelligently based on intent, sentiment, or customer profile.",
-            icon: <Bot className="w-8 h-8" />
-        },
-        {
-            title: "Knowledge Base Integration",
-            desc: "Connect to your documents, FAQs, PDFs, and databases. AI retrieves and synthesizes accurate answers from your knowledge sources.",
-            icon: <Database className="w-8 h-8" />
-        },
-        {
-            title: "Live Agent Handoff",
-            desc: "Seamless transfer to human agents with full context. Agents see entire conversation history, customer data, and AI suggestions.",
-            icon: <Users className="w-8 h-8" />
-        },
-        {
-            title: "Workflow Automation",
-            desc: "Trigger actions in external systems. Create tickets, update CRM, process payments, send notifications – all from conversations.",
-            icon: <Settings className="w-8 h-8" />
-        },
-        {
-            title: "Document Processing",
-            desc: "Extract data from uploaded documents. Handle ID verification, form processing, and document classification automatically.",
-            icon: <FileText className="w-8 h-8" />
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const headerOffset = 120;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
-    ];
-
-    const useCases = [
-        {
-            title: "Customer Service",
-            icon: <Headphones className="w-8 h-8" />,
-            description: "Automate support inquiries with instant 24/7 responses across all channels.",
-            stats: ["24/7 Availability", "Multi-channel", "AI-Powered"],
-            benefits: ["FAQ automation", "Order tracking", "Complaint handling", "Appointment scheduling"],
-            link: "/solutions/customer-service"
-        },
-        {
-            title: "Banking & Finance",
-            icon: <Building2 className="w-8 h-8" />,
-            description: "RBI-compliant AI agents for account services, loan inquiries, and transaction support.",
-            stats: ["100% data sovereignty", "DPDP 2023 compliant", "On-premise ready"],
-            benefits: ["Balance inquiries", "Fund transfers", "Loan applications", "KYC assistance"],
-            link: "/solutions/banking"
-        },
-        {
-            title: "E-Commerce",
-            icon: <ShoppingCart className="w-8 h-8" />,
-            description: "Convert browsers to buyers with product recommendations, cart recovery, and order support.",
-            stats: ["Cart Recovery", "Personalization", "24/7 Availability"],
-            benefits: ["Product search", "Order status", "Returns & refunds", "Personalized offers"],
-            link: "/solutions/retail"
-        },
-        {
-            title: "HR & Employee Experience",
-            icon: <Briefcase className="w-8 h-8" />,
-            description: "Internal helpdesk for HR, IT, and operations. Empower employees with self-service.",
-            stats: ["Self-Service", "Internal Automation", "Employee Enablement"],
-            benefits: ["Leave requests", "Policy queries", "Onboarding", "IT support"],
-            link: "/solutions/employee-experience"
-        },
-        {
-            title: "Healthcare",
-            icon: <Heart className="w-8 h-8" />,
-            description: "DPDP Act & HIPAA-ready patient engagement. Appointment scheduling, symptom triage, and follow-ups.",
-            stats: ["DPDP Act ready", "24/7 patient support", "Reduced no-shows"],
-            benefits: ["Appointment booking", "Prescription refills", "Lab results", "Care reminders"],
-            link: "/solutions/healthcare"
-        }
-    ];
-
-    // Comprehensive competitor comparison
-    const competitorComparison = [
-        { feature: "No-Code Builder", swanDigitals: true, koreai: "Limited", yellowai: true, haptik: true, zendesk: "Limited", intercom: true },
-        { feature: "Native Voice AI", swanDigitals: true, koreai: "Add-on", yellowai: "Add-on", haptik: "Limited", zendesk: false, intercom: false },
-        { feature: "On-Premise Deployment", swanDigitals: true, koreai: true, yellowai: false, haptik: false, zendesk: false, intercom: false },
-        { feature: "100% India Data Residency", swanDigitals: true, koreai: "On Request", yellowai: "On Request", haptik: "Limited", zendesk: false, intercom: false },
-        { feature: "10+ Indian Languages", swanDigitals: true, koreai: "Limited", yellowai: true, haptik: true, zendesk: "Limited", intercom: "Limited" },
-        { feature: "WhatsApp Business API", swanDigitals: true, koreai: true, yellowai: true, haptik: true, zendesk: true, intercom: true },
-        { feature: "Live Agent Handoff", swanDigitals: true, koreai: true, yellowai: true, haptik: true, zendesk: true, intercom: true },
-        { feature: "Knowledge Base AI", swanDigitals: true, koreai: true, yellowai: true, haptik: "Limited", zendesk: true, intercom: true },
-        { feature: "Multi-Agent Orchestration", swanDigitals: true, koreai: true, yellowai: true, haptik: "Limited", zendesk: false, intercom: false },
-        { feature: "Conversation Analytics", swanDigitals: true, koreai: true, yellowai: true, haptik: "Limited", zendesk: true, intercom: true },
-        { feature: "DPDP 2023 Compliance", swanDigitals: true, koreai: "On Request", yellowai: "On Request", haptik: "Partial", zendesk: false, intercom: false },
-        { feature: "RBI Guidelines Ready", swanDigitals: true, koreai: "On Request", yellowai: "On Request", haptik: "Partial", zendesk: false, intercom: false },
-        { feature: "Setup in Days (not months)", swanDigitals: true, koreai: false, yellowai: false, haptik: true, zendesk: true, intercom: true },
-        { feature: "Flat Platform Pricing", swanDigitals: true, koreai: false, yellowai: false, haptik: false, zendesk: false, intercom: false },
-        { feature: "Dedicated CSM (Enterprise)", swanDigitals: true, koreai: true, yellowai: true, haptik: "Premium", zendesk: "Premium", intercom: "Premium" },
-    ];
-
-    const renderComparisonCell = (value: boolean | string) => {
-        if (value === true) return <Check className="w-5 h-5 text-green-500 mx-auto" />;
-        if (value === false) return <X className="w-5 h-5 text-red-400 mx-auto" />;
-        return <span className="text-slate-500 font-medium text-xs uppercase tracking-wider">{value}</span>;
     };
+
+    // Reveal animation refs
+    const heroRef = useReveal();
+    const contentRef = useReveal();
+    const ctaRef = useReveal();
+
+    // ----------------------------------------------------
+    // CHATBOT DATA
+    // ----------------------------------------------------
+    const chatbotTabs = [
+        { id: 'ai-engine', label: 'AI Engine' },
+        { id: 'channels', label: 'Channels' },
+        { id: 'inbox-mgmt', label: 'Inbox & Conversations' },
+        { id: 'contacts-crm', label: 'Contacts & CRM' },
+        { id: 'automation-workflows', label: 'Automation' },
+        { id: 'productivity-tools', label: 'Productivity' },
+        { id: 'reporting-analytics', label: 'Analytics' },
+        { id: 'customization-selfservice', label: 'Customization' },
+        { id: 'security-compliance', label: 'Security' },
+    ];
+
+    const chatbotSections = [
+        {
+            id: 'ai-engine',
+            badge: "🧠 SwanAI Engine",
+            title: "State-of-the-Art NLU & Contextual Logic",
+            description: "Purpose-built NLU models with robust memory and semantic search integration.",
+            cards: [
+                { title: "Context-Aware RAG Memory", desc: "Reads entire history of a ticket. Uses Vector RAG database to query documents and return factual answers." },
+                { title: "Multilingual NLU (10+ Languages)", desc: "Native processing of Hindi, Tamil, Telugu, Kannada, Malayalam, Hinglish etc. without translation API overhead." },
+                { title: "Zero-Hallucination Safe Fallback", desc: "AI refuses to answer if not present in manuals, and escalates gracefully with brief context tags." },
+                { title: "Sentiment-Driven Escalation", desc: "Detects frustrated or angry user inputs, pauses bot automation, and instantly flags live agent." },
+                { title: "Intent Extraction", desc: "Captures entities like dates, ticket ID, Aadhaar card patterns, and links to direct workflows." },
+                { title: "Self-Improving Playgrounds", desc: "Active learning engine where supervisors review chat outputs and improve knowledge triggers directly." }
+            ]
+        },
+        {
+            id: 'channels',
+            badge: "💬 Omnichannel Inbox",
+            title: "Reach Customers Anywhere. Manage in One Inbox.",
+            description: "Stop switching tabs. SwanDesk integrates with 13+ digital channels seamlessly.",
+            cards: [
+                { title: "WhatsApp Business API", desc: "Official BSP integration. Send broadcasts, handle incoming queries, verify OTPs directly." },
+                { title: "0% Meta Fee Markup", desc: "We pass Meta conversation fees strictly at cost. Zero markup, zero transactional tax margins." },
+                { title: "Interactive WhatsApp Elements", desc: "Send list messages, CTA reply buttons, templates, and rich-text files seamlessly." },
+                { title: "Instagram DMs", desc: "Automate story replies, direct message flows, and product inquiries on Instagram." },
+                { title: "Facebook Messenger", desc: "Engage users and capture leads on Facebook with instantaneous conversational AI." },
+                { title: "Telegram Bot API", desc: "Direct support for Telegram channels, groups, and transactional alert engines." },
+                { title: "Web Live Chat Widget", desc: "Fully custom CSS widget with customizable avatars, triggers, and notification bubbles." },
+                { title: "Email Automation", desc: "Syncs corporate support mailboxes. AI automatically categorizes, drafts responses, and resolves." },
+                { title: "Mobile SDK (iOS & Android)", desc: "Embed real-time, low-overhead secure support chat inside your proprietary mobile applications." },
+                { title: "API Channel", desc: "Deliver raw transcripts, capture custom webhook queries, and connect legacy middleware." },
+                { title: "Voice AI Integration", desc: "Full sync with voice agent transcripts. Keep chats and phone transcripts combined.", isLinkToVoice: true }
+            ]
+        },
+        {
+            id: 'inbox-mgmt',
+            badge: "📬 Inbox Management",
+            title: "Enterprise Ticketing Made Simple",
+            description: "Collaborate, route, and resolve conversations at scale without losing context.",
+            cards: [
+                { title: "Unified Multi-Channel Inbox", desc: "View all active chats across WhatsApp, Web, Email, and Instagram in a single collaborative interface." },
+                { title: "Dynamic Team Collaborator", desc: "Add private notes to conversations, tag colleagues, and coordinate responses behind the scenes." },
+                { title: "Auto-Assignment Rules", desc: "Intelligent round-robin routing to load-balance active conversations across online agents." },
+                { title: "Granular Folders & Views", desc: "Create custom views for 'Payment Issues', 'High Priority', or 'Active Trials' for specialized teams." },
+                { title: "Live Typo/Draft Previews", desc: "See what the user is typing in real-time before they click send, speeding up resolution." },
+                { title: "Message De-duplication", desc: "Intelligently merges duplicate tickets when a user reaches out on both WhatsApp and Web simultaneously." },
+                { title: "Department Routing", desc: "Direct queries to Finance, Technical Support, or Sales automatically based on user choices or NLU intent." },
+                { title: "Custom SLA Escalation", desc: "Set strict resolution deadlines. Auto-escalate conversations to team leaders if breached." },
+                { title: "Conversation Snoozing", desc: "Temporarily hide tickets awaiting customer replies. Auto-reopen when the customer responds." },
+                { title: "Bulk Resolution", desc: "Resolve hundreds of generic status inquiries or campaign replies in a single bulk operation." },
+                { title: "Interactive CSAT Builder", desc: "Trigger automated satisfaction surveys at resolution. Track scores directly on the analytics dashboard." }
+            ]
+        },
+        {
+            id: 'contacts-crm',
+            badge: "👥 Contacts & CRM",
+            title: "Know Who You Are Talking To",
+            description: "Every customer conversation enriched with historic context, custom traits, and full activity logs.",
+            cards: [
+                { title: "Unified Customer Profile", desc: "A single view of all historic chats, customer value, phone number, and support rating." },
+                { title: "Custom Data Attributes", desc: "Define custom fields like 'Customer Tier', 'City', or 'Plan Type' to segment and route users." },
+                { title: "Interactive Contact Labels", desc: "Tag contacts with 'VIP', 'Lead', or 'Spam' to visually highlight ticket priorities." },
+                { title: "CRM Bidirectional Sync", desc: "Integrate with Salesforce, HubSpot, and Zoho. Pull data in real-time, and sync chat outcomes." },
+                { title: "Contact Search & Filter", desc: "Locate specific customers instantly using names, phone numbers, or metadata parameters." },
+                { title: "Historic Activity Timeline", desc: "Trace entire touchpoints: from website lead generation, to WhatsApp newsletters, to tickets." }
+            ]
+        },
+        {
+            id: 'automation-workflows',
+            badge: "⚡ Automation & Workflows",
+            title: "Put Customer Service on Autopilot",
+            description: "No-code workflow engine to orchestrate actions, routing, and notifications.",
+            cards: [
+                { title: "Visual Flow Builder", desc: "Create complex, branching customer paths. Connect logic steps, delays, and API prompts." },
+                { title: "n8n Native Workflows", desc: "Trigger external actions across 200+ business applications (Google Sheets, ERPs, SMS alerts)." },
+                { title: "Pre-defined Macro Templates", desc: "Create canned responses for frequently used answers. Trigger with keyboard shortcuts." },
+                { title: "Webhook Event Triggers", desc: "Send real-time alerts to your custom backend when tickets are assigned, resolved, or rated." },
+                { title: "Dynamic Outbound Campaigns", desc: "Schedule automated WhatsApp broadcast sequences based on contact tags or custom triggers." },
+                { title: "Auto-Responder Schedule", desc: "Set custom out-of-hours messages, weekend schedules, and regional holiday notifications." }
+            ]
+        },
+        {
+            id: 'productivity-tools',
+            badge: "🚀 Productivity Tools",
+            title: "Empower Your Support Teams",
+            description: "Give your human agents the tools they need to resolve conversations 4X faster.",
+            cards: [
+                { title: "AI Reply Copilot", desc: "SwanAI automatically suggests answers based on the knowledge base. Agents approve with one click." },
+                { title: "AI Conversation Summaries", desc: "Get bullet-point summaries of long, multi-turn chats in seconds, perfect for quick handoffs." },
+                { title: "Keyboard Shortcodes", desc: "Access canned responses, change statuses, or assign teammates instantly without touching the mouse." },
+                { title: "Internal Department Notes", desc: "Leave private context updates on conversations. Customer never sees them." },
+                { title: "Collision Detection", desc: "Prevent multiple agents from replying to the same customer simultaneously with live warnings." }
+            ]
+        },
+        {
+            id: 'reporting-analytics',
+            badge: "📊 Reporting & Analytics",
+            title: "Data-Driven Performance Tracking",
+            description: "Measure automation rates, team efficiency, and satisfaction scores with real-time dashboards.",
+            cards: [
+                { title: "Automation Deflection Rate", desc: "Track exactly how many inquiries the AI resolved independently without human intervention." },
+                { title: "First Response Latency", desc: "Measure team speed. View averages, peak hours, and individual agent response times." },
+                { title: "CSAT & NPS Tracker", desc: "Analyze customer happiness. Filter scores by channel, department, or individual agent." },
+                { title: "Sentiment Analysis Trends", desc: "Monitor overall customer mood and detect shifts in customer satisfaction in real-time." },
+                { title: "Topic & Intent Distribution", desc: "Identify top customer issues (e.g. 'Refunds', 'Login Error') to improve knowledge bases." },
+                { title: "Agent Performance Metrics", desc: "Track resolved tickets, active hours, and average resolution times for every agent." },
+                { title: "Channel Volume Comparison", desc: "Visualize conversation traffic across WhatsApp, Email, Web, and Instagram to align resources." },
+                { title: "Custom Report Exports", desc: "Export granular raw data as CSV or automatically sync with BI tools like Power BI or Tableau." }
+            ]
+        },
+        {
+            id: 'customization-selfservice',
+            badge: "🎨 Customization & Branding",
+            title: "Make It Uniquely Yours",
+            description: "Customize the widget styling, tone of voice, and self-service capabilities.",
+            cards: [
+                { title: "Brand CSS Customizer", desc: "Tailor the Web Chat widget to match your website: logos, avatars, custom gradients, and fonts." },
+                { title: "Tone of Voice Configuration", desc: "Adjust the AI personality: choose between formal, friendly, empathetic, or highly energetic." },
+                { title: "Interactive Quick FAQ Modals", desc: "Present users with quick-clickable FAQ buttons inside the widget for immediate answers." },
+                { title: "Customer Portal Builder", desc: "Enable customers to view historic tickets, check open statuses, and self-resolve from a secure page." },
+                { title: "White-Labeled Dashboard", desc: "Rebrand the agent dashboard with your corporate identity, domains, and single-sign-on systems." }
+            ]
+        },
+        {
+            id: 'security-compliance',
+            badge: "🛡️ Security & Compliance",
+            title: "Sovereign AI. Bank-Grade Security.",
+            description: "Designed to meet the absolute strictest regulatory requirements in highly regulated sectors.",
+            cards: [
+                { title: "True Air-Gapped On-Premises", desc: "Run the entire platform, databases, and local AI engines behind your corporate firewall." },
+                { title: "100% Indian Data Residency", desc: "All conversational logs, databases, and vector spaces strictly hosted in Mumbai cloud regions." },
+                { title: "DPDP Act 2023 Ready", desc: "Built-in consent builders, right-to-erase triggers, and detailed data logs aligning with local laws." },
+                { title: "AES-256 & TLS 1.3 Encryption", desc: "Data is fully encrypted at rest using AES-256 keys and strictly in transit via TLS 1.3." },
+                { title: "Automatic PII Masking", desc: "Dynamically redact Aadhaar cards, PAN numbers, credit cards, and UPI IDs before writing to logs." },
+                { title: "Granular RBAC & SAML SSO", desc: "Enforce department-level access controls and integrate with SAML 2.0 / corporate Active Directory." }
+            ]
+        }
+    ];
+
+    const chatbotComparison = [
+        {
+            feature: "Omnichannel Inbox",
+            swanDesk: "True unified inbox for WhatsApp, web, email, Instagram in one dashboard.",
+            freshdesk: "Separate siloed modules; poor live sync.",
+            intercom: "High quality but expensive per-seat logic.",
+            zendesk: "Traditional email-first; complex configuration.",
+            yellowai: "Largely bot-focused; manual ticketing is weak.",
+            koreai: "Heavy programmatic bot builder; poor agent interface."
+        },
+        {
+            feature: "WhatsApp Official API Fees",
+            swanDesk: "0% Meta Markup (billed strictly at official pass-through cost).",
+            freshdesk: "Marked up or restricted templates.",
+            intercom: "High markup per customer contact reached.",
+            zendesk: "Markup applied through third-party BSPs.",
+            yellowai: "Included in high custom monthly packages.",
+            koreai: "Expensive transaction-based pricing models."
+        },
+        {
+            feature: "Pricing Model",
+            swanDesk: "Flat Monthly Fee (Unlimited agent seats & volume tiers).",
+            freshdesk: "Seat-based (expensive to scale human workforce).",
+            intercom: "Seat-based + active customer reach counts.",
+            zendesk: "High per-seat pricing + paid AI add-ons.",
+            yellowai: "Usage-based per conversation.",
+            koreai: "Opaque enterprise pricing + high setup costs."
+        },
+        {
+            feature: "Data Sovereignty",
+            swanDesk: "100% Indian Data Residency (Mumbai servers) out-of-the-box.",
+            freshdesk: "Hosted in global US/EU server spaces.",
+            intercom: "Global servers; no regional residency options.",
+            zendesk: "Global hosting; expensive custom request.",
+            yellowai: "Custom local hosting on expensive tiers only.",
+            koreai: "Dedicated VPC available only on custom tiers."
+        },
+        {
+            feature: "Air-Gapped On-Premises",
+            swanDesk: "Available (Full Docker self-hosted option with local LLM).",
+            freshdesk: "Not supported.",
+            intercom: "Not supported.",
+            zendesk: "Not supported.",
+            yellowai: "VPC hosting only; no true air-gapped on-premise.",
+            koreai: "VPC hosting only; no physical self-hosted option."
+        },
+        {
+            feature: "Indian Language NLU",
+            swanDesk: "Native Hinglish + 10 regional Indian languages.",
+            freshdesk: "English translation API layer (high error rate).",
+            intercom: "Translation layer (poor understanding of Hinglish).",
+            zendesk: "Translation layer; no local Hinglish support.",
+            yellowai: "Support via generic model translation.",
+            koreai: "Support via generic enterprise translation API."
+        },
+        {
+            feature: "Implementation Support",
+            swanDesk: "Live in 7 Days (We build, ingest, and test the model for you).",
+            freshdesk: "Self-serve or expensive implementation partners.",
+            intercom: "Self-serve; heavy automated tutorials.",
+            zendesk: "Months of consulting and system integrator delays.",
+            yellowai: "Months of custom deployment engineering.",
+            koreai: "Significant development cycles and coding required."
+        }
+    ];
+
+    // ----------------------------------------------------
+    // VOICE AI DATA
+    // ----------------------------------------------------
+    const voiceTabs = [
+        { id: 'how-it-works', label: 'How It Works' },
+        { id: 'languages', label: 'Languages' },
+        { id: 'inbound', label: 'Inbound' },
+        { id: 'outbound', label: 'Outbound' },
+        { id: 'agent-transfer', label: 'Agent Transfer' },
+        { id: 'call-analytics', label: 'Analytics' },
+        { id: 'on-premises', label: 'On-Premises' },
+        { id: 'integrations', label: 'Integrations' }
+    ];
+
+    const voiceSections = [
+        {
+            id: 'how-it-works',
+            badge: "⚙️ Low-Latency Call Engine",
+            title: "Human-Like Phone Conversations in Real-Time",
+            description: "Advanced telephony coupled with local low-latency speech engines to deliver natural exchanges.",
+            isCallFlow: true,
+            cards: [
+                { title: "Speech Recognition (ASR)", desc: "Real-time speech-to-text specifically tuned for regional Indian accents, Hinglish, and background noise." },
+                { title: "Dynamic NLU Logic", desc: "Dynamic intent and context management. Adapts to interruptions and conversational shifts instantly." },
+                { title: "Speech Synthesis (TTS)", desc: "Hyper-realistic voice synthesis. Feels like talking to a real human, with natural pauses and warm accents." }
+            ]
+        },
+        {
+            id: 'languages',
+            badge: "🗣️ Native Languages",
+            title: "Talk to Your Customers in Their Dialect",
+            description: "Native NLU support for 10+ regional Indian languages.",
+            isLanguagesGrid: true,
+            cards: [
+                { title: "Native Dialect Processing", desc: "Trained directly on regional dialects, colloquial inputs, and specific local vocabulary." },
+                { title: "Code-Mixed Hinglish", desc: "Flawlessly processes mixed languages (Hinglish, Tanglish, Kanglish), shifting vocabulary, and colloquial grammar." },
+                { title: "Dynamic Language Switch", desc: "The AI agent can detect and adapt to the customer's spoken language on-the-fly mid-call." }
+            ]
+        },
+        {
+            id: 'inbound',
+            badge: "📥 Inbound Calling",
+            title: "Say Goodbye to Robotic IVR Menus",
+            description: "24/7 instant pick-up, zero hold times, and infinite concurrent scale.",
+            cards: [
+                { title: "Robotic IVR Replacement", desc: "No more 'Press 1 for sales'. Customers ask queries naturally, and the AI resolves instantly." },
+                { title: "Infinite Scale & Concurrency", desc: "Handle hundreds of concurrent calls simultaneously. Say goodbye to busy tones and long queues." },
+                { title: "Transactional Voice Actions", desc: "Book appointments, track orders, verify PINs, and update backend databases in real-time." },
+                { title: "Smart Fallback & Escalation", desc: "Politely identifies when queries are out-of-scope and routes calls safely to standby human teams." }
+            ]
+        },
+        {
+            id: 'outbound',
+            badge: "📤 Outbound Campaigns",
+            title: "Proactive Customer Outreach at Scale",
+            description: "Deliver reminders, lead qualification, and recovery campaigns automatically.",
+            cards: [
+                { title: "Smart Payment Recovery", desc: "Automate polite EMI and outstanding balance reminders. Offer easy scheduling for callbacks." },
+                { title: "Lead Qualification Calls", desc: "Qualify inbound leads instantly. Verify budget, authority, timeline, and sync data instantly." },
+                { title: "CSV Broadcast Campaigns", desc: "Upload contact lists via CSV and schedule simultaneous outbound voice broadcasts in regional dialects." },
+                { title: "Automated Retry Logic", desc: "Configure smart redial intervals for busy signals, missed calls, and network issues." }
+            ]
+        },
+        {
+            id: 'agent-transfer',
+            badge: "🤝 Live Handoff",
+            title: "Seamless Collaboration Between AI & Humans",
+            description: "Graceful transition of phone calls to active customer representatives.",
+            cards: [
+                { title: "Instant Telephony Escalation", desc: "Transfer calls directly to human SIP endpoints or regional numbers when requested." },
+                { title: "Full Historic Sync", desc: "Human agents receive a detailed summary of the AI conversation before the transfer." },
+                { title: "Smart Keywords", desc: "Set words like 'agent', 'manager', or 'human' to trigger immediate human escalation." }
+            ]
+        },
+        {
+            id: 'call-analytics',
+            badge: "📊 Analytics & Audit",
+            title: "Granular Call Metrics & Transcription",
+            description: "Complete operational visibility over every customer phone call.",
+            cards: [
+                { title: "Call Recording", desc: "Record every inbound and outbound conversation for compliance, quality audit, and training." },
+                { title: "Automatic Transcription", desc: "Speech transcripts generated automatically. Search calls using text search terms in the inbox." },
+                { title: "AI Post-Call Summaries", desc: "Bullet-point call summaries automatically attached to the SwanDesk customer profile." },
+                { title: "Telecom Call Metrics", desc: "Track duration, drop-offs, sentiment shifts, and resolution rate for every campaign." }
+            ]
+        },
+        {
+            id: 'on-premises',
+            badge: "🧱 On-Premises Voice",
+            title: "Sovereign Voice Deployment for BFSI",
+            description: "Deploy your entire voice infrastructure within your own private network.",
+            cards: [
+                { title: "Air-Gapped Telephony", desc: "No voice data ever exits your network. Ideal for banks, NBFCs, and healthcare." },
+                { title: "Asterisk/SIP Trunking", desc: "Natively connects to your local Asterisk nodes and existing enterprise SIP gateways." },
+                { title: "Localized Speech Engine", desc: "ASR and TTS run on localized hardware GPUs. Zero public API calls, zero egress." }
+            ]
+        },
+        {
+            id: 'integrations',
+            badge: "🔌 Integrations",
+            title: "Works Natively with Your Existing Stack",
+            description: "Synchronize call outcomes, fetch caller records, and update databases.",
+            cards: [
+                { title: "Unified Helpdesk Sync", desc: "Transcripts and post-call summaries sync immediately with SwanDesk omnichannel inbox." },
+                { title: "Salesforce & HubSpot Sync", desc: "Automatically update lead statuses, log call activity, and trigger follow-up tasks." },
+                { title: "Secure Database Inquiries", desc: "Securely query core systems to verify account details, balances, or order statuses." },
+                { title: "SIP Trunk Compatibility", desc: "Natively compatible with leading enterprise SIP trunks and local telecom providers." }
+            ]
+        }
+    ];
+
+    const voiceComparison = [
+        {
+            feature: "Response Latency",
+            swanDeskVoice: "<500ms (Hyper-realistic, natural turn-taking).",
+            exotel: "2-3s (Rigid IVR logic or delayed cloud webhook triggers).",
+            ozonetel: "2-3s (Delayed webhook audio processing).",
+            myoperator: "Legacy DTMF (No real-time dynamic conversational speech).",
+            yellowaiVoice: "1-2s response gap (Feels robotic)."
+        },
+        {
+            feature: "Indian Language NLU",
+            swanDeskVoice: "Native Hinglish + 10 regional Indian languages natively supported.",
+            exotel: "Basic TTS translation (Lacks regional dialects).",
+            ozonetel: "Raw translation layers; high accent failure.",
+            myoperator: "Pre-recorded audio prompts only; zero dynamic speech.",
+            yellowaiVoice: "4-5 languages; translations are prone to latency."
+        },
+        {
+            feature: "IVR Replacement",
+            swanDeskVoice: "Full conversational AI (Customers speak naturally immediately).",
+            exotel: "DTMF keypress menus only ('Press 1 for...').",
+            ozonetel: "DTMF keypress menus only.",
+            myoperator: "Rigid traditional receptionist queues.",
+            yellowaiVoice: "Add-on module; complex configuration."
+        },
+        {
+            feature: "Smart Recovery Campaigns",
+            swanDeskVoice: "Proactive outbound collections agent with callbacks.",
+            exotel: "Raw robo-blasts with standard voice file playbacks.",
+            ozonetel: "Basic broadcast calling scripts.",
+            myoperator: "Manual agent dialing only.",
+            yellowaiVoice: "High call-rate usage charge; cost prohibitive."
+        },
+        {
+            feature: "Air-Gapped On-Premises",
+            swanDeskVoice: "Available (Deploy speech nodes locally for sovereign security).",
+            exotel: "Cloud only.",
+            ozonetel: "Cloud only.",
+            myoperator: "Cloud only.",
+            yellowaiVoice: "Cloud only."
+        },
+        {
+            feature: "Unified Helpdesk Sync",
+            swanDeskVoice: "Transcripts and summaries sync instantly to unified inbox.",
+            exotel: "Delivered as external webhook API logs.",
+            ozonetel: "Separate console required to access recordings.",
+            myoperator: "Basic call logs with no transcript details.",
+            yellowaiVoice: "Requires customized middle-tier integrations."
+        }
+    ];
 
     return (
         <SiteLayout>
-            <Hero
-                badge="Platform Features"
-                title="Everything You Need to Build Enterprise AI"
-                subtitle="From no-code conversation builders to native voice AI. Deploy in days, scale to millions of conversations."
-                primaryCTA={{ text: "Book a Demo", href: "/demo" }}
-                secondaryCTA={{ text: "Contact Sales", href: "/contact" }}
-            />
+            {/* 1. HERO SECTION (DYNAMIC THEME SWAPPING) */}
+            <section 
+                ref={heroRef}
+                className={`relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden transition-colors duration-500 ${
+                    activeProduct === 'chatbot' ? 'bg-slate-950' : 'bg-slate-950'
+                }`}
+            >
+                {/* Glow Effect */}
+                <div 
+                    className={`absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full blur-[120px] opacity-40 pointer-events-none transition-all duration-700 ${
+                        activeProduct === 'chatbot' ? 'bg-orange-500/25' : 'bg-purple-600/25'
+                    }`} 
+                />
 
-            {/* Feature Tabs */}
-            <section ref={coreFeaturesRef} className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="reveal text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Core Features</h2>
-                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
-                            Built on modern AI with enterprise-grade infrastructure
+                <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+                    <div className="text-center max-w-4xl mx-auto">
+                        <span 
+                            className={`reveal inline-block px-4 py-1.5 text-xs font-extrabold tracking-widest uppercase rounded-full mb-6 border transition-all duration-300 ${
+                                activeProduct === 'chatbot' 
+                                    ? 'text-orange-400 bg-orange-500/10 border-orange-500/20' 
+                                    : 'text-purple-400 bg-purple-500/10 border-purple-500/20'
+                            }`}
+                        >
+                            {activeProduct === 'chatbot' ? 'Omnichannel Helpdesk' : 'Conversational Speech AI'}
+                        </span>
+                        
+                        <h1 className="reveal text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight">
+                            {activeProduct === 'chatbot' ? (
+                                <>
+                                    Everything You Need to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">Automate Support</span>
+                                </>
+                            ) : (
+                                <>
+                                    Replace Your IVR. <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">Talk to Customers</span>
+                                </>
+                            )}
+                        </h1>
+
+                        <p className="reveal text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                            {activeProduct === 'chatbot' 
+                                ? "AI that reads context, handles 13+ digital channels in one collaborative inbox, and deploys in days — not months."
+                                : "Human-like phone conversations powered by AI. Real-time NLU for 10+ Indian languages with sub-500ms latency, available 24/7."
+                            }
                         </p>
-                    </div>
 
-                    {/* Tabs */}
-                    <div className="reveal flex flex-wrap justify-center gap-2 mb-12">
-                        {featureTabs.map(tab => (
-                            <button
-                                key={tab.id}
-                                onClick={() => setActiveTab(tab.id)}
-                                className={`flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-all ${activeTab === tab.id
-                                    ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-orange shadow-lg'
-                                    : 'bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-100'
-                                    }`}
+                        <div className="reveal flex flex-col sm:flex-row gap-4 justify-center">
+                            {activeProduct === 'chatbot' ? (
+                                <>
+                                    <Link href="/demo" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-bold shadow-lg shadow-orange-500/30 transition-all hover:-translate-y-1 text-center">
+                                        Book a Demo
+                                    </Link>
+                                    <a href="https://chat.swandigitals.com" className="px-8 py-4 bg-white/10 hover:bg-white/15 text-white border border-white/10 rounded-full font-bold backdrop-blur-md transition-all hover:-translate-y-1 text-center">
+                                        Start Free
+                                    </a>
+                                </>
+                            ) : (
+                                <>
+                                    <Link href="/demo" className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-full font-bold shadow-lg shadow-purple-500/30 transition-all hover:-translate-y-1 text-center">
+                                        Book a Voice AI Demo
+                                    </Link>
+                                    <Link href="/demo" className="px-8 py-4 bg-white/10 hover:bg-white/15 text-white border border-white/10 rounded-full font-bold backdrop-blur-md transition-all hover:-translate-y-1 text-center">
+                                        Hear a Sample Call
+                                    </Link>
+                                </>
+                            )}
+                        </div>
+
+                        {/* Badges Grid */}
+                        <div className="reveal mt-12 grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+                            {activeProduct === 'chatbot' ? (
+                                [
+                                    { text: "DPDP 2023 Ready" },
+                                    { text: "On-Premise Available" },
+                                    { text: "Live in 7 Days" }
+                                ].map((badge, idx) => (
+                                    <div key={idx} className="bg-white/5 border border-white/10 py-3 px-2 rounded-2xl backdrop-blur-sm">
+                                        <span className="text-xs sm:text-sm font-bold text-slate-300">{badge.text}</span>
+                                    </div>
+                                ))
+                            ) : (
+                                [
+                                    { text: "<500ms Latency" },
+                                    { text: "10+ Indian Languages" },
+                                    { text: "24/7 Availability" }
+                                ].map((badge, idx) => (
+                                    <div key={idx} className="bg-white/5 border border-white/10 py-3 px-2 rounded-2xl backdrop-blur-sm">
+                                        <span className="text-xs sm:text-sm font-bold text-slate-300">{badge.text}</span>
+                                    </div>
+                                ))
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 2. DYNAMIC CONTENT AREA */}
+            <div id="product-features-container" className="bg-slate-50 border-t border-slate-200">
+                
+                {/* Centered Glassmorphism Product Switch */}
+                <div className="py-12 bg-white border-b border-slate-200">
+                    <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                        <p className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4">SELECT CORE PLATFORM MODULE</p>
+                        <div className="inline-flex bg-slate-200/60 backdrop-blur-md border border-slate-300/50 p-1.5 rounded-full relative w-[320px] shadow-inner select-none">
+                            {/* Animated Background Capsule */}
+                            <div 
+                                className="absolute top-1.5 bottom-1.5 left-1.5 rounded-full shadow-md transition-all duration-300 ease-out"
+                                style={{
+                                    width: 'calc(50% - 6px)',
+                                    transform: activeProduct === 'chatbot' ? 'translateX(0)' : 'translateX(100%)',
+                                    backgroundColor: activeProduct === 'chatbot' ? '#f97316' : '#9333ea' // orange-500 vs purple-600
+                                }}
+                            />
+                            <button 
+                                onClick={() => handleProductChange('chatbot')}
+                                className={`flex-1 py-2 text-sm font-bold rounded-full relative z-10 transition-colors ${
+                                    activeProduct === 'chatbot' ? 'text-white' : 'text-slate-600 hover:text-slate-900'
+                                }`}
                             >
-                                {tab.icon}
-                                {tab.label}
+                                AI Chatbot Features
                             </button>
-                        ))}
-                    </div>
-
-                    {/* Tab Content */}
-                    <div className="reveal bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl p-8 md:p-12 border border-orange-100/50 shadow-sm">
-                        <h3 className="text-2xl font-bold text-slate-900 mb-4">{featureDetails[activeTab].title}</h3>
-                        <p className="text-lg text-slate-600 mb-8 max-w-4xl">{featureDetails[activeTab].description}</p>
-                        <div className="grid md:grid-cols-2 gap-4">
-                            {featureDetails[activeTab].features.map((feature, i) => (
-                                <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-white hover:border-orange-200 transition-colors shadow-sm">
-                                    <Check className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                                    <span className="text-slate-700 font-medium">{feature}</span>
-                                </div>
-                            ))}
+                            <button 
+                                onClick={() => handleProductChange('voicebot')}
+                                className={`flex-1 py-2 text-sm font-bold rounded-full relative z-10 transition-colors ${
+                                    activeProduct === 'voicebot' ? 'text-white' : 'text-slate-600 hover:text-slate-900'
+                                }`}
+                            >
+                                Voice AI Features
+                            </button>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            {/* Platform Capabilities */}
-            <section ref={capabilitiesRef} className="py-20 bg-slate-50 border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="reveal text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Platform Capabilities</h2>
-                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
-                            Enterprise-grade features that competitors charge extra for
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
-                        {platformCapabilities.map((cap, i) => (
-                            <div key={i} className="reveal bg-white p-6 rounded-2xl border border-slate-100 shadow-card hover:shadow-card-hover hover:-translate-y-1 hover:border-orange-200 transition-all cursor-default">
-                                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center text-white mb-5 shadow-orange">
-                                    {cap.icon}
-                                </div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">{cap.title}</h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">{cap.desc}</p>
-                            </div>
-                        ))}
+                {/* STICKY QUICK JUMP NAVIGATION BAR */}
+                <div className="sticky top-[72px] z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 py-3 shadow-sm overflow-x-auto hide-scrollbar">
+                    <div className="max-w-7xl mx-auto px-6 lg:px-8 flex gap-3 whitespace-nowrap justify-start lg:justify-center">
+                        {activeProduct === 'chatbot' ? (
+                            chatbotTabs.map((tab) => (
+                                <button
+                                    key={tab.id}
+                                    onClick={() => scrollToSection(tab.id)}
+                                    className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full font-bold text-xs transition-colors border border-slate-200"
+                                >
+                                    {tab.label}
+                                </button>
+                            ))
+                        ) : (
+                            voiceTabs.map((tab) => (
+                                <button
+                                    key={tab.id}
+                                    onClick={() => scrollToSection(tab.id)}
+                                    className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full font-bold text-xs transition-colors border border-slate-200"
+                                >
+                                    {tab.label}
+                                </button>
+                            ))
+                        )}
                     </div>
                 </div>
-            </section>
 
-            {/* Knowledge Base Section */}
-            <section ref={knowledgeRef} className="py-20 lg:py-28 bg-white">
-                <div className="max-w-6xl mx-auto px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="reveal">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-orange-600 bg-orange-50 border border-orange-100 rounded-full mb-6">
-                                <Database className="w-4 h-4" />
-                                Knowledge Base AI
-                            </div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
-                                Turn Your Documents Into Intelligent Answers
-                            </h2>
-                            <p className="text-lg text-slate-500 mb-8 leading-relaxed">
-                                Connect your existing knowledge sources – FAQs, PDFs, help articles, wikis, and databases.
-                                Our AI retrieves and synthesizes accurate answers in natural language.
-                            </p>
-                            <ul className="space-y-4 mb-8">
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-600" />
-                                    </div>
-                                    <span className="text-slate-700 font-medium">Upload PDFs, Word docs, and spreadsheets</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-600" />
-                                    </div>
-                                    <span className="text-slate-700 font-medium">Connect to Confluence, SharePoint, Notion</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-600" />
-                                    </div>
-                                    <span className="text-slate-700 font-medium">Real-time sync with source updates</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-600" />
-                                    </div>
-                                    <span className="text-slate-700 font-medium">Citation & source attribution</span>
-                                </li>
-                            </ul>
-                            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all">
-                                Learn More <ChevronRight className="w-4 h-4" />
-                            </Link>
-                        </div>
-                        <div className="reveal bg-gradient-to-br from-orange-50 to-pink-50 border border-orange-100 rounded-3xl p-10 flex items-center justify-center shadow-lg relative overflow-hidden">
-                            <div className="absolute inset-0 bg-white/40 backdrop-blur-3xl" />
-                            <div className="text-center relative z-10">
-                                <div className="w-32 h-32 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl border border-orange-100">
-                                    <Database className="w-14 h-14 text-orange-500" />
-                                </div>
-                                <p className="text-xl font-bold text-slate-900 mb-2">Unified Knowledge Graph</p>
-                                <p className="text-slate-500 font-medium">All your data, one intelligent interface</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                {/* PRODUCT DETAILED FEATURE CARDS SECTION */}
+                <section ref={contentRef} className="py-20">
+                    <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                        {activeProduct === 'chatbot' ? (
+                            // CHATBOT DOM RENDER
+                            <div className="space-y-24">
+                                {chatbotSections.map((sec) => (
+                                    <div key={sec.id} id={sec.id} className="scroll-mt-36">
+                                        <div className="reveal mb-10 text-center lg:text-left max-w-3xl">
+                                            <span className="inline-block px-3 py-1 bg-orange-100 border border-orange-200 text-orange-700 rounded-full text-xs font-extrabold uppercase mb-4 tracking-wider">
+                                                {sec.badge}
+                                            </span>
+                                            <h2 className="text-3xl font-extrabold text-slate-900 mb-3">{sec.title}</h2>
+                                            <p className="text-slate-500 font-medium text-lg leading-relaxed">{sec.description}</p>
+                                        </div>
 
-            {/* Voice AI Deep-Dive */}
-            <section ref={voiceRef} className="py-20 lg:py-28 bg-slate-900 text-white">
-                <div className="max-w-6xl mx-auto px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="reveal bg-white/5 backdrop-blur-md rounded-3xl p-10 flex flex-col items-center justify-center border border-white/10 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500 to-pink-500 opacity-20 blur-3xl rounded-full translate-x-1/3 -translate-y-1/3" />
-                            <div className="relative z-10 text-center">
-                                <div className="w-24 h-24 bg-gradient-to-br from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-orange">
-                                    <Phone className="w-10 h-10 text-white" />
-                                </div>
-                                <p className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-400 mb-3 tracking-tight">&lt;500ms</p>
-                                <p className="text-white/70 font-medium uppercase tracking-widest text-sm">Voice Response Latency</p>
-                            </div>
-                        </div>
-                        <div className="reveal">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-pink-400 bg-pink-400/10 border border-pink-400/20 rounded-full mb-6">
-                                <Mic className="w-4 h-4" />
-                                Voice AI — Not an Add-on
-                            </div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                                Replace Your IVR. Forever.
-                            </h2>
-                            <p className="text-lg text-white/70 mb-8 leading-relaxed">
-                                Human-like phone conversations powered by AI. Handle inbound calls, make outbound campaigns,
-                                and let customers talk naturally — no more "Press 1 for sales."
-                            </p>
-                            <ul className="space-y-4 mb-8">
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-400" />
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
+                                            {sec.cards.map((card, idx) => (
+                                                <div 
+                                                    key={idx}
+                                                    className="reveal bg-white border border-slate-200 rounded-3xl p-6 hover:shadow-xl hover:border-orange-200 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                                                >
+                                                    <div>
+                                                        <div className="w-10 h-10 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-500 mb-4">
+                                                            <Check className="w-5 h-5 font-bold" />
+                                                        </div>
+                                                        <h3 className="font-bold text-lg text-slate-900 mb-2">{card.title}</h3>
+                                                        <p className="text-sm text-slate-500 leading-relaxed">{card.desc}</p>
+                                                    </div>
+                                                    
+                                                    {card.isLinkToVoice && (
+                                                        <button 
+                                                            onClick={() => handleProductChange('voicebot')}
+                                                            className="mt-6 text-xs font-bold text-orange-600 hover:text-orange-700 inline-flex items-center gap-1.5 group cursor-pointer self-start"
+                                                        >
+                                                            Go to Voice AI Features 
+                                                            <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                                                        </button>
+                                                    )}
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
-                                    <span className="text-white/90">Inbound & outbound calling automation</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-400" />
-                                    </div>
-                                    <span className="text-white/90">Real-time speech-to-text & natural TTS</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-400" />
-                                    </div>
-                                    <span className="text-white/90">Call recording & full transcription</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                                        <Check className="w-4 h-4 text-orange-400" />
-                                    </div>
-                                    <span className="text-white/90">Seamless transfer to human agents</span>
-                                </li>
-                            </ul>
-                            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold hover:opacity-90 transition-opacity shadow-orange">
-                                See Voice AI Demo <ChevronRight className="w-4 h-4" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Indian Languages Spotlight */}
-            <section ref={languagesRef} className="py-20 lg:py-28 bg-white">
-                <div className="max-w-6xl mx-auto px-6 lg:px-8">
-                    <div className="reveal text-center mb-12">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-emerald-600 bg-emerald-50 border border-emerald-100 rounded-full mb-4">
-                            <MapPin className="w-3.5 h-3.5" /> Built for India
-                        </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
-                            Your Customers Speak Tamil.<br/>Your Bot Should Too.
-                        </h2>
-                        <p className="text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed">
-                            Native NLU support for 10+ Indian languages. Not Google Translate bolted on —
-                            real intent understanding, entity extraction, and context management in every language.
-                        </p>
-                    </div>
-                    <div className="reveal grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12 stagger">
-                        {['Hindi', 'Tamil', 'Telugu', 'Marathi', 'Bengali', 'Kannada', 'Malayalam', 'Gujarati', 'Punjabi', 'Odia', 'Hinglish', 'English'].map((lang, i) => (
-                            <div key={i} className="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100 hover:border-orange-200 transition-colors shadow-sm cursor-default">
-                                <div className="text-slate-400 mb-2 flex justify-center"><MessageCircle className="w-6 h-6 text-orange-400" /></div>
-                                <div className="font-semibold text-slate-900 text-sm">{lang}</div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="reveal bg-gradient-to-r from-orange-50 to-pink-50 p-8 md:p-10 rounded-3xl border border-orange-100/50 shadow-sm">
-                        <div className="grid md:grid-cols-3 gap-8 text-center">
-                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white">
-                                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mx-auto mb-4">
-                                    <Brain className="w-6 h-6" />
-                                </div>
-                                <div className="text-xl font-bold text-slate-900 mb-2">Native NLU</div>
-                                <p className="text-slate-500 text-sm">Intent & entity recognition directly in regional languages</p>
-                            </div>
-                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white">
-                                <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 mx-auto mb-4">
-                                    <MessageSquare className="w-6 h-6" />
-                                </div>
-                                <div className="text-xl font-bold text-slate-900 mb-2">Code-Mixed</div>
-                                <p className="text-slate-500 text-sm">Handles Hinglish and mixed scripts naturally and accurately</p>
-                            </div>
-                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-white">
-                                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mx-auto mb-4">
-                                    <Mic className="w-6 h-6" />
-                                </div>
-                                <div className="text-xl font-bold text-slate-900 mb-2">Voice + Text</div>
-                                <p className="text-slate-500 text-sm">Regional language support seamless across chat and calls</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            {/* Use Cases */}
-            <section ref={useCasesRef} className="py-20 lg:py-28 bg-slate-50 border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="reveal text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Solutions for Every Team</h2>
-                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
-                            See how enterprises across industries use SwanDesk
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
-                        {useCases.map((uc, i) => (
-                            <div key={i} className="reveal bg-white p-8 rounded-3xl shadow-card hover:shadow-card-hover hover:-translate-y-1 hover:border-orange-200 border border-slate-100 transition-all">
-                                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center text-white mb-6 shadow-orange">
-                                    {uc.icon}
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-3">{uc.title}</h3>
-                                <p className="text-slate-500 text-sm mb-6 leading-relaxed">{uc.description}</p>
-                                <div className="flex flex-wrap gap-2 mb-6">
-                                    {uc.stats.map((stat, j) => (
-                                        <span key={j} className="px-3 py-1 bg-orange-50 text-orange-700 border border-orange-100 rounded-full text-xs font-semibold">
-                                            {stat}
-                                        </span>
-                                    ))}
-                                </div>
-                                <ul className="space-y-2 mb-6">
-                                    {uc.benefits.map((benefit, j) => (
-                                        <li key={j} className="text-sm text-slate-600 flex items-center gap-2">
-                                            <Check className="w-4 h-4 text-orange-500 flex-shrink-0" />
-                                            {benefit}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <Link href={uc.link} className="inline-flex items-center gap-1 text-orange-600 font-bold text-sm hover:text-orange-500 transition-colors">
-                                    Learn more <ChevronRight className="w-4 h-4" />
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Comprehensive Competitor Comparison */}
-            <section ref={comparisonRef} className="py-20 lg:py-28 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="reveal text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Feature Comparison</h2>
-                        <p className="text-lg text-slate-500 max-w-3xl mx-auto">
-                            See how SwanDesk compares to leading competitors
-                        </p>
-                    </div>
-                    <div className="reveal overflow-x-auto bg-white rounded-3xl border border-slate-200 shadow-sm">
-                        <table className="w-full border-collapse text-sm text-left">
-                            <thead>
-                                <tr className="border-b-2 border-slate-200 bg-slate-50">
-                                    <th className="py-5 px-6 font-semibold text-slate-900 sticky left-0 bg-slate-50 z-10 w-1/4">Feature</th>
-                                    <th className="py-5 px-4 text-center font-bold text-orange-600 bg-orange-50 w-[12.5%]">SwanDesk</th>
-                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Kore.ai</th>
-                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Yellow.ai</th>
-                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Haptik</th>
-                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Zendesk</th>
-                                    <th className="py-5 px-4 text-center font-semibold text-slate-500 w-[12.5%]">Intercom</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {competitorComparison.map((row, i) => (
-                                    <tr key={i} className={`border-b border-slate-100 hover:bg-slate-50/50 transition-colors ${i % 2 === 1 ? 'bg-slate-50/30' : ''}`}>
-                                        <td className="py-4 px-6 font-medium text-slate-700 sticky left-0 bg-inherit z-10">{row.feature}</td>
-                                        <td className="py-4 px-4 text-center bg-orange-50/50">{renderComparisonCell(row.swanDigitals)}</td>
-                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.koreai)}</td>
-                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.yellowai)}</td>
-                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.haptik)}</td>
-                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.zendesk)}</td>
-                                        <td className="py-4 px-4 text-center">{renderComparisonCell(row.intercom)}</td>
-                                    </tr>
                                 ))}
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className="reveal text-center mt-10">
-                        <Link href="/compare" className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-full font-bold text-sm hover:bg-slate-800 transition-all shadow-md hover:shadow-lg">
-                            View Detailed Comparisons <ChevronRight className="w-4 h-4" />
-                        </Link>
-                    </div>
-                </div>
-            </section>
+                            </div>
+                        ) : (
+                            // VOICE AI DOM RENDER
+                            <div className="space-y-24">
+                                {voiceSections.map((sec) => (
+                                    <div key={sec.id} id={sec.id} className="scroll-mt-36">
+                                        <div className="reveal mb-10 text-center lg:text-left max-w-3xl">
+                                            <span className="inline-block px-3 py-1 bg-purple-100 border border-purple-200 text-purple-700 rounded-full text-xs font-extrabold uppercase mb-4 tracking-wider">
+                                                {sec.badge}
+                                            </span>
+                                            <h2 className="text-3xl font-extrabold text-slate-900 mb-3">{sec.title}</h2>
+                                            <p className="text-slate-500 font-medium text-lg leading-relaxed">{sec.description}</p>
+                                        </div>
 
-            {/* CTA */}
-            <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white text-center">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-4xl font-bold mb-6">Ready to Explore the Platform?</h2>
-                    <p className="text-xl text-slate-300 mb-10">Get hands-on with a free trial or schedule a personalized demo.</p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-bold text-sm shadow-orange hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                                        {/* SPECIAL HOW IT WORKS CALL FLOW VISUAL */}
+                                        {sec.isCallFlow && (
+                                            <div className="reveal bg-gradient-to-r from-purple-900 to-indigo-900 p-8 rounded-3xl text-white mb-10 border border-purple-800 shadow-lg">
+                                                <h3 className="font-bold text-xl mb-6 text-center tracking-wide uppercase text-purple-200">Interactive Call Flow</h3>
+                                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative">
+                                                    <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
+                                                        <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold text-white mb-4">1</div>
+                                                        <h4 className="font-bold mb-2">Inbound / Outbound Trigger</h4>
+                                                        <p className="text-xs text-purple-200 leading-relaxed">Customer dials your dedicated number, or our campaign engine triggers an outbound call.</p>
+                                                    </div>
+                                                    <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
+                                                        <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold text-white mb-4">2</div>
+                                                        <h4 className="font-bold mb-2">Real-Time Processing</h4>
+                                                        <p className="text-xs text-purple-200 leading-relaxed">ASR converts audio to text, NLU decides context and intent, TTS synthesizes high-quality response in &lt;500ms.</p>
+                                                    </div>
+                                                    <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
+                                                        <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold text-white mb-4">3</div>
+                                                        <h4 className="font-bold mb-2">CRM Action & Sync</h4>
+                                                        <p className="text-xs text-purple-200 leading-relaxed">System logs outcomes, books calendars or transfers to live agents, and attaches post-call briefs.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {/* SPECIAL LANGUAGES GRID */}
+                                        {sec.isLanguagesGrid && (
+                                            <div className="reveal grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-10">
+                                                {['Hindi', 'Hinglish', 'Tamil', 'Telugu', 'Marathi', 'Bengali', 'Kannada', 'Malayalam', 'Gujarati', 'Punjabi', 'Odia', 'English'].map((lang, idx) => (
+                                                    <div key={idx} className="bg-white border border-slate-200 rounded-2xl p-4 text-center hover:border-purple-300 transition-colors shadow-sm">
+                                                        <div className="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 mx-auto mb-2">
+                                                            <MessageSquare className="w-4 h-4" />
+                                                        </div>
+                                                        <span className="font-bold text-slate-800 text-xs">{lang}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
+                                            {sec.cards.map((card, idx) => (
+                                                <div 
+                                                    key={idx}
+                                                    className="reveal bg-white border border-slate-200 rounded-3xl p-6 hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                                                >
+                                                    <div>
+                                                        <div className="w-10 h-10 rounded-2xl bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-500 mb-4">
+                                                            <Check className="w-5 h-5 font-bold" />
+                                                        </div>
+                                                        <h3 className="font-bold text-lg text-slate-900 mb-2">{card.title}</h3>
+                                                        <p className="text-sm text-slate-500 leading-relaxed">{card.desc}</p>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                </section>
+
+                {/* 3. CONTEXTUAL CROSS-SELL BANNER */}
+                <section className="py-12 bg-white border-y border-slate-200">
+                    <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                        {activeProduct === 'chatbot' ? (
+                            <div className="bg-orange-50/50 border border-orange-200 p-8 rounded-3xl text-center shadow-sm">
+                                <h3 className="font-extrabold text-slate-900 text-xl mb-2">Need phone support too?</h3>
+                                <p className="text-slate-600 text-sm mb-6 leading-relaxed">
+                                    SwanDesk Voice AI handles incoming and outgoing customer calls in 10+ Indian languages with sub-500ms latency.
+                                </p>
+                                <button 
+                                    onClick={() => handleProductChange('voicebot')}
+                                    className="px-6 py-3 bg-slate-900 text-white rounded-full font-bold text-xs hover:bg-slate-800 transition-colors inline-flex items-center gap-1.5"
+                                >
+                                    Switch to Voice AI features 
+                                    <ArrowRight className="w-4 h-4" />
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="bg-purple-50/50 border border-purple-200 p-8 rounded-3xl text-center shadow-sm">
+                                <h3 className="font-extrabold text-slate-900 text-xl mb-2">Need WhatsApp, email & web chat?</h3>
+                                <p className="text-slate-600 text-sm mb-6 leading-relaxed">
+                                    SwanDesk AI Chatbot automates conversations across 13+ digital channels in a single collaborative human mailbox.
+                                </p>
+                                <button 
+                                    onClick={() => handleProductChange('chatbot')}
+                                    className="px-6 py-3 bg-slate-900 text-white rounded-full font-bold text-xs hover:bg-slate-800 transition-colors inline-flex items-center gap-1.5"
+                                >
+                                    Switch to AI Chatbot features 
+                                    <ArrowRight className="w-4 h-4" />
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                </section>
+
+                {/* 4. COMPREHENSIVE COMPETITOR COMPARISON TABLES */}
+                <section className="py-20 bg-slate-50">
+                    <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Competitor Breakdown</h2>
+                            <p className="text-slate-500 font-medium text-lg">
+                                See how SwanDesk compares against the legacy alternatives
+                            </p>
+                        </div>
+
+                        {activeProduct === 'chatbot' ? (
+                            // CHATBOT TABLE
+                            <div className="overflow-x-auto bg-white rounded-3xl border border-slate-200 shadow-md">
+                                <table className="w-full border-collapse text-left text-sm">
+                                    <thead>
+                                        <tr className="bg-slate-900 text-white">
+                                            <th className="py-5 px-6 font-bold text-sm w-1/4">FEATURE</th>
+                                            <th className="py-5 px-4 text-center font-extrabold text-sm bg-orange-500 text-white w-[15%]">SwanDesk</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Freshdesk</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Intercom</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Zendesk</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Yellow.ai</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Kore.ai</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
+                                        {chatbotComparison.map((row, idx) => (
+                                            <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                                                <td className="py-4 px-6 font-bold text-slate-900">{row.feature}</td>
+                                                <td className="py-4 px-4 text-center bg-orange-50 font-bold text-slate-800 text-xs border-x border-orange-200">{row.swanDesk}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.freshdesk}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.intercom}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.zendesk}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.yellowai}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.koreai}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        ) : (
+                            // VOICE TABLE
+                            <div className="overflow-x-auto bg-white rounded-3xl border border-slate-200 shadow-md">
+                                <table className="w-full border-collapse text-left text-sm">
+                                    <thead>
+                                        <tr className="bg-slate-900 text-white">
+                                            <th className="py-5 px-6 font-bold text-sm w-1/4">FEATURE</th>
+                                            <th className="py-5 px-4 text-center font-extrabold text-sm bg-purple-600 text-white w-[18%]">SwanDesk Voice</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">Exotel</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">Ozonetel</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">MyOperator</th>
+                                            <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">Yellow.ai Voice</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
+                                        {voiceComparison.map((row, idx) => (
+                                            <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                                                <td className="py-4 px-6 font-bold text-slate-900">{row.feature}</td>
+                                                <td className="py-4 px-4 text-center bg-purple-50 font-bold text-slate-800 text-xs border-x border-purple-200">{row.swanDeskVoice}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.exotel}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.ozonetel}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.myoperator}</td>
+                                                <td className="py-4 px-4 text-center text-xs text-slate-500">{row.yellowaiVoice}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+                    </div>
+                </section>
+            </div>
+
+            {/* 5. SHARED FINAL CTA SECTION */}
+            <section ref={ctaRef} className="py-24 bg-gradient-to-br from-slate-950 to-slate-900 text-white text-center relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-orange-500/10 rounded-full blur-[80px] opacity-30 pointer-events-none" />
+                
+                <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
+                    <h2 className="reveal text-4xl sm:text-5xl font-black mb-6">Ready to See It in Action?</h2>
+                    <p className="reveal text-lg text-slate-400 mb-10 max-w-xl mx-auto leading-relaxed">
+                        Book a 30-minute custom demo. We'll show you exactly how SwanDesk handles your live customer pathways.
+                    </p>
+                    
+                    <div className="reveal flex flex-col sm:flex-row justify-center gap-4">
+                        <Link href="/demo" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-bold text-sm shadow-lg shadow-orange-500/35 transition-all hover:-translate-y-0.5">
                             Book a Demo
                         </Link>
-                        <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-sm hover:bg-white/20 transition-all">
-                            Contact Sales
+                        <a href="https://chat.swandigitals.com" className="px-8 py-4 bg-white/10 hover:bg-white/15 text-white border border-white/10 rounded-full font-bold text-sm transition-all hover:-translate-y-0.5">
+                            Start Free
+                        </a>
+                    </div>
+                    
+                    <div className="reveal mt-8">
+                        <Link href="/pricing" className="text-xs font-semibold text-slate-400 hover:text-white transition-colors">
+                            View Pricing →
                         </Link>
                     </div>
                 </div>

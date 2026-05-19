@@ -17,7 +17,7 @@ export default function SolutionsPage() {
         { icon: <Landmark className="w-8 h-8" />, title: "Banking & Finance", desc: "GDPR/PCI compliant chatbots with true on-premise deployment for regulated institutions", link: "/solutions/banking", color: "blue" },
         { icon: <Stethoscope className="w-8 h-8" />, title: "Healthcare", desc: "HIPAA compliant patient engagement, appointment scheduling, and symptom checking", link: "/solutions/healthcare", color: "green" },
         { icon: <ShoppingCart className="w-8 h-8" />, title: "Retail & E-commerce", desc: "Product discovery, order tracking, returns processing, and customer support at scale", link: "/solutions/retail", color: "purple" },
-        { icon: <Building2 className="w-8 h-8" />, title: "Insurance", desc: "Claims processing, policy inquiries, and quote generation automation", link: "/solutions/banking", color: "orange" }
+        { icon: <Building2 className="w-8 h-8" />, title: "Insurance", desc: "Claims processing, policy inquiries, and quote generation automation", link: "/solutions/insurance", color: "orange" }
     ];
 
     return (

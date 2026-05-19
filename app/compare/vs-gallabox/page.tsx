@@ -36,7 +36,7 @@ export default function VsGallaboxPage() {
             comparisonRows={[
                 { feature: "Channels", SwanDesk: "WhatsApp, Voice, Web, Email, IG", competitor: "Primarily WhatsApp" },
                 { feature: "Native Voice AI", SwanDesk: true, competitor: false },
-                { feature: "Generative AI Capabilities", SwanDesk: "Advanced (Gemini, Ollama)", competitor: "Basic / Templated" },
+                { feature: "Generative AI Capabilities", SwanDesk: "Advanced (Secure Cloud & Local LLMs)", competitor: "Basic / Templated" },
                 { feature: "Enterprise SLA Ticketing", SwanDesk: true, competitor: "Limited" },
                 { feature: "DPDP Act Focus", SwanDesk: "Strict Indian Data Residency", competitor: "Standard" }
             ]}

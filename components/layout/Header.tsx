@@ -24,6 +24,7 @@ const navItems = [
             { label: 'Customer Service', href: '/solutions/customer-service' },
             { label: 'IT Helpdesk', href: '/solutions/it-helpdesk' },
             { label: 'Banking & BFSI', href: '/solutions/banking' },
+            { label: 'Insurance', href: '/solutions/insurance' },
             { label: 'Healthcare', href: '/solutions/healthcare' },
         ],
     },

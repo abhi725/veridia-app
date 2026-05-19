@@ -36,7 +36,7 @@ export default function VsWatiPage() {
             comparisonRows={[
                 { feature: "Channels Supported", SwanDesk: "WhatsApp, Web, Voice, Email, IG", competitor: "WhatsApp Only" },
                 { feature: "Pricing Model", SwanDesk: "Flat Platform Fee (Unlimited Agents)", competitor: "Expensive Monthly Tiers" },
-                { feature: "Generative AI (LLM)", SwanDesk: "Native (Gemini, Ollama, GPT-4)", competitor: "Basic / Add-on" },
+                { feature: "Generative AI (LLM)", SwanDesk: "Native (Secure Cloud & Local LLMs)", competitor: "Basic / Add-on" },
                 { feature: "Voice AI Calling", SwanDesk: true, competitor: false },
                 { feature: "DPDP Act Compliance", SwanDesk: "100% Indian Data Residency", competitor: "Global" },
                 { feature: "On-Premise Deployment", SwanDesk: true, competitor: false }

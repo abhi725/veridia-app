@@ -49,7 +49,7 @@ export default function HomePageContent() {
 
     const features = [
         { icon: <Bot className="w-5 h-5" />, title: "AI That Actually Reads Context", description: "Your customers don't repeat themselves. SwanDesk AI remembers full conversations, suggests replies, and auto-resolves FAQs — in Hindi, Tamil, or English." },
-        { icon: <Mic className="w-5 h-5" />, title: "Voice Bot for Phone Support", description: "Answer calls 24/7 in Hindi, Tamil, Telugu, and 8 more Indian languages. Works with Retell AI, Twilio, or fully offline on-prem with Whisper + Ollama." },
+        { icon: <Mic className="w-5 h-5" />, title: "Voice Bot for Phone Support", description: "Answer calls 24/7 in Hindi, Tamil, Telugu, and 8 more Indian languages. Works with advanced cloud voice providers, standard SIP trunking, or fully offline on-premises with private speech models." },
         { icon: <Zap className="w-5 h-5" />, title: "Up and Running in a Week", description: "Sign up, connect your WhatsApp and email, configure your AI — and you're live. Most teams are fully onboarded in 7 days. We help with setup." },
         { icon: <Shield className="w-5 h-5" />, title: "Your Data Stays Yours", description: "On-premise mode: your servers, your control, zero external calls. Cloud mode: we still don't read or store your customer conversations." },
         { icon: <Globe className="w-5 h-5" />, title: "Every Channel in One Inbox", description: "WhatsApp, Email, Web chat, Instagram, Telegram, Phone — your team sees everything in one place. No tab-switching. No missed messages." },
@@ -67,12 +67,12 @@ export default function HomePageContent() {
         { icon: <Link2 className="w-6 h-6" />, title: "One inbox. Every channel.", description: "WhatsApp messages, emails, web chats, Instagram DMs — your team handles them all from a single screen. Assign, reply, resolve." },
         { icon: <Bot className="w-6 h-6" />, title: "AI that helps, not replaces.", description: "SwanDesk AI suggests replies, auto-tags conversations, and resolves repetitive questions without human help. Agents focus on complex issues." },
         { icon: <Cpu className="w-6 h-6" />, title: "Flat pricing. No surprises.", description: "One monthly price covers unlimited conversations. Your costs are predictable whether you handle 1,000 or 100,000 messages." },
-        { icon: <Shield className="w-6 h-6" />, title: "On-prem for banks and hospitals.", description: "Full air-gapped deployment. Ollama LLM, Whisper STT, Coqui TTS — all on your servers. DPDP 2023 ready." },
+        { icon: <Shield className="w-6 h-6" />, title: "On-prem for banks and hospitals.", description: "Full air-gapped deployment. Secure local LLMs, offline speech-to-text, and voice synthesis — all on your servers. DPDP 2023 ready." },
     ];
 
     const steps = [
         { num: 1, icon: <Phone className="w-7 h-7" />, title: "Sign up & connect channels", day: "Day 1", description: "Create your SwanDesk account, connect WhatsApp Business, email, and web chat. Takes about 30 minutes." },
-        { num: 2, icon: <Settings className="w-7 h-7" />, title: "Configure your AI", day: "Days 2–5", description: "Pick your LLM (Gemini, Claude, Ollama for on-prem), upload your knowledge base, set up escalation rules." },
+        { num: 2, icon: <Settings className="w-7 h-7" />, title: "Configure your AI", day: "Days 2–5", description: "Choose your model (secure cloud LLMs or local LLMs for on-premise), upload your knowledge base, set up escalation rules." },
         { num: 3, icon: <Zap className="w-7 h-7" />, title: "Go live & scale", day: "Days 6–7", description: "Your team starts resolving tickets through SwanDesk. AI handles the repetitive ones. Track everything in the dashboard." },
     ];
 
@@ -376,7 +376,7 @@ export default function HomePageContent() {
             <FAQ items={[
                 { question: "Is this just another chatbot?", answer: "No. SwanDesk is a full customer support platform — like Intercom or Freshdesk, but built for Indian businesses with AI already inside. It's an inbox your team works from every day, not a chatbot widget you set and forget." },
                 { question: "How long does setup take?", answer: "Most teams connect WhatsApp and email on day 1, configure AI on day 2-3, and are fully live by day 7. We help. You're not alone." },
-                { question: "Can we deploy fully on-premises?", answer: "Yes. True on-premise — your data center, your servers. No external API calls required. We use Ollama for the LLM, Whisper for voice transcription, and Asterisk for SIP routing. Air-gapped, DPDP compliant." },
+                { question: "Can we deploy fully on-premises?", answer: "Yes. True on-premise — your data center, your servers. No external API calls required. We deploy secure local LLMs for text, offline transcription nodes for voice, and standard SIP trunking. Fully air-gapped, DPDP compliant." },
                 { question: "What happens when the AI can't answer?", answer: "The conversation routes to a human agent with full context. No dead ends. No 'I didn't understand that' loops." },
                 { question: "Which Indian languages are supported?", answer: "Hindi, Tamil, Telugu, Marathi, Bengali, Kannada, Malayalam, Gujarati, Punjabi, Odia, and Hinglish. Native support — not just translation." },
                 { question: "How is pricing different from Freshdesk or Intercom?", answer: "Flat monthly fee per plan — not per seat, not per conversation. You grow, your price doesn't explode." },

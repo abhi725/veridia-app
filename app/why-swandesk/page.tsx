@@ -19,7 +19,7 @@ export default function WhySwanDeskPage() {
     const advantages = [
         { icon: <Zap className="w-6 h-6" />, title: "Live in 7 Days", description: "Connect WhatsApp, email, and web chat on day 1. Configure AI on day 2-3. Fully live by day 7. We help at every step." },
         { icon: <DollarSign className="w-6 h-6" />, title: "Flat Pricing, No Surprises", description: "No per-conversation billing. No per-seat tax. One monthly price whether you handle 1,000 or 100,000 messages." },
-        { icon: <Shield className="w-6 h-6" />, title: "True On-Premise", description: "Your data center, your servers, zero external API calls. Ollama LLM + Whisper STT + Asterisk SIP — fully air-gapped, DPDP 2023 compliant." },
+        { icon: <Shield className="w-6 h-6" />, title: "True On-Premise", description: "Your data center, your servers, zero external API calls. Secure local LLMs + offline speech-to-text models + enterprise SIP trunking — fully air-gapped, DPDP 2023 compliant." },
         { icon: <Code className="w-6 h-6" />, title: "AI That Reads Context", description: "SwanDesk AI remembers the full conversation, suggests replies, and auto-resolves FAQs in Hindi, Tamil, English, and 8 more Indian languages." },
         { icon: <Clock className="w-6 h-6" />, title: "Every Channel, One Inbox", description: "WhatsApp, Email, Web chat, Instagram, Telegram, Phone — your team sees everything in one place. No tab-switching." },
         { icon: <Award className="w-6 h-6" />, title: "Indian Team, Indian Hours", description: "We're based in Pune. We understand DPDP, RBI, BFSI compliance, and regional language nuances. Support in your timezone." }

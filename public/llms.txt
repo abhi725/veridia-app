@@ -6,9 +6,9 @@
 >
 > SwanDesk is not a chatbot builder. It is a full helpdesk platform with AI already wired in. The AI suggests replies, auto-resolves repetitive questions, tags conversations, and hands off to human agents when it can't answer — with full context, no dead ends.
 >
-> The platform supports 6 Indian languages natively (Hindi, Tamil, Telugu, Marathi, Bengali, Kannada) — not through translation APIs, but through purpose-built NLU models. Voice AI handles inbound phone calls in these languages with sub-500ms latency using Retell AI (cloud) or Whisper + Coqui TTS (on-premise).
+> The platform supports 6 Indian languages natively (Hindi, Tamil, Telugu, Marathi, Bengali, Kannada) — not through translation APIs, but through purpose-built NLU models. Voice AI handles inbound phone calls in these languages with sub-500ms latency using secure cloud or localized voice models (on-premise).
 >
-> For banks, NBFCs, and healthcare companies that need data sovereignty, SwanDesk offers a fully air-gapped on-premise deployment — Ollama LLM, Whisper STT, Asterisk SIP — no external API calls, no internet dependency. Built for DPDP 2023 compliance and RBI guidelines.
+> For banks, NBFCs, and healthcare companies that need data sovereignty, SwanDesk offers a fully air-gapped on-premise deployment — local LLM, local Speech-to-Text, and secure SIP trunking — no external API calls, no internet dependency. Built for DPDP 2023 compliance and RBI guidelines.
 >
 > Pricing is flat monthly — not per conversation, not per seat. Teams go live in about 7 days with hands-on onboarding support.
 >
@@ -27,7 +27,7 @@
 
 ## Features (Deep Dive)
 
-- [Voice AI](https://swandigitals.com/features/voice-ai): Phone support in 6 Indian languages. Sub-500ms voice latency. Works with Retell AI (cloud) or Whisper + Coqui TTS (on-prem). Handles calls, answers queries, routes to agents.
+- [Voice AI](https://swandigitals.com/features/voice-ai): Phone support in 6 Indian languages. Sub-500ms voice latency. Works with cloud or localized voice models (on-prem). Handles calls, answers queries, routes to agents.
 - [Conversational AI](https://swandigitals.com/features/conversational-ai): Context-aware AI that reads full conversation history. Suggests replies, auto-resolves FAQs, handles follow-ups. Not keyword matching — actual comprehension.
 - [NLU Engine](https://swandigitals.com/features/nlu): Natural Language Understanding purpose-built for Indian languages and Hinglish. Intent detection, entity extraction, sentiment analysis.
 - [Analytics](https://swandigitals.com/features/analytics): Dashboard covering response times, resolution rates, AI automation rate, agent performance, CSAT, conversation volume trends.

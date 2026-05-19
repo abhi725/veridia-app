@@ -1,85 +1,244 @@
 import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'Resources & Documentation',
-    description: 'Technical documentation, setup guides, and API references for SwanDigitals. Learn how to deploy on-premise AI agents and integrate with your stack.',
-    keywords: ['SwanDigitals Documentation', 'AI Chatbot Guides', 'On-premise Deployment Guide', 'API Reference', 'Developer Resources'],
-    alternates: {
-        canonical: 'https://swandigitals.com/resources',
-    },
-}
-
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
-import { BookOpen, FileText, Video, Phone, Download } from 'lucide-react';
+import { 
+    BookOpen, 
+    Calculator, 
+    FileText, 
+    Download, 
+    ArrowRight,
+    HelpCircle, 
+    Terminal, 
+    CheckCircle,
+    FileSpreadsheet,
+    ShieldAlert
+} from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'Resources & Knowledge Center - SwanDigitals',
+    description: 'Technical whitepapers, compliance blueprints, ROI spreadsheets, migration playbooks, and developer reference materials for SwanDesk.',
+    keywords: ['SwanDesk Whitepaper', 'AI Chatbot ROI', 'DPDP Compliance PDF', 'WhatsApp Marketing Playbook'],
+    alternates: {
+        canonical: 'https://swandigitals.com/resources',
+    },
+};
 
 export default function ResourcesPage() {
+    const resourceCards = [
+        {
+            icon: <BookOpen className="w-8 h-8 text-orange-600" />,
+            title: "Technical Documentation Hub",
+            category: "DEVELOPER RESOURCE",
+            description: "Deep dive into API references, SDK implementations, webhooks, and step-by-step custom flow builders for your engineering team.",
+            linkText: "Browse Docs",
+            linkHref: "/documentation"
+        },
+        {
+            icon: <Calculator className="w-8 h-8 text-orange-600" />,
+            title: "AI Helpdesk ROI Calculator",
+            category: "BUSINESS TOOL",
+            description: "Calculate your estimated savings on monthly support seat taxes, session cap markups, and Meta platform billing.",
+            linkText: "Run Calculations",
+            linkHref: "/roi-calculator"
+        },
+        {
+            icon: <ShieldAlert className="w-8 h-8 text-orange-600" />,
+            title: "BFSI Data Sovereign Blueprint",
+            category: "COMPLIANCE WHITEPAPER",
+            description: "A comprehensive guide on deploying air-gapped on-premises local LLMs to perfectly comply with RBI guidelines.",
+            linkText: "Read Blueprint",
+            linkHref: "/security"
+        },
+        {
+            icon: <FileSpreadsheet className="w-8 h-8 text-orange-600" />,
+            title: "WhatsApp Marketing Playbook",
+            category: "STRATEGY GUIDE",
+            description: "Learn how high-performing Indian D2C brands configure WhatsApp broadlists, configure UTM triggers, and avoid spam caps.",
+            linkText: "Download Playbook",
+            linkHref: "/contact"
+        }
+    ];
+
+    const assets = [
+        { name: "SwanDesk Enterprise Pitch Deck", type: "PDF Slides", size: "4.8 MB" },
+        { name: "DPDP Act 2023 Readiness Checklist", type: "PDF Checklist", size: "1.2 MB" },
+        { name: "WATI to SwanDesk Migration Playbook", type: "Migration Guide", size: "2.1 MB" },
+        { name: "API Integration Quickstart Guide", type: "Cheat Sheet", size: "850 KB" }
+    ];
+
     return (
         <SiteLayout>
             <Hero
-                badge="Resources"
-                title="Documentation & Guides"
-                subtitle="Everything you need to get started with SwanDigitals"
+                badge="📚 Resource Hub"
+                title="Whitepapers, Playbooks & Tools"
+                subtitle="Equip your support, operations, and compliance teams with detailed blueprints, estimators, and integration frameworks."
                 primaryCTA={{ text: "View Documentation", href: "/documentation" }}
-                secondaryCTA={{ text: "Contact Support", href: "/contact" }}
+                secondaryCTA={{ text: "ROI Calculator", href: "/roi-calculator" }}
             />
 
-            {/* Documentation Section */}
+            {/* Main Resource Cards Grid */}
             <section className="py-20 bg-white">
-                <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4">Explore Resources</h2>
-                    <p className="text-slate-600 text-center mb-12">Technical guides and tutorials to help you get the most out of SwanDigitals</p>
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                            Knowledge Center & Strategy Material
+                        </h2>
+                        <p className="mt-4 text-lg text-slate-600">
+                            Whether you are a developer looking for webhooks or a CISO auditing data residency, we have the right blueprints for you.
+                        </p>
+                    </div>
 
-                    {/* Documentation Card */}
-                    <div className="max-w-2xl mx-auto">
-                        <Link href="/documentation" className="block group p-8 border-2 border-slate-200 rounded-2xl hover:border-orange-300 hover:shadow-xl transition-all bg-white">
-                            <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors">
-                                <BookOpen className="w-8 h-8" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        {resourceCards.map((card, i) => (
+                            <div key={i} className="group relative flex flex-col p-8 bg-slate-50 hover:bg-white border border-slate-100 hover:border-orange-200 rounded-2xl hover:shadow-xl transition-all duration-300">
+                                <div className="p-3 bg-white group-hover:bg-orange-50 rounded-xl w-fit mb-6 shadow-sm border border-slate-100 group-hover:border-orange-100 transition-colors">
+                                    {card.icon}
+                                </div>
+                                <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest mb-2">{card.category}</span>
+                                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">{card.title}</h3>
+                                <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-1">{card.description}</p>
+                                <Link href={card.linkHref} className="inline-flex items-center text-sm font-bold text-slate-900 group-hover:text-orange-600 transition-colors">
+                                    {card.linkText} <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
                             </div>
-                            <h3 className="text-2xl font-bold mb-2 group-hover:text-orange-600">Documentation</h3>
-                            <p className="text-slate-600 mb-4">Technical guides, setup instructions, and tutorials for integrating SwanDigitals chatbots and voice agents.</p>
-                            <div className="flex items-center justify-between">
-                                <span className="text-sm bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Getting Started</span>
-                                <span className="text-orange-600 font-semibold">View Docs →</span>
-                            </div>
-                        </Link>
+                        ))}
                     </div>
                 </div>
             </section>
 
-            {/* Quick Links */}
-            <section className="py-16 bg-slate-50">
-                <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-2xl font-bold text-center mb-8">Quick Links</h2>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/documentation" className="p-6 bg-white rounded-xl border border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all text-center">
-                            <FileText className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-                            <h3 className="font-semibold mb-1">Setup Guide</h3>
-                            <p className="text-sm text-slate-500">Get started in 15 minutes</p>
-                        </Link>
-                        <Link href="/contact" className="p-6 bg-white rounded-xl border border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all text-center">
-                            <Phone className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-                            <h3 className="font-semibold mb-1">Contact Support</h3>
-                            <p className="text-sm text-slate-500">Get help from our team</p>
-                        </Link>
-                        <Link href="/demo" className="p-6 bg-white rounded-xl border border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all text-center">
-                            <Video className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-                            <h3 className="font-semibold mb-1">Book a Demo</h3>
-                            <p className="text-sm text-slate-500">See it in action</p>
-                        </Link>
+            {/* Code Sandbox Preview */}
+            <section className="py-20 bg-slate-50 border-y border-slate-200">
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                        <div>
+                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-orange-100 text-orange-800 mb-4">
+                                <Terminal className="w-3.5 h-3.5" /> For Developers
+                            </span>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-6">
+                                Integrate SwanDesk API in Minutes
+                            </h2>
+                            <p className="text-slate-600 mb-6 leading-relaxed">
+                                Our RESTful interface is fully documented and built for modern webhook operations. Push user status updates, trigger transactional WhatsApp flows, and assign agents programmatically.
+                            </p>
+                            
+                            <div className="space-y-4">
+                                <div className="flex gap-3">
+                                    <div className="w-5 h-5 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs mt-1">1</div>
+                                    <p className="text-sm text-slate-600">Standard OpenAPI 3.0 specification schemas</p>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="w-5 h-5 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs mt-1">2</div>
+                                    <p className="text-sm text-slate-600">Secure SHA256 Webhook signature headers</p>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="w-5 h-5 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs mt-1">3</div>
+                                    <p className="text-sm text-slate-600">Dynamic conversation assignment routing triggers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl font-mono text-xs text-slate-300">
+                            <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+                                <span className="text-slate-500">POST /api/v1/conversations/broadcast</span>
+                                <span className="text-green-500 font-semibold">HTTPS</span>
+                            </div>
+                            <pre className="overflow-x-auto space-y-1">
+                                {`curl -X POST "https://api.swandigitals.com/v1/broadcast" \\
+  -H "Authorization: Bearer \${SWANDESK_API_KEY}" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "to": "+919876543210",
+    "template_name": "otp_verification",
+    "language": "en",
+    "parameters": [
+      {
+        "type": "text",
+        "value": "847291"
+      }
+    ]
+  }'`}
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
-                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold mb-4">Need Help Getting Started?</h2>
-                    <p className="text-white/90 mb-8">Our team is here to help you set up and get the most out of SwanDigitals</p>
-                    <Link href="/contact" className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-all">
-                        Contact Us
-                    </Link>
+            {/* Downloadable Assets */}
+            <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div className="text-center max-w-2xl mx-auto mb-16">
+                        <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+                            Downloadable Collaterals
+                        </h2>
+                        <p className="mt-3 text-slate-600">
+                            Save these resource guides offline or share them directly with your system architects and product leads.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                        {assets.map((asset, i) => (
+                            <div key={i} className="flex items-center justify-between p-5 border border-slate-200 hover:border-orange-300 rounded-xl hover:shadow-md transition-all duration-200 group bg-slate-50/30">
+                                <div className="flex items-center gap-4">
+                                    <div className="p-3 bg-white border border-slate-100 rounded-lg text-orange-600 group-hover:bg-orange-50 group-hover:border-orange-100 transition-colors">
+                                        <FileText className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-slate-900 text-sm group-hover:text-orange-600 transition-colors">{asset.name}</h4>
+                                        <p className="text-xs text-slate-500 mt-1">{asset.type} • {asset.size}</p>
+                                    </div>
+                                </div>
+                                <Link href="/contact" className="p-2 text-slate-400 hover:text-orange-600 transition-colors">
+                                    <Download className="w-5 h-5" />
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="py-20 bg-slate-50 border-t border-slate-200">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center mb-12">Resources Help & Support</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                <HelpCircle className="w-5 h-5 text-orange-600" />
+                                Where do I request custom APIs?
+                            </h4>
+                            <p className="text-sm text-slate-600 leading-relaxed">
+                                Our engineering team builds custom integrations regularly. Please submit a request on our contact form with details about your CRM or internal systems.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                <HelpCircle className="w-5 h-5 text-orange-600" />
+                                Are the whitepapers free to download?
+                            </h4>
+                            <p className="text-sm text-slate-600 leading-relaxed">
+                                Yes. All PDF blueprints, templates, and calculators on this page are completely public and do not require email registration to read.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Final CTA */}
+            <section className="py-20 bg-gradient-to-r from-orange-500 to-pink-500 text-white text-center">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8">
+                    <h2 className="text-4xl font-bold mb-6">Ready to Optimize Your Support Flows?</h2>
+                    <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+                        Speak directly with our platform onboarding architects. We will help design your visual tree, link your channels, and test your logic.
+                    </p>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <Link href="/contact" className="inline-block px-8 py-4 bg-white text-slate-900 rounded-full font-semibold text-lg hover:scale-105 shadow-xl transition-all">
+                            Talk to Onboarding Specialist
+                        </Link>
+                        <Link href="/demo" className="inline-flex items-center justify-center px-8 py-4 bg-slate-900/40 hover:bg-slate-900/60 text-white border border-white/20 rounded-full font-semibold text-lg transition-all">
+                            Book Live Platform Tour
+                        </Link>
+                    </div>
                 </div>
             </section>
         </SiteLayout>

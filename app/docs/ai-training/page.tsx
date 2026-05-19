@@ -29,11 +29,11 @@ export default function AITrainingPage() {
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">OpenAI</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">Alternative AI Engine</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Alternative with strong general-purpose capabilities.
+                            Robust cloud-based alternative with excellent general-purpose reasoning.
                         </p>
-                        <code className="text-xs bg-slate-100 px-2 py-1 rounded">gpt-4o-mini</code>
+                        <code className="text-xs bg-slate-100 px-2 py-1 rounded">alternative-cloud-model</code>
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-5">

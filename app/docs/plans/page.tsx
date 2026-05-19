@@ -158,7 +158,7 @@ export default function SwanPlansPage() {
                         <li>✅ 10 AI flows</li>
                         <li>✅ 5 agent seats</li>
                         <li>✅ 10,000 conversations/month</li>
-                        <li>✅ Voice AI with Twilio/Retell</li>
+                        <li>✅ Voice AI with premium telephony</li>
                         <li>✅ 2 additional integrations</li>
                         <li>✅ 50 knowledge base documents</li>
                         <li>✅ 5 language support</li>

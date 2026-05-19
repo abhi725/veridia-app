@@ -61,7 +61,7 @@ export const faqData: FAQCategory[] = [
             },
             {
                 question: "How does the Voice AI work?",
-                answer: "Our Voice AI integrates with Asterisk/SIP trunks. When a customer calls, the speech is converted to text (STT) using Whisper or deepgram, processed by the LLM in real-time, and converted back to speech (TTS) using ultra-realistic voice models (like Retell AI or Coqui). The entire round-trip latency is typically under 800ms, making it feel like a natural human conversation."
+                answer: "Our Voice AI integrates with enterprise SIP trunking. When a customer calls, the speech is converted to text (STT) using secure local or proprietary speech-to-text models, processed by the dynamic LLM in real-time, and converted back to speech (TTS) using ultra-realistic, natural voice generation. The entire round-trip latency is typically under 800ms, making it feel like a natural human conversation."
             },
             {
                 question: "Does the Voice AI understand Indian accents?",
@@ -187,7 +187,7 @@ export const faqData: FAQCategory[] = [
         items: [
             {
                 question: "Which Large Language Models (LLMs) do you use?",
-                answer: "We take an agnostic approach. By default, we utilize state-of-the-art models like Google Gemini Pro/Ultra, OpenAI GPT-4o, and Claude 3.5 Sonnet for cloud deployments. For on-premise and air-gapped deployments, we utilize open-source models like Llama 3 via Ollama."
+                answer: "We take an agnostic approach. By default, we utilize state-of-the-art cloud models for cloud deployments. For on-premise and air-gapped deployments, we utilize secure, local open-source models deployed directly inside your firewall."
             },
             {
                 question: "How do you prevent the AI from hallucinating?",
@@ -195,7 +195,7 @@ export const faqData: FAQCategory[] = [
             },
             {
                 question: "Can we self-host the entire platform?",
-                answer: "Yes. For highly regulated industries, we offer a true On-Premise / Air-Gapped deployment. The entire application, database, and LLMs (via Ollama) run on your own AWS/Azure/GCP infrastructure or physical bare-metal servers."
+                answer: "Yes. For highly regulated industries, we offer a true On-Premise / Air-Gapped deployment. The entire application, database, and secure open-source language models run on your own AWS/Azure/GCP infrastructure or physical bare-metal servers."
             },
 
             {
