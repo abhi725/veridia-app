@@ -6,7 +6,7 @@ export default function PlatformPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    This guide covers all the core features of the SwanDesk platform. Learn how to navigate the dashboard,
+                    This guide covers all the core features of the SwanDigitals platform. Learn how to navigate the dashboard,
                     train your AI, set up routing rules, and organize your support workflow.
                 </p>
             </section>
@@ -15,7 +15,7 @@ export default function PlatformPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Dashboard Overview</h2>
                 <p className="text-slate-600 mb-6">
-                    The SwanDesk dashboard is your command center for managing customer conversations.
+                    The SwanDigitals dashboard is your command center for managing customer conversations.
                     Here&apos;s what you&apos;ll find:
                 </p>
 

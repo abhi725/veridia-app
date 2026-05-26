@@ -5,140 +5,152 @@ import Link from 'next/link';
 import { Linkedin, Github, Globe, Rocket, Award, Code, Database, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Meet the Founder: Abhishek Ambad',
-    description: 'Meet Abhishek Ambad, Founder of SwanDigitals. Digital Growth Strategist and Tech Entrepreneur building India\'s Sovereign AI workforce.',
-    keywords: ['Abhishek Ambad', 'SwanDigitals Founder', 'Digital Growth Strategist', 'Tech Entrepreneur Pune'],
+    title: 'Our Leadership — SwanDigitals',
+    description: 'Meet the leaders of SwanDigitals: Swati Gaikwad (Co-Founder & CEO) and Kiran Shelke (Co-Founder & CTO). Building robust, DPDP compliant customer support AI for Indian enterprises.',
+    keywords: ['SwanDigitals Leadership', 'Swati Gaikwad', 'Kiran Shelke', 'AI Founders Pune', 'Sovereign AI India'],
     alternates: {
         canonical: 'https://swandigitals.com/leadership',
     },
 }
 
 export default function LeadershipPage() {
-    const personSchema = {
+    const teamSchema = {
         '@context': 'https://schema.org',
-        '@type': 'Person',
-        '@id': 'https://swandigitals.com/leadership#abhishek-ambad',
-        name: 'Abhishek Ambad',
-        jobTitle: 'Founder & CEO',
-        url: 'https://swandigitals.com/leadership',
-        sameAs: [
-            'https://www.linkedin.com/in/abhishek-ambad-964207147/',
-            'https://github.com/abhi725',
-            'https://about.me/abhishekambad',
-        ],
-        worksFor: {
-            '@type': 'Organization',
-            '@id': 'https://swandigitals.com/#organization',
-            name: 'SwanDigitals',
-        },
-        knowsAbout: ['AI Chatbots', 'Customer Support Automation', 'Digital Marketing', 'Voice AI', 'SaaS'],
-        alumniOf: {
-            '@type': 'Organization',
-            name: 'Pune, Maharashtra',
-        },
+        '@graph': [
+            {
+                '@type': 'Person',
+                '@id': 'https://swandigitals.com/leadership#swati-gaikwad',
+                name: 'Swati Gaikwad',
+                jobTitle: 'Co-Founder & CEO',
+                url: 'https://swandigitals.com/leadership',
+                worksFor: {
+                    '@type': 'Organization',
+                    '@id': 'https://swandigitals.com/#organization',
+                    name: 'SwanDigitals',
+                },
+                knowsAbout: ['Customer Success', 'Business Operations', 'AI Support', 'SaaS'],
+                alumniOf: {
+                    '@type': 'Organization',
+                    name: 'Pune, Maharashtra',
+                },
+            },
+            {
+                '@type': 'Person',
+                '@id': 'https://swandigitals.com/leadership#kiran-shelke',
+                name: 'Kiran Shelke',
+                jobTitle: 'Co-Founder & CTO',
+                url: 'https://swandigitals.com/leadership',
+                worksFor: {
+                    '@type': 'Organization',
+                    '@id': 'https://swandigitals.com/#organization',
+                    name: 'SwanDigitals',
+                },
+                knowsAbout: ['AI Engineering', 'Full Stack Development', 'Sovereign LLMs', 'Data Compliance'],
+                alumniOf: {
+                    '@type': 'Organization',
+                    name: 'Pune, Maharashtra',
+                },
+            }
+        ]
     };
 
     return (
         <SiteLayout>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
             />
             <Hero
                 badge="👥 Leadership"
-                title="Meet The Founder"
-                subtitle="Driven by a passion for innovation and 6+ years of experience in digital transformation."
-                primaryCTA={{ text: "Connect on LinkedIn", href: "https://www.linkedin.com/in/abhishek-ambad-964207147/" }}
-                secondaryCTA={{ text: "View Portfolio", href: "https://about.me/abhishekambad" }}
+                title="Meet Our Leadership Team"
+                subtitle="Guided by a customer-first mindset and building secure, sovereign AI technologies for India."
+                primaryCTA={{ text: "Schedule a Demo", href: "/demo" }}
+                secondaryCTA={{ text: "Contact Team", href: "/contact" }}
             />
 
-            {/* Founder Profile */}
+            {/* Leadership Profiles */}
             <section className="py-20 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="flex flex-col md:flex-row gap-12 items-center">
-                        <div className="w-full md:w-1/3 text-center">
-                            <div className="w-64 h-64 bg-slate-200 rounded-full mx-auto mb-8 overflow-hidden border-4 border-orange-100 shadow-xl relative">
-                                {/* Placeholder for user image if they have one, otherwise a stylized avatar */}
-                                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-400 to-pink-500 text-white text-6xl font-bold">
-                                    AA
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+                        
+                        {/* Swati Gaikwad */}
+                        <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-between">
+                            <div>
+                                <div className="w-40 h-40 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold shadow-md">
+                                    SG
                                 </div>
+                                <h2 className="text-3xl font-bold text-center text-slate-900 mb-1">Swati Gaikwad</h2>
+                                <p className="text-lg text-orange-600 font-semibold text-center mb-6">Co-Founder & CEO</p>
+                                
+                                <p className="text-slate-600 mb-6 leading-relaxed text-sm">
+                                    Swati co-founded SwanDigitals with a commitment to empower Indian businesses with state-of-the-art support operations. Drawing from years of customer relations expertise, she aligns our engineering capabilities directly with real-world enterprise needs.
+                                </p>
+                                <p className="text-slate-600 mb-8 leading-relaxed text-sm">
+                                    Her focus is on driving business scaling, operations, and ensuring every merchant gets first-class assistance, compliance satisfaction, and high ROI.
+                                </p>
                             </div>
-                            <h2 className="text-3xl font-bold text-slate-900 mb-2">Abhishek Ambad</h2>
-                            <p className="text-xl text-orange-600 font-medium mb-6">Founder & Growth Strategist</p>
 
-                            <div className="flex gap-4 justify-center">
-                                <a href="https://www.linkedin.com/in/abhishek-ambad-964207147/" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 rounded-full hover:bg-[#0077b5] hover:text-white transition-colors">
-                                    <Linkedin className="w-5 h-5" />
-                                </a>
-                                <a href="https://github.com/abhi725" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 rounded-full hover:bg-[#333] hover:text-white transition-colors">
-                                    <Github className="w-5 h-5" />
-                                </a>
-                                <a href="https://about.me/abhishekambad" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 rounded-full hover:bg-orange-500 hover:text-white transition-colors">
-                                    <Globe className="w-5 h-5" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="w-full md:w-2/3">
-                            <h3 className="text-2xl font-bold text-slate-900 mb-4">About Me</h3>
-                            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                I am Abhishek Ambad, the founder of SwanDigitals. With over <strong className="text-slate-900">6 years of experience</strong> in digital marketing and growth strategy, I specialize in building scalable digital solutions that drive real business results.
-                            </p>
-                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                My expertise spans across full-stack web development, SEO/SEM, and marketing automation. I'm passionate about leveraging technology to solve complex problems and helping improved digital presence for businesses.
-                            </p>
-
-                            <div className="grid sm:grid-cols-2 gap-6">
-                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <Award className="w-5 h-5 text-orange-500" />
-                                        <h4 className="font-bold text-slate-900">Digital Marketing</h4>
-                                    </div>
-                                    <p className="text-sm text-slate-600">SEO, SEM, Content Strategy, and Lead Generation expert.</p>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="bg-white p-3 rounded-xl border border-slate-100">
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">🚀 Operations</h4>
+                                    <p className="text-[11px] text-slate-500">Optimizing scaling, sales, and localized deployment metrics.</p>
                                 </div>
-                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <Code className="w-5 h-5 text-blue-500" />
-                                        <h4 className="font-bold text-slate-900">Development</h4>
-                                    </div>
-                                    <p className="text-sm text-slate-600">Webflow, Shopify, WordPress, and Full-stack solutions.</p>
-                                </div>
-                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <Rocket className="w-5 h-5 text-purple-500" />
-                                        <h4 className="font-bold text-slate-900">Automation</h4>
-                                    </div>
-                                    <p className="text-sm text-slate-600">HubSpot, Make.com, and Email Marketing workflows.</p>
-                                </div>
-                                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <TrendingUp className="w-5 h-5 text-green-500" />
-                                        <h4 className="font-bold text-slate-900">Growth</h4>
-                                    </div>
-                                    <p className="text-sm text-slate-600">Data-driven strategies to scale business operations.</p>
+                                <div className="bg-white p-3 rounded-xl border border-slate-100">
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">🤝 Customer Success</h4>
+                                    <p className="text-[11px] text-slate-500">Helping enterprises achieve 85%+ support automation.</p>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Kiran Shelke */}
+                        <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-between">
+                            <div>
+                                <div className="w-40 h-40 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold shadow-md">
+                                    KS
+                                </div>
+                                <h2 className="text-3xl font-bold text-center text-slate-900 mb-1">Kiran Shelke</h2>
+                                <p className="text-lg text-purple-600 font-semibold text-center mb-6">Co-Founder & CTO</p>
+                                
+                                <p className="text-slate-600 mb-6 leading-relaxed text-sm">
+                                    Kiran directs our technical framework and product development. He is passionate about deploying local, secure cloud and on-premise AI LLM nodes that adhere strictly to DPDP Act specifications and sovereign data practices.
+                                </p>
+                                <p className="text-slate-600 mb-8 leading-relaxed text-sm">
+                                    With robust full-stack expertise, he specializes in building low-latency speech pipelines, robust APIs, and high-performance communication systems.
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="bg-white p-3 rounded-xl border border-slate-100">
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">💻 System Design</h4>
+                                    <p className="text-[11px] text-slate-500">Next-gen speech channels and full-stack enterprise structures.</p>
+                                </div>
+                                <div className="bg-white p-3 rounded-xl border border-slate-100">
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">🔒 Data Privacy</h4>
+                                    <p className="text-[11px] text-slate-500">DPDP Act alignment and air-gapped on-prem deployments.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
-            {/* Values/Philosophy */}
+            {/* Leadership Philosophy */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold mb-12">My Philosophy</h2>
+                    <h2 className="text-3xl font-bold mb-12">Our Philosophy</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 text-slate-900">Innovation First</h3>
-                            <p className="text-slate-600">Constantly exploring new technologies to stay ahead of the curve.</p>
+                            <p className="text-slate-600">Exploring sovereign models and low-latency speech engines to push boundaries.</p>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 text-slate-900">Data-Driven</h3>
-                            <p className="text-slate-600">Every decision is backed by analytics and measurable KPIs.</p>
+                            <p className="text-slate-600">Every design choice is engineered for DPDP compliance and security metrics.</p>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 text-slate-900">User-Centric</h3>
-                            <p className="text-slate-600">Building solutions that truly solve user problems and add value.</p>
+                            <p className="text-slate-600">Creating natural voice and messaging touchpoints that customers love to use.</p>
                         </div>
                     </div>
                 </div>
@@ -148,13 +160,13 @@ export default function LeadershipPage() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-indigo-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Let's Build Something Great</h2>
-                    <p className="text-xl text-white/80 mb-8">Open to collaborations and new opportunities.</p>
+                    <p className="text-xl text-white/80 mb-8">Empower your customer support with India's secure enterprise chatbot.</p>
                     <div className="flex gap-4 justify-center">
-                        <a href="https://calendly.com/abhishek-ambad7/15min" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold text-lg transition-all">
-                            Schedule a Call
-                        </a>
+                        <Link href="/demo" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold text-lg transition-all shadow-lg hover:scale-105">
+                            Book a Demo
+                        </Link>
                         <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
-                            Contact Me
+                            Contact Us
                         </Link>
                     </div>
                 </div>
@@ -162,3 +174,4 @@ export default function LeadershipPage() {
         </SiteLayout>
     );
 }
+

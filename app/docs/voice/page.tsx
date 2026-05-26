@@ -123,14 +123,14 @@ export default function VoiceAIPage() {
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-6">
-                        <h3 className="text-lg font-medium text-slate-900 mb-3">4. Connect to SwanDesk Inbox</h3>
+                        <h3 className="text-lg font-medium text-slate-900 mb-3">4. Connect to SwanDigitals Inbox</h3>
                         <p className="text-slate-600 mb-4">
-                            Voice call transcripts automatically sync to SwanDesk for unified customer view.
+                            Voice call transcripts automatically sync to SwanDigitals for unified customer view.
                         </p>
                         <ol className="list-decimal list-inside space-y-3 text-slate-600">
                             <li>Go to <strong>Settings → Channels → Voice</strong></li>
                             <li>Click <strong>Connect Voice Inbox</strong></li>
-                            <li>Select or create a SwanDesk inbox for voice calls</li>
+                            <li>Select or create a SwanDigitals inbox for voice calls</li>
                             <li>Configure <strong>post-call summary</strong> (AI-generated summary after each call)</li>
                             <li>Enable <strong>transcript sync</strong> to attach full conversation to ticket</li>
                         </ol>

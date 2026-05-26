@@ -109,7 +109,7 @@ export default function FeaturesContent() {
             id: 'channels',
             badge: "💬 Omnichannel Inbox",
             title: "Reach Customers Anywhere. Manage in One Inbox.",
-            description: "Stop switching tabs. SwanDesk integrates with 13+ digital channels seamlessly.",
+            description: "Stop switching tabs. SwanDigitals integrates with 13+ digital channels seamlessly.",
             cards: [
                 { title: "WhatsApp Business API", desc: "Official BSP integration. Send broadcasts, handle incoming queries, verify OTPs directly." },
                 { title: "0% Meta Fee Markup", desc: "We pass Meta conversation fees strictly at cost. Zero markup, zero transactional tax margins." },
@@ -232,7 +232,7 @@ export default function FeaturesContent() {
     const chatbotComparison = [
         {
             feature: "Omnichannel Inbox",
-            swanDesk: "True unified inbox for WhatsApp, web, email, Instagram in one dashboard.",
+            swanDigitals: "True unified inbox for WhatsApp, web, email, Instagram in one dashboard.",
             freshdesk: "Separate siloed modules; poor live sync.",
             intercom: "High quality but expensive per-seat logic.",
             zendesk: "Traditional email-first; complex configuration.",
@@ -241,7 +241,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "WhatsApp Official API Fees",
-            swanDesk: "0% Meta Markup (billed strictly at official pass-through cost).",
+            swanDigitals: "0% Meta Markup (billed strictly at official pass-through cost).",
             freshdesk: "Marked up or restricted templates.",
             intercom: "High markup per customer contact reached.",
             zendesk: "Markup applied through third-party BSPs.",
@@ -250,7 +250,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Pricing Model",
-            swanDesk: "Flat Monthly Fee (Unlimited agent seats & volume tiers).",
+            swanDigitals: "Flat Monthly Fee (Unlimited agent seats & volume tiers).",
             freshdesk: "Seat-based (expensive to scale human workforce).",
             intercom: "Seat-based + active customer reach counts.",
             zendesk: "High per-seat pricing + paid AI add-ons.",
@@ -259,7 +259,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Data Sovereignty",
-            swanDesk: "100% Indian Data Residency (Mumbai servers) out-of-the-box.",
+            swanDigitals: "100% Indian Data Residency (Mumbai servers) out-of-the-box.",
             freshdesk: "Hosted in global US/EU server spaces.",
             intercom: "Global servers; no regional residency options.",
             zendesk: "Global hosting; expensive custom request.",
@@ -268,7 +268,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Air-Gapped On-Premises",
-            swanDesk: "Available (Full Docker self-hosted option with local LLM).",
+            swanDigitals: "Available (Full Docker self-hosted option with local LLM).",
             freshdesk: "Not supported.",
             intercom: "Not supported.",
             zendesk: "Not supported.",
@@ -277,7 +277,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Indian Language NLU",
-            swanDesk: "Native Hinglish + 10 regional Indian languages.",
+            swanDigitals: "Native Hinglish + 10 regional Indian languages.",
             freshdesk: "English translation API layer (high error rate).",
             intercom: "Translation layer (poor understanding of Hinglish).",
             zendesk: "Translation layer; no local Hinglish support.",
@@ -286,7 +286,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Implementation Support",
-            swanDesk: "Live in 7 Days (We build, ingest, and test the model for you).",
+            swanDigitals: "Live in 7 Days (We build, ingest, and test the model for you).",
             freshdesk: "Self-serve or expensive implementation partners.",
             intercom: "Self-serve; heavy automated tutorials.",
             zendesk: "Months of consulting and system integrator delays.",
@@ -377,7 +377,7 @@ export default function FeaturesContent() {
             cards: [
                 { title: "Call Recording", desc: "Record every inbound and outbound conversation for compliance, quality audit, and training." },
                 { title: "Automatic Transcription", desc: "Speech transcripts generated automatically. Search calls using text search terms in the inbox." },
-                { title: "AI Post-Call Summaries", desc: "Bullet-point call summaries automatically attached to the SwanDesk customer profile." },
+                { title: "AI Post-Call Summaries", desc: "Bullet-point call summaries automatically attached to the SwanDigitals customer profile." },
                 { title: "Telecom Call Metrics", desc: "Track duration, drop-offs, sentiment shifts, and resolution rate for every campaign." }
             ]
         },
@@ -398,7 +398,7 @@ export default function FeaturesContent() {
             title: "Works Natively with Your Existing Stack",
             description: "Synchronize call outcomes, fetch caller records, and update databases.",
             cards: [
-                { title: "Unified Helpdesk Sync", desc: "Transcripts and post-call summaries sync immediately with SwanDesk omnichannel inbox." },
+                { title: "Unified Helpdesk Sync", desc: "Transcripts and post-call summaries sync immediately with SwanDigitals omnichannel inbox." },
                 { title: "Salesforce & HubSpot Sync", desc: "Automatically update lead statuses, log call activity, and trigger follow-up tasks." },
                 { title: "Secure Database Inquiries", desc: "Securely query core systems to verify account details, balances, or order statuses." },
                 { title: "SIP Trunk Compatibility", desc: "Natively compatible with leading enterprise SIP trunks and local telecom providers." }
@@ -409,7 +409,7 @@ export default function FeaturesContent() {
     const voiceComparison = [
         {
             feature: "Response Latency",
-            swanDeskVoice: "<500ms (Hyper-realistic, natural turn-taking).",
+            swanDigitalsVoice: "<500ms (Hyper-realistic, natural turn-taking).",
             exotel: "2-3s (Rigid IVR logic or delayed cloud webhook triggers).",
             ozonetel: "2-3s (Delayed webhook audio processing).",
             myoperator: "Legacy DTMF (No real-time dynamic conversational speech).",
@@ -417,7 +417,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Indian Language NLU",
-            swanDeskVoice: "Native Hinglish + 10 regional Indian languages natively supported.",
+            swanDigitalsVoice: "Native Hinglish + 10 regional Indian languages natively supported.",
             exotel: "Basic TTS translation (Lacks regional dialects).",
             ozonetel: "Raw translation layers; high accent failure.",
             myoperator: "Pre-recorded audio prompts only; zero dynamic speech.",
@@ -425,7 +425,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "IVR Replacement",
-            swanDeskVoice: "Full conversational AI (Customers speak naturally immediately).",
+            swanDigitalsVoice: "Full conversational AI (Customers speak naturally immediately).",
             exotel: "DTMF keypress menus only ('Press 1 for...').",
             ozonetel: "DTMF keypress menus only.",
             myoperator: "Rigid traditional receptionist queues.",
@@ -433,7 +433,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Smart Recovery Campaigns",
-            swanDeskVoice: "Proactive outbound collections agent with callbacks.",
+            swanDigitalsVoice: "Proactive outbound collections agent with callbacks.",
             exotel: "Raw robo-blasts with standard voice file playbacks.",
             ozonetel: "Basic broadcast calling scripts.",
             myoperator: "Manual agent dialing only.",
@@ -441,7 +441,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Air-Gapped On-Premises",
-            swanDeskVoice: "Available (Deploy speech nodes locally for sovereign security).",
+            swanDigitalsVoice: "Available (Deploy speech nodes locally for sovereign security).",
             exotel: "Cloud only.",
             ozonetel: "Cloud only.",
             myoperator: "Cloud only.",
@@ -449,7 +449,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Unified Helpdesk Sync",
-            swanDeskVoice: "Transcripts and summaries sync instantly to unified inbox.",
+            swanDigitalsVoice: "Transcripts and summaries sync instantly to unified inbox.",
             exotel: "Delivered as external webhook API logs.",
             ozonetel: "Separate console required to access recordings.",
             myoperator: "Basic call logs with no transcript details.",
@@ -744,7 +744,7 @@ export default function FeaturesContent() {
                             <div className="bg-orange-50/50 border border-orange-200 p-8 rounded-3xl text-center shadow-sm">
                                 <h3 className="font-extrabold text-slate-900 text-xl mb-2">Need phone support too?</h3>
                                 <p className="text-slate-600 text-sm mb-6 leading-relaxed">
-                                    SwanDesk Voice AI handles incoming and outgoing customer calls in 10+ Indian languages with sub-500ms latency.
+                                    SwanDigitals Voice AI handles incoming and outgoing customer calls in 10+ Indian languages with sub-500ms latency.
                                 </p>
                                 <button 
                                     onClick={() => handleProductChange('voicebot')}
@@ -758,7 +758,7 @@ export default function FeaturesContent() {
                             <div className="bg-purple-50/50 border border-purple-200 p-8 rounded-3xl text-center shadow-sm">
                                 <h3 className="font-extrabold text-slate-900 text-xl mb-2">Need WhatsApp, email & web chat?</h3>
                                 <p className="text-slate-600 text-sm mb-6 leading-relaxed">
-                                    SwanDesk AI Chatbot automates conversations across 13+ digital channels in a single collaborative human mailbox.
+                                    SwanDigitals AI Chatbot automates conversations across 13+ digital channels in a single collaborative human mailbox.
                                 </p>
                                 <button 
                                     onClick={() => handleProductChange('chatbot')}
@@ -778,7 +778,7 @@ export default function FeaturesContent() {
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Competitor Breakdown</h2>
                             <p className="text-slate-500 font-medium text-lg">
-                                See how SwanDesk compares against the legacy alternatives
+                                See how SwanDigitals compares against the legacy alternatives
                             </p>
                         </div>
 
@@ -789,7 +789,7 @@ export default function FeaturesContent() {
                                     <thead>
                                         <tr className="bg-slate-900 text-white">
                                             <th className="py-5 px-6 font-bold text-sm w-1/4">FEATURE</th>
-                                            <th className="py-5 px-4 text-center font-extrabold text-sm bg-orange-500 text-white w-[15%]">SwanDesk</th>
+                                            <th className="py-5 px-4 text-center font-extrabold text-sm bg-orange-500 text-white w-[15%]">SwanDigitals</th>
                                             <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Freshdesk</th>
                                             <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Intercom</th>
                                             <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[12%]">Zendesk</th>
@@ -801,7 +801,7 @@ export default function FeaturesContent() {
                                         {chatbotComparison.map((row, idx) => (
                                             <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
                                                 <td className="py-4 px-6 font-bold text-slate-900">{row.feature}</td>
-                                                <td className="py-4 px-4 text-center bg-orange-50 font-bold text-slate-800 text-xs border-x border-orange-200">{row.swanDesk}</td>
+                                                <td className="py-4 px-4 text-center bg-orange-50 font-bold text-slate-800 text-xs border-x border-orange-200">{row.swanDigitals}</td>
                                                 <td className="py-4 px-4 text-center text-xs text-slate-500">{row.freshdesk}</td>
                                                 <td className="py-4 px-4 text-center text-xs text-slate-500">{row.intercom}</td>
                                                 <td className="py-4 px-4 text-center text-xs text-slate-500">{row.zendesk}</td>
@@ -819,7 +819,7 @@ export default function FeaturesContent() {
                                     <thead>
                                         <tr className="bg-slate-900 text-white">
                                             <th className="py-5 px-6 font-bold text-sm w-1/4">FEATURE</th>
-                                            <th className="py-5 px-4 text-center font-extrabold text-sm bg-purple-600 text-white w-[18%]">SwanDesk Voice</th>
+                                            <th className="py-5 px-4 text-center font-extrabold text-sm bg-purple-600 text-white w-[18%]">SwanDigitals Voice</th>
                                             <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">Exotel</th>
                                             <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">Ozonetel</th>
                                             <th className="py-5 px-4 text-center font-bold text-sm text-slate-300 w-[14%]">MyOperator</th>
@@ -830,7 +830,7 @@ export default function FeaturesContent() {
                                         {voiceComparison.map((row, idx) => (
                                             <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
                                                 <td className="py-4 px-6 font-bold text-slate-900">{row.feature}</td>
-                                                <td className="py-4 px-4 text-center bg-purple-50 font-bold text-slate-800 text-xs border-x border-purple-200">{row.swanDeskVoice}</td>
+                                                <td className="py-4 px-4 text-center bg-purple-50 font-bold text-slate-800 text-xs border-x border-purple-200">{row.swanDigitalsVoice}</td>
                                                 <td className="py-4 px-4 text-center text-xs text-slate-500">{row.exotel}</td>
                                                 <td className="py-4 px-4 text-center text-xs text-slate-500">{row.ozonetel}</td>
                                                 <td className="py-4 px-4 text-center text-xs text-slate-500">{row.myoperator}</td>
@@ -852,7 +852,7 @@ export default function FeaturesContent() {
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
                     <h2 className="reveal text-4xl sm:text-5xl font-black mb-6">Ready to See It in Action?</h2>
                     <p className="reveal text-lg text-slate-400 mb-10 max-w-xl mx-auto leading-relaxed">
-                        Book a 30-minute custom demo. We'll show you exactly how SwanDesk handles your live customer pathways.
+                        Book a 30-minute custom demo. We'll show you exactly how SwanDigitals handles your live customer pathways.
                     </p>
                     
                     <div className="reveal flex flex-col sm:flex-row justify-center gap-4">

@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'Personetics Alternative in India | Transactional Banking AI',
-    description: 'Compare SwanDesk vs Personetics. Combine proactive financial insights with a full-stack, omnichannel customer service inbox.',
-    keywords: ['Personetics Alternative', 'Personetics vs SwanDesk', 'Banking CRM'],
+    description: 'Compare SwanDigitals vs Personetics. Combine proactive financial insights with a full-stack, omnichannel customer service inbox.',
+    keywords: ['Personetics Alternative', 'Personetics vs SwanDigitals', 'Banking CRM'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-personetics',
     },
@@ -14,17 +14,17 @@ export default function VsPersoneticsPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Personetics"
-            heroTitle="SwanDesk vs Personetics"
+            heroTitle="SwanDigitals vs Personetics"
             heroSubtitle="Combine proactive financial insights with a full-stack, omnichannel customer service inbox."
             aboutCompetitor="Personetics focuses on data-driven, proactive financial insights and personal finance management (PFM) for banking customers."
             competitorStrengths="Proactive financial insights, deep transaction analysis, and PFM specialization."
-            realityCheck="Personetics is great for sending customers insights about their spending. SwanDesk is for when that customer replies and actually needs a problem solved across WhatsApp, Email, or Phone."
+            realityCheck="Personetics is great for sending customers insights about their spending. SwanDigitals is for when that customer replies and actually needs a problem solved across WhatsApp, Email, or Phone."
             comparisonRows={[
-                { feature: "Core Focus", SwanDesk: "Omnichannel Support", competitor: "Financial Insights" },
-                { feature: "Agent Inbox", SwanDesk: "Enterprise Grade", competitor: "No/Limited" },
-                { feature: "WhatsApp Support", SwanDesk: "Native", competitor: "Limited" },
-                { feature: "Voice AI Support", SwanDesk: "Included", competitor: "No" },
-                { feature: "Data Sovereignty", SwanDesk: "Air-Gapped Option", competitor: "Cloud Dependent" }
+                { feature: "Core Focus", SwanDigitals: "Omnichannel Support", competitor: "Financial Insights" },
+                { feature: "Agent Inbox", SwanDigitals: "Enterprise Grade", competitor: "No/Limited" },
+                { feature: "WhatsApp Support", SwanDigitals: "Native", competitor: "Limited" },
+                { feature: "Voice AI Support", SwanDigitals: "Included", competitor: "No" },
+                { feature: "Data Sovereignty", SwanDigitals: "Air-Gapped Option", competitor: "Cloud Dependent" }
             ]}
             reasonsToSwitch={[
                 {
@@ -45,7 +45,7 @@ export default function VsPersoneticsPage() {
             faqs={[
                 {
                     question: "Can we use both?",
-                    answer: "Yes, you can use Personetics for proactive insights and integrate SwanDesk to handle the inbound customer service queries."
+                    answer: "Yes, you can use Personetics for proactive insights and integrate SwanDigitals to handle the inbound customer service queries."
                 }
             ]}
         />

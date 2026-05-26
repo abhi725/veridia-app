@@ -3,7 +3,7 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'GoHighLevel Alternative in India | Focused AI Support for Agencies',
-    description: 'GoHighLevel is a massive marketing CRM. If your agency wants to provide focused, enterprise-grade AI customer support, SwanDesk is the ultimate white-label alternative.',
+    description: 'GoHighLevel is a massive marketing CRM. If your agency wants to provide focused, enterprise-grade AI customer support, SwanDigitals is the ultimate white-label alternative.',
     keywords: ['GoHighLevel alternative', 'GHL alternative India', 'White label AI Helpdesk', 'Agency CRM'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-gohighlevel',
@@ -22,30 +22,30 @@ export default function VsGHLPage() {
             reasonsToSwitch={[
                 {
                     title: "Laser-Focused on Support",
-                    description: "SwanDesk isn't a marketing Swiss Army knife. It is a dedicated, enterprise-grade AI Helpdesk built to do one thing perfectly: automate complex customer service."
+                    description: "SwanDigitals isn't a marketing Swiss Army knife. It is a dedicated, enterprise-grade AI Helpdesk built to do one thing perfectly: automate complex customer service."
                 },
                 {
                     title: "Enterprise Data Security",
-                    description: "GHL stores client data on shared global servers. SwanDesk provides 100% Indian data residency and air-gapped on-premise options for your strict enterprise clients."
+                    description: "GHL stores client data on shared global servers. SwanDigitals provides 100% Indian data residency and air-gapped on-premise options for your strict enterprise clients."
                 },
                 {
                     title: "Advanced Voice AI",
-                    description: "While GHL can route calls, SwanDesk provides fully native Generative Voice AI agents that can hold human-like conversations and resolve tickets over the phone."
+                    description: "While GHL can route calls, SwanDigitals provides fully native Generative Voice AI agents that can hold human-like conversations and resolve tickets over the phone."
                 }
             ]}
             comparisonRows={[
-                { feature: "Primary Function", SwanDesk: "AI Support Helpdesk", competitor: "Marketing Funnel CRM" },
-                { feature: "Software Complexity", SwanDesk: "Focused & Intuitive", competitor: "High Learning Curve (Bloated)" },
-                { feature: "Data Residency", SwanDesk: "100% India", competitor: "Global" },
-                { feature: "Native Generative Voice AI", SwanDesk: true, competitor: false },
-                { feature: "White-Label Agency Mode", SwanDesk: "Available", competitor: "Available" }
+                { feature: "Primary Function", SwanDigitals: "AI Support Helpdesk", competitor: "Marketing Funnel CRM" },
+                { feature: "Software Complexity", SwanDigitals: "Focused & Intuitive", competitor: "High Learning Curve (Bloated)" },
+                { feature: "Data Residency", SwanDigitals: "100% India", competitor: "Global" },
+                { feature: "Native Generative Voice AI", SwanDigitals: true, competitor: false },
+                { feature: "White-Label Agency Mode", SwanDigitals: "Available", competitor: "Available" }
             ]}
             targetPersona="You run a marketing agency whose primary service is building landing pages, running Facebook ads, and tracking lead attribution for local plumbers and dentists."
             verdict="You are a System Integrator or B2B SaaS Agency looking to sell high-end, highly secure AI Customer Support solutions to hospitals, banks, and large enterprises without overwhelming them with marketing tools."
             faqs={[
                 {
-                    question: "Can I use SwanDesk alongside GoHighLevel?",
-                    answer: "Absolutely. Many agencies use GHL for their marketing funnels, but deploy SwanDesk specifically as their dedicated customer service portal."
+                    question: "Can I use SwanDigitals alongside GoHighLevel?",
+                    answer: "Absolutely. Many agencies use GHL for their marketing funnels, but deploy SwanDigitals specifically as their dedicated customer service portal."
                 }
             ]}
         />

@@ -36,7 +36,7 @@ export default function HealthcarePage() {
     ];
 
     const faqItems = [
-        { question: "Is SwanDesk compliant with India's DPDP Act?", answer: "Yes. SwanDesk is designed for India's Digital Personal Data Protection (DPDP) Act 2023 compliance. We also follow HIPAA standards for healthcare organizations operating globally. Our platform can sign a Business Associate Agreement (BAA) and meets all technical safeguards for handling patient data." },
+        { question: "Is SwanDigitals compliant with India's DPDP Act?", answer: "Yes. SwanDigitals is designed for India's Digital Personal Data Protection (DPDP) Act 2023 compliance. We also follow HIPAA standards for healthcare organizations operating globally. Our platform can sign a Business Associate Agreement (BAA) and meets all technical safeguards for handling patient data." },
         { question: "Can the AI provide medical advice?", answer: "Our AI is designed for administrative tasks and symptom checking for triage purposes only. It always directs patients to qualified healthcare providers for medical advice and clearly states it's not a substitute for professional care." },
         { question: "How do you handle PHI?", answer: "All PHI is encrypted at rest and in transit. We support on-premise deployment where data never leaves your network. We also offer data anonymization and masking features for analytics." },
         { question: "Can we integrate with our HIS/EHR system?", answer: "Yes. We integrate with Indian Hospital Information Systems (HIS), ABDM (Ayushman Bharat Digital Mission) protocols, and e-Hospital platforms. We also support global EHR systems like Epic and Cerner for multinational hospitals. Custom integrations are available through our REST APIs." }

@@ -48,7 +48,7 @@ export default function HomePageContent() {
     const ctaRef = useReveal();
 
     const features = [
-        { icon: <Bot className="w-5 h-5" />, title: "AI That Actually Reads Context", description: "Your customers don't repeat themselves. SwanDesk AI remembers full conversations, suggests replies, and auto-resolves FAQs — in Hindi, Tamil, or English." },
+        { icon: <Bot className="w-5 h-5" />, title: "AI That Actually Reads Context", description: "Your customers don't repeat themselves. SwanDigitals AI remembers full conversations, suggests replies, and auto-resolves FAQs — in Hindi, Tamil, or English." },
         { icon: <Mic className="w-5 h-5" />, title: "Voice Bot for Phone Support", description: "Answer calls 24/7 in Hindi, Tamil, Telugu, and 8 more Indian languages. Works with advanced cloud voice providers, standard SIP trunking, or fully offline on-premises with private speech models." },
         { icon: <Zap className="w-5 h-5" />, title: "Up and Running in a Week", description: "Sign up, connect your WhatsApp and email, configure your AI — and you're live. Most teams are fully onboarded in 7 days. We help with setup." },
         { icon: <Shield className="w-5 h-5" />, title: "Your Data Stays Yours", description: "On-premise mode: your servers, your control, zero external calls. Cloud mode: we still don't read or store your customer conversations." },
@@ -65,15 +65,15 @@ export default function HomePageContent() {
 
     const solutions = [
         { icon: <Link2 className="w-6 h-6" />, title: "One inbox. Every channel.", description: "WhatsApp messages, emails, web chats, Instagram DMs — your team handles them all from a single screen. Assign, reply, resolve." },
-        { icon: <Bot className="w-6 h-6" />, title: "AI that helps, not replaces.", description: "SwanDesk AI suggests replies, auto-tags conversations, and resolves repetitive questions without human help. Agents focus on complex issues." },
+        { icon: <Bot className="w-6 h-6" />, title: "AI that helps, not replaces.", description: "SwanDigitals AI suggests replies, auto-tags conversations, and resolves repetitive questions without human help. Agents focus on complex issues." },
         { icon: <Cpu className="w-6 h-6" />, title: "Flat pricing. No surprises.", description: "One monthly price covers unlimited conversations. Your costs are predictable whether you handle 1,000 or 100,000 messages." },
         { icon: <Shield className="w-6 h-6" />, title: "On-prem for banks and hospitals.", description: "Full air-gapped deployment. Secure local LLMs, offline speech-to-text, and voice synthesis — all on your servers. DPDP 2023 ready." },
     ];
 
     const steps = [
-        { num: 1, icon: <Phone className="w-7 h-7" />, title: "Sign up & connect channels", day: "Day 1", description: "Create your SwanDesk account, connect WhatsApp Business, email, and web chat. Takes about 30 minutes." },
+        { num: 1, icon: <Phone className="w-7 h-7" />, title: "Sign up & connect channels", day: "Day 1", description: "Create your SwanDigitals account, connect WhatsApp Business, email, and web chat. Takes about 30 minutes." },
         { num: 2, icon: <Settings className="w-7 h-7" />, title: "Configure your AI", day: "Days 2–5", description: "Choose your model (secure cloud LLMs or local LLMs for on-premise), upload your knowledge base, set up escalation rules." },
-        { num: 3, icon: <Zap className="w-7 h-7" />, title: "Go live & scale", day: "Days 6–7", description: "Your team starts resolving tickets through SwanDesk. AI handles the repetitive ones. Track everything in the dashboard." },
+        { num: 3, icon: <Zap className="w-7 h-7" />, title: "Go live & scale", day: "Days 6–7", description: "Your team starts resolving tickets through SwanDigitals. AI handles the repetitive ones. Track everything in the dashboard." },
     ];
 
     const useCases = [
@@ -94,9 +94,9 @@ export default function HomePageContent() {
 
             {/* Hero */}
             <Hero
-                badge="SwanDesk is Live — Book a Demo"
+                badge="SwanDigitals is Live — Book a Demo"
                 title="Customer Support That Doesn't Need a 10-Person Team"
-                subtitle="SwanDesk is an AI-powered inbox for Indian businesses. Handle WhatsApp, email, and web chat in one place — with an AI that actually helps your team, not replaces it."
+                subtitle="SwanDigitals is an AI-powered inbox for Indian businesses. Handle WhatsApp, email, and web chat in one place — with an AI that actually helps your team, not replaces it."
                 primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "Sign Up Free →", href: "https://chat.swandigitals.com", external: true }}
                 showMockup={true}
@@ -123,9 +123,9 @@ export default function HomePageContent() {
             {/* Feature Grid */}
             <FeatureGrid
                 features={features}
-                sectionLabel="Why SwanDesk"
+                sectionLabel="Why SwanDigitals"
                 heading="AI That Actually Reads Context."
-                subheading="No more robotic replies. SwanDesk understands tone, intent, and urgency — then acts on it."
+                subheading="No more robotic replies. SwanDigitals understands tone, intent, and urgency — then acts on it."
             />
 
             {/* Problem Section — Visual */}
@@ -134,7 +134,7 @@ export default function HomePageContent() {
                     <div className="text-center mb-14">
                         <span className="reveal inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-rose-600 bg-rose-50 border border-rose-100 rounded-full mb-4">The Problem</span>
                         <h2 className="reveal text-3xl md:text-4xl font-bold text-slate-900 mb-3">Sound Familiar?</h2>
-                        <p className="reveal text-lg text-slate-500 max-w-xl mx-auto">These are the pain points that made us build SwanDesk differently.</p>
+                        <p className="reveal text-lg text-slate-500 max-w-xl mx-auto">These are the pain points that made us build SwanDigitals differently.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 stagger">
                         {problems.map((p, i) => (
@@ -160,14 +160,14 @@ export default function HomePageContent() {
                 <div className="max-w-7xl mx-auto px-5 lg:px-8">
                     <div className="text-center mb-14">
                         <span className="reveal inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-orange-400 bg-orange-400/10 border border-orange-400/20 rounded-full mb-4">The Solution</span>
-                        <h2 className="reveal text-3xl md:text-4xl font-bold text-white mb-3">Here's How SwanDesk Fixes This</h2>
+                        <h2 className="reveal text-3xl md:text-4xl font-bold text-white mb-3">Here's How SwanDigitals Fixes This</h2>
                         <p className="reveal text-lg text-slate-400 max-w-2xl mx-auto">One platform. AI inside. Your team's inbox — not a chatbot widget.</p>
                     </div>
                     {/* Visual before→after row */}
                     <div className="reveal grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch mb-10">
                         {/* Before */}
                         <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                            <p className="text-xs font-bold text-rose-400 uppercase tracking-widest mb-4">❌ Before SwanDesk</p>
+                            <p className="text-xs font-bold text-rose-400 uppercase tracking-widest mb-4">❌ Before SwanDigitals</p>
                             <ul className="space-y-3 text-sm text-slate-400">
                                 <li className="flex gap-2"><span className="text-rose-500 mt-0.5">✕</span>5 browser tabs open</li>
                                 <li className="flex gap-2"><span className="text-rose-500 mt-0.5">✕</span>WhatsApp on phone, email on desktop</li>
@@ -180,12 +180,12 @@ export default function HomePageContent() {
                         <div className="hidden md:flex items-center justify-center">
                             <div className="flex flex-col items-center gap-3">
                                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-500 rounded-full flex items-center justify-center shadow-orange text-white text-xl font-black">→</div>
-                                <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">SwanDesk</span>
+                                <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">SwanDigitals</span>
                             </div>
                         </div>
                         {/* After */}
                         <div className="bg-gradient-to-br from-orange-500/10 to-pink-500/10 border border-orange-500/20 rounded-2xl p-6">
-                            <p className="text-xs font-bold text-green-400 uppercase tracking-widest mb-4">✓ After SwanDesk</p>
+                            <p className="text-xs font-bold text-green-400 uppercase tracking-widest mb-4">✓ After SwanDigitals</p>
                             <ul className="space-y-3 text-sm text-white/80">
                                 <li className="flex gap-2"><span className="text-green-400 mt-0.5">✓</span>One inbox: WhatsApp, email, web chat</li>
                                 <li className="flex gap-2"><span className="text-green-400 mt-0.5">✓</span>AI replies in &lt;2 seconds, 24/7</li>
@@ -268,7 +268,7 @@ export default function HomePageContent() {
                             Use Cases
                         </span>
                         <h2 className="reveal text-3xl md:text-4xl font-bold text-slate-900 mb-3">Built for Your Industry</h2>
-                        <p className="reveal text-lg text-slate-500">See how businesses use SwanDesk across teams</p>
+                        <p className="reveal text-lg text-slate-500">See how businesses use SwanDigitals across teams</p>
                     </div>
 
                     <div className="reveal flex flex-wrap justify-center gap-3 mb-10">
@@ -305,7 +305,7 @@ export default function HomePageContent() {
                                 </Link>
                             </div>
                             <div className="flex items-center justify-center relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-                                <img src="/dashboard-screenshot.png" alt="SwanDesk Dashboard" className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" />
+                                <img src="/dashboard-screenshot.png" alt="SwanDigitals Dashboard" className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" />
                             </div>
                         </div>
                     </div>
@@ -374,7 +374,7 @@ export default function HomePageContent() {
 
             {/* FAQ */}
             <FAQ items={[
-                { question: "Is this just another chatbot?", answer: "No. SwanDesk is a full customer support platform — like Intercom or Freshdesk, but built for Indian businesses with AI already inside. It's an inbox your team works from every day, not a chatbot widget you set and forget." },
+                { question: "Is this just another chatbot?", answer: "No. SwanDigitals is a full customer support platform — like Intercom or Freshdesk, but built for Indian businesses with AI already inside. It's an inbox your team works from every day, not a chatbot widget you set and forget." },
                 { question: "How long does setup take?", answer: "Most teams connect WhatsApp and email on day 1, configure AI on day 2-3, and are fully live by day 7. We help. You're not alone." },
                 { question: "Can we deploy fully on-premises?", answer: "Yes. True on-premise — your data center, your servers. No external API calls required. We deploy secure local LLMs for text, offline transcription nodes for voice, and standard SIP trunking. Fully air-gapped, DPDP compliant." },
                 { question: "What happens when the AI can't answer?", answer: "The conversation routes to a human agent with full context. No dead ends. No 'I didn't understand that' loops." },
@@ -386,7 +386,7 @@ export default function HomePageContent() {
             <section ref={ctaRef} className="py-20 lg:py-28 bg-slate-900">
                 <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
                     <h2 className="reveal text-3xl md:text-4xl font-bold text-white mb-4">Ready to fix your customer support?</h2>
-                    <p className="reveal text-lg text-slate-400 mb-10">See SwanDesk in action. We'll walk you through the platform in under 30 minutes.</p>
+                    <p className="reveal text-lg text-slate-400 mb-10">See SwanDigitals in action. We'll walk you through the platform in under 30 minutes.</p>
                     <div className="reveal flex flex-col sm:flex-row gap-3 justify-center">
                         <a
                             href="https://chat.swandigitals.com"

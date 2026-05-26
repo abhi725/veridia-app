@@ -279,7 +279,7 @@ export default function IntegrationsPage() {
                                 Secure Integration Architecture & Compliance Notice
                             </h3>
                             <p className="text-sm text-amber-800 leading-relaxed max-w-5xl">
-                                To protect sensitive banking, healthcare, and enterprise data in accordance with <strong>DPDP Act 2023</strong> and <strong>RBI cyber security guidelines</strong>, SwanDesk runs on a segregated integration model. We separate <strong>Native Integrations</strong> (directly built into our core messaging engine) from <strong>API & Custom Workflow Integrations</strong> (securely connected via local REST APIs, air-gapped webhooks, or n8n workflow managers).
+                                To protect sensitive banking, healthcare, and enterprise data in accordance with <strong>DPDP Act 2023</strong> and <strong>RBI cyber security guidelines</strong>, SwanDigitals runs on a segregated integration model. We separate <strong>Native Integrations</strong> (directly built into our core messaging engine) from <strong>API & Custom Workflow Integrations</strong> (securely connected via local REST APIs, air-gapped webhooks, or n8n workflow managers).
                             </p>
                         </div>
                     </div>

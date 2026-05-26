@@ -110,7 +110,7 @@ export default function PricingContentWrapper() {
                 "Call Recording & Transcription",
                 "Live Agent Transfer",
                 "<500ms Voice Latency",
-                "Post-Call Summary in SwanDesk Inbox",
+                "Post-Call Summary in SwanDigitals Inbox",
                 "Support: Standard Email & Chat"
             ],
             exclusion: "Excludes AI Chatbot channels. Add any chatbot plan for omnichannel.",
@@ -165,7 +165,7 @@ export default function PricingContentWrapper() {
     const faqs = [
         {
             question: "What happens if I need both chatbot and voice?",
-            answer: "Pick any chatbot plan + any voice plan. They work together — every voice call lands in your SwanDesk inbox alongside WhatsApp and email conversations."
+            answer: "Pick any chatbot plan + any voice plan. They work together — every voice call lands in your SwanDigitals inbox alongside WhatsApp and email conversations."
         },
         {
             question: "Are there any setup fees?",

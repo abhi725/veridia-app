@@ -15,7 +15,7 @@ export default function usecasescloudPage() {
               </p>
           </div>
 
-          <h3 className="text-xl font-semibold text-slate-900 mb-4">How SwanDesk Helps</h3>
+          <h3 className="text-xl font-semibold text-slate-900 mb-4">How SwanDigitals Helps</h3>
           <div className="space-y-4">
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
                   <h4 className="font-medium text-slate-900 mb-2">Private Notes & Collaboration</h4>
@@ -23,7 +23,7 @@ export default function usecasescloudPage() {
               </div>
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
                   <h4 className="font-medium text-slate-900 mb-2">Embedded Web Widgets</h4>
-                  <p className="text-slate-600">Build custom chat interfaces right into your cloud control panel while agents use the standard, powerful SwanDesk UI on the backend.</p>
+                  <p className="text-slate-600">Build custom chat interfaces right into your cloud control panel while agents use the standard, powerful SwanDigitals UI on the backend.</p>
               </div>
           </div>
 

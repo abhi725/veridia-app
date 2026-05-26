@@ -8,7 +8,7 @@ export default function QuickstartPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Introduction</h2>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    SwanDesk is an AI-powered customer service platform that helps businesses automate support conversations
+                    SwanDigitals is an AI-powered customer service platform that helps businesses automate support conversations
                     across multiple channels including WhatsApp, web chat, and email. This guide will walk you through
                     setting up your account and connecting your first channel in under 5 minutes.
                 </p>
@@ -23,7 +23,7 @@ export default function QuickstartPage() {
             {/* Account Setup */}
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Account Setup</h2>
-                <p className="text-slate-600 mb-4">Follow these steps to create your SwanDesk account:</p>
+                <p className="text-slate-600 mb-4">Follow these steps to create your SwanDigitals account:</p>
                 <ol className="list-decimal list-inside space-y-3 text-slate-600">
                     <li>Visit <strong>chat.swandigitals.com</strong> and click <strong>Get Started Free</strong></li>
                     <li>Enter your business email and create a secure password</li>
@@ -59,7 +59,7 @@ export default function QuickstartPage() {
             <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Next Steps</h2>
                 <p className="text-slate-600 mb-4">
-                    Now that your chatbot is live, explore these resources to get the most out of SwanDesk:
+                    Now that your chatbot is live, explore these resources to get the most out of SwanDigitals:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600">
                     <li><strong>Platform Guide</strong> — Learn about dashboard features, routing rules, and labels</li>

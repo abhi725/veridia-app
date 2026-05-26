@@ -89,7 +89,7 @@ export default function DashboardMockup() {
                                     <span className="text-[9px] text-orange-500 font-medium">AI Reply</span>
                                 </div>
                                 <div className="bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl rounded-tr-none px-3 py-2 max-w-[80%]">
-                                    <p className="text-[11px] text-white">Hi Priya! 👋 Order #4521 is out for delivery. Expected by 5 PM today. Track here: swandesk.in/track/4521</p>
+                                    <p className="text-[11px] text-white">Hi Priya! 👋 Order #4521 is out for delivery. Expected by 5 PM today. Track here: swandigitals.in/track/4521</p>
                                 </div>
                                 <CheckCheck className="w-3 h-3 text-orange-400" />
                             </div>

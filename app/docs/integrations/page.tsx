@@ -7,7 +7,7 @@ export default function IntegrationsPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    SwanDesk integrates with popular business tools to help you streamline customer support workflows.
+                    SwanDigitals integrates with popular business tools to help you streamline customer support workflows.
                     This guide covers the most common integrations and how to set them up.
                 </p>
             </section>
@@ -30,7 +30,7 @@ export default function IntegrationsPage() {
 
                     <h3 className="text-lg font-medium text-slate-800">Setup Steps</h3>
                     <ol className="list-decimal list-inside space-y-3 text-slate-600">
-                        <li>Log in to your SwanDesk dashboard</li>
+                        <li>Log in to your SwanDigitals dashboard</li>
                         <li>Navigate to <strong>Settings → Channels → WhatsApp</strong></li>
                         <li>Click <strong>Connect WhatsApp Business</strong></li>
                         <li>Authenticate with your Meta Business account</li>
@@ -53,7 +53,7 @@ export default function IntegrationsPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Email Integration</h2>
                 <p className="text-slate-600 mb-6">
-                    Connect your email accounts to manage customer support via email. SwanDesk supports
+                    Connect your email accounts to manage customer support via email. SwanDigitals supports
                     IMAP/SMTP integration for most email providers.
                 </p>
 
@@ -84,7 +84,7 @@ export default function IntegrationsPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">CRM Integrations</h2>
                 <p className="text-slate-600 mb-6">
-                    Sync customer data between SwanDesk and your CRM to create a unified view of each customer.
+                    Sync customer data between SwanDigitals and your CRM to create a unified view of each customer.
                 </p>
 
                 <div className="space-y-6">
@@ -97,7 +97,7 @@ export default function IntegrationsPage() {
                         <ol className="list-decimal list-inside space-y-2 text-slate-600">
                             <li>Go to <strong>Settings → Integrations → Zendesk</strong></li>
                             <li>Enter your Zendesk subdomain and API token</li>
-                            <li>Choose sync direction: SwanDesk → Zendesk or bidirectional</li>
+                            <li>Choose sync direction: SwanDigitals → Zendesk or bidirectional</li>
                             <li>Map custom fields between platforms</li>
                             <li>Enable automatic ticket creation for new conversations</li>
                         </ol>
@@ -144,7 +144,7 @@ export default function IntegrationsPage() {
             <section className="bg-slate-50 rounded-xl p-8">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Next Steps</h2>
                 <ul className="list-disc list-inside space-y-2 text-slate-600">
-                    <li><strong>n8n Workflows</strong> — Connect SwanDesk to 200+ apps via webhooks</li>
+                    <li><strong>n8n Workflows</strong> — Connect SwanDigitals to 200+ apps via webhooks</li>
                     <li><strong>Automation</strong> — Set up macros, labels, and SwanAI bot</li>
                     <li><strong>Platform Guide</strong> — Learn about the dashboard and routing</li>
                 </ul>

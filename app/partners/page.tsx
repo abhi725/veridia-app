@@ -28,7 +28,7 @@ export default function PartnersPage() {
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-6">We're Building This Together</h2>
                     <p className="text-lg text-slate-600 mb-4">
-                        SwanDigitals is founded and built by Abhishek Ambad. We're actively seeking partners who want to integrate with our platform, implement solutions for their clients, or resell to their networks.
+                        SwanDigitals is built by Swati Gaikwad and Kiran Shelke. We're actively seeking partners who want to integrate with our platform, implement solutions for their clients, or resell to their networks.
                     </p>
                     <p className="text-lg text-slate-600">
                         If you're interested in partnering with us as we grow, we'd love to hear from you.
@@ -65,7 +65,7 @@ export default function PartnersPage() {
                         </div>
                         <div className="p-6 bg-slate-50 rounded-xl">
                             <h3 className="font-bold text-lg mb-2 text-orange-600">Direct Support</h3>
-                            <p className="text-slate-600">Work directly with the founder for technical questions</p>
+                            <p className="text-slate-600">Work directly with our engineering team for technical questions</p>
                         </div>
                         <div className="p-6 bg-slate-50 rounded-xl">
                             <h3 className="font-bold text-lg mb-2 text-orange-600">Flexible Terms</h3>

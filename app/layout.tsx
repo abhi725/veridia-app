@@ -7,18 +7,18 @@ const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500', '600'
 
 export const metadata: Metadata = {
     title: {
-        default: 'SwanDesk - AI Customer Support Platform for India | SwanDigitals',
+        default: 'SwanDigitals - AI Customer Support Platform for India',
         template: '%s | SwanDigitals'
     },
     description: 'The AI-powered customer support platform built for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. On-premise for BFSI. Start free.',
-    keywords: ['SwanDesk', 'customer support', 'helpdesk', 'WhatsApp inbox', 'AI chatbot India', 'Sovereign AI India', 'On-premise LLM', 'DPDP Compliant AI', 'Abhishek Ambad', 'SwanDigitals'],
-    authors: [{ name: 'Abhishek Ambad', url: 'https://swandigitals.com/leadership' }],
+    keywords: ['SwanDigitals', 'customer support', 'helpdesk', 'WhatsApp inbox', 'AI chatbot India', 'Sovereign AI India', 'On-premise LLM', 'DPDP Compliant AI', 'SwanDigitals'],
+    authors: [{ name: 'Swati Gaikwad' }, { name: 'Kiran Shelke' }],
     creator: 'SwanDigitals',
     openGraph: {
         type: 'website',
         locale: 'en_IN',
         url: 'https://swandigitals.com',
-        title: 'SwanDesk | AI Customer Support Platform for India',
+        title: 'SwanDigitals | AI Customer Support Platform for India',
         description: 'The AI-powered customer support platform built for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. On-premise for BFSI. Start free.',
         siteName: 'SwanDigitals',
         images: [
@@ -26,13 +26,13 @@ export const metadata: Metadata = {
                 url: '/og-image.jpg', // Ensure this image exists in public folder
                 width: 1200,
                 height: 630,
-                alt: 'SwanDesk — AI Customer Support Platform for India',
+                alt: 'SwanDigitals — AI Customer Support Platform for India',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'SwanDesk | AI Customer Support Platform for India',
+        title: 'SwanDigitals | AI Customer Support Platform for India',
         description: 'The AI-powered customer support platform for Indian businesses. WhatsApp, Voice, Chat — in one inbox.',
         creator: '@swandigitals',
         images: ['/og-image.jpg'],
@@ -90,10 +90,16 @@ export default function RootLayout({
                     areaServed: 'IN',
                     availableLanguage: ['en', 'hi'],
                 },
-                founder: {
-                    '@type': 'Person',
-                    name: 'Abhishek Ambad',
-                },
+                founder: [
+                    {
+                        '@type': 'Person',
+                        name: 'Swati Gaikwad',
+                    },
+                    {
+                        '@type': 'Person',
+                        name: 'Kiran Shelke',
+                    }
+                ],
                 sameAs: [
                     'https://linkedin.com/company/swandigitals',
                     'https://twitter.com/swandigitals',
@@ -113,7 +119,7 @@ export default function RootLayout({
             },
             {
                 '@type': 'SoftwareApplication',
-                name: 'SwanDesk',
+                name: 'SwanDigitals',
                 operatingSystem: 'Web, On-Premise',
                 applicationCategory: 'BusinessApplication',
                 offers: {
@@ -158,7 +164,7 @@ export default function RootLayout({
                     <div className="p-5 text-center bg-orange-50 border-2 border-orange-500 m-5 rounded-lg">
                         <p className="text-lg font-bold">JavaScript Required</p>
                         <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
-                        <p><strong>SwanDesk by SwanDigitals</strong> - AI Customer Support Platform for India</p>
+                        <p><strong>SwanDigitals</strong> - AI Customer Support Platform for India</p>
                         <p>Contact: +91 7770070762 | Email: support [at] swandigitals.com</p>
                     </div>
                 </noscript>

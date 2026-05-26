@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'ManyChat Alternative in India | B2B Lead Gen & Enterprise AI',
-    description: 'ManyChat is great for Instagram influencers, but terrible for secure enterprise support. Switch to SwanDesk for true DPDP-compliant AI automation.',
-    keywords: ['ManyChat alternative', 'ManyChat vs SwanDesk', 'Instagram Automation India', 'Enterprise Chatbot'],
+    description: 'ManyChat is great for Instagram influencers, but terrible for secure enterprise support. Switch to SwanDigitals for true DPDP-compliant AI automation.',
+    keywords: ['ManyChat alternative', 'ManyChat vs SwanDigitals', 'Instagram Automation India', 'Enterprise Chatbot'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-manychat',
     },
@@ -22,30 +22,30 @@ export default function VsManyChatPage() {
             reasonsToSwitch={[
                 {
                     title: "Generative AI vs Rigid Flows",
-                    description: "Stop forcing users through frustrating button menus. SwanDesk uses native LLMs to understand natural language, intent, and context seamlessly."
+                    description: "Stop forcing users through frustrating button menus. SwanDigitals uses native LLMs to understand natural language, intent, and context seamlessly."
                 },
                 {
                     title: "Enterprise Security & DPDP",
-                    description: "ManyChat operates on global servers. SwanDesk guarantees 100% data residency in India, making it secure for banking, healthcare, and regulated industries."
+                    description: "ManyChat operates on global servers. SwanDigitals guarantees 100% data residency in India, making it secure for banking, healthcare, and regulated industries."
                 },
                 {
                     title: "Voice AI & Omnichannel",
-                    description: "Social media is just one channel. SwanDesk unifies your Instagram DMs with Phone Calls (Voice AI), Email, and Web Chat."
+                    description: "Social media is just one channel. SwanDigitals unifies your Instagram DMs with Phone Calls (Voice AI), Email, and Web Chat."
                 }
             ]}
             comparisonRows={[
-                { feature: "Primary Target", SwanDesk: "Enterprise Support & Sales", competitor: "Social Media Marketers" },
-                { feature: "Data Residency", SwanDesk: "100% India (DPDP Ready)", competitor: "Global" },
-                { feature: "Native Voice AI", SwanDesk: true, competitor: false },
-                { feature: "RAG Knowledge Base", SwanDesk: "Deep Native Integration", competitor: "Requires Third-Party Logic" },
-                { feature: "SLA Ticketing System", SwanDesk: true, competitor: false }
+                { feature: "Primary Target", SwanDigitals: "Enterprise Support & Sales", competitor: "Social Media Marketers" },
+                { feature: "Data Residency", SwanDigitals: "100% India (DPDP Ready)", competitor: "Global" },
+                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
+                { feature: "RAG Knowledge Base", SwanDigitals: "Deep Native Integration", competitor: "Requires Third-Party Logic" },
+                { feature: "SLA Ticketing System", SwanDigitals: true, competitor: false }
             ]}
             targetPersona="You are an Instagram influencer or a digital marketing agency running social media giveaways and lead magnet funnels."
             verdict="You are a regulated enterprise, SaaS company, or established brand that needs a highly secure, LLM-powered omnichannel helpdesk to manage serious customer inquiries."
             faqs={[
                 {
-                    question: "Does SwanDesk support Instagram DMs like ManyChat?",
-                    answer: "Yes. SwanDesk fully integrates with the Instagram Direct API and Facebook Messenger, allowing your AI to handle social media inquiries alongside WhatsApp and Email."
+                    question: "Does SwanDigitals support Instagram DMs like ManyChat?",
+                    answer: "Yes. SwanDigitals fully integrates with the Instagram Direct API and Facebook Messenger, allowing your AI to handle social media inquiries alongside WhatsApp and Email."
                 }
             ]}
         />

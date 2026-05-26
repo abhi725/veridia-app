@@ -16,7 +16,7 @@ export default function AITrainingPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">AI Providers</h2>
                 <p className="text-slate-600 mb-6">
-                    SwanDesk supports multiple AI providers. Switch between them anytime based on your needs.
+                    SwanDigitals supports multiple AI providers. Switch between them anytime based on your needs.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

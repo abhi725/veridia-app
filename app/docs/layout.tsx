@@ -85,7 +85,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
                         <ArrowLeft className="w-4 h-4" />
                         Back to Documentation
                     </Link>
-                    <span className="text-sm font-medium text-slate-900">SwanDesk Docs</span>
+                    <span className="text-sm font-medium text-slate-900">SwanDigitals Docs</span>
                 </div>
             </div>
 

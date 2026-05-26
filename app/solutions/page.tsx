@@ -25,7 +25,7 @@ export default function SolutionsPage() {
             <Hero
                 badge="💡 Solutions"
                 title="AI Solutions for Every Use Case"
-                subtitle="Whether you're automating customer support, internal operations, or industry-specific workflows, SwanDesk has a purpose-built solution."
+                subtitle="Whether you're automating customer support, internal operations, or industry-specific workflows, SwanDigitals has a purpose-built solution."
                 primaryCTA={{ text: "Find Your Solution", href: "#use-cases" }}
                 secondaryCTA={{ text: "Talk to Expert", href: "/demo" }}
             />

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDesk Platform | AI Customer Support | Multi-Channel Inbox | India',
-    description: 'SwanDesk AI platform: visual flow builder, voice AI, WhatsApp API, analytics. Cloud + on-premise. 100% data sovereignty for Indian enterprises.',
+    title: 'SwanDigitals Platform | AI Customer Support | Multi-Channel Inbox | India',
+    description: 'SwanDigitals AI platform: visual flow builder, voice AI, WhatsApp API, analytics. Cloud + on-premise. 100% data sovereignty for Indian enterprises.',
     keywords: ['AI Platform India', 'Chatbot Platform', 'On-Premise AI', 'Low-Code Chatbot', 'Enterprise AI India'],
     alternates: {
         canonical: 'https://swandigitals.com/platform',
@@ -96,7 +96,7 @@ export default function PlatformPage() {
                         </div>
                     </div>
                     <p className="text-center text-xl font-semibold text-slate-900">
-                        SwanDesk solves all three. Here's how:
+                        SwanDigitals solves all three. Here's how:
                     </p>
                 </div>
             </section>
@@ -216,13 +216,13 @@ export default function PlatformPage() {
                     {/* vs Yellow.ai Comparison */}
                     <div className="bg-white/5 rounded-3xl p-8 md:p-10 border border-white/10">
                         <h3 className="text-2xl font-bold text-center mb-6">True On-Premise vs "Dedicated Cloud"</h3>
-                        <p className="text-center text-slate-400 mb-10">See how SwanDesk compares to Yellow.ai's "dedicated VPC"</p>
+                        <p className="text-center text-slate-400 mb-10">See how SwanDigitals compares to Yellow.ai's "dedicated VPC"</p>
                         <div className="overflow-x-auto">
                             <table className="w-full text-sm text-left">
                                 <thead>
                                     <tr className="border-b border-white/10 text-slate-400">
                                         <th className="py-4 px-4 font-semibold">Feature</th>
-                                        <th className="py-4 px-4 font-bold text-orange-400">SwanDesk</th>
+                                        <th className="py-4 px-4 font-bold text-orange-400">SwanDigitals</th>
                                         <th className="py-4 px-4 font-semibold">Yellow.ai VPC</th>
                                     </tr>
                                 </thead>
@@ -259,7 +259,7 @@ export default function PlatformPage() {
                                     <Brain className="w-8 h-8" />
                                 </div>
                                 <h3 className="font-bold text-slate-900 mb-2">AI Layer</h3>
-                                <p className="text-sm text-slate-500">SwanDesk AI Engine</p>
+                                <p className="text-sm text-slate-500">SwanDigitals AI Engine</p>
                             </div>
                             <div className="flex flex-col items-center">
                                 <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mb-5">
@@ -344,7 +344,7 @@ export default function PlatformPage() {
                     <div className="space-y-4">
                         <details className="bg-slate-50 border border-slate-100 p-6 rounded-2xl group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary className="font-semibold text-lg text-slate-900 flex justify-between items-center">
-                                Can I deploy SwanDesk fully offline?
+                                Can I deploy SwanDigitals fully offline?
                                 <span className="text-orange-500 group-open:-rotate-180 transition-transform duration-300">▼</span>
                             </summary>
                             <p className="mt-4 text-slate-600 leading-relaxed pt-4 border-t border-slate-200">Yes! We offer true air-gapped deployment where the entire platform runs offline with no internet dependency.</p>

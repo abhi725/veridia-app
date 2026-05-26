@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'QuickMessage Alternative in India | Managed AI for Agencies',
-    description: 'QuickMessage offers a raw pay-as-you-go model. Switch to SwanDesk if your agency needs a fully-managed, Enterprise AI Helpdesk with predictable flat pricing.',
-    keywords: ['QuickMessage alternative', 'QuickMessage vs SwanDesk', 'Agency WhatsApp tool', 'Enterprise AI pricing'],
+    description: 'QuickMessage offers a raw pay-as-you-go model. Switch to SwanDigitals if your agency needs a fully-managed, Enterprise AI Helpdesk with predictable flat pricing.',
+    keywords: ['QuickMessage alternative', 'QuickMessage vs SwanDigitals', 'Agency WhatsApp tool', 'Enterprise AI pricing'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-quickmessage',
     },
@@ -22,30 +22,30 @@ export default function VsQuickMessagePage() {
             reasonsToSwitch={[
                 {
                     title: "Out-of-the-Box Enterprise UI",
-                    description: "Stop spending months building custom dashboards for your clients. SwanDesk gives you a beautifully designed, ready-to-deploy enterprise helpdesk instantly."
+                    description: "Stop spending months building custom dashboards for your clients. SwanDigitals gives you a beautifully designed, ready-to-deploy enterprise helpdesk instantly."
                 },
                 {
                     title: "Predictable Flat SaaS Pricing",
-                    description: "Scaling enterprises hate unpredictable bills. SwanDesk offers a flat monthly platform fee with unlimited agent seats, making budget approvals easy."
+                    description: "Scaling enterprises hate unpredictable bills. SwanDigitals offers a flat monthly platform fee with unlimited agent seats, making budget approvals easy."
                 },
                 {
                     title: "True Omnichannel & Voice",
-                    description: "QuickMessage focuses heavily on WhatsApp. SwanDesk unifies Web Chat, Email, and native Indian Voice AI into a single agent experience."
+                    description: "QuickMessage focuses heavily on WhatsApp. SwanDigitals unifies Web Chat, Email, and native Indian Voice AI into a single agent experience."
                 }
             ]}
             comparisonRows={[
-                { feature: "Pricing Model", SwanDesk: "Predictable Flat Fee", competitor: "Pay-As-You-Go" },
-                { feature: "Platform Completeness", SwanDesk: "Fully Managed CRM", competitor: "Developer-First Tooling" },
-                { feature: "Native Voice AI", SwanDesk: true, competitor: false },
-                { feature: "Omnichannel Support", SwanDesk: "Web, Email, Voice, IG, WA", competitor: "Primarily WhatsApp" },
-                { feature: "Enterprise SLA Tracking", SwanDesk: "Built-in", competitor: "Must be custom built" }
+                { feature: "Pricing Model", SwanDigitals: "Predictable Flat Fee", competitor: "Pay-As-You-Go" },
+                { feature: "Platform Completeness", SwanDigitals: "Fully Managed CRM", competitor: "Developer-First Tooling" },
+                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
+                { feature: "Omnichannel Support", SwanDigitals: "Web, Email, Voice, IG, WA", competitor: "Primarily WhatsApp" },
+                { feature: "Enterprise SLA Tracking", SwanDigitals: "Built-in", competitor: "Must be custom built" }
             ]}
             targetPersona="You are an independent developer or small agency that wants raw API access to build custom WhatsApp bots with zero monthly commitments."
             verdict="You are a premium SaaS reseller or enterprise looking for a fully-managed, out-of-the-box AI Helpdesk that you can deploy to strict corporate clients instantly."
             faqs={[
                 {
-                    question: "Do I need developers to use SwanDesk?",
-                    answer: "No! Unlike QuickMessage where you need to build the UI yourself, SwanDesk is a fully managed, no-code platform. Your support team can use it on day one."
+                    question: "Do I need developers to use SwanDigitals?",
+                    answer: "No! Unlike QuickMessage where you need to build the UI yourself, SwanDigitals is a fully managed, no-code platform. Your support team can use it on day one."
                 }
             ]}
         />

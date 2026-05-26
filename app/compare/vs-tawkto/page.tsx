@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'Tawk.to Alternative in India | Premium AI Live Chat & Voice',
-    description: 'Tawk.to is free, but costs you your brand image. Upgrade to SwanDesk for a premium, white-labeled omnichannel AI helpdesk that actually resolves tickets.',
-    keywords: ['Tawk.to alternative', 'Tawk.to vs SwanDesk', 'Premium Live Chat India', 'AI Chatbot India'],
+    description: 'Tawk.to is free, but costs you your brand image. Upgrade to SwanDigitals for a premium, white-labeled omnichannel AI helpdesk that actually resolves tickets.',
+    keywords: ['Tawk.to alternative', 'Tawk.to vs SwanDigitals', 'Premium Live Chat India', 'AI Chatbot India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-tawkto',
     },
@@ -22,30 +22,30 @@ export default function VsTawktoPage() {
             reasonsToSwitch={[
                 {
                     title: "True AI Automation",
-                    description: "Stop relying on humans to answer 'What are your hours?'. SwanDesk's LLM handles 90% of your incoming chats instantly and accurately."
+                    description: "Stop relying on humans to answer 'What are your hours?'. SwanDigitals's LLM handles 90% of your incoming chats instantly and accurately."
                 },
                 {
                     title: "Premium Brand Experience",
-                    description: "SwanDesk offers a beautifully designed, 100% white-labeled chat experience that elevates your brand, rather than looking like a free plugin."
+                    description: "SwanDigitals offers a beautifully designed, 100% white-labeled chat experience that elevates your brand, rather than looking like a free plugin."
                 },
                 {
                     title: "Beyond Web Chat",
-                    description: "Tawk.to is primarily a website widget. SwanDesk integrates Web, WhatsApp, Email, and Phone Calls into one seamless agent dashboard."
+                    description: "Tawk.to is primarily a website widget. SwanDigitals integrates Web, WhatsApp, Email, and Phone Calls into one seamless agent dashboard."
                 }
             ]}
             comparisonRows={[
-                { feature: "Primary Value Prop", SwanDesk: "AI Automation & Efficiency", competitor: "Free Manual Live Chat" },
-                { feature: "Generative AI", SwanDesk: "Native (LLM)", competitor: "None / Basic" },
-                { feature: "Brand Experience", SwanDesk: "Premium & White-labeled", competitor: "Ad-supported / Basic" },
-                { feature: "Native Voice AI", SwanDesk: true, competitor: false },
-                { feature: "WhatsApp API", SwanDesk: "Deep Native Integration", competitor: "Limited / Add-on" }
+                { feature: "Primary Value Prop", SwanDigitals: "AI Automation & Efficiency", competitor: "Free Manual Live Chat" },
+                { feature: "Generative AI", SwanDigitals: "Native (LLM)", competitor: "None / Basic" },
+                { feature: "Brand Experience", SwanDigitals: "Premium & White-labeled", competitor: "Ad-supported / Basic" },
+                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
+                { feature: "WhatsApp API", SwanDigitals: "Deep Native Integration", competitor: "Limited / Add-on" }
             ]}
             targetPersona="You are a solo founder or a tiny blog that has zero budget and just needs a free chat bubble on a website."
             verdict="You are a professional business that values its brand image, needs to automate support to scale efficiently, and wants a secure, omnichannel CRM."
             faqs={[
                 {
-                    question: "Is SwanDesk free like Tawk.to?",
-                    answer: "No. SwanDesk is a premium Enterprise AI platform. Tawk.to is free because it relies on manual labor. SwanDesk pays for itself by deflecting 90% of your support costs through AI."
+                    question: "Is SwanDigitals free like Tawk.to?",
+                    answer: "No. SwanDigitals is a premium Enterprise AI platform. Tawk.to is free because it relies on manual labor. SwanDigitals pays for itself by deflecting 90% of your support costs through AI."
                 }
             ]}
         />

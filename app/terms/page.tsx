@@ -90,7 +90,7 @@ export default function TermsPage() {
 
                             <h3 className="text-lg font-semibold mt-6">3.1 Third-Party Authentication (Google OAuth)</h3>
                             <p>
-                                We offer the ability to register and log in to the SwanDesk dashboard using third-party authentication services, specifically Google OAuth. By utilizing Google Authentication:
+                                We offer the ability to register and log in to the SwanDigitals dashboard using third-party authentication services, specifically Google OAuth. By utilizing Google Authentication:
                             </p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>You authorize us to access and use your basic Google profile information (name and email) strictly for the purpose of granting you account access.</li>

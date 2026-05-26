@@ -7,7 +7,7 @@ import { Suspense } from 'react';
 import PricingContentWrapper from './PricingContentWrapper';
 
 export const metadata: Metadata = {
-    title: 'Honest Pricing. No Surprises. | SwanDesk',
+    title: 'Honest Pricing. No Surprises. | SwanDigitals',
     description: 'AI Chatbot from ₹4,999/mo. Voice AI from ₹5/min. Unlimited conversations, unlimited agents, zero per-message billing. On-premise available.',
     keywords: ['AI Chatbot Cost India', 'WhatsApp Bot Price India', 'Voice Bot Pricing INR', 'RBI Compliant AI Pricing', 'Sovereign Hosting Price'],
     alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
                 url: 'https://swandigitals.com/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'SwanDesk Flat-Rate & Value-Based Pricing',
+                alt: 'SwanDigitals Flat-Rate & Value-Based Pricing',
             }
         ]
     }
@@ -29,7 +29,7 @@ export default function PricingPage() {
     return (
         <SiteLayout>
             <Hero
-                badge="💼 SwanDesk Flat-Rate Pricing"
+                badge="💼 SwanDigitals Flat-Rate Pricing"
                 title="Honest Pricing. No Surprises."
                 subtitle="Ditch seat taxes and session caps. Premium AI chat and voice plans designed specifically for high-growth Indian enterprises, D2C brands, and regulated sectors."
                 primaryCTA={{ text: "View Pricing Plans", href: "#plans" }}

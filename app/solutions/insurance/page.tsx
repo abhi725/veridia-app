@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
     title: 'Insurance AI Chatbot India - Instant Claims & Quotes',
     description: 'Automate claims submission, policy renewals, and instant quote generation for Indian insurance brands. Secure, compliant, and optimized for high-volume WhatsApp channels.',
-    keywords: ['Insurance AI Chatbot', 'FNOL Chatbot India', 'WhatsApp Insurance Quote', 'Aadhaar KYC Chatbot', 'SwanDesk Insurance'],
+    keywords: ['Insurance AI Chatbot', 'FNOL Chatbot India', 'WhatsApp Insurance Quote', 'Aadhaar KYC Chatbot', 'SwanDigitals Insurance'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/insurance',
     },
@@ -174,12 +174,12 @@ export default function InsurancePage() {
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                                No, core policy engines are usually secure and air-gapped. SwanDesk queries them safely via custom webhooks, secure REST API bridges, or secure custom n8n configurations to ensure absolute network protection.
+                                No, core policy engines are usually secure and air-gapped. SwanDigitals queries them safely via custom webhooks, secure REST API bridges, or secure custom n8n configurations to ensure absolute network protection.
                             </p>
                         </details>
                         <details className="bg-slate-50 p-6 rounded-2xl group cursor-pointer border border-slate-100">
                             <summary className="font-bold text-lg text-slate-900 flex justify-between items-center list-none">
-                                <span>Does SwanDesk support regional languages for insurance claims?</span>
+                                <span>Does SwanDigitals support regional languages for insurance claims?</span>
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">

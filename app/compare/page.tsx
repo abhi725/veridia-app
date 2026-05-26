@@ -12,9 +12,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Compare SwanDesk vs Competitors | Alternative to Zendesk, WATI & More',
-    description: 'See why scaling Indian enterprises, banks, and D2C brands are migrating from global tools like Zendesk, WATI, and GoHighLevel to SwanDesk.',
-    keywords: ['SwanDesk alternatives', 'Zendesk alternative India', 'WATI alternative', 'Compare AI Helpdesks'],
+    title: 'Compare SwanDigitals vs Competitors | Alternative to Zendesk, WATI & More',
+    description: 'See why scaling Indian enterprises, banks, and D2C brands are migrating from global tools like Zendesk, WATI, and GoHighLevel to SwanDigitals.',
+    keywords: ['SwanDigitals alternatives', 'Zendesk alternative India', 'WATI alternative', 'Compare AI Helpdesks'],
     alternates: {
         canonical: 'https://swandigitals.com/compare',
     },
@@ -102,13 +102,13 @@ export default function CompareHubPage() {
                         Competitor Analysis
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
-                        Compare SwanDesk vs <br className="hidden md:block" />
+                        Compare SwanDigitals vs <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
                             Global Alternatives
                         </span>
                     </h1>
                     <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-                        Whether you are outgrowing a basic WhatsApp broadcast tool or looking to escape the expensive "per-seat" pricing of Zendesk, find out why Indian enterprises are switching to SwanDesk.
+                        Whether you are outgrowing a basic WhatsApp broadcast tool or looking to escape the expensive "per-seat" pricing of Zendesk, find out why Indian enterprises are switching to SwanDigitals.
                     </p>
                 </div>
             </section>

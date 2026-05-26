@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Banking AI Chatbot India - Fraud Detection & Compliance',
     description: 'The deepest conversational AI for Indian Banking. Automate every customer touchpoint while keeping 100% of data in India.',
-    keywords: ['Banking AI Chatbot India', 'Banking Fraud Detection', 'RBI Compliant AI', 'DPDP Act Banking', 'SwanDesk Banking'],
+    keywords: ['Banking AI Chatbot India', 'Banking Fraud Detection', 'RBI Compliant AI', 'DPDP Act Banking', 'SwanDigitals Banking'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/banking',
     },
@@ -63,7 +63,7 @@ export default function BankingPage() {
                             <p className="text-slate-700 mb-4">Audit-ready conversation logs for regulatory review</p>
                             <p className="text-sm text-slate-600 mb-4">Complete tamper-proof logs with 7-year retention, exportable for RBI and DPDP compliance</p>
                             <Link href="/demo" className="text-blue-600 font-semibold hover:text-blue-700">
-                                See SwanDesk Demo →
+                                See SwanDigitals Demo →
                             </Link>
                         </div>
 

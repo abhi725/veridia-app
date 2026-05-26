@@ -38,7 +38,7 @@ export default function SecurityPage() {
             icon: <FileCheck className="w-8 h-8 text-orange-600" />,
             title: "DPDP 2023 & RBI Circular Ready",
             subtitle: "Regulatory Alignment Out-of-the-box",
-            description: "SwanDesk is built from the ground up to support the Digital Personal Data Protection (DPDP) Act 2023. Our architecture includes user consent builders, request-to-forget pipelines, and detailed access logging aligning with RBI cyber security criteria for banks and NBFCs."
+            description: "SwanDigitals is built from the ground up to support the Digital Personal Data Protection (DPDP) Act 2023. Our architecture includes user consent builders, request-to-forget pipelines, and detailed access logging aligning with RBI cyber security criteria for banks and NBFCs."
         },
         {
             icon: <Server className="w-8 h-8 text-orange-600" />,
@@ -77,7 +77,7 @@ export default function SecurityPage() {
         {
             icon: <Cpu className="w-6 h-6 text-orange-600" />,
             title: "Zero-Knowledge AI Training",
-            description: "SwanDesk never uses your customer transcripts, operational telemetry, or internal manuals to train public LLM models."
+            description: "SwanDigitals never uses your customer transcripts, operational telemetry, or internal manuals to train public LLM models."
         }
     ];
 
@@ -99,7 +99,7 @@ export default function SecurityPage() {
                             Designed to meet the absolute strictest security mandates
                         </h2>
                         <p className="mt-4 text-lg text-slate-600">
-                            Indian financial institutions, healthcare providers, and high-growth scale-ups trust SwanDesk to manage millions of critical daily interactions safely.
+                            Indian financial institutions, healthcare providers, and high-growth scale-ups trust SwanDigitals to manage millions of critical daily interactions safely.
                         </p>
                     </div>
 
@@ -130,7 +130,7 @@ export default function SecurityPage() {
                                 Most AI platforms route user queries to global public servers, risking compliance and exposing intellectual property.
                             </p>
                             <p className="text-slate-600 mb-8 leading-relaxed">
-                                SwanDesk offers a true, containerized self-hosted architecture. Using isolated Docker clusters or Coolify deployments, you run SwanDesk directly inside your private VPC (AWS, Azure, Google Cloud) or physical bare-metal servers. 
+                                SwanDigitals offers a true, containerized self-hosted architecture. Using isolated Docker clusters or Coolify deployments, you run SwanDigitals directly inside your private VPC (AWS, Azure, Google Cloud) or physical bare-metal servers. 
                             </p>
                             
                             <ul className="space-y-4">
@@ -155,15 +155,15 @@ export default function SecurityPage() {
                                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                                 </div>
-                                <span className="text-slate-500">swandesk-docker-compose.yml</span>
+                                <span className="text-slate-500">swandigitals-docker-compose.yml</span>
                             </div>
                             <pre className="text-slate-300 overflow-x-auto space-y-1">
                                 {`version: "3.8"
 services:
-  swandesk-engine:
-    image: veridia/swandesk-engine:v4.13.0
+  swandigitals-engine:
+    image: veridia/swandigitals-engine:v4.13.0
     environment:
-      - DATABASE_URL=postgresql://local-db/swandesk
+      - DATABASE_URL=postgresql://local-db/swandigitals
       - DATA_RESIDENCY=INDIA_MUMBAI
       - LLM_PROVIDER=local_ollama
       - OLLAMA_HOST=http://private-llm-host:11434
@@ -172,7 +172,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - secure_vault:/var/lib/swandesk
+      - secure_vault:/var/lib/swandigitals
       
   private-llm-host:
     image: ollama/ollama:latest
@@ -228,7 +228,7 @@ services:
                             <thead>
                                 <tr className="bg-slate-900 text-white">
                                     <th className="p-5 font-semibold text-sm">SECURITY VARIABLE</th>
-                                    <th className="p-5 font-semibold text-sm text-center">SWANDESK SECURE CLOUD</th>
+                                    <th className="p-5 font-semibold text-sm text-center">SWANDIGITALS SECURE CLOUD</th>
                                     <th className="p-5 font-semibold text-sm text-center">AIR-GAPPED ON-PREMISE</th>
                                 </tr>
                             </thead>
@@ -255,7 +255,7 @@ services:
                                 </tr>
                                 <tr>
                                     <td className="p-5 font-semibold text-slate-900 bg-slate-50/50">Encryption Key Custody</td>
-                                    <td className="p-5 text-center">SwanDesk Key Vault</td>
+                                    <td className="p-5 text-center">SwanDigitals Key Vault</td>
                                     <td className="p-5 text-center text-orange-600 font-semibold">Client Vault (HSM Supported)</td>
                                 </tr>
                                 <tr>
@@ -286,11 +286,11 @@ services:
 
                         <details className="bg-slate-50 border border-slate-100 p-6 rounded-2xl group cursor-pointer">
                             <summary className="font-bold text-lg text-slate-900 flex justify-between items-center list-none">
-                                <span>How is SwanDesk DPDP Act 2023 ready?</span>
+                                <span>How is SwanDigitals DPDP Act 2023 ready?</span>
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                                SwanDesk provides native features to fulfill DPDP obligations, including granular consent collection modals, right-of-access dashboards, automated request-to-erase scripts, and fully auditable access logs to confirm when and why data was modified.
+                                SwanDigitals provides native features to fulfill DPDP obligations, including granular consent collection modals, right-of-access dashboards, automated request-to-erase scripts, and fully auditable access logs to confirm when and why data was modified.
                             </p>
                         </details>
 
@@ -306,7 +306,7 @@ services:
 
                         <details className="bg-slate-50 border border-slate-100 p-6 rounded-2xl group cursor-pointer">
                             <summary className="font-bold text-lg text-slate-900 flex justify-between items-center list-none">
-                                <span>How does SwanDesk manage database encryption?</span>
+                                <span>How does SwanDigitals manage database encryption?</span>
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">

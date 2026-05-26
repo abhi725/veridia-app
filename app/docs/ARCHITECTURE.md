@@ -1,7 +1,7 @@
 # Documentation Hub - Architecture Plan
 
 ## Overview
-Build inner documentation pages for SwanDesk platform, replacing broken `/docs/...` links.
+Build inner documentation pages for SwanDigitals platform, replacing broken `/docs/...` links.
 
 ## Current State
 - `/documentation` page exists with links to: `/docs/quickstart`, `/docs/platform`, `/docs/integrations`, `/docs/troubleshooting`, `/docs/api`, `/docs/sdk`

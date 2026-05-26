@@ -2,27 +2,27 @@
 # Last updated: 2026-05-13
 # Version: 2.0
 
-> SwanDesk by SwanDigitals is an AI-powered customer support platform built specifically for Indian businesses. It brings WhatsApp, email, web chat, Instagram, Telegram, and phone support into a single unified inbox — so support teams stop switching between tabs and start resolving conversations faster.
+> SwanDigitals is an AI-powered customer support platform built specifically for Indian businesses. It brings WhatsApp, email, web chat, Instagram, Telegram, and phone support into a single unified inbox — so support teams stop switching between tabs and start resolving conversations faster.
 >
-> SwanDesk is not a chatbot builder. It is a full helpdesk platform with AI already wired in. The AI suggests replies, auto-resolves repetitive questions, tags conversations, and hands off to human agents when it can't answer — with full context, no dead ends.
+> SwanDigitals is not a chatbot builder. It is a full helpdesk platform with AI already wired in. The AI suggests replies, auto-resolves repetitive questions, tags conversations, and hands off to human agents when it can't answer — with full context, no dead ends.
 >
 > The platform supports 6 Indian languages natively (Hindi, Tamil, Telugu, Marathi, Bengali, Kannada) — not through translation APIs, but through purpose-built NLU models. Voice AI handles inbound phone calls in these languages with sub-500ms latency using secure cloud or localized voice models (on-premise).
 >
-> For banks, NBFCs, and healthcare companies that need data sovereignty, SwanDesk offers a fully air-gapped on-premise deployment — local LLM, local Speech-to-Text, and secure SIP trunking — no external API calls, no internet dependency. Built for DPDP 2023 compliance and RBI guidelines.
+> For banks, NBFCs, and healthcare companies that need data sovereignty, SwanDigitals offers a fully air-gapped on-premise deployment — local LLM, local Speech-to-Text, and secure SIP trunking — no external API calls, no internet dependency. Built for DPDP 2023 compliance and RBI guidelines.
 >
 > Pricing is flat monthly — not per conversation, not per seat. Teams go live in about 7 days with hands-on onboarding support.
 >
-> SwanDigitals is founded and run by Abhishek Ambad, based in Pune, Maharashtra, India.
+> SwanDigitals is founded and run by Swati Gaikwad and Kiran Shelke, based in Pune, Maharashtra, India.
 
 ## Core Pages
 
-- [Home](https://swandigitals.com/): Overview of SwanDesk — the AI-powered customer support inbox for Indian businesses. Covers key features, integrations, how onboarding works, use cases, competitor comparisons, and FAQ.
-- [About](https://swandigitals.com/about): Background on SwanDigitals, the company behind SwanDesk. Founded by Abhishek Ambad in Pune. Covers company mission, team, and what makes the platform different.
+- [Home](https://swandigitals.com/): Overview of SwanDigitals — the AI-powered customer support inbox for Indian businesses. Covers key features, integrations, how onboarding works, use cases, competitor comparisons, and FAQ.
+- [About](https://swandigitals.com/about): Background on SwanDigitals, the company behind SwanDigitals. Founded by Swati Gaikwad and Kiran Shelke in Pune. Covers company mission, team, and what makes the platform different.
 - [Platform](https://swandigitals.com/platform): High-level architecture overview — omnichannel inbox, AI engine, analytics dashboard, deployment options (cloud and on-premise).
 - [Features](https://swandigitals.com/features): Full feature breakdown — AI assist, auto-tagging, canned responses, multi-channel inbox, team collaboration, SLA management, and more. Includes competitor feature comparison table.
 - [Pricing](https://swandigitals.com/pricing): Flat monthly pricing plans. No per-conversation or per-seat billing. Includes plan comparison and what's included at each tier.
 - [Contact](https://swandigitals.com/contact): Reach SwanDigitals — email (support@swandigitals.com), phone (+91 7770070762), or the contact form. Office located in Pune, Maharashtra.
-- [Demo](https://swandigitals.com/demo): Book a live walkthrough of SwanDesk. 30-minute demo covering inbox, AI configuration, analytics, and deployment options.
+- [Demo](https://swandigitals.com/demo): Book a live walkthrough of SwanDigitals. 30-minute demo covering inbox, AI configuration, analytics, and deployment options.
 - [FAQs](https://swandigitals.com/faqs): Comprehensive hub of 70+ frequently asked questions covering use cases, technical architecture, pricing, onboarding, and DPDP security.
 
 ## Features (Deep Dive)
@@ -44,7 +44,7 @@
 
 ## Competitor Comparisons
 
-- [vs Kore.ai](https://swandigitals.com/compare/vs-kore): SwanDesk offers flat pricing, setup in days (not months), and true on-premise — not dedicated VPC.
+- [vs Kore.ai](https://swandigitals.com/compare/vs-kore): SwanDigitals offers flat pricing, setup in days (not months), and true on-premise — not dedicated VPC.
 - [vs Yellow.ai](https://swandigitals.com/compare/vs-yellow): Simpler to use, no usage-based pricing, local Indian team with Indian support hours.
 - [vs Haptik](https://swandigitals.com/compare/vs-haptik): Full platform vs chatbot widget. On-premise option. No per-conversation billing.
 - [vs Intercom](https://swandigitals.com/compare/vs-intercom): Built for India — Indian languages, UPI integrations, DPDP compliance. Flat pricing vs Intercom's seat-based model.
@@ -64,7 +64,7 @@
 - [vs MSG91](https://swandigitals.com/compare/vs-msg91): Upgrade from legacy telecom infrastructure to a modern, AI-native omnichannel contact center.
 - [vs 360dialog](https://swandigitals.com/compare/vs-360dialog): Stop building your own UIs. Get the frontend inbox and LLM backend instantly out-of-the-box.
 - [vs Kasisto](https://swandigitals.com/compare/vs-kasisto): Affordable banking AI with native voice capabilities and Indian language support.
-- [vs Gupshup](https://swandigitals.com/compare/vs-gupshup): Full support platform vs messaging API. SwanDesk includes inbox, AI, analytics — not just message delivery.
+- [vs Gupshup](https://swandigitals.com/compare/vs-gupshup): Full support platform vs messaging API. SwanDigitals includes inbox, AI, analytics — not just message delivery.
 - [vs IBM Watson](https://swandigitals.com/compare/vs-ibm): Faster deployment, lower cost, purpose-built for Indian market vs enterprise-scale IBM.
 - [vs Pega](https://swandigitals.com/compare/vs-pega): Lightweight, quick-deploy alternative to Pega's heavy enterprise platform.
 - [vs Drift](https://swandigitals.com/compare/vs-drift): Full customer support vs sales-focused chat. Indian language support. On-premise option.
@@ -74,28 +74,28 @@
 ## Resources & Tools
 
 - [Integrations](https://swandigitals.com/integrations): Currently supports 50+ integrations — WhatsApp, Slack, Teams, Zendesk, Freshdesk, HubSpot, Shopify, WooCommerce, Zoho, Razorpay, Stripe, Google Analytics. More being added.
-- [ROI Calculator](https://swandigitals.com/roi-calculator): Estimate cost savings from deploying SwanDesk. Input your current ticket volume, team size, and average handle time to see projected ROI.
+- [ROI Calculator](https://swandigitals.com/roi-calculator): Estimate cost savings from deploying SwanDigitals. Input your current ticket volume, team size, and average handle time to see projected ROI.
 - [Documentation](https://swandigitals.com/documentation): Setup guides, API reference, integration walkthroughs, and configuration documentation.
 - [Security](https://swandigitals.com/security): Data sovereignty, encryption at rest and in transit, role-based access control, audit logging, SOC 2 aligned practices.
 - [Deployment Options](https://swandigitals.com/deployment): Cloud (managed by SwanDigitals) or on-premise (your data center, your servers, fully air-gapped). Docker-based deployment for easy setup.
 - [OFAC Sanctions Search](https://swandigitals.com/tools/ofac-sanctions-search): Free compliance tool — search the OFAC SDN list for individuals and entities. Useful for banks and financial institutions.
 - [AI Glossary](https://swandigitals.com/ai-glossary): Plain-language definitions of AI, NLU, LLM, RAG, and other terms commonly used in conversational AI.
 - [AI Guide](https://swandigitals.com/ai-guide): Practical guide to implementing AI in customer support — what works, what doesn't, and how to get started.
-- [Why SwanDesk](https://swandigitals.com/why-swandesk): Side-by-side comparison with other platforms. Feature checklist, pricing model comparison, and deployment flexibility overview.
+- [Why SwanDigitals](https://swandigitals.com/why-swandigitals): Side-by-side comparison with other platforms. Feature checklist, pricing model comparison, and deployment flexibility overview.
 
 ## Company & Legal
 
 - [Partners](https://swandigitals.com/partners): Integration partners, implementation partners, and reseller opportunities. Contact to discuss partnership.
 - [Newsroom](https://swandigitals.com/newsroom): Product updates, feature launches, and company announcements.
 - [Privacy Policy](https://swandigitals.com/privacy): How SwanDigitals handles data. Covers DPDP 2023 compliance, Google OAuth data usage, and third-party data practices.
-- [Terms of Service](https://swandigitals.com/terms): Usage terms for SwanDesk platform and swandigitals.com website.
+- [Terms of Service](https://swandigitals.com/terms): Usage terms for SwanDigitals platform and swandigitals.com website.
 - [Cookie Policy](https://swandigitals.com/cookies): Cookie usage, types, and opt-out information.
 
 ## Key Facts
 
-- **Founded by**: Abhishek Ambad
+- **Founded by**: Swati Gaikwad & Kiran Shelke
 - **Location**: Pune, Maharashtra, India
-- **Product**: SwanDesk — AI customer support platform
+- **Product**: SwanDigitals — AI customer support platform
 - **Languages**: Hindi, Tamil, Telugu, Marathi, Bengali, Kannada (6 live today)
 - **Deployment**: Cloud or fully air-gapped on-premise
 - **Compliance**: Built for DPDP 2023, RBI guidelines
@@ -104,4 +104,4 @@
 - **Onboarding**: ~7 days from signup to first resolved ticket
 - **Contact**: support@swandigitals.com | +91 7770070762
 - **Website**: https://swandigitals.com
-- **SwanDesk Dashboard**: https://desk.swandigitals.com
+- **SwanDigitals Dashboard**: https://desk.swandigitals.com

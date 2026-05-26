@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'WotNot Alternative in India | White-Label Enterprise AI Helpdesk',
-    description: 'WotNot is great for building simple bots. Upgrade your agency to SwanDesk for a full-stack, DPDP-compliant Enterprise AI Helpdesk with Voice capabilities.',
-    keywords: ['WotNot alternative', 'WotNot vs SwanDesk', 'White label chatbot India', 'Agency Chatbot platform'],
+    description: 'WotNot is great for building simple bots. Upgrade your agency to SwanDigitals for a full-stack, DPDP-compliant Enterprise AI Helpdesk with Voice capabilities.',
+    keywords: ['WotNot alternative', 'WotNot vs SwanDigitals', 'White label chatbot India', 'Agency Chatbot platform'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-wotnot',
     },
@@ -22,7 +22,7 @@ export default function VsWotNotPage() {
             reasonsToSwitch={[
                 {
                     title: "Helpdesk vs Chatbot",
-                    description: "SwanDesk isn't just a widget you paste on a site. It's a complete CRM replacement that unifies WhatsApp, Email, Web, and Voice into one powerful inbox."
+                    description: "SwanDigitals isn't just a widget you paste on a site. It's a complete CRM replacement that unifies WhatsApp, Email, Web, and Voice into one powerful inbox."
                 },
                 {
                     title: "Advanced Voice AI",
@@ -30,21 +30,21 @@ export default function VsWotNotPage() {
                 },
                 {
                     title: "Enterprise Compliance",
-                    description: "Win bigger deals. SwanDesk provides the strict DPDP compliance, data residency, and on-premise deployment options required by banks and hospitals."
+                    description: "Win bigger deals. SwanDigitals provides the strict DPDP compliance, data residency, and on-premise deployment options required by banks and hospitals."
                 }
             ]}
             comparisonRows={[
-                { feature: "Platform Scope", SwanDesk: "Unified CRM & Helpdesk", competitor: "Chatbot Builder" },
-                { feature: "Native Voice AI", SwanDesk: true, competitor: false },
-                { feature: "Advanced LLM Integration (RAG)", SwanDesk: "Deep Native", competitor: "Basic / Add-on" },
-                { feature: "On-Premise Deployment", SwanDesk: "Available", competitor: "Limited" },
-                { feature: "White-Label Reseller", SwanDesk: "Available", competitor: "Available" }
+                { feature: "Platform Scope", SwanDigitals: "Unified CRM & Helpdesk", competitor: "Chatbot Builder" },
+                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
+                { feature: "Advanced LLM Integration (RAG)", SwanDigitals: "Deep Native", competitor: "Basic / Add-on" },
+                { feature: "On-Premise Deployment", SwanDigitals: "Available", competitor: "Limited" },
+                { feature: "White-Label Reseller", SwanDigitals: "Available", competitor: "Available" }
             ]}
             targetPersona="You are a small marketing agency looking to easily quickly spin up lead-gen bots for local real estate agents."
             verdict="You are a premium B2B SaaS agency or System Integrator looking to replace Zendesk or Intercom for your enterprise clients with a highly secure, AI-native platform."
             faqs={[
                 {
-                    question: "Does SwanDesk offer a white-label program like WotNot?",
+                    question: "Does SwanDigitals offer a white-label program like WotNot?",
                     answer: "Yes, we offer an exclusive Enterprise Partner Program allowing you to white-label the platform, use your own domain, and set your own pricing margins."
                 }
             ]}

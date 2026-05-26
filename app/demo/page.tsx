@@ -37,7 +37,7 @@ export default function DemoPage() {
         <SiteLayout>
             <Hero
                 badge="Book a Demo"
-                title="See SwanDesk in Action"
+                title="See SwanDigitals in Action"
                 subtitle="Get a personalized demo of our AI platform. See how we can help you achieve 90% automation in weeks, not months."
                 primaryCTA={{ text: "Schedule Now", href: "#form" }}
             />
@@ -87,7 +87,7 @@ export default function DemoPage() {
                                 </span>
                                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Your Personalized Demo</h2>
                                 <p className="text-lg text-slate-500 max-w-2xl mx-auto xl:mx-0">
-                                    Every demo is tailored to your specific use case, industry, and challenges. We'll show you exactly how SwanDesk can help your business.
+                                    Every demo is tailored to your specific use case, industry, and challenges. We'll show you exactly how SwanDigitals can help your business.
                                 </p>
                             </div>
 

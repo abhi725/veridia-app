@@ -67,13 +67,13 @@ export default function Header() {
                 <div className="flex items-center justify-between h-16">
 
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2.5 flex-shrink-0" aria-label="SwanDesk Home">
+                    <Link href="/" className="flex items-center gap-2.5 flex-shrink-0" aria-label="SwanDigitals Home">
                         <img
                             src="/logo.png"
-                            alt="SwanDesk logo"
+                            alt="SwanDigitals logo"
                             className="h-8 w-auto"
                         />
-                        <span className="text-xl font-bold text-slate-900 tracking-tight">SwanDesk</span>
+                        <span className="text-xl font-bold text-slate-900 tracking-tight">SwanDigitals</span>
                     </Link>
 
                     {/* Desktop Navigation */}

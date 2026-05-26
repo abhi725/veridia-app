@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: '/leadership', priority: 0.7, changeFrequency: 'monthly' as const },
         { url: '/deployment', priority: 0.8, changeFrequency: 'monthly' as const },
         { url: '/integrations', priority: 0.8, changeFrequency: 'weekly' as const },
-        { url: '/why-swandesk', priority: 0.8, changeFrequency: 'monthly' as const },
+        { url: '/why-swandigitals', priority: 0.8, changeFrequency: 'monthly' as const },
         { url: '/roi-calculator', priority: 0.8, changeFrequency: 'monthly' as const },
         { url: '/security', priority: 0.7, changeFrequency: 'monthly' as const },
         { url: '/faqs', priority: 0.9, changeFrequency: 'weekly' as const },

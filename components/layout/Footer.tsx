@@ -10,8 +10,8 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="lg:col-span-2">
                         <div className="flex items-center gap-2.5 mb-4">
-                            <img src="/logo.png" alt="SwanDesk" className="h-8 w-auto" />
-                            <span className="text-xl font-bold text-slate-900">SwanDesk</span>
+                            <img src="/logo.png" alt="SwanDigitals" className="h-8 w-auto" />
+                            <span className="text-xl font-bold text-slate-900">SwanDigitals</span>
                         </div>
                         <p className="text-sm text-slate-500 leading-relaxed mb-5 max-w-xs">
                             AI-powered customer support for Indian businesses. WhatsApp, Voice, Chat — all in one inbox. Built for DPDP 2023 compliance.
@@ -94,6 +94,8 @@ export default function Footer() {
                                 { label: 'ROI Calculator', href: '/roi-calculator' },
                                 { label: 'Pricing', href: '/pricing' },
                                 { label: 'Demo', href: '/demo' },
+                                { label: 'About Us', href: '/about' },
+                                { label: 'Contact Us', href: '/contact' },
                             ].map(({ label, href }) => (
                                 <li key={href}>
                                     <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">

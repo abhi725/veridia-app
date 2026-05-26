@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'Yellow.ai Alternative in India | Sovereign Data AI Helpdesk',
-    description: 'Yellow.ai is cloud-only. SwanDesk gives you true data sovereignty with air-gapped deployment. Compare deployment options, pricing, and features.',
-    keywords: ['Yellow.ai Alternative', 'Yellow.ai vs SwanDesk', 'Sovereign Data AI', 'On-Premise Chatbot'],
+    description: 'Yellow.ai is cloud-only. SwanDigitals gives you true data sovereignty with air-gapped deployment. Compare deployment options, pricing, and features.',
+    keywords: ['Yellow.ai Alternative', 'Yellow.ai vs SwanDigitals', 'Sovereign Data AI', 'On-Premise Chatbot'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-yellow',
     },
@@ -14,26 +14,26 @@ export default function VsYellowPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Yellow.ai"
-            heroTitle="SwanDesk vs Yellow.ai"
+            heroTitle="SwanDigitals vs Yellow.ai"
             heroSubtitle="Escape unpredictable usage-based pricing and massive enterprise deployment timelines. Go live in weeks with flat pricing."
             aboutCompetitor="Yellow.ai is a major enterprise conversational AI platform known for massive scale and complex integrations."
             competitorStrengths="Massive global scale, deep legacy enterprise integrations, and 135+ languages supported."
-            realityCheck="Yellow.ai charges based on usage and tokens, meaning the more successful your automation, the more you pay. SwanDesk provides flat annual licensing so your costs never spiral out of control."
+            realityCheck="Yellow.ai charges based on usage and tokens, meaning the more successful your automation, the more you pay. SwanDigitals provides flat annual licensing so your costs never spiral out of control."
             comparisonRows={[
-                { feature: "Pricing Model", SwanDesk: "Flat Annual License", competitor: "Usage/Token Based" },
-                { feature: "Data Sovereignty", SwanDesk: "Air-gapped option", competitor: "Cloud-only" },
-                { feature: "Deployment Time", SwanDesk: "21 Days Average", competitor: "60-90+ Days" },
-                { feature: "On-Premise", SwanDesk: "Full offline mode", competitor: "Not available" },
-                { feature: "Focus Market", SwanDesk: "Indian Enterprise", competitor: "Global Enterprise" }
+                { feature: "Pricing Model", SwanDigitals: "Flat Annual License", competitor: "Usage/Token Based" },
+                { feature: "Data Sovereignty", SwanDigitals: "Air-gapped option", competitor: "Cloud-only" },
+                { feature: "Deployment Time", SwanDigitals: "21 Days Average", competitor: "60-90+ Days" },
+                { feature: "On-Premise", SwanDigitals: "Full offline mode", competitor: "Not available" },
+                { feature: "Focus Market", SwanDigitals: "Indian Enterprise", competitor: "Global Enterprise" }
             ]}
             reasonsToSwitch={[
                 {
                     title: "True Data Sovereignty",
-                    description: "Even with 'India hosting', your data touches global infrastructure. SwanDesk offers 100% air-gapped deployments for total DPDP and RBI compliance."
+                    description: "Even with 'India hosting', your data touches global infrastructure. SwanDigitals offers 100% air-gapped deployments for total DPDP and RBI compliance."
                 },
                 {
                     title: "Faster Implementation",
-                    description: "Yellow.ai enterprise deployments can take months. SwanDesk's dedicated success team gets you live in an average of 21 days."
+                    description: "Yellow.ai enterprise deployments can take months. SwanDigitals's dedicated success team gets you live in an average of 21 days."
                 },
                 {
                     title: "No 'Token Tax'",

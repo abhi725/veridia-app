@@ -7,7 +7,7 @@ export default function WorkflowsPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    Connect SwanDesk with 200+ apps using n8n workflow automation. Trigger actions based on
+                    Connect SwanDigitals with 200+ apps using n8n workflow automation. Trigger actions based on
                     customer conversations, sync data to CRM, and automate repetitive tasks.
                 </p>
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
@@ -21,7 +21,7 @@ export default function WorkflowsPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Pre-built Workflows</h2>
                 <p className="text-slate-600 mb-6">
-                    SwanDesk includes ready-to-use workflows for common automation scenarios.
+                    SwanDigitals includes ready-to-use workflows for common automation scenarios.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -81,7 +81,7 @@ export default function WorkflowsPage() {
 
                 <div className="space-y-6">
                     <div className="border border-slate-200 rounded-lg p-6">
-                        <h3 className="text-lg font-medium text-slate-900 mb-3">1. Connect SwanDesk to n8n</h3>
+                        <h3 className="text-lg font-medium text-slate-900 mb-3">1. Connect SwanDigitals to n8n</h3>
                         <ol className="list-decimal list-inside space-y-3 text-slate-600">
                             <li>Navigate to <strong>Settings → Integrations → n8n</strong></li>
                             <li>Enter your n8n instance URL (e.g., https://n8n.swandigitals.com)</li>
@@ -91,7 +91,7 @@ export default function WorkflowsPage() {
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-6">
-                        <h3 className="text-lg font-medium text-slate-900 mb-3">2. Enable Webhooks in SwanDesk</h3>
+                        <h3 className="text-lg font-medium text-slate-900 mb-3">2. Enable Webhooks in SwanDigitals</h3>
                         <p className="text-slate-600 mb-4">
                             Configure which events should trigger n8n workflows. See the{' '}
                             <a href="/docs/integrations" className="text-orange-600 hover:underline">Integrations guide</a>{' '}

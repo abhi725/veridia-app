@@ -7,7 +7,7 @@ export default function TroubleshootingPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    Find solutions to common issues with SwanDesk. If you can&apos;t find what you&apos;re looking for,
+                    Find solutions to common issues with SwanDigitals. If you can&apos;t find what you&apos;re looking for,
                     contact our support team at the bottom of this page.
                 </p>
             </section>
@@ -81,12 +81,12 @@ export default function TroubleshootingPage() {
 
                     <div className="border border-slate-200 rounded-lg p-5">
                         <h3 className="text-lg font-medium text-slate-900 mb-2">&quot;Webhook URL Invalid&quot;</h3>
-                        <p className="text-slate-600 mb-2">SwanDesk can&apos;t validate your webhook endpoint.</p>
+                        <p className="text-slate-600 mb-2">SwanDigitals can&apos;t validate your webhook endpoint.</p>
                         <ul className="list-disc list-inside space-y-1 text-slate-600">
-                            <li>Ensure your SwanDesk workspace is on a paid plan</li>
+                            <li>Ensure your SwanDigitals workspace is on a paid plan</li>
                             <li>Check that your server accepts HTTPS requests</li>
                             <li>Verify the webhook URL matches the one in Meta settings</li>
-                            <li>Check SwanDesk&apos;s status page for API availability</li>
+                            <li>Check SwanDigitals&apos;s status page for API availability</li>
                         </ul>
                     </div>
 
@@ -126,7 +126,7 @@ export default function TroubleshootingPage() {
                     <div className="border border-slate-200 rounded-lg p-5">
                         <h3 className="text-lg font-medium text-slate-900 mb-2">Network & Latency</h3>
                         <ul className="list-disc list-inside space-y-2 text-slate-600">
-                            <li>Check SwanDesk status at <strong>status.swandigitals.com</strong></li>
+                            <li>Check SwanDigitals status at <strong>status.swandigitals.com</strong></li>
                             <li>WhatsApp messages typically deliver within 5-30 seconds</li>
                             <li>Email delivery may take 1-5 minutes depending on provider</li>
                             <li>Web chat messages should appear instantly (&lt;2 seconds)</li>

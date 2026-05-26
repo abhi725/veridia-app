@@ -19,7 +19,7 @@ export interface ComparisonPageProps {
     }[];
     comparisonRows: {
         feature: string;
-        SwanDesk: string | boolean;
+        SwanDigitals: string | boolean;
         competitor: string | boolean;
     }[];
     targetPersona: string;
@@ -83,7 +83,7 @@ export default function ComparisonPageTemplate({
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Top 3 Reasons to Switch to SwanDesk</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Top 3 Reasons to Switch to SwanDigitals</h2>
                         <p className="text-lg text-slate-600 max-w-2xl mx-auto">Stop compromising on your customer experience and team productivity.</p>
                     </div>
 
@@ -107,7 +107,7 @@ export default function ComparisonPageTemplate({
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-slate-900 mb-4">Head-to-Head Comparison</h2>
                     </div>
-                    <ComparisonTable rows={comparisonRows} competitorName={competitorName} title={`SwanDesk vs ${competitorName}`} />
+                    <ComparisonTable rows={comparisonRows} competitorName={competitorName} title={`SwanDigitals vs ${competitorName}`} />
                 </div>
             </section>
 
@@ -129,7 +129,7 @@ export default function ComparisonPageTemplate({
                         <div className="flex gap-4 items-start">
                             <CheckCircle2 className="w-8 h-8 text-green-400 shrink-0" />
                             <div>
-                                <h3 className="text-xl font-bold text-white mb-2">Choose SwanDesk if...</h3>
+                                <h3 className="text-xl font-bold text-white mb-2">Choose SwanDigitals if...</h3>
                                 <p className="text-slate-300">{verdict}</p>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ export default function ComparisonPageTemplate({
 
             {/* FAQs */}
             {faqs.length > 0 && (
-                <FAQ items={faqs} heading={`Frequently Asked Questions: SwanDesk vs ${competitorName}`} />
+                <FAQ items={faqs} heading={`Frequently Asked Questions: SwanDigitals vs ${competitorName}`} />
             )}
 
             {/* Final CTA */}

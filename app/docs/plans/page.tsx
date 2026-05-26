@@ -7,7 +7,7 @@ export default function SwanPlansPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    SwanDesk offers flexible pricing plans designed for Indian businesses of all sizes.
+                    SwanDigitals offers flexible pricing plans designed for Indian businesses of all sizes.
                     From startup pilots to enterprise deployments with complete data sovereignty.
                 </p>
             </section>
@@ -177,7 +177,7 @@ export default function SwanPlansPage() {
                     <div className="border border-orange-200 bg-orange-50 rounded-lg p-5">
                         <h3 className="font-medium text-slate-900 mb-3">On-Premise Deployment</h3>
                         <p className="text-sm text-slate-600">
-                            Deploy SwanDesk on your own infrastructure for complete data sovereignty.
+                            Deploy SwanDigitals on your own infrastructure for complete data sovereignty.
                             No data leaves your network — critical for BFSI and healthcare compliance.
                         </p>
                     </div>

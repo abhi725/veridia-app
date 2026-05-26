@@ -10,20 +10,20 @@ export const faqData: FAQCategory[] = [
         title: "General & Platform Overview",
         items: [
             {
-                question: "What exactly is SwanDesk?",
-                answer: "SwanDesk is a comprehensive, AI-first customer support and engagement platform built specifically for Indian enterprises. It unifies WhatsApp, Web Chat, Email, Instagram, and Voice channels into a single inbox, while deploying advanced AI agents to automate up to 90% of routine conversations. Unlike simple chatbot builders, SwanDesk is a full omnichannel helpdesk with AI built deeply into its core."
+                question: "What exactly is SwanDigitals?",
+                answer: "SwanDigitals is a comprehensive, AI-first customer support and engagement platform built specifically for Indian enterprises. It unifies WhatsApp, Web Chat, Email, Instagram, and Voice channels into a single inbox, while deploying advanced AI agents to automate up to 90% of routine conversations. Unlike simple chatbot builders, SwanDigitals is a full omnichannel helpdesk with AI built deeply into its core."
             },
             {
-                question: "Is SwanDesk just a chatbot builder?",
-                answer: "No. While we have a powerful no-code conversation builder, SwanDesk is a complete Helpdesk CRM. It includes a unified agent inbox, ticketing system, human handoff routing, SLA management, and analytics. The AI acts as your 'first line of defense' within the helpdesk, not as a standalone, disconnected chatbot."
+                question: "Is SwanDigitals just a chatbot builder?",
+                answer: "No. While we have a powerful no-code conversation builder, SwanDigitals is a complete Helpdesk CRM. It includes a unified agent inbox, ticketing system, human handoff routing, SLA management, and analytics. The AI acts as your 'first line of defense' within the helpdesk, not as a standalone, disconnected chatbot."
             },
             {
-                question: "How is SwanDesk different from Zendesk or Intercom?",
-                answer: "Platforms like Zendesk and Intercom are primarily built for human agents, with AI bolted on as an expensive add-on. SwanDesk is 'AI-Native' and built ground-up for the Indian market. We offer native support for 10+ Indian languages (not just translation APIs), strict DPDP Act and RBI compliance, true air-gapped on-premise deployment options, and flat-rate pricing instead of expensive per-seat licenses."
+                question: "How is SwanDigitals different from Zendesk or Intercom?",
+                answer: "Platforms like Zendesk and Intercom are primarily built for human agents, with AI bolted on as an expensive add-on. SwanDigitals is 'AI-Native' and built ground-up for the Indian market. We offer native support for 10+ Indian languages (not just translation APIs), strict DPDP Act and RBI compliance, true air-gapped on-premise deployment options, and flat-rate pricing instead of expensive per-seat licenses."
             },
             {
-                question: "What channels does SwanDesk support?",
-                answer: "SwanDesk currently supports WhatsApp Business API, Website Live Chat, Email, Instagram Direct, Telegram, Facebook Messenger, and Inbound/Outbound Phone Calls (via our Voice AI agents)."
+                question: "What channels does SwanDigitals support?",
+                answer: "SwanDigitals currently supports WhatsApp Business API, Website Live Chat, Email, Instagram Direct, Telegram, Facebook Messenger, and Inbound/Outbound Phone Calls (via our Voice AI agents)."
             },
             {
                 question: "What languages does the AI understand?",
@@ -31,23 +31,23 @@ export const faqData: FAQCategory[] = [
             },
             {
                 question: "Do you offer a mobile app for agents?",
-                answer: "Yes, SwanDesk provides mobile applications for both iOS and Android, allowing your human support agents to respond to escalated tickets and chats on the go."
+                answer: "Yes, SwanDigitals provides mobile applications for both iOS and Android, allowing your human support agents to respond to escalated tickets and chats on the go."
             },
             {
                 question: "Can I use my existing WhatsApp Business number?",
-                answer: "Absolutely. We can migrate your existing WhatsApp Business API number to SwanDesk with zero downtime, preserving your Green Tick (if applicable) and quality rating."
+                answer: "Absolutely. We can migrate your existing WhatsApp Business API number to SwanDigitals with zero downtime, preserving your Green Tick (if applicable) and quality rating."
             },
             {
                 question: "Does the AI support outbound messaging?",
-                answer: "Yes. You can use SwanDesk to run outbound WhatsApp marketing campaigns, send transactional alerts (like order updates), and schedule follow-ups. The AI can automatically engage with users who reply to these outbound messages."
+                answer: "Yes. You can use SwanDigitals to run outbound WhatsApp marketing campaigns, send transactional alerts (like order updates), and schedule follow-ups. The AI can automatically engage with users who reply to these outbound messages."
             },
             {
-                question: "What is the maximum conversation volume SwanDesk can handle?",
+                question: "What is the maximum conversation volume SwanDigitals can handle?",
                 answer: "Our cloud infrastructure is built on highly scalable Kubernetes clusters capable of handling 10+ million conversations per month. For our on-premise deployments, capacity scales linearly with your hardware provisioning."
             },
             {
                 question: "Is it suitable for B2B or B2C?",
-                answer: "Both. B2C companies use SwanDesk for massive scale (order tracking, refunds, bookings), while B2B companies use it for lead qualification, IT helpdesk, employee experience, and high-touch account management."
+                answer: "Both. B2C companies use SwanDigitals for massive scale (order tracking, refunds, bookings), while B2B companies use it for lead qualification, IT helpdesk, employee experience, and high-touch account management."
             }
         ]
     },
@@ -57,7 +57,7 @@ export const faqData: FAQCategory[] = [
         items: [
             {
                 question: "Can the AI read our existing PDFs and website?",
-                answer: "Yes. You can train your SwanDesk AI agent by simply uploading PDF documents, pasting URLs, or syncing your existing Knowledge Base (like Zendesk Guide or Notion). The AI instantly ingests this data using RAG (Retrieval-Augmented Generation) to answer customer questions accurately."
+                answer: "Yes. You can train your SwanDigitals AI agent by simply uploading PDF documents, pasting URLs, or syncing your existing Knowledge Base (like Zendesk Guide or Notion). The AI instantly ingests this data using RAG (Retrieval-Augmented Generation) to answer customer questions accurately."
             },
             {
                 question: "How does the Voice AI work?",
@@ -102,24 +102,24 @@ export const faqData: FAQCategory[] = [
         title: "Industry 360° Use Cases",
         items: [
             {
-                question: "How do Banks and NBFCs use SwanDesk?",
-                answer: "Financial institutions use SwanDesk for secure OTP-verified balance checks, fraud alert confirmations, EMI calculations, loan pre-qualification, and instant blocking of lost credit cards via WhatsApp."
+                question: "How do Banks and NBFCs use SwanDigitals?",
+                answer: "Financial institutions use SwanDigitals for secure OTP-verified balance checks, fraud alert confirmations, EMI calculations, loan pre-qualification, and instant blocking of lost credit cards via WhatsApp."
             },
             {
-                question: "How is SwanDesk used in Healthcare?",
+                question: "How is SwanDigitals used in Healthcare?",
                 answer: "Hospitals and clinics use our DPDP & HIPAA-ready AI to automate patient appointment scheduling, symptom triage, prescription refill requests, lab result delivery, and post-discharge follow-ups."
             },
             {
                 question: "What is the primary use case for E-commerce & Retail?",
-                answer: "E-commerce brands use SwanDesk to deflect 'Where is my order?' (WISMO) tickets. The AI integrates with Shopify/Magento to provide real-time tracking, process automated returns, and offer personalized product recommendations to boost AOV."
+                answer: "E-commerce brands use SwanDigitals to deflect 'Where is my order?' (WISMO) tickets. The AI integrates with Shopify/Magento to provide real-time tracking, process automated returns, and offer personalized product recommendations to boost AOV."
             },
             {
                 question: "Can this be used for internal IT Helpdesks?",
-                answer: "Yes. SwanDesk integrates with Slack, Teams, and Jira. Employees can ask the AI to reset passwords, request software licenses, troubleshoot VPNs, or automatically create categorized IT tickets."
+                answer: "Yes. SwanDigitals integrates with Slack, Teams, and Jira. Employees can ask the AI to reset passwords, request software licenses, troubleshoot VPNs, or automatically create categorized IT tickets."
             },
             {
                 question: "How do HR departments use the platform?",
-                answer: "HR teams deploy SwanDesk as an Employee Experience Bot to instantly answer questions about PTO policies, leave balances, tax forms, and to automate new hire onboarding checklists."
+                answer: "HR teams deploy SwanDigitals as an Employee Experience Bot to instantly answer questions about PTO policies, leave balances, tax forms, and to automate new hire onboarding checklists."
             },
             {
                 question: "How does it help Sales & Lead Generation?",
@@ -134,11 +134,11 @@ export const faqData: FAQCategory[] = [
                 answer: "Universities and EdTech platforms use the AI to manage student enrollment queries, schedule campus tours, send fee payment reminders, and provide automated tutoring support for curriculum questions."
             },
             {
-                question: "Can Real Estate companies use SwanDesk?",
+                question: "Can Real Estate companies use SwanDigitals?",
                 answer: "Yes. Real estate developers use the AI to showcase property brochures, capture buyer requirements (budget, location), schedule site visits, and follow up with leads automatically via WhatsApp."
             },
             {
-                question: "Do BPOs use SwanDesk?",
+                question: "Do BPOs use SwanDigitals?",
                 answer: "Absolutely. Customer Support BPOs use our platform to augment their human workforce, using AI to handle Tier-1 queries so human agents can focus exclusively on complex, high-value escalations."
             }
         ]
@@ -153,7 +153,7 @@ export const faqData: FAQCategory[] = [
             },
             {
                 question: "How does this benefit the CTO or Engineering team?",
-                answer: "SwanDesk is a 'No-Code/Low-Code' platform. CTOs love it because the customer support or operations teams can build and maintain the AI workflows themselves, completely removing the burden from the core engineering team."
+                answer: "SwanDigitals is a 'No-Code/Low-Code' platform. CTOs love it because the customer support or operations teams can build and maintain the AI workflows themselves, completely removing the burden from the core engineering team."
             },
             {
                 question: "How does this benefit the Head of Customer Experience (CX)?",
@@ -173,7 +173,7 @@ export const faqData: FAQCategory[] = [
             },
             {
                 question: "Will this replace our human agents?",
-                answer: "No. SwanDesk is designed for 'Augmented Intelligence'. It replaces the repetitive, mundane tasks (like answering 'What are your hours?'), freeing your human agents to do what they do best: handle complex problem-solving and build empathetic relationships."
+                answer: "No. SwanDigitals is designed for 'Augmented Intelligence'. It replaces the repetitive, mundane tasks (like answering 'What are your hours?'), freeing your human agents to do what they do best: handle complex problem-solving and build empathetic relationships."
             },
             {
                 question: "Can we track the CSAT for AI interactions specifically?",
@@ -226,7 +226,7 @@ export const faqData: FAQCategory[] = [
         title: "Security, Compliance & Data Privacy",
         items: [
             {
-                question: "Is SwanDesk DPDP Act 2023 compliant?",
+                question: "Is SwanDigitals DPDP Act 2023 compliant?",
                 answer: "Yes. Our architecture is fully aligned with India's Digital Personal Data Protection Act. We provide built-in consent management, strict data minimization, right-to-forget tooling, and 100% data residency within Indian data centers."
             },
             {
@@ -285,7 +285,7 @@ export const faqData: FAQCategory[] = [
             },
             {
                 question: "Do we need developers to maintain it?",
-                answer: "No. The SwanDesk dashboard is highly intuitive. Customer Support Managers and non-technical staff can easily update answers, review chat logs, and modify workflows without writing a single line of code."
+                answer: "No. The SwanDigitals dashboard is highly intuitive. Customer Support Managers and non-technical staff can easily update answers, review chat logs, and modify workflows without writing a single line of code."
             },
             {
                 question: "Is there a limit to how much data we can upload?",

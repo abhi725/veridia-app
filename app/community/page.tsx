@@ -10,7 +10,7 @@ export default function CommunityPage() {
         {
             icon: <MessageSquare className="w-8 h-8" />,
             title: "Discord Server",
-            description: "Join 5,000+ developers and builders. Get help, share projects, and connect with the SwanDesk team.",
+            description: "Join 5,000+ developers and builders. Get help, share projects, and connect with the SwanDigitals team.",
             members: "5,000+",
             cta: "Join Discord",
             color: "bg-indigo-500"
@@ -50,14 +50,14 @@ export default function CommunityPage() {
     const upcomingEvents = [
         { title: "Weekly Office Hours", date: "Every Thursday 11 AM PT", type: "Live Q&A" },
         { title: "Building Multi-Turn Bots Workshop", date: "Jan 20, 2025", type: "Workshop" },
-        { title: "SwanDesk Community Summit", date: "Feb 15, 2025", type: "Conference" }
+        { title: "SwanDigitals Community Summit", date: "Feb 15, 2025", type: "Conference" }
     ];
 
     return (
         <SiteLayout>
             <Hero
                 badge="🤝 Community"
-                title="Join the SwanDesk Community"
+                title="Join the SwanDigitals Community"
                 subtitle="Connect with 7,000+ developers, builders, and AI enthusiasts. Get help, share your projects, and learn from experts."
                 primaryCTA={{ text: "Join Discord", href: "#communities" }}
                 secondaryCTA={{ text: "View Events", href: "#events" }}
@@ -156,7 +156,7 @@ export default function CommunityPage() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Ready to Join?</h2>
-                    <p className="text-xl text-white/80 mb-8">Start building with SwanDesk today and connect with the community</p>
+                    <p className="text-xl text-white/80 mb-8">Start building with SwanDigitals today and connect with the community</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                             Start Free Trial

@@ -17,8 +17,8 @@ import {
 
 export const metadata: Metadata = {
     title: 'Resources & Knowledge Center - SwanDigitals',
-    description: 'Technical whitepapers, compliance blueprints, ROI spreadsheets, migration playbooks, and developer reference materials for SwanDesk.',
-    keywords: ['SwanDesk Whitepaper', 'AI Chatbot ROI', 'DPDP Compliance PDF', 'WhatsApp Marketing Playbook'],
+    description: 'Technical whitepapers, compliance blueprints, ROI spreadsheets, migration playbooks, and developer reference materials for SwanDigitals.',
+    keywords: ['SwanDigitals Whitepaper', 'AI Chatbot ROI', 'DPDP Compliance PDF', 'WhatsApp Marketing Playbook'],
     alternates: {
         canonical: 'https://swandigitals.com/resources',
     },
@@ -61,9 +61,9 @@ export default function ResourcesPage() {
     ];
 
     const assets = [
-        { name: "SwanDesk Enterprise Pitch Deck", type: "PDF Slides", size: "4.8 MB" },
+        { name: "SwanDigitals Enterprise Pitch Deck", type: "PDF Slides", size: "4.8 MB" },
         { name: "DPDP Act 2023 Readiness Checklist", type: "PDF Checklist", size: "1.2 MB" },
-        { name: "WATI to SwanDesk Migration Playbook", type: "Migration Guide", size: "2.1 MB" },
+        { name: "WATI to SwanDigitals Migration Playbook", type: "Migration Guide", size: "2.1 MB" },
         { name: "API Integration Quickstart Guide", type: "Cheat Sheet", size: "850 KB" }
     ];
 
@@ -116,7 +116,7 @@ export default function ResourcesPage() {
                                 <Terminal className="w-3.5 h-3.5" /> For Developers
                             </span>
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                                Integrate SwanDesk API in Minutes
+                                Integrate SwanDigitals API in Minutes
                             </h2>
                             <p className="text-slate-600 mb-6 leading-relaxed">
                                 Our RESTful interface is fully documented and built for modern webhook operations. Push user status updates, trigger transactional WhatsApp flows, and assign agents programmatically.
@@ -145,7 +145,7 @@ export default function ResourcesPage() {
                             </div>
                             <pre className="overflow-x-auto space-y-1">
                                 {`curl -X POST "https://api.swandigitals.com/v1/broadcast" \\
-  -H "Authorization: Bearer \${SWANDESK_API_KEY}" \\
+  -H "Authorization: Bearer \${SWANDIGITALS_API_KEY}" \\
   -H "Content-Type: application/json" \\
   -d '{
     "to": "+919876543210",

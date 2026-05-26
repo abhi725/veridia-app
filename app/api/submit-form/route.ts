@@ -5,19 +5,19 @@ export async function POST(request: Request) {
         const body = await request.json();
         const { formType, ...formData } = body;
 
-        // SwanDesk form endpoint
-        const swandeskFormUrl = 'https://panel.swandigitals.com/public-forms/9hhui3yqfxz';
+        // SwanDigitals form endpoint
+        const swandigitalsFormUrl = 'https://panel.swandigitals.com/public-forms/9hhui3yqfxz';
 
-        // Prepare the payload for SwanDesk
-        // The form data structure will depend on how SwanDesk expects it
+        // Prepare the payload for SwanDigitals
+        // The form data structure will depend on how SwanDigitals expects it
         const payload = {
             formType,
             submittedAt: new Date().toISOString(),
             ...formData
         };
 
-        // Submit to SwanDesk form
-        const response = await fetch(swandeskFormUrl, {
+        // Submit to SwanDigitals form
+        const response = await fetch(swandigitalsFormUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

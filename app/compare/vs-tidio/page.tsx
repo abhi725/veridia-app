@@ -3,8 +3,8 @@ import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
     title: 'Tidio Alternative in India | Deep LLM Support Automation',
-    description: 'Tidio is great for basic Shopify widgets. Switch to SwanDesk for a native LLM Helpdesk that truly understands your customers in 10+ Indian languages.',
-    keywords: ['Tidio alternative', 'Tidio vs SwanDesk', 'Live chat automation India', 'E-commerce AI Agent'],
+    description: 'Tidio is great for basic Shopify widgets. Switch to SwanDigitals for a native LLM Helpdesk that truly understands your customers in 10+ Indian languages.',
+    keywords: ['Tidio alternative', 'Tidio vs SwanDigitals', 'Live chat automation India', 'E-commerce AI Agent'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-tidio',
     },
@@ -22,29 +22,29 @@ export default function VsTidioPage() {
             reasonsToSwitch={[
                 {
                     title: "RAG vs Rigid Templates",
-                    description: "Instead of building 50 different bot templates manually, SwanDesk simply reads your knowledge base and uses a Generative LLM to answer any question dynamically."
+                    description: "Instead of building 50 different bot templates manually, SwanDigitals simply reads your knowledge base and uses a Generative LLM to answer any question dynamically."
                 },
                 {
                     title: "Voice AI Integration",
-                    description: "Tidio is strictly text-based. SwanDesk allows you to deploy AI voice agents to handle incoming phone calls alongside your web chats."
+                    description: "Tidio is strictly text-based. SwanDigitals allows you to deploy AI voice agents to handle incoming phone calls alongside your web chats."
                 },
                 {
                     title: "Indian Language Mastery",
-                    description: "SwanDesk's AI natively understands 10+ Indian languages and mixed 'Hinglish', whereas global tools often rely on clunky, error-prone Google Translate plugins."
+                    description: "SwanDigitals's AI natively understands 10+ Indian languages and mixed 'Hinglish', whereas global tools often rely on clunky, error-prone Google Translate plugins."
                 }
             ]}
             comparisonRows={[
-                { feature: "AI Automation Depth", SwanDesk: "Deep RAG / Generative AI", competitor: "Template Based" },
-                { feature: "Native Voice AI", SwanDesk: true, competitor: false },
-                { feature: "Target Market", SwanDesk: "Scaling SMBs & Enterprise", competitor: "Micro/Small Businesses" },
-                { feature: "Indian Language NLP", SwanDesk: "Native & Highly Accurate", competitor: "Translation Plugin Based" },
-                { feature: "Data Residency", SwanDesk: "100% India", competitor: "Global" }
+                { feature: "AI Automation Depth", SwanDigitals: "Deep RAG / Generative AI", competitor: "Template Based" },
+                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
+                { feature: "Target Market", SwanDigitals: "Scaling SMBs & Enterprise", competitor: "Micro/Small Businesses" },
+                { feature: "Indian Language NLP", SwanDigitals: "Native & Highly Accurate", competitor: "Translation Plugin Based" },
+                { feature: "Data Residency", SwanDigitals: "100% India", competitor: "Global" }
             ]}
             targetPersona="You are a solo dropshipper who just launched a Shopify store and needs a simple, cheap way to chat with a handful of visitors."
             verdict="You are a scaling enterprise that needs to deflect thousands of complex support tickets automatically using true Generative AI, not rigid decision trees."
             faqs={[
                 {
-                    question: "Is SwanDesk easy to install on Shopify or WordPress?",
+                    question: "Is SwanDigitals easy to install on Shopify or WordPress?",
                     answer: "Yes! Like Tidio, we provide a simple Javascript snippet that installs the widget on your site in seconds. However, our backend is vastly more powerful."
                 }
             ]}

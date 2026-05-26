@@ -7,7 +7,7 @@ export default function AutomationPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    Automate repetitive tasks with SwanDesk's built-in automation rules, macros, and SwanAI bot integration.
+                    Automate repetitive tasks with SwanDigitals's built-in automation rules, macros, and SwanAI bot integration.
                     Reduce agent workload by up to 70% with smart automation.
                 </p>
             </section>
@@ -34,7 +34,7 @@ export default function AutomationPage() {
                     <div className="border border-slate-200 rounded-lg p-6">
                         <h3 className="text-lg font-medium text-slate-900 mb-3">2. Automation Rules</h3>
                         <p className="text-slate-600 mb-4">
-                            SwanDesk automatically applies these rules when SwanAI Bot is enabled:
+                            SwanDigitals automatically applies these rules when SwanAI Bot is enabled:
                         </p>
                         <div className="bg-slate-50 rounded-lg p-4 space-y-2 text-sm text-slate-600">
                             <div className="flex items-center gap-2">
