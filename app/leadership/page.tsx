@@ -61,7 +61,7 @@ export default function LeadershipPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
             />
             <Hero
-                badge="👥 Leadership"
+                badge="Leadership"
                 title="Meet Our Leadership Team"
                 subtitle="Guided by a customer-first mindset and building secure, sovereign AI technologies for India."
                 primaryCTA={{ text: "Schedule a Demo", href: "/demo" }}
@@ -92,11 +92,11 @@ export default function LeadershipPage() {
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
-                                    <h4 className="font-bold text-slate-800 text-xs mb-1">🚀 Operations</h4>
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">Operations</h4>
                                     <p className="text-[11px] text-slate-500">Optimizing scaling, sales, and localized deployment metrics.</p>
                                 </div>
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
-                                    <h4 className="font-bold text-slate-800 text-xs mb-1">🤝 Customer Success</h4>
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">Customer Success</h4>
                                     <p className="text-[11px] text-slate-500">Helping enterprises achieve 85%+ support automation.</p>
                                 </div>
                             </div>
@@ -121,11 +121,11 @@ export default function LeadershipPage() {
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
-                                    <h4 className="font-bold text-slate-800 text-xs mb-1">💻 System Design</h4>
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">System Design</h4>
                                     <p className="text-[11px] text-slate-500">Next-gen speech channels and full-stack enterprise structures.</p>
                                 </div>
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
-                                    <h4 className="font-bold text-slate-800 text-xs mb-1">🔒 Data Privacy</h4>
+                                    <h4 className="font-bold text-slate-800 text-xs mb-1">Data Privacy</h4>
                                     <p className="text-[11px] text-slate-500">DPDP Act alignment and air-gapped on-prem deployments.</p>
                                 </div>
                             </div>

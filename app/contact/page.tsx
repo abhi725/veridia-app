@@ -10,7 +10,7 @@ export default function ContactPage() {
     return (
         <SiteLayout>
             <Hero
-                badge="📧 Get in Touch"
+                badge="Get in Touch"
                 title="We'd Love to Hear From You"
                 subtitle="Whether you have a question about features, pricing, or anything else, our team is ready to answer"
                 primaryCTA={{ text: "Schedule a Call", href: "/demo" }}

@@ -16,7 +16,7 @@ export default function AboutPage() {
     return (
         <SiteLayout>
             <Hero
-                badge="👋 About SwanDigitals"
+                badge="About SwanDigitals"
                 title="We Built the Support Tool We Wished Existed"
                 subtitle="SwanDigitals started because Indian businesses deserve a customer support platform that speaks their customers' languages, respects their data, and actually fits their budget."
                 primaryCTA={{ text: "Get in Touch", href: "/contact" }}
@@ -40,17 +40,14 @@ export default function AboutPage() {
                         </p>
                         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="text-center">
-                                <div className="text-4xl mb-2">🇮🇳</div>
                                 <h4 className="font-bold mb-1">Built for India</h4>
                                 <p className="text-sm text-slate-600">We understand DPDP, RBI, regional languages, and Indian enterprise budgets. This isn't Intercom with a rupee symbol.</p>
                             </div>
                             <div className="text-center">
-                                <div className="text-4xl mb-2">🔒</div>
                                 <h4 className="font-bold mb-1">Your data is yours</h4>
                                 <p className="text-sm text-slate-600">We'll say it plainly: we don't read your customer conversations. On-prem or cloud — what happens in your inbox stays in your inbox.</p>
                             </div>
                             <div className="text-center">
-                                <div className="text-4xl mb-2">⚡</div>
                                 <h4 className="font-bold mb-1">Fast, not perfect</h4>
                                 <p className="text-sm text-slate-600">We'd rather get you live in 7 days and improve together than sell you a 6-month implementation plan.</p>
                             </div>
@@ -97,17 +94,14 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">🤝</div>
                             <h3 className="text-xl font-bold mb-3">Direct Support</h3>
                             <p className="text-slate-600">You talk directly to our founders and builders, not an anonymous ticket queue. We believe in high-touch personal relationships.</p>
                         </div>
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">💡</div>
                             <h3 className="text-xl font-bold mb-3">Honest Engineering</h3>
                             <p className="text-slate-600">We don't overclaim or oversell. If we can't do something, we'll tell you — and suggest who can.</p>
                         </div>
                         <div className="text-center p-6">
-                            <div className="text-5xl mb-4">🔄</div>
                             <h3 className="text-xl font-bold mb-3">Continuous Improvement</h3>
                             <p className="text-slate-600">We ship updates every 2-4 weeks. Your feedback directly shapes our product roadmap.</p>
                         </div>
@@ -125,19 +119,19 @@ export default function AboutPage() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-                            <h3 className="font-bold text-lg mb-2">✅ True On-Premise</h3>
+                            <h3 className="font-bold text-lg mb-2">True On-Premise</h3>
                             <p className="text-white/80 text-sm">Not just "India cloud hosting" — fully air-gapped deployment in your datacenter.</p>
                         </div>
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-                            <h3 className="font-bold text-lg mb-2">✅ Leadership-Led Support</h3>
+                            <h3 className="font-bold text-lg mb-2">Leadership-Led Support</h3>
                             <p className="text-white/80 text-sm">Work directly with Swati, Kiran, and our core builders, not a sales proxy.</p>
                         </div>
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-                            <h3 className="font-bold text-lg mb-2">✅ Transparent Pricing</h3>
+                            <h3 className="font-bold text-lg mb-2">Transparent Pricing</h3>
                             <p className="text-white/80 text-sm">No hidden costs, no per-conversation fees. Simple, predictable licensing.</p>
                         </div>
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-                            <h3 className="font-bold text-lg mb-2">✅ Compliance Ready</h3>
+                            <h3 className="font-bold text-lg mb-2">Compliance Ready</h3>
                             <p className="text-white/80 text-sm">Designed for RBI, DPDP Act, and India's data localization requirements.</p>
                         </div>
                     </div>
