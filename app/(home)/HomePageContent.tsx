@@ -47,6 +47,81 @@ export default function HomePageContent() {
     const compareRef = useReveal();
     const ctaRef = useReveal();
 
+    // Crawler Simulator State
+    const [crawlUrl, setCrawlUrl] = useState("https://www.prestigebuilders.in");
+    const [crawlStep, setCrawlStep] = useState(0); // 0: idle, 1: crawling, 2: embedding, 3: completed/chat
+    const [crawlProgress, setCrawlProgress] = useState(0);
+    const [crawledPages, setCrawledPages] = useState<string[]>([]);
+    const [chatHistory, setChatHistory] = useState([
+        { sender: 'bot', text: "Hi! I've crawled prestigebuilders.in and synthesized a property database. Try asking me something like 'What configurations are available?' or 'Book a site visit'!" }
+    ]);
+    const [chatInputText, setChatInputText] = useState("");
+    const [isTyping, setIsTyping] = useState(false);
+
+    useEffect(() => {
+        if (crawlStep !== 1) return;
+        
+        const samplePages = [
+            "/projects/sunrise-residences",
+            "/projects/sunrise-residences/amenities",
+            "/projects/sunrise-residences/pricing-plans",
+            "/projects/sunrise-residences/location-map",
+            "/projects/sunrise-residences/floor-layouts",
+            "/faqs",
+            "/contact-us",
+            "/brochure-download.pdf"
+        ];
+        
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += 4;
+            setCrawlProgress(Math.min(progress, 100));
+            
+            const pageIndex = Math.floor(progress / 12);
+            if (pageIndex < samplePages.length) {
+                const page = samplePages[pageIndex];
+                setCrawledPages(prev => {
+                    if (prev.includes(page)) return prev;
+                    return [...prev, page];
+                });
+            }
+            
+            if (progress >= 100) {
+                clearInterval(interval);
+                setCrawlStep(2);
+                setTimeout(() => {
+                    setCrawlStep(3);
+                }, 1200);
+            }
+        }, 85);
+        
+        return () => clearInterval(interval);
+    }, [crawlStep]);
+
+    const handleSendMessage = (text: string) => {
+        if (!text.trim()) return;
+        
+        setChatHistory(prev => [...prev, { sender: 'user', text }]);
+        setChatInputText("");
+        setIsTyping(true);
+        
+        setTimeout(() => {
+            let reply = "I'm sorry, I couldn't find that specific information on prestigebuilders.in. Can you try asking about amenities, BHK layouts, or booking a visit?";
+            const normalizedText = text.toLowerCase();
+            
+            if (normalizedText.includes("bhk") || normalizedText.includes("config") || normalizedText.includes("price") || normalizedText.includes("cost") || normalizedText.includes("start")) {
+                reply = "Prestige Sunrise offers premium 2BHK (1,250 sq.ft) and 3BHK (1,850 sq.ft) luxury apartments starting from ₹1.5 Cr in Whitefield.";
+            } else if (normalizedText.includes("amenit") || normalizedText.includes("pool") || normalizedText.includes("gym") || normalizedText.includes("club")) {
+                reply = "The project includes a 25,000 sq.ft clubhouse, infinity swimming pool, fully equipped gymnasium, jogging track, rooftop gardens, and 24/7 security.";
+            } else if (normalizedText.includes("book") || normalizedText.includes("visit") || normalizedText.includes("schedul")) {
+                reply = "I can help with that! Site visits are available daily from 10 AM to 6 PM. Would you like to book for this Saturday at 11 AM?";
+            }
+            
+            setChatHistory(prev => [...prev, { sender: 'bot', text: reply }]);
+            setIsTyping(false);
+        }, 800);
+    };
+
     const features = [
         { icon: <Bot className="w-5 h-5" />, title: "AI That Actually Reads Context", description: "Your customers don't repeat themselves. SwanDigitals AI remembers full conversations, suggests replies, and auto-resolves FAQs — in Hindi, Tamil, or English." },
         { icon: <Mic className="w-5 h-5" />, title: "Voice Bot for Phone Support", description: "Answer calls 24/7 in Hindi, Tamil, Telugu, and 8 more Indian languages. Works with advanced cloud voice providers, standard SIP trunking, or fully offline on-premises with private speech models." },
@@ -80,6 +155,7 @@ export default function HomePageContent() {
         { icon: <Headphones className="w-5 h-5" />, title: "Customer Support", description: "Handle support requests across WhatsApp, email, and web — all in one inbox. AI resolves FAQs automatically.", stats: ["24/7 AI", "Multi-channel", "Auto-resolve"], link: "/solutions/customer-service" },
         { icon: <Briefcase className="w-5 h-5" />, title: "Sales & Lead Capture", description: "Capture leads from your website chat widget, qualify them with AI, and route to the right sales rep.", stats: ["Lead scoring", "CRM sync", "Auto-routing"], link: "/solutions/sales" },
         { icon: <Settings className="w-5 h-5" />, title: "BFSI & Compliance", description: "Air-gapped deployment for banks and NBFCs. Full data sovereignty. RBI-compliant infrastructure.", stats: ["On-premise", "DPDP ready", "Audit logs"], link: "/solutions/it-helpdesk" },
+        { icon: <Globe className="w-5 h-5" />, title: "Real Estate Builders", description: "Instantly capture and qualify luxury project buyer leads from WhatsApp and Instagram. Qualify budgets, BHK configurations, and book site visits 24/7.", stats: ["Site visits booked", "WhatsApp & Insta DMs", "Context sync"], link: "http://localhost:8080/chatbot/real-estate/index.html" },
     ];
 
     const stats = [
@@ -299,13 +375,268 @@ export default function HomePageContent() {
                                         </span>
                                     ))}
                                 </div>
-                                <Link href={useCases[activeUseCase].link} className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white rounded-full font-semibold text-sm hover:bg-slate-800 transition-all cursor-pointer">
-                                    Learn More
-                                    <ArrowRight className="w-4 h-4" />
-                                </Link>
+                                {useCases[activeUseCase].link.startsWith('http') ? (
+                                    <a href={useCases[activeUseCase].link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white rounded-full font-semibold text-sm hover:bg-slate-800 transition-all cursor-pointer">
+                                        View Real Estate Demo
+                                        <ArrowRight className="w-4 h-4" />
+                                    </a>
+                                ) : (
+                                    <Link href={useCases[activeUseCase].link} className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white rounded-full font-semibold text-sm hover:bg-slate-800 transition-all cursor-pointer">
+                                        Learn More
+                                        <ArrowRight className="w-4 h-4" />
+                                    </Link>
+                                )}
                             </div>
-                            <div className="flex items-center justify-center relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-                                <img src="/dashboard-screenshot.png" alt="SwanDigitals Dashboard" className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" />
+                            <div className="flex items-center justify-center relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 min-h-[350px]">
+                                {activeUseCase === 3 ? (
+                                    <div className="w-full bg-[#efeae2] p-4 flex flex-col justify-between font-sans min-h-[350px] relative">
+                                        {/* Header */}
+                                        <div className="flex items-center justify-between border-b border-slate-200 pb-2 mb-3">
+                                            <div className="flex items-center gap-2">
+                                                <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-sm">S</div>
+                                                <div className="text-left">
+                                                    <div className="font-semibold text-xs text-slate-800">Swan AI — Real Estate</div>
+                                                    <div className="text-[9px] text-emerald-600 font-medium">online</div>
+                                                </div>
+                                            </div>
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                                        </div>
+                                        
+                                        {/* Messages list */}
+                                        <div className="flex-1 flex flex-col gap-2.5 overflow-y-auto pr-1 text-xs text-left">
+                                            <div className="bg-white rounded-lg p-2.5 max-w-[85%] self-start shadow-sm text-slate-800">
+                                                <span className="font-semibold text-[10px] text-emerald-600 block mb-0.5 text-left">Swan AI</span>
+                                                Hi Amit! Welcome to Prestige Sunrise. Are you looking for a 2BHK or 3BHK configuration?
+                                            </div>
+                                            <div className="bg-[#d9fdd3] rounded-lg p-2.5 max-w-[85%] self-end shadow-sm text-slate-800">
+                                                Looking for 3BHK. What is the starting price?
+                                            </div>
+                                            <div className="bg-white rounded-lg p-2.5 max-w-[85%] self-start shadow-sm text-slate-800">
+                                                <span className="font-semibold text-[10px] text-emerald-600 block mb-0.5 text-left">Swan AI</span>
+                                                3BHK premium residences (1,850 sq.ft) start at ₹1.5 Cr. Would you like me to send the floor plans on WhatsApp?
+                                            </div>
+                                            <div className="bg-[#d9fdd3] rounded-lg p-2.5 max-w-[85%] self-end shadow-sm text-slate-800">
+                                                Yes please. Also is it RERA registered?
+                                            </div>
+                                            <div className="bg-white rounded-lg p-2.5 max-w-[85%] self-start shadow-sm text-slate-800">
+                                                <span className="font-semibold text-[10px] text-emerald-600 block mb-0.5 text-left">Swan AI</span>
+                                                Yes, it is fully RERA registered. I have sent the layout brochure. Would you like to book a site visit for Saturday?
+                                            </div>
+                                        </div>
+                                        
+                                        {/* Input footer */}
+                                        <div className="mt-3 pt-2 border-t border-slate-200 flex items-center gap-2">
+                                            <div className="flex-1 bg-white rounded-full px-3 py-1.5 text-[11px] text-slate-400 border border-slate-200 text-left">Type a message...</div>
+                                            <div className="w-8 h-8 rounded-full bg-[#00a884] flex items-center justify-center text-white text-xs">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5"><path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" /></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <img src="/dashboard-screenshot.png" alt="SwanDigitals Dashboard" className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" />
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Crawler Onboarding Section */}
+            <section className="py-20 lg:py-28 bg-slate-900 overflow-hidden relative">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent pointer-events-none" />
+                <div className="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+                    <div className="text-center mb-16">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-orange-400 bg-orange-400/10 border border-orange-400/20 rounded-full mb-4">
+                            Effortless Onboarding
+                        </span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                            Your Website Already Has the Answers
+                        </h2>
+                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                            Our system crawls your website, gets to know your inventory, and builds a custom AI knowledge base automatically. No manual training required.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        {/* Left column: 3 Steps */}
+                        <div className="lg:col-span-5 space-y-8 text-left">
+                            <div className="flex gap-4">
+                                <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-bold shrink-0">1</div>
+                                <div>
+                                    <h3 className="text-lg font-semibold text-white mb-1">Enter Your Website URL</h3>
+                                    <p className="text-sm text-slate-400">Just paste your company or project address. That's all we need to get started.</p>
+                                </div>
+                            </div>
+                            
+                            <div className="flex gap-4">
+                                <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-bold shrink-0">2</div>
+                                <div>
+                                    <h3 className="text-lg font-semibold text-white mb-1">We Crawl Up to 50 Pages</h3>
+                                    <p className="text-sm text-slate-400">Our system automatically reads property layouts, pricing sheet PDFs, amenities, and FAQs.</p>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-4">
+                                <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-bold shrink-0">3</div>
+                                <div>
+                                    <h3 className="text-lg font-semibold text-white mb-1">Your AI Assistant Is Ready</h3>
+                                    <p className="text-sm text-slate-400">Instantly test the generated knowledge base, refine settings, and deploy it to WhatsApp or Web chat.</p>
+                                </div>
+                            </div>
+                            
+                            <div className="pt-4 border-t border-white/5">
+                                <p className="text-xs text-slate-500 flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
+                                    Supports dynamic SPAs, static HTML pages, and PDFs.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Right column: Interactive Simulator Panel */}
+                        <div className="lg:col-span-7">
+                            <div className="bg-slate-800/80 border border-slate-700/50 rounded-2xl p-6 shadow-xl relative min-h-[420px] flex flex-col justify-between">
+                                {crawlStep === 0 && (
+                                    <div className="flex-1 flex flex-col justify-center items-center text-center space-y-6 py-6">
+                                        <div className="w-16 h-16 rounded-full bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400">
+                                            <Globe className="w-8 h-8" />
+                                        </div>
+                                        <div className="space-y-2 max-w-md">
+                                            <h4 className="text-white font-semibold text-lg">Test the Website Crawler</h4>
+                                            <p className="text-xs text-slate-400">Enter a website URL and see our crawler build a knowledge base in real-time.</p>
+                                        </div>
+                                        <div className="flex w-full max-w-md gap-2">
+                                            <input 
+                                                type="text" 
+                                                value={crawlUrl}
+                                                onChange={(e) => setCrawlUrl(e.target.value)}
+                                                className="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-orange-500"
+                                            />
+                                            <button 
+                                                onClick={() => { setCrawlStep(1); setCrawlProgress(0); setCrawledPages([]); }}
+                                                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-xs px-5 py-2.5 rounded-xl transition-colors shrink-0"
+                                            >
+                                                Crawl Site
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {crawlStep === 1 && (
+                                    <div className="flex-1 flex flex-col justify-center space-y-6 py-6">
+                                        <div className="space-y-2 text-left">
+                                            <div className="flex justify-between items-center text-xs">
+                                                <span className="text-orange-400 font-medium">Crawling {crawlUrl}...</span>
+                                                <span className="text-white font-semibold">{crawlProgress}%</span>
+                                            </div>
+                                            <div className="w-full bg-slate-900 rounded-full h-2 overflow-hidden">
+                                                <div className="bg-orange-500 h-full transition-all duration-150" style={{ width: `${crawlProgress}%` }}></div>
+                                            </div>
+                                        </div>
+                                        <div className="bg-slate-900 rounded-xl p-4 h-48 overflow-y-auto font-mono text-[10px] text-slate-400 flex flex-col gap-1.5 scrollbar-thin text-left">
+                                            <div className="text-emerald-400 font-semibold">[START] Initializing crawler node...</div>
+                                            <div className="text-slate-500">User-Agent: SwanBot/2.0 (RealEstate Crawler)</div>
+                                            {crawledPages.map((page, idx) => (
+                                                <div key={idx} className="flex gap-2">
+                                                    <span className="text-emerald-500">✓</span>
+                                                    <span className="text-slate-300">GET {page}</span>
+                                                    <span className="text-slate-500">(200 OK)</span>
+                                                </div>
+                                            ))}
+                                            {crawlProgress < 100 && <div className="text-orange-400 animate-pulse">Scanning pages...</div>}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {crawlStep === 2 && (
+                                    <div className="flex-1 flex flex-col justify-center items-center text-center space-y-4 py-12">
+                                        <div className="w-12 h-12 rounded-full border-2 border-orange-500 border-t-transparent animate-spin"></div>
+                                        <div className="space-y-1">
+                                            <h4 className="text-white font-semibold text-sm">Building Knowledge Base...</h4>
+                                            <p className="text-xs text-slate-400">Generating vector embeddings and training context rules.</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {crawlStep === 3 && (
+                                    <div className="flex-1 flex flex-col justify-between font-sans">
+                                        {/* Chat Interface */}
+                                        <div className="flex items-center justify-between border-b border-slate-700 pb-2.5 mb-3">
+                                            <div className="flex items-center gap-2">
+                                                <div className="w-7 h-7 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-semibold text-xs">AI</div>
+                                                <div className="text-left">
+                                                    <div className="font-semibold text-xs text-white">Project Assistant</div>
+                                                    <div className="text-[9px] text-emerald-400 font-medium">Synced with prestigebuilders.in</div>
+                                                </div>
+                                            </div>
+                                            <button 
+                                                onClick={() => setCrawlStep(0)}
+                                                className="text-[10px] text-slate-500 hover:text-white transition-colors"
+                                            >
+                                                Reset
+                                            </button>
+                                        </div>
+
+                                        {/* Messages */}
+                                        <div className="flex-1 flex flex-col gap-2.5 overflow-y-auto max-h-[220px] pr-1 text-xs mb-3 text-left">
+                                            {chatHistory.map((msg, idx) => (
+                                                <div 
+                                                    key={idx} 
+                                                    className={`rounded-xl p-2.5 max-w-[85%] shadow-sm ${
+                                                        msg.sender === 'bot' 
+                                                            ? 'bg-slate-900 text-slate-300 self-start border border-slate-850' 
+                                                            : 'bg-orange-500 text-white self-end'
+                                                    }`}
+                                                >
+                                                    {msg.text}
+                                                </div>
+                                            ))}
+                                            {isTyping && (
+                                                <div className="bg-slate-900 text-slate-400 border border-slate-800 rounded-xl p-2.5 self-start flex gap-1 items-center">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-slate-500 animate-pulse"></span>
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-slate-500 animate-pulse delay-75"></span>
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-slate-500 animate-pulse delay-150"></span>
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        {/* Pre-suggested options */}
+                                        {chatHistory.length <= 1 && !isTyping && (
+                                            <div className="flex flex-wrap gap-1.5 mb-3 justify-start">
+                                                {[
+                                                    "What configurations are available?",
+                                                    "What amenities do they have?",
+                                                    "Book a site visit"
+                                                ].map((q, idx) => (
+                                                    <button
+                                                        key={idx}
+                                                        onClick={() => handleSendMessage(q)}
+                                                        className="bg-slate-900 hover:bg-slate-850 text-[10px] text-orange-400 border border-slate-800 rounded-full px-3 py-1 text-left transition-colors"
+                                                    >
+                                                        {q}
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {/* Input bar */}
+                                        <div className="pt-2.5 border-t border-slate-700/50 flex items-center gap-2">
+                                            <input 
+                                                type="text" 
+                                                placeholder="Ask another question..."
+                                                value={chatInputText}
+                                                onChange={(e) => setChatInputText(e.target.value)}
+                                                onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(chatInputText); }}
+                                                className="flex-1 bg-slate-900 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-white focus:outline-none focus:border-orange-500"
+                                            />
+                                            <button 
+                                                onClick={() => handleSendMessage(chatInputText)}
+                                                className="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center text-white shrink-0 hover:bg-orange-600 transition-colors"
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5"><path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" /></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

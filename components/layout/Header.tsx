@@ -35,6 +35,7 @@ const navItems = [
             { label: 'Resource Center', href: '/resources' },
             { label: 'Documentation', href: '/documentation' },
             { label: 'ROI Calculator', href: '/roi-calculator' },
+            { label: 'Comparison', href: '/compare' },
         ],
     },
     {
