@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function WebinarsPage() {
     const upcomingWebinars = [
-        { title: "How FinanceOne Achieved 85% Automation in 30 Days", date: "April 15, 2026", time: "11:00 AM IST", speaker: "Swati Gaikwad, Co-Founder @ SwanDigitals", type: "Case Study" },
+        { title: "Designing Conversational Flows for 85% Query Resolution", date: "April 15, 2026", time: "11:00 AM IST", speaker: "Swati Gaikwad, Co-Founder @ SwanDigitals", type: "Strategy" },
         { title: "True On-Premise vs Dedicated VPC: What's the Difference?", date: "April 22, 2026", time: "10:00 AM IST", speaker: "Kiran Shelke, Co-Founder @ SwanDigitals", type: "Technical" },
         { title: "2026 AI Customer Service Trends in India", date: "May 5, 2026", time: "11:00 AM IST", speaker: "SwanDigitals Team", type: "Industry" }
     ];

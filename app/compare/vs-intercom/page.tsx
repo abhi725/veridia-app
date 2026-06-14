@@ -14,11 +14,12 @@ export default function VsIntercomPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Intercom"
-            heroTitle="SwanDigitals vs Intercom"
-            heroSubtitle="Stop paying massive per-seat licenses for global platforms. Get native AI automation built for the Indian market."
-            aboutCompetitor="Intercom is a premium global customer communications platform known for a beautiful UI and strong product-led growth tools."
-            competitorStrengths="Beautiful user interface, in-app messaging focus, and strong product tour features."
-            realityCheck="Intercom's pricing is notoriously expensive, charging per seat and per AI resolution. SwanDigitals offers a flat platform fee, making it the financially viable choice for scaling Indian support teams."
+            slug="vs-intercom"
+            heroTitle="Intercom Alternative for Indian Enterprises: Native AI, Flat Pricing"
+            heroSubtitle="Avoid seat pricing and per-resolution charges. Switch to a flat-rate customer helpdesk featuring native voice, chat, and Indian language comprehension."
+            aboutCompetitor="Intercom specializes in beautiful customer messaging interfaces and interactive onboarding widgets."
+            competitorStrengths="A highly polished interface, intuitive product tour widgets, and excellent proactive support capabilities."
+            realityCheck="Intercom charges per seat, per customer reached, and per automated answer. As your traffic grows, your support software bill climbs unpredictably. SwanDigitals gives you a flat license with unlimited agents and sessions, so scaling support doesn't scale your billing."
             comparisonRows={[
                 { feature: "Pricing Model", SwanDigitals: "Flat Platform Fee", competitor: "Per Seat + AI Fees" },
                 { feature: "Focus Market", SwanDigitals: "India (DPDP Compliant)", competitor: "Global / US" },
@@ -28,26 +29,27 @@ export default function VsIntercomPage() {
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Eliminate Seat Taxes",
-                    description: "Grow your support team without growing your software bill. SwanDigitals includes unlimited agents."
+                    title: "Predictable Flat Rates",
+                    description: "Grow your agent pool or AI ticket resolution counts. Your software licensing rate remains exactly the same."
                 },
                 {
-                    title: "Native Indian Integrations",
-                    description: "Deep integrations with WhatsApp, Razorpay, and UPI, natively understanding Hinglish and local dialects."
+                    title: "Regional Language RAG",
+                    description: "Our AI understands regional Hinglish queries (e.g. 'refund kab milega') natively. No translation API layers needed."
                 },
                 {
-                    title: "Guaranteed Data Sovereignty",
-                    description: "Intercom hosts data globally. SwanDigitals guarantees 100% data residency in Mumbai to ensure DPDP compliance."
+                    title: "Local Indian Cloud Hosting",
+                    description: "Guaranteed data residency in Mumbai. Ensure complete alignment with DPDP 2023 guidelines."
                 }
             ]}
-            targetPersona="SMB & Enterprise"
-            verdict="You are an Indian startup or enterprise that loves good UI but is tired of Intercom's exorbitant pricing scaling out of control as your traffic grows."
+            targetPersona="global enterprise teams that prioritise interactive in-app widgets and have the budget to support per-resolution software surcharges."
+            verdict="you are a scaling Indian brand that wants beautiful customer support interfaces without unpredictable pricing or offshore data storage."
             faqs={[
                 {
-                    question: "Is the UI as good as Intercom?",
-                    answer: "Yes, SwanDigitals provides a highly polished, modern shared inbox that your agents will love using, with even better WhatsApp capabilities."
+                    question: "Is the agent workspace as polished as Intercom?",
+                    answer: "Yes. We offer a modern shared team inbox designed for fast resolution, alongside deeper integrations with local Indian tools like Razorpay and Delhivery."
                 }
             ]}
         />
     );
 }
+

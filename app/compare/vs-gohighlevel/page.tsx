@@ -14,23 +14,24 @@ export default function VsGHLPage() {
     return (
         <ComparisonPageTemplate
             competitorName="GoHighLevel (GHL)"
-            heroTitle="GoHighLevel Alternative in India"
-            heroSubtitle="GHL is an incredible marketing funnel builder. But for automating complex customer support securely, it is bloated overkill. Meet your focused AI Helpdesk."
-            aboutCompetitor="GoHighLevel (GHL) is the ultimate 'agency-in-a-box' CRM. It bundles website builders, email marketing, SMS, pipelines, and calendars into one massive platform that marketing agencies white-label and resell."
-            competitorStrengths="Unmatched marketing funnel capabilities, a massive ecosystem of agency templates, and true white-label SaaS mode."
-            realityCheck="GHL is bloated if your core goal is customer support. Imagine selling GHL to a hospital or a bank just so they can use the 'unified inbox' feature—they will be overwhelmed by the funnel builders and SEO tools they don't need. Furthermore, GHL's native AI is basic; it lacks the deep, secure RAG capabilities and native Voice AI required to handle complex enterprise support queries safely."
+            slug="vs-gohighlevel"
+            heroTitle="GoHighLevel Alternative: Focused Support AI Over Bloated Marketing Funnels"
+            heroSubtitle="Upgrade from a marketing suite. Deploy a white-labeled customer helpdesk featuring native regional Voice AI, secure databases, and flat SaaS pricing."
+            aboutCompetitor="GoHighLevel (GHL) bundles website builders, email newsletters, SMS pipelines, and calendar systems for marketing agencies."
+            competitorStrengths="Excellent marketing lead tracking, deep funnel builder options, and white-label pricing structures."
+            realityCheck="GHL is built for marketing campaign attribution, not customer ticket resolution. Pitching GHL to customer service teams overwhelms them with landing page builders and SEO tracking configurations. Furthermore, GHL's native AI lacks the deep RAG integrations and regional voice support to resolve enterprise issues. SwanDigitals runs a focused, secure automation inbox natively."
             reasonsToSwitch={[
                 {
-                    title: "Laser-Focused on Support",
-                    description: "SwanDigitals isn't a marketing Swiss Army knife. It is a dedicated, enterprise-grade AI Helpdesk built to do one thing perfectly: automate complex customer service."
+                    title: "Dedicated Helpdesk Interface",
+                    description: "Avoid software bloat. Deploy a workspace designed solely to resolve customer service inquiries quickly."
                 },
                 {
-                    title: "Enterprise Data Security",
-                    description: "GHL stores client data on shared global servers. SwanDigitals provides 100% Indian data residency and air-gapped on-premise options for your strict enterprise clients."
+                    title: "Advanced Voice AI Calling",
+                    description: "Avoid basic Twilio routing rules. Get human-like voice agents that hold support calls natively in regional Indian languages."
                 },
                 {
-                    title: "Advanced Voice AI",
-                    description: "While GHL can route calls, SwanDigitals provides fully native Generative Voice AI agents that can hold human-like conversations and resolve tickets over the phone."
+                    title: "Enterprise Compliance Control",
+                    description: "Maintain complete data isolation. Secure local Mumbai cloud hosting options to align with data sovereignty regulations."
                 }
             ]}
             comparisonRows={[
@@ -40,12 +41,24 @@ export default function VsGHLPage() {
                 { feature: "Native Generative Voice AI", SwanDigitals: true, competitor: false },
                 { feature: "White-Label Agency Mode", SwanDigitals: "Available", competitor: "Available" }
             ]}
-            targetPersona="You run a marketing agency whose primary service is building landing pages, running Facebook ads, and tracking lead attribution for local plumbers and dentists."
-            verdict="You are a System Integrator or B2B SaaS Agency looking to sell high-end, highly secure AI Customer Support solutions to hospitals, banks, and large enterprises without overwhelming them with marketing tools."
+            targetPersona="agencies focusing strictly on running Google ads, building lead magnets, and tracking attribution workflows for local businesses."
+            verdict="you are an enterprise software vendor, solutions engineer, or consultant looking to deliver dedicated support automation with local data residency."
             faqs={[
                 {
-                    question: "Can I use SwanDigitals alongside GoHighLevel?",
-                    answer: "Absolutely. Many agencies use GHL for their marketing funnels, but deploy SwanDigitals specifically as their dedicated customer service portal."
+                    question: "Can we migrate customer contact records to SwanDigitals?",
+                    answer: "Yes. Our systems sync contact databases and historical custom fields directly through API integrations."
+                },
+                {
+                    question: "Do you offer white-label capabilities for agencies?",
+                    answer: "Yes. SwanDigitals provides custom domain routing, brand assets, and platform styling to resell to your enterprise clients."
+                },
+                {
+                    question: "How are communication channel costs billed?",
+                    answer: "We offer a flat software fee. You connect your own WhatsApp API and telephony trunking accounts with zero transactional markups."
+                },
+                {
+                    question: "Is data hosted locally in India?",
+                    answer: "Yes. SwanDigitals runs on local Mumbai database servers, satisfying DPDP 2023 regulations and RBI cloud directives."
                 }
             ]}
         />

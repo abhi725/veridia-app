@@ -51,6 +51,7 @@ export default function Footer() {
                             {[
                                 { label: 'Overview', href: '/platform' },
                                 { label: 'Features', href: '/features' },
+                                { label: 'Voice AI Agent', href: '/build-ai-voice-agent' },
                                 { label: 'Integrations', href: '/integrations' },
                                 { label: 'Security', href: '/security' },
                                 { label: 'Deployment', href: '/deployment' },
@@ -91,16 +92,24 @@ export default function Footer() {
                         <ul className="space-y-2.5">
                             {[
                                 { label: 'Documentation', href: '/documentation' },
+                                { label: 'Blog', href: 'https://blog.swandigitals.com', external: true },
+                                { label: 'OFAC Sanctions Search', href: '/tools/ofac-sanctions-search' },
                                 { label: 'ROI Calculator', href: '/roi-calculator' },
                                 { label: 'Pricing', href: '/pricing' },
                                 { label: 'Demo', href: '/demo' },
                                 { label: 'About Us', href: '/about' },
                                 { label: 'Contact Us', href: '/contact' },
-                            ].map(({ label, href }) => (
+                            ].map(({ label, href, external }) => (
                                 <li key={href}>
-                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
-                                        {label}
-                                    </Link>
+                                    {external ? (
+                                        <a href={href} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                            {label}
+                                        </a>
+                                    ) : (
+                                        <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                            {label}
+                                        </Link>
+                                    )}
                                 </li>
                             ))}
                         </ul>
@@ -116,9 +125,17 @@ export default function Footer() {
                                 { label: 'vs Haptik', href: '/compare/vs-haptik' },
                                 { label: 'vs Intercom', href: '/compare/vs-intercom' },
                                 { label: 'vs Zendesk', href: '/compare/vs-zendesk' },
+                                { label: 'View All Comparisons →', href: '/compare' },
                             ].map(({ label, href }) => (
                                 <li key={href}>
-                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                    <Link 
+                                        href={href} 
+                                        className={`text-sm transition-colors ${
+                                            href === '/compare' 
+                                                ? 'text-orange-500 hover:text-orange-600 font-medium' 
+                                                : 'text-slate-500 hover:text-orange-600'
+                                        }`}
+                                    >
                                         {label}
                                     </Link>
                                 </li>

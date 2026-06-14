@@ -14,23 +14,24 @@ export default function VsWatiPage() {
     return (
         <ComparisonPageTemplate
             competitorName="WATI"
-            heroTitle="WATI Alternative in India"
-            heroSubtitle="Why Indian enterprises are migrating from WATI to SwanDigitals to escape massive platform fees and WhatsApp-only limitations."
-            aboutCompetitor="WATI (WhatsApp Team Inbox) is one of the most recognized tools for managing WhatsApp Business APIs. Built heavily for broadcast marketing and basic team collaboration."
-            competitorStrengths="WATI provides a very stable WhatsApp connection, an easy-to-use drag-and-drop flow builder, and great capabilities for sending bulk promotional broadcasts."
-            realityCheck="WATI forces you into a 'WhatsApp-only' silo. Your customers also use email, website chat, and phone calls—which WATI ignores. Furthermore, their 'per-user' or high 'platform fee' model becomes incredibly expensive as your team grows, and their AI capabilities are basic keyword-matching rather than deep Generative AI."
+            slug="vs-wati"
+            heroTitle="WATI Alternative in India: Omnichannel Support Without Meta Markups"
+            heroSubtitle="Escape platform fees and single-channel limits. Route WhatsApp, email, web chat, and phone calls into a single flat-rate workspace."
+            aboutCompetitor="WATI provides a streamlined interface for broadcast templates and team communications over the WhatsApp Business API."
+            competitorStrengths="Stable WhatsApp connectivity, simple block-based workflow editors, and tools for promotional template broadcasting."
+            realityCheck="WATI locks your operations into a WhatsApp-only inbox. While useful, customers also reach out via email, web widgets, and phone. Juggling separate platforms splits your data and raises bills. SwanDigitals unifies web chat, email, and voice natively."
             reasonsToSwitch={[
                 {
-                    title: "True Omnichannel vs WhatsApp Only",
-                    description: "SwanDigitals unifies WhatsApp, Email, Web Chat, Instagram, and Voice AI into one inbox. Stop forcing your team to juggle 5 different software tools."
+                    title: "True Multi-Channel Workspace",
+                    description: "Avoid fragmenting support channels. Bring WhatsApp, Instagram, Email, Web Chat, and Voice AI into one shared dashboard."
                 },
                 {
-                    title: "Flat Pricing vs Expensive Tiers",
-                    description: "WATI's platform fees eat into your margins before you even pay Meta's API costs. SwanDigitals offers a flat-rate SaaS model with unlimited agent seats."
+                    title: "Zero template Markup Fees",
+                    description: "We charge a flat software subscription rate. You connect your own API credentials and pay Meta directly for conversation fees."
                 },
                 {
-                    title: "Deep Enterprise AI vs Basic Chatbots",
-                    description: "Instead of frustrating 'Press 1 for Sales' menus, SwanDigitals uses deep RAG (Retrieval-Augmented Generation) to actually resolve complex support tickets natively."
+                    title: "Contextual AI Agent Actions",
+                    description: "Traditional bots rely on rigid 'Press 1' logic pathways. SwanDigitals uses retrieval-augmented LLMs to resolve property queries dynamically."
                 }
             ]}
             comparisonRows={[
@@ -41,18 +42,19 @@ export default function VsWatiPage() {
                 { feature: "DPDP Act Compliance", SwanDigitals: "100% Indian Data Residency", competitor: "Global" },
                 { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false }
             ]}
-            targetPersona="You run a small D2C brand that strictly needs to blast WhatsApp promotional messages to lists of thousands of people, and you don't care about omnichannel support."
-            verdict="You are an enterprise, hospital, bank, or scaling B2B company that needs a unified, secure, AI-powered helpdesk to actually resolve complex customer issues across all channels, not just WhatsApp."
+            targetPersona="small retailers requiring simple promotional template campaigns who do not need multi-channel consolidation."
+            verdict="you are a B2B team, developer, real estate developer, or NBFC seeking structured customer database updates, RBI compliance, and omnichannel inbox workflows."
             faqs={[
                 {
-                    question: "Can I migrate my WhatsApp number from WATI to SwanDigitals?",
-                    answer: "Yes! We can migrate your existing WhatsApp Business API number (along with your Green Tick) from WATI to SwanDigitals seamlessly with zero downtime."
+                    question: "Can I transfer our current WhatsApp Business API number?",
+                    answer: "Yes. We migrate your registered WhatsApp Business API profile and official Meta green tick status with zero setup downtime."
                 },
                 {
-                    question: "Do I have to pay Meta's WhatsApp API fees to you?",
-                    answer: "No, we do not mark up Meta's API fees. You pay Meta directly for the conversation costs, and you pay us a flat software fee. WATI often wraps these costs together or charges a premium."
+                    question: "How do Meta conversation charges work?",
+                    answer: "You settle conversation fees directly with Meta using your own linked credit card. SwanDigitals does not add surcharges or markups to these costs."
                 }
             ]}
         />
     );
 }
+

@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Pega Alternative in India | Agile AI Chatbot Helpdesk',
-    description: 'Compare SwanDigitals vs Pegasystems. Deploy AI customer service in weeks, not years, with predictable pricing.',
-    keywords: ['Pega Alternative', 'Pega vs SwanDigitals', 'Agile Helpdesk'],
+    title: 'Pega Alternative | Fast AI Customer Support',
+    description: 'Compare SwanDigitals and Pegasystems. Deploy your AI helpdesk in weeks, not years, without heavy legacy systems.',
+    keywords: ['Pega Alternative', 'Pega vs SwanDigitals', 'AI Helpdesk'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-pega',
     },
@@ -14,38 +14,51 @@ export default function VsPegaPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Pega"
+            slug="vs-pega"
             heroTitle="SwanDigitals vs Pega"
-            heroSubtitle="Deploy AI customer service in weeks, not years. Escape the heavy monolithic architectures."
-            aboutCompetitor="Pegasystems is a massive BPM (Business Process Management) platform that includes customer service modules for Fortune 500s."
-            competitorStrengths="Complex workflow automation, massive scale BPM, and Fortune 500 pedigree."
-            realityCheck="Pega is designed to run the entire backend operations of a massive corporation. If you just need a state-of-the-art AI Helpdesk, Pega is drastically over-engineered."
+            heroSubtitle="Launch your AI customer service in weeks, not years. Avoid heavy legacy software and complex systems."
+            aboutCompetitor="Pegasystems is a massive business process tool designed for very large global corporations."
+            competitorStrengths="Automating complex internal workflows, serving massive global companies."
+            realityCheck="Pega is built to run the backend operations of huge corporations. If you just need a modern, fast AI Helpdesk, Pega is too big, too slow, and extremely complex to set up."
             comparisonRows={[
-                { feature: "Platform Focus", SwanDigitals: "AI Helpdesk", competitor: "Full BPM Suite" },
-                { feature: "Implementation", SwanDigitals: "Weeks", competitor: "Years" },
-                { feature: "Total Cost", SwanDigitals: "Accessible", competitor: "Extremely High" },
-                { feature: "Agility", SwanDigitals: "High (No-Code)", competitor: "Low (Heavy Dev)" },
-                { feature: "Voice AI", SwanDigitals: "Included", competitor: "Add-on Module" }
+                { feature: "Core Focus", SwanDigitals: "Smart AI Helpdesk", competitor: "Complex Business Systems" },
+                { feature: "Launch Time", SwanDigitals: "A few weeks", competitor: "Many months or years" },
+                { feature: "Total Cost", SwanDigitals: "Fair and predictable", competitor: "Extremely high setups" },
+                { feature: "Flexibility", SwanDigitals: "No-code updates in minutes", competitor: "Requires expert developers" },
+                { feature: "Voice AI", SwanDigitals: "Included out of the box", competitor: "Sold as an expensive add-on" }
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Extreme Agility",
-                    description: "Make changes to your AI logic in seconds using our visual builder, rather than waiting weeks for IT to update your Pega instance."
+                    title: "Real Speed and Flexibility",
+                    description: "Change your AI workflows in minutes with our visual builder. You do not need to wait weeks for your IT team to update the system."
                 },
                 {
-                    title: "Fraction of the Cost",
-                    description: "Pega requires massive capital expenditure. SwanDigitals provides enterprise AI customer service at a predictable, flat SaaS price."
+                    title: "Predictable, Clear Costs",
+                    description: "Pega costs massive amounts in setup and consulting fees. SwanDigitals offers enterprise-grade AI at a simple, flat rate."
                 },
                 {
-                    title: "Focused Tooling",
-                    description: "Your agents will love SwanDigitals's clean, intuitive inbox that is designed specifically for support, rather than a dense BPM interface."
+                    title: "Focused and Clean Design",
+                    description: "Your agents will love our clean inbox. It is built purely for fast customer support, not complicated corporate processes."
                 }
             ]}
             targetPersona="Enterprise"
-            verdict="You want enterprise-grade AI customer service without being forced to buy into a massive, monolithic Business Process Management ecosystem."
+            verdict="You want a modern, fast AI helpdesk without being forced into a massive, heavy business process platform."
             faqs={[
                 {
-                    question: "Can SwanDigitals trigger workflows?",
-                    answer: "Yes, our native integrations can seamlessly trigger workflows in your existing backend systems without needing a full BPM platform."
+                    question: "Where is my data stored?",
+                    answer: "All your data stays inside India. We support hosting on secure local cloud servers, or we can install the system directly on your own private company servers."
+                },
+                {
+                    question: "Can we pay Meta directly for WhatsApp messages?",
+                    answer: "Yes. You connect your own payment method to Meta. SwanDigitals does not add any extra fees or charges to your WhatsApp costs."
+                },
+                {
+                    question: "Can we keep our existing WhatsApp Business number?",
+                    answer: "Yes. You can move your current WhatsApp Business API number to SwanDigitals with zero downtime. You will keep your green verification badge."
+                },
+                {
+                    question: "Can we import our past ticket history?",
+                    answer: "Yes. We can migrate your complete past support tickets and history from your old systems, so your agents do not lose any context."
                 }
             ]}
         />

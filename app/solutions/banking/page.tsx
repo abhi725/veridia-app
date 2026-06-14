@@ -26,7 +26,7 @@ export default function BankingPage() {
                 title="The Deepest Conversational AI for Indian Banking"
                 subtitle="Automate every customer touchpoint while keeping 100% of data in India. Built for RBI guidelines and DPDP 2023."
                 primaryCTA={{ text: "Book a Banking-Specific Demo", href: "/demo" }}
-                secondaryCTA={{ text: "View Case Study", href: "/case-studies" }}
+                secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
 
             {/* Trust Highlights */}

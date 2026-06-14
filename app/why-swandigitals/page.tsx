@@ -115,8 +115,8 @@ export default function WhySwanDigitalsPage() {
                             <div className="text-slate-600">Mid-size NBFC, Mumbai</div>
                         </div>
                     </div>
-                    <Link href="/case-studies" className="text-orange-600 font-semibold hover:underline">
-                        Read more customer stories →
+                    <Link href="/pricing" className="text-orange-600 font-semibold hover:underline">
+                        See Pricing & Plans →
                     </Link>
                 </div>
             </section>

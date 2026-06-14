@@ -14,23 +14,24 @@ export default function VsDoubleTickPage() {
     return (
         <ComparisonPageTemplate
             competitorName="DoubleTick"
-            heroTitle="DoubleTick Alternative in India"
-            heroSubtitle="Upgrade your sales team from a mobile broadcasting app to a 24/7 AI Sales Agent that qualifies leads automatically."
-            aboutCompetitor="DoubleTick is designed as a mobile-first WhatsApp CRM. It is incredibly popular among field sales teams who need to send bulk broadcasts and manage leads directly from their smartphones."
-            competitorStrengths="Excellent mobile app experience, seamless WhatsApp broadcasting capabilities, and simple lead pipeline management for small teams."
-            realityCheck="DoubleTick relies entirely on your human sales reps. If a lead replies at 11 PM, they wait until morning. DoubleTick lacks a deeply integrated Generative AI layer to engage, ask BANT questions (Budget, Authority, Need, Timeline), and book meetings while your sales team sleeps."
+            slug="vs-doubletick"
+            heroTitle="DoubleTick Alternative: Outgrow Mobile Broadcasts for True Sales Automation"
+            heroSubtitle="Upgrade from a manual sales CRM app. Automate lead qualification, schedule calendar bookings, and route inquiries with flat-rate platform fees."
+            aboutCompetitor="DoubleTick provides a mobile-first WhatsApp CRM built for small field sales teams to trigger broadcasts and chats."
+            competitorStrengths="A highly refined mobile interface, simple lead tracking boards, and stable template broadcasting features."
+            realityCheck="DoubleTick relies on human reps replying manually to WhatsApp leads. When a lead replies late at night, they wait until the next day, leaking pipeline value. DoubleTick does not offer a native conversational AI layer to score prospects or book discovery slots automatically. SwanDigitals qualifiers leads 24/7."
             reasonsToSwitch={[
                 {
-                    title: "24/7 Lead Qualification",
-                    description: "SwanDigitals's AI engages leads instantly, asking qualifying questions and updating the CRM without human intervention."
+                    title: "24/7 Conversational AI Qualifier",
+                    description: "Our AI responds within seconds to score incoming buyers on budget, configuration preference, and booking intent."
                 },
                 {
-                    title: "Automated Meeting Booking",
-                    description: "Unlike basic WhatsApp CRMs, our AI integrates with your calendar to automatically book discovery calls when a lead is qualified."
+                    title: "Automated Calendar Sync",
+                    description: "Connect natively with your team calendars. The AI schedules site visits or calls the moment a prospect qualifies."
                 },
                 {
-                    title: "Beyond Mobile-First",
-                    description: "While mobile apps are great for field reps, scaling enterprises need a robust desktop interface with deep analytics, SLAs, and omnichannel visibility."
+                    title: "Omnichannel Lead Capture",
+                    description: "Stop ignoring non-WhatsApp traffic. Bring leads from Web Chat, Instagram DMs, Email, and Phone Calls into one dashboard."
                 }
             ]}
             comparisonRows={[
@@ -40,14 +41,27 @@ export default function VsDoubleTickPage() {
                 { feature: "Automated BANT Scoring", SwanDigitals: true, competitor: false },
                 { feature: "Voice AI for Inbound", SwanDigitals: true, competitor: false }
             ]}
-            targetPersona="You are a 5-person real estate team that just wants an easy mobile app to blast WhatsApp messages to purchased lead lists."
-            verdict="You are a scaling B2B or B2C enterprise that wants to completely automate the top of your sales funnel, qualifying leads and booking meetings 24/7 with zero human effort."
+            targetPersona="small merchant agencies seeking a basic mobile-first messaging CRM to text clients manually."
+            verdict="you want to automate top-of-funnel lead qualification, sync scheduled events to calendars, and scale without seat fees."
             faqs={[
                 {
-                    question: "Can SwanDigitals integrate with my primary CRM?",
-                    answer: "Yes! While SwanDigitals has a built-in CRM, we natively integrate with Salesforce, HubSpot, and Zoho to push qualified leads directly to your sales team."
+                    question: "Can we migrate our WhatsApp Business account?",
+                    answer: "Yes. We transfer your registered phone number, green badge, and template history to SwanDigitals with no service downtime."
+                },
+                {
+                    question: "Does SwanDigitals connect to Salesforce or HubSpot?",
+                    answer: "Yes. Our webhook workflows push qualified leads and chat transcripts to Salesforce, HubSpot, Zoho, or custom ERP systems."
+                },
+                {
+                    question: "How are Meta WhatsApp fees handled?",
+                    answer: "You settle conversation rates directly with Meta. SwanDigitals charges a flat SaaS licensing rate with zero transactional markups."
+                },
+                {
+                    question: "Is the platform DPDP 2023 compliant?",
+                    answer: "Yes. We host all enterprise customer data inside Indian borders on Mumbai servers, offering complete audit logs."
                 }
             ]}
         />
     );
 }
+

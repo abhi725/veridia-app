@@ -6,6 +6,8 @@ import './globals.css'
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
+    // FIX: metadataBase resolves all relative OG/Twitter image URLs — eliminates build warnings
+    metadataBase: new URL('https://swandigitals.com'),
     title: {
         default: 'SwanDigitals - AI Customer Support Platform for India',
         template: '%s | SwanDigitals'
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
         siteName: 'SwanDigitals',
         images: [
             {
-                url: '/og-image.jpg', // Ensure this image exists in public folder
+                url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'SwanDigitals — AI Customer Support Platform for India',
@@ -116,6 +118,15 @@ export default function RootLayout({
                     '@id': 'https://swandigitals.com/#organization',
                 },
                 inLanguage: 'en-IN',
+                // SearchAction: enables Google Sitelinks Search Box in SERPs
+                potentialAction: {
+                    '@type': 'SearchAction',
+                    target: {
+                        '@type': 'EntryPoint',
+                        urlTemplate: 'https://swandigitals.com/search?q={search_term_string}',
+                    },
+                    'query-input': 'required name=search_term_string',
+                },
             },
             {
                 '@type': 'SoftwareApplication',

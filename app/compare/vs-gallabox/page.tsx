@@ -14,11 +14,12 @@ export default function VsGallaboxPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Gallabox"
-            heroTitle="Gallabox Alternative in India"
+            slug="vs-gallabox"
+            heroTitle="Outgrow the WhatsApp-Only Silo of Gallabox"
             heroSubtitle="Upgrade from a mid-market WhatsApp tool to an Enterprise Omni-channel AI Helpdesk with native Voice capabilities."
             aboutCompetitor="Gallabox is a popular WhatsApp Business API provider targeting SMBs. They offer a shared inbox, drag-and-drop bot building, and built-in payment links via WhatsApp."
             competitorStrengths="Very intuitive setup for small businesses, excellent built-in payment gateways, and a solid WhatsApp team inbox for manual agent collaboration."
-            realityCheck="Gallabox traps you in a WhatsApp-only bubble. As your company scales, you realize your customers also email you, call your phone lines, and visit your website. Managing Gallabox for WhatsApp and Zendesk for email creates a fragmented nightmare. Furthermore, their AI is basic compared to modern LLM standards."
+            realityCheck="Gallabox traps you in a WhatsApp-only bubble. As your company scales, you realize your customers also email you, call your phone lines, and visit your website. Managing Gallabox for WhatsApp and other platforms for email creates a fragmented system. Furthermore, their AI is basic compared to modern LLM standards. SwanDigitals unifies all support channels into one screen, powered by advanced RAG AI that resolves questions automatically."
             reasonsToSwitch={[
                 {
                     title: "Omnichannel Unity",
@@ -44,8 +45,20 @@ export default function VsGallaboxPage() {
             verdict="You are a scaling mid-market or enterprise company that needs to automate 90% of support across ALL channels (Voice, Web, Email, WhatsApp) securely."
             faqs={[
                 {
-                    question: "Can I migrate my Gallabox WhatsApp number?",
-                    answer: "Yes, we can port your existing WhatsApp Business API number directly to SwanDigitals with zero downtime."
+                    question: "Where is my customer data stored?",
+                    answer: "All customer data is stored securely in our Mumbai database servers. This ensures your business remains fully compliant with India's DPDP Act of 2023 and local regulatory guidelines."
+                },
+                {
+                    question: "Can we pay Meta directly for WhatsApp business messages?",
+                    answer: "Yes. You link your own Meta Business account and pay Meta directly. SwanDigitals does not charge any markup fees or commission on your WhatsApp conversations."
+                },
+                {
+                    question: "Can I port my existing WhatsApp Business number?",
+                    answer: "Yes, you can port your existing WhatsApp Business API number directly to our platform with zero downtime or service interruption."
+                },
+                {
+                    question: "Can we migrate our existing customer profiles and support history?",
+                    answer: "Yes, our onboarding team handles the migration of your customer directories and support logs from Gallabox, making the transition seamless."
                 }
             ]}
         />

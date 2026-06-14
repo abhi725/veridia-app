@@ -6,8 +6,90 @@ import FAQ from '@/components/ui/FAQ';
 import Link from 'next/link';
 import { Shield, AlertTriangle, CheckCircle2 } from 'lucide-react';
 
+// ---------------------------------------------------------------------------
+// PHASE 1 SEO: Schema utility for compare pages
+// Generates FAQPage + BreadcrumbList + WebPage JSON-LD in one call.
+// Applied automatically to ALL 26 compare pages via this shared template.
+// ---------------------------------------------------------------------------
+function buildCompareSchema(
+    competitorName: string,
+    faqs: { question: string; answer: string }[],
+    slug: string
+) {
+    const dateModified = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+
+    return {
+        '@context': 'https://schema.org',
+        '@graph': [
+            // 1. BreadcrumbList — improves SERP appearance with breadcrumb links
+            {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    {
+                        '@type': 'ListItem',
+                        position: 1,
+                        name: 'Home',
+                        item: 'https://swandigitals.com',
+                    },
+                    {
+                        '@type': 'ListItem',
+                        position: 2,
+                        name: 'Compare',
+                        item: 'https://swandigitals.com/compare',
+                    },
+                    {
+                        '@type': 'ListItem',
+                        position: 3,
+                        name: `SwanDigitals vs ${competitorName}`,
+                        item: `https://swandigitals.com/compare/${slug}`,
+                    },
+                ],
+            },
+            // 2. FAQPage — feeds Google AI Overviews / AI Mode citations
+            // Note: FAQPage no longer generates FAQ rich results in SERPs (removed May 7 2026)
+            // but remains an active entity signal for AI citation systems.
+            {
+                '@type': 'FAQPage',
+                mainEntity: faqs.map((faq) => ({
+                    '@type': 'Question',
+                    name: faq.question,
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: faq.answer,
+                    },
+                })),
+            },
+            // 3. WebPage — adds dateModified for content freshness signal (E-E-A-T)
+            {
+                '@type': 'WebPage',
+                '@id': `https://swandigitals.com/compare/${slug}`,
+                url: `https://swandigitals.com/compare/${slug}`,
+                name: `SwanDigitals vs ${competitorName} — AI Chatbot Alternative India`,
+                dateModified,
+                inLanguage: 'en-IN',
+                isPartOf: { '@id': 'https://swandigitals.com/#website' },
+                author: {
+                    '@type': 'Organization',
+                    name: 'SwanDigitals',
+                    url: 'https://swandigitals.com',
+                },
+                breadcrumb: {
+                    '@type': 'BreadcrumbList',
+                    itemListElement: [
+                        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://swandigitals.com' },
+                        { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://swandigitals.com/compare' },
+                        { '@type': 'ListItem', position: 3, name: `vs ${competitorName}` },
+                    ],
+                },
+            },
+        ],
+    };
+}
+
 export interface ComparisonPageProps {
     competitorName: string;
+    /** URL slug, e.g. "vs-zendesk". Used to build canonical BreadcrumbList + WebPage URLs. */
+    slug: string;
     heroTitle: string;
     heroSubtitle: string;
     aboutCompetitor: string;
@@ -29,6 +111,7 @@ export interface ComparisonPageProps {
 
 export default function ComparisonPageTemplate({
     competitorName,
+    slug,
     heroTitle,
     heroSubtitle,
     aboutCompetitor,
@@ -40,8 +123,16 @@ export default function ComparisonPageTemplate({
     verdict,
     faqs
 }: ComparisonPageProps) {
+    // Build all three schema blocks for this compare page
+    const schemaData = buildCompareSchema(competitorName, faqs, slug);
+
     return (
         <SiteLayout>
+            {/* Phase 1 SEO: FAQPage + BreadcrumbList + WebPage JSON-LD injected for all 26 compare pages */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <Hero
                 badge={`🆚 vs ${competitorName}`}
                 title={heroTitle}
@@ -50,12 +141,14 @@ export default function ComparisonPageTemplate({
                 secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
 
-            {/* Competitor Reality Check */}
+            {/* Section B: Reality Check — H2 in question format for GEO/AEO */}
             <section className="py-16 bg-slate-50">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
                     <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200">
                         <div className="mb-8 border-b border-slate-100 pb-8">
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4">The Reality of {competitorName}</h2>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                                Is {competitorName} the Right Choice for Indian Enterprises?
+                            </h2>
                             <p className="text-lg text-slate-600">{aboutCompetitor}</p>
                         </div>
                         
@@ -79,12 +172,14 @@ export default function ComparisonPageTemplate({
                 </div>
             </section>
 
-            {/* Why Switch */}
+            {/* Section D: Why Switch — H2 in question format */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Top 3 Reasons to Switch to SwanDigitals</h2>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">Stop compromising on your customer experience and team productivity.</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                            Why Do Indian Teams Switch from {competitorName} to SwanDigitals?
+                        </h2>
+                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">Three specific reasons — no fluff.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -101,23 +196,26 @@ export default function ComparisonPageTemplate({
                 </div>
             </section>
 
-            {/* Comparison Table */}
+            {/* Section C: Comparison Table — H2 in question format for GEO/AEO */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Head-to-Head Comparison</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                            How Does SwanDigitals&apos; Pricing Compare to {competitorName}?
+                        </h2>
+                        <p className="text-slate-500 text-sm mt-2">Side-by-side feature and pricing breakdown</p>
                     </div>
                     <ComparisonTable rows={comparisonRows} competitorName={competitorName} title={`SwanDigitals vs ${competitorName}`} />
                 </div>
             </section>
 
-            {/* Verdict */}
+            {/* Section E: Verdict — H2 in question format */}
             <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-semibold tracking-wider text-orange-300 uppercase mb-6">
                         The Final Verdict
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-8">Who is this actually for?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-8">Who Is {competitorName} Actually For?</h2>
                     <div className="bg-white/5 rounded-2xl p-8 border border-white/10 text-left backdrop-blur-sm">
                         <div className="flex gap-4 items-start mb-6 pb-6 border-b border-white/10">
                             <CheckCircle2 className="w-8 h-8 text-slate-400 shrink-0" />
@@ -152,6 +250,49 @@ export default function ComparisonPageTemplate({
                     </Link>
                 </div>
             </section>
+
+            {/* Phase 2: Internal linking footer + Last Updated — E-E-A-T Trustworthiness signal */}
+            <section className="py-10 bg-slate-50 border-t border-slate-200">
+                <div className="max-w-5xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p className="text-xs text-slate-400">
+                        Last updated: <time dateTime={new Date().toISOString().split('T')[0]}>{new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long' })}</time>
+                    </p>
+                    <nav aria-label="Related pages" className="flex flex-wrap gap-4 text-sm">
+                        <Link href="/pricing" className="text-orange-600 hover:text-orange-700 font-medium underline underline-offset-2">
+                            See flat-rate pricing plans →
+                        </Link>
+                        <Link href="/compare" className="text-slate-600 hover:text-slate-800 font-medium underline underline-offset-2">
+                            Compare all {26} competitors →
+                        </Link>
+                        <Link href="/demo" className="text-slate-600 hover:text-slate-800 font-medium underline underline-offset-2">
+                            Book a migration call →
+                        </Link>
+                    </nav>
+                </div>
+            </section>
+
+            {/* Phase 3 CRO: Sticky bottom CTA bar — persists as user scrolls the compare page */}
+            {/* Visible on desktop only; avoids cluttering mobile where space is tight */}
+            <div className="hidden md:flex fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-t border-slate-700 py-3 px-6 items-center justify-between shadow-2xl">
+                <p className="text-sm text-slate-300">
+                    Comparing <span className="font-semibold text-white">{competitorName}</span> vs SwanDigitals?
+                    <span className="ml-2 text-orange-400">Flat pricing. No seat taxes. Indian datacenter.</span>
+                </p>
+                <div className="flex gap-3">
+                    <Link
+                        href="/pricing"
+                        className="px-4 py-2 text-sm font-semibold text-slate-900 bg-white rounded-full hover:bg-slate-100 transition-colors whitespace-nowrap"
+                    >
+                        Compare Pricing Plans
+                    </Link>
+                    <Link
+                        href="/demo"
+                        className="px-4 py-2 text-sm font-semibold text-white bg-orange-500 rounded-full hover:bg-orange-600 transition-colors whitespace-nowrap"
+                    >
+                        Book a Migration Call
+                    </Link>
+                </div>
+            </div>
         </SiteLayout>
     );
 }

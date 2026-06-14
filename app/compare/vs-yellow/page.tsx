@@ -14,11 +14,12 @@ export default function VsYellowPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Yellow.ai"
-            heroTitle="SwanDigitals vs Yellow.ai"
-            heroSubtitle="Escape unpredictable usage-based pricing and massive enterprise deployment timelines. Go live in weeks with flat pricing."
-            aboutCompetitor="Yellow.ai is a major enterprise conversational AI platform known for massive scale and complex integrations."
-            competitorStrengths="Massive global scale, deep legacy enterprise integrations, and 135+ languages supported."
-            realityCheck="Yellow.ai charges based on usage and tokens, meaning the more successful your automation, the more you pay. SwanDigitals provides flat annual licensing so your costs never spiral out of control."
+            slug="vs-yellow"
+            heroTitle="Escape the Yellow.ai Token Tax and Usage Surcharges"
+            heroSubtitle="Indian enterprise support deserves predictable pricing and fast deployment. Protect customer data with 100% air-gapped local setups."
+            aboutCompetitor="Yellow.ai operates a massive global conversation automation engine with multi-channel features."
+            competitorStrengths="Deep developer toolkits, multi-lingual coverage, and experience with massive enterprise customer accounts."
+            realityCheck="Yellow.ai bills you based on conversation usage metrics and token fees. As your automated chats increase, your bills climb automatically. SwanDigitals uses a flat platform structure. You get unlimited agent seats and unlimited customer support sessions on a predictable budget."
             comparisonRows={[
                 { feature: "Pricing Model", SwanDigitals: "Flat Annual License", competitor: "Usage/Token Based" },
                 { feature: "Data Sovereignty", SwanDigitals: "Air-gapped option", competitor: "Cloud-only" },
@@ -28,30 +29,31 @@ export default function VsYellowPage() {
             ]}
             reasonsToSwitch={[
                 {
-                    title: "True Data Sovereignty",
-                    description: "Even with 'India hosting', your data touches global infrastructure. SwanDigitals offers 100% air-gapped deployments for total DPDP and RBI compliance."
+                    title: "No Token Surcharges",
+                    description: "Avoid scaling penalties. Our flat SaaS pricing allows unlimited automated customer interactions with no end-of-month surprises."
                 },
                 {
-                    title: "Faster Implementation",
-                    description: "Yellow.ai enterprise deployments can take months. SwanDigitals's dedicated success team gets you live in an average of 21 days."
+                    title: "True Local Air-Gapped Installs",
+                    description: "Host all data on your local enterprise hardware or local clouds. Secure compliance for banking, finance, and health requirements."
                 },
                 {
-                    title: "No 'Token Tax'",
-                    description: "Stop getting punished for scaling. Our flat pricing means unlimited AI conversations without surprise bills at the end of the month."
+                    title: "Fast Launch in Weeks",
+                    description: "Yellow.ai setup cycles often span multiple months. SwanDigitals' solution engineers deploy your knowledge base and integrations in an average of 21 days."
                 }
             ]}
-            targetPersona="Enterprise"
-            verdict="You are a highly regulated Indian bank, NBFC, or enterprise that requires strict data sovereignty, predictable flat pricing, and faster implementation than legacy enterprise platforms can provide."
+            targetPersona="global enterprise conglomerates seeking large developer SDK layers and multi-quarter custom setup consultancy."
+            verdict="you are a regulated Indian bank, NBFC, or retail enterprise needing fast implementation, secure local deployment, and flat-rate monthly support fees."
             faqs={[
                 {
-                    question: "Can I migrate from Yellow.ai mid-contract?",
-                    answer: "Yes, we work with your timeline and can run in parallel during your transition to ensure zero downtime."
+                    question: "Can we transition from Yellow.ai without service disruption?",
+                    answer: "Yes. We configure and build your new automation environment in parallel, ensuring a clean swap with zero downtime for your customers."
                 },
                 {
-                    question: "Will I lose my training data?",
-                    answer: "No, we can import your conversation history and training corpus to retrain your new AI agents instantly."
+                    question: "Will our historical training records migrate?",
+                    answer: "Yes. Our team maps and migrates your historic transcripts and custom dialogue contexts directly into SwanDigitals."
                 }
             ]}
         />
     );
 }
+

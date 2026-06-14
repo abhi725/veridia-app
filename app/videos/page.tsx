@@ -8,7 +8,6 @@ export default function VideosPage() {
     const categories = [
         { name: "Product Demos", count: 12 },
         { name: "Tutorials", count: 18 },
-        { name: "Customer Stories", count: 8 },
         { name: "Expert Talks", count: 6 }
     ];
 
@@ -21,11 +20,11 @@ export default function VideosPage() {
     const videos = [
         { title: "Getting Started with SwanDigitals", category: "Tutorial", duration: "8:45", views: "5.2K" },
         { title: "Building Your First Chatbot", category: "Tutorial", duration: "12:30", views: "4.1K" },
-        { title: "FinanceOne Customer Story", category: "Customer Story", duration: "4:20", views: "2.8K" },
+        { title: "Customizing the Team Inbox", category: "Tutorial", duration: "9:15", views: "2.8K" },
         { title: "Advanced NLU Training", category: "Tutorial", duration: "15:10", views: "1.9K" },
         { title: "Integrating with Salesforce", category: "Tutorial", duration: "10:45", views: "3.2K" },
         { title: "Analytics Dashboard Walkthrough", category: "Demo", duration: "6:30", views: "2.4K" },
-        { title: "HealthPlus HIPAA Implementation", category: "Customer Story", duration: "5:15", views: "1.5K" },
+        { title: "VPC & On-Premise Deployment Guide", category: "Demo", duration: "7:45", views: "1.5K" },
         { title: "Deploying to WhatsApp", category: "Tutorial", duration: "7:20", views: "2.1K" }
     ];
 

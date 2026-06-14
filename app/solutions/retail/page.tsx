@@ -29,7 +29,7 @@ export default function RetailPage() {
     const integrations = ['Shopify', 'WooCommerce', 'Magento', 'BigCommerce', 'Salesforce', 'Zendesk', 'Stripe', 'Klaviyo'];
 
     const faqItems = [
-        { question: "Can it handle Black Friday traffic?", answer: "Absolutely. Our platform auto-scales to handle 10M+ conversations per month. RetailPro scaled from 1M to 10M conversations during holiday season without issues." },
+        { question: "Can it handle Black Friday traffic?", answer: "Absolutely. Our platform auto-scales to handle 10M+ conversations per month. The platform architecture utilizes auto-scaling cloud servers that dynamically provision extra resources as request volume spikes." },
         { question: "How do you handle product catalog sync?", answer: "We integrate with major e-commerce platforms (Shopify, Magento, WooCommerce) for real-time product sync. Custom catalog integrations are also available via our API." },
         { question: "Can it provide personalized recommendations?", answer: "Yes. Our AI analyzes browsing history, purchase patterns, and preferences to provide personalized product recommendations that increase average order value by 30%." }
     ];
@@ -41,7 +41,7 @@ export default function RetailPage() {
                 title="Enterprise Retail AI that Scales for Peak Season"
                 subtitle="Handle 10M+ conversations during Black Friday. Product discovery, order support, and returns automation that grows with your business."
                 primaryCTA={{ text: "See Retail Demo", href: "/demo" }}
-                secondaryCTA={{ text: "View Case Studies", href: "/case-studies" }}
+                secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
 
             {/* Stats */}
@@ -100,26 +100,19 @@ export default function RetailPage() {
                 </div>
             </section>
 
-            {/* Case Study */}
+            {/* High-Performance Infrastructure */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="bg-gradient-to-br from-purple-600 to-pink-600 text-white p-12 rounded-2xl">
-                        <div className="text-sm font-semibold mb-4">CASE STUDY</div>
-                        <h3 className="text-3xl font-bold mb-4">RetailPro Handles Holiday Season Like Never Before</h3>
+                        <div className="text-sm font-semibold mb-4">PLATFORM BENCHMARKS</div>
+                        <h3 className="text-3xl font-bold mb-4">Built to Handle High-Volume Seasonal Traffic</h3>
                         <p className="text-xl text-white/90 mb-6">
-                            "We scaled from 1M to 10M conversations during Black Friday without adding a single support agent. SwanDigitals paid for itself in the first month."
+                            Our architecture automatically scales to handle spikes in traffic during festive sales and holiday shopping rushes without latency degradation.
                         </p>
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 bg-white/20 rounded-full"></div>
-                            <div>
-                                <div className="font-bold text-lg">Emma Wilson</div>
-                                <div className="text-white/80">VP of Support, RetailPro</div>
-                            </div>
-                        </div>
                         <div className="grid grid-cols-3 gap-4 text-center">
-                            <div><div className="text-2xl font-bold">10M</div><div className="text-white/80 text-sm">Conversations</div></div>
-                            <div><div className="text-2xl font-bold">$2.1M</div><div className="text-white/80 text-sm">Saved</div></div>
-                            <div><div className="text-2xl font-bold">2 weeks</div><div className="text-white/80 text-sm">Deployment</div></div>
+                            <div><div className="text-2xl font-bold">10M+</div><div className="text-white/80 text-sm">Monthly Capacity</div></div>
+                            <div><div className="text-2xl font-bold">&lt; 500ms</div><div className="text-white/80 text-sm">Response Time</div></div>
+                            <div><div className="text-2xl font-bold">99.9%</div><div className="text-white/80 text-sm">Uptime SLA</div></div>
                         </div>
                     </div>
                 </div>

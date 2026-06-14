@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Crisp Alternative in India | Unified Inbox for Indian Enterprises',
-    description: 'Crisp is a great inbox for startups. Upgrade to SwanDigitals for Enterprise DPDP compliance, Native Voice AI, and 90% support automation in India.',
+    title: 'Crisp Alternative in India | Unified Inbox & AI Helpdesk',
+    description: 'Crisp is a nice inbox for startups. Upgrade to SwanDigitals for local DPDP data compliance, native Voice AI, and 90% support automation.',
     keywords: ['Crisp alternative', 'Crisp chat alternative India', 'Enterprise shared inbox', 'AI Helpdesk'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-crisp',
@@ -14,38 +14,51 @@ export default function VsCrispPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Crisp"
-            heroTitle="Crisp Alternative in India"
-            heroSubtitle="Upgrade from a startup shared inbox to an Enterprise AI Helpdesk built for deep automation and Indian data residency."
-            aboutCompetitor="Crisp.chat is a beautifully designed, modern shared inbox that offers a very generous free tier, making it highly popular among early-stage startups globally."
-            competitorStrengths="Fast, lightweight interface, excellent live chat features, and simple pricing with an unlimited user model that startups love."
-            realityCheck="Crisp is fantastic for manual chatting, but when you want to actually automate support at scale, its AI capabilities are basic. Furthermore, Crisp operates on global servers in Europe/US. For Indian hospitals, banks, or enterprises bound by the DPDP Act or RBI guidelines, using Crisp introduces significant data sovereignty risks."
+            slug="vs-crisp"
+            heroTitle="Moving Beyond a Pretty Shared Inbox"
+            heroSubtitle="Crisp is built for manual startup chat. Upgrade to an AI Helpdesk built for deep automation and local data compliance in India."
+            aboutCompetitor="Crisp.chat is a clean, modern shared inbox. It offers a free tier, making it popular among early-stage startups around the world."
+            competitorStrengths="It has a fast, light interface, good live chat tools, and simple flat pricing that small teams like."
+            realityCheck="Crisp is good for manual typing, but its AI features are basic when you need to automate support at scale. Also, Crisp stores data on global servers in Europe and the US. For Indian companies that must follow local rules like the DPDP Act, sending chat data abroad is a major risk."
             reasonsToSwitch={[
                 {
-                    title: "DPDP Act Compliance",
-                    description: "SwanDigitals guarantees 100% data residency within India. We can even deploy entirely on-premise for banks and hospitals, which Crisp cannot do."
+                    title: "Local Data Compliance",
+                    description: "SwanDigitals guarantees that your data stays inside India. We can also deploy on your own secure servers, which Crisp does not support."
                 },
                 {
-                    title: "Advanced Generative AI",
-                    description: "Crisp focuses on human agents. SwanDigitals focuses on AI agents that can resolve 90% of tickets before a human ever needs to look at the inbox."
+                    title: "Advanced Customer Support AI",
+                    description: "Crisp focus is on human agents typing messages. SwanDigitals uses smart AI to resolve 90% of your tickets before a human agent needs to look at the screen."
                 },
                 {
-                    title: "Native Voice AI",
-                    description: "Crisp is an omnichannel text inbox. SwanDigitals includes fully native Voice AI calling, allowing your customers to speak directly to an intelligent agent."
+                    title: "Native Phone Call AI",
+                    description: "Crisp only does text. SwanDigitals has native Voice AI built-in, so your customers can speak directly to a smart system on the phone."
                 }
             ]}
             comparisonRows={[
                 { feature: "Data Residency", SwanDigitals: "100% India (On-Prem available)", competitor: "Europe / Global" },
-                { feature: "Primary Focus", SwanDigitals: "AI Ticket Deflection", competitor: "Human Agent Inbox" },
-                { feature: "Voice AI Capabilities", SwanDigitals: "Native Integration", competitor: "None" },
-                { feature: "Pricing Model", SwanDigitals: "Flat SaaS Model", competitor: "Flat Pricing" },
-                { feature: "Indian Language Models", SwanDigitals: "Native & Highly Accurate", competitor: "Translation Plugins" }
+                { feature: "Main Focus", SwanDigitals: "AI Ticket Resolution", competitor: "Human Agent Inbox" },
+                { feature: "Voice AI Features", SwanDigitals: "Native Integration", competitor: "None" },
+                { feature: "Pricing Model", SwanDigitals: "Flat Monthly Fee", competitor: "Flat Pricing" },
+                { feature: "Indian Language Models", SwanDigitals: "Native & Highly Accurate", competitor: "Plugin-Based Translation" }
             ]}
-            targetPersona="You are an early-stage SaaS startup looking for a cheap, beautiful shared inbox for your 3 founders to answer customer questions manually."
-            verdict="You are a regulated Indian enterprise that needs deep AI automation, Voice AI, and strict compliance with local data sovereignty laws."
+            targetPersona="You are an early startup looking for a simple, cheap shared inbox for a few people to answer support chats manually."
+            verdict="You are a regulated Indian business that needs deep AI automation, voice tools, and full compliance with local data laws."
             faqs={[
                 {
-                    question: "Does SwanDigitals have a shared inbox like Crisp?",
-                    answer: "Yes, SwanDigitals features a robust, enterprise-grade unified inbox for your human agents to handle the 10% of complex queries the AI escalates."
+                    question: "Where is my customer data stored and how is it secured?",
+                    answer: "We store all customer data on secure servers in India. This keeps your business compliant with local laws like the DPDP Act. We use AES-256 encryption for data at rest and TLS for data in transit to keep your files safe."
+                },
+                {
+                    question: "How does Meta direct billing work for WhatsApp conversations?",
+                    answer: "Instead of adding extra markup fees on your chats, we connect you directly to Meta's billing. You pay Meta directly at actual cost for your WhatsApp Business API conversations. We do not charge extra fees per message."
+                },
+                {
+                    question: "Can I port my existing WhatsApp Business API number to SwanDigitals?",
+                    answer: "Yes, you can easily port your existing WhatsApp number to our platform. There is no downtime. Your business profile, green tick status, and phone number remain exactly the same during the transition."
+                },
+                {
+                    question: "How do we migrate our existing chats and ticket history from our previous CRM?",
+                    answer: "Our team helps you import all your contact lists, historical chat logs, and support tickets from your previous tool. We make sure the migration is smooth and your agents do not lose any context during the switch."
                 }
             ]}
         />

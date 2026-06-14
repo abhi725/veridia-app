@@ -14,11 +14,12 @@ export default function VsZendeskPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Zendesk"
-            heroTitle="SwanDigitals vs Zendesk"
-            heroSubtitle="AI-first support platform vs a legacy helpdesk with bolted-on AI. Achieve 90% automation with flat pricing."
-            aboutCompetitor="Zendesk is a global leader in customer service software, offering a massive ecosystem of integrations and traditional ticketing tools."
-            competitorStrengths="Massive app marketplace, advanced traditional ticketing, and global brand recognition."
-            realityCheck="Zendesk was built for human agents to manage tickets manually. Their AI is an expensive bolt-on that barely resolves 50% of queries. SwanDigitals is built natively for AI, aiming for 90% automation out-of-the-box."
+            slug="vs-zendesk"
+            heroTitle="Ditch the Zendesk Per-Seat Support Tax"
+            heroSubtitle="Upgrade to an AI-native support helpdesk built for Indian enterprise scale. Predictable flat platform rates, native Voice AI, and 100% local data residency."
+            aboutCompetitor="Zendesk stands as the global standard for ticket workflows and agent interfaces. Their ecosystem handles traditional ticket routing with immense maturity."
+            competitorStrengths="A mature ticket escalation framework, extensive integrations list, and decades of legacy customer service reputation."
+            realityCheck="Most tickets do not require human agents. Zendesk was designed for agents to work tickets manually, and their AI is a bolted-on charge that struggles to resolve complex Hinglish support needs. SwanDigitals unifies the automation engine and the inbox natively, letting you resolve support tickets automatically."
             comparisonRows={[
                 { feature: "Starting Price", SwanDigitals: "Flat Platform Fee", competitor: "$55+/agent/month + AI add-ons" },
                 { feature: "AI Chatbot", SwanDigitals: "Native, unlimited", competitor: "Expensive Add-on" },
@@ -30,30 +31,31 @@ export default function VsZendeskPage() {
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Flat Pricing vs Per-Seat Penalties",
-                    description: "Zendesk penalizes you for growing your team by charging per agent, plus extra for AI. SwanDigitals offers a flat platform fee with unlimited agents."
+                    title: "Eliminate Seat Penalties",
+                    description: "Scaling your customer service team should not scale your software licensing bill. SwanDigitals charges a flat platform rate with unlimited agents."
                 },
                 {
-                    title: "Native Voice AI",
-                    description: "Instead of paying per-minute for basic Zendesk Talk routing, get fully autonomous Voice AI agents that resolve calls natively in Indian languages."
+                    title: "Native Voice AI Automation",
+                    description: "Instead of paying high per-minute voice fees for basic legacy call routing, leverage autonomous Voice AI agents speaking native regional Indian languages."
                 },
                 {
-                    title: "DPDP Compliance",
-                    description: "Ensure your customer data stays in India with SwanDigitals's strict data residency and on-premise deployment options."
+                    title: "Sovereign Indian Data Residency",
+                    description: "Keep all local customer communications inside India. Complete DPDP 2023 compliance and optional air-gapped on-premise configurations."
                 }
             ]}
-            targetPersona="Enterprise"
-            verdict="You are a scaling Indian enterprise that wants to automate 90% of support with AI, rather than paying massive per-seat licenses for human agents to close manual tickets."
+            targetPersona="legacy global corporations that strictly require decades-old standard ticket categorization systems and have the budget to sustain per-seat licensing growth."
+            verdict="you want to automate 90% of your incoming support volume natively in Hinglish, host data locally inside India, and run support with a single flat monthly fee."
             faqs={[
                 {
-                    question: "Can we migrate our Zendesk tickets to SwanDigitals?",
-                    answer: "Yes, our engineering team handles the complete data migration, importing your historical Zendesk tickets and knowledge base seamlessly."
+                    question: "Can we migrate our Zendesk ticket history to SwanDigitals?",
+                    answer: "Yes. Our systems import your legacy ticket history, knowledge base articles, and customer records directly into SwanDigitals with no interruption to your active customer support."
                 },
                 {
-                    question: "Do we still get a ticketing system?",
-                    answer: "Absolutely. While SwanDigitals automates 90% of conversations, the remaining 10% escalate to our powerful built-in ticketing system for your human agents."
+                    question: "Does SwanDigitals include a human agent inbox?",
+                    answer: "Yes. While our AI resolves the bulk of customer issues automatically, any complex issues transfer directly to our unified team inbox for human support."
                 }
             ]}
         />
     );
 }
+

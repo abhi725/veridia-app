@@ -13,7 +13,6 @@ export default function TemplatesPage() {
             description: "Handle FAQ, ticket creation, order status, and escalation to agents",
             category: "Customer Service",
             intents: 50,
-            rating: "4.9",
             users: "200+"
         },
         {
@@ -22,7 +21,6 @@ export default function TemplatesPage() {
             description: "Product recommendations, order tracking, returns, and checkout help",
             category: "Retail",
             intents: 45,
-            rating: "4.8",
             users: "150+"
         },
         {
@@ -31,7 +29,6 @@ export default function TemplatesPage() {
             description: "Appointment scheduling, symptom triage, insurance verification",
             category: "Healthcare",
             intents: 35,
-            rating: "4.9",
             users: "80+"
         },
         {
@@ -40,7 +37,6 @@ export default function TemplatesPage() {
             description: "Account inquiries, transaction history, fraud alerts, loan applications",
             category: "Finance",
             intents: 55,
-            rating: "4.7",
             users: "100+"
         },
         {
@@ -49,7 +45,6 @@ export default function TemplatesPage() {
             description: "PTO requests, benefits questions, onboarding, policy information",
             category: "Employee",
             intents: 40,
-            rating: "4.8",
             users: "120+"
         },
         {
@@ -58,7 +53,6 @@ export default function TemplatesPage() {
             description: "Password resets, software requests, troubleshooting, ticket routing",
             category: "IT",
             intents: 35,
-            rating: "4.9",
             users: "180+"
         },
         {
@@ -67,7 +61,6 @@ export default function TemplatesPage() {
             description: "Lead qualification, meeting scheduling, product info, pricing inquiries",
             category: "Sales",
             intents: 30,
-            rating: "4.6",
             users: "90+"
         },
         {
@@ -76,7 +69,6 @@ export default function TemplatesPage() {
             description: "Customizable FAQ handler with smart fallback and human handoff",
             category: "General",
             intents: 25,
-            rating: "4.7",
             users: "300+"
         }
     ];
@@ -93,14 +85,14 @@ export default function TemplatesPage() {
                 secondaryCTA={{ text: "Book a Demo", href: "/demo" }}
             />
 
-            {/* Stats */}
+            {/* Stats — factual platform capabilities only, no ratings */}
             <section className="py-12 bg-gradient-to-r from-orange-500 to-pink-500 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div><div className="text-4xl font-bold">15+</div><div className="text-white/80">Templates</div></div>
                         <div><div className="text-4xl font-bold">500+</div><div className="text-white/80">Pre-built Intents</div></div>
-                        <div><div className="text-4xl font-bold">1 Week</div><div className="text-white/80">Avg Deployment</div></div>
-                        <div><div className="text-4xl font-bold">4.8★</div><div className="text-white/80">Avg Rating</div></div>
+                        <div><div className="text-4xl font-bold">7 Days</div><div className="text-white/80">Avg Deployment</div></div>
+                        <div><div className="text-4xl font-bold">10+</div><div className="text-white/80">Indian Languages</div></div>
                     </div>
                 </div>
             </section>
@@ -132,8 +124,7 @@ export default function TemplatesPage() {
                                 <p className="text-slate-600 text-sm mb-4">{template.description}</p>
                                 <div className="flex items-center justify-between text-xs text-slate-500 mb-4">
                                     <span>{template.intents} intents</span>
-                                    <span>⭐ {template.rating}</span>
-                                    <span>{template.users} users</span>
+                                    <span>{template.users} teams</span>
                                 </div>
                                 <button className="w-full py-2 bg-slate-900 text-white rounded-lg font-semibold text-sm hover:bg-slate-800 transition-colors">
                                     Use Template

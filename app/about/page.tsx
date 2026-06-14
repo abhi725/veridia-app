@@ -12,9 +12,51 @@ export const metadata: Metadata = {
     },
 }
 
+// Phase 2 E-E-A-T: Person schema for founders + WebPage freshness signal
+// Google's Quality Rater Guidelines explicitly evaluate author credentials.
+const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+        {
+            '@type': 'WebPage',
+            '@id': 'https://swandigitals.com/about',
+            url: 'https://swandigitals.com/about',
+            name: 'About SwanDigitals — Built in India for Indian Businesses',
+            dateModified: new Date().toISOString().split('T')[0],
+            inLanguage: 'en-IN',
+            isPartOf: { '@id': 'https://swandigitals.com/#website' },
+            author: { '@id': 'https://swandigitals.com/#organization' },
+        },
+        {
+            '@type': 'Person',
+            '@id': 'https://swandigitals.com/#swati-gaikwad',
+            name: 'Swati Gaikwad',
+            jobTitle: 'Co-Founder & CEO',
+            worksFor: { '@id': 'https://swandigitals.com/#organization' },
+            url: 'https://swandigitals.com/about',
+            sameAs: ['https://linkedin.com/company/swandigitals'],
+            description: 'Swati co-founded SwanDigitals to democratize enterprise-grade customer support for Indian businesses. With extensive expertise in customer success and business operations, she drives the company\'s customer-first mission.',
+        },
+        {
+            '@type': 'Person',
+            '@id': 'https://swandigitals.com/#kiran-shelke',
+            name: 'Kiran Shelke',
+            jobTitle: 'Co-Founder & CTO',
+            worksFor: { '@id': 'https://swandigitals.com/#organization' },
+            url: 'https://swandigitals.com/about',
+            sameAs: ['https://linkedin.com/company/swandigitals'],
+            description: 'Kiran leads engineering and product at SwanDigitals. Based in Pune, he builds compliant, sovereign AI communication technologies for Indian enterprises.',
+        },
+    ],
+};
+
 export default function AboutPage() {
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+            />
             <Hero
                 badge="About SwanDigitals"
                 title="We Built the Support Tool We Wished Existed"

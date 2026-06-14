@@ -14,23 +14,24 @@ export default function VsManyChatPage() {
     return (
         <ComparisonPageTemplate
             competitorName="ManyChat"
-            heroTitle="ManyChat Alternative in India"
-            heroSubtitle="Upgrade from a social media bot to an Enterprise AI platform built for secure lead generation and customer support."
-            aboutCompetitor="ManyChat is the global leader in social media automation, heavily focusing on Facebook Messenger and Instagram DMs for influencers and digital marketers."
-            competitorStrengths="Incredible visual flow builder, massive ecosystem for Instagram marketing, and great tools for running social media giveaways and keyword triggers."
-            realityCheck="ManyChat is built for social media marketers, not for B2B enterprises or secure customer service teams. It relies heavily on rigid decision trees ('If user types X, send Y'). It lacks deep RAG integration for your internal knowledge base, cannot handle complex ticket escalations, and does not offer native Voice AI. Furthermore, data compliance (DPDP/HIPAA) is often an afterthought."
+            slug="vs-manychat"
+            heroTitle="ManyChat Alternative: Enterprise-Grade AI Over Social Media Flow Builders"
+            heroSubtitle="Upgrade from rigid keyword-based button structures. Deploy contextual AI models that qualify leads and automate ticket resolution under a flat software rate."
+            aboutCompetitor="ManyChat specializes in visual flow builders for social messaging automation on channels like Instagram DMs and Facebook Messenger."
+            competitorStrengths="A highly refined visual drag-and-drop editor, pre-built triggers for comment giveaways, and rapid setup for marketing campaigns."
+            realityCheck="ManyChat functions through rigid 'if-this-then-that' button pathways. It lacks the semantic retrieval capacity to ingest complex service catalogs, return guidelines, or compliance rules. Furthermore, data protection compliance is not configured for sensitive sectors. SwanDigitals runs generative NLU and secures local databases natively."
             reasonsToSwitch={[
                 {
-                    title: "Generative AI vs Rigid Flows",
-                    description: "Stop forcing users through frustrating button menus. SwanDigitals uses native LLMs to understand natural language, intent, and context seamlessly."
+                    title: "Generative NLU vs Option Menus",
+                    description: "Avoid forcing buyers through frustrating multi-layer option flows. Allow customers to ask complex queries in natural Hinglish."
                 },
                 {
-                    title: "Enterprise Security & DPDP",
-                    description: "ManyChat operates on global servers. SwanDigitals guarantees 100% data residency in India, making it secure for banking, healthcare, and regulated industries."
+                    title: "Sovereign Indian Server Hosting",
+                    description: "Maintain complete compliance with local data privacy mandates. Host customer profile history securely on datacenters based in Mumbai."
                 },
                 {
-                    title: "Voice AI & Omnichannel",
-                    description: "Social media is just one channel. SwanDigitals unifies your Instagram DMs with Phone Calls (Voice AI), Email, and Web Chat."
+                    title: "Integrated Ticket Management",
+                    description: "Social media chat tools ignore transactional support ticketing. SwanDigitals unifies chat channels and escalation workflows in one inbox."
                 }
             ]}
             comparisonRows={[
@@ -40,12 +41,24 @@ export default function VsManyChatPage() {
                 { feature: "RAG Knowledge Base", SwanDigitals: "Deep Native Integration", competitor: "Requires Third-Party Logic" },
                 { feature: "SLA Ticketing System", SwanDigitals: true, competitor: false }
             ]}
-            targetPersona="You are an Instagram influencer or a digital marketing agency running social media giveaways and lead magnet funnels."
-            verdict="You are a regulated enterprise, SaaS company, or established brand that needs a highly secure, LLM-powered omnichannel helpdesk to manage serious customer inquiries."
+            targetPersona="influencers and small marketing agencies running basic social media giveaways or automated comment replies."
+            verdict="you are an enterprise brand, real estate company, or fintech platform requiring secure data controls, CRM syncing, and automated support ticketing."
             faqs={[
                 {
-                    question: "Does SwanDigitals support Instagram DMs like ManyChat?",
-                    answer: "Yes. SwanDigitals fully integrates with the Instagram Direct API and Facebook Messenger, allowing your AI to handle social media inquiries alongside WhatsApp and Email."
+                    question: "Does SwanDigitals support Instagram and Facebook automation?",
+                    answer: "Yes. We connect with official Meta developer APIs, routing Instagram DMs, comments, and Facebook messages to our AI workspace."
+                },
+                {
+                    question: "How does SwanDigitals differ from ManyChat's flow builder?",
+                    answer: "ManyChat requires you to map every branch path manually. SwanDigitals crawls your site URL or documents to answer questions dynamically without flow maps."
+                },
+                {
+                    question: "Can we sync social leads with HubSpot or Salesforce?",
+                    answer: "Yes. Custom integrations push lead details, chat histories, and contact info directly to your sales pipeline CRM."
+                },
+                {
+                    question: "Is customer data private?",
+                    answer: "Yes. All conversational exchanges, user records, and diagnostic logs remain stored on Indian server instances, meeting DPDP 2023 regulations."
                 }
             ]}
         />

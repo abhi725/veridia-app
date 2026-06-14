@@ -14,11 +14,12 @@ export default function VsHaptikPage() {
     return (
         <ComparisonPageTemplate
             competitorName="Haptik"
-            heroTitle="SwanDigitals vs Haptik"
-            heroSubtitle="Upgrade from a chat-only platform to a true omnichannel suite featuring native Voice AI and a flat platform fee."
-            aboutCompetitor="Haptik (by Jio) is one of India's earliest and most well-known conversational AI platforms."
-            competitorStrengths="Strong Jio ecosystem backing, early pioneer in Indian AI, and deep WhatsApp capabilities."
-            realityCheck="Haptik is primarily a bot building platform. While great for bots, your agents still need a solid backend. SwanDigitals provides the AI bot AND the enterprise ticketing backend out-of-the-box."
+            slug="vs-haptik"
+            heroTitle="Haptik Alternative: Unified Omnichannel AI Helpdesk with Native Voice"
+            heroSubtitle="Upgrade from a disconnected bot builder to an integrated customer support ticketing workspace featuring built-in voice agents and flat pricing."
+            aboutCompetitor="Haptik operates as a seasoned conversational agent builder with deep associations in the Indian telecom landscape."
+            competitorStrengths="Strong regional telecom carrier connectivity, established conversational presence, and specialized WhatsApp integrations."
+            realityCheck="Haptik builds virtual agents, but leaves your customer service team needing a separate ticket management dashboard. Juggling disconnected bots and agent tools slows support resolution. SwanDigitals unifies the automation system and the inbox dashboard in one place."
             comparisonRows={[
                 { feature: "Platform Scope", SwanDigitals: "Unified AI + Ticketing Helpdesk", competitor: "Primarily AI Bot Platform" },
                 { feature: "Voice AI", SwanDigitals: "Native & Included", competitor: "Limited/Third-party" },
@@ -28,26 +29,27 @@ export default function VsHaptikPage() {
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Native Voice AI",
-                    description: "Move beyond text. SwanDigitals includes native inbound/outbound Voice AI agents right alongside your chat bots."
+                    title: "Native Voice Call Automation",
+                    description: "Avoid third-party telephony integrations. Run voice assistant systems that speak regional Indian languages natively in the same inbox."
                 },
                 {
-                    title: "The Full Helpdesk",
-                    description: "Don't pay for Haptik and then pay for Zendesk. SwanDigitals gives you both the AI automation layer and the human agent inbox in one tool."
+                    title: "Unified Agent Workspaces",
+                    description: "Avoid paying double for a bot builder and a separate ticketing tool. Get conversational bots and a modern ticket manager in one tool."
                 },
                 {
-                    title: "Flat Pricing",
-                    description: "Predictable flat pricing means you can scale your automation without watching your software bill explode."
+                    title: "Predictable Cost Structures",
+                    description: "Switch to flat monthly platform pricing. Automate customer service tickets without watching usage charges grow."
                 }
             ]}
-            targetPersona="Enterprise"
-            verdict="You need a complete AI-first helpdesk solution (both the bot and the human inbox) with predictable pricing, rather than just an AI layer that sits on top of your existing tools."
+            targetPersona="large telecommunication providers seeking standard conversational building grids with prolonged corporate setup schedules."
+            verdict="you want an out-of-the-box system that combines automated bots and human support inbox queues under a single predictable SaaS rate."
             faqs={[
                 {
-                    question: "Can we migrate our WhatsApp number from Haptik?",
-                    answer: "Yes, we can migrate your WABA number from Haptik with zero downtime and retain your Green Tick."
+                    question: "Can we transfer our WhatsApp Business API profile from Haptik?",
+                    answer: "Yes. We manage the migration of your WhatsApp profile, keeping your meta verification and green badge active with zero downtime."
                 }
             ]}
         />
     );
 }
+
