@@ -1,4 +1,14 @@
-"use client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SwanDigitals Help Center & Documentation | Sovereign AI',
+    description: 'Get comprehensive guides, API references, n8n workflow guides, and setup instructions for your SwanDigitals AI Chatbot.',
+    keywords: ['SwanDigitals documentation', 'chatbot setup guide', 'RAG database training', 'n8n bot setup'],
+    alternates: {
+        canonical: 'https://swandigitals.com/documentation',
+    },
+};
+
 
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
@@ -6,6 +16,25 @@ import Link from 'next/link';
 import { Book, Zap, HelpCircle, FileText, Phone, Brain, Settings, GitBranch, CreditCard, Code } from 'lucide-react';
 
 export default function DocumentationPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Documentation',
+                item: 'https://swandigitals.com/documentation'
+            }
+        ]
+    };
+
     const sections = [
         { icon: <Zap className="w-6 h-6" />, title: "Quick Start", desc: "Get your first chatbot running in 5 minutes", link: "/docs/quickstart", time: "5 min" },
         { icon: <Book className="w-6 h-6" />, title: "Platform Guide", desc: "Complete guide to all platform features", link: "/docs/platform", time: "30 min" },
@@ -30,6 +59,10 @@ export default function DocumentationPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="📖 Documentation"
                 title="Learn SwanDigitals"

@@ -12,14 +12,44 @@ export const metadata: Metadata = {
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
+import FAQ from '@/components/ui/FAQ';
 import { 
     ClipboardList, ArrowRightLeft, Shield, 
     FileText, CreditCard, TrendingUp, Check
 } from 'lucide-react';
 
 export default function BankingPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Banking',
+                item: 'https://swandigitals.com/solutions/banking'
+            }
+        ]
+    };
+
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Hero Section */}
             <Hero
                 badge="🏦 Banking & Finance"
@@ -206,20 +236,20 @@ export default function BankingPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-12">Banking-Specific Questions</h2>
-                    <div className="space-y-6">
-                        <details className="bg-slate-50 p-6 rounded-xl">
-                            <summary className="font-bold text-lg cursor-pointer">Is it safe to do financial transactions via chatbot?</summary>
-                            <p className="mt-4 text-slate-700">Yes, with OTP + biometric verification for all high-value transactions.</p>
-                        </details>
-                        <details className="bg-slate-50 p-6 rounded-xl">
-                            <summary className="font-bold text-lg cursor-pointer">What happens if the bot makes a mistake?</summary>
-                            <p className="mt-4 text-slate-700">Human verification is mandatory for high-value transactions. All actions are logged and reversible.</p>
-                        </details>
-                        <details className="bg-slate-50 p-6 rounded-xl">
-                            <summary className="font-bold text-lg cursor-pointer">Can it work in regional languages?</summary>
-                            <p className="mt-4 text-slate-700">Yes, supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU.</p>
-                        </details>
-                    </div>
+                    <FAQ items={[
+                        {
+                            question: "Is it safe to do financial transactions via chatbot?",
+                            answer: "Yes, with OTP + biometric verification for all high-value transactions."
+                        },
+                        {
+                            question: "What happens if the bot makes a mistake?",
+                            answer: "Human verification is mandatory for high-value transactions. All actions are logged and reversible."
+                        },
+                        {
+                            question: "Can it work in regional languages?",
+                            answer: "Yes, supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU."
+                        }
+                    ]} />
                 </div>
             </section>
 

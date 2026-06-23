@@ -14,8 +14,31 @@ export const metadata: Metadata = {
 }
 
 export default function ROICalculatorPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'ROI Calculator',
+                item: 'https://swandigitals.com/roi-calculator'
+            }
+        ]
+    };
+
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="💰 ROI Calculator"
                 title="Calculate Your Savings"

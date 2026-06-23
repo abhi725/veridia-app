@@ -16,6 +16,25 @@ import { Award, Zap, Shield, DollarSign, Clock, Code } from 'lucide-react';
 import Link from 'next/link';
 
 export default function WhySwanDigitalsPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Why SwanDigitals',
+                item: 'https://swandigitals.com/why-swandigitals'
+            }
+        ]
+    };
+
     const advantages = [
         { icon: <Zap className="w-6 h-6" />, title: "Live in 7 Days", description: "Connect WhatsApp, email, and web chat on day 1. Configure AI on day 2-3. Fully live by day 7. We help at every step." },
         { icon: <DollarSign className="w-6 h-6" />, title: "Flat Pricing, No Surprises", description: "No per-conversation billing. No per-seat tax. One monthly price whether you handle 1,000 or 100,000 messages." },
@@ -27,6 +46,10 @@ export default function WhySwanDigitalsPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="⭐ Why Choose SwanDigitals"
                 title="Why SwanDigitals? Here's the Honest Answer."

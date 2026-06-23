@@ -16,6 +16,31 @@ export const metadata: Metadata = {
 }
 
 export default function ITHelpdeskPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'IT Helpdesk',
+                item: 'https://swandigitals.com/solutions/it-helpdesk'
+            }
+        ]
+    };
+
     const useCases = [
         { icon: <Key className="w-6 h-6" />, title: "Password Resets", desc: "Self-service password reset with MFA verification", stat: "3 min avg" },
         { icon: <Monitor className="w-6 h-6" />, title: "Software Requests", desc: "Request, approve, and provision software automatically", stat: "80% automated" },
@@ -28,6 +53,10 @@ export default function ITHelpdeskPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="🔧 IT Helpdesk"
                 title="Enterprise IT Helpdesk Automation"

@@ -27,6 +27,25 @@ export const metadata: Metadata = {
 };
 
 export default function SecurityPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Security & Compliance',
+                item: 'https://swandigitals.com/security'
+            }
+        ]
+    };
+
     const pillars = [
         {
             icon: <Globe className="w-8 h-8 text-orange-600" />,
@@ -83,6 +102,10 @@ export default function SecurityPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="🛡️ Security & Compliance"
                 title="Sovereign AI for Enterprise & BFSI"

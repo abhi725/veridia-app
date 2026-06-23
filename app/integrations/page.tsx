@@ -14,6 +14,25 @@ export const metadata: Metadata = {
 };
 
 export default function IntegrationsPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Integrations',
+                item: 'https://swandigitals.com/integrations'
+            }
+        ]
+    };
+
     const integrationCategories = [
         {
             category: "CRM & Sales",
@@ -259,6 +278,10 @@ export default function IntegrationsPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="🔌 Integrations"
                 title="Connect Your Entire Stack"

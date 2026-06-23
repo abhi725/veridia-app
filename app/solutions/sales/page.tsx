@@ -16,6 +16,31 @@ export const metadata: Metadata = {
 }
 
 export default function SalesPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Sales Assistant',
+                item: 'https://swandigitals.com/solutions/sales'
+            }
+        ]
+    };
+
     const useCases = [
         { icon: <Target className="w-6 h-6" />, title: "Lead Qualification", desc: "Score and qualify leads 24/7 with intelligent questions", stat: "30% more SQLs" },
         { icon: <MessageSquare className="w-6 h-6" />, title: "Product Inquiries", desc: "Answer pricing, features, and comparison questions instantly", stat: "Instant response" },
@@ -27,6 +52,10 @@ export default function SalesPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="💼 Sales Assistant"
                 title="AI Sales Agents That Qualify & Convert"

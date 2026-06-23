@@ -16,6 +16,31 @@ export const metadata: Metadata = {
 }
 
 export default function EmployeeExperiencePage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Employee Experience',
+                item: 'https://swandigitals.com/solutions/employee-experience'
+            }
+        ]
+    };
+
     const useCases = [
         { icon: <Briefcase className="w-6 h-6" />, title: "HR Inquiries", desc: "PTO balance, benefits info, policy questions, onboarding", stat: "70% self-service" },
         { icon: <CreditCard className="w-6 h-6" />, title: "Payroll Support", desc: "Pay stubs, tax forms, direct deposit changes", stat: "80% automated" },
@@ -34,6 +59,10 @@ export default function EmployeeExperiencePage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="👥 Employee Experience"
                 title="Enterprise Employee Experience AI Platform"

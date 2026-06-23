@@ -79,8 +79,31 @@ const pricingSchema = {
 };
 
 export default function PricingPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Pricing',
+                item: 'https://swandigitals.com/pricing'
+            }
+        ]
+    };
+
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Phase 3 Schema: SoftwareApplication with named INR Offer objects */}
             <script
                 type="application/ld+json"

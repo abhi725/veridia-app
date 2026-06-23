@@ -14,6 +14,25 @@ export const metadata: Metadata = {
 }
 
 export default function FAQsPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'FAQs',
+                item: 'https://swandigitals.com/faqs'
+            }
+        ]
+    };
+
     // Generate a single unified FAQPage schema for ALL questions to maximize SEO
     // We do this here at the page level so we don't rely purely on the individual <FAQ /> component schemas
     const allQuestions = faqData.flatMap(category => category.items);
@@ -32,6 +51,10 @@ export default function FAQsPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Inject unified schema */}
             <script
                 type="application/ld+json"

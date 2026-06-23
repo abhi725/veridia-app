@@ -11,5 +11,32 @@ export const metadata: Metadata = {
 };
 
 export default function BuildVoiceAgentPage() {
-    return <VoiceAgentContent />;
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Build AI Voice Agent',
+                item: 'https://swandigitals.com/build-ai-voice-agent'
+            }
+        ]
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <VoiceAgentContent />
+        </>
+    );
 }

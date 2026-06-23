@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="bg-white border-t border-slate-100">
             <div className="max-w-7xl mx-auto px-5 lg:px-8 pt-16 pb-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8 mb-12">
 
                     {/* Brand */}
                     <div className="lg:col-span-2">
@@ -28,6 +28,11 @@ export default function Footer() {
                             </a>
                             <a href="https://www.instagram.com/digital_marketing_swandigitals/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
                                 <Instagram className="w-4 h-4" />
+                            </a>
+                            <a href="https://wa.me/917770070762" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer" title="Chat on WhatsApp">
+                                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.896 0c3.181.001 6.171 1.242 8.423 3.496 2.253 2.253 3.49 5.244 3.49 8.425 0 6.575-5.325 11.902-11.892 11.902-2.005-.001-3.973-.505-5.733-1.467L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.277 0 9.57-4.296 9.57-9.575 0-2.553-1.001-4.949-2.812-6.76C16.321 2.458 13.918 1.457 11.89 1.457 6.613 1.457 2.32 5.753 2.32 11.03c0 1.61.46 3.16 1.33 4.537l-.98 3.58 3.677-.963zm10.983-5.243c-.27-.135-1.602-.79-1.85-.88-.25-.09-.43-.135-.61.135-.18.27-.69.88-.84 1.05-.15.17-.3.19-.57.055-.27-.135-1.143-.42-2.18-1.345-.806-.719-1.35-1.609-1.51-1.878-.16-.27-.018-.415.118-.55.122-.121.27-.315.405-.47.135-.157.18-.27.27-.45.09-.18.045-.337-.02-.472-.067-.135-.61-1.472-.84-2.02-.22-.53-.44-.45-.61-.46-.16-.006-.34-.008-.52-.008-.18 0-.47.067-.72.337-.25.27-.95.93-.95 2.27 0 1.34.98 2.63 1.11 2.81.14.18 1.92 2.93 4.657 4.11.65.28 1.16.45 1.55.57.65.21 1.25.18 1.72.11.53-.08 1.6-.66 1.83-1.27.23-.61.23-1.13.16-1.24-.07-.11-.25-.17-.52-.305z"/>
+                                </svg>
                             </a>
                             <a href="mailto:support@swandigitals.com" className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-orange-600 hover:border-amber-300 transition-all cursor-pointer">
                                 <Mail className="w-4 h-4" />
@@ -76,6 +81,27 @@ export default function Footer() {
                                 { label: 'Insurance', href: '/solutions/insurance' },
                                 { label: 'Healthcare', href: '/solutions/healthcare' },
                                 { label: 'Overview', href: '/solutions' },
+                            ].map(({ label, href }) => (
+                                <li key={href}>
+                                    <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Locations */}
+                    <div>
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Locations</h3>
+                        <ul className="space-y-2.5">
+                            {[
+                                { label: 'AI Chatbot Pune', href: '/pune' },
+                                { label: 'AI Chatbot Mumbai', href: '/mumbai' },
+                                { label: 'AI Chatbot Bangalore', href: '/bangalore' },
+                                { label: 'AI Chatbot Hyderabad', href: '/hyderabad' },
+                                { label: 'AI Chatbot Chennai', href: '/chennai' },
+                                { label: 'AI Chatbot Delhi', href: '/delhi' },
                             ].map(({ label, href }) => (
                                 <li key={href}>
                                     <Link href={href} className="text-sm text-slate-500 hover:text-orange-600 transition-colors">

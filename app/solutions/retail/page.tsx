@@ -17,6 +17,31 @@ export const metadata: Metadata = {
 }
 
 export default function RetailPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Retail & E-commerce',
+                item: 'https://swandigitals.com/solutions/retail'
+            }
+        ]
+    };
+
     const useCases = [
         { icon: <ShoppingCart className="w-6 h-6" />, title: "Product Discovery", desc: "AI recommends products based on preferences and browsing history", stat: "30% higher AOV" },
         { icon: <Package className="w-6 h-6" />, title: "Order Tracking", desc: "Real-time shipping updates, delivery estimates, package location", stat: "80% self-service" },
@@ -36,6 +61,10 @@ export default function RetailPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="🛒 Retail & E-commerce"
                 title="Enterprise Retail AI that Scales for Peak Season"

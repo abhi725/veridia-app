@@ -1,11 +1,38 @@
-"use client";
-
+import type { Metadata } from 'next';
 import SiteLayout from '@/components/layout/SiteLayout';
 import Hero from '@/components/ui/Hero';
 import Link from 'next/link';
 import { Headphones, Users, Server, Briefcase, Building2, ShoppingCart, Stethoscope, Landmark } from 'lucide-react';
 
+export const metadata: Metadata = {
+    title: 'Enterprise AI Solutions India | SwanDigitals',
+    description: 'Explore SwanDigitals AI Chatbot solutions for customer service, IT helpdesks, banking, healthcare, e-commerce, and HR. Secure, scalable, and DPDP-ready.',
+    keywords: ['Enterprise AI solutions', 'Customer support automation', 'IT helpdesk AI', 'Sovereign chatbot platforms India'],
+    alternates: {
+        canonical: 'https://swandigitals.com/solutions',
+    },
+};
+
 export default function SolutionsPage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            }
+        ]
+    };
+
     const useCases = [
         { icon: <Headphones className="w-8 h-8" />, title: "Customer Service", desc: "Automate 90% of support tickets with AI that understands context", link: "/solutions/customer-service", stats: "90% automation" },
         { icon: <Users className="w-8 h-8" />, title: "Employee Experience", desc: "HR, IT, and operations support for your internal teams", link: "/solutions/employee-experience", stats: "50% faster resolution" },
@@ -22,6 +49,10 @@ export default function SolutionsPage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="💡 Solutions"
                 title="AI Solutions for Every Use Case"

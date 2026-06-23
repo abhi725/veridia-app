@@ -18,6 +18,31 @@ export const metadata: Metadata = {
 }
 
 export default function CustomerServicePage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Customer Service',
+                item: 'https://swandigitals.com/solutions/customer-service'
+            }
+        ]
+    };
+
     const benefits = [
         { icon: <Headphones className="w-6 h-6" />, title: "Up to 90% Ticket Automation", description: "Resolve most customer queries without human intervention using AI-powered responses." },
         { icon: <TrendingUp className="w-6 h-6" />, title: "Improved CSAT", description: "Faster resolution times and 24/7 availability typically improve customer satisfaction by 30-50%." },
@@ -36,6 +61,10 @@ export default function CustomerServicePage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero
                 badge="🎧 Customer Service Automation"
                 title="Automate Customer Service & Slash Costs by 60%"

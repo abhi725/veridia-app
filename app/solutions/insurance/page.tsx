@@ -23,6 +23,31 @@ export const metadata: Metadata = {
 };
 
 export default function InsurancePage() {
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://swandigitals.com'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Solutions',
+                item: 'https://swandigitals.com/solutions'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Insurance',
+                item: 'https://swandigitals.com/solutions/insurance'
+            }
+        ]
+    };
+
     const useCases = [
         {
             icon: <Camera className="w-6 h-6" />,
@@ -70,6 +95,10 @@ export default function InsurancePage() {
 
     return (
         <SiteLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Hero Section */}
             <Hero
                 badge="🛡️ Insurance Automation"
