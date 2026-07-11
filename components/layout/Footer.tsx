@@ -119,8 +119,10 @@ export default function Footer() {
                             {[
                                 { label: 'Documentation', href: '/documentation' },
                                 { label: 'Blog', href: 'https://blog.swandigitals.com', external: true },
-                                { label: 'OFAC Sanctions Search', href: '/tools/ofac-sanctions-search' },
                                 { label: 'ROI Calculator', href: '/roi-calculator' },
+                                { label: 'FAQs', href: '/faqs' },
+                                { label: 'Why SwanDigitals', href: '/why-swandigitals' },
+                                { label: 'OFAC Sanctions Search', href: '/tools/ofac-sanctions-search' },
                                 { label: 'Pricing', href: '/pricing' },
                                 { label: 'Demo', href: '/demo' },
                                 { label: 'About Us', href: '/about' },

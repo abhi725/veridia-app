@@ -44,11 +44,54 @@ export default function BankingPage() {
         ]
     };
 
+    const faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+            {
+                '@type': 'Question',
+                name: 'Is SwanDigitals compliant with RBI cybersecurity guidelines?',
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes. SwanDigitals is architected to align with the RBI Cybersecurity Framework for banks and NBFCs. All data is processed and stored on India-based servers. The on-premise deployment option ensures zero external API calls, full air-gap capability, and complete audit log access for your compliance team.'
+                }
+            },
+            {
+                '@type': 'Question',
+                name: 'Can SwanDigitals handle KYC queries and account inquiries?',
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'SwanDigitals handles balance inquiries, transaction history, branch/ATM locator, loan status, FD/RD queries, and KYC document requests — all via WhatsApp, web chat, or voice. Sensitive actions like fund transfers always require human agent confirmation.'
+                }
+            },
+            {
+                '@type': 'Question',
+                name: 'How does SwanDigitals ensure DPDP 2023 compliance for banking data?',
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'All customer conversation data is encrypted end-to-end using AES-256. Data is stored exclusively on Indian servers (AWS/GCP ap-south-1). The platform supports explicit consent collection, data deletion requests, and a full audit trail — meeting the DPDP Act 2023 obligations for data fiduciaries.'
+                }
+            },
+            {
+                '@type': 'Question',
+                name: 'What deployment options are available for banks?',
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'SwanDigitals offers three modes: (1) Cloud — hosted on India-region servers with SOC 2-aligned controls. (2) Private Cloud — dedicated VPC within the bank\'s chosen cloud provider. (3) On-Premise — fully air-gapped deployment on the bank\'s own data center with local LLMs and offline voice processing. No external API calls in on-premise mode.'
+                }
+            }
+        ]
+    };
+
     return (
         <SiteLayout>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
             {/* Hero Section */}
             <Hero

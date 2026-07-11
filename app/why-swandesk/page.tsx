@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function WhySwanDeskRedirect() {
+export default function WhySwanDigitalsRedirect() {
     const router = useRouter();
 
     useEffect(() => {

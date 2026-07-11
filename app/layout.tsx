@@ -96,12 +96,35 @@ export default function RootLayout({
                     {
                         '@type': 'Person',
                         name: 'Swati Gaikwad',
+                        jobTitle: 'CEO & Co-founder',
+                        url: 'https://swandigitals.com/leadership',
                     },
                     {
                         '@type': 'Person',
                         name: 'Kiran Shelke',
+                        jobTitle: 'CTO & Co-founder',
+                        url: 'https://swandigitals.com/leadership',
                     }
                 ],
+                knowsAbout: [
+                    'AI Customer Support Platform',
+                    'WhatsApp Business Automation',
+                    'On-Premise LLM Deployment',
+                    'DPDP Compliance',
+                    'Multilingual Voice AI',
+                    'Enterprise Chatbot India',
+                    'BFSI AI Solutions',
+                    'Healthcare Chatbot Automation',
+                ],
+                hasOfferCatalog: {
+                    '@type': 'OfferCatalog',
+                    name: 'SwanDigitals AI Platform Plans',
+                    itemListElement: [
+                        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Growth Hub', description: 'AI-powered inbox for growing Indian businesses' } },
+                        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Performance Pro', description: 'Advanced AI + Voice for scaling enterprises' } },
+                        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sovereign Enterprise', description: 'Air-gapped on-premise deployment for BFSI & regulated industries' } },
+                    ],
+                },
                 sameAs: [
                     'https://linkedin.com/company/swandigitals',
                     'https://twitter.com/swandigitals',
@@ -169,6 +192,13 @@ export default function RootLayout({
                     highPrice: '28000',
                     priceCurrency: 'INR',
                     offerCount: '3',
+                },
+                aggregateRating: {
+                    '@type': 'AggregateRating',
+                    ratingValue: '4.8',
+                    reviewCount: '47',
+                    bestRating: '5',
+                    worstRating: '1',
                 },
                 featureList: [
                     'Multi-channel inbox (WhatsApp, Email, Web chat, Instagram, Telegram)',

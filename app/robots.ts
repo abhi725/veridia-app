@@ -11,13 +11,13 @@ export default function robots(): MetadataRoute.Robots {
             { userAgent: 'PerplexityBot', allow: '/' },
             { userAgent: 'Claude-User', allow: '/' },
             { userAgent: 'Applebot-Extended', allow: '/' },
-            // Block AI Training Bots (protect proprietary content from model training)
-            { userAgent: 'GPTBot', disallow: '/' },
-            { userAgent: 'ClaudeBot', disallow: '/' },
-            { userAgent: 'Google-Extended', disallow: '/' },
-            { userAgent: 'CCBot', disallow: '/' },
-            { userAgent: 'anthropic-ai', disallow: '/' },
-            { userAgent: 'Bytespider', disallow: '/' },
+            // Allow AI Training Bots (enables AI citation & GEO discoverability)
+            { userAgent: 'GPTBot', allow: '/' },
+            { userAgent: 'ClaudeBot', allow: '/' },
+            { userAgent: 'Google-Extended', allow: '/' },
+            { userAgent: 'CCBot', allow: '/' },
+            { userAgent: 'anthropic-ai', allow: '/' },
+            { userAgent: 'Bytespider', allow: '/' },
         ],
         sitemap: 'https://swandigitals.com/sitemap.xml',
     };

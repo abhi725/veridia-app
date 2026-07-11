@@ -7,19 +7,13 @@ const nextConfig = {
   // Fix: metadataBase warning — ensures OG/Twitter images resolve correctly
   // This suppresses the persistent build log warning across all pages
   experimental: {},
-  // Security headers — improves E-E-A-T Trustworthiness signals
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-        ],
-      },
-    ];
-  },
+  // NOTE: async headers() is intentionally removed.
+  // With output:'export', Next.js generates purely static HTML/CSS/JS files.
+  // The headers() function has ZERO effect on static exports — they are never sent.
+  // Security headers (X-Frame-Options, HSTS, CSP, etc.) MUST be configured at the
+  // server/CDN level: Nginx, Cloudflare, Vercel headers, or _headers file.
+  // See: nginx-headers.conf in this repo root for the correct server-side config.
 };
 
 module.exports = nextConfig;
+
