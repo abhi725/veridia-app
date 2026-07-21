@@ -9,8 +9,8 @@ import { Headphones, TrendingUp, Clock, Users, Zap, BarChart3, XCircle, CheckCir
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'AI Customer Support Automation India | 90% Auto-Resolution',
-    description: 'Automate 90% of customer support queries with sovereign AI agents. Instant 24/7 responses, multi-channel support, and seamless human handoff. On-premise deployment for India.',
+    title: 'AI Customer Support Automation for Indian SMEs',
+    description: 'Automate customer support queries with AI agents on WhatsApp, Facebook, and web chat. Instant 24/7 responses with seamless human handoff.',
     keywords: ['Customer Service Automation', 'Support Ticket Deflection', '24/7 AI Agent', 'Omni-channel Support', 'Whatsapp Customer Support Bot'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/customer-service',
@@ -44,9 +44,9 @@ export default function CustomerServicePage() {
     };
 
     const benefits = [
-        { icon: <Headphones className="w-6 h-6" />, title: "Up to 90% Ticket Automation", description: "Resolve most customer queries without human intervention using AI-powered responses." },
-        { icon: <TrendingUp className="w-6 h-6" />, title: "Improved CSAT", description: "Faster resolution times and 24/7 availability typically improve customer satisfaction by 30-50%." },
-        { icon: <Clock className="w-6 h-6" />, title: "< 2 Second Response", description: "Instant responses powered by edge computing and optimized AI models." },
+        { icon: <Headphones className="w-6 h-6" />, title: "High Ticket Automation", description: "Resolve most customer queries without human intervention using AI-powered responses." },
+        { icon: <TrendingUp className="w-6 h-6" />, title: "Improved CSAT", description: "Faster resolution times and 24/7 availability typically improve customer satisfaction." },
+        { icon: <Clock className="w-6 h-6" />, title: "Fast Response Times", description: "Instant responses powered by optimized AI models." },
         { icon: <Users className="w-6 h-6" />, title: "Seamless Handoff", description: "Smart routing transfers complex issues to the right agent with full context." },
         { icon: <Zap className="w-6 h-6" />, title: "Significant Cost Savings", description: "Reduce operational costs by automating repetitive queries and lowering agent workload." },
         { icon: <BarChart3 className="w-6 h-6" />, title: "Real-Time Analytics", description: "Track resolution rates, sentiment, and identify improvement opportunities." }
@@ -54,7 +54,7 @@ export default function CustomerServicePage() {
 
     const faqItems = [
         { question: "How does SwanDigitals handle complex queries?", answer: "Our AI uses multi-turn conversation management and context retention to handle complex queries. When needed, it seamlessly hands off to human agents with full conversation history." },
-        { question: "Can it integrate with our existing helpdesk?", answer: "Yes! We have pre-built integrations with Zendesk, Freshdesk, Salesforce Service Cloud, Intercom, and 50+ other platforms. Custom integrations are also available." },
+        { question: "Can it integrate with our existing helpdesk?", answer: "Yes! SwanDigitals connects to your CRM or helpdesk via HubSpot or n8n webhooks. Custom integrations are also available." },
         { question: "What languages are supported?", answer: "SwanDigitals supports English, Hindi, Tamil, Telugu, Bengali, Marathi, and Hinglish with native NLU — not just translation." },
         { question: "How long does implementation take?", answer: "Most customer service deployments go live in 2-4 weeks, including training and integration." }
     ];
@@ -67,8 +67,8 @@ export default function CustomerServicePage() {
             />
             <Hero
                 badge="🎧 Customer Service Automation"
-                title="Automate Customer Service & Slash Costs by 60%"
-                subtitle="Automate 90% of customer queries with AI that truly understands. Enterprise-grade, on-premise deployment for regulated industries."
+                title="Automate Customer Service & Cut Support Costs"
+                subtitle="Automate customer queries with AI that truly understands. Built for growing Indian businesses on WhatsApp, Facebook, and web chat."
                 primaryCTA={{ text: "See Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
@@ -78,19 +78,19 @@ export default function CustomerServicePage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">Up to 90%</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">High</div>
                             <div className="text-slate-600">Automation Rate</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">30-60%</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">Lower</div>
                             <div className="text-slate-600">Cost Reduction</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">30-50%</div>
-                            <div className="text-slate-600">CSAT Improvement</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">Improved</div>
+                            <div className="text-slate-600">CSAT</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-orange-600 mb-2">&lt;2s</div>
+                            <div className="text-4xl font-bold text-orange-600 mb-2">Fast</div>
                             <div className="text-slate-600">Response Time</div>
                         </div>
                     </div>
@@ -103,10 +103,10 @@ export default function CustomerServicePage() {
                     <h2 className="text-3xl font-bold text-center mb-8">Customer Service Challenges We Solve</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {[
-                            { challenge: "High support ticket volume overwhelming agents", solution: "Automate 90% of repetitive queries" },
+                            { challenge: "High support ticket volume overwhelming agents", solution: "Automate repetitive queries automatically" },
                             { challenge: "Long wait times frustrating customers", solution: "Instant 24/7 AI-powered responses" },
                             { challenge: "Inconsistent answers across agents", solution: "Unified knowledge base with AI consistency" },
-                            { challenge: "Rising support costs eroding margins", solution: "60% cost reduction through automation" },
+                            { challenge: "Rising support costs eroding margins", solution: "Lower costs through automation" },
                             { challenge: "Lack of after-hours support", solution: "24/7 availability without hiring night shifts" },
                             { challenge: "Poor visibility into customer sentiment", solution: "Real-time sentiment analysis and alerts" }
                         ].map((item, i) => (
@@ -150,7 +150,7 @@ export default function CustomerServicePage() {
                             ))}
                         </div>
                         <p className="text-slate-600 text-sm">
-                            Most teams see 60-80% automation within the first 3 months. Results vary based on query complexity and training data quality.
+                            Most teams see high automation within the first 3 months. Results vary based on query complexity and training data quality.
                         </p>
                     </div>
                 </div>
@@ -160,15 +160,13 @@ export default function CustomerServicePage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-4">Works With Your Existing Tools</h2>
-                    <p className="text-xl text-slate-600 mb-12">Pre-built integrations with leading helpdesk and CRM platforms</p>
+                    <p className="text-xl text-slate-600 mb-12">Real integrations that keep your existing workflow</p>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                         {[
-                            { name: 'Zendesk', image: '/integrations/zendesk.png' },
-                            { name: 'Freshdesk', image: '/integrations/freshdesk.png' },
-                            { name: 'Salesforce', image: '/integrations/salesforce.png' },
-                            { name: 'Intercom', image: '/integrations/intercom_new.png' },
+                            { name: 'WhatsApp', image: '/integrations/whatsapp.png' },
+                            { name: 'Facebook Messenger', image: '/integrations/messenger.png' },
                             { name: 'HubSpot', image: '/integrations/hubspot.png' },
-                            { name: 'ServiceNow', image: '/integrations/servicenow.png' }
+                            { name: 'Razorpay', image: '/integrations/razorpay.png' }
                         ].map((tool, i) => (
                             <div key={i} className="p-4 bg-white border border-slate-200 shadow-sm rounded-xl flex flex-col items-center justify-center gap-2 h-24 hover:shadow-md transition-all">
                                 <div className="h-10 w-full flex items-center justify-center">
@@ -183,7 +181,7 @@ export default function CustomerServicePage() {
                         ))}
                     </div>
                     <Link href="/integrations" className="inline-block mt-8 text-orange-600 font-semibold hover:underline">
-                        View all 75+ integrations →
+                        View all integrations →
                     </Link>
                 </div>
             </section>
@@ -195,7 +193,7 @@ export default function CustomerServicePage() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-purple-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Customer Service?</h2>
-                    <p className="text-xl text-white/80 mb-8">See how SwanDigitals can automate 90% of your support tickets</p>
+                    <p className="text-xl text-white/80 mb-8">See how SwanDigitals can automate most of your support tickets</p>
                     <Link href="/demo" className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                         Get Your Free Demo
                     </Link>

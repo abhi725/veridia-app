@@ -16,10 +16,10 @@ export default function AnalyticsContent() {
     ];
 
     const kpis = [
-        { value: "86%", label: "Automation Rate" },
+        { value: "High", label: "Automation Rate" },
         { value: "2.3 min", label: "Avg Resolution" },
         { value: "4.7/5", label: "CSAT Score" },
-        { value: "$1.2M", label: "Savings" }
+        { value: "Lower", label: "Support Costs" }
     ];
 
     return (
@@ -98,9 +98,9 @@ export default function AnalyticsContent() {
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-8">Export & Integrate</h2>
-                    <p className="text-xl text-slate-600 mb-12">Connect analytics to your existing BI tools</p>
+                    <p className="text-xl text-slate-600 mb-12">Connect analytics to your existing business tools</p>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        {['Tableau', 'Power BI', 'Looker', 'Google Data Studio', 'Snowflake', 'BigQuery'].map((tool, i) => (
+                        {['n8n', 'HubSpot', 'CSV Export', 'Webhooks', 'Calendly', 'Razorpay'].map((tool, i) => (
                             <span key={i} className="px-6 py-3 bg-slate-100 rounded-full font-medium">{tool}</span>
                         ))}
                     </div>

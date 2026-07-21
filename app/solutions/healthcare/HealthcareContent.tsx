@@ -64,7 +64,7 @@ export default function HealthcareContent() {
     {
       num: "04",
       question: "Is patient data safe? What about DPDP compliance?",
-      answer: "Patient conversations are encrypted end-to-end and stored exclusively on India-based servers. We do not sell or share data with any third party. Our architecture is aligned with India's Digital Personal Data Protection (DPDP) Act. You remain the data controller at all times."
+      answer: "Patient conversations are encrypted end-to-end and stored exclusively on India-based servers. We do not sell or share data with any third party. We're built with India's Digital Personal Data Protection (DPDP) Act in mind. You remain the data controller at all times."
     },
     {
       num: "05",
@@ -241,7 +241,7 @@ export default function HealthcareContent() {
             <div className="lg:col-span-7 flex flex-col items-start text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-sm font-semibold mb-6">
                 <Zap className="w-4.5 h-4.5 text-orange-600" />
-                Launching in India · 10+ Languages · No Code Setup
+                Launching in India · 10 Languages · No Code Setup
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight mb-6" style={{ fontFamily: 'Lexend' }}>
@@ -264,7 +264,7 @@ export default function HealthcareContent() {
 
               <div className="flex items-center gap-2 mt-4 text-sm text-slate-500 font-medium">
                 <ShieldCheck className="w-4.5 h-4.5 text-emerald-600" />
-                No credit card required · DPDP-ready · Deployed in 48 hours
+                No credit card required · DPDP-aware · Deployed in 48 hours
               </div>
 
               {/* Stats strip */}
@@ -274,7 +274,7 @@ export default function HealthcareContent() {
                   <div className="text-sm text-slate-500 font-medium mt-1">Always On</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-slate-900">10+</div>
+                  <div className="text-3xl font-black text-slate-900">10</div>
                   <div className="text-sm text-slate-500 font-medium mt-1">Indian Languages</div>
                 </div>
                 <div>
@@ -469,7 +469,7 @@ export default function HealthcareContent() {
                 <Globe2 className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-xs font-bold text-orange-700 uppercase tracking-wide mb-2">10+ Languages</div>
+                <div className="text-xs font-bold text-orange-700 uppercase tracking-wide mb-2">10 Languages</div>
                 <h3 className="text-xl font-bold text-slate-950 mb-3">Speaks India's Languages</h3>
                 <p className="text-slate-700 text-sm leading-relaxed mb-4">Hindi · Marathi · Tamil · Telugu · Kannada · Bengali · Gujarati. Rupee pricing. Indian context.</p>
                 <div className="flex flex-wrap gap-2">
@@ -487,7 +487,7 @@ export default function HealthcareContent() {
               </div>
               <div>
                 <div className="text-xs font-bold text-teal-700 uppercase tracking-wide mb-2">Channels</div>
-                <h3 className="text-xl font-bold text-slate-950 mb-2">Website · WhatsApp · Instagram</h3>
+                <h3 className="text-xl font-bold text-slate-950 mb-2">Website · WhatsApp · Facebook</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">One agent, everywhere your patients are. Consistent answers across all channels.</p>
               </div>
             </div>
@@ -514,14 +514,14 @@ export default function HealthcareContent() {
                   <div className="text-xs font-bold text-teal-200 uppercase tracking-wide mb-2">Data Security</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">Your Data. Your Control. Always.</h3>
                   <p className="text-teal-50 text-sm leading-relaxed">
-                    Patient conversations never leave your account. DPDP-ready. End-to-end encrypted. Hosted in India. We are ZERO-DATA-SHARING with third parties.
+                    Patient conversations never leave your account. DPDP-aware. End-to-end encrypted. Hosted in India. We do not share your data with third parties.
                   </p>
                 </div>
                 <div className="sm:col-span-5 flex flex-col gap-3">
                   {[
                     { icon: <Lock className="w-4 h-4" />, text: "End-to-End Encrypted" },
                     { icon: <Server className="w-4 h-4" />, text: "India-Hosted Servers" },
-                    { icon: <FileCheck2 className="w-4 h-4" />, text: "DPDP-Ready" },
+                    { icon: <FileCheck2 className="w-4 h-4" />, text: "DPDP-Aware" },
                     { icon: <EyeOff className="w-4 h-4" />, text: "Zero Data Sharing" }
                   ].map((badge, idx) => (
                     <div key={idx} className="bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl flex items-center gap-3 text-xs font-semibold">
@@ -657,7 +657,7 @@ export default function HealthcareContent() {
                   <ul className="space-y-3.5 text-sm text-slate-600 border-t border-slate-100 pt-6">
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Conversations: Unlimited</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> WhatsApp + Website chatbot</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> 10+ Indian languages</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> 10 Indian languages</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Appointment booking</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Lead capture &amp; CRM export</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Meta Fees: 0% Markup Pass-Through</li>
@@ -682,7 +682,7 @@ export default function HealthcareContent() {
                   </div>
                   <p className="text-slate-500 text-sm mb-6">For busy multi-doctor clinics &amp; diagnostic centres</p>
                   <ul className="space-y-3.5 text-sm text-slate-600 border-t border-slate-100 pt-6">
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> WhatsApp, Web, Email, Instagram, FB</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> WhatsApp, Web Chat &amp; Facebook Messenger</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Visual Flow Builder for branching</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Advanced custom REST API nodes</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Smart appointment scheduling</li>
@@ -695,10 +695,10 @@ export default function HealthcareContent() {
                 </Link>
               </div>
 
-              {/* Sovereign Enterprise */}
+              {/* Scale */}
               <div className="bg-white border border-stone-200 p-8 rounded-2xl text-left flex flex-col justify-between">
                 <div>
-                  <div className="text-lg font-bold text-slate-800 mb-4">Sovereign Enterprise</div>
+                  <div className="text-lg font-bold text-slate-800 mb-4">Scale</div>
                   <div className="flex items-baseline mb-4">
                     <span className="text-2xl font-semibold">₹</span>
                     <span className="text-4xl font-extrabold text-slate-950">45,000+</span>
@@ -706,12 +706,12 @@ export default function HealthcareContent() {
                   </div>
                   <p className="text-slate-500 text-sm mb-6">Hospital chains, polyclinics &amp; healthcare groups</p>
                   <ul className="space-y-3.5 text-sm text-slate-600 border-t border-slate-100 pt-6">
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> 100% On-Premises Isolation</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Local LLMs (zero external API calls)</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> DPDP 2023 &amp; HIPAA Ready</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> HIS / EMR EHR integration</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Air-Gapped option (zero outbound calls)</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> 24/7 Named Solutions Engineer</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Multi-location rollout support</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Custom workflows via n8n</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> DPDP-2023 aware, data hosted in India</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Priority WhatsApp &amp; onboarding support</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Custom AI persona per branch</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Dedicated Solutions Engineer</li>
                   </ul>
                 </div>
                 <Link href="/contact" className="w-full mt-8 py-3 px-4 border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-xl font-bold text-center transition-colors">
@@ -733,11 +733,11 @@ export default function HealthcareContent() {
                   <p className="text-slate-500 text-sm mb-6">Perfect for testing &amp; low-volume clinics</p>
                   <ul className="space-y-3.5 text-sm text-slate-600 border-t border-slate-100 pt-6">
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> No monthly commitment</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> 10+ Indian Languages support</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> 10 Indian Languages support</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Inbound &amp; Outbound Calling</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Call Recording &amp; Transcription</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Live Agent Transfer</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> &lt;500ms Voice Latency</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Fast, Natural Voice Latency</li>
                   </ul>
                 </div>
                 <Link href="#cta" className="w-full mt-8 py-3 px-4 border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-xl font-bold text-center transition-colors">
@@ -772,19 +772,19 @@ export default function HealthcareContent() {
                 </Link>
               </div>
 
-              {/* Enterprise Voice */}
+              {/* Scale Voice */}
               <div className="bg-white border border-stone-200 p-8 rounded-2xl text-left flex flex-col justify-between">
                 <div>
-                  <div className="text-lg font-bold text-slate-800 mb-4">Enterprise Voice</div>
+                  <div className="text-lg font-bold text-slate-800 mb-4">Scale Voice</div>
                   <div className="flex items-baseline mb-4">
                     <span className="text-4xl font-extrabold text-slate-950">Custom</span>
                   </div>
                   <p className="text-slate-500 text-sm mb-6">For large hospital networks &amp; collection desks</p>
                   <ul className="space-y-3.5 text-sm text-slate-600 border-t border-slate-100 pt-6">
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Custom volume commitment rates</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> On-Premise Voice model option</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Custom SIP / Telephony Trunking</li>
-                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> HIS/EMR Integration for status updates</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Dedicated Indian (+91) phone numbers</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> High-volume outbound calling</li>
+                    <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> Custom workflow updates via n8n</li>
                     <li className="flex items-center gap-2.5"><Check className="w-4.5 h-4.5 text-emerald-500" /> SLA &amp; dedicated solutions architect</li>
                   </ul>
                 </div>

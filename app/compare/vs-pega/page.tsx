@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Pega Alternative | Fast AI Customer Support',
-    description: 'Compare SwanDigitals and Pegasystems. Deploy your AI helpdesk in weeks, not years, without heavy legacy systems.',
-    keywords: ['Pega Alternative', 'Pega vs SwanDigitals', 'AI Helpdesk'],
+    title: 'Pega Alternative for Indian SMEs | Fast, Affordable AI Support',
+    description: 'Compare SwanDigitals and Pegasystems. Skip heavy enterprise systems and get chat plus voice AI live in days on flat rupee pricing.',
+    keywords: ['Pega Alternative', 'Pega vs SwanDigitals', 'AI Helpdesk India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-pega',
     },
@@ -16,37 +16,37 @@ export default function VsPegaPage() {
             competitorName="Pega"
             slug="vs-pega"
             heroTitle="SwanDigitals vs Pega"
-            heroSubtitle="Launch your AI customer service in weeks, not years. Avoid heavy legacy software and complex systems."
-            aboutCompetitor="Pegasystems is a massive business process tool designed for very large global corporations."
-            competitorStrengths="Automating complex internal workflows, serving massive global companies."
-            realityCheck="Pega is built to run the backend operations of huge corporations. If you just need a modern, fast AI Helpdesk, Pega is too big, too slow, and extremely complex to set up."
+            heroSubtitle="Pega is a heavy enterprise process suite, overkill and overpriced for an Indian SME. Get chat plus +91 voice live in days on flat rupee pricing."
+            aboutCompetitor="Pegasystems is a large business process automation suite designed for very large global corporations."
+            competitorStrengths="Automating complex internal workflows and serving massive global companies with dedicated IT teams."
+            realityCheck="Pega is built to run the backend operations of huge corporations. For a small or mid-sized Indian business that just needs customer engagement automation, it is too big, too slow and too costly to set up. SwanDigitals gives you WhatsApp, web chat and +91 calling in one inbox, live in days. Where Pega may fit better: very large enterprises automating complex multi-department core processes."
             comparisonRows={[
-                { feature: "Core Focus", SwanDigitals: "Smart AI Helpdesk", competitor: "Complex Business Systems" },
-                { feature: "Launch Time", SwanDigitals: "A few weeks", competitor: "Many months or years" },
-                { feature: "Total Cost", SwanDigitals: "Fair and predictable", competitor: "Extremely high setups" },
+                { feature: "Core Focus", SwanDigitals: "Chat + Voice Engagement", competitor: "Complex Business Systems" },
+                { feature: "Launch Time", SwanDigitals: "Live in days", competitor: "Many months or years" },
+                { feature: "Total Cost", SwanDigitals: "Flat from ₹4,999/mo", competitor: "Very high setup fees" },
                 { feature: "Flexibility", SwanDigitals: "No-code updates in minutes", competitor: "Requires expert developers" },
-                { feature: "Voice AI", SwanDigitals: "Included out of the box", competitor: "Sold as an expensive add-on" }
+                { feature: "Voice AI", SwanDigitals: "Included (+91 calls)", competitor: "Sold as an expensive add-on" }
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Real Speed and Flexibility",
-                    description: "Change your AI workflows in minutes with our visual builder. You do not need to wait weeks for your IT team to update the system."
+                    title: "Real Speed and Simplicity",
+                    description: "Update your AI in minutes. It auto-trains on your website and documents, so you do not wait weeks for an IT team to make changes."
                 },
                 {
-                    title: "Predictable, Clear Costs",
-                    description: "Pega costs massive amounts in setup and consulting fees. SwanDigitals offers enterprise-grade AI at a simple, flat rate."
+                    title: "Predictable, Clear Rupee Pricing",
+                    description: "Pega costs a lot in setup and consulting fees. SwanDigitals offers flat plans from ₹4,999/mo with no per-message markup."
                 },
                 {
-                    title: "Focused and Clean Design",
-                    description: "Your agents will love our clean inbox. It is built purely for fast customer support, not complicated corporate processes."
+                    title: "Chat and Voice in One Inbox",
+                    description: "Your team gets WhatsApp, Facebook, web chat and +91 calling in one clean inbox, built for fast customer support."
                 }
             ]}
-            targetPersona="Enterprise"
-            verdict="You want a modern, fast AI helpdesk without being forced into a massive, heavy business process platform."
+            targetPersona="You are a very large enterprise automating complex, multi-department core processes with dedicated developer teams and a big IT budget."
+            verdict="You are an Indian SME that wants fast, affordable chat and voice automation without being forced into a heavy enterprise process platform."
             faqs={[
                 {
                     question: "Where is my data stored?",
-                    answer: "All your data stays inside India. We support hosting on secure local cloud servers, or we can install the system directly on your own private company servers."
+                    answer: "All your data is hosted on servers in India and kept aware of India's DPDP Act of 2023. Payments run securely through Razorpay, and there is no lock-in."
                 },
                 {
                     question: "Can we pay Meta directly for WhatsApp messages?",

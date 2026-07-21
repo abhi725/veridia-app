@@ -10,7 +10,7 @@ export default function DemoHubContent() {
         { title: "Customer Service Bot", description: "See how SwanDigitals handles complex support inquiries with context-aware responses", duration: "5 min", icon: <MessageSquare className="w-6 h-6" />, category: "Use Case" },
         { title: "Platform Walkthrough", description: "Full tour of the SwanDigitals platform: builder, analytics, and deployment", duration: "10 min", icon: <Monitor className="w-6 h-6" />, category: "Platform" },
         { title: "Multi-Turn Conversations", description: "Watch how our NLU handles complex multi-turn dialogue with context", duration: "4 min", icon: <Users className="w-6 h-6" />, category: "Feature" },
-        { title: "Integration Setup", description: "Connect SwanDigitals to Zendesk, Salesforce, and Slack in minutes", duration: "6 min", icon: <Settings className="w-6 h-6" />, category: "Setup" },
+        { title: "Integration Setup", description: "Connect SwanDigitals to HubSpot, Calendly, and Razorpay in minutes", duration: "6 min", icon: <Settings className="w-6 h-6" />, category: "Setup" },
         { title: "Analytics Dashboard", description: "Explore real-time metrics, conversation insights, and ROI tracking", duration: "5 min", icon: <TrendingUp className="w-6 h-6" />, category: "Feature" },
         { title: "Live Agent Handoff", description: "See seamless escalation from bot to human agent with full context", duration: "3 min", icon: <Users className="w-6 h-6" />, category: "Feature" },
     ];

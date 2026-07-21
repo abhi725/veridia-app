@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 
 export const metadata: Metadata = {
     title: 'SwanDigitals Features | AI Chatbot & Voice AI Helpdesk Platform',
-    description: 'Explore SwanDigitals features: Unified omnichannel inbox (WhatsApp, Email, Web Chat), Voice AI with <500ms latency in 10+ Indian languages, NLU intent models, and robust RAG knowledge integrations.',
+    description: 'Explore SwanDigitals features: Unified omnichannel inbox (WhatsApp, Facebook, Web Chat), fast and natural Voice AI in 10 Indian languages, NLU intent models, and robust knowledge integrations.',
     keywords: ['AI Chatbot Features', 'WhatsApp Business API India', 'Voice AI Support', 'Omnichannel Helpdesk', 'Indian Language NLP', 'RAG Customer Support'],
     alternates: {
         canonical: 'https://swandigitals.com/features',

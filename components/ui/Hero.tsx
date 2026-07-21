@@ -15,15 +15,15 @@ interface HeroProps {
 }
 
 const trustBadges = [
-    { icon: ShieldCheck, label: 'DPDP 2023 Ready' },
-    { icon: Globe, label: 'On-Premise Available' },
+    { icon: ShieldCheck, label: 'DPDP 2023 Aware' },
+    { icon: Globe, label: 'Data Hosted in India' },
     { icon: Zap, label: 'Live in 7 Days' },
 ];
 
 const stats = [
-    { value: '87%', label: 'Auto-Resolved Tickets' },
-    { value: '₹2L+', label: 'Monthly Savings' },
-    { value: '<500ms', label: 'Voice Latency' },
+    { value: '10', label: 'Indian Languages' },
+    { value: '24/7', label: 'Always-On Support' },
+    { value: '7 Days', label: 'To Go Live' },
 ];
 
 export default function Hero({ badge, title, subtitle, primaryCTA, secondaryCTA, showMockup = false }: HeroProps) {

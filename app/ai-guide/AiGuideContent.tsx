@@ -10,7 +10,7 @@ export default function AiGuideContent() {
         { icon: <BookOpen className="w-6 h-6" />, num: 1, title: "Introduction to AI Chatbots", desc: "What are AI chatbots, how do they work, and why do businesses need them?", time: "15 min" },
         { icon: <Brain className="w-6 h-6" />, num: 2, title: "Understanding NLU", desc: "Intent detection, entity extraction, and how AI understands language", time: "25 min" },
         { icon: <MessageSquare className="w-6 h-6" />, num: 3, title: "Conversation Design", desc: "Building natural dialog flows that users love", time: "30 min" },
-        { icon: <Zap className="w-6 h-6" />, num: 4, title: "Deployment Strategies", desc: "Cloud vs on-premise, channels, and scaling considerations", time: "20 min" },
+        { icon: <Zap className="w-6 h-6" />, num: 4, title: "Deployment Strategies", desc: "Choosing channels, integrations, and scaling considerations", time: "20 min" },
         { icon: <Target className="w-6 h-6" />, num: 5, title: "Measuring Success", desc: "KPIs, analytics, and continuous improvement", time: "20 min" },
         { icon: <BarChart3 className="w-6 h-6" />, num: 6, title: "ROI & Business Impact", desc: "Calculating and maximizing the value of AI chatbots", time: "25 min" }
     ];
@@ -20,7 +20,7 @@ export default function AiGuideContent() {
             <Hero
                 badge="📚 AI Guide"
                 title="The Complete Guide to AI Chatbots"
-                subtitle="From beginner to expert. Everything you need to know about building, deploying, and scaling AI chatbots for enterprise."
+                subtitle="From beginner to expert. Everything you need to know about building, deploying, and scaling AI chatbots for your business."
                 primaryCTA={{ text: "Start Learning", href: "#chapters" }}
                 secondaryCTA={{ text: "Download PDF", href: "#" }}
             />
@@ -32,7 +32,7 @@ export default function AiGuideContent() {
                         <div><div className="text-4xl font-bold">6</div><div className="text-white/80">Chapters</div></div>
                         <div><div className="text-4xl font-bold">2+ hrs</div><div className="text-white/80">Content</div></div>
                         <div><div className="text-4xl font-bold">Free</div><div className="text-white/80">Forever</div></div>
-                        <div><div className="text-4xl font-bold">10K+</div><div className="text-white/80">Readers</div></div>
+                        <div><div className="text-4xl font-bold">Practical</div><div className="text-white/80">Examples</div></div>
                     </div>
                 </div>
             </section>
@@ -70,11 +70,11 @@ export default function AiGuideContent() {
                             "How AI chatbots work under the hood",
                             "Building conversation flows users love",
                             "Training AI to understand your domain",
-                            "Choosing between cloud and on-premise",
+                            "Choosing the right channels for your business",
                             "Integrating with existing systems",
                             "Measuring ROI and business impact",
-                            "Scaling from 100 to 10M conversations",
-                            "Best practices from 500+ deployments"
+                            "Scaling from 100 to 100,000+ conversations",
+                            "Best practices from real deployments"
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-lg">
                                 <span className="text-green-600 text-xl">✓</span>

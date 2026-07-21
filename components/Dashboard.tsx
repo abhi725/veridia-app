@@ -115,7 +115,7 @@ export default function Dashboard({ onCollapse }: DashboardProps) {
                             <h2 className="text-lg font-semibold mb-4 text-slate-700">Live Conversations</h2>
                             <div className="flex-1 overflow-y-auto space-y-4 pr-2 custom-scrollbar">
                                 <ChatBubble user="Customer" text="I need help with my compliance report." time="2m ago" />
-                                <ChatBubble user="SwanDigitals" text="I can generate that for you. Checking SOC 2 constraints..." time="1m ago" ai />
+                                <ChatBubble user="SwanDigitals" text="I can generate that for you. Checking your account details..." time="1m ago" ai />
                                 <ChatBubble user="Customer" text="Great, thanks." time="Just now" />
                                 <ChatBubble user="SwanDigitals" text="Report generated. Secure link sent to your vault." time="Just now" ai />
                             </div>

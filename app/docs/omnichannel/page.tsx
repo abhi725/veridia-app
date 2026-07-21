@@ -19,7 +19,7 @@ export default function omnichannelPage() {
               <div className="border border-slate-200 rounded-lg p-6 bg-white">
                   <h3 className="font-medium text-slate-900 mb-3 text-lg">1. Unified Inbox</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
-                      Consolidates messages from Website Live Chat, Email, WhatsApp, Facebook, Instagram, Twitter (X), Telegram, Line, and SMS into one unified interface.
+                      Consolidates messages from Website Live Chat, WhatsApp, and Facebook into one unified interface.
                   </p>
               </div>
 

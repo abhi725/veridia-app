@@ -21,11 +21,11 @@ export default function AITrainingPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="border border-slate-200 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">Google Gemini</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">Primary AI Engine</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Primary AI engine. Fast, cost-effective, excellent for Hindi and Indian context.
+                            Fast, cost-effective, tuned for Hindi and Indian context.
                         </p>
-                        <code className="text-xs bg-slate-100 px-2 py-1 rounded">gemini-2.5-flash</code>
+                        <code className="text-xs bg-slate-100 px-2 py-1 rounded">default</code>
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-5">
@@ -37,11 +37,11 @@ export default function AITrainingPage() {
                     </div>
 
                     <div className="border border-slate-200 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">Anthropic Claude</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">Advanced Reasoning Engine</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Best for nuanced, detailed responses. Available on Enterprise plans.
+                            Best for nuanced, detailed responses. Available on higher plans.
                         </p>
-                        <code className="text-xs bg-slate-100 px-2 py-1 rounded">claude-haiku-4</code>
+                        <code className="text-xs bg-slate-100 px-2 py-1 rounded">advanced</code>
                     </div>
                 </div>
 
@@ -156,7 +156,7 @@ builder.build()`}</pre>
                     <div className="border border-slate-200 rounded-lg p-5">
                         <h3 className="font-medium text-slate-900 mb-3">Supported Languages</h3>
                         <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
-                            {['English', 'Hindi', 'Hinglish', 'Tamil', 'Telugu', 'Bengali', 'Marathi', 'Gujarati', 'Kannada', 'Malayalam'].map((lang) => (
+                            {['English', 'Hindi', 'Marathi', 'Tamil', 'Telugu', 'Kannada', 'Gujarati', 'Bengali', 'Malayalam', 'Punjabi'].map((lang) => (
                                 <div key={lang} className="px-3 py-2 bg-slate-100 rounded text-sm text-center">
                                     {lang}
                                 </div>

@@ -6,8 +6,8 @@ import { Linkedin, Github, Globe, Rocket, Award, Code, Database, TrendingUp } fr
 
 export const metadata: Metadata = {
     title: 'Our Leadership — SwanDigitals',
-    description: 'Meet the leaders of SwanDigitals: Swati Gaikwad (Co-Founder & CEO) and Kiran Shelke (Co-Founder & CTO). Building robust, DPDP compliant customer support AI for Indian enterprises.',
-    keywords: ['SwanDigitals Leadership', 'Swati Gaikwad', 'Kiran Shelke', 'AI Founders Pune', 'Sovereign AI India'],
+    description: 'Meet the leaders of SwanDigitals: Swati Gaikwad (Co-Founder & CEO) and Kiran Shelke (Co-Founder & CTO). Building customer support AI for Indian SMEs, hosted in India.',
+    keywords: ['SwanDigitals Leadership', 'Swati Gaikwad', 'Kiran Shelke', 'AI Founders Pune', 'AI India'],
     alternates: {
         canonical: 'https://swandigitals.com/leadership',
     },
@@ -64,7 +64,7 @@ export default function LeadershipPage() {
                     '@id': 'https://swandigitals.com/#organization',
                     name: 'SwanDigitals',
                 },
-                knowsAbout: ['AI Engineering', 'Full Stack Development', 'Sovereign LLMs', 'Data Compliance'],
+                knowsAbout: ['AI Engineering', 'Full Stack Development', 'Voice AI', 'Data Privacy'],
                 alumniOf: {
                     '@type': 'Organization',
                     name: 'Pune, Maharashtra',
@@ -86,7 +86,7 @@ export default function LeadershipPage() {
             <Hero
                 badge="Leadership"
                 title="Meet Our Leadership Team"
-                subtitle="Guided by a customer-first mindset and building secure, sovereign AI technologies for India."
+                subtitle="Guided by a customer-first mindset and building honest, secure AI technologies for Indian SMEs."
                 primaryCTA={{ text: "Schedule a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "Contact Team", href: "/contact" }}
             />
@@ -106,10 +106,10 @@ export default function LeadershipPage() {
                                 <p className="text-lg text-orange-600 font-semibold text-center mb-6">Co-Founder & CEO</p>
                                 
                                 <p className="text-slate-600 mb-6 leading-relaxed text-sm">
-                                    Swati co-founded SwanDigitals with a commitment to empower Indian businesses with state-of-the-art support operations. Drawing from years of customer relations expertise, she aligns our engineering capabilities directly with real-world enterprise needs.
+                                    Swati co-founded SwanDigitals with a commitment to empower Indian SMEs with modern, affordable support operations. Drawing from years of customer relations expertise, she aligns our engineering capabilities directly with real-world business needs.
                                 </p>
                                 <p className="text-slate-600 mb-8 leading-relaxed text-sm">
-                                    Her focus is on driving business scaling, operations, and ensuring every merchant gets first-class assistance, compliance satisfaction, and high ROI.
+                                    Her focus is on driving business scaling, operations, and ensuring every merchant gets first-class assistance and good ROI.
                                 </p>
                             </div>
 
@@ -120,7 +120,7 @@ export default function LeadershipPage() {
                                 </div>
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
                                     <h4 className="font-bold text-slate-800 text-xs mb-1">Customer Success</h4>
-                                    <p className="text-[11px] text-slate-500">Helping enterprises achieve 85%+ support automation.</p>
+                                    <p className="text-[11px] text-slate-500">Helping Indian SMEs automate repetitive support conversations.</p>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ export default function LeadershipPage() {
                                 <p className="text-lg text-purple-600 font-semibold text-center mb-6">Co-Founder & CTO</p>
                                 
                                 <p className="text-slate-600 mb-6 leading-relaxed text-sm">
-                                    Kiran directs our technical framework and product development. He is passionate about deploying local, secure cloud and on-premise AI LLM nodes that adhere strictly to DPDP Act specifications and sovereign data practices.
+                                    Kiran directs our technical framework and product development. He is passionate about building secure cloud AI systems, hosted in India, that are built to be aware of DPDP Act specifications.
                                 </p>
                                 <p className="text-slate-600 mb-8 leading-relaxed text-sm">
                                     With robust full-stack expertise, he specializes in building low-latency speech pipelines, robust APIs, and high-performance communication systems.
@@ -145,11 +145,11 @@ export default function LeadershipPage() {
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
                                     <h4 className="font-bold text-slate-800 text-xs mb-1">System Design</h4>
-                                    <p className="text-[11px] text-slate-500">Next-gen speech channels and full-stack enterprise structures.</p>
+                                    <p className="text-[11px] text-slate-500">Next-gen speech channels and full-stack cloud architecture.</p>
                                 </div>
                                 <div className="bg-white p-3 rounded-xl border border-slate-100">
                                     <h4 className="font-bold text-slate-800 text-xs mb-1">Data Privacy</h4>
-                                    <p className="text-[11px] text-slate-500">DPDP Act alignment and air-gapped on-prem deployments.</p>
+                                    <p className="text-[11px] text-slate-500">DPDP Act awareness and data hosted in India.</p>
                                 </div>
                             </div>
                         </div>
@@ -165,11 +165,11 @@ export default function LeadershipPage() {
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 text-slate-900">Innovation First</h3>
-                            <p className="text-slate-600">Exploring sovereign models and low-latency speech engines to push boundaries.</p>
+                            <p className="text-slate-600">Exploring advanced AI models and natural speech engines to push boundaries.</p>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 text-slate-900">Data-Driven</h3>
-                            <p className="text-slate-600">Every design choice is engineered for DPDP compliance and security metrics.</p>
+                            <p className="text-slate-600">Every design choice is engineered with DPDP-2023 awareness and security in mind.</p>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 text-slate-900">User-Centric</h3>
@@ -183,7 +183,7 @@ export default function LeadershipPage() {
             <section className="py-20 bg-gradient-to-br from-slate-900 to-indigo-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Let's Build Something Great</h2>
-                    <p className="text-xl text-white/80 mb-8">Empower your customer support with India's secure enterprise chatbot.</p>
+                    <p className="text-xl text-white/80 mb-8">Empower your customer support with an honest, India-hosted AI chatbot.</p>
                     <div className="flex gap-4 justify-center">
                         <Link href="/demo" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold text-lg transition-all shadow-lg hover:scale-105">
                             Book a Demo

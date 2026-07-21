@@ -19,11 +19,11 @@ export default function usecaseshospitalityPage() {
           <div className="space-y-4">
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
                   <h4 className="font-medium text-slate-900 mb-2">Multilingual Support</h4>
-                  <p className="text-slate-600">Communicate natively in 25+ languages, ensuring international guests feel heard and understood.</p>
+                  <p className="text-slate-600">Communicate in 10 Indian languages, ensuring domestic guests feel heard and understood.</p>
               </div>
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
-                  <h4 className="font-medium text-slate-900 mb-2">Mobile Support Apps</h4>
-                  <p className="text-slate-600">Concierge staff and agents can use native iOS/Android apps to manage urgent guest issues while physically moving around the hotel property.</p>
+                  <h4 className="font-medium text-slate-900 mb-2">Manage Support From Anywhere</h4>
+                  <p className="text-slate-600">Concierge staff and agents can respond to urgent guest issues from the SwanDigitals dashboard on any device, wherever they are on the property.</p>
               </div>
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
                   <h4 className="font-medium text-slate-900 mb-2">WhatsApp Centralization</h4>

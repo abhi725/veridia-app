@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Tawk.to Alternative in India | Smart AI Live Chat & Voice',
-    description: 'Tawk.to is free, but you pay with your brand image. Upgrade to SwanDigitals for a premium, white-labeled AI helpdesk that actually solves customer queries.',
-    keywords: ['Tawk.to alternative', 'Tawk.to vs SwanDigitals', 'Premium Live Chat India', 'AI Chatbot India'],
+    title: 'Tawk.to Alternative in India | AI Chat & Voice for SMEs',
+    description: 'Tawk.to is free but basic. SwanDigitals adds self-training AI, native +91 voice, and one inbox for chat and calls, on flat rupee pricing.',
+    keywords: ['Tawk.to alternative', 'Tawk.to vs SwanDigitals', 'AI Live Chat India', 'AI Chatbot India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-tawkto',
     },
@@ -16,41 +16,41 @@ export default function VsTawktoPage() {
             competitorName="Tawk.to"
             slug="vs-tawkto"
             heroTitle="The Real Cost of 'Free' Chat Widgets"
-            heroSubtitle="Tawk.to costs zero dollars, but it costs your brand's reputation. Switch to a smart AI Helpdesk that actually solves customer problems 24/7."
-            aboutCompetitor="Tawk.to is a popular, free live chat widget. They make money by charging you to remove their branding or by renting out their own support agents to run your chat."
-            competitorStrengths="It is free to start. It gives you a basic chat window that you can set up on your website in a few minutes."
-            realityCheck="Free tools make your business look cheap. Tawk.to relies completely on your team staying online 24/7. When your agents go offline, your customers get a form, not help. If you want real automation, Tawk.to's basic chatbot options are not enough. It also lacks voice features and a deep system to manage support tickets."
+            heroSubtitle="Tawk.to is free but relies on your team staying online. Switch to AI that trains on your content and native +91 voice, in one inbox."
+            aboutCompetitor="Tawk.to is a popular, free live chat widget. It makes money by charging to remove branding or by renting out agents to run your chat."
+            competitorStrengths="Free to start, with a basic chat window you can add to your website in a few minutes."
+            realityCheck="Tawk.to depends on your team being online, and when agents go offline customers get a form, not answers. Its automation is basic and it has no phone support. SwanDigitals adds self-training AI, native +91 voice and one inbox for every channel. Where Tawk.to may fit better: a small site or blog on zero budget that just needs a simple chat bubble."
             reasonsToSwitch={[
                 {
-                    title: "Advanced AI Automation",
-                    description: "Stop wasting human power on basic questions. Our AI reads your documents and answers 90% of customer chats instantly and correctly."
+                    title: "AI That Trains on Your Content",
+                    description: "Stop spending staff time on repeat questions. Our AI reads your documents and answers routine customer chats instantly."
                 },
                 {
-                    title: "A Premium Brand Image",
-                    description: "Remove other brands from your site. We offer a clean, fully white-labeled chat widget that matches your design and builds trust."
+                    title: "A Cleaner Brand Experience",
+                    description: "Get a clean, white-labeled chat widget that matches your design and builds trust, instead of ad-supported branding."
                 },
                 {
                     title: "One Inbox for Every Channel",
-                    description: "Tawk.to only handles website chat. SwanDigitals brings WhatsApp, email, web chat, and voice calls into one single team dashboard."
+                    description: "Tawk.to only handles website chat. SwanDigitals brings WhatsApp, Facebook, web chat and +91 voice into one dashboard."
                 }
             ]}
             comparisonRows={[
-                { feature: "Primary Value", SwanDigitals: "AI Automation & Real Resolution", competitor: "Free Manual Live Chat" },
-                { feature: "AI Capabilities", SwanDigitals: "Smart Large Language Models", competitor: "None / Very Basic" },
-                { feature: "Brand Experience", SwanDigitals: "Fully White-Labeled", competitor: "Ad-Supported" },
+                { feature: "Primary Value", SwanDigitals: "AI + human, chat + voice", competitor: "Free Manual Live Chat" },
+                { feature: "AI Capabilities", SwanDigitals: "Trains on your content", competitor: "None / Very Basic" },
+                { feature: "Brand Experience", SwanDigitals: "White-Labeled", competitor: "Ad-Supported" },
                 { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
                 { feature: "WhatsApp Integration", SwanDigitals: "Deep Native Connection", competitor: "Limited / Add-On" }
             ]}
-            targetPersona="You are a small blog or a personal site with no budget that just needs a simple chat bubble."
-            verdict="You are a professional business that values its brand, needs to automate support to scale, and wants a secure database for all customer chats."
+            targetPersona="You are a small blog or personal site on zero budget that just needs a simple chat bubble."
+            verdict="You are a growing Indian SME that wants AI automation, voice and a clean brand experience across every channel."
             faqs={[
                 {
                     question: "Where is my customer data stored and how is it secured?",
-                    answer: "We store all customer data on secure servers in India. This keeps your business compliant with local laws like the DPDP Act. We use AES-256 encryption for data at rest and TLS for data in transit to keep your files safe."
+                    answer: "We host all customer data on servers in India, kept aware of India's DPDP Act 2023. Data is encrypted in transit and at rest, payments run through Razorpay, and there is no lock-in."
                 },
                 {
                     question: "How does Meta direct billing work for WhatsApp conversations?",
-                    answer: "Instead of adding extra markup fees on your chats, we connect you directly to Meta's billing. You pay Meta directly at actual cost for your WhatsApp Business API conversations. We do not charge extra fees per message."
+                    answer: "Instead of adding markup fees on your chats, we connect you directly to Meta's billing. You pay Meta directly at actual cost for your WhatsApp Business API conversations. We do not charge extra per message."
                 },
                 {
                     question: "Can I port my existing WhatsApp Business API number to SwanDigitals?",

@@ -71,8 +71,8 @@ export default function PlatformPage() {
                         <ul className="list-disc list-inside space-y-2 text-slate-600">
                             <li><strong>Keyword-based:</strong> &quot;billing&quot; → Billing team inbox</li>
                             <li><strong>Channel-based:</strong> WhatsApp → Tier 1 support</li>
-                            <li><strong>Customer tier:</strong> Enterprise → Dedicated agents</li>
-                            <li><strong>Language:</strong> Spanish queries → Spanish-speaking agents</li>
+                            <li><strong>Customer tier:</strong> Priority customers → Dedicated agents</li>
+                            <li><strong>Language:</strong> Hindi queries → Hindi-speaking agents</li>
                         </ul>
                     </div>
 

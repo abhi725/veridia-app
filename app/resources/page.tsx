@@ -17,8 +17,8 @@ import {
 
 export const metadata: Metadata = {
     title: 'Resources & Knowledge Center - SwanDigitals',
-    description: 'Technical whitepapers, compliance blueprints, ROI spreadsheets, migration playbooks, and developer reference materials for SwanDigitals.',
-    keywords: ['SwanDigitals Whitepaper', 'AI Chatbot ROI', 'DPDP Compliance PDF', 'WhatsApp Marketing Playbook'],
+    description: 'Practical guides, ROI spreadsheets, setup playbooks, and developer reference materials for Indian SMEs using SwanDigitals.',
+    keywords: ['SwanDigitals guide', 'AI Chatbot ROI', 'DPDP basics for SMEs', 'WhatsApp Marketing Playbook'],
     alternates: {
         canonical: 'https://swandigitals.com/resources',
     },
@@ -44,10 +44,10 @@ export default function ResourcesPage() {
         },
         {
             icon: <ShieldAlert className="w-8 h-8 text-orange-600" />,
-            title: "BFSI Data Sovereign Blueprint",
-            category: "COMPLIANCE WHITEPAPER",
-            description: "A comprehensive guide on deploying air-gapped on-premises local LLMs to perfectly comply with RBI guidelines.",
-            linkText: "Read Blueprint",
+            title: "Data & Privacy Basics Guide",
+            category: "PRIVACY GUIDE",
+            description: "A plain-language guide on how SwanDigitals hosts your data in India and stays built with the DPDP Act 2023 in mind.",
+            linkText: "Read the Guide",
             linkHref: "/security"
         },
         {
@@ -61,7 +61,7 @@ export default function ResourcesPage() {
     ];
 
     const assets = [
-        { name: "SwanDigitals Enterprise Pitch Deck", type: "PDF Slides", size: "4.8 MB" },
+        { name: "SwanDigitals Company Overview Deck", type: "PDF Slides", size: "4.8 MB" },
         { name: "DPDP Act 2023 Readiness Checklist", type: "PDF Checklist", size: "1.2 MB" },
         { name: "WATI to SwanDigitals Migration Playbook", type: "Migration Guide", size: "2.1 MB" },
         { name: "API Integration Quickstart Guide", type: "Cheat Sheet", size: "850 KB" }
@@ -85,7 +85,7 @@ export default function ResourcesPage() {
                             Knowledge Center & Strategy Material
                         </h2>
                         <p className="mt-4 text-lg text-slate-600">
-                            Whether you are a developer looking for webhooks or a CISO auditing data residency, we have the right blueprints for you.
+                            Whether you're a developer looking for webhooks or a business owner checking where your data lives, we have the right guide for you.
                         </p>
                     </div>
 
@@ -229,7 +229,7 @@ export default function ResourcesPage() {
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <h2 className="text-4xl font-bold mb-6">Ready to Optimize Your Support Flows?</h2>
                     <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-                        Speak directly with our platform onboarding architects. We will help design your visual tree, link your channels, and test your logic.
+                        Speak directly with our onboarding team. We'll help design your conversation flow, link your channels, and test everything before you go live.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link href="/contact" className="inline-block px-8 py-4 bg-white text-slate-900 rounded-full font-semibold text-lg hover:scale-105 shadow-xl transition-all">

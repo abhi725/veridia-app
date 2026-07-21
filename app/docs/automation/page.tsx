@@ -8,7 +8,7 @@ export default function AutomationPage() {
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
                     Automate repetitive tasks with SwanDigitals's built-in automation rules, macros, and SwanAI bot integration.
-                    Reduce agent workload by up to 70% with smart automation.
+                    Cut down agent workload with smart automation.
                 </p>
             </section>
 

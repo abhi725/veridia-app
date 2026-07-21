@@ -5,7 +5,7 @@ import GlossaryClient from './GlossaryClient';
 // Phase 2 SEO: Metadata was completely missing — this page had zero title/description in HTML head
 export const metadata: Metadata = {
     title: 'AI Chatbot & Compliance Glossary India | SwanDigitals',
-    description: 'Plain-English definitions for AI chatbots, NLP, RAG, DPDP Act 2023, RBI cloud guidelines, WhatsApp Business API, and more. Built for Indian enterprise teams.',
+    description: 'Plain-English definitions for AI chatbots, NLP, RAG, DPDP Act 2023, RBI cloud guidelines, WhatsApp Business API, and more. Built for Indian small and medium businesses.',
     keywords: ['AI chatbot glossary India', 'DPDP Act explained', 'RBI cloud guidelines', 'WhatsApp Business API India', 'NLP terms', 'RAG definition'],
     alternates: {
         canonical: 'https://swandigitals.com/ai-glossary',

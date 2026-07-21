@@ -88,21 +88,6 @@ export default function IntegrationsPage() {
                 </p>
 
                 <div className="space-y-6">
-                    {/* Zendesk */}
-                    <div className="border border-slate-200 rounded-lg p-6">
-                        <h3 className="text-lg font-medium text-slate-900 mb-3">Zendesk</h3>
-                        <p className="text-slate-600 mb-4">
-                            Two-way sync with Zendesk to sync tickets, contacts, and conversation history.
-                        </p>
-                        <ol className="list-decimal list-inside space-y-2 text-slate-600">
-                            <li>Go to <strong>Settings → Integrations → Zendesk</strong></li>
-                            <li>Enter your Zendesk subdomain and API token</li>
-                            <li>Choose sync direction: SwanDigitals → Zendesk or bidirectional</li>
-                            <li>Map custom fields between platforms</li>
-                            <li>Enable automatic ticket creation for new conversations</li>
-                        </ol>
-                    </div>
-
                     {/* HubSpot */}
                     <div className="border border-slate-200 rounded-lg p-6">
                         <h3 className="text-lg font-medium text-slate-900 mb-3">HubSpot</h3>
@@ -118,24 +103,27 @@ export default function IntegrationsPage() {
                         </ol>
                     </div>
 
-                    {/* Salesforce */}
+                    {/* Calendly */}
                     <div className="border border-slate-200 rounded-lg p-6">
-                        <h3 className="text-lg font-medium text-slate-900 mb-3">Salesforce</h3>
+                        <h3 className="text-lg font-medium text-slate-900 mb-3">Calendly</h3>
                         <p className="text-slate-600 mb-4">
-                            Enterprise-grade integration with Salesforce for large support teams.
+                            Let customers book a demo or callback slot directly from a conversation.
                         </p>
                         <ol className="list-decimal list-inside space-y-2 text-slate-600">
-                            <li>Go to <strong>Settings → Integrations → Salesforce</strong></li>
-                            <li>Log in with your Salesforce credentials</li>
-                            <li>Select the Salesforce instance (Production or Sandbox)</li>
-                            <li>Configure object mappings (Contacts, Accounts, Cases)</li>
-                            <li>Set up real-time sync or scheduled batch updates</li>
+                            <li>Go to <strong>Settings → Integrations → Calendly</strong></li>
+                            <li>Click <strong>Connect Calendly</strong> and authorize the app</li>
+                            <li>Choose which event type to share by default</li>
+                            <li>Insert your booking link into canned responses or the AI bot</li>
                         </ol>
-                        <div className="mt-4 bg-slate-50 rounded-lg p-4">
-                            <p className="text-sm text-slate-600">
-                                <strong>Enterprise plan required</strong> for Salesforce integration.
-                            </p>
-                        </div>
+                    </div>
+
+                    {/* Other CRMs */}
+                    <div className="border border-slate-200 rounded-lg p-6">
+                        <h3 className="text-lg font-medium text-slate-900 mb-3">Using a Different CRM?</h3>
+                        <p className="text-slate-600 mb-4">
+                            Tools like Zoho, Zendesk, or Salesforce aren't native integrations today, but you can usually connect them
+                            through our REST API or an n8n workflow — see the <a href="/docs/workflows" className="text-orange-600 hover:underline">n8n Workflows guide</a>.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -144,7 +132,7 @@ export default function IntegrationsPage() {
             <section className="bg-slate-50 rounded-xl p-8">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Next Steps</h2>
                 <ul className="list-disc list-inside space-y-2 text-slate-600">
-                    <li><strong>n8n Workflows</strong> — Connect SwanDigitals to 200+ apps via webhooks</li>
+                    <li><strong>n8n Workflows</strong> — Connect SwanDigitals to other apps via webhooks</li>
                     <li><strong>Automation</strong> — Set up macros, labels, and SwanAI bot</li>
                     <li><strong>Platform Guide</strong> — Learn about the dashboard and routing</li>
                 </ul>

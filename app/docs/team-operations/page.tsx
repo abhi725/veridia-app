@@ -40,7 +40,7 @@ export default function teamoperationsPage() {
               <div className="border border-slate-200 rounded-lg p-6 bg-white">
                   <h3 className="font-medium text-slate-900 mb-2 text-lg">4. Multilingual Support</h3>
                   <p className="text-sm text-slate-600">
-                      The agent dashboard and customer-facing widget support over 25 languages, enabling you to build a truly global support operation.
+                      The agent dashboard and customer-facing widget support 10 Indian languages, so your team can serve customers in the language they're most comfortable with.
                   </p>
               </div>
           </div>

@@ -6,15 +6,15 @@ import Link from 'next/link';
 
 export default function NewsroomContent() {
     const featuredNews = {
-        title: "SwanDigitals Launches: AI-Powered Customer Support Platform for Indian Businesses",
+        title: "SwanDigitals Launches: AI-Powered Customer Engagement Platform for Indian SMEs",
         date: "March 2026",
-        excerpt: "Pune-based SwanDigitals launches SwanDigitals, bringing enterprise-grade AI customer support to Indian SMBs and enterprises. Available now at chat.swandigitals.com.",
+        excerpt: "Pune-based SwanDigitals launches its platform, bringing affordable AI-powered WhatsApp, Facebook, and voice support to Indian small and medium businesses. Available now at chat.swandigitals.com.",
         category: "Product Launch"
     };
 
     const pressReleases = [
-        { title: "SwanDigitals Now Supports On-Premises Deployment for BFSI", date: "March 2026", category: "Product", excerpt: "SwanDigitals's air-gapped on-premises mode — using secure local LLMs, offline speech-to-text models, and enterprise SIP trunking — is now available for banks and financial institutions requiring full data sovereignty under DPDP 2023." },
-        { title: "Voice Bot Support Added: Hindi, Tamil, Telugu, and 8 More Indian Languages", date: "February 2026", category: "Product", excerpt: "SwanDigitals Voice Bot now supports 10+ Indian languages via advanced cloud voice processors and private offline speech-to-text/synthesis engines, enabling phone support for Indian enterprises in their customers' native language." }
+        { title: "SwanDigitals Adds Razorpay Billing and Data Hosting in India", date: "March 2026", category: "Product", excerpt: "SwanDigitals now bills subscriptions through Razorpay and hosts customer data on cloud infrastructure based in India, built with the DPDP Act 2023 in mind." },
+        { title: "Voice Bot Support Added: Hindi, Tamil, Telugu, and 7 More Indian Languages", date: "February 2026", category: "Product", excerpt: "SwanVoice now supports 10 Indian languages, enabling phone support for Indian SMEs in their customers' native language." }
     ];
 
     const mediaKit = [

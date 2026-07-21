@@ -7,9 +7,9 @@ import Link from 'next/link';
 import { Key, Monitor, Wifi, HelpCircle, Settings, Ticket, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'AI for IT Helpdesk: Auto-Resolve Tier 1 Tickets',
-    description: 'Deflect 72% of IT tickets with AI. Automate password resets, software access, and troubleshooting. Integrates with ServiceNow & Jira.',
-    keywords: ['IT Helpdesk Automation', 'ITSM Chatbot', 'Password Reset Bot', 'Jira Automation AI', 'ServiceNow AI Bot'],
+    title: 'AI IT Helpdesk Chatbot for Indian SMEs',
+    description: 'Automate password resets, software access requests, and common IT troubleshooting for your growing team — on WhatsApp or web chat.',
+    keywords: ['IT Helpdesk Automation', 'IT Support Chatbot India', 'Password Reset Bot', 'SME IT Support AI', 'Internal Helpdesk Chatbot'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/it-helpdesk',
     },
@@ -42,8 +42,8 @@ export default function ITHelpdeskPage() {
     };
 
     const useCases = [
-        { icon: <Key className="w-6 h-6" />, title: "Password Resets", desc: "Self-service password reset with MFA verification", stat: "3 min avg" },
-        { icon: <Monitor className="w-6 h-6" />, title: "Software Requests", desc: "Request, approve, and provision software automatically", stat: "80% automated" },
+        { icon: <Key className="w-6 h-6" />, title: "Password Resets", desc: "Self-service password reset with identity verification", stat: "Fast turnaround" },
+        { icon: <Monitor className="w-6 h-6" />, title: "Software Requests", desc: "Request, approve, and provision software automatically", stat: "Mostly automated" },
         { icon: <Wifi className="w-6 h-6" />, title: "Connectivity Issues", desc: "Troubleshoot network, VPN, and connectivity problems", stat: "First-line support" },
         { icon: <Ticket className="w-6 h-6" />, title: "Ticket Creation", desc: "Create and route tickets to the right team automatically", stat: "Smart routing" },
         { icon: <Settings className="w-6 h-6" />, title: "Hardware Support", desc: "Request equipment, report issues, track repairs", stat: "Full lifecycle" },
@@ -59,8 +59,8 @@ export default function ITHelpdeskPage() {
             />
             <Hero
                 badge="🔧 IT Helpdesk"
-                title="Enterprise IT Helpdesk Automation"
-                subtitle="Password resets, software requests, and connectivity troubleshooting—automated 24/7. Free your IT team for strategic work."
+                title="IT Helpdesk Automation for Growing Teams"
+                subtitle="Password resets, software requests, and connectivity troubleshooting—automated 24/7. Free up your IT person to focus on what matters."
                 primaryCTA={{ text: "See IT Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Employee Experience", href: "/solutions/employee-experience" }}
             />
@@ -69,8 +69,8 @@ export default function ITHelpdeskPage() {
             <section className="py-16 bg-gradient-to-r from-slate-700 to-slate-900 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">Up to 70%</div><div className="text-white/80">Ticket Deflection</div></div>
-                        <div><div className="text-4xl font-bold">~3 min</div><div className="text-white/80">Password Reset</div></div>
+                        <div><div className="text-4xl font-bold">Faster</div><div className="text-white/80">Ticket Resolution</div></div>
+                        <div><div className="text-4xl font-bold">Fast</div><div className="text-white/80">Password Reset</div></div>
                         <div><div className="text-4xl font-bold">24/7</div><div className="text-white/80">Availability</div></div>
                         <div><div className="text-4xl font-bold">Reduced</div><div className="text-white/80">IT Workload</div></div>
                     </div>
@@ -99,9 +99,9 @@ export default function ITHelpdeskPage() {
             {/* Integration Partners */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold mb-12">ITSM Integrations</h2>
+                    <h2 className="text-3xl font-bold mb-12">Works With Your Tools</h2>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        {['ServiceNow', 'Jira Service', 'Freshservice', 'Zendesk', 'BMC Remedy', 'Ivanti', 'ManageEngine', 'SysAid'].map((partner, i) => (
+                        {['WhatsApp', 'Facebook Messenger', 'Web Chat', 'HubSpot', 'Calendly', 'Razorpay', 'Mautic', 'n8n'].map((partner, i) => (
                             <span key={i} className="px-6 py-3 bg-white rounded-full font-medium shadow-sm">{partner}</span>
                         ))}
                     </div>

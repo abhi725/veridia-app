@@ -5,9 +5,9 @@ import { faqData } from '@/data/faqs';
 import FAQ from '@/components/ui/FAQ';
 
 export const metadata: Metadata = {
-    title: 'Comprehensive AI FAQ | 100+ Questions Answered',
-    description: 'The ultimate guide to enterprise AI automation. Find answers about our Voice AI, WhatsApp integration, DPDP compliance, pricing, and industry use cases.',
-    keywords: ['AI Chatbot FAQ', 'Enterprise AI Knowledge Base', 'SwanDigitals Help', 'Voice AI FAQs', 'WhatsApp API Questions'],
+    title: 'SwanDigitals FAQ | Questions Answered',
+    description: 'A practical guide for Indian SMEs. Find answers about our Voice AI, WhatsApp integration, data handling, pricing, and everyday use cases.',
+    keywords: ['SwanDigitals FAQ', 'SME AI Knowledge Base', 'SwanDigitals Help', 'Voice AI FAQs', 'WhatsApp API Questions'],
     alternates: {
         canonical: 'https://swandigitals.com/faqs',
     },
@@ -64,7 +64,7 @@ export default function FAQsPage() {
             <Hero
                 badge="📚 Knowledge Base"
                 title="Everything You Need to Know About SwanDigitals"
-                subtitle="Your ultimate guide to enterprise AI automation. Browse our comprehensive FAQ below to learn how we solve complex support challenges."
+                subtitle="A practical guide for Indian small businesses. Browse our FAQ below to learn how we help you handle WhatsApp, calls, and customer chats."
                 primaryCTA={{ text: "Book a Demo", href: "/demo" }}
                 secondaryCTA={{ text: "Contact Support", href: "/contact" }}
             />

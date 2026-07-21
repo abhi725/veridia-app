@@ -7,13 +7,13 @@ export default function VoiceAIPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    SwanAI Voice enables AI-powered voice agents that handle inbound and outbound phone calls.
-                    Built on enterprise telephony, it provides real-time speech-to-text transcription, AI-powered responses,
+                    SwanAI Voice enables AI-powered voice agents that handle inbound and outbound phone calls on your +91 number.
+                    It provides real-time speech-to-text transcription, AI-powered responses,
                     and seamless transfer to human agents when needed.
                 </p>
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
                     <p className="text-sm text-orange-800">
-                        <strong>Available in:</strong> PERFORMANCE PRO and SOVEREIGN ENTERPRISE plans. Requires cloud voice or Exotel/SIP trunking account.
+                        <strong>Available in:</strong> Performance Pro and Scale plans. Requires cloud voice or Exotel/SIP trunking account.
                     </p>
                 </div>
             </section>
@@ -41,7 +41,7 @@ export default function VoiceAIPage() {
                     <div className="border border-slate-200 rounded-lg p-5">
                         <h3 className="font-medium text-slate-900 mb-2">SIP Telephony</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Enterprise-grade telephony with global reach. Supports SIP trunking, outbound campaigns,
+                            Reliable telephony with pan-India reach. Supports SIP trunking, outbound campaigns,
                             and programmable voice workflows.
                         </p>
                         <ul className="text-sm text-slate-500 space-y-1">
@@ -142,10 +142,10 @@ export default function VoiceAIPage() {
             <section className="mb-12">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">Multilingual Voice Support</h2>
                 <p className="text-slate-600 mb-6">
-                    SwanAI Voice supports 10+ Indian languages for voice interactions:
+                    SwanAI Voice supports 10 Indian languages for voice interactions:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    {['Hindi', 'English', 'Hinglish', 'Tamil', 'Telugu', 'Bengali', 'Marathi', 'Gujarati', 'Kannada', 'Malayalam'].map((lang) => (
+                    {['English', 'Hindi', 'Marathi', 'Tamil', 'Telugu', 'Kannada', 'Gujarati', 'Bengali', 'Malayalam', 'Punjabi'].map((lang) => (
                         <div key={lang} className="px-4 py-2 bg-slate-100 rounded-lg text-center text-sm text-slate-700">
                             {lang}
                         </div>

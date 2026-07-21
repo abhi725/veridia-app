@@ -3,9 +3,9 @@ import LocationPageTemplate from '@/components/ui/LocationPageTemplate';
 import { Landmark, Building2, Stethoscope, Headphones, Users, Server, Briefcase, ShoppingCart } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Healthcare & Tech AI Chatbots in Hyderabad | SwanDigitals",
-    description: "Deploy HIPAA-ready AI chatbots and voice agents in Hyderabad. Automate patient booking, triage, and IT support securely.",
-    keywords: ["AI Chatbot Hyderabad", "Healthcare AI Hyderabad", "HITEC City Support AI", "Telugu AI Agent"],
+    title: "AI Chatbots for Clinics & Tech Businesses in Hyderabad | SwanDigitals",
+    description: "Deploy AI chatbots and voice agents in Hyderabad. Automate patient booking, reminders, and IT support, data hosted in India.",
+    keywords: ["AI Chatbot Hyderabad", "Clinic AI Hyderabad", "HITEC City Support AI", "Telugu AI Agent"],
     alternates: {
         canonical: "https://swandigitals.com/hyderabad",
     },
@@ -30,17 +30,17 @@ export default function HyderabadPage() {
         }
     ];
 
-    const stats = [{"value": "HIPAA", "label": "Compliance Ready"}, {"value": "90%", "label": "Support Deflection"}, {"value": "24/7", "label": "Patient Booking"}, {"value": "Zero", "label": "Data Leaks"}];
+    const stats = [{"value": "10", "label": "Indian Languages"}, {"value": "24/7", "label": "Patient Booking"}, {"value": "7 Days", "label": "To Go Live"}, {"value": "₹4,999", "label": "Starting Plan"}];
 
     return (
         <LocationPageTemplate
             city="Hyderabad"
             state="Telangana"
-            ecosystemDesc="Hyderabad's technology and pharma sectors are expanding rapidly across HITEC City and Gachibowli. Regulated healthcare providers and tech firms require robust, highly secure AI systems that maintain customer trust and data privacy."
-            industryFocus="healthcare, pharmaceuticals, and technology"
-            localTerm="Hyderabad tech and pharma hub"
+            ecosystemDesc="Hyderabad's clinics, healthcare providers, and tech businesses are expanding rapidly across HITEC City and Gachibowli. These businesses want AI systems that maintain customer trust and keep data hosted in India."
+            industryFocus="clinics, local healthcare, and technology"
+            localTerm="Hyderabad clinics and tech hub"
             languageNotes="Telugu, Urdu, and English"
-            painPoint="automating patient engagement and customer onboarding workflows while adhering to strict healthcare privacy requirements"
+            painPoint="automating patient engagement and customer onboarding workflows while keeping patient data secure and hosted in India"
             stats={stats}
             useCases={useCases}
         />

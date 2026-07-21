@@ -8,8 +8,8 @@ import PricingContentWrapper from './PricingContentWrapper';
 
 export const metadata: Metadata = {
     title: 'Honest Pricing. No Surprises. | SwanDigitals',
-    description: 'AI Chatbot from ₹4,999/mo. Voice AI from ₹5/min. Unlimited conversations, unlimited agents, zero per-message billing. On-premise available.',
-    keywords: ['AI Chatbot Cost India', 'WhatsApp Bot Price India', 'Voice Bot Pricing INR', 'RBI Compliant AI Pricing', 'Sovereign Hosting Price'],
+    description: 'AI Chatbot from ₹4,999/mo. Voice AI from ₹5/min. Unlimited conversations, unlimited agents, zero per-message markup. Flat INR pricing.',
+    keywords: ['AI Chatbot Cost India', 'WhatsApp Bot Price India', 'Voice Bot Pricing INR', 'AI Chatbot Pricing India', 'SME Chatbot Price'],
     alternates: {
         canonical: 'https://swandigitals.com/pricing',
     },
@@ -43,7 +43,7 @@ const pricingSchema = {
             '@type': 'SoftwareApplication',
             name: 'SwanDigitals AI Omnichannel Chatbot',
             applicationCategory: 'BusinessApplication',
-            operatingSystem: 'Web, On-Premise',
+            operatingSystem: 'Web',
             url: 'https://swandigitals.com/pricing',
             offers: [
                 {
@@ -58,20 +58,20 @@ const pricingSchema = {
                 {
                     '@type': 'Offer',
                     name: 'Performance Pro',
-                    description: 'Full omnichannel platform: WhatsApp, Email, Instagram, Web Chat, Voice AI. Unlimited agents. DPDP 2023 compliant Indian datacenter.',
-                    price: '14999',
+                    description: 'Full omnichannel platform: WhatsApp, Facebook, Web Chat, Voice AI. Unlimited agents. Data hosted in India, DPDP 2023 aware.',
+                    price: '9999',
                     priceCurrency: 'INR',
                     priceSpecification: { '@type': 'UnitPriceSpecification', billingDuration: 'P1M' },
                     url: 'https://swandigitals.com/pricing#performance-pro',
                 },
                 {
                     '@type': 'Offer',
-                    name: 'Sovereign Enterprise',
-                    description: 'Air-gapped on-premise deployment for BFSI and regulated sectors. RBI-compliant. Fully private LLM. Custom pricing.',
-                    price: '28000',
+                    name: 'Scale',
+                    description: 'For higher volumes and multi-location businesses: priority support, higher call and message limits, and custom onboarding.',
+                    price: '45000',
                     priceCurrency: 'INR',
                     priceSpecification: { '@type': 'UnitPriceSpecification', billingDuration: 'P1M' },
-                    url: 'https://swandigitals.com/pricing#sovereign-enterprise',
+                    url: 'https://swandigitals.com/pricing#scale',
                 },
             ],
         },
@@ -127,8 +127,8 @@ export default function PricingPage() {
                             <span>0% Markup on Meta WhatsApp Fees — Pay Direct</span>
                         </div>
                         <div className="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-5 py-2 text-sm font-semibold text-blue-800">
-                            <span>🏦</span>
-                            <span>RBI Compliant &amp; DPDP 2023 Ready</span>
+                            <span>🇮🇳</span>
+                            <span>Data Hosted in India — DPDP 2023 Aware</span>
                         </div>
                         <div className="flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-full px-5 py-2 text-sm font-semibold text-orange-800">
                             <span>♾️</span>

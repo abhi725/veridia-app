@@ -38,7 +38,7 @@ export default function DemoContent() {
             <Hero
                 badge="Book a Demo"
                 title="See SwanDigitals in Action"
-                subtitle="Get a personalized demo of our AI platform. See how we can help you achieve 90% automation in weeks, not months."
+                subtitle="Get a personalized demo of our AI platform. See how we can help you automate repetitive support conversations in weeks, not months."
                 primaryCTA={{ text: "Schedule Now", href: "#form" }}
             />
 
@@ -128,8 +128,8 @@ export default function DemoContent() {
                                 <ul className="space-y-3 relative z-10 text-slate-300">
                                     <li className="flex items-start gap-3"><span className="text-orange-400 mt-1">✓</span><span>Live walkthrough of the AI inbox, voice agents, and automation builder</span></li>
                                     <li className="flex items-start gap-3"><span className="text-orange-400 mt-1">✓</span><span>Custom ROI projection based on your current support volume</span></li>
-                                    <li className="flex items-start gap-3"><span className="text-orange-400 mt-1">✓</span><span>Discussion of deployment options (cloud, on-premise, or hybrid)</span></li>
-                                    <li className="flex items-start gap-3"><span className="text-orange-400 mt-1">✓</span><span>Clear next steps with the ₹10,000 pilot program</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-orange-400 mt-1">✓</span><span>Overview of WhatsApp, chat, and voice channels in one inbox</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-orange-400 mt-1">✓</span><span>Clear next steps with flat ₹ pricing starting at ₹4,999/mo</span></li>
                                 </ul>
                             </div>
                         </div>

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Terms of Service | Enterprise Agreement',
-    description: 'SwanDigitals Terms of Service. Governed by Indian laws. SLAs, uptime guarantees, and acceptable use policy for enterprise customers.',
-    keywords: ['Terms of Service', 'Enterprise Syllabus', 'SLA Guarantee', 'Chatbot Service Agreement', 'Legal Terms'],
+    title: 'Terms of Service | SwanDigitals',
+    description: 'SwanDigitals Terms of Service. Governed by Indian laws. Billing, service description, and acceptable use policy for our customers.',
+    keywords: ['Terms of Service', 'WhatsApp Chatbot Agreement', 'SME Chatbot Service Agreement', 'Legal Terms'],
     alternates: {
         canonical: 'https://swandigitals.com/terms',
     },
@@ -61,13 +61,13 @@ export default function TermsPage() {
                         <h2 className="text-2xl font-bold text-slate-900 mb-4">2. Service Description</h2>
                         <div className="text-slate-700 space-y-4">
                             <p>
-                                SwanDigitals provides an enterprise AI-powered chatbot platform that enables customers to:
+                                SwanDigitals provides a cloud-hosted AI-powered customer engagement platform for Indian small and medium businesses that enables customers to:
                             </p>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Build and deploy conversational AI chatbots</li>
-                                <li>Integrate with third-party systems (CRM, helpdesk, etc.)</li>
+                                <li>Build and deploy conversational AI chatbots across WhatsApp, Facebook, and web chat</li>
+                                <li>Deploy AI calling agents for inbound and outbound +91 phone calls</li>
+                                <li>Integrate with supported third-party systems (HubSpot, Calendly, Razorpay, Mautic, n8n, and others on request)</li>
                                 <li>Analyze conversation data and performance metrics</li>
-                                <li>Deploy on cloud or on-premise infrastructure</li>
                             </ul>
                             <p>
                                 Service tiers, features, and limitations are described in our <Link href="/pricing" className="text-purple-600 hover:underline">Pricing Page</Link>.
@@ -167,24 +167,24 @@ export default function TermsPage() {
 
                     {/* Section 7 */}
                     <div className="mb-12">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Service Level Agreement (SLA)</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Service Availability</h2>
                         <div className="text-slate-700 space-y-4">
                             <table className="w-full border border-slate-200 rounded-lg overflow-hidden">
                                 <thead className="bg-slate-100">
                                     <tr>
                                         <th className="p-3 text-left">Plan</th>
-                                        <th className="p-3 text-left">Uptime SLA</th>
+                                        <th className="p-3 text-left">Support Response</th>
                                         <th className="p-3 text-left">Credit</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-slate-200">
-                                    <tr><td className="p-3">Starter</td><td className="p-3">99.0%</td><td className="p-3">5% per 1% below SLA</td></tr>
-                                    <tr><td className="p-3">Professional</td><td className="p-3">99.9%</td><td className="p-3">10% per 0.1% below SLA</td></tr>
-                                    <tr><td className="p-3">Enterprise</td><td className="p-3">99.99%</td><td className="p-3">Custom</td></tr>
+                                    <tr><td className="p-3">Growth Hub</td><td className="p-3">Best-effort</td><td className="p-3">Case-by-case</td></tr>
+                                    <tr><td className="p-3">Performance Pro</td><td className="p-3">Priority support</td><td className="p-3">Case-by-case</td></tr>
+                                    <tr><td className="p-3">Scale</td><td className="p-3">Priority support</td><td className="p-3">Case-by-case</td></tr>
                                 </tbody>
                             </table>
                             <p className="text-sm text-slate-500">
-                                SLA excludes scheduled maintenance (with 48h notice) and force majeure events.
+                                We work to maintain high availability, excluding scheduled maintenance (with 48h notice) and force majeure events.
                             </p>
                         </div>
                     </div>
@@ -200,8 +200,7 @@ export default function TermsPage() {
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>SwanDigitals acts as Data Processor for Customer Data</li>
                                 <li>You remain Data Controller for End User data</li>
-                                <li>Enterprise customers may request a signed DPA</li>
-                                <li>Healthcare customers require a Business Associate Agreement (BAA)</li>
+                                <li>Customers may request a signed Data Processing Agreement (DPA)</li>
                             </ul>
                         </div>
                     </div>

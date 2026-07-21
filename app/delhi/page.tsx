@@ -30,7 +30,7 @@ export default function DelhiPage() {
         }
     ];
 
-    const stats = [{"value": "90%", "label": "Ticket Deflection"}, {"value": "30%", "label": "Sales Lift"}, {"value": "< 5s", "label": "Resolution Time"}, {"value": "100%", "label": "Scalability"}];
+    const stats = [{"value": "10", "label": "Indian Languages"}, {"value": "24/7", "label": "AI Support"}, {"value": "Fast", "label": "Resolution Time"}, {"value": "7 Days", "label": "To Go Live"}];
 
     return (
         <LocationPageTemplate

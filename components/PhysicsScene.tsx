@@ -118,8 +118,8 @@ export default function PhysicsScene({ onTriggerDashboard }: PhysicsSceneProps) 
                             />
                             <FeatureCard
                                 icon={<Shield className="w-8 h-8" />}
-                                title="Enterprise Security"
-                                description="SOC 2 compliant with bank-level encryption"
+                                title="Secure by Design"
+                                description="Data hosted in India, encrypted end-to-end"
                                 color="from-blue-500 to-cyan-500"
                             />
                             <FeatureCard

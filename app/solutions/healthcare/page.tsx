@@ -3,8 +3,8 @@ import HealthcareContent from './HealthcareContent';
 
 export const metadata: Metadata = {
     title: 'Healthcare AI Chatbot India | Clinic & Hospital Automation',
-    description: 'Empower your clinic or hospital with a 24/7 sovereign AI chatbot. Automated triage, patient scheduling, and SOAP notes. Fully HIPAA and DPDP compliant.',
-    keywords: ['Healthcare AI Chatbot', 'Clinic Appointment Bot', 'Patient Triage AI', 'SOAP Note AI Generator', 'HIPAA Compliant Medical Bot'],
+    description: 'Give your clinic or hospital a 24/7 AI chatbot for patient bookings, reminders, FAQs, and report delivery on WhatsApp. Built with DPDP 2023 in mind.',
+    keywords: ['Healthcare AI Chatbot', 'Clinic Appointment Bot', 'Patient Reminder AI', 'Clinic WhatsApp Bot', 'DPDP-aware Medical Bot'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/healthcare',
     },
@@ -69,7 +69,7 @@ export default function HealthcarePage() {
                 name: "Is patient data safe? What about DPDP compliance?",
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Patient conversations are encrypted end-to-end and stored exclusively on India-based servers. We do not sell or share data with any third party. Our architecture is aligned with India's Digital Personal Data Protection (DPDP) Act. You remain the data controller at all times."
+                    text: "Patient conversations are encrypted end-to-end and stored exclusively on India-based servers. We do not sell or share data with any third party. We're built with India's Digital Personal Data Protection (DPDP) Act in mind. You remain the data controller at all times."
                 }
             },
             {

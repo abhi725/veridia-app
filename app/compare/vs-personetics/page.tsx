@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Personetics Alternative | Active Customer Support AI',
-    description: 'Compare SwanDigitals and Personetics. Combine proactive financial alerts with a complete, multi-channel customer inbox.',
-    keywords: ['Personetics Alternative', 'Personetics vs SwanDigitals', 'Banking CRM'],
+    title: 'Personetics Alternative for Indian SMEs | Chat & Voice Support',
+    description: 'Compare SwanDigitals and Personetics. Go beyond finance alerts with a full chat plus voice inbox for Indian SMEs on flat rupee pricing.',
+    keywords: ['Personetics Alternative', 'Personetics vs SwanDigitals', 'SME Support AI'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-personetics',
     },
@@ -16,37 +16,37 @@ export default function VsPersoneticsPage() {
             competitorName="Personetics"
             slug="vs-personetics"
             heroTitle="SwanDigitals vs Personetics"
-            heroSubtitle="Do more than just send financial alerts. Resolve customer queries instantly across WhatsApp, email, and voice."
-            aboutCompetitor="Personetics is designed to analyze transaction history and send automated personal finance tips to users."
-            competitorStrengths="Good at analyzing bank transactions and sending personal budget alerts."
-            realityCheck="Personetics is built to show charts and suggest savings. But when a customer replies to those messages with a real problem, Personetics cannot help. SwanDigitals handles the entire support process when users actually need help."
+            heroSubtitle="Personetics is enterprise finance-engagement software. For an Indian SME, SwanDigitals resolves customer queries across WhatsApp, web chat and +91 voice in one inbox."
+            aboutCompetitor="Personetics builds enterprise software that analyzes transaction history and sends automated personal-finance insights to a bank's users."
+            competitorStrengths="Strong at analyzing bank transactions and delivering personalized financial insights at enterprise scale."
+            realityCheck="Personetics is built to surface finance insights inside large banks, not to run everyday customer conversations, and it is sized for enterprise budgets. SwanDigitals handles the actual support work for an SME: WhatsApp, web chat and +91 calling in one inbox, in 10 Indian languages. Where Personetics may fit better: large banks wanting deep, data-driven financial personalization."
             comparisonRows={[
-                { feature: "Main Focus", SwanDigitals: "Solving Customer Problems", competitor: "Showing Finance Tips" },
-                { feature: "Agent Inbox", SwanDigitals: "Built-in for support teams", competitor: "Not included or very basic" },
-                { feature: "WhatsApp Support", SwanDigitals: "Native and deep integration", competitor: "Limited features" },
-                { feature: "Voice AI Support", SwanDigitals: "Included out of the box", competitor: "No voice features" },
-                { feature: "Data Control", SwanDigitals: "Run on your own local servers", competitor: "Dependent on public cloud" }
+                { feature: "Main Focus", SwanDigitals: "Chat + Voice Support", competitor: "Finance Insights" },
+                { feature: "Agent Inbox", SwanDigitals: "Built-in for support teams", competitor: "Not the core product" },
+                { feature: "WhatsApp Support", SwanDigitals: "Native and deep", competitor: "Limited features" },
+                { feature: "Voice AI", SwanDigitals: "Included (+91 calls)", competitor: "No voice features" },
+                { feature: "Best Fit", SwanDigitals: "Indian SMEs", competitor: "Large banks" }
             ]}
             reasonsToSwitch={[
                 {
                     title: "A Complete Support System",
-                    description: "Do not just send alerts. Give your customers an easy way to resolve issues the moment they have a question."
+                    description: "Do more than send alerts. Give customers an easy way to get answers the moment they have a question, across chat and voice."
                 },
                 {
-                    title: "True Multi-Channel Chat",
-                    description: "Connect with your banking users on WhatsApp, SMS, or phone calls using our built-in Voice AI."
+                    title: "Chat and Voice in One Inbox",
+                    description: "Reach customers on WhatsApp, Facebook and web chat, plus inbound and outbound +91 calls, all in a single workspace."
                 },
                 {
-                    title: "Unified Agent View",
-                    description: "When the AI cannot answer a question, the chat moves to a human agent in the exact same workspace."
+                    title: "Priced for an SME",
+                    description: "Flat rupee plans from ₹4,999/mo through Razorpay, with no per-message markup and no enterprise contracts."
                 }
             ]}
-            targetPersona="Enterprise"
-            verdict="You need a complete customer service system and conversational AI to resolve real tickets, rather than just an analytics tool."
+            targetPersona="You are a large bank that wants deep, data-driven financial personalization and insight engines rather than an everyday support inbox."
+            verdict="You are an Indian SME that needs a real customer support system across chat and voice, not just an analytics or insights tool."
             faqs={[
                 {
                     question: "Where is my data stored?",
-                    answer: "All your data stays inside India. We support hosting on secure local cloud servers, or we can install the system directly on your own private company servers."
+                    answer: "All your data is hosted on servers in India and kept aware of India's DPDP Act of 2023. Payments run securely through Razorpay, and there is no lock-in."
                 },
                 {
                     question: "Can we pay Meta directly for WhatsApp messages?",

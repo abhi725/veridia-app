@@ -13,7 +13,7 @@ export default function TemplatesContent() {
             description: "Handle FAQ, ticket creation, order status, and escalation to agents",
             category: "Customer Service",
             intents: 50,
-            users: "200+"
+            users: "Popular"
         },
         {
             icon: <ShoppingCart className="w-8 h-8" />,
@@ -21,31 +21,31 @@ export default function TemplatesContent() {
             description: "Product recommendations, order tracking, returns, and checkout help",
             category: "Retail",
             intents: 45,
-            users: "150+"
+            users: "Popular"
         },
         {
             icon: <Stethoscope className="w-8 h-8" />,
-            title: "Healthcare Intake Bot",
-            description: "Appointment scheduling, symptom triage, insurance verification",
+            title: "Clinic Appointment Bot",
+            description: "Appointment scheduling, reminders, and basic patient queries",
             category: "Healthcare",
             intents: 35,
-            users: "80+"
+            users: "Growing"
         },
         {
             icon: <Landmark className="w-8 h-8" />,
-            title: "Banking Assistant",
-            description: "Account inquiries, transaction history, fraud alerts, loan applications",
+            title: "Loan & EMI Enquiry Bot",
+            description: "Application status, EMI reminders, and document checklist for NBFCs, insurance and loan agents",
             category: "Finance",
             intents: 55,
-            users: "100+"
+            users: "Growing"
         },
         {
             icon: <Users className="w-8 h-8" />,
             title: "HR Helpdesk",
-            description: "PTO requests, benefits questions, onboarding, policy information",
+            description: "Leave requests, benefits questions, onboarding, policy information",
             category: "Employee",
             intents: 40,
-            users: "120+"
+            users: "Growing"
         },
         {
             icon: <Settings className="w-8 h-8" />,
@@ -53,7 +53,7 @@ export default function TemplatesContent() {
             description: "Password resets, software requests, troubleshooting, ticket routing",
             category: "IT",
             intents: 35,
-            users: "180+"
+            users: "New"
         },
         {
             icon: <Briefcase className="w-8 h-8" />,
@@ -61,7 +61,7 @@ export default function TemplatesContent() {
             description: "Lead qualification, meeting scheduling, product info, pricing inquiries",
             category: "Sales",
             intents: 30,
-            users: "90+"
+            users: "Popular"
         },
         {
             icon: <MessageSquare className="w-8 h-8" />,
@@ -69,7 +69,7 @@ export default function TemplatesContent() {
             description: "Customizable FAQ handler with smart fallback and human handoff",
             category: "General",
             intents: 25,
-            users: "300+"
+            users: "Popular"
         }
     ];
 
@@ -80,7 +80,7 @@ export default function TemplatesContent() {
             <Hero
                 badge="📦 Template Marketplace"
                 title="Pre-Built Chatbot Templates"
-                subtitle="Launch 10x faster with industry-specific templates. Customize and deploy in under a week."
+                subtitle="Launch faster with industry-specific templates. Customize and deploy in under a week."
                 primaryCTA={{ text: "Browse Templates", href: "#templates" }}
                 secondaryCTA={{ text: "Book a Demo", href: "/demo" }}
             />
@@ -90,9 +90,9 @@ export default function TemplatesContent() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div><div className="text-4xl font-bold">15+</div><div className="text-white/80">Templates</div></div>
-                        <div><div className="text-4xl font-bold">500+</div><div className="text-white/80">Pre-built Intents</div></div>
+                        <div><div className="text-4xl font-bold">300+</div><div className="text-white/80">Pre-built Intents</div></div>
                         <div><div className="text-4xl font-bold">7 Days</div><div className="text-white/80">Avg Deployment</div></div>
-                        <div><div className="text-4xl font-bold">10+</div><div className="text-white/80">Indian Languages</div></div>
+                        <div><div className="text-4xl font-bold">10</div><div className="text-white/80">Indian Languages</div></div>
                     </div>
                 </div>
             </section>

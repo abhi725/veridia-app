@@ -31,8 +31,8 @@ const industries = [
         points: ["Schedule and confirm appointments with AI.", "Send automated prescription reminders.", "Share lab results securely via voice.", "Conduct post-consultation feedback surveys."]
     },
     {
-        id: 'enterprise', icon: <Building2 />, title: "Enterprise",
-        points: ["Manage routine IT or HR support tickets.", "Send compliance updates instantly to teams.", "Streamline meeting follow-ups.", "Handle vendor coordination automatically."]
+        id: 'enterprise', icon: <Building2 />, title: "Small Business Ops",
+        points: ["Manage routine staff or customer queries.", "Send appointment and payment updates instantly.", "Streamline follow-up calls.", "Handle vendor coordination automatically."]
     },
     {
         id: 'retail', icon: <ShoppingCart />, title: "Retail & E-Commerce",
@@ -110,8 +110,8 @@ export default function VoiceAgentContent() {
                         className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4"
                     >
                         {[
-                            { label: "Human-Like Accuracy", val: "98%" },
-                            { label: "Productivity Boost", val: "4X" },
+                            { label: "Natural, Human-Like Voice", val: "10 Languages" },
+                            { label: "Call Handling", val: "Inbound + Outbound" },
                             { label: "Availability", val: "24/7" },
                             { label: "Missed Calls", val: "Zero" }
                         ].map((stat, i) => (
@@ -280,7 +280,7 @@ export default function VoiceAgentContent() {
                             {[
                                 { title: "Define the Purpose", desc: "Choose what your agent will handle: booking, support, lead qualification, or FAQs." },
                                 { title: "Build the Agent", desc: "Use the builder to create the conversation flow. Add questions, replies, and actions." },
-                                { title: "Connect Tools", desc: "Link your CRM, calendar, or tools like HubSpot and Salesforce seamlessly." },
+                                { title: "Connect Tools", desc: "Link your CRM and calendar with tools like HubSpot and Calendly seamlessly." },
                                 { title: "Deploy & Monitor", desc: "Test thoroughly and go live. Monitor call transcripts to refine operations." }
                             ].map((step, i) => (
                                 <motion.div
@@ -303,13 +303,13 @@ export default function VoiceAgentContent() {
             {/* 6. Integrations */}
             <IntegrationCloud
                 integrations={[
-                    { name: 'Salesforce', color: '#00A1E0', image: '/integrations/salesforce.png', category: 'CRM' },
                     { name: 'HubSpot', color: '#FF7A59', image: '/integrations/hubspot.png', category: 'CRM' },
-                    { name: 'Zendesk', color: '#03363D', image: '/integrations/zendesk.png', category: 'Support' },
-                    { name: 'Slack', color: '#4A154B', image: '/integrations/slack.png', category: 'Chat' },
+                    { name: 'Calendly', color: '#006BFF', image: '/integrations/calendly.png', category: 'Scheduling' },
+                    { name: 'Razorpay', color: '#0C2451', image: '/integrations/razorpay.png', category: 'Payments' },
+                    { name: 'n8n', color: '#EA4B71', image: '/integrations/n8n.png', category: 'Automation' },
                     { name: 'SIP Telephony', color: '#F22F46', category: 'Voice' },
                 ]}
-                note="PowerUp AI Voice Agents With 2000+ Integrations"
+                note="Native Integrations, Plus n8n Workflows for Everything Else"
             />
 
             {/* 7. FAQs */}

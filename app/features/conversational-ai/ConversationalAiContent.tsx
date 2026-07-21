@@ -7,18 +7,18 @@ import { MessageSquare, Brain, Zap, Users, Shield, Globe } from 'lucide-react';
 
 export default function ConversationalAiContent() {
     const capabilities = [
-        { icon: <MessageSquare className="w-6 h-6" />, title: "Multi-Turn Conversations", desc: "Remember context across 100+ message exchanges. Handle complex, multi-step interactions naturally." },
+        { icon: <MessageSquare className="w-6 h-6" />, title: "Multi-Turn Conversations", desc: "Remember context across long conversations. Handle complex, multi-step interactions naturally." },
         { icon: <Brain className="w-6 h-6" />, title: "Context Awareness", desc: "Understand references to previous topics, maintain state across sessions, and personalize responses." },
-        { icon: <Zap className="w-6 h-6" />, title: "Instant Responses", desc: "<100ms response latency. Feel as fast as talking to a human, even at scale." },
+        { icon: <Zap className="w-6 h-6" />, title: "Instant Responses", desc: "Fast, natural response times. Feel as quick as talking to a human, even at scale." },
         { icon: <Users className="w-6 h-6" />, title: "Personality Customization", desc: "Define your brand voice, tone, and personality. Create consistent on-brand experiences." },
         { icon: <Shield className="w-6 h-6" />, title: "Safe Responses", desc: "Built-in guardrails prevent harmful outputs, hallucinations, and off-topic responses." },
-        { icon: <Globe className="w-6 h-6" />, title: "100+ Languages", desc: "Native multilingual support with automatic language detection and translation." }
+        { icon: <Globe className="w-6 h-6" />, title: "10 Indian Languages", desc: "Native multilingual support with automatic language detection and translation." }
     ];
 
     const models = [
-        { name: "Gemini Pro", desc: "Google's most capable model for complex reasoning and generation", use: "Enterprise conversations" },
-        { name: "Gemini Flash", desc: "Optimized for speed and cost-efficiency", use: "High-volume support" },
-        { name: "Rasa NLU", desc: "Open-source NLU for privacy-focused deployments", use: "On-premise setups" },
+        { name: "Advanced Reasoning Model", desc: "Our most capable model for complex reasoning and generation", use: "Detailed conversations" },
+        { name: "Fast Response Model", desc: "Optimized for speed and cost-efficiency", use: "High-volume support" },
+        { name: "Custom NLU Engine", desc: "Purpose-built for Indian-language intent understanding", use: "Regional language support" },
         { name: "Custom Models", desc: "Fine-tuned models for domain-specific terminology", use: "Specialized industries" }
     ];
 
@@ -27,7 +27,7 @@ export default function ConversationalAiContent() {
             <Hero
                 badge="💬 Conversational AI"
                 title="AI That Actually Converses"
-                subtitle="Powered by Gemini and Rasa. Multi-turn conversations that remember context, understand nuance, and feel natural."
+                subtitle="Powered by advanced AI. Multi-turn conversations that remember context, understand nuance, and feel natural."
                 primaryCTA={{ text: "See It in Action", href: "/demo" }}
                 secondaryCTA={{ text: "View All Features", href: "/features" }}
             />
@@ -36,10 +36,10 @@ export default function ConversationalAiContent() {
             <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">&lt;100ms</div><div className="text-white/80">Response Time</div></div>
-                        <div><div className="text-4xl font-bold">100+</div><div className="text-white/80">Turn Memory</div></div>
-                        <div><div className="text-4xl font-bold">97%</div><div className="text-white/80">Accuracy Rate</div></div>
-                        <div><div className="text-4xl font-bold">100+</div><div className="text-white/80">Languages</div></div>
+                        <div><div className="text-4xl font-bold">Fast</div><div className="text-white/80">Response Time</div></div>
+                        <div><div className="text-4xl font-bold">Multi</div><div className="text-white/80">Turn Memory</div></div>
+                        <div><div className="text-4xl font-bold">High</div><div className="text-white/80">Accuracy</div></div>
+                        <div><div className="text-4xl font-bold">10</div><div className="text-white/80">Indian Languages</div></div>
                     </div>
                 </div>
             </section>
@@ -65,7 +65,7 @@ export default function ConversationalAiContent() {
             {/* AI Models */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Powered by Leading AI Models</h2>
+                    <h2 className="text-3xl font-bold text-center mb-12">Powered by Advanced AI Models</h2>
                     <div className="space-y-6">
                         {models.map((model, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -98,7 +98,7 @@ export default function ConversationalAiContent() {
                             <div className="bg-slate-800 rounded-lg p-3 text-white max-w-xs">Yes, and can you also tell me if my discount was applied?</div>
                         </div>
                         <div className="flex gap-3 justify-end">
-                            <div className="bg-purple-500 rounded-lg p-3 text-white max-w-xs">Here's your tracking: track.swandigitals.com/12345. And yes, your 10% loyalty discount saved you $24.50 on this order! 🎉</div>
+                            <div className="bg-purple-500 rounded-lg p-3 text-white max-w-xs">Here's your tracking: track.swandigitals.com/12345. And yes, your 10% loyalty discount was applied to this order! 🎉</div>
                             <div className="w-8 h-8 bg-purple-500 rounded-full flex-shrink-0"></div>
                         </div>
                     </div>

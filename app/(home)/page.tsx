@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import HomePageContent from './HomePageContent';
 
 export const metadata: Metadata = {
-    title: 'Most reliable, and enterprise ready Indian chatbot',
-    description: 'Deploy sovereign AI chatbots & voice agents in India. 100% data privacy, on-premise deployment. ₹10k pilot. Banking, healthcare, IT helpdesk automation.',
-    keywords: ['AI Chatbot India', 'On-Premise AI', 'Voice AI India', 'Data Privacy', 'WhatsApp Chatbot India', 'Banking AI', 'Customer Service AI'],
+    title: 'Reliable AI chatbot & voice agent for Indian SMEs',
+    description: 'Deploy AI chat and voice agents for your Indian business. Data hosted in India, flat ₹ pricing starting ₹4,999/mo. WhatsApp, retail, and local services automation.',
+    keywords: ['AI Chatbot India', 'Voice AI India', 'Data Privacy', 'WhatsApp Chatbot India', 'SME AI India', 'Customer Service AI'],
     alternates: {
         canonical: 'https://swandigitals.com',
     },

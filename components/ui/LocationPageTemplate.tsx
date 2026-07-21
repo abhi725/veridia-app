@@ -45,14 +45,14 @@ export default function LocationPageTemplate({
         icpFocusText = "Connect agents directly to your Docker containers, local API endpoints, and n8n webhooks. Deploy updates at Git speed without exposing staging keys.";
         localFrictionText = `For high-growth ${city} teams, engineering velocity is everything. Standard SaaS chatbots isolate conversations in external silos. SwanDigitals integrates directly with your production databases and local APIs, removing platform noise and allowing product teams to build secure, low-latency loops.`;
     } else if (isBfsi) {
-        icpFocusTitle = "Enterprise Scale, Sovereign Compliant, BKC Ready";
-        icpFocusText = "Fully aligned with RBI IT cybersecurity frameworks and DPDP 2023. Rest assured with 100% localized Indian data residency.";
-        localFrictionText = `In the high-frequency financial and retail hubs of ${city}, data security is non-negotiable. SwanDigitals provides localized, high-scale request parsing that prevents sensitive customer financial records or PII from crossing borders or feeding public model training sets.`;
+        icpFocusTitle = `Built for ${city}'s Growing Businesses`;
+        icpFocusText = "Data hosted in India, built with DPDP 2023 in mind. No lock-in, cancel anytime.";
+        localFrictionText = `In the busy business hubs of ${city}, data security and quick answers matter. SwanDigitals keeps customer conversations hosted in India, so sensitive customer details never cross borders or feed public model training sets.`;
     } else {
-        // Corporate / Enterprise ops / Healthcare
+        // Corporate / Operations / Retail
         icpFocusTitle = "Optimized for HITEC City & Chennai Industrial Operations";
-        icpFocusText = "Slash operational overheads, automate complex multi-lingual dealer queries, and streamline HIPAA-aligned triage workflows.";
-        localFrictionText = `For corporate operators in ${city}, managing distributed supply chain networks, patient triage, and multi-lingual dealer communications is a major operational bottleneck. SwanDigitals automates 90% of routine inquiries, letting your core operations focus on SLA-critical escalations.`;
+        icpFocusText = "Slash operational overheads and automate complex multi-lingual customer queries with AI trained on your own documents.";
+        localFrictionText = `For corporate operators in ${city}, managing distributed supply chain networks and multi-lingual customer communications is a major operational bottleneck. SwanDigitals automates the majority of routine inquiries, letting your core operations focus on the escalations that matter.`;
     }
 
     const breadcrumbSchema = {
@@ -88,18 +88,18 @@ export default function LocationPageTemplate({
             },
             {
                 '@type': 'Question',
-                name: "How does the platform isolate corporate financial records from public training sets?",
+                name: "How does the platform keep customer data secure and private?",
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "We offer private cloud and fully air-gapped on-premise deployments. In these modes, the vector databases, operational logs, and LLM orchestration layers run entirely within your enterprise security perimeter. No data is transmitted to public external model vendors."
+                    text: "SwanDigitals is a cloud-hosted platform with your data hosted in India, built with DPDP 2023 in mind. Your conversations are never used to train public AI models, and there's no long-term lock-in — you can export your data and leave anytime."
                 }
             },
             {
                 '@type': 'Question',
-                name: "What infrastructure stack is required to run a self-hosted Voicebot agent?",
+                name: "Do I need any special infrastructure to use the Voicebot agent?",
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "For on-premise deployments, we support standard Kubernetes (k8s) orchestration. The minimum footprint runs on commodity hardware with NVIDIA Tensor Core GPUs (e.g., A10G or T4). We integrate natively with your local SIP trunks or cloud telephony providers (Twilio, Tata Tele, Airtel)."
+                    text: "No — SwanVoice is fully cloud-hosted, so there's nothing to install or maintain on your end. We handle the telephony setup and connect your dedicated number, and you're live in about a week."
                 }
             }
         ]
@@ -111,12 +111,12 @@ export default function LocationPageTemplate({
             answer: `Yes. Our NLU is natively trained on Indian code-switching patterns (Hinglish, Tamil-English, Telugu-English) and supports fluent conversations in English, Hindi, and ${languageNotes}. It preserves context even when users switch scripts.`
         },
         {
-            question: "How does the platform isolate corporate financial records from public training sets?",
-            answer: "We offer private cloud and fully air-gapped on-premise deployments. In these modes, the vector databases, operational logs, and LLM orchestration layers run entirely within your enterprise security perimeter. No data is transmitted to public external model vendors."
+            question: "How does the platform keep customer data secure and private?",
+            answer: "SwanDigitals is a cloud-hosted platform with your data hosted in India, built with DPDP 2023 in mind. Your conversations are never used to train public AI models, and there's no long-term lock-in — you can export your data and leave anytime."
         },
         {
-            question: "What infrastructure stack is required to run a self-hosted Voicebot agent?",
-            answer: "For on-premise deployments, we support standard Kubernetes (k8s) orchestration. The minimum footprint runs on commodity hardware with NVIDIA Tensor Core GPUs. We integrate natively with your local SIP trunks or cloud telephony providers."
+            question: "Do I need any special infrastructure to use the Voicebot agent?",
+            answer: "No — SwanVoice is fully cloud-hosted, so there's nothing to install or maintain on your end. We handle the telephony setup and connect your dedicated number, and you're live in about a week."
         }
     ];
 
@@ -135,7 +135,7 @@ export default function LocationPageTemplate({
             <Hero
                 badge={`📍 ${city} Edition`}
                 title={`${city}-First Autonomous AI Employees for High-Growth Teams`}
-                subtitle={`Deploy custom, self-hosted Chatbots and Voicebot Agents that handle customer interactions, scheduling, and outbound qualification. Architected for ${city} enterprises with Zero Data Egress security.`}
+                subtitle={`Set up AI Chatbots and Voicebot Agents that handle customer interactions, scheduling, and outbound qualification — hosted in India, live in about a week.`}
                 primaryCTA={{ text: "Deploy Free Staging Prototype", href: "/demo" }}
                 secondaryCTA={{ text: "Calculate ROI", href: "/roi-calculator" }}
             />
@@ -171,11 +171,11 @@ export default function LocationPageTemplate({
                                 </div>
                                 <div className="flex items-center gap-3 text-xs text-slate-500">
                                     <CheckCircle className="w-4 h-4 text-emerald-500 shrink-0" />
-                                    <span>RBI & DPDP 2023 compliance aligned</span>
+                                    <span>DPDP 2023 aware, data hosted in India</span>
                                 </div>
                                 <div className="flex items-center gap-3 text-xs text-slate-500">
                                     <CheckCircle className="w-4 h-4 text-emerald-500 shrink-0" />
-                                    <span>100% local hosting or on-premise execution</span>
+                                    <span>100% data hosted in India, no lock-in</span>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +301,7 @@ export default function LocationPageTemplate({
                                             <span>voice_call_session.json</span>
                                         </div>
                                         <div className="space-y-2 text-xs md:text-sm">
-                                            <div><span className="text-orange-400">latency_ms:</span> 420ms</div>
+                                            <div><span className="text-orange-400">call_status:</span> "connected"</div>
                                             <div><span className="text-orange-400">dialect:</span> "vernacular_indian_accent"</div>
                                             <div><span className="text-orange-400">intent_detected:</span> "schedule_visit"</div>
                                         </div>
@@ -338,49 +338,49 @@ export default function LocationPageTemplate({
                 </div>
             </section>
 
-            {/* Section D: "Zero Egress" Architecture Moat (Sovereign AI Focus) */}
+            {/* Section D: Data & Privacy (India-Hosted Focus) */}
             <section className="py-20 lg:py-28 bg-slate-900 text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent pointer-events-none" />
                 <div className="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7 space-y-6 text-left">
                             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-orange-400 bg-orange-400/10 border border-orange-400/20 rounded-full">
-                                Sovereign Architecture
+                                Data & Privacy
                             </span>
                             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
-                                The Zero-Egress Security Moat
+                                Your Data, Hosted in India
                             </h2>
                             <p className="text-lg text-slate-300 leading-relaxed">
-                                Unlike public AI models, SwanDigitals executes entirely inside your security perimeter. We deploy local open-weight LLMs, ensuring that confidential customer records, conversations, and internal API staging credentials never leak to public training pools or cross borders.
+                                SwanDigitals is a cloud-hosted platform built for Indian businesses. Your customer conversations and data are hosted in India, built with DPDP 2023 in mind, and are never used to train public AI models.
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                                 <div className="flex gap-3">
                                     <Server className="w-5 h-5 text-orange-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-sm text-white">On-Premises Air-Gap</h4>
-                                        <p className="text-slate-400 text-xs mt-1 leading-relaxed">Run completely offline with secure local models on your own GPU nodes.</p>
+                                        <h4 className="font-bold text-sm text-white">Hosted in India</h4>
+                                        <p className="text-slate-400 text-xs mt-1 leading-relaxed">Your data stays on Indian cloud infrastructure — no cross-border transfers.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-3">
                                     <Shield className="w-5 h-5 text-orange-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-sm text-white">DPDP & RBI Aligned</h4>
-                                        <p className="text-slate-400 text-xs mt-1 leading-relaxed">Meet localized compliance audits without losing the benefits of next-gen AI.</p>
+                                        <h4 className="font-bold text-sm text-white">DPDP 2023 Aware</h4>
+                                        <p className="text-slate-400 text-xs mt-1 leading-relaxed">Built with India's data protection law in mind, so you can adopt AI without compliance headaches.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:col-span-5 bg-slate-800/80 border border-slate-700/50 p-8 md:p-10 rounded-3xl space-y-6 relative overflow-hidden text-left shadow-2xl">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl"></div>
-                            <h3 className="font-bold text-lg text-white">Sovereign Deployment Modes</h3>
+                            <h3 className="font-bold text-lg text-white">How We Host Your Data</h3>
                             <div className="space-y-4">
                                 <div className="p-4 bg-slate-900 rounded-xl border border-slate-800">
-                                    <div className="font-bold text-xs text-orange-400">Mode 01 — Sovereign Private Cloud</div>
-                                    <p className="text-slate-400 text-[11px] mt-1.5 leading-relaxed">Dedicated virtual private cloud (VPC) in AWS/GCP Mumbai ap-south-1 region.</p>
+                                    <div className="font-bold text-xs text-orange-400">Mode 01 — Cloud Hosting (India)</div>
+                                    <p className="text-slate-400 text-[11px] mt-1.5 leading-relaxed">Your data is hosted on secure cloud infrastructure based in India.</p>
                                 </div>
                                 <div className="p-4 bg-slate-900 rounded-xl border border-slate-800">
-                                    <div className="font-bold text-xs text-orange-400">Mode 02 — Air-Gapped Data Center</div>
-                                    <p className="text-slate-400 text-[11px] mt-1.5 leading-relaxed">Deploy on internal bare-metal GPU clusters behind your corporate firewall.</p>
+                                    <div className="font-bold text-xs text-orange-400">Mode 02 — No Lock-In</div>
+                                    <p className="text-slate-400 text-[11px] mt-1.5 leading-relaxed">Flat monthly pricing with no annual contracts. Export your data and leave anytime.</p>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +438,7 @@ export default function LocationPageTemplate({
                 <div className="max-w-4xl mx-auto px-5 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Transform Your Customer Operations in {city}</h2>
                     <p className="text-lg text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Talk to our solutions team to implement sovereign, secure AI chatbots that integrate directly with your databases and workflows.
+                        Talk to our solutions team to set up secure AI chatbots that integrate directly with your databases and workflows.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <Link href="/demo" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">

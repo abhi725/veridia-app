@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Intercom Alternative in India | AI Support for Indian Enterprise',
-    description: 'Compare SwanDigitals vs Intercom. Ditch massive per-seat licenses for an AI-native omnichannel platform built for India.',
-    keywords: ['Intercom Alternative India', 'Intercom vs SwanDigitals', 'AI Helpdesk Pricing'],
+    title: 'Intercom Alternative for Indian SMEs | Chat, Voice & Flat Pricing',
+    description: 'Compare SwanDigitals vs Intercom. Ditch per-seat and per-resolution charges for chat plus +91 voice in one inbox on flat rupee pricing.',
+    keywords: ['Intercom Alternative India', 'Intercom vs SwanDigitals', 'SME Helpdesk Pricing'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-intercom',
     },
@@ -15,41 +15,40 @@ export default function VsIntercomPage() {
         <ComparisonPageTemplate
             competitorName="Intercom"
             slug="vs-intercom"
-            heroTitle="Intercom Alternative for Indian Enterprises: Native AI, Flat Pricing"
-            heroSubtitle="Avoid seat pricing and per-resolution charges. Switch to a flat-rate customer helpdesk featuring native voice, chat, and Indian language comprehension."
-            aboutCompetitor="Intercom specializes in beautiful customer messaging interfaces and interactive onboarding widgets."
-            competitorStrengths="A highly polished interface, intuitive product tour widgets, and excellent proactive support capabilities."
-            realityCheck="Intercom charges per seat, per customer reached, and per automated answer. As your traffic grows, your support software bill climbs unpredictably. SwanDigitals gives you a flat license with unlimited agents and sessions, so scaling support doesn't scale your billing."
+            heroTitle="Intercom Alternative for Indian SMEs: Chat, Voice, Flat Pricing"
+            heroSubtitle="Avoid per-seat and per-resolution charges. Get WhatsApp, web chat and +91 voice in one inbox, in 10 Indian languages, on flat rupee pricing."
+            aboutCompetitor="Intercom specializes in polished customer messaging interfaces and interactive onboarding widgets."
+            competitorStrengths="A highly polished interface, intuitive product-tour widgets, and strong proactive messaging."
+            realityCheck="Intercom charges per seat, per person reached and per automated answer, so as your traffic grows your bill climbs unpredictably, which is hard for a small or mid-sized Indian business. SwanDigitals gives you a flat rupee plan with chat and +91 voice in one inbox. Where Intercom may fit better: well-funded global SaaS companies focused on in-app product tours and onboarding."
             comparisonRows={[
-                { feature: "Pricing Model", SwanDigitals: "Flat Platform Fee", competitor: "Per Seat + AI Fees" },
-                { feature: "Focus Market", SwanDigitals: "India (DPDP Compliant)", competitor: "Global / US" },
+                { feature: "Pricing Model", SwanDigitals: "Flat from ₹4,999/mo", competitor: "Per Seat + AI Fees" },
+                { feature: "Best Fit", SwanDigitals: "Indian SMEs", competitor: "Global / US SaaS" },
                 { feature: "WhatsApp API", SwanDigitals: "Native & Deep", competitor: "Basic Integration" },
-                { feature: "Voice AI", SwanDigitals: "Included natively", competitor: "Not available" },
-                { feature: "Data Residency", SwanDigitals: "100% India", competitor: "US / EU Datacenters" }
+                { feature: "Voice AI", SwanDigitals: "Included (+91 calls)", competitor: "Not available" },
+                { feature: "Data Hosting", SwanDigitals: "Hosted in India", competitor: "US / EU Datacenters" }
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Predictable Flat Rates",
-                    description: "Grow your agent pool or AI ticket resolution counts. Your software licensing rate remains exactly the same."
+                    title: "Predictable Flat Rupee Rates",
+                    description: "Grow your agents or your AI resolutions and your plan price stays the same. No per-message markup."
                 },
                 {
-                    title: "Regional Language RAG",
-                    description: "Our AI understands regional Hinglish queries (e.g. 'refund kab milega') natively. No translation API layers needed."
+                    title: "Regional Language Support",
+                    description: "Our AI handles Hinglish queries (for example 'refund kab milega') and 10 Indian languages, auto-trained on your own content."
                 },
                 {
-                    title: "Local Indian Cloud Hosting",
-                    description: "Guaranteed data residency in Mumbai. Ensure complete alignment with DPDP 2023 guidelines."
+                    title: "Data Hosted in India",
+                    description: "Your customer data stays on servers in India, kept aware of the DPDP Act 2023, with chat and voice in one place."
                 }
             ]}
-            targetPersona="global enterprise teams that prioritise interactive in-app widgets and have the budget to support per-resolution software surcharges."
-            verdict="you are a scaling Indian brand that wants beautiful customer support interfaces without unpredictable pricing or offshore data storage."
+            targetPersona="You are a well-funded global SaaS company focused on in-app product tours and onboarding, with budget for per-resolution pricing."
+            verdict="You are a growing Indian SME that wants a polished support experience across chat and voice without unpredictable pricing or offshore data storage."
             faqs={[
                 {
                     question: "Is the agent workspace as polished as Intercom?",
-                    answer: "Yes. We offer a modern shared team inbox designed for fast resolution, alongside deeper integrations with local Indian tools like Razorpay and Delhivery."
+                    answer: "Yes. We offer a modern shared team inbox designed for fast resolution, alongside deeper integrations with local Indian tools like Razorpay."
                 }
             ]}
         />
     );
 }
-

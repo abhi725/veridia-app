@@ -3,7 +3,7 @@ import NewsroomContent from './NewsroomContent';
 
 export const metadata: Metadata = {
     title: 'SwanDigitals Newsroom | Latest News & Press Releases',
-    description: 'Latest news, press releases, and media coverage about SwanDigitals AI platform. India enterprise AI chatbot news.',
+    description: 'Latest news, press releases, and media coverage about SwanDigitals — customer engagement AI for Indian small and medium businesses.',
     alternates: {
         canonical: 'https://swandigitals.com/newsroom',
     },

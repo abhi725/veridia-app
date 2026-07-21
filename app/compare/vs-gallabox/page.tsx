@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Gallabox Alternative in India | Enterprise WhatsApp Automation',
-    description: 'Outgrowing Gallabox? Migrate to SwanDigitals for a true enterprise-grade AI helpdesk featuring Voice AI, omnichannel support, and flat SaaS pricing.',
+    title: 'Gallabox Alternative in India | WhatsApp + Voice AI for SMEs',
+    description: 'Outgrowing WhatsApp-only Gallabox? Switch to SwanDigitals for WhatsApp plus +91 AI calling in one inbox, 10 Indian languages, and flat rupee pricing.',
     keywords: ['Gallabox alternative', 'Gallabox pricing', 'Gallabox vs SwanDigitals', 'WhatsApp Automation Enterprise'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-gallabox',
@@ -16,37 +16,37 @@ export default function VsGallaboxPage() {
             competitorName="Gallabox"
             slug="vs-gallabox"
             heroTitle="Outgrow the WhatsApp-Only Silo of Gallabox"
-            heroSubtitle="Upgrade from a mid-market WhatsApp tool to an Enterprise Omni-channel AI Helpdesk with native Voice capabilities."
-            aboutCompetitor="Gallabox is a popular WhatsApp Business API provider targeting SMBs. They offer a shared inbox, drag-and-drop bot building, and built-in payment links via WhatsApp."
-            competitorStrengths="Very intuitive setup for small businesses, excellent built-in payment gateways, and a solid WhatsApp team inbox for manual agent collaboration."
-            realityCheck="Gallabox traps you in a WhatsApp-only bubble. As your company scales, you realize your customers also email you, call your phone lines, and visit your website. Managing Gallabox for WhatsApp and other platforms for email creates a fragmented system. Furthermore, their AI is basic compared to modern LLM standards. SwanDigitals unifies all support channels into one screen, powered by advanced RAG AI that resolves questions automatically."
+            heroSubtitle="Gallabox is WhatsApp-only. SwanDigitals adds Facebook, web chat and +91 AI phone calling in one inbox, in 10 Indian languages, on flat rupee plans."
+            aboutCompetitor="Gallabox is a popular WhatsApp Business API provider targeting Indian SMBs. They offer a shared inbox, drag-and-drop bot building, and built-in payment links via WhatsApp."
+            competitorStrengths="Very intuitive setup for small businesses, handy built-in WhatsApp payment links, and a solid WhatsApp team inbox for manual agent collaboration."
+            realityCheck="Gallabox keeps you in a WhatsApp-only bubble. But your customers also message on Facebook, visit your website, and call your phone. Managing WhatsApp in one tool and calls elsewhere fragments your data. SwanDigitals unifies WhatsApp, Facebook, web chat and +91 AI calling on one screen, and auto-trains on your website, menu or documents to answer questions automatically."
             reasonsToSwitch={[
                 {
-                    title: "Omnichannel Unity",
-                    description: "Don't isolate your WhatsApp team. SwanDigitals unifies WhatsApp, Web Chat, Email, and Voice Calls into a single, cohesive timeline for your agents."
+                    title: "One Inbox, All Channels",
+                    description: "Don't isolate your WhatsApp team. SwanDigitals unifies WhatsApp, Facebook, web chat, and +91 phone calls into a single, cohesive timeline for your agents."
                 },
                 {
-                    title: "Enterprise Grade Generative AI",
-                    description: "Move beyond simple button-based bots. SwanDigitals's LLM reads your company knowledge base to have fluid, human-like conversations that actually resolve issues."
+                    title: "Auto-Trains on Your Business",
+                    description: "Move beyond simple button-based bots. Our AI learns from your website, menu or documents to have natural conversations that actually resolve queries."
                 },
                 {
-                    title: "Native Voice AI Capabilities",
-                    description: "SwanDigitals goes beyond text. We provide native Voice AI agents that can handle incoming phone calls 24/7 in 10+ Indian languages."
+                    title: "+91 Voice AI Calling",
+                    description: "SwanDigitals goes beyond text. Our Voice AI handles inbound reception and outbound follow-up calls on +91 numbers, in 10 Indian languages."
                 }
             ]}
             comparisonRows={[
-                { feature: "Channels", SwanDigitals: "WhatsApp, Voice, Web, Email, IG", competitor: "Primarily WhatsApp" },
-                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
-                { feature: "Generative AI Capabilities", SwanDigitals: "Advanced (Secure Cloud & Local LLMs)", competitor: "Basic / Templated" },
-                { feature: "Enterprise SLA Ticketing", SwanDigitals: true, competitor: "Limited" },
-                { feature: "DPDP Act Focus", SwanDigitals: "Strict Indian Data Residency", competitor: "Standard" }
+                { feature: "Channels", SwanDigitals: "WhatsApp, Facebook, Web, Voice", competitor: "Primarily WhatsApp" },
+                { feature: "+91 Voice AI Calling", SwanDigitals: true, competitor: false },
+                { feature: "AI Agent", SwanDigitals: "Auto-trains on your site/menu/docs", competitor: "Basic / Templated" },
+                { feature: "Indian Languages", SwanDigitals: "10 Indian languages", competitor: "Limited" },
+                { feature: "Pricing", SwanDigitals: "Flat from ₹4,999/mo", competitor: "Per-Tier / Add-ons" }
             ]}
-            targetPersona="You are a small local business that strictly wants to send WhatsApp payment links and manage a few customer chats manually."
-            verdict="You are a scaling mid-market or enterprise company that needs to automate 90% of support across ALL channels (Voice, Web, Email, WhatsApp) securely."
+            targetPersona="you only want to send WhatsApp payment links and manage a few chats manually on one channel — Gallabox is a clean, affordable way to do exactly that."
+            verdict="you are an Indian SME that wants WhatsApp, Facebook, web chat and +91 AI calling in one inbox, 10 Indian languages, and flat rupee pricing with no per-message markup."
             faqs={[
                 {
                     question: "Where is my customer data stored?",
-                    answer: "All customer data is stored securely in our Mumbai database servers. This ensures your business remains fully compliant with India's DPDP Act of 2023 and local regulatory guidelines."
+                    answer: "Your customer data is hosted in India. SwanDigitals is built to be DPDP-2023 aware and processes payments securely via Razorpay, with no lock-in."
                 },
                 {
                     question: "Can we pay Meta directly for WhatsApp business messages?",

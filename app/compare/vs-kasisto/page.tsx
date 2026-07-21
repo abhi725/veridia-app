@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Kasisto Alternative | Smart Banking AI for India',
-    description: 'Compare SwanDigitals and Kasisto. Simple, secure banking AI built for Indian languages and local data hosting.',
-    keywords: ['Kasisto Alternative', 'Kasisto vs SwanDigitals', 'Banking AI India'],
+    title: 'Kasisto Alternative for Indian SMEs | Affordable Chat & Voice AI',
+    description: 'Compare SwanDigitals and Kasisto. Simple chat and voice AI in 10 Indian languages, hosted in India, on flat rupee pricing.',
+    keywords: ['Kasisto Alternative', 'Kasisto vs SwanDigitals', 'Chat AI India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-kasisto',
     },
@@ -16,37 +16,37 @@ export default function VsKasistoPage() {
             competitorName="Kasisto"
             slug="vs-kasisto"
             heroTitle="SwanDigitals vs Kasisto"
-            heroSubtitle="Smart banking AI built for Indian languages and local data hosting. Stop struggling with tools designed only for US banks."
-            aboutCompetitor="Kasisto is a US company that builds AI for large financial institutions in America."
-            competitorStrengths="Strong US banking integrations, compliance with US laws, and finance models built for American users."
-            realityCheck="Kasisto is built for US banks. But for Indian teams, it lacks real understanding of local languages like Hindi, Tamil, or Marathi. It also struggles with unique Indian banking rules and local data privacy laws."
+            heroSubtitle="Kasisto is enterprise banking AI built for large US institutions. For an Indian SME, it is overkill and overpriced. SwanDigitals gives you chat and voice in 10 Indian languages, hosted in India."
+            aboutCompetitor="Kasisto is a US company that builds conversational AI for large financial institutions in America."
+            competitorStrengths="Strong US banking integrations and finance-specific models built for large American institutions."
+            realityCheck="Kasisto is built for big US banks with big budgets and long procurement cycles, which does not fit a small or mid-sized Indian business. SwanDigitals gives you WhatsApp, web chat and +91 calling in one inbox, in 10 Indian languages, live in days on flat rupee pricing. Where Kasisto may fit better: very large banks needing deep, custom core-banking AI."
             comparisonRows={[
-                { feature: "Primary Market", SwanDigitals: "India and emerging markets", competitor: "USA and Europe" },
-                { feature: "Indian Languages", SwanDigitals: "Native understanding (Hindi, Tamil, etc.)", competitor: "Basic translation only" },
-                { feature: "Local Hosting", SwanDigitals: "Fully offline on your own servers", competitor: "Cloud or hybrid only" },
-                { feature: "Voice AI", SwanDigitals: "Handles Indian accents naturally", competitor: "Requires third-party tools" },
-                { feature: "Pricing Plan", SwanDigitals: "Simple, flat subscription", competitor: "Expensive US rates" }
+                { feature: "Primary Market", SwanDigitals: "Indian SMEs", competitor: "Large US & EU banks" },
+                { feature: "Indian Languages", SwanDigitals: "10 Indian languages", competitor: "Basic translation only" },
+                { feature: "Data Hosting", SwanDigitals: "Hosted in India", competitor: "US-focused cloud" },
+                { feature: "Voice AI", SwanDigitals: "Included (+91 calls)", competitor: "Requires third-party tools" },
+                { feature: "Pricing Plan", SwanDigitals: "Flat from ₹4,999/mo", competitor: "Expensive enterprise rates" }
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Built for Indian Compliance",
-                    description: "We follow RBI guidelines and local data laws from day one. You do not need to adapt US rules to fit Indian systems."
+                    title: "Priced for an Indian SME",
+                    description: "No enterprise contracts or procurement committees. Flat rupee plans from ₹4,999/mo, paid simply through Razorpay."
                 },
                 {
-                    title: "Real Indian Language NLU",
-                    description: "Customers often mix Hindi, English, and regional words. SwanDigitals understands this natural way of speaking perfectly."
+                    title: "Real Indian Language Support",
+                    description: "Customers often mix Hindi, English and regional words. SwanDigitals handles this natural way of speaking across 10 Indian languages."
                 },
                 {
-                    title: "Total Data Ownership",
-                    description: "Store everything on your own secure servers. Your customer financial data never leaves your company network."
+                    title: "Chat and Voice Together",
+                    description: "WhatsApp, Facebook and web chat plus inbound and outbound +91 calling, all in one inbox that auto-trains on your own content."
                 }
             ]}
-            targetPersona="Enterprise"
-            verdict="You are an Indian bank or financial firm that needs smart AI, local compliance, and native Indian language support."
+            targetPersona="You are a very large bank or financial institution that needs deep, custom core-banking AI and has the budget and teams for a long enterprise rollout."
+            verdict="You are an Indian SME that wants smart chat and voice automation in local languages, hosted in India, without enterprise pricing."
             faqs={[
                 {
                     question: "Where is my data stored?",
-                    answer: "All your data stays inside India. We support hosting on secure local cloud servers, or we can install the system directly on your own private company servers."
+                    answer: "All your data is hosted on servers in India and kept aware of India's DPDP Act of 2023. Payments run securely through Razorpay, and there is no lock-in."
                 },
                 {
                     question: "Can we pay Meta directly for WhatsApp messages?",

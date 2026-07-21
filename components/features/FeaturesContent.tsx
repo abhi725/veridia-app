@@ -98,7 +98,7 @@ export default function FeaturesContent() {
             description: "Purpose-built NLU models with robust memory and semantic search integration.",
             cards: [
                 { title: "Context-Aware RAG Memory", desc: "Reads entire history of a ticket. Uses Vector RAG database to query documents and return factual answers." },
-                { title: "Multilingual NLU (10+ Languages)", desc: "Native processing of Hindi, Tamil, Telugu, Kannada, Malayalam, Hinglish etc. without translation API overhead." },
+                { title: "Multilingual NLU (10 Indian Languages)", desc: "Native processing of Hindi, Tamil, Telugu, Kannada, Malayalam, Hinglish etc. without translation API overhead." },
                 { title: "Zero-Hallucination Safe Fallback", desc: "AI refuses to answer if not present in manuals, and escalates gracefully with brief context tags." },
                 { title: "Sentiment-Driven Escalation", desc: "Detects frustrated or angry user inputs, pauses bot automation, and instantly flags live agent." },
                 { title: "Intent Extraction", desc: "Captures entities like dates, ticket ID, Aadhaar card patterns, and links to direct workflows." },
@@ -152,7 +152,7 @@ export default function FeaturesContent() {
                 { title: "Unified Customer Profile", desc: "A single view of all historic chats, customer value, phone number, and support rating." },
                 { title: "Custom Data Attributes", desc: "Define custom fields like 'Customer Tier', 'City', or 'Plan Type' to segment and route users." },
                 { title: "Interactive Contact Labels", desc: "Tag contacts with 'VIP', 'Lead', or 'Spam' to visually highlight ticket priorities." },
-                { title: "CRM Bidirectional Sync", desc: "Integrate with Salesforce, HubSpot, and Zoho. Pull data in real-time, and sync chat outcomes." },
+                { title: "CRM Sync", desc: "Integrate with HubSpot to pull data in real-time and sync chat outcomes. Other CRMs available on request." },
                 { title: "Contact Search & Filter", desc: "Locate specific customers instantly using names, phone numbers, or metadata parameters." },
                 { title: "Historic Activity Timeline", desc: "Trace entire touchpoints: from website lead generation, to WhatsApp newsletters, to tickets." }
             ]
@@ -197,7 +197,7 @@ export default function FeaturesContent() {
                 { title: "Topic & Intent Distribution", desc: "Identify top customer issues (e.g. 'Refunds', 'Login Error') to improve knowledge bases." },
                 { title: "Agent Performance Metrics", desc: "Track resolved tickets, active hours, and average resolution times for every agent." },
                 { title: "Channel Volume Comparison", desc: "Visualize conversation traffic across WhatsApp, Email, Web, and Instagram to align resources." },
-                { title: "Custom Report Exports", desc: "Export granular raw data as CSV or automatically sync with BI tools like Power BI or Tableau." }
+                { title: "Custom Report Exports", desc: "Export granular raw data as CSV for your own reporting and BI tools." }
             ]
         },
         {
@@ -210,21 +210,21 @@ export default function FeaturesContent() {
                 { title: "Tone of Voice Configuration", desc: "Adjust the AI personality: choose between formal, friendly, empathetic, or highly energetic." },
                 { title: "Interactive Quick FAQ Modals", desc: "Present users with quick-clickable FAQ buttons inside the widget for immediate answers." },
                 { title: "Customer Portal Builder", desc: "Enable customers to view historic tickets, check open statuses, and self-resolve from a secure page." },
-                { title: "White-Labeled Dashboard", desc: "Rebrand the agent dashboard with your corporate identity, domains, and single-sign-on systems." }
+                { title: "White-Labeled Dashboard", desc: "Rebrand the agent dashboard with your corporate identity, domains, and branding." }
             ]
         },
         {
             id: 'security-compliance',
             badge: "🛡️ Security & Compliance",
-            title: "Sovereign AI. Bank-Grade Security.",
-            description: "Designed to meet the absolute strictest regulatory requirements in highly regulated sectors.",
+            title: "Secure, India-Hosted. No Lock-In.",
+            description: "Built for Indian SMEs — your data hosted in India, with straightforward, honest terms.",
             cards: [
-                { title: "True Air-Gapped On-Premises", desc: "Run the entire platform, databases, and local AI engines behind your corporate firewall." },
-                { title: "100% Indian Data Residency", desc: "All conversational logs, databases, and vector spaces strictly hosted in Mumbai cloud regions." },
-                { title: "DPDP Act 2023 Ready", desc: "Built-in consent builders, right-to-erase triggers, and detailed data logs aligning with local laws." },
+                { title: "No Lock-In, Cancel Anytime", desc: "Flat monthly pricing with no annual contracts. Leave whenever you like, no penalties." },
+                { title: "100% Indian Data Residency", desc: "All conversational logs, databases, and vector spaces strictly hosted in Indian cloud regions." },
+                { title: "DPDP 2023 Aware", desc: "Built-in consent builders, right-to-erase triggers, and detailed data logs aligning with local laws." },
                 { title: "AES-256 & TLS 1.3 Encryption", desc: "Data is fully encrypted at rest using AES-256 keys and strictly in transit via TLS 1.3." },
                 { title: "Automatic PII Masking", desc: "Dynamically redact Aadhaar cards, PAN numbers, credit cards, and UPI IDs before writing to logs." },
-                { title: "Granular RBAC & SAML SSO", desc: "Enforce department-level access controls and integrate with SAML 2.0 / corporate Active Directory." }
+                { title: "Simple Team Roles", desc: "Assign teammates as admins or agents with straightforward account-level permissions." }
             ]
         }
     ];
@@ -259,7 +259,7 @@ export default function FeaturesContent() {
         },
         {
             feature: "Data Sovereignty",
-            swanDigitals: "100% Indian Data Residency (Mumbai servers) out-of-the-box.",
+            swanDigitals: "100% Indian Data Residency out-of-the-box.",
             freshdesk: "Hosted in global US/EU server spaces.",
             intercom: "Global servers; no regional residency options.",
             zendesk: "Global hosting; expensive custom request.",
@@ -267,13 +267,13 @@ export default function FeaturesContent() {
             koreai: "Dedicated VPC available only on custom tiers."
         },
         {
-            feature: "Air-Gapped On-Premises",
-            swanDigitals: "Available (Full Docker self-hosted option with local LLM).",
-            freshdesk: "Not supported.",
-            intercom: "Not supported.",
-            zendesk: "Not supported.",
-            yellowai: "VPC hosting only; no true air-gapped on-premise.",
-            koreai: "VPC hosting only; no physical self-hosted option."
+            feature: "Contract Flexibility",
+            swanDigitals: "Flat monthly pricing, cancel anytime — no annual contracts.",
+            freshdesk: "Annual contracts common for better pricing.",
+            intercom: "Annual contracts required for discounts.",
+            zendesk: "Multi-year contracts typical for enterprise tiers.",
+            yellowai: "Custom annual contracts.",
+            koreai: "Multi-year enterprise contracts."
         },
         {
             feature: "Indian Language NLU",
@@ -305,7 +305,7 @@ export default function FeaturesContent() {
         { id: 'outbound', label: 'Outbound' },
         { id: 'agent-transfer', label: 'Agent Transfer' },
         { id: 'call-analytics', label: 'Analytics' },
-        { id: 'on-premises', label: 'On-Premises' },
+        { id: 'on-premises', label: 'Data & Security' },
         { id: 'integrations', label: 'Integrations' }
     ];
 
@@ -326,7 +326,7 @@ export default function FeaturesContent() {
             id: 'languages',
             badge: "🗣️ Native Languages",
             title: "Talk to Your Customers in Their Dialect",
-            description: "Native NLU support for 10+ regional Indian languages.",
+            description: "Native NLU support for 10 Indian languages.",
             isLanguagesGrid: true,
             cards: [
                 { title: "Native Dialect Processing", desc: "Trained directly on regional dialects, colloquial inputs, and specific local vocabulary." },
@@ -383,13 +383,13 @@ export default function FeaturesContent() {
         },
         {
             id: 'on-premises',
-            badge: "🧱 On-Premises Voice",
-            title: "Sovereign Voice Deployment for BFSI",
-            description: "Deploy your entire voice infrastructure within your own private network.",
+            badge: "🇮🇳 Data & Security",
+            title: "Your Voice Data, Hosted in India",
+            description: "Cloud-hosted in India, with no long-term lock-in.",
             cards: [
-                { title: "Air-Gapped Telephony", desc: "No voice data ever exits your network. Ideal for banks, NBFCs, and healthcare." },
-                { title: "Asterisk/SIP Trunking", desc: "Natively connects to your local Asterisk nodes and existing enterprise SIP gateways." },
-                { title: "Localized Speech Engine", desc: "ASR and TTS run on localized hardware GPUs. Zero public API calls, zero egress." }
+                { title: "India-Hosted Voice Data", desc: "Call recordings and transcripts are stored on Indian cloud infrastructure, built with DPDP 2023 in mind." },
+                { title: "Flexible, No Lock-In", desc: "Pay-as-you-go pricing with no annual contracts — cancel anytime." },
+                { title: "Fast, Natural Voice", desc: "Speech recognition and synthesis tuned for natural, low-latency conversations in Indian languages." }
             ]
         },
         {
@@ -399,8 +399,8 @@ export default function FeaturesContent() {
             description: "Synchronize call outcomes, fetch caller records, and update databases.",
             cards: [
                 { title: "Unified Helpdesk Sync", desc: "Transcripts and post-call summaries sync immediately with SwanDigitals omnichannel inbox." },
-                { title: "Salesforce & HubSpot Sync", desc: "Automatically update lead statuses, log call activity, and trigger follow-up tasks." },
-                { title: "Secure Database Inquiries", desc: "Securely query core systems to verify account details, balances, or order statuses." },
+                { title: "HubSpot Sync", desc: "Automatically update lead statuses, log call activity, and trigger follow-up tasks." },
+                { title: "Secure Database Inquiries", desc: "Securely query your systems to verify account details or order statuses." },
                 { title: "SIP Trunk Compatibility", desc: "Natively compatible with leading enterprise SIP trunks and local telecom providers." }
             ]
         }
@@ -409,7 +409,7 @@ export default function FeaturesContent() {
     const voiceComparison = [
         {
             feature: "Response Latency",
-            swanDigitalsVoice: "<500ms (Hyper-realistic, natural turn-taking).",
+            swanDigitalsVoice: "Fast, natural turn-taking — no robotic pauses.",
             exotel: "2-3s (Rigid IVR logic or delayed cloud webhook triggers).",
             ozonetel: "2-3s (Delayed webhook audio processing).",
             myoperator: "Legacy DTMF (No real-time dynamic conversational speech).",
@@ -440,12 +440,12 @@ export default function FeaturesContent() {
             yellowaiVoice: "High call-rate usage charge; cost prohibitive."
         },
         {
-            feature: "Air-Gapped On-Premises",
-            swanDigitalsVoice: "Available (Deploy speech nodes locally for sovereign security).",
-            exotel: "Cloud only.",
-            ozonetel: "Cloud only.",
-            myoperator: "Cloud only.",
-            yellowaiVoice: "Cloud only."
+            feature: "Setup & Go-Live",
+            swanDigitalsVoice: "Live in about a week — fully managed, no infrastructure needed.",
+            exotel: "Self-serve setup with technical configuration.",
+            ozonetel: "Requires technical onboarding.",
+            myoperator: "Basic self-serve setup.",
+            yellowaiVoice: "Enterprise onboarding cycles."
         },
         {
             feature: "Unified Helpdesk Sync",
@@ -500,7 +500,7 @@ export default function FeaturesContent() {
                         <p className="reveal text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                             {activeProduct === 'chatbot' 
                                 ? "AI that reads context, handles 13+ digital channels in one collaborative inbox, and deploys in days — not months."
-                                : "Human-like phone conversations powered by AI. Real-time NLU for 10+ Indian languages with sub-500ms latency, available 24/7."
+                                : "Human-like phone conversations powered by AI. Real-time NLU for 10 Indian languages with fast, natural responses, available 24/7."
                             }
                         </p>
 
@@ -530,8 +530,8 @@ export default function FeaturesContent() {
                         <div className="reveal mt-12 grid grid-cols-3 gap-4 max-w-2xl mx-auto">
                             {activeProduct === 'chatbot' ? (
                                 [
-                                    { text: "DPDP 2023 Ready" },
-                                    { text: "On-Premise Available" },
+                                    { text: "DPDP 2023 Aware" },
+                                    { text: "Data Hosted in India" },
                                     { text: "Live in 7 Days" }
                                 ].map((badge, idx) => (
                                     <div key={idx} className="bg-white/5 border border-white/10 py-3 px-2 rounded-2xl backdrop-blur-sm">
@@ -540,8 +540,8 @@ export default function FeaturesContent() {
                                 ))
                             ) : (
                                 [
-                                    { text: "<500ms Latency" },
-                                    { text: "10+ Indian Languages" },
+                                    { text: "Natural Voice AI" },
+                                    { text: "10 Indian Languages" },
                                     { text: "24/7 Availability" }
                                 ].map((badge, idx) => (
                                     <div key={idx} className="bg-white/5 border border-white/10 py-3 px-2 rounded-2xl backdrop-blur-sm">
@@ -689,7 +689,7 @@ export default function FeaturesContent() {
                                                     <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
                                                         <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold text-white mb-4">2</div>
                                                         <h4 className="font-bold mb-2">Real-Time Processing</h4>
-                                                        <p className="text-xs text-purple-200 leading-relaxed">ASR converts audio to text, NLU decides context and intent, TTS synthesizes high-quality response in &lt;500ms.</p>
+                                                        <p className="text-xs text-purple-200 leading-relaxed">ASR converts audio to text, NLU decides context and intent, TTS synthesizes a natural-sounding response in real time.</p>
                                                     </div>
                                                     <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
                                                         <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold text-white mb-4">3</div>
@@ -703,7 +703,7 @@ export default function FeaturesContent() {
                                         {/* SPECIAL LANGUAGES GRID */}
                                         {sec.isLanguagesGrid && (
                                             <div className="reveal grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-10">
-                                                {['Hindi', 'Hinglish', 'Tamil', 'Telugu', 'Marathi', 'Bengali', 'Kannada', 'Malayalam', 'Gujarati', 'Punjabi', 'Odia', 'English'].map((lang, idx) => (
+                                                {['English', 'Hindi', 'Marathi', 'Tamil', 'Telugu', 'Kannada', 'Gujarati', 'Bengali', 'Malayalam', 'Punjabi'].map((lang, idx) => (
                                                     <div key={idx} className="bg-white border border-slate-200 rounded-2xl p-4 text-center hover:border-purple-300 transition-colors shadow-sm">
                                                         <div className="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 mx-auto mb-2">
                                                             <MessageSquare className="w-4 h-4" />
@@ -744,7 +744,7 @@ export default function FeaturesContent() {
                             <div className="bg-orange-50/50 border border-orange-200 p-8 rounded-3xl text-center shadow-sm">
                                 <h3 className="font-extrabold text-slate-900 text-xl mb-2">Need phone support too?</h3>
                                 <p className="text-slate-600 text-sm mb-6 leading-relaxed">
-                                    SwanDigitals Voice AI handles incoming and outgoing customer calls in 10+ Indian languages with sub-500ms latency.
+                                    SwanDigitals Voice AI handles incoming and outgoing customer calls in 10 Indian languages with fast, natural responses.
                                 </p>
                                 <button 
                                     onClick={() => handleProductChange('voicebot')}

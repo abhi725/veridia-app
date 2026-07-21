@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'About SwanDigitals — Built in India for Indian Businesses',
-    description: 'SwanDigitals is an AI-powered customer support platform built in Pune. Our mission: give Indian businesses enterprise-grade support tools without the enterprise price tag.',
+    description: 'SwanDigitals is an AI-powered customer support platform built in Pune. Our mission: give Indian SMEs the customer support tools they need, without enterprise complexity or price tags.',
     keywords: ['About SwanDigitals', 'Indian AI Company', 'Customer Support Platform India', 'Pune Tech Company', 'Swati Gaikwad', 'Kiran Shelke'],
     alternates: {
         canonical: 'https://swandigitals.com/about',
@@ -35,7 +35,7 @@ const aboutSchema = {
             worksFor: { '@id': 'https://swandigitals.com/#organization' },
             url: 'https://swandigitals.com/about',
             sameAs: ['https://linkedin.com/company/swandigitals'],
-            description: 'Swati co-founded SwanDigitals to democratize enterprise-grade customer support for Indian businesses. With extensive expertise in customer success and business operations, she drives the company\'s customer-first mission.',
+            description: 'Swati co-founded SwanDigitals to give Indian SMEs affordable, easy-to-use customer support tools. With extensive expertise in customer success and business operations, she drives the company\'s customer-first mission.',
         },
         {
             '@type': 'Person',
@@ -45,7 +45,7 @@ const aboutSchema = {
             worksFor: { '@id': 'https://swandigitals.com/#organization' },
             url: 'https://swandigitals.com/about',
             sameAs: ['https://linkedin.com/company/swandigitals'],
-            description: 'Kiran leads engineering and product at SwanDigitals. Based in Pune, he builds compliant, sovereign AI communication technologies for Indian enterprises.',
+            description: 'Kiran leads engineering and product at SwanDigitals. Based in Pune, he builds AI communication technologies for Indian SMEs, hosted in India and built to be DPDP-2023 aware.',
         },
     ],
 };
@@ -94,7 +94,7 @@ export default function AboutPage() {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
                         <p className="text-2xl text-slate-700 leading-relaxed">
-                            Give Indian businesses — from a Pune startup to a Mumbai bank — the kind of customer support tools that used to cost crores and take months. <span className="text-orange-600 font-bold">Simple. Affordable. Actually sovereign.</span>
+                            Give Indian SMEs — from a Pune startup to a Mumbai retail chain — the kind of customer support tools that used to cost lakhs and take months. <span className="text-orange-600 font-bold">Simple. Affordable. Actually honest.</span>
                         </p>
                     </div>
 
@@ -106,11 +106,11 @@ export default function AboutPage() {
                         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="text-center">
                                 <h4 className="font-bold mb-1">Built for India</h4>
-                                <p className="text-sm text-slate-600">We understand DPDP, RBI, regional languages, and Indian enterprise budgets. This isn't Intercom with a rupee symbol.</p>
+                                <p className="text-sm text-slate-600">We understand the DPDP Act, regional languages, and Indian SME budgets. This isn't Intercom with a rupee symbol.</p>
                             </div>
                             <div className="text-center">
                                 <h4 className="font-bold mb-1">Your data is yours</h4>
-                                <p className="text-sm text-slate-600">We'll say it plainly: we don't read your customer conversations. On-prem or cloud — what happens in your inbox stays in your inbox.</p>
+                                <p className="text-sm text-slate-600">We'll say it plainly: your data is hosted in India, secured via Razorpay, and never sold or shared. No lock-in — export it anytime.</p>
                             </div>
                             <div className="text-center">
                                 <h4 className="font-bold mb-1">Fast, not perfect</h4>
@@ -134,7 +134,7 @@ export default function AboutPage() {
                             <h3 className="text-2xl font-bold text-slate-900 mb-1">Swati Gaikwad</h3>
                             <p className="text-sm text-orange-600 font-semibold mb-4">Co-Founder & CEO</p>
                             <p className="text-slate-600 text-sm leading-relaxed">
-                                Swati co-founded SwanDigitals to democratize enterprise-grade customer support for Indian businesses. With extensive expertise in customer success and business operations, she drives the company's customer-first mission.
+                                Swati co-founded SwanDigitals to give Indian SMEs affordable, easy-to-use customer support tools. With extensive expertise in customer success and business operations, she drives the company's customer-first mission.
                             </p>
                         </div>
 
@@ -146,7 +146,7 @@ export default function AboutPage() {
                             <h3 className="text-2xl font-bold text-slate-900 mb-1">Kiran Shelke</h3>
                             <p className="text-sm text-purple-600 font-semibold mb-4">Co-Founder & CTO</p>
                             <p className="text-slate-600 text-sm leading-relaxed">
-                                Kiran leads the engineering and product team. Based in Pune, he is dedicated to building robust, compliant, and sovereign AI communication technologies tailored for the scale of Indian enterprises.
+                                Kiran leads the engineering and product team. Based in Pune, he is dedicated to building robust AI communication technologies for Indian SMEs, hosted in India and built to be DPDP-2023 aware.
                             </p>
                         </div>
                     </div>
@@ -184,8 +184,8 @@ export default function AboutPage() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-                            <h3 className="font-bold text-lg mb-2">True On-Premise</h3>
-                            <p className="text-white/80 text-sm">Not just "India cloud hosting" — fully air-gapped deployment in your datacenter.</p>
+                            <h3 className="font-bold text-lg mb-2">Data Hosted in India</h3>
+                            <p className="text-white/80 text-sm">Not just a marketing line — your data lives on servers in India, secured via Razorpay.</p>
                         </div>
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
                             <h3 className="font-bold text-lg mb-2">Leadership-Led Support</h3>
@@ -196,8 +196,8 @@ export default function AboutPage() {
                             <p className="text-white/80 text-sm">No hidden costs, no per-conversation fees. Simple, predictable licensing.</p>
                         </div>
                         <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-                            <h3 className="font-bold text-lg mb-2">Compliance Ready</h3>
-                            <p className="text-white/80 text-sm">Designed for RBI, DPDP Act, and India's data localization requirements.</p>
+                            <h3 className="font-bold text-lg mb-2">DPDP-2023 Aware</h3>
+                            <p className="text-white/80 text-sm">Built with India's DPDP Act and data localization requirements in mind.</p>
                         </div>
                     </div>
                 </div>

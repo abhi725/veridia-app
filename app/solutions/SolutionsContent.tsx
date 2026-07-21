@@ -20,34 +20,34 @@ export default function SolutionsContent() {
             icp: "Customer Support Directors, E-Commerce Managers, Marketing Leads, and SaaS Operations Teams looking to automate multi-channel inquiries with zero human intervention.",
             heroImage: "/dashboard-screenshot.png",
             stats: [
-                { value: "90%", label: "Deflection Rate" },
-                { value: "<5s", label: "Response Time" },
-                { value: "3x", label: "Lead Lift" }
+                { value: "24/7", label: "Always-On Coverage" },
+                { value: "Fast", label: "Response Time" },
+                { value: "10", label: "Indian Languages" }
             ],
             keyFeatures: [
-                "WhatsApp Business API, Web Chat, Instagram DMs, and Telegram sync",
-                "Custom JSON schema validation for writing back to local CRMs & n8n webhooks",
-                "Code-switching NLU trained on Hinglish, Tamil-English, and regional dialects",
+                "WhatsApp Business API, Facebook Messenger, and Web Chat sync",
+                "Writes leads and conversation data straight into your CRM via HubSpot or n8n webhooks",
+                "Understands Hinglish, Tamil-English, and regional code-switching",
                 "Multi-turn conversation memory with context retention across visits",
-                "Zero data egress architecture — host on-premise or sovereign Indian cloud"
+                "Cloud-hosted on Indian servers, DPDP-2023 aware, no lock-in"
             ],
             bestFor: "High-volume customer support tickets, order status queries, lead scoring, product recommendations, and automated FAQ resolution."
         },
         voicebot: {
-            title: "Low-Latency Autonomous Voice AI Agent",
-            tagline: "Sub-500ms Vernacular Voice AI for Outbound Tele-qualification & Inbound Support",
-            icp: "Call Center Operations, Outbound Tele-sales Managers, BFSI Collections, Healthcare Schedulers, and Telecom teams looking to replace traditional IVR with human-like voice agents.",
+            title: "Natural-Sounding Voice AI Agent",
+            tagline: "Fast, Natural Vernacular Voice AI for Outbound Tele-qualification & Inbound Support",
+            icp: "Small business owners, reception teams, outbound tele-sales managers, and clinic front desks looking to replace traditional IVR with human-like voice agents on Indian (+91) numbers.",
             heroImage: "/dashboard-user.png",
             stats: [
-                { value: "<500ms", label: "Voice Latency" },
-                { value: "70%", label: "Call Cost Savings" },
+                { value: "Fast", label: "Voice Latency" },
+                { value: "Lower Cost", label: "vs Call Center" },
                 { value: "24/7", label: "Outbound Scale" }
             ],
             keyFeatures: [
                 "Vernacular Indian voice synthesis (Hindi, English, Marathi, Tamil, Telugu)",
-                "Direct SIP trunking, Airtel/Tata Tele integrations, and Twilio/Plivo VoIP hooks",
-                "Sub-500ms speech-to-text & text-to-speech orchestration pipeline",
-                "Automated Google Calendar, Outlook, and Salesforce meeting scheduler",
+                "Inbound and outbound calling on your own Indian (+91) phone number",
+                "Fast, natural speech-to-text and text-to-speech pipeline",
+                "Automated meeting scheduling via Calendly integration",
                 "Instant human escalation handoff with complete call audio transcript sync"
             ],
             bestFor: "Outbound tele-qualification, collection reminders, patient appointment scheduling, branch locator inquiries, and IVR deflection."
@@ -57,54 +57,46 @@ export default function SolutionsContent() {
     const useCases = [
         { 
             icon: <Headphones className="w-8 h-8 text-orange-600" />, 
-            title: "Customer Support Automation", 
-            desc: "Deflect up to 90% of routine inquiries across WhatsApp, Email, and Web chat while keeping CSAT scores above 95%.", 
-            link: "/solutions/customer-service", 
-            stats: "90% Deflection",
+            title: "Customer Support Automation",
+            desc: "Handle routine inquiries across WhatsApp, Facebook, and Web chat automatically while keeping customers happy.",
+            link: "/solutions/customer-service",
+            stats: "24/7 Coverage",
             icp: "Support & CX Leaders"
         },
-        { 
-            icon: <Users className="w-8 h-8 text-orange-600" />, 
-            title: "Employee & HR Experience", 
-            desc: "Automate internal HR policy questions, leave requests, IT hardware provisioning, and payroll FAQs for hybrid workforces.", 
-            link: "/solutions/employee-experience", 
-            stats: "50% Faster Resolution",
+        {
+            icon: <Users className="w-8 h-8 text-orange-600" />,
+            title: "Employee & Team Experience",
+            desc: "Automate internal HR policy questions, leave requests, IT access requests, and payroll FAQs for growing teams.",
+            link: "/solutions/employee-experience",
+            stats: "Faster Resolution",
             icp: "HR & People Operations"
         },
-        { 
-            icon: <Server className="w-8 h-8 text-orange-600" />, 
-            title: "Enterprise IT Helpdesk", 
-            desc: "Instant password resets, VPN access granting, active directory sync, and level-1 ticket triage without waiting in line.", 
-            link: "/solutions/it-helpdesk", 
-            stats: "₹5L Avg Monthly Savings",
-            icp: "IT & DevOps Directors"
+        {
+            icon: <Server className="w-8 h-8 text-orange-600" />,
+            title: "IT Helpdesk Support",
+            desc: "Instant password resets, software access requests, and level-1 ticket triage without waiting in line.",
+            link: "/solutions/it-helpdesk",
+            stats: "Faster Ticket Resolution",
+            icp: "IT & Ops Leads"
         },
-        { 
-            icon: <Briefcase className="w-8 h-8 text-orange-600" />, 
-            title: "Sales & Lead Qualification", 
-            desc: "Capture high-intent web visitors, score leads automatically, ask qualifying questions, and book calendar meetings 24/7.", 
-            link: "/solutions/sales", 
-            stats: "30% Sales Lift",
+        {
+            icon: <Briefcase className="w-8 h-8 text-orange-600" />,
+            title: "Sales & Lead Qualification",
+            desc: "Capture high-intent web visitors, score leads automatically, ask qualifying questions, and book calendar meetings 24/7.",
+            link: "/solutions/sales",
+            stats: "More Qualified Leads",
             icp: "Sales & Growth Marketers"
         }
     ];
 
     const industries = [
-        { 
-            icon: <Landmark className="w-8 h-8 text-blue-600" />, 
-            title: "Banking, Financial Services & Insurance (BFSI)", 
-            desc: "RBI-aligned and DPDP 2023 compliant virtual assistants. Air-gapped on-premise deployment for strict data residency.", 
-            link: "/solutions/banking", 
-            badge: "RBI & DPDP Aligned",
-            color: "border-blue-200 bg-blue-50/30" 
-        },
-        { 
-            icon: <Stethoscope className="w-8 h-8 text-emerald-600" />, 
-            title: "Healthcare & Pharmaceuticals", 
-            desc: "HIPAA-ready patient engagement bots. Automate symptom intake, appointment booking, and diagnostic report distribution.", 
-            link: "/solutions/healthcare", 
-            badge: "HIPAA & Patient Privacy",
-            color: "border-emerald-200 bg-emerald-50/30" 
+        {
+            icon: <Stethoscope className="w-8 h-8 text-emerald-600" />,
+            title: "Clinics, Hospitals & Pharmacies",
+            desc: "Automate appointment booking, reminders that cut no-shows, report delivery, and refill queries on WhatsApp and voice.",
+            link: "/solutions/healthcare",
+            badge: "Bookings & Reminders",
+            color: "border-emerald-200 bg-emerald-50/30"
         },
         { 
             icon: <ShoppingCart className="w-8 h-8 text-purple-600" />, 
@@ -131,15 +123,15 @@ export default function SolutionsContent() {
         },
         {
             question: "Can both Text Chatbot and Voicebot share the same knowledge base?",
-            answer: "Yes! SwanDigitals uses a unified sovereign memory layer. Once you upload your PDFs, database schemas, or FAQ documents, both text chatbots and voice AI agents access the exact same knowledge context."
+            answer: "Yes! Once you upload your PDFs, menus, brochures, or FAQ documents, both the text chatbot and the voice AI agent use the exact same knowledge base."
         },
         {
             question: "Is data stored in India? What about regulatory compliance?",
-            answer: "100% of customer conversational data, logs, and database records remain strictly within AWS/GCP Mumbai (ap-south-1) region. For BFSI or government institutions, we deploy full on-premise air-gapped models with zero external API dependencies, fully aligned with the DPDP Act 2023 and RBI guidelines."
+            answer: "Yes — customer conversation data and logs are hosted in India (AWS/GCP Mumbai region). We're built to be aware of the DPDP Act 2023, and there's no vendor lock-in — your data stays yours."
         },
         {
-            question: "How long does setup take for an enterprise solution?",
-            answer: "Most teams go live within 7 days. Day 1: Context mapping & database schemas. Day 3: Staging prototype sandbox. Day 7: Live production deployment with complete CRM webhook integration."
+            question: "How long does setup take?",
+            answer: "Most teams go live within 7 days. Day 1: Context mapping from your content. Day 3: Staging prototype sandbox. Day 7: Live production deployment with your CRM webhook integration."
         }
     ];
 
@@ -148,7 +140,7 @@ export default function SolutionsContent() {
             <Hero
                 badge="💡 Solutions Matrix"
                 title="Purpose-Built AI Solutions for Every Business Goal"
-                subtitle="Whether you're scaling customer support, deploying voice tele-qualification, or securing BFSI workflows, explore SwanDigitals' tailored product suites."
+                subtitle="Whether you're scaling customer support, deploying voice tele-qualification, or automating team operations, explore SwanDigitals' tailored product suites."
                 primaryCTA={{ text: "Explore Products", href: "#products" }}
                 secondaryCTA={{ text: "Book Custom Demo", href: "/demo" }}
             />
@@ -161,7 +153,7 @@ export default function SolutionsContent() {
                             <span className="text-orange-400 font-mono text-xs uppercase tracking-wider font-bold">⚡ Quick Summary / Key Takeaways</span>
                             <h2 className="text-xl md:text-2xl font-bold">Text Chatbot vs. Voicebot Agent at a Glance</h2>
                             <p className="text-slate-300 text-sm max-w-3xl leading-relaxed">
-                                SwanDigitals offers two core product lines: <strong>Text Chatbots</strong> (for WhatsApp, Web Chat, and Messaging) and <strong>Voicebot Agents</strong> (for Phone Calls, Tele-sales & IVR replacement). Both run on a shared sovereign memory layer with 100% Indian data residency.
+                                SwanDigitals offers two core product lines: <strong>Text Chatbots</strong> (for WhatsApp, Web Chat, and Messaging) and <strong>Voicebot Agents</strong> (for Phone Calls, Tele-sales & IVR replacement). Both run on the same shared knowledge base, hosted in India.
                             </p>
                         </div>
                         <div className="flex gap-3 shrink-0">
@@ -308,7 +300,7 @@ export default function SolutionsContent() {
                             Product Comparison Matrix
                         </h2>
                         <p className="text-slate-600 mt-2 text-sm">
-                            Side-by-side technical evaluation for enterprise architects and product managers
+                            Side-by-side comparison to help you pick the right fit for your business
                         </p>
                     </div>
 
@@ -330,13 +322,13 @@ export default function SolutionsContent() {
                                     </tr>
                                     <tr>
                                         <td className="p-4 md:p-6 font-bold text-slate-900 bg-slate-50/50">Interaction Latency</td>
-                                        <td className="p-4 md:p-6 border-l border-slate-100">Instant (&lt;2 seconds for complete multi-sentence responses)</td>
-                                        <td className="p-4 md:p-6 border-l border-slate-100">Sub-500ms real-time conversational streaming latency</td>
+                                        <td className="p-4 md:p-6 border-l border-slate-100">Instant, natural multi-sentence text responses</td>
+                                        <td className="p-4 md:p-6 border-l border-slate-100">Fast, natural real-time conversational voice</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 md:p-6 font-bold text-slate-900 bg-slate-50/50">Target Buyer (ICP)</td>
-                                        <td className="p-4 md:p-6 border-l border-slate-100">Customer Support Heads, E-Commerce Managers, D2C Growth Leads</td>
-                                        <td className="p-4 md:p-6 border-l border-slate-100">Call Center Ops Directors, Tele-sales Heads, BFSI Collections</td>
+                                        <td className="p-4 md:p-6 border-l border-slate-100">Small business owners, Support & CX Leads, D2C Growth Leads</td>
+                                        <td className="p-4 md:p-6 border-l border-slate-100">Business owners, Reception & Front Desk Teams, Tele-sales Leads</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 md:p-6 font-bold text-slate-900 bg-slate-50/50">Dialect & Languages</td>
@@ -345,8 +337,8 @@ export default function SolutionsContent() {
                                     </tr>
                                     <tr>
                                         <td className="p-4 md:p-6 font-bold text-slate-900 bg-slate-50/50">Data Residency</td>
-                                        <td className="p-4 md:p-6 border-l border-slate-100">AWS/GCP Mumbai ap-south-1 or On-Premise Air-Gap</td>
-                                        <td className="p-4 md:p-6 border-l border-slate-100">100% Indian telecom trunking & localized speech models</td>
+                                        <td className="p-4 md:p-6 border-l border-slate-100">Hosted in India (AWS/GCP Mumbai region)</td>
+                                        <td className="p-4 md:p-6 border-l border-slate-100">Indian telecom trunking & localized speech models</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 md:p-6 font-bold text-slate-900 bg-slate-50/50">Pricing Structure</td>
@@ -413,10 +405,10 @@ export default function SolutionsContent() {
                 <div className="max-w-7xl mx-auto px-5 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-blue-600 bg-blue-50 border border-blue-100 rounded-full mb-4">
-                            Regulated Sectors
+                            Industry Solutions
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-                            Industry-Specific Enterprise Blueprints
+                            Industry-Specific Solutions
                         </h2>
                     </div>
 
@@ -519,10 +511,10 @@ export default function SolutionsContent() {
                             SG
                         </div>
                         <div className="space-y-1">
-                            <div className="text-xs font-bold text-orange-600 uppercase tracking-wider">Solution Architecture Verified By</div>
+                            <div className="text-xs font-bold text-orange-600 uppercase tracking-wider">Meet the Founders</div>
                             <h4 className="text-base font-bold text-slate-900">Swati Gaikwad & Kiran Shelke</h4>
                             <p className="text-xs text-slate-500 leading-relaxed">
-                                Co-founders of SwanDigitals. Architecture verified for Indian DPDP Act 2023 compliance, sub-500ms voice latency, and zero data egress on-premise deployments.
+                                Co-founders of SwanDigitals. Built for Indian SMEs — DPDP Act 2023 aware, fast natural voice, and data hosted securely in India.
                             </p>
                         </div>
                     </div>

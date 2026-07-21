@@ -6,26 +6,26 @@ import Link from 'next/link';
 
 export default function VideosContent() {
     const categories = [
-        { name: "Product Demos", count: 12 },
-        { name: "Tutorials", count: 18 },
-        { name: "Expert Talks", count: 6 }
+        { name: "Product Demos", count: 2 },
+        { name: "Tutorials", count: 6 },
+        { name: "Expert Talks", count: 1 }
     ];
 
     const featuredVideo = {
         title: "SwanDigitals Platform Overview - 3 Minute Demo",
-        description: "See how easy it is to build, deploy, and scale AI chatbots with SwanDigitals",
+        description: "See how easy it is to set up your WhatsApp inbox and voice agent with SwanDigitals",
         duration: "3:24"
     };
 
     const videos = [
-        { title: "Getting Started with SwanDigitals", category: "Tutorial", duration: "8:45", views: "5.2K" },
-        { title: "Building Your First Chatbot", category: "Tutorial", duration: "12:30", views: "4.1K" },
-        { title: "Customizing the Team Inbox", category: "Tutorial", duration: "9:15", views: "2.8K" },
-        { title: "Advanced NLU Training", category: "Tutorial", duration: "15:10", views: "1.9K" },
-        { title: "Integrating with Salesforce", category: "Tutorial", duration: "10:45", views: "3.2K" },
-        { title: "Analytics Dashboard Walkthrough", category: "Demo", duration: "6:30", views: "2.4K" },
-        { title: "VPC & On-Premise Deployment Guide", category: "Demo", duration: "7:45", views: "1.5K" },
-        { title: "Deploying to WhatsApp", category: "Tutorial", duration: "7:20", views: "2.1K" }
+        { title: "Getting Started with SwanDigitals", category: "Tutorial", duration: "8:45", views: "Watch" },
+        { title: "Setting Up Your First WhatsApp Flow", category: "Tutorial", duration: "12:30", views: "Watch" },
+        { title: "Customizing the Team Inbox", category: "Tutorial", duration: "9:15", views: "Watch" },
+        { title: "Training Your Bot on Your Business Docs", category: "Tutorial", duration: "15:10", views: "Watch" },
+        { title: "Connecting HubSpot & Calendly", category: "Tutorial", duration: "10:45", views: "Watch" },
+        { title: "Analytics Dashboard Walkthrough", category: "Demo", duration: "6:30", views: "Watch" },
+        { title: "Setting Up SwanVoice for Your +91 Number", category: "Demo", duration: "7:45", views: "Watch" },
+        { title: "Deploying to WhatsApp", category: "Tutorial", duration: "7:20", views: "Watch" }
     ];
 
     return (
@@ -88,7 +88,7 @@ export default function VideosContent() {
                                 </div>
                                 <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">{video.category}</span>
                                 <h3 className="font-bold mt-2 group-hover:text-orange-600 transition-colors">{video.title}</h3>
-                                <p className="text-sm text-slate-500 mt-1">{video.views} views</p>
+                                <p className="text-sm text-slate-500 mt-1">{video.views}</p>
                             </div>
                         ))}
                     </div>

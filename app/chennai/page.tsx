@@ -3,7 +3,7 @@ import LocationPageTemplate from '@/components/ui/LocationPageTemplate';
 import { Landmark, Building2, Stethoscope, Headphones, Users, Server, Briefcase, ShoppingCart } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Industrial & Enterprise AI Chatbots in Chennai | SwanDigitals",
+    title: "Industrial & Manufacturing AI Chatbots in Chennai | SwanDigitals",
     description: "Optimize dealer operations and supply chain logistics with custom AI chatbots in Chennai. Native support for Tamil and English.",
     keywords: ["AI Chatbot Chennai", "Chennai Manufacturing AI", "Tamil AI Voice Agent", "Supply Chain Chatbot"],
     alternates: {
@@ -30,14 +30,14 @@ export default function ChennaiPage() {
         }
     ];
 
-    const stats = [{"value": "86%", "label": "Supply Chain Deflection"}, {"value": "Tamil", "label": "Native Support"}, {"value": "Flat", "label": "Monthly Pricing"}, {"value": "SLA", "label": "Guaranteed"}];
+    const stats = [{"value": "10", "label": "Indian Languages"}, {"value": "Tamil", "label": "Native Support"}, {"value": "Flat", "label": "Monthly Pricing"}, {"value": "7 Days", "label": "To Go Live"}];
 
     return (
         <LocationPageTemplate
             city="Chennai"
             state="Tamil Nadu"
-            ecosystemDesc="Chennai, the 'Detroit of India', is a global hub for automotive manufacturing, hardware engineering, and industrial services. Streamlining dealer operations, supply chain logistics, and multilingual customer queries is key to regional dominance."
-            industryFocus="manufacturing, logistics, and industrial enterprise"
+            ecosystemDesc="Chennai, the 'Detroit of India', is a hub for automotive manufacturing, hardware engineering, and industrial services. Streamlining dealer operations, supply chain logistics, and multilingual customer queries is key for SMEs here."
+            industryFocus="manufacturing, logistics, and industrial SMEs"
             localTerm="Chennai industrial ecosystem"
             languageNotes="Tamil and English"
             painPoint="managing dealer communications, parts dispatch requests, and supply chain updates across distributed, multilingual networks"

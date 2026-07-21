@@ -3,7 +3,7 @@ export default function usecasesrestaurantsPage() {
         <>
             <div className="mb-8">
                 <h1 className="text-3xl font-bold text-slate-900 mb-3">Restaurants & Delivery</h1>
-                <p className="text-lg text-slate-600">Automate WhatsApp table bookings and consolidate delivery apps.</p>
+                <p className="text-lg text-slate-600">Automate WhatsApp table bookings and unify WhatsApp + Facebook orders.</p>
             </div>
             
             
@@ -23,7 +23,7 @@ export default function usecasesrestaurantsPage() {
               </div>
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
                   <h4 className="font-medium text-slate-900 mb-2">Omnichannel Inbox</h4>
-                  <p className="text-slate-600">Merge UberEats/Zomato queries, Instagram DMs, and direct WhatsApp orders into one single screen for the front desk staff.</p>
+                  <p className="text-slate-600">Merge WhatsApp and Facebook orders into one single screen for the front desk staff.</p>
               </div>
           </div>
 

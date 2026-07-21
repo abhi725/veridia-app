@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Tidio Alternative in India | Smart AI Support Automation',
-    description: 'Tidio is fine for basic Shopify widgets. Switch to SwanDigitals for an AI Helpdesk that actually understands your customers in 10+ Indian languages.',
-    keywords: ['Tidio alternative', 'Tidio vs SwanDigitals', 'Live chat automation India', 'E-commerce AI Agent'],
+    title: 'Tidio Alternative in India | Smart Chat & Voice AI for SMEs',
+    description: 'Tidio is fine for basic widgets. SwanDigitals adds self-training AI, native +91 voice, and 10 Indian languages, on flat rupee pricing.',
+    keywords: ['Tidio alternative', 'Tidio vs SwanDigitals', 'Live chat automation India', 'SME AI Agent'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-tidio',
     },
@@ -16,41 +16,41 @@ export default function VsTidioPage() {
             competitorName="Tidio"
             slug="vs-tidio"
             heroTitle="Stop Building Rigid Chat Flowcharts"
-            heroSubtitle="Tidio keeps you trapped in basic templates. Upgrade to a smart AI Helpdesk built for real support and complex customer questions."
-            aboutCompetitor="Tidio is a simple web chat tool, popular for Shopify and WordPress stores. It offers basic templates where you drag and drop options to build a bot."
-            competitorStrengths="It is very fast to set up, has a clean design, and offers cheap starting prices for very small online shops."
-            realityCheck="Tidio relies on strict templates. If a customer asks a slightly different or multi-part question, the system breaks. You have to build dozens of flows manually. Tidio also lacks phone call support and the strong ticket systems required as your team grows. It is a starter tool that you will soon outgrow."
+            heroSubtitle="Tidio keeps you in basic templates. Upgrade to AI that trains on your content, plus native +91 voice, in 10 Indian languages."
+            aboutCompetitor="Tidio is a simple web chat tool, popular for Shopify and WordPress stores, with drag-and-drop flow templates for bots."
+            competitorStrengths="Very fast to set up, clean design, and cheap starting prices for small online shops."
+            realityCheck="Tidio relies on strict templates, so a slightly different or multi-part question can break the flow, and it lacks phone support for a growing team. SwanDigitals auto-trains on your content, adds native +91 voice, and handles 10 Indian languages, on flat rupee pricing. Where Tidio may fit better: very small shops that only need a simple chat widget for a few visitors a day."
             reasonsToSwitch={[
                 {
                     title: "Smart AI vs Flowcharts",
-                    description: "You do not need to build 50 bot flows. SwanDigitals reads your website and help files, answering complex questions instantly without manual rules."
+                    description: "You do not need to build dozens of bot flows. SwanDigitals reads your website and help files and answers complex questions instantly."
                 },
                 {
                     title: "Native Phone Call AI",
-                    description: "Tidio only handles text. SwanDigitals allows you to run smart voice agents to answer phone calls in the same dashboard."
+                    description: "Tidio only handles text. SwanDigitals runs smart +91 voice agents to answer and make calls from the same dashboard."
                 },
                 {
                     title: "Local Indian Languages",
-                    description: "Our AI understands Hinglish and 10+ Indian languages natively. Global tools fail here because they rely on slow translation plug-ins."
+                    description: "Our AI understands Hinglish and 10 Indian languages natively, without slow translation plug-ins."
                 }
             ]}
             comparisonRows={[
-                { feature: "AI Automation Style", SwanDigitals: "Smart Document Reading AI", competitor: "Rigid Flow Templates" },
+                { feature: "AI Automation Style", SwanDigitals: "Trains on your content", competitor: "Rigid Flow Templates" },
                 { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
-                { feature: "Target Customer", SwanDigitals: "Growing Brands & Teams", competitor: "Very Small Shopify Stores" },
-                { feature: "Indian Language NLP", SwanDigitals: "Native & Highly Accurate", competitor: "Plugin-Based Translation" },
-                { feature: "Data Residency", SwanDigitals: "100% India", competitor: "Global Servers" }
+                { feature: "Target Customer", SwanDigitals: "Growing Indian SMEs", competitor: "Very small shops" },
+                { feature: "Indian Languages", SwanDigitals: "10 Indian languages", competitor: "Plugin-based translation" },
+                { feature: "Data Hosting", SwanDigitals: "Hosted in India", competitor: "Global Servers" }
             ]}
-            targetPersona="You are a single seller who just started a store and only needs a basic chat box to talk to a few visitors a day."
-            verdict="You are a growing business that needs to handle thousands of complex questions automatically using real AI, not strict rules."
+            targetPersona="You are a very small shop that only needs a basic chat box to talk to a few visitors a day."
+            verdict="You are a growing Indian SME that needs real AI automation plus voice across chat and phone, not rigid template flows."
             faqs={[
                 {
                     question: "Where is my customer data stored and how is it secured?",
-                    answer: "We store all customer data on secure servers in India. This keeps your business compliant with local laws like the DPDP Act. We use AES-256 encryption for data at rest and TLS for data in transit to keep your files safe."
+                    answer: "We host all customer data on servers in India, kept aware of India's DPDP Act 2023. Data is encrypted in transit and at rest, payments run through Razorpay, and there is no lock-in."
                 },
                 {
                     question: "How does Meta direct billing work for WhatsApp conversations?",
-                    answer: "Instead of adding extra markup fees on your chats, we connect you directly to Meta's billing. You pay Meta directly at actual cost for your WhatsApp Business API conversations. We do not charge extra fees per message."
+                    answer: "Instead of adding markup fees on your chats, we connect you directly to Meta's billing. You pay Meta directly at actual cost for your WhatsApp Business API conversations. We do not charge extra per message."
                 },
                 {
                     question: "Can I port my existing WhatsApp Business API number to SwanDigitals?",

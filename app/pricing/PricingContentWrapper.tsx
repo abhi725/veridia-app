@@ -72,25 +72,24 @@ export default function PricingContentWrapper() {
             highlighted: true
         },
         {
-            name: "Sovereign Enterprise",
+            name: "Scale",
             price: "₹45,000+",
             period: "/month",
-            description: "For banks, healthcare & enterprises requiring data custody.",
-            badge: "RBI & DPDP COMPLIANT",
+            description: "For higher volumes & multi-location businesses.",
+            badge: "HIGH VOLUME",
             icon: <Shield className="w-6 h-6 text-orange-600" />,
             features: [
                 "Everything in Performance Pro, plus:",
-                "Deployment: Self-Hosted (Docker / Your Servers)",
-                "Data Residency: 100% On-Premises Isolation",
-                "AI Core: Local LLMs (zero external API calls)",
-                "Compliance: DPDP 2023 & RBI Ready",
-                "Network: Air-Gapped option (zero outbound calls)",
-                "Custom Core Banking / ERP Integrations",
+                "Higher call & message volume limits",
+                "Multi-location / multi-branch setup",
+                "Data hosted in India (DPDP 2023 aware)",
+                "Custom CRM / ERP integrations (on request)",
+                "Custom onboarding & agent training",
                 "Meta Fees: 0% Markup Direct Trunking",
-                "Support: 24/7 Named Solutions Engineer"
+                "Support: Priority + named account manager"
             ],
             exclusion: "Custom integrations beyond standard scope subject to scoping.",
-            cta: "Schedule Architecture Review",
+            cta: "Talk to Sales",
             ctaLink: "/contact"
         }
     ];
@@ -105,11 +104,11 @@ export default function PricingContentWrapper() {
             icon: <Phone className="w-6 h-6 text-orange-600" />,
             features: [
                 "No monthly commitment",
-                "10+ Indian Languages (Hindi, Tamil, Telugu, Marathi, Bengali + more)",
+                "10 Indian Languages (Hindi, Tamil, Telugu, Marathi, Bengali + more)",
                 "Inbound & Outbound Calling",
                 "Call Recording & Transcription",
                 "Live Agent Transfer",
-                "<500ms Voice Latency",
+                "Fast, natural voice conversations",
                 "Post-Call Summary in SwanDigitals Inbox",
                 "Support: Standard Email & Chat"
             ],
@@ -151,8 +150,8 @@ export default function PricingContentWrapper() {
                 "Volume Discounts Available",
                 "Multiple Dedicated Numbers",
                 "Custom Voice Personas",
-                "On-Premises Voice Stack Option",
-                "SIP Trunking on Your Infrastructure",
+                "Higher concurrent call capacity",
+                "Custom onboarding & call flows",
                 "Named Solutions Engineer",
                 "24/7 Dedicated Support"
             ],
@@ -176,8 +175,8 @@ export default function PricingContentWrapper() {
             answer: "WhatsApp conversations incur Meta's official fees. We pass these through at cost — zero markup, zero hidden charges. You pay exactly what Meta charges."
         },
         {
-            question: "Can I start on cloud and move to on-premises later?",
-            answer: "Yes. Your data, configurations, and AI training migrate seamlessly. Most enterprise clients start on cloud during pilot and move to on-prem at scale."
+            question: "Where is my data stored?",
+            answer: "Your conversation data and logs are hosted in India, and we're built to be aware of the DPDP Act 2023. There's no lock-in — you can export your data whenever you want."
         },
         {
             question: "What's the refundable pilot?",
@@ -474,13 +473,13 @@ export default function PricingContentWrapper() {
                                             <td className="py-4 text-center text-green-500 font-bold">✓</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-4 font-semibold text-slate-900">On-Premises Deploy</td>
+                                            <td className="py-4 font-semibold text-slate-900">Multi-Location Setup</td>
                                             <td className="py-4 text-center text-slate-300">—</td>
                                             <td className="py-4 text-center text-slate-300">—</td>
                                             <td className="py-4 text-center text-green-500 font-bold">✓</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-4 font-semibold text-slate-900">Air-Gapped Mode</td>
+                                            <td className="py-4 font-semibold text-slate-900">Custom CRM / ERP Integrations</td>
                                             <td className="py-4 text-center text-slate-300">—</td>
                                             <td className="py-4 text-center text-slate-300">—</td>
                                             <td className="py-4 text-center text-green-500 font-bold">✓</td>
@@ -524,9 +523,9 @@ export default function PricingContentWrapper() {
                                         </tr>
                                         <tr>
                                             <td className="py-4 font-semibold text-slate-900">Indian Languages</td>
-                                            <td className="py-4 text-center font-medium">10+</td>
-                                            <td className="py-4 text-center font-medium">10+</td>
-                                            <td className="py-4 text-center font-medium">10+ Custom</td>
+                                            <td className="py-4 text-center font-medium">10</td>
+                                            <td className="py-4 text-center font-medium">10</td>
+                                            <td className="py-4 text-center font-medium">10</td>
                                         </tr>
                                         <tr>
                                             <td className="py-4 font-semibold text-slate-900">Inbound + Outbound</td>
@@ -565,7 +564,7 @@ export default function PricingContentWrapper() {
                                             <td className="py-4 text-center text-green-500 font-bold">✓</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-4 font-semibold text-slate-900">On-Prem Voice Stack</td>
+                                            <td className="py-4 font-semibold text-slate-900">Higher Call Concurrency</td>
                                             <td className="py-4 text-center text-slate-300">—</td>
                                             <td className="py-4 text-center text-slate-300">—</td>
                                             <td className="py-4 text-center text-green-500 font-bold">✓</td>

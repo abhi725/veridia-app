@@ -8,8 +8,8 @@ import { Target, MessageSquare, Calendar, TrendingUp, FileText, Zap } from 'luci
 
 export const metadata: Metadata = {
     title: 'AI Sales Agent & Lead Gen Chatbot | Qualify Leads 24/7',
-    description: 'Turn visitors into SQLs with AI Sales Agents. 24/7 lead qualification, meeting scheduling, and CRM sync. Boost conversion rates by 30%.',
-    keywords: ['AI Sales Agent', 'Lead Generation Chatbot', 'Automated Lead Qualification', 'Salesforce AI Integration', 'B2B Sales Bot'],
+    description: 'Turn visitors into qualified leads with AI Sales Agents. 24/7 lead qualification, meeting scheduling, and CRM sync.',
+    keywords: ['AI Sales Agent', 'Lead Generation Chatbot', 'Automated Lead Qualification', 'HubSpot AI Integration', 'B2B Sales Bot'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/sales',
     },
@@ -42,12 +42,12 @@ export default function SalesPage() {
     };
 
     const useCases = [
-        { icon: <Target className="w-6 h-6" />, title: "Lead Qualification", desc: "Score and qualify leads 24/7 with intelligent questions", stat: "30% more SQLs" },
+        { icon: <Target className="w-6 h-6" />, title: "Lead Qualification", desc: "Score and qualify leads 24/7 with intelligent questions", stat: "More SQLs" },
         { icon: <MessageSquare className="w-6 h-6" />, title: "Product Inquiries", desc: "Answer pricing, features, and comparison questions instantly", stat: "Instant response" },
-        { icon: <Calendar className="w-6 h-6" />, title: "Meeting Scheduling", desc: "Book demos and meetings directly from chat", stat: "50% more booked" },
+        { icon: <Calendar className="w-6 h-6" />, title: "Meeting Scheduling", desc: "Book demos and meetings directly from chat", stat: "More Booked" },
         { icon: <TrendingUp className="w-6 h-6" />, title: "Product Recommendations", desc: "AI suggests products based on needs and preferences", stat: "Higher AOV" },
         { icon: <FileText className="w-6 h-6" />, title: "Quote Generation", desc: "Generate and send quotes without human intervention", stat: "Automated" },
-        { icon: <Zap className="w-6 h-6" />, title: "CRM Sync", desc: "All conversations logged to Salesforce/HubSpot automatically", stat: "Real-time sync" }
+        { icon: <Zap className="w-6 h-6" />, title: "CRM Sync", desc: "All conversations logged to HubSpot automatically", stat: "Real-time sync" }
     ];
 
     return (
@@ -68,10 +68,10 @@ export default function SalesPage() {
             <section className="py-16 bg-gradient-to-r from-green-600 to-teal-600 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">30%</div><div className="text-white/80">More SQLs</div></div>
-                        <div><div className="text-4xl font-bold">50%</div><div className="text-white/80">More Meetings</div></div>
+                        <div><div className="text-4xl font-bold">More</div><div className="text-white/80">SQLs</div></div>
+                        <div><div className="text-4xl font-bold">More</div><div className="text-white/80">Meetings Booked</div></div>
                         <div><div className="text-4xl font-bold">24/7</div><div className="text-white/80">Lead Capture</div></div>
-                        <div><div className="text-4xl font-bold">&lt;5 sec</div><div className="text-white/80">Response Time</div></div>
+                        <div><div className="text-4xl font-bold">Fast</div><div className="text-white/80">Response Time</div></div>
                     </div>
                 </div>
             </section>
@@ -105,7 +105,7 @@ export default function SalesPage() {
                             { step: "2", title: "Qualification questions", desc: "Natural conversation uncovers needs, budget, timeline, authority" },
                             { step: "3", title: "Product education", desc: "AI explains features, pricing, and addresses objections" },
                             { step: "4", title: "Meeting scheduled", desc: "Qualified leads book directly on your calendar" },
-                            { step: "5", title: "Synced to CRM", desc: "Full conversation and qualification data in Salesforce/HubSpot" }
+                            { step: "5", title: "Synced to CRM", desc: "Full conversation and qualification data logged in your CRM" }
                         ].map((item, i) => (
                             <div key={i} className="flex gap-6 items-start">
                                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
@@ -126,7 +126,7 @@ export default function SalesPage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-12">CRM Integrations</h2>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        {['Salesforce', 'HubSpot', 'Pipedrive', 'Zoho CRM', 'Microsoft Dynamics', 'Freshsales', 'Close', 'Copper'].map((crm, i) => (
+                        {['HubSpot', 'n8n', 'Calendly', 'Razorpay', 'Mautic', 'WhatsApp', 'Facebook Messenger', 'Web Chat'].map((crm, i) => (
                             <span key={i} className="px-6 py-3 bg-slate-100 rounded-full font-medium">{crm}</span>
                         ))}
                     </div>

@@ -22,12 +22,12 @@ export default function usecasesecommercePage() {
                   <p className="text-slate-600">Automatically trigger targeted chat nudges on the checkout page if a customer is hesitating, offering instant help to prevent cart abandonment.</p>
               </div>
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
-                  <h4 className="font-medium text-slate-900 mb-2">Embedded Dashboard Integrations</h4>
-                  <p className="text-slate-600">Show a live view of the customer's Shopify/WooCommerce order history and tracking status right inside the agent's chat window.</p>
+                  <h4 className="font-medium text-slate-900 mb-2">Order Status on WhatsApp</h4>
+                  <p className="text-slate-600">Answer "where is my order?" questions directly in the chat, using the order details your team adds to the conversation.</p>
               </div>
               <div className="border border-slate-200 rounded-lg p-5 bg-white">
-                  <h4 className="font-medium text-slate-900 mb-2">Social Commerce Integration</h4>
-                  <p className="text-slate-600">Sell directly and provide pre-sales support where shoppers already are—via Instagram DMs and WhatsApp.</p>
+                  <h4 className="font-medium text-slate-900 mb-2">Social Commerce Support</h4>
+                  <p className="text-slate-600">Provide pre-sales support where shoppers already are — via WhatsApp and Facebook.</p>
               </div>
           </div>
 

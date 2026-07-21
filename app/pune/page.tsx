@@ -5,7 +5,7 @@ import { Landmark, Building2, Stethoscope, Headphones, Users, Server, Briefcase,
 export const metadata: Metadata = {
     title: "AI Chatbot & Voice Agents in Pune | SwanDigitals",
     description: "Scale your Pune-based business or software agency with SwanDigitals' secure AI chatbots and voice agents. Support for English, Hindi, and Marathi.",
-    keywords: ["AI Chatbot Pune", "Voice AI Agents Pune", "Pune Support Automation", "Sovereign AI Pune"],
+    keywords: ["AI Chatbot Pune", "Voice AI Agents Pune", "Pune Support Automation", "AI India"],
     alternates: {
         canonical: "https://swandigitals.com/pune",
     },
@@ -30,7 +30,7 @@ export default function PunePage() {
         }
     ];
 
-    const stats = [{"value": "90%", "label": "Auto-Resolution"}, {"value": "24/7", "label": "Instant Support"}, {"value": "< 10s", "label": "Response Time"}, {"value": "80%", "label": "Cost Savings"}];
+    const stats = [{"value": "10", "label": "Indian Languages"}, {"value": "24/7", "label": "Instant Support"}, {"value": "Fast", "label": "Response Time"}, {"value": "₹4,999", "label": "Starting Plan"}];
 
     return (
         <LocationPageTemplate
@@ -40,7 +40,7 @@ export default function PunePage() {
             industryFocus="IT, software, and automotive engineering"
             localTerm="Pune startup and IT sectors"
             languageNotes="Marathi and Hindi"
-            painPoint="scaling support teams across multilingual customer segments without compromising data security or GDPR/DPDP alignment"
+            painPoint="scaling support teams across multilingual customer segments while keeping customer data hosted in India and DPDP-2023 aware"
             stats={stats}
             useCases={useCases}
         />

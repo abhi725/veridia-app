@@ -7,9 +7,9 @@ import Link from 'next/link';
 import { Users, Briefcase, CreditCard, Calendar, FileText, HelpCircle, MessageSquare, Mail, Globe, Smartphone, Ticket, Wrench, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'HR & Employee Experience AI Agents India | Internal Helpdesk',
-    description: 'AI-powered internal helpdesk for Indian enterprises. HR policy answers, leave management, IT support via Slack/Teams. 100% private, on-premise deployment available.',
-    keywords: ['HR Chatbot India', 'Employee Helpdesk AI', 'Leave Management Bot', 'IT Support Automation', 'Internal Enterprise AI'],
+    title: 'HR & Team Support AI Chatbot for Indian SMEs | Internal Helpdesk',
+    description: 'AI-powered internal support for growing Indian businesses. HR policy answers, leave requests, and IT support on WhatsApp or web chat.',
+    keywords: ['HR Chatbot India', 'Employee Helpdesk AI', 'Leave Management Bot', 'IT Support Automation', 'Internal Team Support AI'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/employee-experience',
     },
@@ -42,18 +42,18 @@ export default function EmployeeExperiencePage() {
     };
 
     const useCases = [
-        { icon: <Briefcase className="w-6 h-6" />, title: "HR Inquiries", desc: "PTO balance, benefits info, policy questions, onboarding", stat: "70% self-service" },
-        { icon: <CreditCard className="w-6 h-6" />, title: "Payroll Support", desc: "Pay stubs, tax forms, direct deposit changes", stat: "80% automated" },
+        { icon: <Briefcase className="w-6 h-6" />, title: "HR Inquiries", desc: "PTO balance, benefits info, policy questions, onboarding", stat: "Mostly self-service" },
+        { icon: <CreditCard className="w-6 h-6" />, title: "Payroll Support", desc: "Pay stubs, tax forms, direct deposit changes", stat: "Mostly automated" },
         { icon: <Calendar className="w-6 h-6" />, title: "Time Off Requests", desc: "Submit, approve, and track vacation requests", stat: "Instant approval" },
-        { icon: <FileText className="w-6 h-6" />, title: "Expense Reports", desc: "Submit expenses, check reimbursement status", stat: "50% faster" },
+        { icon: <FileText className="w-6 h-6" />, title: "Expense Reports", desc: "Submit expenses, check reimbursement status", stat: "Faster processing" },
         { icon: <HelpCircle className="w-6 h-6" />, title: "IT Support", desc: "Password resets, software requests, troubleshooting", stat: "24/7 help" },
         { icon: <Users className="w-6 h-6" />, title: "Onboarding", desc: "New hire orientation, document collection, training", stat: "Seamless start" }
     ];
 
     const benefits = [
-        { stat: "Up to 50%", label: "Faster resolution" },
-        { stat: "60-80%", label: "Self-service rate" },
-        { stat: "Improved", label: "Employee NPS" },
+        { stat: "Faster", label: "Resolution" },
+        { stat: "High", label: "Self-service rate" },
+        { stat: "Improved", label: "Employee Experience" },
         { stat: "24/7", label: "Availability" }
     ];
 
@@ -65,8 +65,8 @@ export default function EmployeeExperiencePage() {
             />
             <Hero
                 badge="👥 Employee Experience"
-                title="Enterprise Employee Experience AI Platform"
-                subtitle="HR, IT, and operations support that works 24/7. Reduce internal ticket volume by 70% and let your teams focus on strategic work."
+                title="Employee Support AI for Growing Teams"
+                subtitle="HR, IT, and operations support that works 24/7. Cut down repetitive internal questions and let your team focus on what matters."
                 primaryCTA={{ text: "See Internal AI Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View IT Helpdesk", href: "/solutions/it-helpdesk" }}
             />
@@ -108,13 +108,13 @@ export default function EmployeeExperiencePage() {
                     <p className="text-xl text-slate-600 mb-12">Deploy AI support in tools they already use</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {[
-                            { name: 'Microsoft Teams', icon: <Users className="w-5 h-5" /> },
-                            { name: 'Slack', icon: <MessageSquare className="w-5 h-5" /> },
+                            { name: 'WhatsApp', icon: <MessageSquare className="w-5 h-5" /> },
+                            { name: 'Web Chat', icon: <Globe className="w-5 h-5" /> },
+                            { name: 'Facebook', icon: <Users className="w-5 h-5" /> },
                             { name: 'Email', icon: <Mail className="w-5 h-5" /> },
-                            { name: 'Intranet', icon: <Globe className="w-5 h-5" /> },
-                            { name: 'Mobile App', icon: <Smartphone className="w-5 h-5" /> },
-                            { name: 'ServiceNow', icon: <Ticket className="w-5 h-5" /> },
-                            { name: 'Jira', icon: <Wrench className="w-5 h-5" /> },
+                            { name: 'HubSpot', icon: <Ticket className="w-5 h-5" /> },
+                            { name: 'Calendly', icon: <Smartphone className="w-5 h-5" /> },
+                            { name: 'n8n', icon: <Wrench className="w-5 h-5" /> },
                             { name: 'Phone', icon: <Phone className="w-5 h-5" /> }
                         ].map((channel, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center gap-3">
@@ -134,7 +134,7 @@ export default function EmployeeExperiencePage() {
                     <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
                     <div className="space-y-8">
                         {[
-                            { step: "1", title: "Employee asks a question", desc: "Via Slack, Teams, email, or your intranet portal" },
+                            { step: "1", title: "Employee asks a question", desc: "Via WhatsApp, web chat, or email" },
                             { step: "2", title: "AI understands and responds", desc: "Instant answers from your knowledge base, policy docs, and systems" },
                             { step: "3", title: "Actions are automated", desc: "Submit requests, create tickets, update records automatically" },
                             { step: "4", title: "Handoff when needed", desc: "Complex issues routed to the right person with full context" }
@@ -175,7 +175,7 @@ export default function EmployeeExperiencePage() {
                             ))}
                         </div>
                         <p className="text-white/70 text-sm">
-                            Typical results: 50-70% reduction in IT/HR tickets within 3 months. Results vary based on implementation.
+                            Typical results: fewer repetitive IT/HR questions reaching your team within a few months. Results vary based on implementation.
                         </p>
                     </div>
                 </div>

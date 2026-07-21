@@ -72,16 +72,16 @@ const comparisonGroups = [
         ]
     },
     {
-        title: "Global Enterprise Helpdesks",
+        title: "Enterprise & Global Platforms",
         icon: <ShieldCheck className="w-8 h-8 text-red-500" />,
-        description: "Ditch the expensive 'Per Seat' licenses. Switch to a platform built natively for the Indian market with flat pricing.",
+        description: "Global enterprise suites are priced and built for large overseas teams. See why Indian SMEs get the same automation — in ₹, in Indian languages, live in days — without the enterprise price tag.",
         competitors: [
             { name: "Zendesk", link: "/compare/vs-zendesk", tag: "Traditional Helpdesk" },
-            { name: "Intercom", link: "/compare/vs-intercom", tag: "Global AI Support" },
+            { name: "Intercom", link: "/compare/vs-intercom", tag: "Support AI" },
             { name: "Drift", link: "/compare/vs-drift", tag: "B2B Chatbot" },
             { name: "Yellow.ai", link: "/compare/vs-yellow", tag: "Enterprise AI" },
             { name: "Kore.ai", link: "/compare/vs-kore", tag: "Enterprise AI" },
-            { name: "Haptik", link: "/compare/vs-haptik", tag: "Enterprise AI" },
+            { name: "Haptik", link: "/compare/vs-haptik", tag: "Indian Conversational AI" },
             { name: "IBM Watson", link: "/compare/vs-ibm", tag: "Legacy AI" },
             { name: "Kasisto", link: "/compare/vs-kasisto", tag: "Banking AI" },
             { name: "Pega", link: "/compare/vs-pega", tag: "Enterprise Software" },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'SwanDigitals Help Center & Documentation | Sovereign AI',
+    title: 'SwanDigitals Help Center & Documentation',
     description: 'Get comprehensive guides, API references, n8n workflow guides, and setup instructions for your SwanDigitals AI Chatbot.',
     keywords: ['SwanDigitals documentation', 'chatbot setup guide', 'RAG database training', 'n8n bot setup'],
     alternates: {
@@ -38,19 +38,19 @@ export default function DocumentationPage() {
     const sections = [
         { icon: <Zap className="w-6 h-6" />, title: "Quick Start", desc: "Get your first chatbot running in 5 minutes", link: "/docs/quickstart", time: "5 min" },
         { icon: <Book className="w-6 h-6" />, title: "Platform Guide", desc: "Complete guide to all platform features", link: "/docs/platform", time: "30 min" },
-        { icon: <FileText className="w-6 h-6" />, title: "Integration Guides", desc: "Connect with WhatsApp, Email, Zendesk, and more", link: "/docs/integrations", time: "15 min each" },
-        { icon: <Phone className="w-6 h-6" />, title: "Voice AI", desc: "AI-powered voice agents with premium telephony", link: "/docs/voice", time: "20 min" },
-        { icon: <Brain className="w-6 h-6" />, title: "AI Training", desc: "Build knowledge base with RAG and multilingual support", link: "/docs/ai-training", time: "25 min" },
+        { icon: <FileText className="w-6 h-6" />, title: "Integration Guides", desc: "Connect with WhatsApp, HubSpot, Calendly, and more", link: "/docs/integrations", time: "15 min each" },
+        { icon: <Phone className="w-6 h-6" />, title: "Voice AI", desc: "AI-powered voice agents for Indian (+91) phone numbers", link: "/docs/voice", time: "20 min" },
+        { icon: <Brain className="w-6 h-6" />, title: "AI Training", desc: "Build a knowledge base with multilingual support", link: "/docs/ai-training", time: "25 min" },
         { icon: <Settings className="w-6 h-6" />, title: "Automation", desc: "Macros, labels, SwanAI bot, and handoff rules", link: "/docs/automation", time: "15 min" },
-        { icon: <GitBranch className="w-6 h-6" />, title: "n8n Workflows", desc: "Connect with 200+ apps via workflow automation", link: "/docs/workflows", time: "20 min" },
-        { icon: <CreditCard className="w-6 h-6" />, title: "SwanPlans", desc: "Compare PILOT, GROWTH, PROFESSIONAL, ENTERPRISE", link: "/docs/plans", time: "10 min" },
+        { icon: <GitBranch className="w-6 h-6" />, title: "n8n Workflows", desc: "Connect with many other apps via workflow automation", link: "/docs/workflows", time: "20 min" },
+        { icon: <CreditCard className="w-6 h-6" />, title: "SwanPlans", desc: "Compare Growth Hub, Performance Pro, and Scale", link: "/docs/plans", time: "10 min" },
         { icon: <Code className="w-6 h-6" />, title: "Custom Attributes", desc: "Lead scoring, segmentation, and custom fields", link: "/docs/attributes", time: "10 min" },
         { icon: <HelpCircle className="w-6 h-6" />, title: "Troubleshooting", desc: "Common issues and how to resolve them", link: "/docs/troubleshooting", time: "As needed" }
     ];
 
     const popularGuides = [
         { title: "Creating Your First Chatbot", category: "Getting Started" },
-        { title: "Connecting to Zendesk", category: "Integrations" },
+        { title: "Connecting to HubSpot", category: "Integrations" },
         { title: "Training Custom Intents", category: "NLU" },
         { title: "Setting Up Webhooks", category: "API" },
         { title: "Deploying to WhatsApp", category: "Channels" },

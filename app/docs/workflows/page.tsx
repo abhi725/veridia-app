@@ -7,12 +7,12 @@ export default function WorkflowsPage() {
             {/* Introduction */}
             <section className="mb-12">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                    Connect SwanDigitals with 200+ apps using n8n workflow automation. Trigger actions based on
-                    customer conversations, sync data to CRM, and automate repetitive tasks.
+                    Connect SwanDigitals with other apps using n8n workflow automation. Trigger actions based on
+                    customer conversations, sync data to your CRM, and automate repetitive tasks.
                 </p>
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
                     <p className="text-sm text-orange-800">
-                        <strong>Available in:</strong> GROWTH, PROFESSIONAL, and ENTERPRISE plans.
+                        <strong>Available in:</strong> Growth Hub, Performance Pro, and Scale plans.
                     </p>
                 </div>
             </section>
@@ -32,18 +32,18 @@ export default function WorkflowsPage() {
                         </p>
                         <ul className="text-sm text-slate-500 space-y-1">
                             <li>• Sends Slack/email notification</li>
-                            <li>• Creates task in Gauzy</li>
+                            <li>• Creates a task in your tool of choice</li>
                             <li>• Adds to CRM automatically</li>
                         </ul>
                     </div>
 
                     <div className="border border-green-200 bg-green-50 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">Hot Lead + Gauzy Sync</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">Hot Lead + HubSpot Sync</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Syncs qualified leads to Gauzy CRM with full conversation context.
+                            Syncs qualified leads to HubSpot with full conversation context.
                         </p>
                         <ul className="text-sm text-slate-500 space-y-1">
-                            <li>• Creates contact in Gauzy</li>
+                            <li>• Creates contact in HubSpot</li>
                             <li>• Adds conversation summary</li>
                             <li>• Sets lead status</li>
                         </ul>
@@ -115,14 +115,14 @@ export default function WorkflowsPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="border border-slate-200 rounded-lg p-5">
-                        <h3 className="font-medium text-slate-900 mb-2">Gauzy CRM</h3>
+                        <h3 className="font-medium text-slate-900 mb-2">HubSpot</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                            Sync leads and contacts to Gauzy for complete customer view.
+                            Sync leads and contacts to HubSpot for a complete customer view.
                         </p>
                         <ul className="text-sm text-slate-500 space-y-1">
                             <li>• Create/update contacts</li>
-                            <li>• Create tasks and projects</li>
-                            <li>• Track time entries</li>
+                            <li>• Create tasks and deals</li>
+                            <li>• Log conversation notes</li>
                         </ul>
                     </div>
 

@@ -9,8 +9,8 @@ import { ShoppingCart, Package, RefreshCw, MessageSquare, TrendingUp, Gift } fro
 
 export const metadata: Metadata = {
     title: 'Retail & E-commerce AI Chatbot India | Peak Season Ready',
-    description: 'Enterprise retail AI for Indian e-commerce. Automate order tracking, returns, and product recommendations. Integrated with Shopify & Salesforce. Scales for peak season.',
-    keywords: ['Retail AI Chatbot', 'E-commerce Automation India', 'Shopify AI Agent', 'Order Tracking Bot', 'Black Friday AI Support'],
+    description: 'Retail AI chatbot for Indian e-commerce and D2C brands. Automate order tracking, returns, and product recommendations on WhatsApp.',
+    keywords: ['Retail AI Chatbot', 'E-commerce Automation India', 'WhatsApp Retail Bot', 'Order Tracking Bot', 'Festive Sale AI Support'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/retail',
     },
@@ -43,20 +43,20 @@ export default function RetailPage() {
     };
 
     const useCases = [
-        { icon: <ShoppingCart className="w-6 h-6" />, title: "Product Discovery", desc: "AI recommends products based on preferences and browsing history", stat: "30% higher AOV" },
-        { icon: <Package className="w-6 h-6" />, title: "Order Tracking", desc: "Real-time shipping updates, delivery estimates, package location", stat: "80% self-service" },
-        { icon: <RefreshCw className="w-6 h-6" />, title: "Returns & Exchanges", desc: "Initiate returns, generate labels, track refund status", stat: "40% faster" },
-        { icon: <MessageSquare className="w-6 h-6" />, title: "Size & Fit", desc: "Personalized sizing recommendations to reduce returns", stat: "25% fewer returns" },
+        { icon: <ShoppingCart className="w-6 h-6" />, title: "Product Discovery", desc: "AI recommends products based on preferences and browsing history", stat: "Higher AOV" },
+        { icon: <Package className="w-6 h-6" />, title: "Order Tracking", desc: "Real-time shipping updates, delivery estimates, package location", stat: "Mostly self-service" },
+        { icon: <RefreshCw className="w-6 h-6" />, title: "Returns & Exchanges", desc: "Initiate returns, generate labels, track refund status", stat: "Faster refunds" },
+        { icon: <MessageSquare className="w-6 h-6" />, title: "Size & Fit", desc: "Personalized sizing recommendations to reduce returns", stat: "Fewer returns" },
         { icon: <TrendingUp className="w-6 h-6" />, title: "Inventory Queries", desc: "Stock availability, store pickup options, restock alerts", stat: "Real-time info" },
-        { icon: <Gift className="w-6 h-6" />, title: "Promotions", desc: "Personalized offers, loyalty points, discount codes", stat: "3x engagement" }
+        { icon: <Gift className="w-6 h-6" />, title: "Promotions", desc: "Personalized offers, loyalty points, discount codes", stat: "Higher engagement" }
     ];
 
-    const integrations = ['Shopify', 'WooCommerce', 'Magento', 'BigCommerce', 'Salesforce', 'Zendesk', 'Stripe', 'Klaviyo'];
+    const integrations = ['WhatsApp', 'Facebook Messenger', 'Web Chat', 'HubSpot', 'Calendly', 'Razorpay', 'Mautic', 'n8n'];
 
     const faqItems = [
-        { question: "Can it handle Black Friday traffic?", answer: "Absolutely. Our platform auto-scales to handle 10M+ conversations per month. The platform architecture utilizes auto-scaling cloud servers that dynamically provision extra resources as request volume spikes." },
-        { question: "How do you handle product catalog sync?", answer: "We integrate with major e-commerce platforms (Shopify, Magento, WooCommerce) for real-time product sync. Custom catalog integrations are also available via our API." },
-        { question: "Can it provide personalized recommendations?", answer: "Yes. Our AI analyzes browsing history, purchase patterns, and preferences to provide personalized product recommendations that increase average order value by 30%." }
+        { question: "Can it handle festive sale traffic?", answer: "Yes. Our platform auto-scales to handle spikes in conversations during festive sales. Cloud infrastructure automatically provisions extra resources as request volume grows." },
+        { question: "How do you handle product catalog sync?", answer: "Share your product catalog via a spreadsheet, PDF, or website link, and we keep the chatbot's knowledge updated. Custom catalog sync is also available via our API and n8n." },
+        { question: "Can it provide personalized recommendations?", answer: "Yes. Our AI uses browsing history, purchase patterns, and preferences to provide personalized product recommendations that help increase average order value." }
     ];
 
     return (
@@ -67,8 +67,8 @@ export default function RetailPage() {
             />
             <Hero
                 badge="🛒 Retail & E-commerce"
-                title="Enterprise Retail AI that Scales for Peak Season"
-                subtitle="Handle 10M+ conversations during Black Friday. Product discovery, order support, and returns automation that grows with your business."
+                title="Retail AI That Scales for Peak Season"
+                subtitle="Handle festive-season traffic spikes with ease. Product discovery, order support, and returns automation that grows with your business."
                 primaryCTA={{ text: "See Retail Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
             />
@@ -77,10 +77,10 @@ export default function RetailPage() {
             <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">10M+</div><div className="text-white/80">Conversations/Month</div></div>
-                        <div><div className="text-4xl font-bold">88%</div><div className="text-white/80">Automation Rate</div></div>
-                        <div><div className="text-4xl font-bold">30%</div><div className="text-white/80">Higher AOV</div></div>
-                        <div><div className="text-4xl font-bold">$2.1M</div><div className="text-white/80">Annual Savings</div></div>
+                        <div><div className="text-4xl font-bold">High Volume</div><div className="text-white/80">Conversations Handled</div></div>
+                        <div><div className="text-4xl font-bold">High</div><div className="text-white/80">Automation Rate</div></div>
+                        <div><div className="text-4xl font-bold">Higher</div><div className="text-white/80">AOV</div></div>
+                        <div><div className="text-4xl font-bold">Real</div><div className="text-white/80">Cost Savings</div></div>
                     </div>
                 </div>
             </section>
@@ -110,7 +110,7 @@ export default function RetailPage() {
                     <h2 className="text-3xl font-bold mb-4">Omnichannel Support</h2>
                     <p className="text-xl text-slate-600 mb-12">One AI, everywhere your customers are</p>
                     <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
-                        {['🌐 Web', '📱 Mobile', '📘 Facebook', '📸 Instagram', '📱 WhatsApp', '💬 iMessage', '🐦 Twitter', '📧 Email'].map((channel, i) => (
+                        {['🌐 Web Chat', '📘 Facebook', '📱 WhatsApp', '💬 HubSpot', '📅 Calendly', '💳 Razorpay', '✉️ Mautic', '🔗 n8n'].map((channel, i) => (
                             <div key={i} className="bg-white p-4 rounded-lg text-center text-sm">{channel}</div>
                         ))}
                     </div>
@@ -139,9 +139,9 @@ export default function RetailPage() {
                             Our architecture automatically scales to handle spikes in traffic during festive sales and holiday shopping rushes without latency degradation.
                         </p>
                         <div className="grid grid-cols-3 gap-4 text-center">
-                            <div><div className="text-2xl font-bold">10M+</div><div className="text-white/80 text-sm">Monthly Capacity</div></div>
-                            <div><div className="text-2xl font-bold">&lt; 500ms</div><div className="text-white/80 text-sm">Response Time</div></div>
-                            <div><div className="text-2xl font-bold">99.9%</div><div className="text-white/80 text-sm">Uptime SLA</div></div>
+                            <div><div className="text-2xl font-bold">High</div><div className="text-white/80 text-sm">Monthly Capacity</div></div>
+                            <div><div className="text-2xl font-bold">Fast</div><div className="text-white/80 text-sm">Response Time</div></div>
+                            <div><div className="text-2xl font-bold">Reliable</div><div className="text-white/80 text-sm">Uptime</div></div>
                         </div>
                     </div>
                 </div>

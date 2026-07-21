@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'WATI Alternative in India | Enterprise AI Support & WhatsApp API',
-    description: 'Stop paying massive platform fees for a WhatsApp-only tool. Migrate from WATI to SwanDigitals for a true omnichannel AI Helpdesk with flat pricing and DPDP compliance.',
+    title: 'WATI Alternative in India | WhatsApp + Voice AI for SMEs',
+    description: 'Paying rising fees for a WhatsApp-only tool? Move from WATI to SwanDigitals and get WhatsApp plus +91 AI calling in one inbox, 10 Indian languages, and flat rupee pricing.',
     keywords: ['WATI alternative', 'WATI pricing', 'WATI vs SwanDigitals', 'Omnichannel WhatsApp Inbox', 'WhatsApp Business API India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-wati',
@@ -15,35 +15,35 @@ export default function VsWatiPage() {
         <ComparisonPageTemplate
             competitorName="WATI"
             slug="vs-wati"
-            heroTitle="WATI Alternative in India: Omnichannel Support Without Meta Markups"
-            heroSubtitle="Escape platform fees and single-channel limits. Route WhatsApp, email, web chat, and phone calls into a single flat-rate workspace."
+            heroTitle="WATI Alternative for Indian SMEs: WhatsApp + Voice in One Inbox"
+            heroSubtitle="WATI is WhatsApp-only. SwanDigitals puts WhatsApp, Facebook, web chat and +91 AI phone calls in one flat-rate workspace built for Indian small businesses."
             aboutCompetitor="WATI provides a streamlined interface for broadcast templates and team communications over the WhatsApp Business API."
             competitorStrengths="Stable WhatsApp connectivity, simple block-based workflow editors, and tools for promotional template broadcasting."
-            realityCheck="WATI locks your operations into a WhatsApp-only inbox. While useful, customers also reach out via email, web widgets, and phone. Juggling separate platforms splits your data and raises bills. SwanDigitals unifies web chat, email, and voice natively."
+            realityCheck="WATI keeps your operations inside a WhatsApp-only inbox. But Indian customers also message on Facebook, your website, and call your phone. Juggling separate tools splits your data. SwanDigitals unifies WhatsApp, Facebook, web chat and +91 AI calling natively, and auto-trains on your website, menu or brochure."
             reasonsToSwitch={[
                 {
-                    title: "True Multi-Channel Workspace",
-                    description: "Avoid fragmenting support channels. Bring WhatsApp, Instagram, Email, Web Chat, and Voice AI into one shared dashboard."
+                    title: "WhatsApp + Voice in One Inbox",
+                    description: "Bring WhatsApp, Facebook, web chat, and +91 inbound/outbound AI calling into one shared dashboard, in 10 Indian languages."
                 },
                 {
-                    title: "Zero template Markup Fees",
-                    description: "We charge a flat software subscription rate. You connect your own API credentials and pay Meta directly for conversation fees."
+                    title: "No Per-Message Markup",
+                    description: "We charge a flat rupee subscription. You connect your own WhatsApp API credentials and pay Meta directly for conversation fees."
                 },
                 {
-                    title: "Contextual AI Agent Actions",
-                    description: "Traditional bots rely on rigid 'Press 1' logic pathways. SwanDigitals uses retrieval-augmented LLMs to resolve property queries dynamically."
+                    title: "Auto-Trains on Your Business",
+                    description: "Instead of rigid 'Press 1' menus, our AI learns from your website, menu or documents to answer customer queries in plain language."
                 }
             ]}
             comparisonRows={[
-                { feature: "Channels Supported", SwanDigitals: "WhatsApp, Web, Voice, Email, IG", competitor: "WhatsApp Only" },
-                { feature: "Pricing Model", SwanDigitals: "Flat Platform Fee (Unlimited Agents)", competitor: "Expensive Monthly Tiers" },
-                { feature: "Generative AI (LLM)", SwanDigitals: "Native (Secure Cloud & Local LLMs)", competitor: "Basic / Add-on" },
-                { feature: "Voice AI Calling", SwanDigitals: true, competitor: false },
-                { feature: "DPDP Act Compliance", SwanDigitals: "100% Indian Data Residency", competitor: "Global" },
-                { feature: "On-Premise Deployment", SwanDigitals: true, competitor: false }
+                { feature: "Channels Supported", SwanDigitals: "WhatsApp, Facebook, Web, Voice", competitor: "WhatsApp Only" },
+                { feature: "Pricing Model", SwanDigitals: "Flat Rupee Plans (from ₹4,999)", competitor: "Per-Conversation Tiers" },
+                { feature: "AI Agent", SwanDigitals: "Auto-trains on your site/menu/docs", competitor: "Basic / Add-on" },
+                { feature: "+91 Voice AI Calling", SwanDigitals: true, competitor: false },
+                { feature: "Indian Languages", SwanDigitals: "10 Indian languages", competitor: "Limited" },
+                { feature: "Data Hosted in India", SwanDigitals: true, competitor: false }
             ]}
-            targetPersona="small retailers requiring simple promotional template campaigns who do not need multi-channel consolidation."
-            verdict="you are a B2B team, developer, real estate developer, or NBFC seeking structured customer database updates, RBI compliance, and omnichannel inbox workflows."
+            targetPersona="you only need simple promotional WhatsApp template campaigns and are happy staying on a single channel — WATI does that job simply and well."
+            verdict="you are an Indian SME that wants WhatsApp and +91 voice calling in one inbox, 10 Indian languages, flat rupee pricing with no per-message markup, and India-based support."
             faqs={[
                 {
                     question: "Can I transfer our current WhatsApp Business API number?",

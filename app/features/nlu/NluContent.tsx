@@ -20,7 +20,7 @@ export default function NluContent() {
             <Hero
                 badge="🧠 Natural Language Understanding"
                 title="Understand What Users Really Mean"
-                subtitle="Advanced NLU powered by Gemini and Rasa. 97%+ accuracy in intent detection across 100+ languages."
+                subtitle="Advanced NLU powered by AI. High accuracy in intent detection across 10 Indian languages."
                 primaryCTA={{ text: "See NLU Demo", href: "/demo" }}
                 secondaryCTA={{ text: "View All Features", href: "/features" }}
             />
@@ -29,10 +29,10 @@ export default function NluContent() {
             <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">97%+</div><div className="text-white/80">Intent Accuracy</div></div>
-                        <div><div className="text-4xl font-bold">100+</div><div className="text-white/80">Languages</div></div>
-                        <div><div className="text-4xl font-bold">50+</div><div className="text-white/80">Entity Types</div></div>
-                        <div><div className="text-4xl font-bold">&lt;50ms</div><div className="text-white/80">Processing Time</div></div>
+                        <div><div className="text-4xl font-bold">High</div><div className="text-white/80">Intent Accuracy</div></div>
+                        <div><div className="text-4xl font-bold">10</div><div className="text-white/80">Indian Languages</div></div>
+                        <div><div className="text-4xl font-bold">Many</div><div className="text-white/80">Entity Types</div></div>
+                        <div><div className="text-4xl font-bold">Fast</div><div className="text-white/80">Processing Time</div></div>
                     </div>
                 </div>
             </section>
@@ -72,7 +72,7 @@ export default function NluContent() {
                                 <div className="p-4 bg-blue-50 rounded-lg">
                                     <div className="text-sm text-blue-600 font-semibold mb-2">Intent</div>
                                     <div className="font-mono text-sm">cancel_subscription</div>
-                                    <div className="text-xs text-slate-500 mt-1">Confidence: 98.2%</div>
+                                    <div className="text-xs text-slate-500 mt-1">Confidence: High</div>
                                 </div>
                                 <div className="p-4 bg-green-50 rounded-lg">
                                     <div className="text-sm text-green-600 font-semibold mb-2">Entities</div>
@@ -82,7 +82,7 @@ export default function NluContent() {
                                 <div className="p-4 bg-orange-50 rounded-lg">
                                     <div className="text-sm text-orange-600 font-semibold mb-2">Sentiment</div>
                                     <div className="font-mono text-sm">Neutral</div>
-                                    <div className="text-xs text-slate-500 mt-1">Score: 0.45</div>
+                                    <div className="text-xs text-slate-500 mt-1">Detected in real-time</div>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ export default function NluContent() {
             {/* CTA */}
             <section className="py-20 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Ready for 97%+ Accuracy?</h2>
+                    <h2 className="text-4xl font-bold mb-6">Ready for High-Accuracy Intent Detection?</h2>
                     <p className="text-xl text-white/80 mb-8">See how our NLU handles your specific domain</p>
                     <Link href="/demo" className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                         Get a Demo

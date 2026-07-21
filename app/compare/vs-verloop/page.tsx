@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'Verloop Alternative in India | Best Support Automation',
-    description: 'Compare SwanDigitals vs Verloop.io. Upgrade to a fully unified inbox with native Voice AI and predictable flat pricing.',
-    keywords: ['Verloop Alternative', 'Verloop vs SwanDigitals', 'AI Support Automation'],
+    title: 'Verloop Alternative for Indian SMEs | Chat & Voice, Flat Priced',
+    description: 'Compare SwanDigitals vs Verloop.io. An SME-friendly inbox with WhatsApp, web chat and native +91 voice on flat rupee pricing.',
+    keywords: ['Verloop Alternative', 'Verloop vs SwanDigitals', 'SME Support Automation'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-verloop',
     },
@@ -15,38 +15,38 @@ export default function VsVerloopPage() {
         <ComparisonPageTemplate
             competitorName="Verloop.io"
             slug="vs-verloop"
-            heroTitle="Upgrade from the Legacy Intent Systems of Verloop"
-            heroSubtitle="Deploy modern generative AI RAG systems in weeks. Predictable flat platform rates, native Voice AI, and 100% Indian data compliance."
-            aboutCompetitor="Verloop is an established Indian conversational AI platform focused heavily on e-commerce and basic customer support."
-            competitorStrengths="Strong e-commerce features, Indian market focus, and good WhatsApp integration."
-            realityCheck="Verloop built its reputation on legacy intent-based chatbots. SwanDigitals is built natively on modern LLM architecture, allowing for far more dynamic, unscripted customer conversations without manual training loops."
+            heroTitle="Verloop Alternative Built for Indian SMEs"
+            heroSubtitle="Get modern AI that auto-trains on your content, plus native +91 voice, on flat rupee pricing, in 10 Indian languages, live in days."
+            aboutCompetitor="Verloop is a capable, established Indian conversational AI platform with strong e-commerce and support experience."
+            competitorStrengths="Solid e-commerce features, clear Indian market focus, and good WhatsApp integration."
+            realityCheck="Verloop is a strong Indian player, but it leans toward flow and intent building and is often sized for larger buyers. SwanDigitals auto-trains on your website and documents and adds native +91 voice in the same inbox, on flat rupee pricing built for SMEs. Where Verloop may fit better: teams that want detailed flow-builder control and larger custom deployments."
             comparisonRows={[
-                { feature: "AI Architecture", SwanDigitals: "Generative RAG", competitor: "Legacy Intent/Flows" },
-                { feature: "Voice AI", SwanDigitals: "Native & Included", competitor: "Limited/Third-party" },
-                { feature: "Agent Inbox", SwanDigitals: "Full Enterprise Helpdesk", competitor: "Basic Inbox" },
-                { feature: "On-Premise", SwanDigitals: "True Air-Gapped", competitor: "Cloud Focus" },
-                { feature: "Pricing", SwanDigitals: "Flat Platform Fee", competitor: "Usage/Tier Based" }
+                { feature: "Setup Style", SwanDigitals: "Auto-trains on your content", competitor: "Flow / intent building" },
+                { feature: "Voice AI", SwanDigitals: "Native (+91 calls)", competitor: "Limited/Third-party" },
+                { feature: "Agent Inbox", SwanDigitals: "Chat + voice in one place", competitor: "Chat inbox" },
+                { feature: "Best Fit", SwanDigitals: "Indian SMEs", competitor: "Mid-market / enterprise" },
+                { feature: "Pricing", SwanDigitals: "Flat from ₹4,999/mo", competitor: "Usage / tier based" }
             ]}
             reasonsToSwitch={[
                 {
-                    title: "Modern Generative AI",
-                    description: "Stop building rigid decision trees. SwanDigitals uses RAG to simply read your knowledge base and answer dynamically."
+                    title: "Auto-Trains on Your Business",
+                    description: "Instead of building rigid decision trees, SwanDigitals reads your website, menu and documents and answers customers dynamically."
                 },
                 {
-                    title: "Unified Agent Experience",
-                    description: "Provide your human agents with a world-class ticketing system that feels like Zendesk, but is built entirely in India."
+                    title: "Chat and Voice in One Inbox",
+                    description: "WhatsApp, Facebook and web chat plus inbound and outbound +91 calls, all in one workspace for your team."
                 },
                 {
-                    title: "Native Voice Agents",
-                    description: "Support isn't just text. Deploy AI voice agents that can handle incoming calls naturally in Indian languages."
+                    title: "Native Voice in Indian Languages",
+                    description: "Deploy voice agents that handle calls naturally across 10 Indian languages, no separate telephony project needed."
                 }
             ]}
-            targetPersona="You are an enterprise support team that strictly requires flow-builder tools and has the time to manually train intent categories."
-            verdict="You want to graduate from rigid chatbot flows to true Generative AI automation without losing the Indian market focus."
+            targetPersona="You are a team that wants detailed flow-builder control and larger custom deployments, with the time to configure intents manually."
+            verdict="You are an Indian SME that wants modern, self-training AI plus native voice, in local languages, on flat pricing."
             faqs={[
                 {
                     question: "Where is my customer data stored?",
-                    answer: "All customer data is stored securely in our Mumbai database servers. This ensures your business remains fully compliant with India's DPDP Act of 2023 and local regulatory guidelines."
+                    answer: "All customer data is hosted on servers in India and kept aware of India's DPDP Act of 2023. Payments run securely through Razorpay, and there is no lock-in."
                 },
                 {
                     question: "Can we pay Meta directly for WhatsApp business messages?",

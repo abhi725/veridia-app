@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'AiSensy Alternative in India | D2C Retargeting & AI Helpdesk',
-    description: 'Stop using basic broadcast tools for customer support. Migrate from AiSensy to SwanDigitals for a complete omnichannel AI Helpdesk with flat pricing and DPDP compliance.',
+    title: 'AiSensy Alternative in India | WhatsApp + Voice AI for SMEs',
+    description: 'Move beyond broadcast-only tools. Switch from AiSensy to SwanDigitals for WhatsApp plus +91 AI calling in one inbox, 10 Indian languages, and flat rupee pricing.',
     keywords: ['AiSensy alternative', 'AiSensy vs SwanDigitals', 'WhatsApp Broadcast India', 'D2C Customer Support AI'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-aisensy',
@@ -15,34 +15,34 @@ export default function VsAiSensyPage() {
         <ComparisonPageTemplate
             competitorName="AiSensy"
             slug="vs-aisensy"
-            heroTitle="AiSensy Alternative in India: Omnichannel AI Support Without WhatsApp Silos"
-            heroSubtitle="Upgrade from basic broadcast retargeting to a true customer support workspace. Consolidate WhatsApp, Email, Web Chat, and Voice AI in a single flat-rate dashboard."
+            heroTitle="AiSensy Alternative for Indian SMEs: WhatsApp + Voice in One Inbox"
+            heroSubtitle="AiSensy is built for broadcasts. SwanDigitals brings WhatsApp, Facebook, web chat, and +91 AI calling into one flat-rate dashboard, in 10 Indian languages."
             aboutCompetitor="AiSensy is a popular marketing gateway for blasting bulk WhatsApp broadcast campaigns and managing abandoned cart sequences."
-            competitorStrengths="A simplified campaign setup panel, quick meta green badge application, and ready-to-go integrations with platforms like Shopify and WooCommerce."
-            realityCheck="AiSensy operates primarily as a promotional broadcasting portal. When customers reply to your marketing campaigns with complex questions, keyword rules fall short. Human agents end up managing threads in a basic inbox without ticketing flows or context history. SwanDigitals unifies broadcast automation and helpdesk ticket resolution in one place."
+            competitorStrengths="A simplified campaign setup panel, quick Meta green badge application, and a low-friction way to run bulk WhatsApp broadcast campaigns."
+            realityCheck="AiSensy works primarily as a promotional broadcasting portal. When customers reply to campaigns with real questions, keyword rules fall short and agents juggle threads in a basic inbox. SwanDigitals unifies WhatsApp, Facebook, web chat and +91 AI calling in one place, and auto-trains on your website, menu or documents so it can actually answer."
             reasonsToSwitch={[
                 {
-                    title: "Helpdesk Ticketing + Campaigns",
-                    description: "SwanDigitals schedules your WhatsApp campaigns and automates the incoming support tickets they generate under one unified dashboard."
+                    title: "Replies + Campaigns Together",
+                    description: "SwanDigitals runs your WhatsApp campaigns and handles the incoming replies they generate under one unified inbox."
                 },
                 {
-                    title: "Vernacular Hinglish AI (RAG)",
-                    description: "Our AI understands regional Hinglish queries natively. Stop relying on rigid keyword builders that confuse buyers."
+                    title: "10 Indian Languages",
+                    description: "Our AI understands Hinglish and regional queries in 10 Indian languages. Stop relying on rigid keyword builders that confuse buyers."
                 },
                 {
-                    title: "Flat SaaS Pricing",
-                    description: "Say goodbye to tiered pricing and subscriber-limit penalties. Pay a flat platform rate and configure unlimited agent seats."
+                    title: "Flat Rupee Pricing",
+                    description: "Say goodbye to tiered pricing and subscriber-limit penalties. Pay a flat plan from ₹4,999/mo with no per-message markup."
                 }
             ]}
             comparisonRows={[
-                { feature: "Primary Focus", SwanDigitals: "AI Support & Helpdesk", competitor: "Broadcast Marketing" },
-                { feature: "Channels Supported", SwanDigitals: "WhatsApp, Web, Email, Voice", competitor: "WhatsApp Only" },
-                { feature: "Generative AI Resolution", SwanDigitals: "Native (RAG Architecture)", competitor: "Basic Dialogflow/Keywords" },
-                { feature: "Ticketing & SLA", SwanDigitals: "Enterprise Grade", competitor: "Basic Inbox" },
-                { feature: "Pricing Predictability", SwanDigitals: "Flat SaaS Model", competitor: "Tiered / Volume Based" }
+                { feature: "Primary Focus", SwanDigitals: "Replies + Campaigns + Calls", competitor: "Broadcast Marketing" },
+                { feature: "Channels Supported", SwanDigitals: "WhatsApp, Facebook, Web, Voice", competitor: "WhatsApp Only" },
+                { feature: "AI Agent", SwanDigitals: "Auto-trains on your site/menu/docs", competitor: "Basic Keyword Rules" },
+                { feature: "+91 Voice AI Calling", SwanDigitals: true, competitor: false },
+                { feature: "Pricing", SwanDigitals: "Flat from ₹4,999/mo", competitor: "Tiered / Volume Based" }
             ]}
-            targetPersona="small retailers whose sole goal is to blast promo templates to lists of users and who do not require multi-channel inbox sync."
-            verdict="you want to resolve incoming support tickets automatically, consolidate email and web chat, and manage campaigns under a predictable flat monthly rate."
+            targetPersona="your sole goal is to blast promotional templates to contact lists and you do not need voice calling or a multi-channel inbox — AiSensy is a simple, focused broadcast tool."
+            verdict="you are an Indian SME that wants WhatsApp, Facebook, web chat and +91 AI calling in one inbox, 10 Indian languages, and a flat monthly rupee plan with no per-message markup."
             faqs={[
                 {
                     question: "Can we migrate our WhatsApp Business API profile from AiSensy?",
@@ -53,12 +53,12 @@ export default function VsAiSensyPage() {
                     answer: "No. You pay Meta directly for conversation fees using your own linked card, and you pay us a flat software rate. We charge zero markups."
                 },
                 {
-                    question: "Can we import historic customer logs and CRM keys?",
-                    answer: "Yes. Our systems sync directly with Shopify, HubSpot, and custom APIs, bringing your customer profiles and history into SwanDigitals."
+                    question: "Can we import customer logs and connect our CRM?",
+                    answer: "Yes. SwanDigitals connects natively with HubSpot, and with other tools via n8n and Calendly, bringing your customer profiles and history into one place."
                 },
                 {
                     question: "How is user data protected?",
-                    answer: "SwanDigitals guarantees 100% local hosting in Mumbai, aligning your customer support communications with DPDP 2023 guidelines."
+                    answer: "SwanDigitals hosts your data in India, is built to be DPDP-2023 aware, and processes payments securely via Razorpay. There is no lock-in."
                 }
             ]}
         />

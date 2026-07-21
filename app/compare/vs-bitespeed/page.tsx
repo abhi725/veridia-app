@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ComparisonPageTemplate from '@/components/ui/ComparisonPageTemplate';
 
 export const metadata: Metadata = {
-    title: 'BiteSpeed Alternative in India | E-Commerce Voice AI & Support',
-    description: 'BiteSpeed is great for Shopify marketing, but lacks deep enterprise support automation. Switch to SwanDigitals for a true omnichannel AI Helpdesk with native Voice AI.',
+    title: 'BiteSpeed Alternative in India | WhatsApp + Voice AI for SMEs',
+    description: 'BiteSpeed is great for Shopify marketing, but is WhatsApp-text only. Switch to SwanDigitals for WhatsApp plus +91 AI calling in one inbox, 10 Indian languages, flat rupee plans.',
     keywords: ['BiteSpeed alternative', 'BiteSpeed vs SwanDigitals', 'Shopify WhatsApp AI', 'E-commerce Helpdesk India'],
     alternates: {
         canonical: 'https://swandigitals.com/compare/vs-bitespeed',
@@ -15,34 +15,34 @@ export default function VsBiteSpeedPage() {
         <ComparisonPageTemplate
             competitorName="BiteSpeed"
             slug="vs-bitespeed"
-            heroTitle="BiteSpeed Alternative: Enterprise-Grade AI Support Beyond Shopify Plugins"
-            heroSubtitle="Upgrade from a basic D2C retargeting widget. Automate refund approvals, order status updates, and regional phone calls under a flat platform rate."
+            heroTitle="BiteSpeed Alternative: WhatsApp + Voice AI Beyond Shopify Plugins"
+            heroSubtitle="Move beyond a D2C retargeting widget. Auto-answer order and return queries, and add +91 phone calls, on flat rupee plans built for Indian SMEs."
             aboutCompetitor="BiteSpeed provides a solid marketing plugin for Shopify stores to trigger cart abandonment alerts and WhatsApp marketing campaigns."
             competitorStrengths="A highly optimized Shopify catalog sync, interactive lead-capture popups, and pre-built cart recovery workflows."
-            realityCheck="BiteSpeed is engineered for promotional outreach rather than complex support ticketing. When buyers reply to broadcasts with detailed issues about custom exchanges, courier tracking, or product faults, a simple shared inbox falls short. Scaling businesses require robust ticket management, native Voice support, and data control. SwanDigitals unifies transactional messaging and deep support resolution."
+            realityCheck="BiteSpeed is built for promotional outreach, not for answering real questions. When buyers reply asking about exchanges, tracking or faults, a simple shared inbox falls short and there is no phone channel. SwanDigitals unifies WhatsApp, Facebook, web chat and +91 AI calling, and auto-trains on your website and product info to answer buyers directly."
             reasonsToSwitch={[
                 {
-                    title: "Automate Support Workflows",
-                    description: "Our RAG engine reads your return policies and logistics API data to resolve order tracking and return tickets automatically."
+                    title: "Auto-Answers Order Queries",
+                    description: "Our AI trains on your return policy and product pages to answer order-status and return questions automatically."
                 },
                 {
-                    title: "Native Inbound Voice AI",
-                    description: "BiteSpeed operates over text channels only. SwanDigitals lets buyers dial in and resolve issues with autonomous regional Voice AI assistants."
+                    title: "+91 Inbound Voice AI",
+                    description: "BiteSpeed is text-only. SwanDigitals lets buyers call in and get answers from a natural Voice AI in 10 Indian languages."
                 },
                 {
-                    title: "Predictable Flat Platform Rates",
-                    description: "Avoid tiered billing or subscriber-limit penalties. Host unlimited customer support profiles with a predictable software budget."
+                    title: "Flat Rupee Pricing",
+                    description: "Avoid tiered billing or subscriber-limit penalties. Pay a flat plan from ₹4,999/mo with no per-message markup."
                 }
             ]}
             comparisonRows={[
-                { feature: "Primary Use Case", SwanDigitals: "Omnichannel AI Support", competitor: "E-commerce Marketing" },
-                { feature: "Native Voice AI", SwanDigitals: true, competitor: false },
-                { feature: "Generative AI Resolution", SwanDigitals: "Deep RAG Architecture", competitor: "Basic/Limited" },
-                { feature: "Standalone Enterprise CRM", SwanDigitals: true, competitor: "Shopify Dependent" },
-                { feature: "Multi-Language (Voice & Text)", SwanDigitals: "10+ Indic Languages", competitor: "Limited" }
+                { feature: "Primary Use Case", SwanDigitals: "WhatsApp + Voice AI Support", competitor: "E-commerce Marketing" },
+                { feature: "+91 Voice AI Calling", SwanDigitals: true, competitor: false },
+                { feature: "AI Agent", SwanDigitals: "Auto-trains on your site/docs", competitor: "Basic/Limited" },
+                { feature: "Standalone Inbox (No Store Lock-in)", SwanDigitals: true, competitor: "Shopify Dependent" },
+                { feature: "Indian Languages (Voice & Text)", SwanDigitals: "10 Indian languages", competitor: "Limited" }
             ]}
-            targetPersona="small storefronts seeking a quick Shopify app to set up promotional templates and abandoned cart discount alerts."
-            verdict="you are a high-volume e-commerce brand or omnichannel retailer seeking to automate customer support across web, email, WhatsApp, and phone."
+            targetPersona="you run a Shopify store and mainly want cart-recovery and promotional templates tied to your catalog — BiteSpeed is purpose-built for that."
+            verdict="you are an Indian SME that wants WhatsApp, Facebook, web chat and +91 AI calling in one inbox, 10 Indian languages, and a flat rupee plan with no per-message markup."
             faqs={[
                 {
                     question: "Can we connect our existing WhatsApp Business API credentials?",
@@ -53,12 +53,12 @@ export default function VsBiteSpeedPage() {
                     answer: "No. You pay Meta directly for their official template usage fees with zero markup from us. We charge a flat platform fee."
                 },
                 {
-                    question: "Does SwanDigitals sync with CRM and shipping software?",
-                    answer: "Yes. We connect natively with Shopify, HubSpot, ClickPost, Shiprocket, and custom backend systems to automate logistics updates."
+                    question: "Does SwanDigitals sync with my CRM and other tools?",
+                    answer: "Yes. We connect natively with HubSpot and Calendly, and reach other backend systems via n8n workflows to automate updates."
                 },
                 {
-                    question: "Is customer data stored locally in India?",
-                    answer: "Yes. SwanDigitals hosts customer profile histories on Mumbai datacenter servers to ensure complete DPDP 2023 compliance."
+                    question: "Is customer data hosted in India?",
+                    answer: "Yes. SwanDigitals hosts your data in India, is built to be DPDP-2023 aware, and processes payments securely via Razorpay, with no lock-in."
                 }
             ]}
         />

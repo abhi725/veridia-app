@@ -6,18 +6,18 @@ import Link from 'next/link';
 
 export default function WebinarsContent() {
     const upcomingWebinars = [
-        { title: "Designing Conversational Flows for 85% Query Resolution", date: "April 15, 2026", time: "11:00 AM IST", speaker: "Swati Gaikwad, Co-Founder @ SwanDigitals", type: "Strategy" },
-        { title: "True On-Premise vs Dedicated VPC: What's the Difference?", date: "April 22, 2026", time: "10:00 AM IST", speaker: "Kiran Shelke, Co-Founder @ SwanDigitals", type: "Technical" },
-        { title: "2026 AI Customer Service Trends in India", date: "May 5, 2026", time: "11:00 AM IST", speaker: "SwanDigitals Team", type: "Industry" }
+        { title: "Designing WhatsApp Conversations That Resolve Queries Faster", date: "April 15, 2026", time: "11:00 AM IST", speaker: "Swati Gaikwad, Co-Founder @ SwanDigitals", type: "Strategy" },
+        { title: "Cloud Hosting Explained: Where Your Data Actually Lives", date: "April 22, 2026", time: "10:00 AM IST", speaker: "Kiran Shelke, Co-Founder @ SwanDigitals", type: "Technical" },
+        { title: "2026 AI Customer Engagement Trends for Indian SMEs", date: "May 5, 2026", time: "11:00 AM IST", speaker: "SwanDigitals Team", type: "Industry" }
     ];
 
     const recordings = [
-        { title: "Building Multi-Turn Conversations That Convert", duration: "45 min", views: "3,200", category: "Technical" },
-        { title: "ROI Calculator: Measure Your AI Impact", duration: "30 min", views: "2,100", category: "Business" },
-        { title: "DPDP 2023 Compliance for Customer Support Chatbots", duration: "60 min", views: "1,800", category: "Compliance" },
-        { title: "Integrating SwanDigitals with Salesforce", duration: "40 min", views: "2,500", category: "Technical" },
-        { title: "From 0 to 10M Conversations: Scaling Guide", duration: "55 min", views: "1,500", category: "Technical" },
-        { title: "Customer Service Automation Best Practices", duration: "35 min", views: "4,100", category: "Strategy" }
+        { title: "Building Multi-Turn Conversations That Convert", duration: "45 min", views: "Watch now", category: "Technical" },
+        { title: "ROI Calculator: Measure Your AI Impact", duration: "30 min", views: "Watch now", category: "Business" },
+        { title: "DPDP 2023 Basics for Customer Support Chatbots", duration: "60 min", views: "Watch now", category: "Compliance" },
+        { title: "Getting Started with HubSpot & Calendly", duration: "40 min", views: "Watch now", category: "Technical" },
+        { title: "Getting Started with WhatsApp Automation for Your Business", duration: "55 min", views: "Watch now", category: "Technical" },
+        { title: "Customer Engagement Automation Best Practices", duration: "35 min", views: "Watch now", category: "Strategy" }
     ];
 
     return (
@@ -69,7 +69,7 @@ export default function WebinarsContent() {
                                 <h3 className="font-bold mt-3 mb-2">{rec.title}</h3>
                                 <div className="flex justify-between text-sm text-slate-500">
                                     <span>{rec.duration}</span>
-                                    <span>{rec.views} views</span>
+                                    <span>{rec.views}</span>
                                 </div>
                             </div>
                         ))}

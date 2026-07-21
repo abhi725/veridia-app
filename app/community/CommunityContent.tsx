@@ -7,9 +7,9 @@ import { MessageSquare, FileText, Users, Award, Video, HelpCircle } from 'lucide
 
 export default function CommunityContent() {
     const communities = [
-        { icon: <MessageSquare className="w-8 h-8" />, title: "Discord Server", description: "Join 5,000+ developers and builders. Get help, share projects, and connect with the SwanDigitals team.", members: "5,000+", cta: "Join Discord", color: "bg-indigo-500" },
-        { icon: <Users className="w-8 h-8" />, title: "Slack Community", description: "Enterprise-focused discussions, best practices, and direct support from our solutions team.", members: "1,200+", cta: "Join Slack", color: "bg-purple-500" },
-        { icon: <FileText className="w-8 h-8" />, title: "GitHub Discussions", description: "Open-source contributions, bug reports, and feature requests.", members: "800+", cta: "View GitHub", color: "bg-slate-800" },
+        { icon: <MessageSquare className="w-8 h-8" />, title: "Discord Server", description: "Join fellow SME owners and builders. Get help, share tips, and connect with the SwanDigitals team.", members: "Growing", cta: "Join Discord", color: "bg-indigo-500" },
+        { icon: <Users className="w-8 h-8" />, title: "Slack Community", description: "SME-focused discussions, best practices, and direct support from our team.", members: "Growing", cta: "Join Slack", color: "bg-purple-500" },
+        { icon: <FileText className="w-8 h-8" />, title: "GitHub Discussions", description: "Feature requests, feedback, and product discussions.", members: "Active", cta: "View GitHub", color: "bg-slate-800" },
     ];
     const resources = [
         { icon: <Video className="w-6 h-6" />, title: "Tutorial Videos", desc: "Step-by-step guides", link: "/videos" },
@@ -31,15 +31,15 @@ export default function CommunityContent() {
 
     return (
         <SiteLayout>
-            <Hero badge="🤝 Community" title="Join the SwanDigitals Community" subtitle="Connect with 7,000+ developers, builders, and AI enthusiasts. Get help, share your projects, and learn from experts." primaryCTA={{ text: "Join Discord", href: "#communities" }} secondaryCTA={{ text: "View Events", href: "#events" }} />
+            <Hero badge="🤝 Community" title="Join the SwanDigitals Community" subtitle="Connect with fellow Indian SME owners, operators, and builders. Get help, share what's working, and learn from each other." primaryCTA={{ text: "Join Discord", href: "#communities" }} secondaryCTA={{ text: "View Events", href: "#events" }} />
 
             <section className="py-12 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div><div className="text-4xl font-bold">7,000+</div><div className="text-white/80">Members</div></div>
-                        <div><div className="text-4xl font-bold">50+</div><div className="text-white/80">Countries</div></div>
-                        <div><div className="text-4xl font-bold">10K+</div><div className="text-white/80">Messages/Month</div></div>
-                        <div><div className="text-4xl font-bold">24/7</div><div className="text-white/80">Active Support</div></div>
+                        <div><div className="text-4xl font-bold">Growing</div><div className="text-white/80">Community</div></div>
+                        <div><div className="text-4xl font-bold">India</div><div className="text-white/80">Focused</div></div>
+                        <div><div className="text-4xl font-bold">Active</div><div className="text-white/80">Discussions</div></div>
+                        <div><div className="text-4xl font-bold">IST</div><div className="text-white/80">Business Hours Support</div></div>
                     </div>
                 </div>
             </section>

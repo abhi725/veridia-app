@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | DPDP Act 2023 Compliant',
-    description: 'SwanDigitals Privacy Policy. We are fully DPDP Act 2023 compliant, ensuring your enterprise data remains private and secure. Read our data protection practices.',
-    keywords: ['Privacy Policy', 'DPDP Act India', 'Data Sovereignty Policy', 'Enterprise Data Protection'],
+    title: 'Privacy Policy | Built to be DPDP Act 2023 Aware',
+    description: 'SwanDigitals Privacy Policy. Built to be DPDP Act 2023 aware, keeping your business data hosted in India. Read our data protection practices.',
+    keywords: ['Privacy Policy', 'DPDP Act India', 'India Data Hosting', 'Small Business Data Protection'],
     alternates: {
         canonical: 'https://swandigitals.com/privacy',
     },
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
                             <h3 className="text-lg font-semibold mt-6">2.1 Data You Provide Directly</h3>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li><strong>Account Data:</strong> Name, email address, company name, job title, phone number</li>
-                                <li><strong>Billing Data:</strong> Payment information (processed by Razorpay or Stripe Inc., PCI DSS Level 1 compliant processors)</li>
+                                <li><strong>Billing Data:</strong> Payment information (processed by Razorpay, a PCI DSS Level 1 compliant processor)</li>
                                 <li><strong>Content Data:</strong> Chatbot configurations, conversation flows, training data you create</li>
                                 <li><strong>Communication Data:</strong> Support requests, feedback, correspondence with us</li>
                             </ul>
@@ -78,8 +78,7 @@ export default function PrivacyPage() {
                             <h3 className="text-lg font-semibold mt-6">2.3 End-User Conversation Data</h3>
                             <p>
                                 When your customers interact with chatbots you create using our platform, we process conversation data
-                                as a <strong>Data Processor</strong> on your behalf. For <strong>on-premise deployments</strong>,
-                                this data never leaves your infrastructure and SwanDigitals has no access to it.
+                                as a <strong>Data Processor</strong> on your behalf, hosted on our India-based cloud infrastructure.
                             </p>
 
                             <h3 className="text-lg font-semibold mt-6">2.4 Third-Party Authentication & Google OAuth</h3>
@@ -160,11 +159,10 @@ export default function PrivacyPage() {
                             </p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li><strong>India Data Residency:</strong> All data stored in Indian data centers by default</li>
-                                <li><strong>On-Premise Option:</strong> Your data never leaves your infrastructure</li>
                                 <li><strong>Third-party processors:</strong> Subject to equivalent data protection obligations</li>
                             </ul>
                             <div className="bg-green-50 p-4 rounded-lg mt-4">
-                                <p><strong>India-Only Option:</strong> Enterprise customers can choose India-only data residency where all data is processed and stored exclusively within India.</p>
+                                <p><strong>India-Hosted by Default:</strong> All customer data is processed and stored on cloud infrastructure within India.</p>
                             </div>
                         </div>
                     </div>
@@ -175,9 +173,9 @@ export default function PrivacyPage() {
                         <div className="text-slate-700 space-y-4">
                             <p>We implement appropriate technical and organizational measures:</p>
                             <ul className="list-disc pl-6 space-y-2">
-                                <li><strong>Encryption:</strong> AES-256 at rest, TLS 1.3 in transit</li>
-                                <li><strong>Access Controls:</strong> Role-based access, multi-factor authentication</li>
-                                <li><strong>Auditing:</strong> Comprehensive logging, regular security audits</li>
+                                <li><strong>Encryption:</strong> Data encrypted at rest and in transit</li>
+                                <li><strong>Access Controls:</strong> Restricted internal access to customer data</li>
+                                <li><strong>Auditing:</strong> Internal logging and periodic security reviews</li>
                                 <li><strong>Incident Response:</strong> Breach notification as required under DPDP Act 2023</li>
                             </ul>
                         </div>

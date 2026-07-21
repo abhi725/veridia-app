@@ -48,13 +48,13 @@ export default function PartnersContent() {
         },
         {
             icon: <Shield className="w-7 h-7 text-orange-600" />,
-            title: "Compliance-First NLP Solutions",
-            desc: "Perfect B2B recommendation: SwanDigitals is fully RBI and DPDP 2023 compliant, letting you pitch to enterprise banks, finance, and healthcare providers."
+            title: "An Easy, Honest Pitch",
+            desc: "SwanDigitals is built to be DPDP-2023 aware, with data hosted in India and billing secured via Razorpay — a straightforward pitch for Indian SME owners, no jargon required."
         },
         {
             icon: <Users className="w-7 h-7 text-orange-600" />,
             title: "Dedicated Partner Support",
-            desc: "Direct access to our engineering team to assist you with custom client webhook configurations, local Docker setups, and custom pricing scopes."
+            desc: "Direct access to our support team to assist you with client onboarding, integration setup, and custom pricing scopes."
         }
     ];
 
@@ -82,7 +82,7 @@ export default function PartnersContent() {
             <Hero
                 badge="🤝 Partner & Affiliate Program"
                 title="Partner With SwanDigitals. Earn Flat 30% Recurring."
-                subtitle="Help your network automate support, eliminate seat penalties, and deploy secure local AI in India. Recommend our AI Chatbot and earn flat 30% MRR."
+                subtitle="Help your network automate support, eliminate seat penalties, and offer AI chat hosted in India. Recommend our AI Chatbot and earn flat 30% MRR."
                 primaryCTA={{ text: "Apply as Partner", href: "#apply" }}
                 secondaryCTA={{ text: "Contact Support", href: "/contact" }}
             />
@@ -112,7 +112,7 @@ export default function PartnersContent() {
                         <div className="reveal flex flex-col items-center">
                             <div className="w-16 h-16 bg-orange-50 border border-orange-100 rounded-2xl flex items-center justify-center text-orange-600 font-extrabold text-xl mb-6 shadow-sm">2</div>
                             <h3 className="text-xl font-bold text-slate-800 mb-2">Refer Chatbot Clients</h3>
-                            <p className="text-sm text-slate-500 max-w-xs leading-relaxed">Recommend SwanDigitals AI Chatbots to D2C brands, developers, or banks in your network.</p>
+                            <p className="text-sm text-slate-500 max-w-xs leading-relaxed">Recommend SwanDigitals AI Chatbots to Indian SMEs, D2C brands, and service businesses in your network.</p>
                         </div>
                         <div className="reveal flex flex-col items-center">
                             <div className="w-16 h-16 bg-orange-50 border border-orange-100 rounded-2xl flex items-center justify-center text-orange-600 font-extrabold text-xl mb-6 shadow-sm">3</div>

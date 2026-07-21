@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import WhitepapersContent from './WhitepapersContent';
 
 export const metadata: Metadata = {
-    title: 'AI Whitepapers & Research | SwanDigitals Insights',
-    description: 'Download in-depth whitepapers on AI customer support for BFSI, healthcare, and enterprise India. Research-backed insights for decision makers.',
+    title: 'Guides & Whitepapers | SwanDigitals Insights',
+    description: 'Practical guides on WhatsApp automation, AI calling, and customer engagement for Indian small and medium businesses.',
     alternates: {
         canonical: 'https://swandigitals.com/whitepapers',
     },

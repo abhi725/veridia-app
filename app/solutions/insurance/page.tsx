@@ -14,9 +14,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Insurance AI Chatbot India - Instant Claims & Quotes',
-    description: 'Automate claims submission, policy renewals, and instant quote generation for Indian insurance brands. Secure, compliant, and optimized for high-volume WhatsApp channels.',
-    keywords: ['Insurance AI Chatbot', 'FNOL Chatbot India', 'WhatsApp Insurance Quote', 'Aadhaar KYC Chatbot', 'SwanDigitals Insurance'],
+    title: 'Insurance Agent AI Chatbot India - Leads, Renewals & Support',
+    description: 'Help your insurance agency or brokerage capture leads, send renewal reminders, and answer policy questions on WhatsApp. Built for Indian SME insurance agents.',
+    keywords: ['Insurance Agent Chatbot', 'Insurance Broker WhatsApp Bot', 'WhatsApp Insurance Renewal Reminders', 'Policy Lead Capture Chatbot', 'SwanDigitals Insurance'],
     alternates: {
         canonical: 'https://swandigitals.com/solutions/insurance',
     },
@@ -51,9 +51,9 @@ export default function InsurancePage() {
     const useCases = [
         {
             icon: <Camera className="w-6 h-6" />,
-            title: "Instant Claims / FNOL",
-            desc: "Accident photo uploads & details via chat",
-            detail: "Policyholders submit claims, upload damage pictures, and log First Notice of Loss (FNOL) inside WhatsApp under 3 minutes.",
+            title: "Claim Assistance & Documents",
+            desc: "Photo & document uploads via chat",
+            detail: "Guide clients to share claim photos and documents over WhatsApp, then forward everything to your back office or insurer in minutes.",
             color: "from-orange-50 to-pink-50 border-orange-200 text-orange-600"
         },
         {
@@ -65,9 +65,9 @@ export default function InsurancePage() {
         },
         {
             icon: <ShieldCheck className="w-6 h-6" />,
-            title: "Policy Status & KYC",
-            desc: "Upload Aadhaar/PAN secure checks",
-            detail: "Secure integration allows policyholders to verify their identity, check expiration dates, and update contact information seamlessly.",
+            title: "Policy Status Lookup",
+            desc: "Check status & update details on chat",
+            detail: "Policyholders can check their policy status, expiry date, and update their contact information seamlessly on WhatsApp.",
             color: "from-green-50 to-emerald-50 border-green-200 text-green-600"
         },
         {
@@ -79,16 +79,16 @@ export default function InsurancePage() {
         },
         {
             icon: <MapPin className="w-6 h-6" />,
-            title: "Cashless Network Locator",
-            desc: "Location-aware search for hospitals",
-            detail: "Policyholders pin their current GPS location to locate cashless network hospitals or partner garages in close proximity.",
+            title: "Nearby Hospital & Garage Info",
+            desc: "Quick lookup for network locations",
+            detail: "Share your empanelled hospital or garage list so clients can quickly find the nearest option to them, right inside chat.",
             color: "from-indigo-50 to-blue-50 border-indigo-200 text-indigo-600"
         },
         {
             icon: <FileText className="w-6 h-6" />,
-            title: " RAG-powered Policy QA",
+            title: "Policy Document Q&A",
             desc: "Clear answers on inclusions & exclusions",
-            detail: "Ingest hundreds of policy wordings. Customers query coverage rules and receive exact citations without phone support lines.",
+            detail: "Upload your policy wordings and brochures so the chatbot answers coverage questions instantly, without your team repeating themselves on calls.",
             color: "from-purple-50 to-pink-50 border-purple-200 text-purple-600"
         }
     ];
@@ -102,10 +102,10 @@ export default function InsurancePage() {
             {/* Hero Section */}
             <Hero
                 badge="🛡️ Insurance Automation"
-                title="The Deepest Conversational AI for Indian Insurance"
-                subtitle="Scale First Notice of Loss, automate policy renewals on WhatsApp, and instantly generate quotes while retaining 100% data sovereignty."
+                title="AI Chatbot for Indian Insurance Agents & Brokers"
+                subtitle="Capture leads, send renewal reminders on WhatsApp, and answer policy questions instantly — built for Indian insurance agencies and brokers."
                 primaryCTA={{ text: "Schedule Insurance Demo", href: "/demo" }}
-                secondaryCTA={{ text: "View Security Architecture", href: "/security" }}
+                secondaryCTA={{ text: "How Your Data Is Protected", href: "/security" }}
             />
 
             {/* Trust Highlights */}
@@ -114,11 +114,11 @@ export default function InsurancePage() {
                     <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
                         <div className="flex items-center gap-2">
                             <span className="text-2xl">🇮🇳</span>
-                            <span>DPDP Act 2023 Compliant Data Residency</span>
+                            <span>DPDP Act 2023 Aware · Data Hosted in India</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <span className="text-2xl">⚡</span>
-                            <span>60% Average Reduction in Claims Cycle</span>
+                            <span>Faster Renewal Follow-Ups</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <span className="text-2xl">📱</span>
@@ -156,16 +156,16 @@ export default function InsurancePage() {
             <section className="py-20 bg-slate-50 border-y border-slate-200">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
                     <div className="bg-gradient-to-br from-slate-900 to-orange-950 text-white p-12 rounded-3xl border border-orange-900/50 shadow-2xl">
-                        <div className="text-sm font-semibold text-orange-400 mb-4">PLATFORM TELEMETRY</div>
+                        <div className="text-sm font-semibold text-orange-400 mb-4">COMMON WORKFLOWS</div>
                         <h2 className="text-3xl font-bold mb-6">Most Common Insurance Flows We Automate</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {[
-                                "Claims registration and damage image collection",
+                                "Claim document collection and forwarding to your insurer",
                                 "Policy quote estimates for health, motor, and life",
                                 "Proactive renewal payment links via WhatsApp",
-                                "Agent transfer summary for high-value claims",
+                                "Handoff to your team for high-value or complex cases",
                                 "Endorsement requests (address change, name updates)",
-                                "Cashless hospital search based on geographic location"
+                                "Nearby network hospital or garage lookup"
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3 text-white/90 text-sm">
                                     <Check className="w-5 h-5 text-orange-400 shrink-0" />
@@ -174,7 +174,7 @@ export default function InsurancePage() {
                             ))}
                         </div>
                         <p className="text-white/70 text-xs mb-6 max-w-3xl">
-                            *Typical performance: 80% automated resolution on policy renewals. Auto-claims submission rate grows by up to 3x inside WhatsApp.
+                            *Typical outcome: faster renewal follow-ups and more claims started directly inside WhatsApp.
                         </p>
                         <Link href="/demo" className="inline-block px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold transition-all">
                             Configure Your Workflow Now →
@@ -194,25 +194,25 @@ export default function InsurancePage() {
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                                Yes. All media uploaded via WhatsApp or Web Chat is processed over TLS 1.3 and saved directly to secure AWS S3 bucket environments (Mumbai region) with encryption keys held inside our isolated customer tenancy.
+                                Yes. Photos and documents shared over WhatsApp or Web Chat are encrypted in transit and stored securely on servers hosted in India. Only you and your team can access them.
                             </p>
                         </details>
                         <details className="bg-slate-50 p-6 rounded-2xl group cursor-pointer border border-slate-100">
                             <summary className="font-bold text-lg text-slate-900 flex justify-between items-center list-none">
-                                <span>Do we need native integrations for our Core Policy engines?</span>
+                                <span>Can this connect to the tools I already use?</span>
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                                No, core policy engines are usually secure and air-gapped. SwanDigitals queries them safely via custom webhooks, secure REST API bridges, or secure custom n8n configurations to ensure absolute network protection.
+                                Yes — SwanDigitals connects to your CRM or spreadsheets through n8n webhooks, so leads, renewals, and claim details flow wherever you need them, without any complex setup.
                             </p>
                         </details>
                         <details className="bg-slate-50 p-6 rounded-2xl group cursor-pointer border border-slate-100">
                             <summary className="font-bold text-lg text-slate-900 flex justify-between items-center list-none">
-                                <span>Does SwanDigitals support regional languages for insurance claims?</span>
+                                <span>Does SwanDigitals support regional languages for insurance conversations?</span>
                                 <span className="text-orange-600 group-open:rotate-180 transition-transform">▼</span>
                             </summary>
                             <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                                Yes, our NLU logic supports Hindi, Tamil, Telugu, Kannada, Bengali, and Hinglish out of the box, allowing rural and urban policyholders to explain claims in their native dialect.
+                                Yes, we support Hindi, Tamil, Telugu, Kannada, Bengali, and Hinglish out of the box, so your clients can explain their needs in their own language.
                             </p>
                         </details>
                     </div>
@@ -222,9 +222,9 @@ export default function InsurancePage() {
             {/* Final CTA */}
             <section className="py-20 bg-gradient-to-r from-orange-500 to-pink-500 text-white text-center">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                    <h2 className="text-4xl font-bold mb-6">Empower Policyholders, Accelerate Claims</h2>
+                    <h2 className="text-4xl font-bold mb-6">Grow Your Insurance Book, Faster</h2>
                     <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto font-medium">
-                        Consult with our vertical solutions team to design claims forms, quotes estimators, and renewals campaign matrices today.
+                        Talk to our team about setting up lead capture, quote estimates, and renewal reminders for your agency today.
                     </p>
                     <Link href="/demo" className="inline-block px-8 py-4 bg-white text-slate-900 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all">
                         Schedule a Free Insurance Consultation

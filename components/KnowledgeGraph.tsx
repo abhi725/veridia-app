@@ -23,7 +23,7 @@ export default function KnowledgeGraph() {
     useEffect(() => {
         // Sample knowledge base nodes
         const sampleNodes: Node[] = [
-            { id: 'n1', label: 'SOC 2', x: 150, y: 100, active: true },
+            { id: 'n1', label: 'DPDP 2023', x: 150, y: 100, active: true },
             { id: 'n2', label: 'GDPR', x: 250, y: 150, active: false },
             { id: 'n3', label: 'Compliance', x: 150, y: 200, active: true },
             { id: 'n4', label: 'Security', x: 50, y: 150, active: false },
